@@ -2,18 +2,11 @@ import React, { useState } from 'react'
 import AgitoNavTabs from "./AgitoNavTabs.js"
 import WeaponTypeNavTabs from "../WeaponTypeNavTabs"
 import { Box, Text, Flex, Card, Heading, Image } from "rebass";
-import { Input, Label, Checkbox, Slider } from "@rebass/forms";
+import { Slider } from "@rebass/forms";
 
 import FireAgitoSword from "../Images/Fire_Agito_Sword.png";
 import FireAgitoBlade from "../Images/Fire_Agito_Blade.png";
 
-import FireAgitoSilverMask from "../Images/Fire_Agito_Silver_Mask.png";
-import FireAgitoGoldMask from "../Images/Fire_Agito_Gold_Mask.png";
-import FireAgitoInsanity from "../Images/Fire_Agito_Insanity.png";
-import FireAgitoGale from "../Images/Fire_Agito_Gale.png";
-import TwinklingSand from "../Images/Twinkling_Sand.png";
-import Orichalcum from "../Images/Orichalcum.png";
-import Rupies from "../Images/Rupees.png";
 import Refine from "../Images/Refine.PNG";
 import Unbind from "../Images/Unbind.PNG";
 import WyrmprintSlots from "../Images/Wyrmprint_Slots.PNG";
@@ -21,34 +14,54 @@ import WeaponBonus from "../Images/Weapon_Bonus.PNG";
 
 import FireAgitoSwordCost from "./FireAgitoSwordMats"
 
-// Refactor. Separate all 9 weapons for each element into their own component so I can individually track mub and weapon bonus stuff there. Keep track of weapon state here. 9 separate component calls that'll have 8 not firing if the weapon state isn't firing.
-
-// Mostly fire sword has been built.
-
 export default function FireAgitoWeapons() {
-    const [fireSwordCraftState, setFireSwordCraftState] = useState("grayscale(100%)")
-    const [fireSwordWeaponBonusState, setFireSwordWeaponBonusState] = useState("grayscale(100%)")
-    const [fireSwordWyrmprintSlotState, setFireSwordWyrmprintSlotState] = useState("grayscale(100%)")
-    const [fireSwordUnbindState, setFireSwordUnbindState] = useState(0);
-    const [fireSwordRefineState, setFireSwordRefineState] = useState(0);
-    const [fireBladeCraftState, setFireBladeCraftState] = useState("grayscale(100%)")
+    const [fireWeaponChoice, setFireWeaponChoiceState] = useLocalStorage("fireWeaponChoice", "sword")
+    const [fireSwordCraftState, setFireSwordCraftState] = useLocalStorage("fireSwordCraftState", "grayscale(100%)")
+    const [fireSwordWeaponBonusState, setFireSwordWeaponBonusState] = useLocalStorage("fireSwordWeaponBonusState","grayscale(100%)")
+    const [fireSwordWyrmprintSlotState, setFireSwordWyrmprintSlotState] = useLocalStorage("fireSwordWyrmprintSlotState", "grayscale(100%)")
+    const [fireSwordUnbindState, setFireSwordUnbindState] = useLocalStorage("fireSwordUnbindState", 0);
+    const [fireSwordRefineState, setFireSwordRefineState] = useLocalStorage("fireSwordRefineState", 0);
 
-    const [fireWeaponChoice, setFireWeaponChoiceState] = useState("sword")
+    const [mubFASSilverMaskCount, setmubFASSilverMaskCountState] = useLocalStorage("mubFASSilverMaskCount", 516);
+    const [mubFASGoldMaskCount, setmubFASGoldMaskCountState] = useLocalStorage("mubFASGoldMaskCount", 410);
+    const [mubFASInsanityCount, setmubFASInsanityCountState] = useLocalStorage("mubFASInsanityCount", 89);
+    const [mubFASGaleCount, setmubFASGaleCountState] = useLocalStorage("mubFASGaleCount", 30);
+    const [mubFASSandCount, setmubFASSandCountState] = useLocalStorage("mubFASSandCount", 5);
+    const [mubFASOriCount, setmubFASOriCountState] = useLocalStorage("mubFASOriCount", 66);
+    const [mubFASRupeeCost, setmubFASRupeeCost] = useLocalStorage("mubFASRupeeCost", 59.5);
 
-    const [mubFASSilverMaskCount, setmubFASSilverMaskCountState] = useState(516);
-    const [mubFASGoldMaskCount, setmubFASGoldMaskCountState] = useState(410);
-    const [mubFASInsanityCount, setmubFASInsanityCountState] = useState(89);
-    const [mubFASGaleCount, setmubFASGaleCountState] = useState(30);
-    const [mubFASSandCount, setmubFASSandCountState] = useState(5);
-    const [mubFASOriCount, setmubFASOriCountState] = useState(66);
-    const [mubFASRupeeCost, setmubFASRupeeCost] = useState(59.5);
+    const [wbFASSilverMaskCount, setwbFASSilverMaskCountState] = useLocalStorage("wbFASSilverMaskCount", 332);
+    const [wbFASGoldMaskCount, setwbFASGoldMaskCountState] = useLocalStorage("wbFASGoldMaskCount", 270);
+    const [wbFASInsanityCount, setwbFASInsanityCountState] = useLocalStorage("wbFASInsanityCount", 28);
+    const [wbFASSandCount, setwbFASSandCountState] = useLocalStorage("wbFASSandCount", 5);
+    const [wbFASOriCount, setwbFASOriCountState] = useLocalStorage("wbFASOriCount", 32);
+    const [wbFASRupeeCost, setwbFASRupeeCost] = useLocalStorage("wbFASRupeeCost", 30);
 
-    const [wbFASSilverMaskCount, setwbFASSilverMaskCountState] = useState(332);
-    const [wbFASGoldMaskCount, setwbFASGoldMaskCountState] = useState(270);
-    const [wbFASInsanityCount, setwbFASInsanityCountState] = useState(28);
-    const [wbFASSandCount, setwbFASSandCountState] = useState(5);
-    const [wbFASOriCount, setwbFASOriCountState] = useState(32);
-    const [wbFASRupeeCost, setwbFASRupeeCost] = useState(30);
+    const [fireBladeCraftState, setFireBladeCraftState] = useLocalStorage("fireBladeCraftState", "grayscale(100%)")
+
+    function useLocalStorage(key, initialValue) {
+        const [storedValue, setStoredValue] = useState(() => {
+          try {
+            const item = window.localStorage.getItem(key);
+            return item ? JSON.parse(item) : initialValue;
+          } catch (error) {
+            console.log(error);
+            return initialValue;
+          }
+        });
+        const setValue = value => {
+          try {
+            const valueToStore =
+              value instanceof Function ? value(storedValue) : value;
+            setStoredValue(valueToStore);
+            window.localStorage.setItem(key, JSON.stringify(valueToStore));
+          } catch (error) {
+            console.log(error);
+          }
+        };
+      
+        return [storedValue, setValue];
+    }
 
     function fireWeaponSelection() {
         if (fireWeaponChoice == "sword") {
@@ -326,7 +339,7 @@ export default function FireAgitoWeapons() {
                                     <Box width={1 / 10}></Box>
                                     <Slider
                                         onChange={handleFireSwordUnbindIncrement}
-                                        defaultValue={0}
+                                        defaultValue={fireSwordUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
@@ -348,7 +361,7 @@ export default function FireAgitoWeapons() {
                                     <Box width={1 / 10}></Box>
                                     <Slider
                                         onChange={handleFireSwordRefineIncrement}
-                                        defaultValue={0}
+                                        defaultValue={fireSwordRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
