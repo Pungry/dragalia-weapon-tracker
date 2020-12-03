@@ -1,55 +1,56 @@
 import React from 'react'
-import FireAgitoSilverMask from "../Images/Fire_Agito_Silver_Mask.png";
-import FireAgitoGoldMask from "../Images/Fire_Agito_Gold_Mask.png";
-import FireAgitoInsanity from "../Images/Fire_Agito_Insanity.png";
+import WaterAgitoSilverMask from "../Images/Water_Agito_Silver_Mask.png";
+import WaterAgitoGoldMask from "../Images/Water_Agito_Gold_Mask.png";
+import WaterAgitoInsanity from "../Images/Water_Agito_Insanity.png";
 import FireAgitoGale from "../Images/Fire_Agito_Gale.png";
 import TwinklingSand from "../Images/Twinkling_Sand.png";
 import Orichalcum from "../Images/Orichalcum.png";
 import Rupies from "../Images/Rupees.png";
 import { Box, Text, Flex, Card } from "rebass";
-import FireAgitoSword from "../Images/Fire_Agito_Sword.png";
+import WaterAgitoBow from "../Images/Water_Agito_Bow.png";
 
-export default function FireAgitoSwordMats(props) {
+export default function WaterAgitoBowMats(props) {
     return (
         <div>
             <Box width={1/2}>
+                <Box my={350}></Box>
                     <Flex>
                     <Box width ={1/3}></Box>
-                        <img src={FireAgitoSword} height="75" width="75"/>
+                        <img src={WaterAgitoBow} height="75" width="75"/>
                     </Flex>
                     <Flex>
                         <Text>9 unbinds, Weapon Bonus unlocked, and all 5 wyrmprint slots unlocked </Text>
                     </Flex>
                     <Flex>
                         <Card width={[75, 150]}>
-                            <img src={FireAgitoSilverMask} height="50" width="50"/>
-                            <Text fontSize={[1,2]}>{props.mubFASSilverMaskCount}</Text>
+                            <img src={WaterAgitoSilverMask} height="50" width="50"/>
+                            <Text fontSize={[1,2]}>{props.mubWaABoSilverMaskCount}</Text>
                         </Card>
                         <Card width={[75, 150]}>
-                            <img src={FireAgitoGoldMask} height="50" width="50"/>
-                            <Text fontSize={[1,2]}>{props.mubFASGoldMaskCount}</Text>
+                            <img src={WaterAgitoGoldMask} height="50" width="50"/>
+                            <Text fontSize={[1,2]}>{props.mubWaABoGoldMaskCount}</Text>
                         </Card>
                         <Card width={[75, 150]}>
-                            <img src={FireAgitoInsanity} height="50" width="50"/>
-                            <Text fontSize={[1,2]}>{props.mubFASInsanityCount}</Text>
+                            <img src={WaterAgitoInsanity} height="50" width="50"/>
+                            <Text fontSize={[1,2]}>{props.mubWaABoInsanityCount}</Text>
                         </Card>
                         <Card width={[75, 150]}>
                             <img src={FireAgitoGale} height="50" width="50"/>
-                            <Text fontSize={[1,2]}>{props.mubFASGaleCount}</Text>
+                            <Text fontSize={[1,2]}>{props.mubWaABoGaleCount}</Text>
                         </Card>
                     </Flex>
                     <Flex>
                         <Card width={[75, 175]}>
                             <img src={TwinklingSand} height="50" width="50"/>
-                            <Text fontSize={[1,2]}>{props.mubFASSandCount}</Text>
+                            <Text fontSize={[1,2]}>{props.mubWaABoSandCount}</Text>
                         </Card>
                         <Card width={[75, 175]}>
                             <img src={Orichalcum} height="50" width="50"/>
-                            <Text fontSize={[1,2]}>{props.mubFASOriCount}</Text>
+                            <Text fontSize={[1,2]}>{props.mubWaABoOriCount}</Text>
                         </Card>
                         <Card width={[75, 175]}>
                             <img src={Rupies} height="50" width="50"/>
-                            <Text fontSize={[1,2]}>{props.mubFASRupeeCost} in millions</Text>
+                            <Text fontSize={[1,2]}>{props.mubWaABoRupeeCost} in millions</Text>
                         </Card>
                     </Flex>
                     <Flex>
@@ -57,30 +58,30 @@ export default function FireAgitoSwordMats(props) {
                     </Flex>
                     <Flex>
                         <Card width={[75, 150]}>
-                            <img src={FireAgitoSilverMask} height="50" width="50"/>
-                            <Text fontSize={[1,2]}>{props.wbFASSilverMaskCount}</Text>
+                            <img src={WaterAgitoSilverMask} height="50" width="50"/>
+                            <Text fontSize={[1,2]}>{props.wbWaABoSilverMaskCount}</Text>
                         </Card>
                         <Card width={[75, 150]}>
-                            <img src={FireAgitoGoldMask} height="50" width="50"/>
-                            <Text fontSize={[1,2]}>{props.wbFASGoldMaskCount}</Text>
+                            <img src={WaterAgitoGoldMask} height="50" width="50"/>
+                            <Text fontSize={[1,2]}>{props.wbWaABoGoldMaskCount}</Text>
                         </Card>
                         <Card width={[75, 150]}>
-                            <img src={FireAgitoInsanity} height="50" width="50"/>
-                            <Text fontSize={[1,2]}>{props.wbFASInsanityCount}</Text>
+                            <img src={WaterAgitoInsanity} height="50" width="50"/>
+                            <Text fontSize={[1,2]}>{props.wbWaABoInsanityCount}</Text>
                         </Card>
                     </Flex>
                     <Flex>
                         <Card width={[75, 175]}>
                             <img src={TwinklingSand} height="50" width="50"/>
-                            <Text fontSize={[1,2]}>{props.wbFASSandCount}</Text>
+                            <Text fontSize={[1,2]}>{props.wbWaABoSandCount}</Text>
                         </Card>
                         <Card width={[75, 175]}>
                             <img src={Orichalcum} height="50" width="50"/>
-                            <Text fontSize={[1,2]}>{props.wbFASOriCount}</Text>
+                            <Text fontSize={[1,2]}>{props.wbWaABoOriCount}</Text>
                         </Card>
                         <Card width={[75, 175]}>
                             <img src={Rupies} height="50" width="50"/>
-                            <Text fontSize={[1,2]}>{props.wbFASRupeeCost} in millions</Text>
+                            <Text fontSize={[1,2]}>{props.wbWaABoRupeeCost} in millions</Text>
                         </Card>
                     </Flex>
                 </Box>
