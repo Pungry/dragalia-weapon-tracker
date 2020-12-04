@@ -29,12 +29,12 @@ import WaterHDTStaffCost from "./WaterHDTStaffMats"
 import WaterHDTManacasterCost from "./WaterHDTManacasterMats"
 
 export default function WaterHDTWeapons() {
-    const [waterWeaponChoice, setWaterWeaponChoiceState] = useLocalStorage("waterWeaponChoice", "sword")
+    const [waterWeaponChoice, setWaterWeaponChoiceState] = useLocalStorage("waterHWeaponChoice", "sword")
 
-    const [waterSwordCraftState, setWaterSwordCraftState] = useLocalStorage("waterSwordCraftState", "grayscale(100%)")
-    const [waterSwordWeaponBonusState, setWaterSwordWeaponBonusState] = useLocalStorage("waterSwordWeaponBonusState", "grayscale(100%)")
-    const [waterSwordRefineState, setWaterSwordRefineState] = useLocalStorage("waterSwordRefineState", "grayscale(100%)");
-    const [waterSwordUnbindState, setWaterSwordUnbindState] = useLocalStorage("waterSwordUnbindState", 0);
+    const [waterSwordCraftState, setWaterSwordCraftState] = useLocalStorage("waterHSwordCraftState", "grayscale(100%)")
+    const [waterSwordWeaponBonusState, setWaterSwordWeaponBonusState] = useLocalStorage("waterHSwordWeaponBonusState", "grayscale(100%)")
+    const [waterSwordRefineState, setWaterSwordRefineState] = useLocalStorage("waterHSwordRefineState", "grayscale(100%)");
+    const [waterSwordUnbindState, setWaterSwordUnbindState] = useLocalStorage("waterHSwordUnbindState", 0);
 
     const [wbFWaSphereCount, setwbFWaSphereCountState] = useLocalStorage("wbFWaSphereCount", 500);
     const [wbFWaTailCount, setwbFWaTailCountState] = useLocalStorage("wbFWaTailCount", 360);
@@ -43,10 +43,10 @@ export default function WaterHDTWeapons() {
     const [wbFWaRupeeCost, setwbFWaRupeeCost] = useLocalStorage("wbFWaRupeeCost", 25);
     const [wbFWaHornCount, setwbFWaHornCountState] = useLocalStorage("wbFWaHornCount", 90);
 
-    const [waterBladeCraftState, setWaterBladeCraftState] = useLocalStorage("waterBladeCraftState", "grayscale(100%)")
-    const [waterBladeWeaponBonusState, setWaterBladeWeaponBonusState] = useLocalStorage("waterBladeWeaponBonusState", "grayscale(100%)")
-    const [waterBladeRefineState, setWaterBladeRefineState] = useLocalStorage("waterBladeRefineState", "grayscale(100%)");
-    const [waterBladeUnbindState, setWaterBladeUnbindState] = useLocalStorage("waterBladeUnbindState", 0);
+    const [waterBladeCraftState, setWaterBladeCraftState] = useLocalStorage("waterHBladeCraftState", "grayscale(100%)")
+    const [waterBladeWeaponBonusState, setWaterBladeWeaponBonusState] = useLocalStorage("waterHBladeWeaponBonusState", "grayscale(100%)")
+    const [waterBladeRefineState, setWaterBladeRefineState] = useLocalStorage("waterHBladeRefineState", "grayscale(100%)");
+    const [waterBladeUnbindState, setWaterBladeUnbindState] = useLocalStorage("waterHBladeUnbindState", 0);
 
     const [wbFWaBlSphereCount, setwbFWaBlSphereCountState] = useLocalStorage("wbFWaBlSphereCount", 500);
     const [wbFWaBlTailCount, setwbFWaBlTailCountState] = useLocalStorage("wbFWaBlTailCount", 360);
@@ -55,10 +55,10 @@ export default function WaterHDTWeapons() {
     const [wbFWaBlRupeeCost, setwbFWaBlRupeeCost] = useLocalStorage("wbFWaBlRupeeCost", 25);
     const [wbFWaBlHornCount, setwbFWaBlHornCountState] = useLocalStorage("wbFWaBlHornCount", 90);
 
-    const [waterDaggerCraftState, setWaterDaggerCraftState] = useLocalStorage("waterDaggerCraftState", "grayscale(100%)")
-    const [waterDaggerWeaponBonusState, setWaterDaggerWeaponBonusState] = useLocalStorage("waterDaggerWeaponBonusState", "grayscale(100%)")
-    const [waterDaggerRefineState, setWaterDaggerRefineState] = useLocalStorage("waterDaggerRefineState", "grayscale(100%)");
-    const [waterDaggerUnbindState, setWaterDaggerUnbindState] = useLocalStorage("waterDaggerUnbindState", 0);
+    const [waterDaggerCraftState, setWaterDaggerCraftState] = useLocalStorage("waterHDaggerCraftState", "grayscale(100%)")
+    const [waterDaggerWeaponBonusState, setWaterDaggerWeaponBonusState] = useLocalStorage("waterHDaggerWeaponBonusState", "grayscale(100%)")
+    const [waterDaggerRefineState, setWaterDaggerRefineState] = useLocalStorage("waterHDaggerRefineState", "grayscale(100%)");
+    const [waterDaggerUnbindState, setWaterDaggerUnbindState] = useLocalStorage("waterHDaggerUnbindState", 0);
 
     const [wbFWaDSphereCount, setwbFWaDSphereCountState] = useLocalStorage("wbFWaDSphereCount", 500);
     const [wbFWaDTailCount, setwbFWaDTailCountState] = useLocalStorage("wbFWaDTailCount", 360);
@@ -67,10 +67,10 @@ export default function WaterHDTWeapons() {
     const [wbFWaDRupeeCost, setwbFWaDRupeeCost] = useLocalStorage("wbFWaDRupeeCost", 25);
     const [wbFWaDHornCount, setwbFWaDHornCountState] = useLocalStorage("wbFWaDHornCount", 90);
 
-    const [waterAxeCraftState, setWaterAxeCraftState] = useLocalStorage("waterAxeCraftState", "grayscale(100%)")
-    const [waterAxeWeaponBonusState, setWaterAxeWeaponBonusState] = useLocalStorage("waterAxeWeaponBonusState", "grayscale(100%)")
-    const [waterAxeRefineState, setWaterAxeRefineState] = useLocalStorage("waterAxeRefineState", "grayscale(100%)");
-    const [waterAxeUnbindState, setWaterAxeUnbindState] = useLocalStorage("waterAxeUnbindState", 0);
+    const [waterAxeCraftState, setWaterAxeCraftState] = useLocalStorage("waterHAxeCraftState", "grayscale(100%)")
+    const [waterAxeWeaponBonusState, setWaterAxeWeaponBonusState] = useLocalStorage("waterHAxeWeaponBonusState", "grayscale(100%)")
+    const [waterAxeRefineState, setWaterAxeRefineState] = useLocalStorage("waterHAxeRefineState", "grayscale(100%)");
+    const [waterAxeUnbindState, setWaterAxeUnbindState] = useLocalStorage("waterHAxeUnbindState", 0);
 
     const [wbFWaASphereCount, setwbFWaASphereCountState] = useLocalStorage("wbFWaASphereCount", 500);
     const [wbFWaATailCount, setwbFWaATailCountState] = useLocalStorage("wbFWaATailCount", 360);
@@ -79,10 +79,10 @@ export default function WaterHDTWeapons() {
     const [wbFWaARupeeCost, setwbFWaARupeeCost] = useLocalStorage("wbFWaARupeeCost", 25);
     const [wbFWaAHornCount, setwbFWaAHornCountState] = useLocalStorage("wbFWaAHornCount", 90);
 
-    const [waterLanceCraftState, setWaterLanceCraftState] = useLocalStorage("waterLanceCraftState", "grayscale(100%)")
-    const [waterLanceWeaponBonusState, setWaterLanceWeaponBonusState] = useLocalStorage("waterLanceWeaponBonusState", "grayscale(100%)")
-    const [waterLanceRefineState, setWaterLanceRefineState] = useLocalStorage("waterLanceRefineState", "grayscale(100%)");
-    const [waterLanceUnbindState, setWaterLanceUnbindState] = useLocalStorage("waterLanceUnbindState", 0);
+    const [waterLanceCraftState, setWaterLanceCraftState] = useLocalStorage("waterHLanceCraftState", "grayscale(100%)")
+    const [waterLanceWeaponBonusState, setWaterLanceWeaponBonusState] = useLocalStorage("waterHLanceWeaponBonusState", "grayscale(100%)")
+    const [waterLanceRefineState, setWaterLanceRefineState] = useLocalStorage("waterHLanceRefineState", "grayscale(100%)");
+    const [waterLanceUnbindState, setWaterLanceUnbindState] = useLocalStorage("waterHLanceUnbindState", 0);
 
     const [wbFWaLSphereCount, setwbFWaLSphereCountState] = useLocalStorage("wbFWaLSphereCount", 500);
     const [wbFWaLTailCount, setwbFWaLTailCountState] = useLocalStorage("wbFWaLTailCount", 360);
@@ -91,10 +91,10 @@ export default function WaterHDTWeapons() {
     const [wbFWaLRupeeCost, setwbFWaLRupeeCost] = useLocalStorage("wbFWaLRupeeCost", 25);
     const [wbFWaLHornCount, setwbFWaLHornCountState] = useLocalStorage("wbFWaLHornCount", 90);
 
-    const [waterBowCraftState, setWaterBowCraftState] = useLocalStorage("waterBowCraftState", "grayscale(100%)")
-    const [waterBowWeaponBonusState, setWaterBowWeaponBonusState] = useLocalStorage("waterBowWeaponBonusState", "grayscale(100%)")
-    const [waterBowRefineState, setWaterBowRefineState] = useLocalStorage("waterBowRefineState", "grayscale(100%)");
-    const [waterBowUnbindState, setWaterBowUnbindState] = useLocalStorage("waterBowUnbindState", 0);
+    const [waterBowCraftState, setWaterBowCraftState] = useLocalStorage("waterHBowCraftState", "grayscale(100%)")
+    const [waterBowWeaponBonusState, setWaterBowWeaponBonusState] = useLocalStorage("waterHBowWeaponBonusState", "grayscale(100%)")
+    const [waterBowRefineState, setWaterBowRefineState] = useLocalStorage("waterHBowRefineState", "grayscale(100%)");
+    const [waterBowUnbindState, setWaterBowUnbindState] = useLocalStorage("waterHBowUnbindState", 0);
 
     const [wbFWaBoSphereCount, setwbFWaBoSphereCountState] = useLocalStorage("wbFWaBoSphereCount", 500);
     const [wbFWaBoTailCount, setwbFWaBoTailCountState] = useLocalStorage("wbFWaBoTailCount", 360);
@@ -103,10 +103,10 @@ export default function WaterHDTWeapons() {
     const [wbFWaBoRupeeCost, setwbFWaBoRupeeCost] = useLocalStorage("wbFWaBoRupeeCost", 25);
     const [wbFWaBoHornCount, setwbFWaBoHornCountState] = useLocalStorage("wbFWaBoHornCount", 90);
 
-    const [waterWandCraftState, setWaterWandCraftState] = useLocalStorage("waterWandCraftState", "grayscale(100%)")
-    const [waterWandWeaponBonusState, setWaterWandWeaponBonusState] = useLocalStorage("waterWandWeaponBonusState", "grayscale(100%)")
-    const [waterWandRefineState, setWaterWandRefineState] = useLocalStorage("waterWandRefineState", "grayscale(100%)");
-    const [waterWandUnbindState, setWaterWandUnbindState] = useLocalStorage("waterWandUnbindState", 0);
+    const [waterWandCraftState, setWaterWandCraftState] = useLocalStorage("waterHWandCraftState", "grayscale(100%)")
+    const [waterWandWeaponBonusState, setWaterWandWeaponBonusState] = useLocalStorage("waterHWandWeaponBonusState", "grayscale(100%)")
+    const [waterWandRefineState, setWaterWandRefineState] = useLocalStorage("waterHWandRefineState", "grayscale(100%)");
+    const [waterWandUnbindState, setWaterWandUnbindState] = useLocalStorage("waterHWandUnbindState", 0);
 
     const [wbFWaWSphereCount, setwbFWaWSphereCountState] = useLocalStorage("wbFWaWSphereCount", 500);
     const [wbFWaWTailCount, setwbFWaWTailCountState] = useLocalStorage("wbFWaWTailCount", 360);
@@ -115,10 +115,10 @@ export default function WaterHDTWeapons() {
     const [wbFWaWRupeeCost, setwbFWaWRupeeCost] = useLocalStorage("wbFWaWRupeeCost", 25);
     const [wbFWaWHornCount, setwbFWaWHornCountState] = useLocalStorage("wbFWaWHornCount", 90);
 
-    const [waterStaffCraftState, setWaterStaffCraftState] = useLocalStorage("waterStaffCraftState", "grayscale(100%)")
-    const [waterStaffWeaponBonusState, setWaterStaffWeaponBonusState] = useLocalStorage("waterStafWeaponBonusState", "grayscale(100%)")
-    const [waterStaffRefineState, setWaterStaffRefineState] = useLocalStorage("waterStaffRefineState", "grayscale(100%)");
-    const [waterStaffUnbindState, setWaterStaffUnbindState] = useLocalStorage("waterStaffUnbindState", 0);
+    const [waterStaffCraftState, setWaterStaffCraftState] = useLocalStorage("waterHStaffCraftState", "grayscale(100%)")
+    const [waterStaffWeaponBonusState, setWaterStaffWeaponBonusState] = useLocalStorage("waterHStaffWeaponBonusState", "grayscale(100%)")
+    const [waterStaffRefineState, setWaterStaffRefineState] = useLocalStorage("waterHStaffRefineState", "grayscale(100%)");
+    const [waterStaffUnbindState, setWaterStaffUnbindState] = useLocalStorage("waterHStaffUnbindState", 0);
 
     const [wbFWaStSphereCount, setwbFWaStSphereCountState] = useLocalStorage("wbFWaStSphereCount", 500);
     const [wbFWaStTailCount, setwbFWaStTailCountState] = useLocalStorage("wbFWaStTailCount", 360);
@@ -127,10 +127,10 @@ export default function WaterHDTWeapons() {
     const [wbFWaStRupeeCost, setwbFWaStRupeeCost] = useLocalStorage("wbFWaStRupeeCost", 25);
     const [wbFWaStHornCount, setwbFWaStHornCountState] = useLocalStorage("wbFWaStHornCount", 90);
 
-    const [waterManacasterCraftState, setWaterManacasterCraftState] = useLocalStorage("waterManacasterCraftState", "grayscale(100%)")
-    const [waterManacasterWeaponBonusState, setWaterManacasterWeaponBonusState] = useLocalStorage("waterManacasterWeaponBonusState", "grayscale(100%)")
-    const [waterManacasterRefineState, setWaterManacasterRefineState] = useLocalStorage("waterManacasterRefineState", "grayscale(100%)");
-    const [waterManacasterUnbindState, setWaterManacasterUnbindState] = useLocalStorage("waterManacasterUnbindState", 0);
+    const [waterManacasterCraftState, setWaterManacasterCraftState] = useLocalStorage("waterHManacasterCraftState", "grayscale(100%)")
+    const [waterManacasterWeaponBonusState, setWaterManacasterWeaponBonusState] = useLocalStorage("waterHManacasterWeaponBonusState", "grayscale(100%)")
+    const [waterManacasterRefineState, setWaterManacasterRefineState] = useLocalStorage("waterHManacasterRefineState", "grayscale(100%)");
+    const [waterManacasterUnbindState, setWaterManacasterUnbindState] = useLocalStorage("waterHManacasterUnbindState", 0);
 
     const [wbFWaMSphereCount, setwbFWaMSphereCountState] = useLocalStorage("wbFWaMSphereCount", 500);
     const [wbFWaMTailCount, setwbFWaMTailCountState] = useLocalStorage("wbFWaMTailCount", 360);

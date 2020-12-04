@@ -29,12 +29,12 @@ import FireHDTStaffCost from "./FireHDTStaffMats"
 import FireHDTManacasterCost from "./FireHDTManacasterMats"
 
 export default function FireHDTWeapons() {
-    const [fireWeaponChoice, setFireWeaponChoiceState] = useLocalStorage("fireWeaponChoice", "sword")
+    const [fireHWeaponChoice, setFireHWeaponChoiceState] = useLocalStorage("fireHWeaponChoice", "sword")
 
-    const [fireSwordCraftState, setFireSwordCraftState] = useLocalStorage("fireSwordCraftState", "grayscale(100%)")
-    const [fireSwordWeaponBonusState, setFireSwordWeaponBonusState] = useLocalStorage("fireSwordWeaponBonusState", "grayscale(100%)")
-    const [fireSwordRefineState, setFireSwordRefineState] = useLocalStorage("fireSwordRefineState", "grayscale(100%)");
-    const [fireSwordUnbindState, setFireSwordUnbindState] = useLocalStorage("fireSwordUnbindState", 0);
+    const [fireHSwordCraftState, setFireHSwordCraftState] = useLocalStorage("fireHSwordCraftState", "grayscale(100%)")
+    const [fireHSwordWeaponBonusState, setFireHSwordWeaponBonusState] = useLocalStorage("fireHSwordWeaponBonusState", "grayscale(100%)")
+    const [fireHSwordRefineState, setFireHSwordRefineState] = useLocalStorage("fireHSwordRefineState", "grayscale(100%)");
+    const [fireHSwordUnbindState, setFireHSwordUnbindState] = useLocalStorage("fireHSwordUnbindState", 0);
 
     const [wbFHSphereCount, setwbFHSphereCountState] = useLocalStorage("wbFHSphereCount", 500);
     const [wbFHTailCount, setwbFHTailCountState] = useLocalStorage("wbFHTailCount", 360);
@@ -43,10 +43,10 @@ export default function FireHDTWeapons() {
     const [wbFHRupeeCost, setwbFHRupeeCost] = useLocalStorage("wbFHRupeeCost", 25);
     const [wbFHHornCount, setwbFHHornCountState] = useLocalStorage("wbFHHornCount", 90);
 
-    const [fireBladeCraftState, setFireBladeCraftState] = useLocalStorage("fireBladeCraftState", "grayscale(100%)")
-    const [fireBladeWeaponBonusState, setFireBladeWeaponBonusState] = useLocalStorage("fireBladeWeaponBonusState", "grayscale(100%)")
-    const [fireBladeRefineState, setFireBladeRefineState] = useLocalStorage("fireBladeRefineState", "grayscale(100%)");
-    const [fireBladeUnbindState, setFireBladeUnbindState] = useLocalStorage("fireBladeUnbindState", 0);
+    const [fireHBladeCraftState, setFireHBladeCraftState] = useLocalStorage("fireHBladeCraftState", "grayscale(100%)")
+    const [fireHBladeWeaponBonusState, setFireHBladeWeaponBonusState] = useLocalStorage("fireHBladeWeaponBonusState", "grayscale(100%)")
+    const [fireHBladeRefineState, setFireHBladeRefineState] = useLocalStorage("fireHBladeRefineState", "grayscale(100%)");
+    const [fireHBladeUnbindState, setFireHBladeUnbindState] = useLocalStorage("fireHBladeUnbindState", 0);
 
     const [wbFHBlSphereCount, setwbFHBlSphereCountState] = useLocalStorage("wbFHBlSphereCount", 500);
     const [wbFHBlTailCount, setwbFHBlTailCountState] = useLocalStorage("wbFHBlTailCount", 360);
@@ -55,10 +55,10 @@ export default function FireHDTWeapons() {
     const [wbFHBlRupeeCost, setwbFHBlRupeeCost] = useLocalStorage("wbFHBlRupeeCost", 25);
     const [wbFHBlHornCount, setwbFHBlHornCountState] = useLocalStorage("wbFHBlHornCount", 90);
 
-    const [fireDaggerCraftState, setFireDaggerCraftState] = useLocalStorage("fireDaggerCraftState", "grayscale(100%)")
-    const [fireDaggerWeaponBonusState, setFireDaggerWeaponBonusState] = useLocalStorage("fireDaggerWeaponBonusState", "grayscale(100%)")
-    const [fireDaggerRefineState, setFireDaggerRefineState] = useLocalStorage("fireDaggerRefineState", "grayscale(100%)");
-    const [fireDaggerUnbindState, setFireDaggerUnbindState] = useLocalStorage("fireDaggerUnbindState", 0);
+    const [fireHDaggerCraftState, setFireHDaggerCraftState] = useLocalStorage("fireHDaggerCraftState", "grayscale(100%)")
+    const [fireHDaggerWeaponBonusState, setFireHDaggerWeaponBonusState] = useLocalStorage("fireHDaggerWeaponBonusState", "grayscale(100%)")
+    const [fireHDaggerRefineState, setFireHDaggerRefineState] = useLocalStorage("fireHDaggerRefineState", "grayscale(100%)");
+    const [fireHDaggerUnbindState, setFireHDaggerUnbindState] = useLocalStorage("fireHDaggerUnbindState", 0);
 
     const [wbFHDSphereCount, setwbFHDSphereCountState] = useLocalStorage("wbFHDSphereCount", 500);
     const [wbFHDTailCount, setwbFHDTailCountState] = useLocalStorage("wbFHDTailCount", 360);
@@ -67,10 +67,10 @@ export default function FireHDTWeapons() {
     const [wbFHDRupeeCost, setwbFHDRupeeCost] = useLocalStorage("wbFHDRupeeCost", 25);
     const [wbFHDHornCount, setwbFHDHornCountState] = useLocalStorage("wbFHDHornCount", 90);
 
-    const [fireAxeCraftState, setFireAxeCraftState] = useLocalStorage("fireAxeCraftState", "grayscale(100%)")
-    const [fireAxeWeaponBonusState, setFireAxeWeaponBonusState] = useLocalStorage("fireAxeWeaponBonusState", "grayscale(100%)")
-    const [fireAxeRefineState, setFireAxeRefineState] = useLocalStorage("fireAxeRefineState", "grayscale(100%)");
-    const [fireAxeUnbindState, setFireAxeUnbindState] = useLocalStorage("fireAxeUnbindState", 0);
+    const [fireHAxeCraftState, setFireHAxeCraftState] = useLocalStorage("fireHAxeCraftState", "grayscale(100%)")
+    const [fireHAxeWeaponBonusState, setFireHAxeWeaponBonusState] = useLocalStorage("fireHAxeWeaponBonusState", "grayscale(100%)")
+    const [fireHAxeRefineState, setFireHAxeRefineState] = useLocalStorage("fireHAxeRefineState", "grayscale(100%)");
+    const [fireHAxeUnbindState, setFireHAxeUnbindState] = useLocalStorage("fireHAxeUnbindState", 0);
 
     const [wbFHASphereCount, setwbFHASphereCountState] = useLocalStorage("wbFHASphereCount", 500);
     const [wbFHATailCount, setwbFHATailCountState] = useLocalStorage("wbFHATailCount", 360);
@@ -79,10 +79,10 @@ export default function FireHDTWeapons() {
     const [wbFHARupeeCost, setwbFHARupeeCost] = useLocalStorage("wbFHARupeeCost", 25);
     const [wbFHAHornCount, setwbFHAHornCountState] = useLocalStorage("wbFHAHornCount", 90);
 
-    const [fireLanceCraftState, setFireLanceCraftState] = useLocalStorage("fireLanceCraftState", "grayscale(100%)")
-    const [fireLanceWeaponBonusState, setFireLanceWeaponBonusState] = useLocalStorage("fireLanceWeaponBonusState", "grayscale(100%)")
-    const [fireLanceRefineState, setFireLanceRefineState] = useLocalStorage("fireLanceRefineState", "grayscale(100%)");
-    const [fireLanceUnbindState, setFireLanceUnbindState] = useLocalStorage("fireLanceUnbindState", 0);
+    const [fireHLanceCraftState, setFireHLanceCraftState] = useLocalStorage("fireHLanceCraftState", "grayscale(100%)")
+    const [fireHLanceWeaponBonusState, setFireHLanceWeaponBonusState] = useLocalStorage("fireHLanceWeaponBonusState", "grayscale(100%)")
+    const [fireHLanceRefineState, setFireHLanceRefineState] = useLocalStorage("fireHLanceRefineState", "grayscale(100%)");
+    const [fireHLanceUnbindState, setFireHLanceUnbindState] = useLocalStorage("fireHLanceUnbindState", 0);
 
     const [wbFHLSphereCount, setwbFHLSphereCountState] = useLocalStorage("wbFHLSphereCount", 500);
     const [wbFHLTailCount, setwbFHLTailCountState] = useLocalStorage("wbFHLTailCount", 360);
@@ -91,10 +91,10 @@ export default function FireHDTWeapons() {
     const [wbFHLRupeeCost, setwbFHLRupeeCost] = useLocalStorage("wbFHLRupeeCost", 25);
     const [wbFHLHornCount, setwbFHLHornCountState] = useLocalStorage("wbFHLHornCount", 90);
 
-    const [fireBowCraftState, setFireBowCraftState] = useLocalStorage("fireBowCraftState", "grayscale(100%)")
-    const [fireBowWeaponBonusState, setFireBowWeaponBonusState] = useLocalStorage("fireBowWeaponBonusState", "grayscale(100%)")
-    const [fireBowRefineState, setFireBowRefineState] = useLocalStorage("fireBowRefineState", "grayscale(100%)");
-    const [fireBowUnbindState, setFireBowUnbindState] = useLocalStorage("fireBowUnbindState", 0);
+    const [fireHBowCraftState, setFireHBowCraftState] = useLocalStorage("fireHBowCraftState", "grayscale(100%)")
+    const [fireHBowWeaponBonusState, setFireHBowWeaponBonusState] = useLocalStorage("fireHBowWeaponBonusState", "grayscale(100%)")
+    const [fireHBowRefineState, setFireHBowRefineState] = useLocalStorage("fireHBowRefineState", "grayscale(100%)");
+    const [fireHBowUnbindState, setFireHBowUnbindState] = useLocalStorage("fireHBowUnbindState", 0);
 
     const [wbFHBoSphereCount, setwbFHBoSphereCountState] = useLocalStorage("wbFHBoSphereCount", 500);
     const [wbFHBoTailCount, setwbFHBoTailCountState] = useLocalStorage("wbFHBoTailCount", 360);
@@ -103,10 +103,10 @@ export default function FireHDTWeapons() {
     const [wbFHBoRupeeCost, setwbFHBoRupeeCost] = useLocalStorage("wbFHBoRupeeCost", 25);
     const [wbFHBoHornCount, setwbFHBoHornCountState] = useLocalStorage("wbFHBoHornCount", 90);
 
-    const [fireWandCraftState, setFireWandCraftState] = useLocalStorage("fireWandCraftState", "grayscale(100%)")
-    const [fireWandWeaponBonusState, setFireWandWeaponBonusState] = useLocalStorage("fireWandWeaponBonusState", "grayscale(100%)")
-    const [fireWandRefineState, setFireWandRefineState] = useLocalStorage("fireWandRefineState", "grayscale(100%)");
-    const [fireWandUnbindState, setFireWandUnbindState] = useLocalStorage("fireWandUnbindState", 0);
+    const [fireHWandCraftState, setFireHWandCraftState] = useLocalStorage("fireHWandCraftState", "grayscale(100%)")
+    const [fireHWandWeaponBonusState, setFireHWandWeaponBonusState] = useLocalStorage("fireHWandWeaponBonusState", "grayscale(100%)")
+    const [fireHWandRefineState, setFireHWandRefineState] = useLocalStorage("fireHWandRefineState", "grayscale(100%)");
+    const [fireHWandUnbindState, setFireHWandUnbindState] = useLocalStorage("fireHWandUnbindState", 0);
 
     const [wbFHWSphereCount, setwbFHWSphereCountState] = useLocalStorage("wbFHWSphereCount", 500);
     const [wbFHWTailCount, setwbFHWTailCountState] = useLocalStorage("wbFHWTailCount", 360);
@@ -115,10 +115,10 @@ export default function FireHDTWeapons() {
     const [wbFHWRupeeCost, setwbFHWRupeeCost] = useLocalStorage("wbFHWRupeeCost", 25);
     const [wbFHWHornCount, setwbFHWHornCountState] = useLocalStorage("wbFHWHornCount", 90);
 
-    const [fireStaffCraftState, setFireStaffCraftState] = useLocalStorage("fireStaffCraftState", "grayscale(100%)")
-    const [fireStaffWeaponBonusState, setFireStaffWeaponBonusState] = useLocalStorage("fireStaffWeaponBonusState", "grayscale(100%)")
-    const [fireStaffRefineState, setFireStaffRefineState] = useLocalStorage("fireStaffRefineState", "grayscale(100%)");
-    const [fireStaffUnbindState, setFireStaffUnbindState] = useLocalStorage("fireStaffUnbindState", 0);
+    const [fireHStaffCraftState, setFireHStaffCraftState] = useLocalStorage("fireHStaffCraftState", "grayscale(100%)")
+    const [fireHStaffWeaponBonusState, setFireHStaffWeaponBonusState] = useLocalStorage("fireHStaffWeaponBonusState", "grayscale(100%)")
+    const [fireHStaffRefineState, setFireHStaffRefineState] = useLocalStorage("fireHStaffRefineState", "grayscale(100%)");
+    const [fireHStaffUnbindState, setFireHStaffUnbindState] = useLocalStorage("fireHStaffUnbindState", 0);
 
     const [wbFHStSphereCount, setwbFHStSphereCountState] = useLocalStorage("wbFHStSphereCount", 500);
     const [wbFHStTailCount, setwbFHStTailCountState] = useLocalStorage("wbFHStTailCount", 360);
@@ -127,10 +127,10 @@ export default function FireHDTWeapons() {
     const [wbFHStRupeeCost, setwbFHStRupeeCost] = useLocalStorage("wbFHStRupeeCost", 25);
     const [wbFHStHornCount, setwbFHStHornCountState] = useLocalStorage("wbFHStHornCount", 90);
 
-    const [fireManacasterCraftState, setFireManacasterCraftState] = useLocalStorage("fireManacasterCraftState", "grayscale(100%)")
-    const [fireManacasterWeaponBonusState, setFireManacasterWeaponBonusState] = useLocalStorage("fireManacasterWeaponBonusState", "grayscale(100%)")
-    const [fireManacasterRefineState, setFireManacasterRefineState] = useLocalStorage("fireManacasterRefineState", "grayscale(100%)");
-    const [fireManacasterUnbindState, setFireManacasterUnbindState] = useLocalStorage("fireManacasterUnbindState", 0);
+    const [fireHManacasterCraftState, setFireHManacasterCraftState] = useLocalStorage("fireHManacasterCraftState", "grayscale(100%)")
+    const [fireHManacasterWeaponBonusState, setFireHManacasterWeaponBonusState] = useLocalStorage("fireHManacasterWeaponBonusState", "grayscale(100%)")
+    const [fireHManacasterRefineState, setFireHManacasterRefineState] = useLocalStorage("fireHManacasterRefineState", "grayscale(100%)");
+    const [fireHManacasterUnbindState, setFireHManacasterUnbindState] = useLocalStorage("fireHManacasterUnbindState", 0);
 
     const [wbFHMSphereCount, setwbFHMSphereCountState] = useLocalStorage("wbFHMSphereCount", 500);
     const [wbFHMTailCount, setwbFHMTailCountState] = useLocalStorage("wbFHMTailCount", 360);
@@ -164,48 +164,48 @@ export default function FireHDTWeapons() {
     }
 
     function fireHDTWeaponSelection() {
-        if (fireWeaponChoice == "sword") {
+        if (fireHWeaponChoice == "sword") {
             return <FireHDTSwordCost wbFHSphereCount={wbFHSphereCount} wbFHTailCount={wbFHTailCount} wbFHHeartCount={wbFHHeartCount} wbFHOriCount={wbFHOriCount} wbFHRupeeCost={wbFHRupeeCost.toFixed(1)} wbFHHornCount={wbFHHornCount} />
         }
-        if (fireWeaponChoice == "blade") {
+        if (fireHWeaponChoice == "blade") {
             return <FireHDTBladeCost wbFHBlSphereCount={wbFHBlSphereCount} wbFHBlTailCount={wbFHBlTailCount} wbFHBlHeartCount={wbFHBlHeartCount} wbFHBlOriCount={wbFHBlOriCount} wbFHBlRupeeCost={wbFHBlRupeeCost.toFixed(1)} wbFHBlHornCount={wbFHBlHornCount} />
         }
-        if (fireWeaponChoice == "dagger") {
+        if (fireHWeaponChoice == "dagger") {
             return <FireHDTDaggerCost wbFHDSphereCount={wbFHDSphereCount} wbFHDTailCount={wbFHDTailCount} wbFHDHeartCount={wbFHDHeartCount} wbFHDOriCount={wbFHDOriCount} wbFHDRupeeCost={wbFHDRupeeCost.toFixed(1)} wbFHDHornCount={wbFHDHornCount} />
         }
-        if (fireWeaponChoice == "axe") {
+        if (fireHWeaponChoice == "axe") {
             return <FireHDTAxeCost wbFHASphereCount={wbFHASphereCount} wbFHATailCount={wbFHATailCount} wbFHAHeartCount={wbFHAHeartCount} wbFHAOriCount={wbFHAOriCount} wbFHARupeeCost={wbFHARupeeCost.toFixed(1)} wbFHAHornCount={wbFHAHornCount} />
         }
-        if (fireWeaponChoice == "lance") {
+        if (fireHWeaponChoice == "lance") {
             return <FireHDTLanceCost wbFHLSphereCount={wbFHLSphereCount} wbFHLTailCount={wbFHLTailCount} wbFHLHeartCount={wbFHLHeartCount} wbFHLOriCount={wbFHLOriCount} wbFHLRupeeCost={wbFHLRupeeCost.toFixed(1)} wbFHLHornCount={wbFHLHornCount} />
         }
-        if (fireWeaponChoice == "bow") {
+        if (fireHWeaponChoice == "bow") {
             return <FireHDTBowCost wbFHBoSphereCount={wbFHBoSphereCount} wbFHBoTailCount={wbFHBoTailCount} wbFHBoHeartCount={wbFHBoHeartCount} wbFHBoOriCount={wbFHBoOriCount} wbFHBoRupeeCost={wbFHBoRupeeCost.toFixed(1)} wbFHBoHornCount={wbFHBoHornCount} />
         }
-        if (fireWeaponChoice == "wand") {
+        if (fireHWeaponChoice == "wand") {
             return <FireHDTWandCost wbFHWSphereCount={wbFHWSphereCount} wbFHWTailCount={wbFHWTailCount} wbFHWHeartCount={wbFHWHeartCount} wbFHWOriCount={wbFHWOriCount} wbFHWRupeeCost={wbFHWRupeeCost.toFixed(1)} wbFHWHornCount={wbFHWHornCount} />
         }
-        if (fireWeaponChoice == "staff") {
+        if (fireHWeaponChoice == "staff") {
             return <FireHDTStaffCost wbFHStSphereCount={wbFHStSphereCount} wbFHStTailCount={wbFHStTailCount} wbFHStHeartCount={wbFHStHeartCount} wbFHStOriCount={wbFHStOriCount} wbFHStRupeeCost={wbFHStRupeeCost.toFixed(1)} wbFHStHornCount={wbFHStHornCount} />
         }
-        if (fireWeaponChoice == "manacaster") {
+        if (fireHWeaponChoice == "manacaster") {
             return <FireHDTManacasterCost wbFHMSphereCount={wbFHMSphereCount} wbFHMTailCount={wbFHMTailCount} wbFHMHeartCount={wbFHMHeartCount} wbFHMOriCount={wbFHMOriCount} wbFHMRupeeCost={wbFHMRupeeCost.toFixed(1)} wbFHMHornCount={wbFHMHornCount} />
         }
     }
 
     function craftFireSword() {
-        if (fireSwordCraftState == "grayscale(100%)") {
-            setFireSwordCraftState("grayscale(0%)")
-            setFireWeaponChoiceState("sword")
+        if (fireHSwordCraftState == "grayscale(100%)") {
+            setFireHSwordCraftState("grayscale(0%)")
+            setFireHWeaponChoiceState("sword")
             setwbFHSphereCountState(wbFHSphereCount - 25)
             setwbFHTailCountState(wbFHTailCount - 18)
             setwbFHHeartCountState(wbFHHeartCount - 5)
             setwbFHOriCountState(wbFHOriCount - 1)
             setwbFHRupeeCost(parseFloat(wbFHRupeeCost - 1.2))
         }
-        else if (fireSwordCraftState == "grayscale(0%)") {
-            setFireSwordCraftState("grayscale(100%)")
-            setFireWeaponChoiceState("sword")
+        else if (fireHSwordCraftState == "grayscale(0%)") {
+            setFireHSwordCraftState("grayscale(100%)")
+            setFireHWeaponChoiceState("sword")
             setwbFHSphereCountState(wbFHSphereCount + 25)
             setwbFHTailCountState(wbFHTailCount + 18)
             setwbFHHeartCountState(wbFHHeartCount + 5)
@@ -215,9 +215,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireSwordWeaponBonus() {
-        if (fireSwordWeaponBonusState == "grayscale(100%)") {
-            setFireSwordWeaponBonusState("grayscale(0%)")
-            setFireWeaponChoiceState("sword")
+        if (fireHSwordWeaponBonusState == "grayscale(100%)") {
+            setFireHSwordWeaponBonusState("grayscale(0%)")
+            setFireHWeaponChoiceState("sword")
             setwbFHSphereCountState(wbFHSphereCount - 150)
             setwbFHTailCountState(wbFHTailCount - 100)
             setwbFHHornCountState(wbFHHornCount - 30)
@@ -225,9 +225,9 @@ export default function FireHDTWeapons() {
             setwbFHOriCountState(wbFHOriCount - 30)
             setwbFHRupeeCost(parseFloat(wbFHRupeeCost - 10))
         }
-        else if (fireSwordWeaponBonusState == "grayscale(0%)") {
-            setFireSwordWeaponBonusState("grayscale(100%)")
-            setFireWeaponChoiceState("sword")
+        else if (fireHSwordWeaponBonusState == "grayscale(0%)") {
+            setFireHSwordWeaponBonusState("grayscale(100%)")
+            setFireHWeaponChoiceState("sword")
             setwbFHSphereCountState(wbFHSphereCount + 150)
             setwbFHTailCountState(wbFHTailCount + 100)
             setwbFHHornCountState(wbFHHornCount + 30)
@@ -238,9 +238,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireSwordRefine() {
-        if (fireSwordRefineState == "grayscale(100%)") {
-            setFireSwordRefineState("grayscale(0%)")
-            setFireWeaponChoiceState("sword")
+        if (fireHSwordRefineState == "grayscale(100%)") {
+            setFireHSwordRefineState("grayscale(0%)")
+            setFireHWeaponChoiceState("sword")
             setwbFHSphereCountState(wbFHSphereCount - 50)
             setwbFHTailCountState(wbFHTailCount - 40)
             setwbFHHornCountState(wbFHHornCount - 30)
@@ -248,9 +248,9 @@ export default function FireHDTWeapons() {
             setwbFHOriCountState(wbFHOriCount - 3)
             setwbFHRupeeCost(parseFloat(wbFHRupeeCost - 1.5))
         }
-        else if (fireSwordRefineState == "grayscale(0%)") {
-            setFireSwordRefineState("grayscale(100%)")
-            setFireWeaponChoiceState("sword")
+        else if (fireHSwordRefineState == "grayscale(0%)") {
+            setFireHSwordRefineState("grayscale(100%)")
+            setFireHWeaponChoiceState("sword")
             setwbFHSphereCountState(wbFHSphereCount + 50)
             setwbFHTailCountState(wbFHTailCount + 40)
             setwbFHHornCountState(wbFHHornCount + 30)
@@ -261,10 +261,10 @@ export default function FireHDTWeapons() {
     }
 
     function handleFireSwordUnbindIncrement(event) {
-        setFireWeaponChoiceState("sword");
-        if (fireSwordUnbindState < event.target.value) {
-            if (event.target.value - fireSwordUnbindState == 1) {
-                setFireSwordUnbindState(event.target.value);
+        setFireHWeaponChoiceState("sword");
+        if (fireHSwordUnbindState < event.target.value) {
+            if (event.target.value - fireHSwordUnbindState == 1) {
+                setFireHSwordUnbindState(event.target.value);
                 if (event.target.value >= 1 && event.target.value <= 4) {
                     setwbFHSphereCountState(wbFHSphereCount - 25)
                     setwbFHTailCountState(wbFHTailCount - 18)
@@ -282,9 +282,9 @@ export default function FireHDTWeapons() {
                 }
             }
         }
-        else if (fireSwordUnbindState > event.target.value) {
-            if (fireSwordUnbindState - event.target.value == 1) {
-                setFireSwordUnbindState(event.target.value);
+        else if (fireHSwordUnbindState > event.target.value) {
+            if (fireHSwordUnbindState - event.target.value == 1) {
+                setFireHSwordUnbindState(event.target.value);
                 if (event.target.value >= 0 && event.target.value <= 3) {
                     setwbFHSphereCountState(wbFHSphereCount + 25)
                     setwbFHTailCountState(wbFHTailCount + 18)
@@ -305,18 +305,18 @@ export default function FireHDTWeapons() {
     }
 
     function craftFireBlade() {
-        if (fireBladeCraftState == "grayscale(100%)") {
-            setFireBladeCraftState("grayscale(0%)")
-            setFireWeaponChoiceState("blade")
+        if (fireHBladeCraftState == "grayscale(100%)") {
+            setFireHBladeCraftState("grayscale(0%)")
+            setFireHWeaponChoiceState("blade")
             setwbFHBlSphereCountState(wbFHBlSphereCount - 25)
             setwbFHBlTailCountState(wbFHBlTailCount - 18)
             setwbFHBlHeartCountState(wbFHBlHeartCount - 5)
             setwbFHBlOriCountState(wbFHBlOriCount - 1)
             setwbFHBlRupeeCost(parseFloat(wbFHBlRupeeCost - 1.2))
         }
-        else if (fireBladeCraftState == "grayscale(0%)") {
-            setFireBladeCraftState("grayscale(100%)")
-            setFireWeaponChoiceState("blade")
+        else if (fireHBladeCraftState == "grayscale(0%)") {
+            setFireHBladeCraftState("grayscale(100%)")
+            setFireHWeaponChoiceState("blade")
             setwbFHBlSphereCountState(wbFHBlSphereCount + 25)
             setwbFHBlTailCountState(wbFHBlTailCount + 18)
             setwbFHBlHeartCountState(wbFHBlHeartCount + 5)
@@ -326,9 +326,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireBladeWeaponBonus() {
-        if (fireBladeWeaponBonusState == "grayscale(100%)") {
-            setFireBladeWeaponBonusState("grayscale(0%)")
-            setFireWeaponChoiceState("blade")
+        if (fireHBladeWeaponBonusState == "grayscale(100%)") {
+            setFireHBladeWeaponBonusState("grayscale(0%)")
+            setFireHWeaponChoiceState("blade")
             setwbFHBlSphereCountState(wbFHBlSphereCount - 150)
             setwbFHBlTailCountState(wbFHBlTailCount - 100)
             setwbFHBlHornCountState(wbFHBlHornCount - 30)
@@ -336,9 +336,9 @@ export default function FireHDTWeapons() {
             setwbFHBlOriCountState(wbFHBlOriCount - 30)
             setwbFHBlRupeeCost(parseFloat(wbFHBlRupeeCost - 10))
         }
-        else if (fireBladeWeaponBonusState == "grayscale(0%)") {
-            setFireBladeWeaponBonusState("grayscale(100%)")
-            setFireWeaponChoiceState("blade")
+        else if (fireHBladeWeaponBonusState == "grayscale(0%)") {
+            setFireHBladeWeaponBonusState("grayscale(100%)")
+            setFireHWeaponChoiceState("blade")
             setwbFHBlSphereCountState(wbFHBlSphereCount + 150)
             setwbFHBlTailCountState(wbFHBlTailCount + 100)
             setwbFHBlHornCountState(wbFHBlHornCount + 30)
@@ -349,9 +349,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireBladeRefine() {
-        if (fireBladeRefineState == "grayscale(100%)") {
-            setFireBladeRefineState("grayscale(0%)")
-            setFireWeaponChoiceState("blade")
+        if (fireHBladeRefineState == "grayscale(100%)") {
+            setFireHBladeRefineState("grayscale(0%)")
+            setFireHWeaponChoiceState("blade")
             setwbFHBlSphereCountState(wbFHBlSphereCount - 50)
             setwbFHBlTailCountState(wbFHBlTailCount - 40)
             setwbFHBlHornCountState(wbFHBlHornCount - 30)
@@ -359,9 +359,9 @@ export default function FireHDTWeapons() {
             setwbFHBlOriCountState(wbFHBlOriCount - 3)
             setwbFHBlRupeeCost(parseFloat(wbFHBlRupeeCost - 1.5))
         }
-        else if (fireBladeRefineState == "grayscale(0%)") {
-            setFireBladeRefineState("grayscale(100%)")
-            setFireWeaponChoiceState("blade")
+        else if (fireHBladeRefineState == "grayscale(0%)") {
+            setFireHBladeRefineState("grayscale(100%)")
+            setFireHWeaponChoiceState("blade")
             setwbFHBlSphereCountState(wbFHBlSphereCount + 50)
             setwbFHBlTailCountState(wbFHBlTailCount + 40)
             setwbFHBlHornCountState(wbFHBlHornCount + 30)
@@ -372,10 +372,10 @@ export default function FireHDTWeapons() {
     }
 
     function handleFireBladeUnbindIncrement(event) {
-        setFireWeaponChoiceState("blade");
-        if (fireBladeUnbindState < event.target.value) {
-            if (event.target.value - fireBladeUnbindState == 1) {
-                setFireBladeUnbindState(event.target.value);
+        setFireHWeaponChoiceState("blade");
+        if (fireHBladeUnbindState < event.target.value) {
+            if (event.target.value - fireHBladeUnbindState == 1) {
+                setFireHBladeUnbindState(event.target.value);
                 if (event.target.value >= 1 && event.target.value <= 4) {
                     setwbFHBlSphereCountState(wbFHBlSphereCount - 25)
                     setwbFHBlTailCountState(wbFHBlTailCount - 18)
@@ -393,9 +393,9 @@ export default function FireHDTWeapons() {
                 }
             }
         }
-        else if (fireBladeUnbindState > event.target.value) {
-            if (fireBladeUnbindState - event.target.value == 1) {
-                setFireBladeUnbindState(event.target.value);
+        else if (fireHBladeUnbindState > event.target.value) {
+            if (fireHBladeUnbindState - event.target.value == 1) {
+                setFireHBladeUnbindState(event.target.value);
                 if (event.target.value >= 0 && event.target.value <= 3) {
                     setwbFHBlSphereCountState(wbFHBlSphereCount + 25)
                     setwbFHBlTailCountState(wbFHBlTailCount + 18)
@@ -416,18 +416,18 @@ export default function FireHDTWeapons() {
     }
 
     function craftFireDagger() {
-        if (fireDaggerCraftState == "grayscale(100%)") {
-            setFireDaggerCraftState("grayscale(0%)")
-            setFireWeaponChoiceState("dagger")
+        if (fireHDaggerCraftState == "grayscale(100%)") {
+            setFireHDaggerCraftState("grayscale(0%)")
+            setFireHWeaponChoiceState("dagger")
             setwbFHDSphereCountState(wbFHDSphereCount - 25)
             setwbFHDTailCountState(wbFHDTailCount - 18)
             setwbFHDHeartCountState(wbFHDHeartCount - 5)
             setwbFHDOriCountState(wbFHDOriCount - 1)
             setwbFHDRupeeCost(parseFloat(wbFHDRupeeCost - 1.2))
         }
-        else if (fireDaggerCraftState == "grayscale(0%)") {
-            setFireDaggerCraftState("grayscale(100%)")
-            setFireWeaponChoiceState("dagger")
+        else if (fireHDaggerCraftState == "grayscale(0%)") {
+            setFireHDaggerCraftState("grayscale(100%)")
+            setFireHWeaponChoiceState("dagger")
             setwbFHDSphereCountState(wbFHDSphereCount + 25)
             setwbFHDTailCountState(wbFHDTailCount + 18)
             setwbFHDHeartCountState(wbFHDHeartCount + 5)
@@ -437,9 +437,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireDaggerWeaponBonus() {
-        if (fireDaggerWeaponBonusState == "grayscale(100%)") {
-            setFireDaggerWeaponBonusState("grayscale(0%)")
-            setFireWeaponChoiceState("dagger")
+        if (fireHDaggerWeaponBonusState == "grayscale(100%)") {
+            setFireHDaggerWeaponBonusState("grayscale(0%)")
+            setFireHWeaponChoiceState("dagger")
             setwbFHDSphereCountState(wbFHDSphereCount - 150)
             setwbFHDTailCountState(wbFHDTailCount - 100)
             setwbFHDHornCountState(wbFHDHornCount - 30)
@@ -447,9 +447,9 @@ export default function FireHDTWeapons() {
             setwbFHDOriCountState(wbFHDOriCount - 30)
             setwbFHDRupeeCost(parseFloat(wbFHDRupeeCost - 10))
         }
-        else if (fireDaggerWeaponBonusState == "grayscale(0%)") {
-            setFireDaggerWeaponBonusState("grayscale(100%)")
-            setFireWeaponChoiceState("dagger")
+        else if (fireHDaggerWeaponBonusState == "grayscale(0%)") {
+            setFireHDaggerWeaponBonusState("grayscale(100%)")
+            setFireHWeaponChoiceState("dagger")
             setwbFHDSphereCountState(wbFHDSphereCount + 150)
             setwbFHDTailCountState(wbFHDTailCount + 100)
             setwbFHDHornCountState(wbFHDHornCount + 30)
@@ -460,9 +460,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireDaggerRefine() {
-        if (fireDaggerRefineState == "grayscale(100%)") {
-            setFireDaggerRefineState("grayscale(0%)")
-            setFireWeaponChoiceState("dagger")
+        if (fireHDaggerRefineState == "grayscale(100%)") {
+            setFireHDaggerRefineState("grayscale(0%)")
+            setFireHWeaponChoiceState("dagger")
             setwbFHDSphereCountState(wbFHDSphereCount - 50)
             setwbFHDTailCountState(wbFHDTailCount - 40)
             setwbFHDHornCountState(wbFHDHornCount - 30)
@@ -470,9 +470,9 @@ export default function FireHDTWeapons() {
             setwbFHDOriCountState(wbFHDOriCount - 3)
             setwbFHDRupeeCost(parseFloat(wbFHDRupeeCost - 1.5))
         }
-        else if (fireDaggerRefineState == "grayscale(0%)") {
-            setFireDaggerRefineState("grayscale(100%)")
-            setFireWeaponChoiceState("dagger")
+        else if (fireHDaggerRefineState == "grayscale(0%)") {
+            setFireHDaggerRefineState("grayscale(100%)")
+            setFireHWeaponChoiceState("dagger")
             setwbFHDSphereCountState(wbFHDSphereCount + 50)
             setwbFHDTailCountState(wbFHDTailCount + 40)
             setwbFHDHornCountState(wbFHDHornCount + 30)
@@ -483,10 +483,10 @@ export default function FireHDTWeapons() {
     }
 
     function handleFireDaggerUnbindIncrement(event) {
-        setFireWeaponChoiceState("dagger");
-        if (fireDaggerUnbindState < event.target.value) {
-            if (event.target.value - fireDaggerUnbindState == 1) {
-                setFireDaggerUnbindState(event.target.value);
+        setFireHWeaponChoiceState("dagger");
+        if (fireHDaggerUnbindState < event.target.value) {
+            if (event.target.value - fireHDaggerUnbindState == 1) {
+                setFireHDaggerUnbindState(event.target.value);
                 if (event.target.value >= 1 && event.target.value <= 4) {
                     setwbFHDSphereCountState(wbFHDSphereCount - 25)
                     setwbFHDTailCountState(wbFHDTailCount - 18)
@@ -504,9 +504,9 @@ export default function FireHDTWeapons() {
                 }
             }
         }
-        else if (fireDaggerUnbindState > event.target.value) {
-            if (fireDaggerUnbindState - event.target.value == 1) {
-                setFireDaggerUnbindState(event.target.value);
+        else if (fireHDaggerUnbindState > event.target.value) {
+            if (fireHDaggerUnbindState - event.target.value == 1) {
+                setFireHDaggerUnbindState(event.target.value);
                 if (event.target.value >= 0 && event.target.value <= 3) {
                     setwbFHDSphereCountState(wbFHDSphereCount + 25)
                     setwbFHDTailCountState(wbFHDTailCount + 18)
@@ -527,18 +527,18 @@ export default function FireHDTWeapons() {
     }
 
     function craftFireAxe() {
-        if (fireAxeCraftState == "grayscale(100%)") {
-            setFireAxeCraftState("grayscale(0%)")
-            setFireWeaponChoiceState("axe")
+        if (fireHAxeCraftState == "grayscale(100%)") {
+            setFireHAxeCraftState("grayscale(0%)")
+            setFireHWeaponChoiceState("axe")
             setwbFHASphereCountState(wbFHASphereCount - 25)
             setwbFHATailCountState(wbFHATailCount - 18)
             setwbFHAHeartCountState(wbFHAHeartCount - 5)
             setwbFHAOriCountState(wbFHAOriCount - 1)
             setwbFHARupeeCost(parseFloat(wbFHARupeeCost - 1.2))
         }
-        else if (fireAxeCraftState == "grayscale(0%)") {
-            setFireAxeCraftState("grayscale(100%)")
-            setFireWeaponChoiceState("axe")
+        else if (fireHAxeCraftState == "grayscale(0%)") {
+            setFireHAxeCraftState("grayscale(100%)")
+            setFireHWeaponChoiceState("axe")
             setwbFHASphereCountState(wbFHASphereCount + 25)
             setwbFHATailCountState(wbFHATailCount + 18)
             setwbFHAHeartCountState(wbFHAHeartCount + 5)
@@ -548,9 +548,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireAxeWeaponBonus() {
-        if (fireAxeWeaponBonusState == "grayscale(100%)") {
-            setFireAxeWeaponBonusState("grayscale(0%)")
-            setFireWeaponChoiceState("axe")
+        if (fireHAxeWeaponBonusState == "grayscale(100%)") {
+            setFireHAxeWeaponBonusState("grayscale(0%)")
+            setFireHWeaponChoiceState("axe")
             setwbFHASphereCountState(wbFHASphereCount - 150)
             setwbFHATailCountState(wbFHATailCount - 100)
             setwbFHAHornCountState(wbFHAHornCount - 30)
@@ -558,9 +558,9 @@ export default function FireHDTWeapons() {
             setwbFHAOriCountState(wbFHAOriCount - 30)
             setwbFHARupeeCost(parseFloat(wbFHARupeeCost - 10))
         }
-        else if (fireAxeWeaponBonusState == "grayscale(0%)") {
-            setFireAxeWeaponBonusState("grayscale(100%)")
-            setFireWeaponChoiceState("axe")
+        else if (fireHAxeWeaponBonusState == "grayscale(0%)") {
+            setFireHAxeWeaponBonusState("grayscale(100%)")
+            setFireHWeaponChoiceState("axe")
             setwbFHASphereCountState(wbFHASphereCount + 150)
             setwbFHATailCountState(wbFHATailCount + 100)
             setwbFHAHornCountState(wbFHAHornCount + 30)
@@ -571,9 +571,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireAxeRefine() {
-        if (fireAxeRefineState == "grayscale(100%)") {
-            setFireAxeRefineState("grayscale(0%)")
-            setFireWeaponChoiceState("axe")
+        if (fireHAxeRefineState == "grayscale(100%)") {
+            setFireHAxeRefineState("grayscale(0%)")
+            setFireHWeaponChoiceState("axe")
             setwbFHASphereCountState(wbFHASphereCount - 50)
             setwbFHATailCountState(wbFHATailCount - 40)
             setwbFHAHornCountState(wbFHAHornCount - 30)
@@ -581,9 +581,9 @@ export default function FireHDTWeapons() {
             setwbFHAOriCountState(wbFHAOriCount - 3)
             setwbFHARupeeCost(parseFloat(wbFHARupeeCost - 1.5))
         }
-        else if (fireAxeRefineState == "grayscale(0%)") {
-            setFireAxeRefineState("grayscale(100%)")
-            setFireWeaponChoiceState("axe")
+        else if (fireHAxeRefineState == "grayscale(0%)") {
+            setFireHAxeRefineState("grayscale(100%)")
+            setFireHWeaponChoiceState("axe")
             setwbFHASphereCountState(wbFHASphereCount + 50)
             setwbFHATailCountState(wbFHATailCount + 40)
             setwbFHAHornCountState(wbFHAHornCount + 30)
@@ -594,10 +594,10 @@ export default function FireHDTWeapons() {
     }
 
     function handleFireAxeUnbindIncrement(event) {
-        setFireWeaponChoiceState("axe");
-        if (fireAxeUnbindState < event.target.value) {
-            if (event.target.value - fireAxeUnbindState == 1) {
-                setFireAxeUnbindState(event.target.value);
+        setFireHWeaponChoiceState("axe");
+        if (fireHAxeUnbindState < event.target.value) {
+            if (event.target.value - fireHAxeUnbindState == 1) {
+                setFireHAxeUnbindState(event.target.value);
                 if (event.target.value >= 1 && event.target.value <= 4) {
                     setwbFHASphereCountState(wbFHASphereCount - 25)
                     setwbFHATailCountState(wbFHATailCount - 18)
@@ -615,9 +615,9 @@ export default function FireHDTWeapons() {
                 }
             }
         }
-        else if (fireAxeUnbindState > event.target.value) {
-            if (fireAxeUnbindState - event.target.value == 1) {
-                setFireAxeUnbindState(event.target.value);
+        else if (fireHAxeUnbindState > event.target.value) {
+            if (fireHAxeUnbindState - event.target.value == 1) {
+                setFireHAxeUnbindState(event.target.value);
                 if (event.target.value >= 0 && event.target.value <= 3) {
                     setwbFHASphereCountState(wbFHASphereCount + 25)
                     setwbFHATailCountState(wbFHATailCount + 18)
@@ -638,18 +638,18 @@ export default function FireHDTWeapons() {
     }
 
     function craftFireLance() {
-        if (fireLanceCraftState == "grayscale(100%)") {
-            setFireLanceCraftState("grayscale(0%)")
-            setFireWeaponChoiceState("lance")
+        if (fireHLanceCraftState == "grayscale(100%)") {
+            setFireHLanceCraftState("grayscale(0%)")
+            setFireHWeaponChoiceState("lance")
             setwbFHLSphereCountState(wbFHLSphereCount - 25)
             setwbFHLTailCountState(wbFHLTailCount - 18)
             setwbFHLHeartCountState(wbFHLHeartCount - 5)
             setwbFHLOriCountState(wbFHLOriCount - 1)
             setwbFHLRupeeCost(parseFloat(wbFHLRupeeCost - 1.2))
         }
-        else if (fireLanceCraftState == "grayscale(0%)") {
-            setFireLanceCraftState("grayscale(100%)")
-            setFireWeaponChoiceState("lance")
+        else if (fireHLanceCraftState == "grayscale(0%)") {
+            setFireHLanceCraftState("grayscale(100%)")
+            setFireHWeaponChoiceState("lance")
             setwbFHLSphereCountState(wbFHLSphereCount + 25)
             setwbFHLTailCountState(wbFHLTailCount + 18)
             setwbFHLHeartCountState(wbFHLHeartCount + 5)
@@ -659,9 +659,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireLanceWeaponBonus() {
-        if (fireLanceWeaponBonusState == "grayscale(100%)") {
-            setFireLanceWeaponBonusState("grayscale(0%)")
-            setFireWeaponChoiceState("lance")
+        if (fireHLanceWeaponBonusState == "grayscale(100%)") {
+            setFireHLanceWeaponBonusState("grayscale(0%)")
+            setFireHWeaponChoiceState("lance")
             setwbFHLSphereCountState(wbFHLSphereCount - 150)
             setwbFHLTailCountState(wbFHLTailCount - 100)
             setwbFHLHornCountState(wbFHLHornCount - 30)
@@ -669,9 +669,9 @@ export default function FireHDTWeapons() {
             setwbFHLOriCountState(wbFHLOriCount - 30)
             setwbFHLRupeeCost(parseFloat(wbFHLRupeeCost - 10))
         }
-        else if (fireLanceWeaponBonusState == "grayscale(0%)") {
-            setFireLanceWeaponBonusState("grayscale(100%)")
-            setFireWeaponChoiceState("lance")
+        else if (fireHLanceWeaponBonusState == "grayscale(0%)") {
+            setFireHLanceWeaponBonusState("grayscale(100%)")
+            setFireHWeaponChoiceState("lance")
             setwbFHLSphereCountState(wbFHLSphereCount + 150)
             setwbFHLTailCountState(wbFHLTailCount + 100)
             setwbFHLHornCountState(wbFHLHornCount + 30)
@@ -682,9 +682,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireLanceRefine() {
-        if (fireLanceRefineState == "grayscale(100%)") {
-            setFireLanceRefineState("grayscale(0%)")
-            setFireWeaponChoiceState("lance")
+        if (fireHLanceRefineState == "grayscale(100%)") {
+            setFireHLanceRefineState("grayscale(0%)")
+            setFireHWeaponChoiceState("lance")
             setwbFHLSphereCountState(wbFHLSphereCount - 50)
             setwbFHLTailCountState(wbFHLTailCount - 40)
             setwbFHLHornCountState(wbFHLHornCount - 30)
@@ -692,9 +692,9 @@ export default function FireHDTWeapons() {
             setwbFHLOriCountState(wbFHLOriCount - 3)
             setwbFHLRupeeCost(parseFloat(wbFHLRupeeCost - 1.5))
         }
-        else if (fireLanceRefineState == "grayscale(0%)") {
-            setFireLanceRefineState("grayscale(100%)")
-            setFireWeaponChoiceState("lance")
+        else if (fireHLanceRefineState == "grayscale(0%)") {
+            setFireHLanceRefineState("grayscale(100%)")
+            setFireHWeaponChoiceState("lance")
             setwbFHLSphereCountState(wbFHLSphereCount + 50)
             setwbFHLTailCountState(wbFHLTailCount + 40)
             setwbFHLHornCountState(wbFHLHornCount + 30)
@@ -705,10 +705,10 @@ export default function FireHDTWeapons() {
     }
 
     function handleFireLanceUnbindIncrement(event) {
-        setFireWeaponChoiceState("lance");
-        if (fireLanceUnbindState < event.target.value) {
-            if (event.target.value - fireLanceUnbindState == 1) {
-                setFireLanceUnbindState(event.target.value);
+        setFireHWeaponChoiceState("lance");
+        if (fireHLanceUnbindState < event.target.value) {
+            if (event.target.value - fireHLanceUnbindState == 1) {
+                setFireHLanceUnbindState(event.target.value);
                 if (event.target.value >= 1 && event.target.value <= 4) {
                     setwbFHLSphereCountState(wbFHLSphereCount - 25)
                     setwbFHLTailCountState(wbFHLTailCount - 18)
@@ -726,9 +726,9 @@ export default function FireHDTWeapons() {
                 }
             }
         }
-        else if (fireLanceUnbindState > event.target.value) {
-            if (fireLanceUnbindState - event.target.value == 1) {
-                setFireLanceUnbindState(event.target.value);
+        else if (fireHLanceUnbindState > event.target.value) {
+            if (fireHLanceUnbindState - event.target.value == 1) {
+                setFireHLanceUnbindState(event.target.value);
                 if (event.target.value >= 0 && event.target.value <= 3) {
                     setwbFHLSphereCountState(wbFHLSphereCount + 25)
                     setwbFHLTailCountState(wbFHLTailCount + 18)
@@ -749,18 +749,18 @@ export default function FireHDTWeapons() {
     }
 
     function craftFireBow() {
-        if (fireBowCraftState == "grayscale(100%)") {
-            setFireBowCraftState("grayscale(0%)")
-            setFireWeaponChoiceState("bow")
+        if (fireHBowCraftState == "grayscale(100%)") {
+            setFireHBowCraftState("grayscale(0%)")
+            setFireHWeaponChoiceState("bow")
             setwbFHBoSphereCountState(wbFHBoSphereCount - 25)
             setwbFHBoTailCountState(wbFHBoTailCount - 18)
             setwbFHBoHeartCountState(wbFHBoHeartCount - 5)
             setwbFHBoOriCountState(wbFHBoOriCount - 1)
             setwbFHBoRupeeCost(parseFloat(wbFHBoRupeeCost - 1.2))
         }
-        else if (fireBowCraftState == "grayscale(0%)") {
-            setFireBowCraftState("grayscale(100%)")
-            setFireWeaponChoiceState("bow")
+        else if (fireHBowCraftState == "grayscale(0%)") {
+            setFireHBowCraftState("grayscale(100%)")
+            setFireHWeaponChoiceState("bow")
             setwbFHBoSphereCountState(wbFHBoSphereCount + 25)
             setwbFHBoTailCountState(wbFHBoTailCount + 18)
             setwbFHBoHeartCountState(wbFHBoHeartCount + 5)
@@ -770,9 +770,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireBowWeaponBonus() {
-        if (fireBowWeaponBonusState == "grayscale(100%)") {
-            setFireBowWeaponBonusState("grayscale(0%)")
-            setFireWeaponChoiceState("bow")
+        if (fireHBowWeaponBonusState == "grayscale(100%)") {
+            setFireHBowWeaponBonusState("grayscale(0%)")
+            setFireHWeaponChoiceState("bow")
             setwbFHBoSphereCountState(wbFHBoSphereCount - 150)
             setwbFHBoTailCountState(wbFHBoTailCount - 100)
             setwbFHBoHornCountState(wbFHBoHornCount - 30)
@@ -780,9 +780,9 @@ export default function FireHDTWeapons() {
             setwbFHBoOriCountState(wbFHBoOriCount - 30)
             setwbFHBoRupeeCost(parseFloat(wbFHBoRupeeCost - 10))
         }
-        else if (fireBowWeaponBonusState == "grayscale(0%)") {
-            setFireBowWeaponBonusState("grayscale(100%)")
-            setFireWeaponChoiceState("bow")
+        else if (fireHBowWeaponBonusState == "grayscale(0%)") {
+            setFireHBowWeaponBonusState("grayscale(100%)")
+            setFireHWeaponChoiceState("bow")
             setwbFHBoSphereCountState(wbFHBoSphereCount + 150)
             setwbFHBoTailCountState(wbFHBoTailCount + 100)
             setwbFHBoHornCountState(wbFHBoHornCount + 30)
@@ -793,9 +793,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireBowRefine() {
-        if (fireBowRefineState == "grayscale(100%)") {
-            setFireBowRefineState("grayscale(0%)")
-            setFireWeaponChoiceState("bow")
+        if (fireHBowRefineState == "grayscale(100%)") {
+            setFireHBowRefineState("grayscale(0%)")
+            setFireHWeaponChoiceState("bow")
             setwbFHBoSphereCountState(wbFHBoSphereCount - 50)
             setwbFHBoTailCountState(wbFHBoTailCount - 40)
             setwbFHBoHornCountState(wbFHBoHornCount - 30)
@@ -803,9 +803,9 @@ export default function FireHDTWeapons() {
             setwbFHBoOriCountState(wbFHBoOriCount - 3)
             setwbFHBoRupeeCost(parseFloat(wbFHBoRupeeCost - 1.5))
         }
-        else if (fireBowRefineState == "grayscale(0%)") {
-            setFireBowRefineState("grayscale(100%)")
-            setFireWeaponChoiceState("bow")
+        else if (fireHBowRefineState == "grayscale(0%)") {
+            setFireHBowRefineState("grayscale(100%)")
+            setFireHWeaponChoiceState("bow")
             setwbFHBoSphereCountState(wbFHBoSphereCount + 50)
             setwbFHBoTailCountState(wbFHBoTailCount + 40)
             setwbFHBoHornCountState(wbFHBoHornCount + 30)
@@ -816,10 +816,10 @@ export default function FireHDTWeapons() {
     }
 
     function handleFireBowUnbindIncrement(event) {
-        setFireWeaponChoiceState("bow");
-        if (fireBowUnbindState < event.target.value) {
-            if (event.target.value - fireBowUnbindState == 1) {
-                setFireBowUnbindState(event.target.value);
+        setFireHWeaponChoiceState("bow");
+        if (fireHBowUnbindState < event.target.value) {
+            if (event.target.value - fireHBowUnbindState == 1) {
+                setFireHBowUnbindState(event.target.value);
                 if (event.target.value >= 1 && event.target.value <= 4) {
                     setwbFHBoSphereCountState(wbFHBoSphereCount - 25)
                     setwbFHBoTailCountState(wbFHBoTailCount - 18)
@@ -837,9 +837,9 @@ export default function FireHDTWeapons() {
                 }
             }
         }
-        else if (fireBowUnbindState > event.target.value) {
-            if (fireBowUnbindState - event.target.value == 1) {
-                setFireBowUnbindState(event.target.value);
+        else if (fireHBowUnbindState > event.target.value) {
+            if (fireHBowUnbindState - event.target.value == 1) {
+                setFireHBowUnbindState(event.target.value);
                 if (event.target.value >= 0 && event.target.value <= 3) {
                     setwbFHBoSphereCountState(wbFHBoSphereCount + 25)
                     setwbFHBoTailCountState(wbFHBoTailCount + 18)
@@ -860,18 +860,18 @@ export default function FireHDTWeapons() {
     }
 
     function craftFireWand() {
-        if (fireWandCraftState == "grayscale(100%)") {
-            setFireWandCraftState("grayscale(0%)")
-            setFireWeaponChoiceState("wand")
+        if (fireHWandCraftState == "grayscale(100%)") {
+            setFireHWandCraftState("grayscale(0%)")
+            setFireHWeaponChoiceState("wand")
             setwbFHWSphereCountState(wbFHWSphereCount - 25)
             setwbFHWTailCountState(wbFHWTailCount - 18)
             setwbFHWHeartCountState(wbFHWHeartCount - 5)
             setwbFHWOriCountState(wbFHWOriCount - 1)
             setwbFHWRupeeCost(parseFloat(wbFHWRupeeCost - 1.2))
         }
-        else if (fireWandCraftState == "grayscale(0%)") {
-            setFireWandCraftState("grayscale(100%)")
-            setFireWeaponChoiceState("wand")
+        else if (fireHWandCraftState == "grayscale(0%)") {
+            setFireHWandCraftState("grayscale(100%)")
+            setFireHWeaponChoiceState("wand")
             setwbFHWSphereCountState(wbFHWSphereCount + 25)
             setwbFHWTailCountState(wbFHWTailCount + 18)
             setwbFHWHeartCountState(wbFHWHeartCount + 5)
@@ -881,9 +881,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireWandWeaponBonus() {
-        if (fireWandWeaponBonusState == "grayscale(100%)") {
-            setFireWandWeaponBonusState("grayscale(0%)")
-            setFireWeaponChoiceState("wand")
+        if (fireHWandWeaponBonusState == "grayscale(100%)") {
+            setFireHWandWeaponBonusState("grayscale(0%)")
+            setFireHWeaponChoiceState("wand")
             setwbFHWSphereCountState(wbFHWSphereCount - 150)
             setwbFHWTailCountState(wbFHWTailCount - 100)
             setwbFHWHornCountState(wbFHWHornCount - 30)
@@ -891,9 +891,9 @@ export default function FireHDTWeapons() {
             setwbFHWOriCountState(wbFHWOriCount - 30)
             setwbFHWRupeeCost(parseFloat(wbFHWRupeeCost - 10))
         }
-        else if (fireWandWeaponBonusState == "grayscale(0%)") {
-            setFireWandWeaponBonusState("grayscale(100%)")
-            setFireWeaponChoiceState("wand")
+        else if (fireHWandWeaponBonusState == "grayscale(0%)") {
+            setFireHWandWeaponBonusState("grayscale(100%)")
+            setFireHWeaponChoiceState("wand")
             setwbFHWSphereCountState(wbFHWSphereCount + 150)
             setwbFHWTailCountState(wbFHWTailCount + 100)
             setwbFHWHornCountState(wbFHWHornCount + 30)
@@ -904,9 +904,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireWandRefine() {
-        if (fireWandRefineState == "grayscale(100%)") {
-            setFireWandRefineState("grayscale(0%)")
-            setFireWeaponChoiceState("wand")
+        if (fireHWandRefineState == "grayscale(100%)") {
+            setFireHWandRefineState("grayscale(0%)")
+            setFireHWeaponChoiceState("wand")
             setwbFHWSphereCountState(wbFHWSphereCount - 50)
             setwbFHWTailCountState(wbFHWTailCount - 40)
             setwbFHWHornCountState(wbFHWHornCount - 30)
@@ -914,9 +914,9 @@ export default function FireHDTWeapons() {
             setwbFHWOriCountState(wbFHWOriCount - 3)
             setwbFHWRupeeCost(parseFloat(wbFHWRupeeCost - 1.5))
         }
-        else if (fireWandRefineState == "grayscale(0%)") {
-            setFireWandRefineState("grayscale(100%)")
-            setFireWeaponChoiceState("wand")
+        else if (fireHWandRefineState == "grayscale(0%)") {
+            setFireHWandRefineState("grayscale(100%)")
+            setFireHWeaponChoiceState("wand")
             setwbFHWSphereCountState(wbFHWSphereCount + 50)
             setwbFHWTailCountState(wbFHWTailCount + 40)
             setwbFHWHornCountState(wbFHWHornCount + 30)
@@ -927,10 +927,10 @@ export default function FireHDTWeapons() {
     }
 
     function handleFireWandUnbindIncrement(event) {
-        setFireWeaponChoiceState("wand");
-        if (fireWandUnbindState < event.target.value) {
-            if (event.target.value - fireWandUnbindState == 1) {
-                setFireWandUnbindState(event.target.value);
+        setFireHWeaponChoiceState("wand");
+        if (fireHWandUnbindState < event.target.value) {
+            if (event.target.value - fireHWandUnbindState == 1) {
+                setFireHWandUnbindState(event.target.value);
                 if (event.target.value >= 1 && event.target.value <= 4) {
                     setwbFHWSphereCountState(wbFHWSphereCount - 25)
                     setwbFHWTailCountState(wbFHWTailCount - 18)
@@ -948,9 +948,9 @@ export default function FireHDTWeapons() {
                 }
             }
         }
-        else if (fireWandUnbindState > event.target.value) {
-            if (fireWandUnbindState - event.target.value == 1) {
-                setFireWandUnbindState(event.target.value);
+        else if (fireHWandUnbindState > event.target.value) {
+            if (fireHWandUnbindState - event.target.value == 1) {
+                setFireHWandUnbindState(event.target.value);
                 if (event.target.value >= 0 && event.target.value <= 3) {
                     setwbFHWSphereCountState(wbFHWSphereCount + 25)
                     setwbFHWTailCountState(wbFHWTailCount + 18)
@@ -971,18 +971,18 @@ export default function FireHDTWeapons() {
     }
 
     function craftFireStaff() {
-        if (fireStaffCraftState == "grayscale(100%)") {
-            setFireStaffCraftState("grayscale(0%)")
-            setFireWeaponChoiceState("staff")
+        if (fireHStaffCraftState == "grayscale(100%)") {
+            setFireHStaffCraftState("grayscale(0%)")
+            setFireHWeaponChoiceState("staff")
             setwbFHStSphereCountState(wbFHStSphereCount - 25)
             setwbFHStTailCountState(wbFHStTailCount - 18)
             setwbFHStHeartCountState(wbFHStHeartCount - 5)
             setwbFHStOriCountState(wbFHStOriCount - 1)
             setwbFHStRupeeCost(parseFloat(wbFHStRupeeCost - 1.2))
         }
-        else if (fireStaffCraftState == "grayscale(0%)") {
-            setFireStaffCraftState("grayscale(100%)")
-            setFireWeaponChoiceState("staff")
+        else if (fireHStaffCraftState == "grayscale(0%)") {
+            setFireHStaffCraftState("grayscale(100%)")
+            setFireHWeaponChoiceState("staff")
             setwbFHStSphereCountState(wbFHStSphereCount + 25)
             setwbFHStTailCountState(wbFHStTailCount + 18)
             setwbFHStHeartCountState(wbFHStHeartCount + 5)
@@ -992,9 +992,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireStaffWeaponBonus() {
-        if (fireStaffWeaponBonusState == "grayscale(100%)") {
-            setFireStaffWeaponBonusState("grayscale(0%)")
-            setFireWeaponChoiceState("staff")
+        if (fireHStaffWeaponBonusState == "grayscale(100%)") {
+            setFireHStaffWeaponBonusState("grayscale(0%)")
+            setFireHWeaponChoiceState("staff")
             setwbFHStSphereCountState(wbFHStSphereCount - 150)
             setwbFHStTailCountState(wbFHStTailCount - 100)
             setwbFHStHornCountState(wbFHStHornCount - 30)
@@ -1002,9 +1002,9 @@ export default function FireHDTWeapons() {
             setwbFHStOriCountState(wbFHStOriCount - 30)
             setwbFHStRupeeCost(parseFloat(wbFHStRupeeCost - 10))
         }
-        else if (fireStaffWeaponBonusState == "grayscale(0%)") {
-            setFireStaffWeaponBonusState("grayscale(100%)")
-            setFireWeaponChoiceState("staff")
+        else if (fireHStaffWeaponBonusState == "grayscale(0%)") {
+            setFireHStaffWeaponBonusState("grayscale(100%)")
+            setFireHWeaponChoiceState("staff")
             setwbFHStSphereCountState(wbFHStSphereCount + 150)
             setwbFHStTailCountState(wbFHStTailCount + 100)
             setwbFHStHornCountState(wbFHStHornCount + 30)
@@ -1015,9 +1015,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireStaffRefine() {
-        if (fireStaffRefineState == "grayscale(100%)") {
-            setFireStaffRefineState("grayscale(0%)")
-            setFireWeaponChoiceState("staff")
+        if (fireHStaffRefineState == "grayscale(100%)") {
+            setFireHStaffRefineState("grayscale(0%)")
+            setFireHWeaponChoiceState("staff")
             setwbFHStSphereCountState(wbFHStSphereCount - 50)
             setwbFHStTailCountState(wbFHStTailCount - 40)
             setwbFHStHornCountState(wbFHStHornCount - 30)
@@ -1025,9 +1025,9 @@ export default function FireHDTWeapons() {
             setwbFHStOriCountState(wbFHStOriCount - 3)
             setwbFHStRupeeCost(parseFloat(wbFHStRupeeCost - 1.5))
         }
-        else if (fireStaffRefineState == "grayscale(0%)") {
-            setFireStaffRefineState("grayscale(100%)")
-            setFireWeaponChoiceState("staff")
+        else if (fireHStaffRefineState == "grayscale(0%)") {
+            setFireHStaffRefineState("grayscale(100%)")
+            setFireHWeaponChoiceState("staff")
             setwbFHStSphereCountState(wbFHStSphereCount + 50)
             setwbFHStTailCountState(wbFHStTailCount + 40)
             setwbFHStHornCountState(wbFHStHornCount + 30)
@@ -1038,10 +1038,10 @@ export default function FireHDTWeapons() {
     }
 
     function handleFireStaffUnbindIncrement(event) {
-        setFireWeaponChoiceState("staff");
-        if (fireStaffUnbindState < event.target.value) {
-            if (event.target.value - fireStaffUnbindState == 1) {
-                setFireStaffUnbindState(event.target.value);
+        setFireHWeaponChoiceState("staff");
+        if (fireHStaffUnbindState < event.target.value) {
+            if (event.target.value - fireHStaffUnbindState == 1) {
+                setFireHStaffUnbindState(event.target.value);
                 if (event.target.value >= 1 && event.target.value <= 4) {
                     setwbFHStSphereCountState(wbFHStSphereCount - 25)
                     setwbFHStTailCountState(wbFHStTailCount - 18)
@@ -1059,9 +1059,9 @@ export default function FireHDTWeapons() {
                 }
             }
         }
-        else if (fireStaffUnbindState > event.target.value) {
-            if (fireStaffUnbindState - event.target.value == 1) {
-                setFireStaffUnbindState(event.target.value);
+        else if (fireHStaffUnbindState > event.target.value) {
+            if (fireHStaffUnbindState - event.target.value == 1) {
+                setFireHStaffUnbindState(event.target.value);
                 if (event.target.value >= 0 && event.target.value <= 3) {
                     setwbFHStSphereCountState(wbFHStSphereCount + 25)
                     setwbFHStTailCountState(wbFHStTailCount + 18)
@@ -1082,18 +1082,18 @@ export default function FireHDTWeapons() {
     }
 
     function craftFireManacaster() {
-        if (fireManacasterCraftState == "grayscale(100%)") {
-            setFireManacasterCraftState("grayscale(0%)")
-            setFireWeaponChoiceState("manacaster")
+        if (fireHManacasterCraftState == "grayscale(100%)") {
+            setFireHManacasterCraftState("grayscale(0%)")
+            setFireHWeaponChoiceState("manacaster")
             setwbFHMSphereCountState(wbFHMSphereCount - 25)
             setwbFHMTailCountState(wbFHMTailCount - 18)
             setwbFHMHeartCountState(wbFHMHeartCount - 5)
             setwbFHMOriCountState(wbFHMOriCount - 1)
             setwbFHMRupeeCost(parseFloat(wbFHMRupeeCost - 1.2))
         }
-        else if (fireManacasterCraftState == "grayscale(0%)") {
-            setFireManacasterCraftState("grayscale(100%)")
-            setFireWeaponChoiceState("manacaster")
+        else if (fireHManacasterCraftState == "grayscale(0%)") {
+            setFireHManacasterCraftState("grayscale(100%)")
+            setFireHWeaponChoiceState("manacaster")
             setwbFHMSphereCountState(wbFHMSphereCount + 25)
             setwbFHMTailCountState(wbFHMTailCount + 18)
             setwbFHMHeartCountState(wbFHMHeartCount + 5)
@@ -1103,9 +1103,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireManacasterWeaponBonus() {
-        if (fireManacasterWeaponBonusState == "grayscale(100%)") {
-            setFireManacasterWeaponBonusState("grayscale(0%)")
-            setFireWeaponChoiceState("manacaster")
+        if (fireHManacasterWeaponBonusState == "grayscale(100%)") {
+            setFireHManacasterWeaponBonusState("grayscale(0%)")
+            setFireHWeaponChoiceState("manacaster")
             setwbFHMSphereCountState(wbFHMSphereCount - 150)
             setwbFHMTailCountState(wbFHMTailCount - 100)
             setwbFHMHornCountState(wbFHMHornCount - 30)
@@ -1113,9 +1113,9 @@ export default function FireHDTWeapons() {
             setwbFHMOriCountState(wbFHMOriCount - 30)
             setwbFHMRupeeCost(parseFloat(wbFHMRupeeCost - 10))
         }
-        else if (fireManacasterWeaponBonusState == "grayscale(0%)") {
-            setFireManacasterWeaponBonusState("grayscale(100%)")
-            setFireWeaponChoiceState("manacaster")
+        else if (fireHManacasterWeaponBonusState == "grayscale(0%)") {
+            setFireHManacasterWeaponBonusState("grayscale(100%)")
+            setFireHWeaponChoiceState("manacaster")
             setwbFHMSphereCountState(wbFHMSphereCount + 150)
             setwbFHMTailCountState(wbFHMTailCount + 100)
             setwbFHMHornCountState(wbFHMHornCount + 30)
@@ -1126,9 +1126,9 @@ export default function FireHDTWeapons() {
     }
 
     function fireManacasterRefine() {
-        if (fireManacasterRefineState == "grayscale(100%)") {
-            setFireManacasterRefineState("grayscale(0%)")
-            setFireWeaponChoiceState("manacaster")
+        if (fireHManacasterRefineState == "grayscale(100%)") {
+            setFireHManacasterRefineState("grayscale(0%)")
+            setFireHWeaponChoiceState("manacaster")
             setwbFHMSphereCountState(wbFHMSphereCount - 50)
             setwbFHMTailCountState(wbFHMTailCount - 40)
             setwbFHMHornCountState(wbFHMHornCount - 30)
@@ -1136,9 +1136,9 @@ export default function FireHDTWeapons() {
             setwbFHMOriCountState(wbFHMOriCount - 3)
             setwbFHMRupeeCost(parseFloat(wbFHMRupeeCost - 1.5))
         }
-        else if (fireManacasterRefineState == "grayscale(0%)") {
-            setFireManacasterRefineState("grayscale(100%)")
-            setFireWeaponChoiceState("manacaster")
+        else if (fireHManacasterRefineState == "grayscale(0%)") {
+            setFireHManacasterRefineState("grayscale(100%)")
+            setFireHWeaponChoiceState("manacaster")
             setwbFHMSphereCountState(wbFHMSphereCount + 50)
             setwbFHMTailCountState(wbFHMTailCount + 40)
             setwbFHMHornCountState(wbFHMHornCount + 30)
@@ -1149,10 +1149,10 @@ export default function FireHDTWeapons() {
     }
 
     function handleFireManacasterUnbindIncrement(event) {
-        setFireWeaponChoiceState("manacaster");
-        if (fireManacasterUnbindState < event.target.value) {
-            if (event.target.value - fireManacasterUnbindState == 1) {
-                setFireManacasterUnbindState(event.target.value);
+        setFireHWeaponChoiceState("manacaster");
+        if (fireHManacasterUnbindState < event.target.value) {
+            if (event.target.value - fireHManacasterUnbindState == 1) {
+                setFireHManacasterUnbindState(event.target.value);
                 if (event.target.value >= 1 && event.target.value <= 4) {
                     setwbFHMSphereCountState(wbFHMSphereCount - 25)
                     setwbFHMTailCountState(wbFHMTailCount - 18)
@@ -1170,9 +1170,9 @@ export default function FireHDTWeapons() {
                 }
             }
         }
-        else if (fireManacasterUnbindState > event.target.value) {
-            if (fireManacasterUnbindState - event.target.value == 1) {
-                setFireManacasterUnbindState(event.target.value);
+        else if (fireHManacasterUnbindState > event.target.value) {
+            if (fireHManacasterUnbindState - event.target.value == 1) {
+                setFireHManacasterUnbindState(event.target.value);
                 if (event.target.value >= 0 && event.target.value <= 3) {
                     setwbFHMSphereCountState(wbFHMSphereCount + 25)
                     setwbFHMTailCountState(wbFHMTailCount + 18)
@@ -1209,7 +1209,7 @@ export default function FireHDTWeapons() {
                             <Card width={[150, 200]}>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTSword} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireSwordCraftState }} onClick={craftFireSword} />
+                                    <Image src={FireHDTSword} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHSwordCraftState }} onClick={craftFireSword} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Absolute Crimson</Text>
@@ -1225,7 +1225,7 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 10}></Box>
                                         <Slider
                                             onChange={handleFireSwordUnbindIncrement}
-                                            defaultValue={fireSwordUnbindState}
+                                            defaultValue={fireHSwordUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
@@ -1235,20 +1235,20 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 2}>
 
                                         </Box>
-                                        <Text>{fireSwordUnbindState}</Text>
+                                        <Text>{fireHSwordUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireSwordWeaponBonusState }} onClick={fireSwordWeaponBonus} />
+                                    <Image src={WeaponBonus} style={{ filter: fireHSwordWeaponBonusState }} onClick={fireSwordWeaponBonus} />
                                     <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireSwordRefineState }} onClick={fireSwordRefine} />
+                                    <Image src={Refine} style={{ filter: fireHSwordRefineState }} onClick={fireSwordRefine} />
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTBlade} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireBladeCraftState }} onClick={craftFireBlade} />
+                                    <Image src={FireHDTBlade} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHBladeCraftState }} onClick={craftFireBlade} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Blinding Conflagaration</Text>
@@ -1264,7 +1264,7 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 10}></Box>
                                         <Slider
                                             onChange={handleFireBladeUnbindIncrement}
-                                            defaultValue={fireBladeUnbindState}
+                                            defaultValue={fireHBladeUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
@@ -1274,20 +1274,20 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 2}>
 
                                         </Box>
-                                        <Text>{fireBladeUnbindState}</Text>
+                                        <Text>{fireHBladeUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireBladeWeaponBonusState }} onClick={fireBladeWeaponBonus} />
+                                    <Image src={WeaponBonus} style={{ filter: fireHBladeWeaponBonusState }} onClick={fireBladeWeaponBonus} />
                                     <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireBladeRefineState }} onClick={fireBladeRefine} />
+                                    <Image src={Refine} style={{ filter: fireHBladeRefineState }} onClick={fireBladeRefine} />
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTDagger} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireDaggerCraftState }} onClick={craftFireDagger} />
+                                    <Image src={FireHDTDagger} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHDaggerCraftState }} onClick={craftFireDagger} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Flameruler's Maw</Text>
@@ -1303,7 +1303,7 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 10}></Box>
                                         <Slider
                                             onChange={handleFireDaggerUnbindIncrement}
-                                            defaultValue={fireDaggerUnbindState}
+                                            defaultValue={fireHDaggerUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
@@ -1313,14 +1313,14 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 2}>
 
                                         </Box>
-                                        <Text>{fireDaggerUnbindState}</Text>
+                                        <Text>{fireHDaggerUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireDaggerWeaponBonusState }} onClick={fireDaggerWeaponBonus} />
+                                    <Image src={WeaponBonus} style={{ filter: fireHDaggerWeaponBonusState }} onClick={fireDaggerWeaponBonus} />
                                     <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireDaggerRefineState }} onClick={fireDaggerRefine} />
+                                    <Image src={Refine} style={{ filter: fireHDaggerRefineState }} onClick={fireDaggerRefine} />
                                 </Flex>
                             </Card>
                         </Flex>
@@ -1328,7 +1328,7 @@ export default function FireHDTWeapons() {
                         <Card width={[150, 200]}>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTAxe} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireAxeCraftState }} onClick={craftFireAxe} />
+                                    <Image src={FireHDTAxe} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHAxeCraftState }} onClick={craftFireAxe} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Royal Crimson Heat</Text>
@@ -1344,7 +1344,7 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 10}></Box>
                                         <Slider
                                             onChange={handleFireAxeUnbindIncrement}
-                                            defaultValue={fireAxeUnbindState}
+                                            defaultValue={fireHAxeUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
@@ -1354,20 +1354,20 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 2}>
 
                                         </Box>
-                                        <Text>{fireAxeUnbindState}</Text>
+                                        <Text>{fireHAxeUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireAxeWeaponBonusState }} onClick={fireAxeWeaponBonus} />
+                                    <Image src={WeaponBonus} style={{ filter: fireHAxeWeaponBonusState }} onClick={fireAxeWeaponBonus} />
                                     <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireAxeRefineState }} onClick={fireAxeRefine} />
+                                    <Image src={Refine} style={{ filter: fireHAxeRefineState }} onClick={fireAxeRefine} />
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTLance} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireLanceCraftState }} onClick={craftFireLance} />
+                                    <Image src={FireHDTLance} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHLanceCraftState }} onClick={craftFireLance} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Pureflame Lance</Text>
@@ -1383,7 +1383,7 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 10}></Box>
                                         <Slider
                                             onChange={handleFireLanceUnbindIncrement}
-                                            defaultValue={fireLanceUnbindState}
+                                            defaultValue={fireHLanceUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
@@ -1393,20 +1393,20 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 2}>
 
                                         </Box>
-                                        <Text>{fireLanceUnbindState}</Text>
+                                        <Text>{fireHLanceUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireLanceWeaponBonusState }} onClick={fireLanceWeaponBonus} />
+                                    <Image src={WeaponBonus} style={{ filter: fireHLanceWeaponBonusState }} onClick={fireLanceWeaponBonus} />
                                     <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireLanceRefineState }} onClick={fireLanceRefine} />
+                                    <Image src={Refine} style={{ filter: fireHLanceRefineState }} onClick={fireLanceRefine} />
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTBow} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireBowCraftState }} onClick={craftFireBow} />
+                                    <Image src={FireHDTBow} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHBowCraftState }} onClick={craftFireBow} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Valkyrie's Fire</Text>
@@ -1422,7 +1422,7 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 10}></Box>
                                         <Slider
                                             onChange={handleFireBowUnbindIncrement}
-                                            defaultValue={fireBowUnbindState}
+                                            defaultValue={fireHBowUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
@@ -1432,14 +1432,14 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 2}>
 
                                         </Box>
-                                        <Text>{fireBowUnbindState}</Text>
+                                        <Text>{fireHBowUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireBowWeaponBonusState }} onClick={fireBowWeaponBonus} />
+                                    <Image src={WeaponBonus} style={{ filter: fireHBowWeaponBonusState }} onClick={fireBowWeaponBonus} />
                                     <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireBowRefineState }} onClick={fireBowRefine} />
+                                    <Image src={Refine} style={{ filter: fireHBowRefineState }} onClick={fireBowRefine} />
                                 </Flex>
                             </Card>
                         </Flex>
@@ -1447,7 +1447,7 @@ export default function FireHDTWeapons() {
                         <Card width={[150, 200]}>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTWand} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireWandCraftState }} onClick={craftFireWand} />
+                                    <Image src={FireHDTWand} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHWandCraftState }} onClick={craftFireWand} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Infernoblaze</Text>
@@ -1463,7 +1463,7 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 10}></Box>
                                         <Slider
                                             onChange={handleFireWandUnbindIncrement}
-                                            defaultValue={fireWandUnbindState}
+                                            defaultValue={fireHWandUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
@@ -1473,20 +1473,20 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 2}>
 
                                         </Box>
-                                        <Text>{fireWandUnbindState}</Text>
+                                        <Text>{fireHWandUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireWandWeaponBonusState }} onClick={fireWandWeaponBonus} />
+                                    <Image src={WeaponBonus} style={{ filter: fireHWandWeaponBonusState }} onClick={fireWandWeaponBonus} />
                                     <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireWandRefineState }} onClick={fireWandRefine} />
+                                    <Image src={Refine} style={{ filter: fireHWandRefineState }} onClick={fireWandRefine} />
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTStaff} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireStaffCraftState }} onClick={craftFireStaff} />
+                                    <Image src={FireHDTStaff} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHStaffCraftState }} onClick={craftFireStaff} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Blazegambol</Text>
@@ -1502,7 +1502,7 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 10}></Box>
                                         <Slider
                                             onChange={handleFireStaffUnbindIncrement}
-                                            defaultValue={fireStaffUnbindState}
+                                            defaultValue={fireHStaffUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
@@ -1512,20 +1512,20 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 2}>
 
                                         </Box>
-                                        <Text>{fireStaffUnbindState}</Text>
+                                        <Text>{fireHStaffUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireStaffWeaponBonusState }} onClick={fireStaffWeaponBonus} />
+                                    <Image src={WeaponBonus} style={{ filter: fireHStaffWeaponBonusState }} onClick={fireStaffWeaponBonus} />
                                     <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireStaffRefineState }} onClick={fireStaffRefine} />
+                                    <Image src={Refine} style={{ filter: fireHStaffRefineState }} onClick={fireStaffRefine} />
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTManacaster} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireManacasterCraftState }} onClick={craftFireManacaster} />
+                                    <Image src={FireHDTManacaster} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHManacasterCraftState }} onClick={craftFireManacaster} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Crimson Trigger</Text>
@@ -1541,7 +1541,7 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 10}></Box>
                                         <Slider
                                             onChange={handleFireManacasterUnbindIncrement}
-                                            defaultValue={fireManacasterUnbindState}
+                                            defaultValue={fireHManacasterUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
@@ -1551,14 +1551,14 @@ export default function FireHDTWeapons() {
                                         <Box width={1 / 2}>
 
                                         </Box>
-                                        <Text>{fireManacasterUnbindState}</Text>
+                                        <Text>{fireHManacasterUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
                                     <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireManacasterWeaponBonusState }} onClick={fireManacasterWeaponBonus} />
+                                    <Image src={WeaponBonus} style={{ filter: fireHManacasterWeaponBonusState }} onClick={fireManacasterWeaponBonus} />
                                     <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireManacasterRefineState }} onClick={fireManacasterRefine} />
+                                    <Image src={Refine} style={{ filter: fireHManacasterRefineState }} onClick={fireManacasterRefine} />
                                 </Flex>
                             </Card>
                         </Flex>
