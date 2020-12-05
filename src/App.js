@@ -27,6 +27,7 @@ import LightVoidWeapons from './VoidWeapons/LightVoidWeapons';
 import ShadowVoidWeapons from './VoidWeapons/ShadowVoidWeapons';
 import OtherWeapons from "./OtherWeapons/OtherWeapons"
 import ErrorPage from "./ErrorPage";
+import "./index.css"
 
 function App() {
   return (

@@ -2249,584 +2249,615 @@ export default function FireAgitoWeapons() {
     return (
         <div>
             <AgitoNavTabs />
-            <Flex>
+            <Flex>&nbsp;</Flex>
+            <Flex flexWrap="wrap">
                 {/* The box for all the weapons */}
-                <Box width={1 / 2}>
-                    <Flex>
-                        <Box width={2 / 5}>
+                <Box width={[6 / 7, 1 / 2]} p={3} m={3} bg={"#152238"} sx={{ border: "3px solid blue" }}>
+                    <Flex alignItems="center">
+                        <Box width={[2 / 5]}>
 
                         </Box>
-                        <Box width={3 / 5}>
-                            Fire Agito Weapons
+                        <Box width={[0, 3 / 5]}>
+                            <Text fontSize={[1, 3]} ml="auto" mr="auto" color="crimson">Fire Agito Weapons</Text>
                         </Box>
                     </Flex>
                     <Flex>
                         <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={FireAgitoSword} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireSwordCraftState }} onClick={craftFireSword} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={FireAgitoSword} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireSwordCraftState }} onClick={craftFireSword} />
                             </Flex>
                             <Flex>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Nothung</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireSwordUnbindIncrement}
                                         defaultValue={fireSwordUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireSwordUnbindState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireSwordUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireSwordRefineIncrement}
                                         defaultValue={fireSwordRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireSwordRefineState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireSwordRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: fireSwordWeaponBonusState }} onClick={fireSwordWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: fireSwordWyrmprintSlotState }} onClick={fireSwordWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: fireSwordWeaponBonusState }} onClick={fireSwordWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: fireSwordWyrmprintSlotState }} onClick={fireSwordWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={FireAgitoBlade} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireBladeCraftState }} onClick={craftFireBlade} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={FireAgitoBlade} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireBladeCraftState }} onClick={craftFireBlade} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Tyrfing</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireBladeUnbindIncrement}
                                         defaultValue={fireBladeUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireBladeUnbindState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireBladeUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireBladeRefineIncrement}
                                         defaultValue={fireBladeRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireBladeRefineState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireBladeRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: fireBladeWeaponBonusState }} onClick={fireBladeWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: fireBladeWyrmprintSlotState }} onClick={fireBladeWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: fireBladeWeaponBonusState }} onClick={fireBladeWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: fireBladeWyrmprintSlotState }} onClick={fireBladeWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={FireAgitoDagger} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireDaggerCraftState }} onClick={craftFireDagger} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={FireAgitoDagger} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireDaggerCraftState }} onClick={craftFireDagger} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Hrotti</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireDaggerUnbindIncrement}
                                         defaultValue={fireDaggerUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireDaggerUnbindState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireDaggerUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireDaggerRefineIncrement}
                                         defaultValue={fireDaggerRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireDaggerRefineState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireDaggerRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: fireDaggerWeaponBonusState }} onClick={fireDaggerWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: fireDaggerWyrmprintSlotState }} onClick={fireDaggerWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: fireDaggerWeaponBonusState }} onClick={fireDaggerWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: fireDaggerWyrmprintSlotState }} onClick={fireDaggerWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
                     </Flex>
                     <Flex>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={FireAgitoAxe} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireAxeCraftState }} onClick={craftFireAxe} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={FireAgitoAxe} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireAxeCraftState }} onClick={craftFireAxe} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Mjolnir</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireAxeUnbindIncrement}
                                         defaultValue={fireAxeUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireAxeUnbindState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireAxeUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireAxeRefineIncrement}
                                         defaultValue={fireAxeRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireAxeRefineState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireAxeRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: fireAxeWeaponBonusState }} onClick={fireAxeWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: fireAxeWyrmprintSlotState }} onClick={fireAxeWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: fireAxeWeaponBonusState }} onClick={fireAxeWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: fireAxeWyrmprintSlotState }} onClick={fireAxeWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={FireAgitoLance} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireLanceCraftState }} onClick={craftFireLance} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={FireAgitoLance} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireLanceCraftState }} onClick={craftFireLance} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Gungnir</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireLanceUnbindIncrement}
                                         defaultValue={fireLanceUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireLanceUnbindState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireLanceUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireLanceRefineIncrement}
                                         defaultValue={fireLanceRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireLanceRefineState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireLanceRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: fireLanceWeaponBonusState }} onClick={fireLanceWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: fireLanceWyrmprintSlotState }} onClick={fireLanceWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: fireLanceWeaponBonusState }} onClick={fireLanceWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: fireLanceWyrmprintSlotState }} onClick={fireLanceWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={FireAgitoBow} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireBowCraftState }} onClick={craftFireBow} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={FireAgitoBow} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireBowCraftState }} onClick={craftFireBow} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Ydalir</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireBowUnbindIncrement}
                                         defaultValue={fireBowUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireBowUnbindState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireBowUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireBowRefineIncrement}
                                         defaultValue={fireBowRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireBowRefineState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireBowRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: fireBowWeaponBonusState }} onClick={fireBowWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: fireBowWyrmprintSlotState }} onClick={fireBowWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: fireBowWeaponBonusState }} onClick={fireBowWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: fireBowWyrmprintSlotState }} onClick={fireBowWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
                     </Flex>
                     <Flex>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={FireAgitoWand} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireWandCraftState }} onClick={craftFireWand} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={FireAgitoWand} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireWandCraftState }} onClick={craftFireWand} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Brisingr</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireWandUnbindIncrement}
                                         defaultValue={fireWandUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireWandUnbindState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireWandUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireWandRefineIncrement}
                                         defaultValue={fireWandRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireWandRefineState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireWandRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: fireWandWeaponBonusState }} onClick={fireWandWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: fireWandWyrmprintSlotState }} onClick={fireWandWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: fireWandWeaponBonusState }} onClick={fireWandWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: fireWandWyrmprintSlotState }} onClick={fireWandWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={FireAgitoStaff} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireStaffCraftState }} onClick={craftFireStaff} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={FireAgitoStaff} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireStaffCraftState }} onClick={craftFireStaff} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Gjallarhorn</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireStaffUnbindIncrement}
                                         defaultValue={fireStaffUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireStaffUnbindState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireStaffUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireStaffRefineIncrement}
                                         defaultValue={fireStaffRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireStaffRefineState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireStaffRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: fireStaffWeaponBonusState }} onClick={fireStaffWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: fireStaffWyrmprintSlotState }} onClick={fireStaffWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: fireStaffWeaponBonusState }} onClick={fireStaffWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: fireStaffWyrmprintSlotState }} onClick={fireStaffWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={FireAgitoManacaster} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireManacasterCraftState }} onClick={craftFireManacaster} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={FireAgitoManacaster} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireManacasterCraftState }} onClick={craftFireManacaster} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Draupnir</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireManacasterUnbindIncrement}
                                         defaultValue={fireManacasterUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireManacasterUnbindState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireManacasterUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleFireManacasterRefineIncrement}
                                         defaultValue={fireManacasterRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="crimson"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{fireManacasterRefineState}</Text>
+                                    <Text color="crimson" fontSize={[1, 3]}>{fireManacasterRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: fireManacasterWeaponBonusState }} onClick={fireManacasterWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: fireManacasterWyrmprintSlotState }} onClick={fireManacasterWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: fireManacasterWeaponBonusState }} onClick={fireManacasterWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: fireManacasterWyrmprintSlotState }} onClick={fireManacasterWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
                     </Flex>
+                    <Flex>&nbsp;</Flex>
                 </Box>
                 {/* The box for the materials needed to 100% a weapon */}
                 {fireWeaponSelection()}
             </Flex>
+            <Flex>&nbsp;</Flex>
             <WeaponTypeNavTabs />
         </div>
     )

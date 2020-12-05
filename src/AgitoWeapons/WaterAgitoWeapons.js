@@ -2249,577 +2249,615 @@ export default function WaterAgitoWeapons() {
     return (
         <div>
             <AgitoNavTabs />
-            <Flex>
+            <Flex>&nbsp;</Flex>
+            <Flex flexWrap="wrap">
                 {/* The box for all the weapons */}
-                <Box width={1 / 2}>
-                    <Flex>
-                        <Box width={2 / 5}>
+                <Box width={[6 / 7, 1 / 2]} p={3} m={3} bg={"#152238"} sx={{ border: "3px solid lightblue" }}>
+                    <Flex alignItems="center">
+                        <Box width={[2 / 5]}>
 
                         </Box>
-                        <Box width={3 / 5}>
-                            Water Agito Weapons
+                        <Box width={[0, 3 / 5]}>
+                            <Text fontSize={[1, 3]} ml="auto" mr="auto" color="lightblue">Water Agito Weapons</Text>
                         </Box>
                     </Flex>
                     <Flex>
                         <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WaterAgitoSword} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: waterSwordCraftState }} onClick={craftWaterSword} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={WaterAgitoSword} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: waterSwordCraftState }} onClick={craftWaterSword} />
                             </Flex>
                             <Flex>
-                                <Text fontSize={[1, 3]} px={[1, 4]} color="blue">Ame no Murakumo</Text>
+                                <Text fontSize={[1, 3]} px={[1, 4]} color="lightblue">Ame no Murakumo</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterSwordUnbindIncrement}
                                         defaultValue={waterSwordUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterSwordUnbindState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterSwordUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterSwordRefineIncrement}
                                         defaultValue={waterSwordRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterSwordRefineState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterSwordRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: waterSwordWeaponBonusState }} onClick={waterSwordWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: waterSwordWyrmprintSlotState }} onClick={waterSwordWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: waterSwordWeaponBonusState }} onClick={waterSwordWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: waterSwordWyrmprintSlotState }} onClick={waterSwordWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                            <Box width={1 / 8}></Box>
-                                <Image src={WaterAgitoBlade} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: waterBladeCraftState }} onClick={craftWaterBlade} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={WaterAgitoBlade} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: waterBladeCraftState }} onClick={craftWaterBlade} />
                             </Flex>
                             <Flex>
-                                <Text fontSize={[1, 3]} px={[1, 4]} color="blue">Ame no Habakiri</Text>
+                                <Text fontSize={[1, 3]} px={[1, 4]} color="lightblue">Ame no Habakiri</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterBladeUnbindIncrement}
                                         defaultValue={waterBladeUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterBladeUnbindState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterBladeUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterBladeRefineIncrement}
                                         defaultValue={waterBladeRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterBladeRefineState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterBladeRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: waterBladeWeaponBonusState }} onClick={waterBladeWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: waterBladeWyrmprintSlotState }} onClick={waterBladeWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: waterBladeWeaponBonusState }} onClick={waterBladeWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: waterBladeWyrmprintSlotState }} onClick={waterBladeWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WaterAgitoDagger} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: waterDaggerCraftState }} onClick={craftWaterDagger} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={WaterAgitoDagger} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: waterDaggerCraftState }} onClick={craftWaterDagger} />
                             </Flex>
                             <Flex>
-                                <Text fontSize={[1, 3]} px={[1, 4]} color="blue">Futsu no Mitama</Text>
+                                <Text fontSize={[1, 3]} px={[1, 4]} color="lightblue">Futsu no Mitama</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterDaggerUnbindIncrement}
                                         defaultValue={waterDaggerUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterDaggerUnbindState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterDaggerUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterDaggerRefineIncrement}
                                         defaultValue={waterDaggerRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterDaggerRefineState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterDaggerRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: waterDaggerWeaponBonusState }} onClick={waterDaggerWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: waterDaggerWyrmprintSlotState }} onClick={waterDaggerWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: waterDaggerWeaponBonusState }} onClick={waterDaggerWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: waterDaggerWyrmprintSlotState }} onClick={waterDaggerWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
                     </Flex>
                     <Flex>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WaterAgitoAxe} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: waterAxeCraftState }} onClick={craftWaterAxe} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={WaterAgitoAxe} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: waterAxeCraftState }} onClick={craftWaterAxe} />
                             </Flex>
                             <Flex>
-                                <Text fontSize={[1, 3]} px={[1, 4]} color="blue">Ohohagari</Text>
+                                <Text fontSize={[1, 3]} px={[1, 4]} color="lightblue">Ohohagari</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterAxeUnbindIncrement}
                                         defaultValue={waterAxeUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterAxeUnbindState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterAxeUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterAxeRefineIncrement}
                                         defaultValue={waterAxeRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterAxeRefineState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterAxeRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: waterAxeWeaponBonusState }} onClick={waterAxeWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: waterAxeWyrmprintSlotState }} onClick={waterAxeWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: waterAxeWeaponBonusState }} onClick={waterAxeWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: waterAxeWyrmprintSlotState }} onClick={waterAxeWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WaterAgitoLance} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: waterLanceCraftState }} onClick={craftWaterLance} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={WaterAgitoLance} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: waterLanceCraftState }} onClick={craftWaterLance} />
                             </Flex>
                             <Flex>
-                                <Text fontSize={[1, 3]} px={[1, 4]} color="blue">Ame no Nuhoko</Text>
+                                <Text fontSize={[1, 3]} px={[1, 4]} color="lightblue">Ame no Nuhoko</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterLanceUnbindIncrement}
                                         defaultValue={waterLanceUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterLanceUnbindState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterLanceUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterLanceRefineIncrement}
                                         defaultValue={waterLanceRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterLanceRefineState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterLanceRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: waterLanceWeaponBonusState }} onClick={waterLanceWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: waterLanceWyrmprintSlotState }} onClick={waterLanceWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: waterLanceWeaponBonusState }} onClick={waterLanceWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: waterLanceWyrmprintSlotState }} onClick={waterLanceWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WaterAgitoBow} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: waterBowCraftState }} onClick={craftWaterBow} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={WaterAgitoBow} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: waterBowCraftState }} onClick={craftWaterBow} />
                             </Flex>
                             <Flex>
-                                <Text fontSize={[1, 3]} px={[1, 4]} color="blue">Ame no Hajiyumi</Text>
+                                <Text fontSize={[1, 3]} px={[1, 4]} color="lightblue">Ame no Hajiyumi</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterBowUnbindIncrement}
                                         defaultValue={waterBowUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterBowUnbindState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterBowUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterBowRefineIncrement}
                                         defaultValue={waterBowRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterBowRefineState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterBowRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: waterBowWeaponBonusState }} onClick={waterBowWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: waterBowWyrmprintSlotState }} onClick={waterBowWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: waterBowWeaponBonusState }} onClick={waterBowWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: waterBowWyrmprintSlotState }} onClick={waterBowWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
                     </Flex>
                     <Flex>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WaterAgitoWand} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: waterWandCraftState }} onClick={craftWaterWand} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={WaterAgitoWand} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: waterWandCraftState }} onClick={craftWaterWand} />
                             </Flex>
                             <Flex>
-                                <Text fontSize={[1, 3]} px={[1, 4]} color="blue">Omizununo</Text>
+                                <Text fontSize={[1, 3]} px={[1, 4]} color="lightblue">Omizununo</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterWandUnbindIncrement}
                                         defaultValue={waterWandUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterWandUnbindState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterWandUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterWandRefineIncrement}
                                         defaultValue={waterWandRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterWandRefineState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterWandRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: waterWandWeaponBonusState }} onClick={waterWandWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: waterWandWyrmprintSlotState }} onClick={waterWandWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: waterWandWeaponBonusState }} onClick={waterWandWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: waterWandWyrmprintSlotState }} onClick={waterWandWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WaterAgitoStaff} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: waterStaffCraftState }} onClick={craftWaterStaff} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={WaterAgitoStaff} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: waterStaffCraftState }} onClick={craftWaterStaff} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
-                                <Text fontSize={[1, 3]} px={[1, 4]} color="blue">Kunado</Text>
+                                <Text fontSize={[1, 3]} px={[1, 4]} color="lightblue">Kunado</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterStaffUnbindIncrement}
                                         defaultValue={waterStaffUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterStaffUnbindState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterStaffUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterStaffRefineIncrement}
                                         defaultValue={waterStaffRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterStaffRefineState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterStaffRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: waterStaffWeaponBonusState }} onClick={waterStaffWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: waterStaffWyrmprintSlotState }} onClick={waterStaffWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: waterStaffWeaponBonusState }} onClick={waterStaffWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: waterStaffWyrmprintSlotState }} onClick={waterStaffWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WaterAgitoManacaster} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: waterManacasterCraftState }} onClick={craftWaterManacaster} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={WaterAgitoManacaster} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: waterManacasterCraftState }} onClick={craftWaterManacaster} />
                             </Flex>
                             <Flex>
-                                <Text fontSize={[1, 3]} px={[1, 4]} color="blue">Ame no Torifune</Text>
+                                <Text fontSize={[1, 3]} px={[1, 4]} color="lightblue">Ame no Torifune</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterManacasterUnbindIncrement}
                                         defaultValue={waterManacasterUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterManacasterUnbindState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterManacasterUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleWaterManacasterRefineIncrement}
                                         defaultValue={waterManacasterRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="lightblue"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{waterManacasterRefineState}</Text>
+                                    <Text color="lightblue" fontSize={[1, 3]}>{waterManacasterRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: waterManacasterWeaponBonusState }} onClick={waterManacasterWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: waterManacasterWyrmprintSlotState }} onClick={waterManacasterWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: waterManacasterWeaponBonusState }} onClick={waterManacasterWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: waterManacasterWyrmprintSlotState }} onClick={waterManacasterWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
                     </Flex>
+                    <Flex>&nbsp;</Flex>
                 </Box>
                 {/* The box for the materials needed to 100% a weapon */}
                 {waterWeaponSelection()}
             </Flex>
+            <Flex>&nbsp;</Flex>
             <WeaponTypeNavTabs />
         </div>
     )

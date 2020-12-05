@@ -1,18 +1,16 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import FireButton from "../Images/Icon_Element_Flame.png";
 import WaterButton from "../Images/Icon_Element_Water.png";
 import WindButton from "../Images/Icon_Element_Wind.png";
 import LightButton from "../Images/Icon_Element_Light.png";
 import ShadowButton from "../Images/Icon_Element_Shadow.png";
-import { Box, Text, Flex } from "rebass";
+import { Box, Flex } from "rebass";
 
 function NavTabs() {
-  const location = useLocation();
-
   return (<>
   <Flex>
-    <Box width={2/5}>
+    <Box width={[1/6, 2/5]}>
     </Box>
     <Box width={1/5}>
       <Flex>

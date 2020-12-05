@@ -2249,582 +2249,615 @@ export default function LightAgitoWeapons() {
     return (
         <div>
             <AgitoNavTabs />
-            <Flex>
+            <Flex>&nbsp;</Flex>
+            <Flex flexWrap="wrap">
                 {/* The box for all the weapons */}
-                <Box width={1 / 2}>
-                    <Flex>
-                        <Box width={2 / 5}>
+                <Box width={[6 / 7, 1 / 2]} p={3} m={3} bg={"#152238"} sx={{ border: "3px solid blue" }}>
+                    <Flex alignItems="center">
+                        <Box width={[2 / 5]}>
 
                         </Box>
-                        <Box width={3 / 5}>
-                            Light Agito Weapons
+                        <Box width={[0, 3 / 5]}>
+                            <Text fontSize={[1, 3]} ml="auto" mr="auto" color="gold">Light Agito Weapons</Text>
                         </Box>
                     </Flex>
                     <Flex>
                         <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={LightAgitoSword} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: lightSwordCraftState }} onClick={craftLightSword} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={LightAgitoSword} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: lightSwordCraftState }} onClick={craftLightSword} />
                             </Flex>
                             <Flex>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="gold">Caladbolg</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightSwordUnbindIncrement}
                                         defaultValue={lightSwordUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightSwordUnbindState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightSwordUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightSwordRefineIncrement}
                                         defaultValue={lightSwordRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightSwordRefineState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightSwordRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: lightSwordWeaponBonusState }} onClick={lightSwordWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: lightSwordWyrmprintSlotState }} onClick={lightSwordWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: lightSwordWeaponBonusState }} onClick={lightSwordWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: lightSwordWyrmprintSlotState }} onClick={lightSwordWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={LightAgitoBlade} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: lightBladeCraftState }} onClick={craftLightBlade} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={LightAgitoBlade} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: lightBladeCraftState }} onClick={craftLightBlade} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="gold">Fragarach</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightBladeUnbindIncrement}
                                         defaultValue={lightBladeUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightBladeUnbindState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightBladeUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightBladeRefineIncrement}
                                         defaultValue={lightBladeRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightBladeRefineState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightBladeRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: lightBladeWeaponBonusState }} onClick={lightBladeWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: lightBladeWyrmprintSlotState }} onClick={lightBladeWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: lightBladeWeaponBonusState }} onClick={lightBladeWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: lightBladeWyrmprintSlotState }} onClick={lightBladeWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={LightAgitoDagger} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: lightDaggerCraftState }} onClick={craftLightDagger} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={LightAgitoDagger} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: lightDaggerCraftState }} onClick={craftLightDagger} />
                             </Flex>
                             <Flex>
-                                <Text fontSize={[1, 3]} px={[1, 4]} color="gold">Claíomh Solais</Text>
+                                <Text fontSize={[1, 3]} px={[1, 4]} color="gold">Claiomh Solais</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightDaggerUnbindIncrement}
                                         defaultValue={lightDaggerUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightDaggerUnbindState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightDaggerUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightDaggerRefineIncrement}
                                         defaultValue={lightDaggerRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightDaggerRefineState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightDaggerRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: lightDaggerWeaponBonusState }} onClick={lightDaggerWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: lightDaggerWyrmprintSlotState }} onClick={lightDaggerWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: lightDaggerWeaponBonusState }} onClick={lightDaggerWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: lightDaggerWyrmprintSlotState }} onClick={lightDaggerWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
                     </Flex>
                     <Flex>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={LightAgitoAxe} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: lightAxeCraftState }} onClick={craftLightAxe} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={LightAgitoAxe} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: lightAxeCraftState }} onClick={craftLightAxe} />
                             </Flex>
                             <Flex>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="gold">Rog Mol</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightAxeUnbindIncrement}
                                         defaultValue={lightAxeUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightAxeUnbindState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightAxeUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightAxeRefineIncrement}
                                         defaultValue={lightAxeRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightAxeRefineState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightAxeRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: lightAxeWeaponBonusState }} onClick={lightAxeWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: lightAxeWyrmprintSlotState }} onClick={lightAxeWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: lightAxeWeaponBonusState }} onClick={lightAxeWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: lightAxeWyrmprintSlotState }} onClick={lightAxeWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={LightAgitoLance} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: lightLanceCraftState }} onClick={craftLightLance} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={LightAgitoLance} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: lightLanceCraftState }} onClick={craftLightLance} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="gold">Areadbhar</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightLanceUnbindIncrement}
                                         defaultValue={lightLanceUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightLanceUnbindState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightLanceUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightLanceRefineIncrement}
                                         defaultValue={lightLanceRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightLanceRefineState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightLanceRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: lightLanceWeaponBonusState }} onClick={lightLanceWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: lightLanceWyrmprintSlotState }} onClick={lightLanceWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: lightLanceWeaponBonusState }} onClick={lightLanceWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: lightLanceWyrmprintSlotState }} onClick={lightLanceWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={LightAgitoBow} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: lightBowCraftState }} onClick={craftLightBow} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={LightAgitoBow} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: lightBowCraftState }} onClick={craftLightBow} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="gold">Tathlum</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightBowUnbindIncrement}
                                         defaultValue={lightBowUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightBowUnbindState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightBowUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightBowRefineIncrement}
                                         defaultValue={lightBowRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightBowRefineState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightBowRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: lightBowWeaponBonusState }} onClick={lightBowWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: lightBowWyrmprintSlotState }} onClick={lightBowWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: lightBowWeaponBonusState }} onClick={lightBowWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: lightBowWyrmprintSlotState }} onClick={lightBowWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
                     </Flex>
                     <Flex>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={LightAgitoWand} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: lightWandCraftState }} onClick={craftLightWand} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={LightAgitoWand} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: lightWandCraftState }} onClick={craftLightWand} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="gold">Brionac</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightWandUnbindIncrement}
                                         defaultValue={lightWandUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightWandUnbindState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightWandUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightWandRefineIncrement}
                                         defaultValue={lightWandRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightWandRefineState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightWandRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: lightWandWeaponBonusState }} onClick={lightWandWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: lightWandWyrmprintSlotState }} onClick={lightWandWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: lightWandWeaponBonusState }} onClick={lightWandWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: lightWandWyrmprintSlotState }} onClick={lightWandWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={LightAgitoStaff} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: lightStaffCraftState }} onClick={craftLightStaff} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={LightAgitoStaff} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: lightStaffCraftState }} onClick={craftLightStaff} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="gold">Del Frith</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightStaffUnbindIncrement}
                                         defaultValue={lightStaffUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightStaffUnbindState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightStaffUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightStaffRefineIncrement}
                                         defaultValue={lightStaffRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightStaffRefineState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightStaffRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: lightStaffWeaponBonusState }} onClick={lightStaffWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: lightStaffWyrmprintSlotState }} onClick={lightStaffWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: lightStaffWeaponBonusState }} onClick={lightStaffWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: lightStaffWyrmprintSlotState }} onClick={lightStaffWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
-                        <Card width={[150, 256]}>
+                        <Card width={[150, 200]}>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={LightAgitoManacaster} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: lightManacasterCraftState }} onClick={craftLightManacaster} />
+                                <Box width={[0, 1 / 10]}></Box>
+                                <Image src={LightAgitoManacaster} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: lightManacasterCraftState }} onClick={craftLightManacaster} />
                             </Flex>
                             <Flex>
-                                <Box width={1 / 16}></Box>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="gold">Gae Assail</Text>
                             </Flex>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}>
+                                    <Box width={[1 / 6, 1 / 3]}>
 
                                     </Box>
-                                    <Image src={Unbind} />
+                                    <Image src={Unbind} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightManacasterUnbindIncrement}
                                         defaultValue={lightManacasterUnbindState}
                                         step="1"
                                         max="9"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightManacasterUnbindState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightManacasterUnbindState}</Text>
                                 </Flex>
                             </Box>
                             <Box width={[125, 150]}>
                                 <Flex>
-                                    <Box width={1 / 3}></Box>
-                                    <Image src={Refine} />
+                                    <Box width={[1 / 8, 1 / 3]}></Box>
+                                    <Image src={Refine} sx={{ width: ["30%", "35%"] }} />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 10}></Box>
+                                    <Box width={[0, 1 / 10]}></Box>
                                     <Slider
                                         onChange={handleLightManacasterRefineIncrement}
                                         defaultValue={lightManacasterRefineState}
                                         step="1"
                                         max="2"
                                         bg="primary"
+                                        width={[3 / 5, 1]}
+                                        color="gold"
                                     />
                                 </Flex>
                                 <Flex>
-                                    <Box width={1 / 2}>
+                                    <Box width={[1 / 4, 1 / 2]}>
 
                                     </Box>
-                                    <Text>{lightManacasterRefineState}</Text>
+                                    <Text color="gold" fontSize={[1, 3]}>{lightManacasterRefineState}</Text>
                                 </Flex>
                             </Box>
                             <Flex>
-                                <Box width={1 / 8}></Box>
-                                <Image src={WeaponBonus} style={{ filter: lightManacasterWeaponBonusState }} onClick={lightManacasterWeaponBonus} />
-                                <Box width={1 / 8}></Box>
-                                <Image src={WyrmprintSlots} style={{ filter: lightManacasterWyrmprintSlotState }} onClick={lightManacasterWyrmprintSlot} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WeaponBonus} style={{ filter: lightManacasterWeaponBonusState }} onClick={lightManacasterWeaponBonus} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
+                                <Box width={[0, 1 / 8]}></Box>
+                                <Image src={WyrmprintSlots} style={{ filter: lightManacasterWyrmprintSlotState }} onClick={lightManacasterWyrmprintSlot} sx={{ width: ["42%", "25%"], height: ["25%"] }} />
                             </Flex>
                         </Card>
                     </Flex>
+                    <Flex>&nbsp;</Flex>
                 </Box>
                 {/* The box for the materials needed to 100% a weapon */}
                 {lightWeaponSelection()}
             </Flex>
+            <Flex>&nbsp;</Flex>
             <WeaponTypeNavTabs />
         </div>
     )
