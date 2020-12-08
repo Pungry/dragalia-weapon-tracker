@@ -14,6 +14,14 @@ import FireAgitoWand from "../Images/Fire_Agito_Wand.png";
 import FireAgitoStaff from "../Images/Fire_Agito_Staff.png";
 import FireAgitoManacaster from "../Images/Fire_Agito_Manacaster.png";
 
+import FireAgitoSilverMask from "../Images/Fire_Agito_Silver_Mask.png";
+import FireAgitoGoldMask from "../Images/Fire_Agito_Gold_Mask.png";
+import FireAgitoInsanity from "../Images/Fire_Agito_Insanity.png";
+import FireAgitoGale from "../Images/Fire_Agito_Gale.png";
+import TwinklingSand from "../Images/Twinkling_Sand.png";
+import Orichalcum from "../Images/Orichalcum.png";
+import Rupies from "../Images/Rupees.png";
+
 import Refine from "../Images/Refine.PNG";
 import Unbind from "../Images/Unbind.PNG";
 import WyrmprintSlots from "../Images/Wyrmprint_Slots.PNG";
@@ -31,6 +39,14 @@ import FireAgitoManacasterCost from "./FireAgitoManacasterMats"
 
 export default function FireAgitoWeapons() {
     const [fireWeaponChoice, setFireWeaponChoiceState] = useLocalStorage("fireWeaponChoice", "sword")
+
+    const [allmubFASilverMaskCount, setallmubFASilverMaskCount] = useLocalStorage("allmubFASilverMaskState", 4644)
+    const [allmubFAGoldMaskCount, setallmubFAGoldMaskCount] = useLocalStorage("allmubFAGoldMaskState", 3690)
+    const [allmubFAInsanityCount, setallmubFAInsanityCount] = useLocalStorage("allmubFAInsanityCount", 801)
+    const [allmubFAGaleCount, setallmubFAGaleCount] = useLocalStorage("allmubFAGaleCount", 270)
+    const [allmubFASandCount, setallmubFASandCount] = useLocalStorage("allmubFASandCount", 45)
+    const [allmubFAOriCount, setallmubFAOriCount] = useLocalStorage("allmubFAOriCount", 594)
+    const [allmubFARupeeCost, setallmubFARupeeCost] = useLocalStorage("allmubFARupeeCost", 535.5)
 
     const [fireSwordCraftState, setFireSwordCraftState] = useLocalStorage("fireSwordCraftState", "grayscale(100%)")
     const [fireSwordWeaponBonusState, setFireSwordWeaponBonusState] = useLocalStorage("fireSwordWeaponBonusState", "grayscale(100%)")
@@ -287,6 +303,10 @@ export default function FireAgitoWeapons() {
             setwbFASSandCountState(wbFASSandCount - 1)
             setmubFASRupeeCost(mubFASRupeeCost - 2)
             setwbFASRupeeCost(wbFASRupeeCost - 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+            setallmubFASandCount(allmubFASandCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2)
         }
         else if (fireSwordCraftState == "grayscale(0%)") {
             setFireSwordCraftState("grayscale(100%)")
@@ -299,6 +319,10 @@ export default function FireAgitoWeapons() {
             setwbFASSandCountState(wbFASSandCount + 1)
             setmubFASRupeeCost(mubFASRupeeCost + 2)
             setwbFASRupeeCost(wbFASRupeeCost + 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+            setallmubFASandCount(allmubFASandCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2)
         }
     }
 
@@ -316,6 +340,11 @@ export default function FireAgitoWeapons() {
             setwbFASOriCountState(wbFASOriCount - 30)
             setmubFASRupeeCost(mubFASRupeeCost - 10)
             setwbFASRupeeCost(wbFASRupeeCost - 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount - 14)
+            setallmubFAOriCount(allmubFAOriCount - 30)
+            setallmubFARupeeCost(allmubFARupeeCost - 10)
         }
         else if (fireSwordWeaponBonusState == "grayscale(0%)") {
             setFireSwordWeaponBonusState("grayscale(100%)");
@@ -330,6 +359,11 @@ export default function FireAgitoWeapons() {
             setwbFASOriCountState(wbFASOriCount + 30)
             setmubFASRupeeCost(mubFASRupeeCost + 10)
             setwbFASRupeeCost(wbFASRupeeCost + 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount + 14)
+            setallmubFAOriCount(allmubFAOriCount + 30)
+            setallmubFARupeeCost(allmubFARupeeCost + 10)
         }
     }
 
@@ -341,6 +375,10 @@ export default function FireAgitoWeapons() {
             setmubFASGoldMaskCountState(mubFASGoldMaskCount - 10)
             setmubFASOriCountState(mubFASOriCount - 1)
             setmubFASRupeeCost(mubFASRupeeCost - 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+            setallmubFAOriCount(allmubFAOriCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2.5)
         }
         else if (fireSwordWyrmprintSlotState == "grayscale(0%)") {
             setFireSwordWyrmprintSlotState("grayscale(100%)");
@@ -349,6 +387,10 @@ export default function FireAgitoWeapons() {
             setmubFASGoldMaskCountState(mubFASGoldMaskCount + 10)
             setmubFASOriCountState(mubFASOriCount + 1)
             setmubFASRupeeCost(mubFASRupeeCost + 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+            setallmubFAOriCount(allmubFAOriCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2.5)
         }
     }
 
@@ -366,6 +408,10 @@ export default function FireAgitoWeapons() {
                     setwbFASSandCountState(wbFASSandCount - 1)
                     setmubFASRupeeCost(mubFASRupeeCost - 2)
                     setwbFASRupeeCost(wbFASRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFASandCount(allmubFASandCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubFASSilverMaskCountState(mubFASSilverMaskCount - 16)
@@ -378,6 +424,11 @@ export default function FireAgitoWeapons() {
                     setwbFASOriCountState(wbFASOriCount - 1)
                     setmubFASRupeeCost(mubFASRupeeCost - 7.5)
                     setwbFASRupeeCost(wbFASRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubFASSilverMaskCountState(mubFASSilverMaskCount - 16)
@@ -385,6 +436,11 @@ export default function FireAgitoWeapons() {
                     setmubFASInsanityCountState(mubFASInsanityCount - 7)
                     setmubFASOriCountState(mubFASOriCount - 1)
                     setmubFASRupeeCost(mubFASRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubFASSilverMaskCountState(mubFASSilverMaskCount - 80)
@@ -393,6 +449,12 @@ export default function FireAgitoWeapons() {
                     setmubFASGaleCountState(mubFASGaleCount - 20)
                     setmubFASOriCountState(mubFASOriCount - 20)
                     setmubFASRupeeCost(mubFASRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
+                    setallmubFAGaleCount(allmubFAGaleCount - 20)
+                    setallmubFAOriCount(allmubFAOriCount - 20)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
             }
         }
@@ -408,6 +470,10 @@ export default function FireAgitoWeapons() {
                     setwbFASSandCountState(wbFASSandCount + 1)
                     setmubFASRupeeCost(mubFASRupeeCost + 2)
                     setwbFASRupeeCost(wbFASRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFASandCount(allmubFASandCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubFASSilverMaskCountState(mubFASSilverMaskCount + 16)
@@ -420,6 +486,11 @@ export default function FireAgitoWeapons() {
                     setwbFASOriCountState(wbFASOriCount + 1)
                     setmubFASRupeeCost(mubFASRupeeCost + 7.5)
                     setwbFASRupeeCost(wbFASRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubFASSilverMaskCountState(mubFASSilverMaskCount + 16)
@@ -427,6 +498,11 @@ export default function FireAgitoWeapons() {
                     setmubFASInsanityCountState(mubFASInsanityCount + 7)
                     setmubFASOriCountState(mubFASOriCount + 1)
                     setmubFASRupeeCost(mubFASRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubFASSilverMaskCountState(mubFASSilverMaskCount + 80)
@@ -435,6 +511,12 @@ export default function FireAgitoWeapons() {
                     setmubFASGaleCountState(mubFASGaleCount + 20)
                     setmubFASOriCountState(mubFASOriCount + 20)
                     setmubFASRupeeCost(mubFASRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
+                    setallmubFAGaleCount(allmubFAGaleCount + 20)
+                    setallmubFAOriCount(allmubFAOriCount + 20)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
             }
         }
@@ -456,6 +538,11 @@ export default function FireAgitoWeapons() {
                     setwbFASOriCountState(wbFASOriCount - 1);
                     setmubFASRupeeCost(mubFASRupeeCost - 2.5);
                     setwbFASRupeeCost(wbFASRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubFASSilverMaskCountState(mubFASSilverMaskCount - 40)
@@ -464,6 +551,12 @@ export default function FireAgitoWeapons() {
                     setmubFASGaleCountState(mubFASGaleCount - 10);
                     setmubFASOriCountState(mubFASOriCount - 10);
                     setmubFASRupeeCost(mubFASRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                    setallmubFAGaleCount(allmubFAGaleCount - 10)
+                    setallmubFAOriCount(allmubFAOriCount - 10)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
             }
         }
@@ -481,6 +574,11 @@ export default function FireAgitoWeapons() {
                     setwbFASOriCountState(wbFASOriCount + 1);
                     setmubFASRupeeCost(mubFASRupeeCost + 2.5);
                     setwbFASRupeeCost(wbFASRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubFASSilverMaskCountState(mubFASSilverMaskCount + 40)
@@ -489,6 +587,12 @@ export default function FireAgitoWeapons() {
                     setmubFASGaleCountState(mubFASGaleCount + 10);
                     setmubFASOriCountState(mubFASOriCount + 10);
                     setmubFASRupeeCost(mubFASRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                    setallmubFAGaleCount(allmubFAGaleCount + 10)
+                    setallmubFAOriCount(allmubFAOriCount + 10)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
             }
         }
@@ -506,6 +610,10 @@ export default function FireAgitoWeapons() {
             setwbFABlSandCountState(wbFABlSandCount - 1)
             setmubFABlRupeeCost(mubFABlRupeeCost - 2)
             setwbFABlRupeeCost(wbFABlRupeeCost - 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+            setallmubFASandCount(allmubFASandCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2)
         }
         else if (fireBladeCraftState == "grayscale(0%)") {
             setFireBladeCraftState("grayscale(100%)")
@@ -518,6 +626,10 @@ export default function FireAgitoWeapons() {
             setwbFABlSandCountState(wbFABlSandCount + 1)
             setmubFABlRupeeCost(mubFABlRupeeCost + 2)
             setwbFABlRupeeCost(wbFABlRupeeCost + 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+            setallmubFASandCount(allmubFASandCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2)
         }
     }
 
@@ -535,6 +647,11 @@ export default function FireAgitoWeapons() {
             setwbFABlOriCountState(wbFABlOriCount - 30)
             setmubFABlRupeeCost(mubFABlRupeeCost - 10)
             setwbFABlRupeeCost(wbFABlRupeeCost - 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount - 14)
+            setallmubFAOriCount(allmubFAOriCount - 30)
+            setallmubFARupeeCost(allmubFARupeeCost - 10)
         }
         else if (fireBladeWeaponBonusState == "grayscale(0%)") {
             setFireBladeWeaponBonusState("grayscale(100%)");
@@ -549,6 +666,11 @@ export default function FireAgitoWeapons() {
             setwbFABlOriCountState(wbFABlOriCount + 30)
             setmubFABlRupeeCost(mubFABlRupeeCost + 10)
             setwbFABlRupeeCost(wbFABlRupeeCost + 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount + 14)
+            setallmubFAOriCount(allmubFAOriCount + 30)
+            setallmubFARupeeCost(allmubFARupeeCost + 10)
         }
     }
 
@@ -560,6 +682,10 @@ export default function FireAgitoWeapons() {
             setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - 10)
             setmubFABlOriCountState(mubFABlOriCount - 1)
             setmubFABlRupeeCost(mubFABlRupeeCost - 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+            setallmubFAOriCount(allmubFAOriCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2.5)
         }
         else if (fireBladeWyrmprintSlotState == "grayscale(0%)") {
             setFireBladeWyrmprintSlotState("grayscale(100%)");
@@ -568,6 +694,10 @@ export default function FireAgitoWeapons() {
             setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + 10)
             setmubFABlOriCountState(mubFABlOriCount + 1)
             setmubFABlRupeeCost(mubFABlRupeeCost + 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+            setallmubFAOriCount(allmubFAOriCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2.5)
         }
     }
 
@@ -585,6 +715,10 @@ export default function FireAgitoWeapons() {
                     setwbFABlSandCountState(wbFABlSandCount - 1)
                     setmubFABlRupeeCost(mubFABlRupeeCost - 2)
                     setwbFABlRupeeCost(wbFABlRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFASandCount(allmubFASandCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 16)
@@ -597,6 +731,11 @@ export default function FireAgitoWeapons() {
                     setwbFABlOriCountState(wbFABlOriCount - 1)
                     setmubFABlRupeeCost(mubFABlRupeeCost - 7.5)
                     setwbFABlRupeeCost(wbFABlRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 16)
@@ -604,6 +743,11 @@ export default function FireAgitoWeapons() {
                     setmubFABlInsanityCountState(mubFABlInsanityCount - 7)
                     setmubFABlOriCountState(mubFABlOriCount - 1)
                     setmubFABlRupeeCost(mubFABlRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 80)
@@ -612,6 +756,12 @@ export default function FireAgitoWeapons() {
                     setmubFABlGaleCountState(mubFABlGaleCount - 20)
                     setmubFABlOriCountState(mubFABlOriCount - 20)
                     setmubFABlRupeeCost(mubFABlRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
+                    setallmubFAGaleCount(allmubFAGaleCount - 20)
+                    setallmubFAOriCount(allmubFAOriCount - 20)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
             }
         }
@@ -627,6 +777,10 @@ export default function FireAgitoWeapons() {
                     setwbFABlSandCountState(wbFABlSandCount + 1)
                     setmubFABlRupeeCost(mubFABlRupeeCost + 2)
                     setwbFABlRupeeCost(wbFABlRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFASandCount(allmubFASandCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 16)
@@ -639,6 +793,11 @@ export default function FireAgitoWeapons() {
                     setwbFABlOriCountState(wbFABlOriCount + 1)
                     setmubFABlRupeeCost(mubFABlRupeeCost + 7.5)
                     setwbFABlRupeeCost(wbFABlRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 16)
@@ -646,6 +805,11 @@ export default function FireAgitoWeapons() {
                     setmubFABlInsanityCountState(mubFABlInsanityCount + 7)
                     setmubFABlOriCountState(mubFABlOriCount + 1)
                     setmubFABlRupeeCost(mubFABlRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 80)
@@ -654,6 +818,12 @@ export default function FireAgitoWeapons() {
                     setmubFABlGaleCountState(mubFABlGaleCount + 20)
                     setmubFABlOriCountState(mubFABlOriCount + 20)
                     setmubFABlRupeeCost(mubFABlRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
+                    setallmubFAGaleCount(allmubFAGaleCount + 20)
+                    setallmubFAOriCount(allmubFAOriCount + 20)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
             }
         }
@@ -675,6 +845,11 @@ export default function FireAgitoWeapons() {
                     setwbFABlOriCountState(wbFABlOriCount - 1);
                     setmubFABlRupeeCost(mubFABlRupeeCost - 2.5);
                     setwbFABlRupeeCost(wbFABlRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 40)
@@ -683,6 +858,12 @@ export default function FireAgitoWeapons() {
                     setmubFABlGaleCountState(mubFABlGaleCount - 10);
                     setmubFABlOriCountState(mubFABlOriCount - 10);
                     setmubFABlRupeeCost(mubFABlRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                    setallmubFAGaleCount(allmubFAGaleCount - 10)
+                    setallmubFAOriCount(allmubFAOriCount - 10)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
             }
         }
@@ -700,6 +881,11 @@ export default function FireAgitoWeapons() {
                     setwbFABlOriCountState(wbFABlOriCount + 1);
                     setmubFABlRupeeCost(mubFABlRupeeCost + 2.5);
                     setwbFABlRupeeCost(wbFABlRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 40)
@@ -708,6 +894,12 @@ export default function FireAgitoWeapons() {
                     setmubFABlGaleCountState(mubFABlGaleCount + 10);
                     setmubFABlOriCountState(mubFABlOriCount + 10);
                     setmubFABlRupeeCost(mubFABlRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                    setallmubFAGaleCount(allmubFAGaleCount + 10)
+                    setallmubFAOriCount(allmubFAOriCount + 10)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
             }
         }
@@ -725,6 +917,10 @@ export default function FireAgitoWeapons() {
             setwbFADSandCountState(wbFADSandCount - 1)
             setmubFADRupeeCost(mubFADRupeeCost - 2)
             setwbFADRupeeCost(wbFADRupeeCost - 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+            setallmubFASandCount(allmubFASandCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2)
         }
         else if (fireDaggerCraftState == "grayscale(0%)") {
             setFireDaggerCraftState("grayscale(100%)")
@@ -737,6 +933,10 @@ export default function FireAgitoWeapons() {
             setwbFADSandCountState(wbFADSandCount + 1)
             setmubFADRupeeCost(mubFADRupeeCost + 2)
             setwbFADRupeeCost(wbFADRupeeCost + 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+            setallmubFASandCount(allmubFASandCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2)
         }
     }
 
@@ -754,6 +954,11 @@ export default function FireAgitoWeapons() {
             setwbFADOriCountState(wbFADOriCount - 30)
             setmubFADRupeeCost(mubFADRupeeCost - 10)
             setwbFADRupeeCost(wbFADRupeeCost - 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount - 14)
+            setallmubFAOriCount(allmubFAOriCount - 30)
+            setallmubFARupeeCost(allmubFARupeeCost - 10)
         }
         else if (fireDaggerWeaponBonusState == "grayscale(0%)") {
             setFireDaggerWeaponBonusState("grayscale(100%)");
@@ -768,6 +973,11 @@ export default function FireAgitoWeapons() {
             setwbFADOriCountState(wbFADOriCount + 30)
             setmubFADRupeeCost(mubFADRupeeCost + 10)
             setwbFADRupeeCost(wbFADRupeeCost + 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount + 14)
+            setallmubFAOriCount(allmubFAOriCount + 30)
+            setallmubFARupeeCost(allmubFARupeeCost + 10)
         }
     }
 
@@ -779,6 +989,10 @@ export default function FireAgitoWeapons() {
             setmubFADGoldMaskCountState(mubFADGoldMaskCount - 10)
             setmubFADOriCountState(mubFADOriCount - 1)
             setmubFADRupeeCost(mubFADRupeeCost - 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+            setallmubFAOriCount(allmubFAOriCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2.5)
         }
         else if (fireDaggerWyrmprintSlotState == "grayscale(0%)") {
             setFireDaggerWyrmprintSlotState("grayscale(100%)");
@@ -787,6 +1001,10 @@ export default function FireAgitoWeapons() {
             setmubFADGoldMaskCountState(mubFADGoldMaskCount + 10)
             setmubFADOriCountState(mubFADOriCount + 1)
             setmubFADRupeeCost(mubFADRupeeCost + 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+            setallmubFAOriCount(allmubFAOriCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2.5)
         }
     }
 
@@ -804,6 +1022,10 @@ export default function FireAgitoWeapons() {
                     setwbFADSandCountState(wbFADSandCount - 1)
                     setmubFADRupeeCost(mubFADRupeeCost - 2)
                     setwbFADRupeeCost(wbFADRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFASandCount(allmubFASandCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubFADSilverMaskCountState(mubFADSilverMaskCount - 16)
@@ -816,6 +1038,11 @@ export default function FireAgitoWeapons() {
                     setwbFADOriCountState(wbFADOriCount - 1)
                     setmubFADRupeeCost(mubFADRupeeCost - 7.5)
                     setwbFADRupeeCost(wbFADRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubFADSilverMaskCountState(mubFADSilverMaskCount - 16)
@@ -823,6 +1050,11 @@ export default function FireAgitoWeapons() {
                     setmubFADInsanityCountState(mubFADInsanityCount - 7)
                     setmubFADOriCountState(mubFADOriCount - 1)
                     setmubFADRupeeCost(mubFADRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubFADSilverMaskCountState(mubFADSilverMaskCount - 80)
@@ -831,6 +1063,12 @@ export default function FireAgitoWeapons() {
                     setmubFADGaleCountState(mubFADGaleCount - 20)
                     setmubFADOriCountState(mubFADOriCount - 20)
                     setmubFADRupeeCost(mubFADRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
+                    setallmubFAGaleCount(allmubFAGaleCount - 20)
+                    setallmubFAOriCount(allmubFAOriCount - 20)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
             }
         }
@@ -846,6 +1084,10 @@ export default function FireAgitoWeapons() {
                     setwbFADSandCountState(wbFADSandCount + 1)
                     setmubFADRupeeCost(mubFADRupeeCost + 2)
                     setwbFADRupeeCost(wbFADRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFASandCount(allmubFASandCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubFADSilverMaskCountState(mubFADSilverMaskCount + 16)
@@ -858,6 +1100,11 @@ export default function FireAgitoWeapons() {
                     setwbFADOriCountState(wbFADOriCount + 1)
                     setmubFADRupeeCost(mubFADRupeeCost + 7.5)
                     setwbFADRupeeCost(wbFADRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubFADSilverMaskCountState(mubFADSilverMaskCount + 16)
@@ -865,6 +1112,11 @@ export default function FireAgitoWeapons() {
                     setmubFADInsanityCountState(mubFADInsanityCount + 7)
                     setmubFADOriCountState(mubFADOriCount + 1)
                     setmubFADRupeeCost(mubFADRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubFADSilverMaskCountState(mubFADSilverMaskCount + 80)
@@ -873,6 +1125,12 @@ export default function FireAgitoWeapons() {
                     setmubFADGaleCountState(mubFADGaleCount + 20)
                     setmubFADOriCountState(mubFADOriCount + 20)
                     setmubFADRupeeCost(mubFADRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
+                    setallmubFAGaleCount(allmubFAGaleCount + 20)
+                    setallmubFAOriCount(allmubFAOriCount + 20)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
             }
         }
@@ -894,6 +1152,11 @@ export default function FireAgitoWeapons() {
                     setwbFADOriCountState(wbFADOriCount - 1);
                     setmubFADRupeeCost(mubFADRupeeCost - 2.5);
                     setwbFADRupeeCost(wbFADRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubFADSilverMaskCountState(mubFADSilverMaskCount - 40)
@@ -902,6 +1165,12 @@ export default function FireAgitoWeapons() {
                     setmubFADGaleCountState(mubFADGaleCount - 10);
                     setmubFADOriCountState(mubFADOriCount - 10);
                     setmubFADRupeeCost(mubFADRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                    setallmubFAGaleCount(allmubFAGaleCount - 10)
+                    setallmubFAOriCount(allmubFAOriCount - 10)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
             }
         }
@@ -919,6 +1188,11 @@ export default function FireAgitoWeapons() {
                     setwbFADOriCountState(wbFADOriCount + 1);
                     setmubFADRupeeCost(mubFADRupeeCost + 2.5);
                     setwbFADRupeeCost(wbFADRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubFADSilverMaskCountState(mubFADSilverMaskCount + 40)
@@ -927,6 +1201,12 @@ export default function FireAgitoWeapons() {
                     setmubFADGaleCountState(mubFADGaleCount + 10);
                     setmubFADOriCountState(mubFADOriCount + 10);
                     setmubFADRupeeCost(mubFADRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                    setallmubFAGaleCount(allmubFAGaleCount + 10)
+                    setallmubFAOriCount(allmubFAOriCount + 10)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
             }
         }
@@ -944,6 +1224,10 @@ export default function FireAgitoWeapons() {
             setwbFAASandCountState(wbFAASandCount - 1)
             setmubFAARupeeCost(mubFAARupeeCost - 2)
             setwbFAARupeeCost(wbFAARupeeCost - 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+            setallmubFASandCount(allmubFASandCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2)
         }
         else if (fireAxeCraftState == "grayscale(0%)") {
             setFireAxeCraftState("grayscale(100%)")
@@ -956,6 +1240,10 @@ export default function FireAgitoWeapons() {
             setwbFAASandCountState(wbFAASandCount + 1)
             setmubFAARupeeCost(mubFAARupeeCost + 2)
             setwbFAARupeeCost(wbFAARupeeCost + 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+            setallmubFASandCount(allmubFASandCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2)
         }
     }
 
@@ -973,6 +1261,11 @@ export default function FireAgitoWeapons() {
             setwbFAAOriCountState(wbFAAOriCount - 30)
             setmubFAARupeeCost(mubFAARupeeCost - 10)
             setwbFAARupeeCost(wbFAARupeeCost - 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount - 14)
+            setallmubFAOriCount(allmubFAOriCount - 30)
+            setallmubFARupeeCost(allmubFARupeeCost - 10)
         }
         else if (fireAxeWeaponBonusState == "grayscale(0%)") {
             setFireAxeWeaponBonusState("grayscale(100%)");
@@ -987,6 +1280,11 @@ export default function FireAgitoWeapons() {
             setwbFAAOriCountState(wbFAAOriCount + 30)
             setmubFAARupeeCost(mubFAARupeeCost + 10)
             setwbFAARupeeCost(wbFAARupeeCost + 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount + 14)
+            setallmubFAOriCount(allmubFAOriCount + 30)
+            setallmubFARupeeCost(allmubFARupeeCost + 10)
         }
     }
 
@@ -998,6 +1296,10 @@ export default function FireAgitoWeapons() {
             setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - 10)
             setmubFAAOriCountState(mubFAAOriCount - 1)
             setmubFAARupeeCost(mubFAARupeeCost - 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+            setallmubFAOriCount(allmubFAOriCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2.5)
         }
         else if (fireAxeWyrmprintSlotState == "grayscale(0%)") {
             setFireAxeWyrmprintSlotState("grayscale(100%)");
@@ -1006,6 +1308,10 @@ export default function FireAgitoWeapons() {
             setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + 10)
             setmubFAAOriCountState(mubFAAOriCount + 1)
             setmubFAARupeeCost(mubFAARupeeCost + 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+            setallmubFAOriCount(allmubFAOriCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2.5)
         }
     }
 
@@ -1023,6 +1329,10 @@ export default function FireAgitoWeapons() {
                     setwbFAASandCountState(wbFAASandCount - 1)
                     setmubFAARupeeCost(mubFAARupeeCost - 2)
                     setwbFAARupeeCost(wbFAARupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFASandCount(allmubFASandCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubFAASilverMaskCountState(mubFAASilverMaskCount - 16)
@@ -1035,6 +1345,11 @@ export default function FireAgitoWeapons() {
                     setwbFAAOriCountState(wbFAAOriCount - 1)
                     setmubFAARupeeCost(mubFAARupeeCost - 7.5)
                     setwbFAARupeeCost(wbFAARupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubFAASilverMaskCountState(mubFAASilverMaskCount - 16)
@@ -1042,6 +1357,11 @@ export default function FireAgitoWeapons() {
                     setmubFAAInsanityCountState(mubFAAInsanityCount - 7)
                     setmubFAAOriCountState(mubFAAOriCount - 1)
                     setmubFAARupeeCost(mubFAARupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubFAASilverMaskCountState(mubFAASilverMaskCount - 80)
@@ -1050,6 +1370,12 @@ export default function FireAgitoWeapons() {
                     setmubFAAGaleCountState(mubFAAGaleCount - 20)
                     setmubFAAOriCountState(mubFAAOriCount - 20)
                     setmubFAARupeeCost(mubFAARupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
+                    setallmubFAGaleCount(allmubFAGaleCount - 20)
+                    setallmubFAOriCount(allmubFAOriCount - 20)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
             }
         }
@@ -1065,6 +1391,10 @@ export default function FireAgitoWeapons() {
                     setwbFAASandCountState(wbFAASandCount + 1)
                     setmubFAARupeeCost(mubFAARupeeCost + 2)
                     setwbFAARupeeCost(wbFAARupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFASandCount(allmubFASandCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubFAASilverMaskCountState(mubFAASilverMaskCount + 16)
@@ -1077,6 +1407,11 @@ export default function FireAgitoWeapons() {
                     setwbFAAOriCountState(wbFAAOriCount + 1)
                     setmubFAARupeeCost(mubFAARupeeCost + 7.5)
                     setwbFAARupeeCost(wbFAARupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubFAASilverMaskCountState(mubFAASilverMaskCount + 16)
@@ -1084,6 +1419,11 @@ export default function FireAgitoWeapons() {
                     setmubFAAInsanityCountState(mubFAAInsanityCount + 7)
                     setmubFAAOriCountState(mubFAAOriCount + 1)
                     setmubFAARupeeCost(mubFAARupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubFAASilverMaskCountState(mubFAASilverMaskCount + 80)
@@ -1092,6 +1432,12 @@ export default function FireAgitoWeapons() {
                     setmubFAAGaleCountState(mubFAAGaleCount + 20)
                     setmubFAAOriCountState(mubFAAOriCount + 20)
                     setmubFAARupeeCost(mubFAARupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
+                    setallmubFAGaleCount(allmubFAGaleCount + 20)
+                    setallmubFAOriCount(allmubFAOriCount + 20)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
             }
         }
@@ -1113,6 +1459,11 @@ export default function FireAgitoWeapons() {
                     setwbFAAOriCountState(wbFAAOriCount - 1);
                     setmubFAARupeeCost(mubFAARupeeCost - 2.5);
                     setwbFAARupeeCost(wbFAARupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubFAASilverMaskCountState(mubFAASilverMaskCount - 40)
@@ -1121,6 +1472,12 @@ export default function FireAgitoWeapons() {
                     setmubFAAGaleCountState(mubFAAGaleCount - 10);
                     setmubFAAOriCountState(mubFAAOriCount - 10);
                     setmubFAARupeeCost(mubFAARupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                    setallmubFAGaleCount(allmubFAGaleCount - 10)
+                    setallmubFAOriCount(allmubFAOriCount - 10)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
             }
         }
@@ -1138,6 +1495,11 @@ export default function FireAgitoWeapons() {
                     setwbFAAOriCountState(wbFAAOriCount + 1);
                     setmubFAARupeeCost(mubFAARupeeCost + 2.5);
                     setwbFAARupeeCost(wbFAARupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubFAASilverMaskCountState(mubFAASilverMaskCount + 40)
@@ -1146,6 +1508,12 @@ export default function FireAgitoWeapons() {
                     setmubFAAGaleCountState(mubFAAGaleCount + 10);
                     setmubFAAOriCountState(mubFAAOriCount + 10);
                     setmubFAARupeeCost(mubFAARupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                    setallmubFAGaleCount(allmubFAGaleCount + 10)
+                    setallmubFAOriCount(allmubFAOriCount + 10)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
             }
         }
@@ -1163,6 +1531,10 @@ export default function FireAgitoWeapons() {
             setwbFALSandCountState(wbFALSandCount - 1)
             setmubFALRupeeCost(mubFALRupeeCost - 2)
             setwbFALRupeeCost(wbFALRupeeCost - 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+            setallmubFASandCount(allmubFASandCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2)
         }
         else if (fireLanceCraftState == "grayscale(0%)") {
             setFireLanceCraftState("grayscale(100%)")
@@ -1175,6 +1547,10 @@ export default function FireAgitoWeapons() {
             setwbFALSandCountState(wbFALSandCount + 1)
             setmubFALRupeeCost(mubFALRupeeCost + 2)
             setwbFALRupeeCost(wbFALRupeeCost + 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+            setallmubFASandCount(allmubFASandCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2)
         }
     }
 
@@ -1192,6 +1568,11 @@ export default function FireAgitoWeapons() {
             setwbFALOriCountState(wbFALOriCount - 30)
             setmubFALRupeeCost(mubFALRupeeCost - 10)
             setwbFALRupeeCost(wbFALRupeeCost - 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount - 14)
+            setallmubFAOriCount(allmubFAOriCount - 30)
+            setallmubFARupeeCost(allmubFARupeeCost - 10)
         }
         else if (fireLanceWeaponBonusState == "grayscale(0%)") {
             setFireLanceWeaponBonusState("grayscale(100%)");
@@ -1206,6 +1587,11 @@ export default function FireAgitoWeapons() {
             setwbFALOriCountState(wbFALOriCount + 30)
             setmubFALRupeeCost(mubFALRupeeCost + 10)
             setwbFALRupeeCost(wbFALRupeeCost + 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount + 14)
+            setallmubFAOriCount(allmubFAOriCount + 30)
+            setallmubFARupeeCost(allmubFARupeeCost + 10)
         }
     }
 
@@ -1217,6 +1603,10 @@ export default function FireAgitoWeapons() {
             setmubFALGoldMaskCountState(mubFALGoldMaskCount - 10)
             setmubFALOriCountState(mubFALOriCount - 1)
             setmubFALRupeeCost(mubFALRupeeCost - 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+            setallmubFAOriCount(allmubFAOriCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2.5)
         }
         else if (fireLanceWyrmprintSlotState == "grayscale(0%)") {
             setFireLanceWyrmprintSlotState("grayscale(100%)");
@@ -1225,6 +1615,10 @@ export default function FireAgitoWeapons() {
             setmubFALGoldMaskCountState(mubFALGoldMaskCount + 10)
             setmubFALOriCountState(mubFALOriCount + 1)
             setmubFALRupeeCost(mubFALRupeeCost + 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+            setallmubFAOriCount(allmubFAOriCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2.5)
         }
     }
 
@@ -1242,6 +1636,10 @@ export default function FireAgitoWeapons() {
                     setwbFALSandCountState(wbFALSandCount - 1)
                     setmubFALRupeeCost(mubFALRupeeCost - 2)
                     setwbFALRupeeCost(wbFALRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFASandCount(allmubFASandCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubFALSilverMaskCountState(mubFALSilverMaskCount - 16)
@@ -1254,6 +1652,11 @@ export default function FireAgitoWeapons() {
                     setwbFALOriCountState(wbFALOriCount - 1)
                     setmubFALRupeeCost(mubFALRupeeCost - 7.5)
                     setwbFALRupeeCost(wbFALRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubFALSilverMaskCountState(mubFALSilverMaskCount - 16)
@@ -1261,6 +1664,11 @@ export default function FireAgitoWeapons() {
                     setmubFALInsanityCountState(mubFALInsanityCount - 7)
                     setmubFALOriCountState(mubFALOriCount - 1)
                     setmubFALRupeeCost(mubFALRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubFALSilverMaskCountState(mubFALSilverMaskCount - 80)
@@ -1269,6 +1677,12 @@ export default function FireAgitoWeapons() {
                     setmubFALGaleCountState(mubFALGaleCount - 20)
                     setmubFALOriCountState(mubFALOriCount - 20)
                     setmubFALRupeeCost(mubFALRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
+                    setallmubFAGaleCount(allmubFAGaleCount - 20)
+                    setallmubFAOriCount(allmubFAOriCount - 20)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
             }
         }
@@ -1284,6 +1698,10 @@ export default function FireAgitoWeapons() {
                     setwbFALSandCountState(wbFALSandCount + 1)
                     setmubFALRupeeCost(mubFALRupeeCost + 2)
                     setwbFALRupeeCost(wbFALRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFASandCount(allmubFASandCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubFALSilverMaskCountState(mubFALSilverMaskCount + 16)
@@ -1296,6 +1714,11 @@ export default function FireAgitoWeapons() {
                     setwbFALOriCountState(wbFALOriCount + 1)
                     setmubFALRupeeCost(mubFALRupeeCost + 7.5)
                     setwbFALRupeeCost(wbFALRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubFALSilverMaskCountState(mubFALSilverMaskCount + 16)
@@ -1303,6 +1726,11 @@ export default function FireAgitoWeapons() {
                     setmubFALInsanityCountState(mubFALInsanityCount + 7)
                     setmubFALOriCountState(mubFALOriCount + 1)
                     setmubFALRupeeCost(mubFALRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubFALSilverMaskCountState(mubFALSilverMaskCount + 80)
@@ -1311,6 +1739,12 @@ export default function FireAgitoWeapons() {
                     setmubFALGaleCountState(mubFALGaleCount + 20)
                     setmubFALOriCountState(mubFALOriCount + 20)
                     setmubFALRupeeCost(mubFALRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
+                    setallmubFAGaleCount(allmubFAGaleCount + 20)
+                    setallmubFAOriCount(allmubFAOriCount + 20)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
             }
         }
@@ -1332,6 +1766,11 @@ export default function FireAgitoWeapons() {
                     setwbFALOriCountState(wbFALOriCount - 1);
                     setmubFALRupeeCost(mubFALRupeeCost - 2.5);
                     setwbFALRupeeCost(wbFALRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubFALSilverMaskCountState(mubFALSilverMaskCount - 40)
@@ -1340,6 +1779,12 @@ export default function FireAgitoWeapons() {
                     setmubFALGaleCountState(mubFALGaleCount - 10);
                     setmubFALOriCountState(mubFALOriCount - 10);
                     setmubFALRupeeCost(mubFALRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                    setallmubFAGaleCount(allmubFAGaleCount - 10)
+                    setallmubFAOriCount(allmubFAOriCount - 10)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
             }
         }
@@ -1357,6 +1802,11 @@ export default function FireAgitoWeapons() {
                     setwbFALOriCountState(wbFALOriCount + 1);
                     setmubFALRupeeCost(mubFALRupeeCost + 2.5);
                     setwbFALRupeeCost(wbFALRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubFALSilverMaskCountState(mubFALSilverMaskCount + 40)
@@ -1365,6 +1815,12 @@ export default function FireAgitoWeapons() {
                     setmubFALGaleCountState(mubFALGaleCount + 10);
                     setmubFALOriCountState(mubFALOriCount + 10);
                     setmubFALRupeeCost(mubFALRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                    setallmubFAGaleCount(allmubFAGaleCount + 10)
+                    setallmubFAOriCount(allmubFAOriCount + 10)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
             }
         }
@@ -1382,6 +1838,10 @@ export default function FireAgitoWeapons() {
             setwbFAWSandCountState(wbFAWSandCount - 1)
             setmubFAWRupeeCost(mubFAWRupeeCost - 2)
             setwbFAWRupeeCost(wbFAWRupeeCost - 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+            setallmubFASandCount(allmubFASandCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2)
         }
         else if (fireWandCraftState == "grayscale(0%)") {
             setFireWandCraftState("grayscale(100%)")
@@ -1394,6 +1854,10 @@ export default function FireAgitoWeapons() {
             setwbFAWSandCountState(wbFAWSandCount + 1)
             setmubFAWRupeeCost(mubFAWRupeeCost + 2)
             setwbFAWRupeeCost(wbFAWRupeeCost + 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+            setallmubFASandCount(allmubFASandCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2)
         }
     }
 
@@ -1411,6 +1875,11 @@ export default function FireAgitoWeapons() {
             setwbFAWOriCountState(wbFAWOriCount - 30)
             setmubFAWRupeeCost(mubFAWRupeeCost - 10)
             setwbFAWRupeeCost(wbFAWRupeeCost - 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount - 14)
+            setallmubFAOriCount(allmubFAOriCount - 30)
+            setallmubFARupeeCost(allmubFARupeeCost - 10)
         }
         else if (fireWandWeaponBonusState == "grayscale(0%)") {
             setFireWandWeaponBonusState("grayscale(100%)");
@@ -1425,6 +1894,11 @@ export default function FireAgitoWeapons() {
             setwbFAWOriCountState(wbFAWOriCount + 30)
             setmubFAWRupeeCost(mubFAWRupeeCost + 10)
             setwbFAWRupeeCost(wbFAWRupeeCost + 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount + 14)
+            setallmubFAOriCount(allmubFAOriCount + 30)
+            setallmubFARupeeCost(allmubFARupeeCost + 10)
         }
     }
 
@@ -1436,6 +1910,10 @@ export default function FireAgitoWeapons() {
             setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - 10)
             setmubFAWOriCountState(mubFAWOriCount - 1)
             setmubFAWRupeeCost(mubFAWRupeeCost - 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+            setallmubFAOriCount(allmubFAOriCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2.5)
         }
         else if (fireWandWyrmprintSlotState == "grayscale(0%)") {
             setFireWandWyrmprintSlotState("grayscale(100%)");
@@ -1444,6 +1922,10 @@ export default function FireAgitoWeapons() {
             setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + 10)
             setmubFAWOriCountState(mubFAWOriCount + 1)
             setmubFAWRupeeCost(mubFAWRupeeCost + 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+            setallmubFAOriCount(allmubFAOriCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2.5)
         }
     }
 
@@ -1461,6 +1943,10 @@ export default function FireAgitoWeapons() {
                     setwbFAWSandCountState(wbFAWSandCount - 1)
                     setmubFAWRupeeCost(mubFAWRupeeCost - 2)
                     setwbFAWRupeeCost(wbFAWRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFASandCount(allmubFASandCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 16)
@@ -1473,6 +1959,11 @@ export default function FireAgitoWeapons() {
                     setwbFAWOriCountState(wbFAWOriCount - 1)
                     setmubFAWRupeeCost(mubFAWRupeeCost - 7.5)
                     setwbFAWRupeeCost(wbFAWRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 16)
@@ -1480,6 +1971,11 @@ export default function FireAgitoWeapons() {
                     setmubFAWInsanityCountState(mubFAWInsanityCount - 7)
                     setmubFAWOriCountState(mubFAWOriCount - 1)
                     setmubFAWRupeeCost(mubFAWRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 80)
@@ -1488,6 +1984,12 @@ export default function FireAgitoWeapons() {
                     setmubFAWGaleCountState(mubFAWGaleCount - 20)
                     setmubFAWOriCountState(mubFAWOriCount - 20)
                     setmubFAWRupeeCost(mubFAWRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
+                    setallmubFAGaleCount(allmubFAGaleCount - 20)
+                    setallmubFAOriCount(allmubFAOriCount - 20)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
             }
         }
@@ -1503,6 +2005,10 @@ export default function FireAgitoWeapons() {
                     setwbFAWSandCountState(wbFAWSandCount + 1)
                     setmubFAWRupeeCost(mubFAWRupeeCost + 2)
                     setwbFAWRupeeCost(wbFAWRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFASandCount(allmubFASandCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 16)
@@ -1515,6 +2021,11 @@ export default function FireAgitoWeapons() {
                     setwbFAWOriCountState(wbFAWOriCount + 1)
                     setmubFAWRupeeCost(mubFAWRupeeCost + 7.5)
                     setwbFAWRupeeCost(wbFAWRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 16)
@@ -1522,6 +2033,11 @@ export default function FireAgitoWeapons() {
                     setmubFAWInsanityCountState(mubFAWInsanityCount + 7)
                     setmubFAWOriCountState(mubFAWOriCount + 1)
                     setmubFAWRupeeCost(mubFAWRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 80)
@@ -1530,6 +2046,12 @@ export default function FireAgitoWeapons() {
                     setmubFAWGaleCountState(mubFAWGaleCount + 20)
                     setmubFAWOriCountState(mubFAWOriCount + 20)
                     setmubFAWRupeeCost(mubFAWRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
+                    setallmubFAGaleCount(allmubFAGaleCount + 20)
+                    setallmubFAOriCount(allmubFAOriCount + 20)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
             }
         }
@@ -1551,6 +2073,11 @@ export default function FireAgitoWeapons() {
                     setwbFAWOriCountState(wbFAWOriCount - 1);
                     setmubFAWRupeeCost(mubFAWRupeeCost - 2.5);
                     setwbFAWRupeeCost(wbFAWRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 40)
@@ -1559,6 +2086,12 @@ export default function FireAgitoWeapons() {
                     setmubFAWGaleCountState(mubFAWGaleCount - 10);
                     setmubFAWOriCountState(mubFAWOriCount - 10);
                     setmubFAWRupeeCost(mubFAWRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                    setallmubFAGaleCount(allmubFAGaleCount - 10)
+                    setallmubFAOriCount(allmubFAOriCount - 10)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
             }
         }
@@ -1576,6 +2109,11 @@ export default function FireAgitoWeapons() {
                     setwbFAWOriCountState(wbFAWOriCount + 1);
                     setmubFAWRupeeCost(mubFAWRupeeCost + 2.5);
                     setwbFAWRupeeCost(wbFAWRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 40)
@@ -1584,6 +2122,12 @@ export default function FireAgitoWeapons() {
                     setmubFAWGaleCountState(mubFAWGaleCount + 10);
                     setmubFAWOriCountState(mubFAWOriCount + 10);
                     setmubFAWRupeeCost(mubFAWRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                    setallmubFAGaleCount(allmubFAGaleCount + 10)
+                    setallmubFAOriCount(allmubFAOriCount + 10)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
             }
         }
@@ -1601,6 +2145,10 @@ export default function FireAgitoWeapons() {
             setwbFABoSandCountState(wbFABoSandCount - 1)
             setmubFABoRupeeCost(mubFABoRupeeCost - 2)
             setwbFABoRupeeCost(wbFABoRupeeCost - 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+            setallmubFASandCount(allmubFASandCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2)
         }
         else if (fireBowCraftState == "grayscale(0%)") {
             setFireBowCraftState("grayscale(100%)")
@@ -1613,6 +2161,10 @@ export default function FireAgitoWeapons() {
             setwbFABoSandCountState(wbFABoSandCount + 1)
             setmubFABoRupeeCost(mubFABoRupeeCost + 2)
             setwbFABoRupeeCost(wbFABoRupeeCost + 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+            setallmubFASandCount(allmubFASandCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2)
         }
     }
 
@@ -1630,6 +2182,11 @@ export default function FireAgitoWeapons() {
             setwbFABoOriCountState(wbFABoOriCount - 30)
             setmubFABoRupeeCost(mubFABoRupeeCost - 10)
             setwbFABoRupeeCost(wbFABoRupeeCost - 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount - 14)
+            setallmubFAOriCount(allmubFAOriCount - 30)
+            setallmubFARupeeCost(allmubFARupeeCost - 10)
         }
         else if (fireBowWeaponBonusState == "grayscale(0%)") {
             setFireBowWeaponBonusState("grayscale(100%)");
@@ -1644,6 +2201,11 @@ export default function FireAgitoWeapons() {
             setwbFABoOriCountState(wbFABoOriCount + 30)
             setmubFABoRupeeCost(mubFABoRupeeCost + 10)
             setwbFABoRupeeCost(wbFABoRupeeCost + 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount + 14)
+            setallmubFAOriCount(allmubFAOriCount + 30)
+            setallmubFARupeeCost(allmubFARupeeCost + 10)
         }
     }
 
@@ -1655,6 +2217,10 @@ export default function FireAgitoWeapons() {
             setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - 10)
             setmubFABoOriCountState(mubFABoOriCount - 1)
             setmubFABoRupeeCost(mubFABoRupeeCost - 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+            setallmubFAOriCount(allmubFAOriCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2.5)
         }
         else if (fireBowWyrmprintSlotState == "grayscale(0%)") {
             setFireBowWyrmprintSlotState("grayscale(100%)");
@@ -1663,6 +2229,10 @@ export default function FireAgitoWeapons() {
             setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + 10)
             setmubFABoOriCountState(mubFABoOriCount + 1)
             setmubFABoRupeeCost(mubFABoRupeeCost + 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+            setallmubFAOriCount(allmubFAOriCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2.5)
         }
     }
 
@@ -1680,6 +2250,10 @@ export default function FireAgitoWeapons() {
                     setwbFABoSandCountState(wbFABoSandCount - 1)
                     setmubFABoRupeeCost(mubFABoRupeeCost - 2)
                     setwbFABoRupeeCost(wbFABoRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFASandCount(allmubFASandCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 16)
@@ -1692,6 +2266,11 @@ export default function FireAgitoWeapons() {
                     setwbFABoOriCountState(wbFABoOriCount - 1)
                     setmubFABoRupeeCost(mubFABoRupeeCost - 7.5)
                     setwbFABoRupeeCost(wbFABoRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 16)
@@ -1699,6 +2278,11 @@ export default function FireAgitoWeapons() {
                     setmubFABoInsanityCountState(mubFABoInsanityCount - 7)
                     setmubFABoOriCountState(mubFABoOriCount - 1)
                     setmubFABoRupeeCost(mubFABoRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 80)
@@ -1707,6 +2291,12 @@ export default function FireAgitoWeapons() {
                     setmubFABoGaleCountState(mubFABoGaleCount - 20)
                     setmubFABoOriCountState(mubFABoOriCount - 20)
                     setmubFABoRupeeCost(mubFABoRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
+                    setallmubFAGaleCount(allmubFAGaleCount - 20)
+                    setallmubFAOriCount(allmubFAOriCount - 20)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
             }
         }
@@ -1722,6 +2312,10 @@ export default function FireAgitoWeapons() {
                     setwbFABoSandCountState(wbFABoSandCount + 1)
                     setmubFABoRupeeCost(mubFABoRupeeCost + 2)
                     setwbFABoRupeeCost(wbFABoRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFASandCount(allmubFASandCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 16)
@@ -1734,6 +2328,11 @@ export default function FireAgitoWeapons() {
                     setwbFABoOriCountState(wbFABoOriCount + 1)
                     setmubFABoRupeeCost(mubFABoRupeeCost + 7.5)
                     setwbFABoRupeeCost(wbFABoRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 16)
@@ -1741,6 +2340,11 @@ export default function FireAgitoWeapons() {
                     setmubFABoInsanityCountState(mubFABoInsanityCount + 7)
                     setmubFABoOriCountState(mubFABoOriCount + 1)
                     setmubFABoRupeeCost(mubFABoRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 80)
@@ -1749,6 +2353,12 @@ export default function FireAgitoWeapons() {
                     setmubFABoGaleCountState(mubFABoGaleCount + 20)
                     setmubFABoOriCountState(mubFABoOriCount + 20)
                     setmubFABoRupeeCost(mubFABoRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
+                    setallmubFAGaleCount(allmubFAGaleCount + 20)
+                    setallmubFAOriCount(allmubFAOriCount + 20)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
             }
         }
@@ -1770,6 +2380,11 @@ export default function FireAgitoWeapons() {
                     setwbFABoOriCountState(wbFABoOriCount - 1);
                     setmubFABoRupeeCost(mubFABoRupeeCost - 2.5);
                     setwbFABoRupeeCost(wbFABoRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 40)
@@ -1778,6 +2393,12 @@ export default function FireAgitoWeapons() {
                     setmubFABoGaleCountState(mubFABoGaleCount - 10);
                     setmubFABoOriCountState(mubFABoOriCount - 10);
                     setmubFABoRupeeCost(mubFABoRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                    setallmubFAGaleCount(allmubFAGaleCount - 10)
+                    setallmubFAOriCount(allmubFAOriCount - 10)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
             }
         }
@@ -1795,6 +2416,11 @@ export default function FireAgitoWeapons() {
                     setwbFABoOriCountState(wbFABoOriCount + 1);
                     setmubFABoRupeeCost(mubFABoRupeeCost + 2.5);
                     setwbFABoRupeeCost(wbFABoRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 40)
@@ -1803,6 +2429,12 @@ export default function FireAgitoWeapons() {
                     setmubFABoGaleCountState(mubFABoGaleCount + 10);
                     setmubFABoOriCountState(mubFABoOriCount + 10);
                     setmubFABoRupeeCost(mubFABoRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                    setallmubFAGaleCount(allmubFAGaleCount + 10)
+                    setallmubFAOriCount(allmubFAOriCount + 10)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
             }
         }
@@ -1820,6 +2452,10 @@ export default function FireAgitoWeapons() {
             setwbFAStSandCountState(wbFAStSandCount - 1)
             setmubFAStRupeeCost(mubFAStRupeeCost - 2)
             setwbFAStRupeeCost(wbFAStRupeeCost - 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+            setallmubFASandCount(allmubFASandCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2)
         }
         else if (fireStaffCraftState == "grayscale(0%)") {
             setFireStaffCraftState("grayscale(100%)")
@@ -1832,6 +2468,10 @@ export default function FireAgitoWeapons() {
             setwbFAStSandCountState(wbFAStSandCount + 1)
             setmubFAStRupeeCost(mubFAStRupeeCost + 2)
             setwbFAStRupeeCost(wbFAStRupeeCost + 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+            setallmubFASandCount(allmubFASandCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2)
         }
     }
 
@@ -1849,6 +2489,11 @@ export default function FireAgitoWeapons() {
             setwbFAStOriCountState(wbFAStOriCount - 30)
             setmubFAStRupeeCost(mubFAStRupeeCost - 10)
             setwbFAStRupeeCost(wbFAStRupeeCost - 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount - 14)
+            setallmubFAOriCount(allmubFAOriCount - 30)
+            setallmubFARupeeCost(allmubFARupeeCost - 10)
         }
         else if (fireStaffWeaponBonusState == "grayscale(0%)") {
             setFireStaffWeaponBonusState("grayscale(100%)");
@@ -1863,6 +2508,11 @@ export default function FireAgitoWeapons() {
             setwbFAStOriCountState(wbFAStOriCount + 30)
             setmubFAStRupeeCost(mubFAStRupeeCost + 10)
             setwbFAStRupeeCost(wbFAStRupeeCost + 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount + 14)
+            setallmubFAOriCount(allmubFAOriCount + 30)
+            setallmubFARupeeCost(allmubFARupeeCost + 10)
         }
     }
 
@@ -1874,6 +2524,10 @@ export default function FireAgitoWeapons() {
             setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - 10)
             setmubFAStOriCountState(mubFAStOriCount - 1)
             setmubFAStRupeeCost(mubFAStRupeeCost - 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+            setallmubFAOriCount(allmubFAOriCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2.5)
         }
         else if (fireStaffWyrmprintSlotState == "grayscale(0%)") {
             setFireStaffWyrmprintSlotState("grayscale(100%)");
@@ -1882,6 +2536,10 @@ export default function FireAgitoWeapons() {
             setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + 10)
             setmubFAStOriCountState(mubFAStOriCount + 1)
             setmubFAStRupeeCost(mubFAStRupeeCost + 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+            setallmubFAOriCount(allmubFAOriCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2.5)
         }
     }
 
@@ -1899,6 +2557,10 @@ export default function FireAgitoWeapons() {
                     setwbFAStSandCountState(wbFAStSandCount - 1)
                     setmubFAStRupeeCost(mubFAStRupeeCost - 2)
                     setwbFAStRupeeCost(wbFAStRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFASandCount(allmubFASandCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 16)
@@ -1911,6 +2573,11 @@ export default function FireAgitoWeapons() {
                     setwbFAStOriCountState(wbFAStOriCount - 1)
                     setmubFAStRupeeCost(mubFAStRupeeCost - 7.5)
                     setwbFAStRupeeCost(wbFAStRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 16)
@@ -1918,6 +2585,11 @@ export default function FireAgitoWeapons() {
                     setmubFAStInsanityCountState(mubFAStInsanityCount - 7)
                     setmubFAStOriCountState(mubFAStOriCount - 1)
                     setmubFAStRupeeCost(mubFAStRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 80)
@@ -1926,6 +2598,12 @@ export default function FireAgitoWeapons() {
                     setmubFAStGaleCountState(mubFAStGaleCount - 20)
                     setmubFAStOriCountState(mubFAStOriCount - 20)
                     setmubFAStRupeeCost(mubFAStRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
+                    setallmubFAGaleCount(allmubFAGaleCount - 20)
+                    setallmubFAOriCount(allmubFAOriCount - 20)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
             }
         }
@@ -1941,6 +2619,10 @@ export default function FireAgitoWeapons() {
                     setwbFAStSandCountState(wbFAStSandCount + 1)
                     setmubFAStRupeeCost(mubFAStRupeeCost + 2)
                     setwbFAStRupeeCost(wbFAStRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFASandCount(allmubFASandCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 16)
@@ -1953,6 +2635,11 @@ export default function FireAgitoWeapons() {
                     setwbFAStOriCountState(wbFAStOriCount + 1)
                     setmubFAStRupeeCost(mubFAStRupeeCost + 7.5)
                     setwbFAStRupeeCost(wbFAStRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 16)
@@ -1960,6 +2647,11 @@ export default function FireAgitoWeapons() {
                     setmubFAStInsanityCountState(mubFAStInsanityCount + 7)
                     setmubFAStOriCountState(mubFAStOriCount + 1)
                     setmubFAStRupeeCost(mubFAStRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 80)
@@ -1968,6 +2660,12 @@ export default function FireAgitoWeapons() {
                     setmubFAStGaleCountState(mubFAStGaleCount + 20)
                     setmubFAStOriCountState(mubFAStOriCount + 20)
                     setmubFAStRupeeCost(mubFAStRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
+                    setallmubFAGaleCount(allmubFAGaleCount + 20)
+                    setallmubFAOriCount(allmubFAOriCount + 20)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
             }
         }
@@ -1989,6 +2687,11 @@ export default function FireAgitoWeapons() {
                     setwbFAStOriCountState(wbFAStOriCount - 1);
                     setmubFAStRupeeCost(mubFAStRupeeCost - 2.5);
                     setwbFAStRupeeCost(wbFAStRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 40)
@@ -1997,6 +2700,12 @@ export default function FireAgitoWeapons() {
                     setmubFAStGaleCountState(mubFAStGaleCount - 10);
                     setmubFAStOriCountState(mubFAStOriCount - 10);
                     setmubFAStRupeeCost(mubFAStRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                    setallmubFAGaleCount(allmubFAGaleCount - 10)
+                    setallmubFAOriCount(allmubFAOriCount - 10)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
             }
         }
@@ -2014,6 +2723,11 @@ export default function FireAgitoWeapons() {
                     setwbFAStOriCountState(wbFAStOriCount + 1);
                     setmubFAStRupeeCost(mubFAStRupeeCost + 2.5);
                     setwbFAStRupeeCost(wbFAStRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 40)
@@ -2022,6 +2736,12 @@ export default function FireAgitoWeapons() {
                     setmubFAStGaleCountState(mubFAStGaleCount + 10);
                     setmubFAStOriCountState(mubFAStOriCount + 10);
                     setmubFAStRupeeCost(mubFAStRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                    setallmubFAGaleCount(allmubFAGaleCount + 10)
+                    setallmubFAOriCount(allmubFAOriCount + 10)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
             }
         }
@@ -2039,6 +2759,10 @@ export default function FireAgitoWeapons() {
             setwbFAMSandCountState(wbFAMSandCount - 1)
             setmubFAMRupeeCost(mubFAMRupeeCost - 2)
             setwbFAMRupeeCost(wbFAMRupeeCost - 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+            setallmubFASandCount(allmubFASandCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2)
         }
         else if (fireManacasterCraftState == "grayscale(0%)") {
             setFireManacasterCraftState("grayscale(100%)")
@@ -2051,6 +2775,10 @@ export default function FireAgitoWeapons() {
             setwbFAMSandCountState(wbFAMSandCount + 1)
             setmubFAMRupeeCost(mubFAMRupeeCost + 2)
             setwbFAMRupeeCost(wbFAMRupeeCost + 2)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+            setallmubFASandCount(allmubFASandCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2)
         }
     }
 
@@ -2068,6 +2796,11 @@ export default function FireAgitoWeapons() {
             setwbFAMOriCountState(wbFAMOriCount - 30)
             setmubFAMRupeeCost(mubFAMRupeeCost - 10)
             setwbFAMRupeeCost(wbFAMRupeeCost - 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount - 14)
+            setallmubFAOriCount(allmubFAOriCount - 30)
+            setallmubFARupeeCost(allmubFARupeeCost - 10)
         }
         else if (fireManacasterWeaponBonusState == "grayscale(0%)") {
             setFireManacasterWeaponBonusState("grayscale(100%)");
@@ -2082,6 +2815,11 @@ export default function FireAgitoWeapons() {
             setwbFAMOriCountState(wbFAMOriCount + 30)
             setmubFAMRupeeCost(mubFAMRupeeCost + 10)
             setwbFAMRupeeCost(wbFAMRupeeCost + 10)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 100)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 100)
+            setallmubFAInsanityCount(allmubFAInsanityCount + 14)
+            setallmubFAOriCount(allmubFAOriCount + 30)
+            setallmubFARupeeCost(allmubFARupeeCost + 10)
         }
     }
 
@@ -2093,6 +2831,10 @@ export default function FireAgitoWeapons() {
             setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - 10)
             setmubFAMOriCountState(mubFAMOriCount - 1)
             setmubFAMRupeeCost(mubFAMRupeeCost - 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+            setallmubFAOriCount(allmubFAOriCount - 1)
+            setallmubFARupeeCost(allmubFARupeeCost - 2.5)
         }
         else if (fireManacasterWyrmprintSlotState == "grayscale(0%)") {
             setFireManacasterWyrmprintSlotState("grayscale(100%)");
@@ -2101,6 +2843,10 @@ export default function FireAgitoWeapons() {
             setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + 10)
             setmubFAMOriCountState(mubFAMOriCount + 1)
             setmubFAMRupeeCost(mubFAMRupeeCost + 2.5)
+            setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+            setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+            setallmubFAOriCount(allmubFAOriCount + 1)
+            setallmubFARupeeCost(allmubFARupeeCost + 2.5)
         }
     }
 
@@ -2118,6 +2864,10 @@ export default function FireAgitoWeapons() {
                     setwbFAMSandCountState(wbFAMSandCount - 1)
                     setmubFAMRupeeCost(mubFAMRupeeCost - 2)
                     setwbFAMRupeeCost(wbFAMRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFASandCount(allmubFASandCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 16)
@@ -2130,6 +2880,11 @@ export default function FireAgitoWeapons() {
                     setwbFAMOriCountState(wbFAMOriCount - 1)
                     setmubFAMRupeeCost(mubFAMRupeeCost - 7.5)
                     setwbFAMRupeeCost(wbFAMRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 16)
@@ -2137,6 +2892,11 @@ export default function FireAgitoWeapons() {
                     setmubFAMInsanityCountState(mubFAMInsanityCount - 7)
                     setmubFAMOriCountState(mubFAMOriCount - 1)
                     setmubFAMRupeeCost(mubFAMRupeeCost - 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 80)
@@ -2145,6 +2905,12 @@ export default function FireAgitoWeapons() {
                     setmubFAMGaleCountState(mubFAMGaleCount - 20)
                     setmubFAMOriCountState(mubFAMOriCount - 20)
                     setmubFAMRupeeCost(mubFAMRupeeCost - 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
+                    setallmubFAGaleCount(allmubFAGaleCount - 20)
+                    setallmubFAOriCount(allmubFAOriCount - 20)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2)
                 }
             }
         }
@@ -2160,6 +2926,10 @@ export default function FireAgitoWeapons() {
                     setwbFAMSandCountState(wbFAMSandCount + 1)
                     setmubFAMRupeeCost(mubFAMRupeeCost + 2)
                     setwbFAMRupeeCost(wbFAMRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFASandCount(allmubFASandCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 16)
@@ -2172,6 +2942,11 @@ export default function FireAgitoWeapons() {
                     setwbFAMOriCountState(wbFAMOriCount + 1)
                     setmubFAMRupeeCost(mubFAMRupeeCost + 7.5)
                     setwbFAMRupeeCost(wbFAMRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 16)
@@ -2179,6 +2954,11 @@ export default function FireAgitoWeapons() {
                     setmubFAMInsanityCountState(mubFAMInsanityCount + 7)
                     setmubFAMOriCountState(mubFAMOriCount + 1)
                     setmubFAMRupeeCost(mubFAMRupeeCost + 7.5)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 80)
@@ -2187,6 +2967,12 @@ export default function FireAgitoWeapons() {
                     setmubFAMGaleCountState(mubFAMGaleCount + 20)
                     setmubFAMOriCountState(mubFAMOriCount + 20)
                     setmubFAMRupeeCost(mubFAMRupeeCost + 2)
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
+                    setallmubFAGaleCount(allmubFAGaleCount + 20)
+                    setallmubFAOriCount(allmubFAOriCount + 20)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2)
                 }
             }
         }
@@ -2208,6 +2994,11 @@ export default function FireAgitoWeapons() {
                     setwbFAMOriCountState(wbFAMOriCount - 1);
                     setmubFAMRupeeCost(mubFAMRupeeCost - 2.5);
                     setwbFAMRupeeCost(wbFAMRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                    setallmubFAOriCount(allmubFAOriCount - 1)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 40)
@@ -2216,6 +3007,12 @@ export default function FireAgitoWeapons() {
                     setmubFAMGaleCountState(mubFAMGaleCount - 10);
                     setmubFAMOriCountState(mubFAMOriCount - 10);
                     setmubFAMRupeeCost(mubFAMRupeeCost - 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                    setallmubFAGaleCount(allmubFAGaleCount - 10)
+                    setallmubFAOriCount(allmubFAOriCount - 10)
+                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 }
             }
         }
@@ -2233,6 +3030,11 @@ export default function FireAgitoWeapons() {
                     setwbFAMOriCountState(wbFAMOriCount + 1);
                     setmubFAMRupeeCost(mubFAMRupeeCost + 2.5);
                     setwbFAMRupeeCost(wbFAMRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                    setallmubFAOriCount(allmubFAOriCount + 1)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 40)
@@ -2241,6 +3043,12 @@ export default function FireAgitoWeapons() {
                     setmubFAMGaleCountState(mubFAMGaleCount + 10);
                     setmubFAMOriCountState(mubFAMOriCount + 10);
                     setmubFAMRupeeCost(mubFAMRupeeCost + 2.5);
+                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                    setallmubFAGaleCount(allmubFAGaleCount + 10)
+                    setallmubFAOriCount(allmubFAOriCount + 10)
+                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
                 }
             }
         }
@@ -2856,6 +3664,47 @@ export default function FireAgitoWeapons() {
                 </Box>
                 {/* The box for the materials needed to 100% a weapon */}
                 {fireWeaponSelection()}
+            </Flex>
+            <Flex>
+                <Box width={[6 / 7, 1 / 2]} p={3} m={3} bg={"#152238"} sx={{ border: "3px solid blue" }}>
+                    <Flex>
+                        {/* <Box width={1 / 4}></Box> */}
+                        <Text fontSize={[1, 3]} ml="auto" mr="auto" color="gold">Materials Needed to MUB all Weapons</Text>
+                    </Flex>
+                    <Flex alignItems="center">
+                        <Card width={[75, 150]}>
+                            <Image src={FireAgitoSilverMask} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"crimson"} fontSize={[1, 2]}>{allmubFASilverMaskCount}</Text>
+                        </Card>
+                        <Card width={[75, 150]}>
+                            <Image src={FireAgitoGoldMask} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"crimson"} fontSize={[1, 2]}>{allmubFAGoldMaskCount}</Text>
+                        </Card>
+                        <Card width={[75, 150]}>
+                            <Image src={FireAgitoInsanity} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"crimson"} fontSize={[1, 2]}>{allmubFAInsanityCount}</Text>
+                        </Card>
+                        <Card width={[75, 150]}>
+                            <Image src={FireAgitoGale} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"crimson"} fontSize={[1, 2]}>{allmubFAGaleCount}</Text>
+                        </Card>
+                    </Flex>
+                    <Flex>&nbsp;</Flex>
+                    <Flex>
+                        <Card width={[75, 175]}>
+                            <Image src={TwinklingSand} sx={{ width: ["70%"], height: ["52%", "70%"] }} />
+                            <Text color={"crimson"} fontSize={[1, 2]}>{allmubFASandCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={Orichalcum} sx={{ width: ["70%"], height: ["52%", "70%"] }} />
+                            <Text color={"crimson"} fontSize={[1, 2]}>{allmubFAOriCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={Rupies} sx={{ width: ["70%"], height: ["52%", "70%"] }} />
+                            <Text color={"crimson"} fontSize={[1, 2]}>{allmubFARupeeCost} million</Text>
+                        </Card>
+                    </Flex>
+                </Box>
             </Flex>
             <Flex>&nbsp;</Flex>
             <WeaponTypeNavTabs />
