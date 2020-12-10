@@ -19,6 +19,14 @@ import Unbind from "../Images/Unbind.PNG";
 import WyrmprintSlots from "../Images/Wyrmprint_Slots.PNG";
 import WeaponBonus from "../Images/Weapon_Bonus.PNG";
 
+import ShadowAgitoSilverMask from "../Images/Shadow_Agito_Silver_Mask.png";
+import ShadowAgitoGoldMask from "../Images/Shadow_Agito_Gold_Mask.png";
+import ShadowAgitoInsanity from "../Images/Shadow_Agito_Insanity.png";
+import FireAgitoGale from "../Images/Fire_Agito_Gale.png";
+import TwinklingSand from "../Images/Twinkling_Sand.png";
+import Orichalcum from "../Images/Orichalcum.png";
+import Rupies from "../Images/Rupees.png";
+
 import ShadowAgitoSwordCost from "./ShadowAgitoSwordMats"
 import ShadowAgitoBladeCost from "./ShadowAgitoBladeMats"
 import ShadowAgitoDaggerCost from "./ShadowAgitoDaggerMats"
@@ -31,6 +39,14 @@ import ShadowAgitoManacasterCost from "./ShadowAgitoManacasterMats"
 
 export default function ShadowAgitoWeapons() {
     const [shadowWeaponChoice, setShadowWeaponChoiceState] = useLocalStorage("shadowWeaponChoice", "sword")
+
+    const [allmubSASilverMaskCount, setallmubSASilverMaskCount] = useLocalStorage("allmubSASilverMaskState", 4644)
+    const [allmubSAGoldMaskCount, setallmubSAGoldMaskCount] = useLocalStorage("allmubSAGoldMaskState", 3690)
+    const [allmubSAInsanityCount, setallmubSAInsanityCount] = useLocalStorage("allmubSAInsanityCount", 801)
+    const [allmubSAGaleCount, setallmubSAGaleCount] = useLocalStorage("allmubSAGaleCount", 270)
+    const [allmubSASandCount, setallmubSASandCount] = useLocalStorage("allmubSASandCount", 45)
+    const [allmubSAOriCount, setallmubSAOriCount] = useLocalStorage("allmubSAOriCount", 594)
+    const [allmubSARupeeCost, setallmubSARupeeCost] = useLocalStorage("allmubSARupeeCost", 535.5)
 
     const [shadowSwordCraftState, setShadowSwordCraftState] = useLocalStorage("shadowSwordCraftState", "grayscale(100%)")
     const [shadowSwordWeaponBonusState, setShadowSwordWeaponBonusState] = useLocalStorage("shadowSwordWeaponBonusState", "grayscale(100%)")
@@ -287,6 +303,10 @@ export default function ShadowAgitoWeapons() {
             setwbSASSandCountState(wbSASSandCount - 1)
             setmubSASRupeeCost(mubSASRupeeCost - 2)
             setwbSASRupeeCost(wbSASRupeeCost - 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+            setallmubSASandCount(allmubSASandCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2)
         }
         else if (shadowSwordCraftState == "grayscale(0%)") {
             setShadowSwordCraftState("grayscale(100%)")
@@ -299,6 +319,10 @@ export default function ShadowAgitoWeapons() {
             setwbSASSandCountState(wbSASSandCount + 1)
             setmubSASRupeeCost(mubSASRupeeCost + 2)
             setwbSASRupeeCost(wbSASRupeeCost + 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+            setallmubSASandCount(allmubSASandCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2)
         }
     }
 
@@ -316,6 +340,11 @@ export default function ShadowAgitoWeapons() {
             setwbSASOriCountState(wbSASOriCount - 30)
             setmubSASRupeeCost(mubSASRupeeCost - 10)
             setwbSASRupeeCost(wbSASRupeeCost - 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount - 14)
+            setallmubSAOriCount(allmubSAOriCount - 30)
+            setallmubSARupeeCost(allmubSARupeeCost - 10)
         }
         else if (shadowSwordWeaponBonusState == "grayscale(0%)") {
             setShadowSwordWeaponBonusState("grayscale(100%)");
@@ -330,6 +359,11 @@ export default function ShadowAgitoWeapons() {
             setwbSASOriCountState(wbSASOriCount + 30)
             setmubSASRupeeCost(mubSASRupeeCost + 10)
             setwbSASRupeeCost(wbSASRupeeCost + 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount + 14)
+            setallmubSAOriCount(allmubSAOriCount + 30)
+            setallmubSARupeeCost(allmubSARupeeCost + 10)
         }
     }
 
@@ -341,6 +375,10 @@ export default function ShadowAgitoWeapons() {
             setmubSASGoldMaskCountState(mubSASGoldMaskCount - 10)
             setmubSASOriCountState(mubSASOriCount - 1)
             setmubSASRupeeCost(mubSASRupeeCost - 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+            setallmubSAOriCount(allmubSAOriCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2.5)
         }
         else if (shadowSwordWyrmprintSlotState == "grayscale(0%)") {
             setShadowSwordWyrmprintSlotState("grayscale(100%)");
@@ -349,6 +387,10 @@ export default function ShadowAgitoWeapons() {
             setmubSASGoldMaskCountState(mubSASGoldMaskCount + 10)
             setmubSASOriCountState(mubSASOriCount + 1)
             setmubSASRupeeCost(mubSASRupeeCost + 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+            setallmubSAOriCount(allmubSAOriCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2.5)
         }
     }
 
@@ -366,6 +408,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSASSandCountState(wbSASSandCount - 1)
                     setmubSASRupeeCost(mubSASRupeeCost - 2)
                     setwbSASRupeeCost(wbSASRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSASandCount(allmubSASandCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubSASSilverMaskCountState(mubSASSilverMaskCount - 16)
@@ -378,6 +424,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSASOriCountState(wbSASOriCount - 1)
                     setmubSASRupeeCost(mubSASRupeeCost - 7.5)
                     setwbSASRupeeCost(wbSASRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubSASSilverMaskCountState(mubSASSilverMaskCount - 16)
@@ -385,6 +436,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSASInsanityCountState(mubSASInsanityCount - 7)
                     setmubSASOriCountState(mubSASOriCount - 1)
                     setmubSASRupeeCost(mubSASRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubSASSilverMaskCountState(mubSASSilverMaskCount - 80)
@@ -393,6 +449,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSASGaleCountState(mubSASGaleCount - 20)
                     setmubSASOriCountState(mubSASOriCount - 20)
                     setmubSASRupeeCost(mubSASRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 30)
+                    setallmubSAGaleCount(allmubSAGaleCount - 20)
+                    setallmubSAOriCount(allmubSAOriCount - 20)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
             }
         }
@@ -408,6 +470,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSASSandCountState(wbSASSandCount + 1)
                     setmubSASRupeeCost(mubSASRupeeCost + 2)
                     setwbSASRupeeCost(wbSASRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSASandCount(allmubSASandCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubSASSilverMaskCountState(mubSASSilverMaskCount + 16)
@@ -420,6 +486,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSASOriCountState(wbSASOriCount + 1)
                     setmubSASRupeeCost(mubSASRupeeCost + 7.5)
                     setwbSASRupeeCost(wbSASRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubSASSilverMaskCountState(mubSASSilverMaskCount + 16)
@@ -427,6 +498,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSASInsanityCountState(mubSASInsanityCount + 7)
                     setmubSASOriCountState(mubSASOriCount + 1)
                     setmubSASRupeeCost(mubSASRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubSASSilverMaskCountState(mubSASSilverMaskCount + 80)
@@ -435,6 +511,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSASGaleCountState(mubSASGaleCount + 20)
                     setmubSASOriCountState(mubSASOriCount + 20)
                     setmubSASRupeeCost(mubSASRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 30)
+                    setallmubSAGaleCount(allmubSAGaleCount + 20)
+                    setallmubSAOriCount(allmubSAOriCount + 20)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
             }
         }
@@ -456,6 +538,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSASOriCountState(wbSASOriCount - 1);
                     setmubSASRupeeCost(mubSASRupeeCost - 2.5);
                     setwbSASRupeeCost(wbSASRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubSASSilverMaskCountState(mubSASSilverMaskCount - 40)
@@ -464,6 +551,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSASGaleCountState(mubSASGaleCount - 10);
                     setmubSASOriCountState(mubSASOriCount - 10);
                     setmubSASRupeeCost(mubSASRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 10)
+                    setallmubSAGaleCount(allmubSAGaleCount - 10)
+                    setallmubSAOriCount(allmubSAOriCount - 10)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
             }
         }
@@ -481,6 +574,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSASOriCountState(wbSASOriCount + 1);
                     setmubSASRupeeCost(mubSASRupeeCost + 2.5);
                     setwbSASRupeeCost(wbSASRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubSASSilverMaskCountState(mubSASSilverMaskCount + 40)
@@ -489,6 +587,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSASGaleCountState(mubSASGaleCount + 10);
                     setmubSASOriCountState(mubSASOriCount + 10);
                     setmubSASRupeeCost(mubSASRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 10)
+                    setallmubSAGaleCount(allmubSAGaleCount + 10)
+                    setallmubSAOriCount(allmubSAOriCount + 10)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
             }
         }
@@ -506,6 +610,10 @@ export default function ShadowAgitoWeapons() {
             setwbSABlSandCountState(wbSABlSandCount - 1)
             setmubSABlRupeeCost(mubSABlRupeeCost - 2)
             setwbSABlRupeeCost(wbSABlRupeeCost - 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+            setallmubSASandCount(allmubSASandCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2)
         }
         else if (shadowBladeCraftState == "grayscale(0%)") {
             setShadowBladeCraftState("grayscale(100%)")
@@ -518,6 +626,10 @@ export default function ShadowAgitoWeapons() {
             setwbSABlSandCountState(wbSABlSandCount + 1)
             setmubSABlRupeeCost(mubSABlRupeeCost + 2)
             setwbSABlRupeeCost(wbSABlRupeeCost + 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+            setallmubSASandCount(allmubSASandCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2)
         }
     }
 
@@ -535,6 +647,11 @@ export default function ShadowAgitoWeapons() {
             setwbSABlOriCountState(wbSABlOriCount - 30)
             setmubSABlRupeeCost(mubSABlRupeeCost - 10)
             setwbSABlRupeeCost(wbSABlRupeeCost - 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount - 14)
+            setallmubSAOriCount(allmubSAOriCount - 30)
+            setallmubSARupeeCost(allmubSARupeeCost - 10)
         }
         else if (shadowBladeWeaponBonusState == "grayscale(0%)") {
             setShadowBladeWeaponBonusState("grayscale(100%)");
@@ -549,6 +666,11 @@ export default function ShadowAgitoWeapons() {
             setwbSABlOriCountState(wbSABlOriCount + 30)
             setmubSABlRupeeCost(mubSABlRupeeCost + 10)
             setwbSABlRupeeCost(wbSABlRupeeCost + 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount + 14)
+            setallmubSAOriCount(allmubSAOriCount + 30)
+            setallmubSARupeeCost(allmubSARupeeCost + 10)
         }
     }
 
@@ -560,6 +682,10 @@ export default function ShadowAgitoWeapons() {
             setmubSABlGoldMaskCountState(mubSABlGoldMaskCount - 10)
             setmubSABlOriCountState(mubSABlOriCount - 1)
             setmubSABlRupeeCost(mubSABlRupeeCost - 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+            setallmubSAOriCount(allmubSAOriCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2.5)
         }
         else if (shadowBladeWyrmprintSlotState == "grayscale(0%)") {
             setShadowBladeWyrmprintSlotState("grayscale(100%)");
@@ -568,6 +694,10 @@ export default function ShadowAgitoWeapons() {
             setmubSABlGoldMaskCountState(mubSABlGoldMaskCount + 10)
             setmubSABlOriCountState(mubSABlOriCount + 1)
             setmubSABlRupeeCost(mubSABlRupeeCost + 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+            setallmubSAOriCount(allmubSAOriCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2.5)
         }
     }
 
@@ -585,6 +715,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSABlSandCountState(wbSABlSandCount - 1)
                     setmubSABlRupeeCost(mubSABlRupeeCost - 2)
                     setwbSABlRupeeCost(wbSABlRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSASandCount(allmubSASandCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubSABlSilverMaskCountState(mubSABlSilverMaskCount - 16)
@@ -597,6 +731,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSABlOriCountState(wbSABlOriCount - 1)
                     setmubSABlRupeeCost(mubSABlRupeeCost - 7.5)
                     setwbSABlRupeeCost(wbSABlRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubSABlSilverMaskCountState(mubSABlSilverMaskCount - 16)
@@ -604,6 +743,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSABlInsanityCountState(mubSABlInsanityCount - 7)
                     setmubSABlOriCountState(mubSABlOriCount - 1)
                     setmubSABlRupeeCost(mubSABlRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubSABlSilverMaskCountState(mubSABlSilverMaskCount - 80)
@@ -612,6 +756,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSABlGaleCountState(mubSABlGaleCount - 20)
                     setmubSABlOriCountState(mubSABlOriCount - 20)
                     setmubSABlRupeeCost(mubSABlRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 30)
+                    setallmubSAGaleCount(allmubSAGaleCount - 20)
+                    setallmubSAOriCount(allmubSAOriCount - 20)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
             }
         }
@@ -627,6 +777,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSABlSandCountState(wbSABlSandCount + 1)
                     setmubSABlRupeeCost(mubSABlRupeeCost + 2)
                     setwbSABlRupeeCost(wbSABlRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSASandCount(allmubSASandCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubSABlSilverMaskCountState(mubSABlSilverMaskCount + 16)
@@ -639,6 +793,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSABlOriCountState(wbSABlOriCount + 1)
                     setmubSABlRupeeCost(mubSABlRupeeCost + 7.5)
                     setwbSABlRupeeCost(wbSABlRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubSABlSilverMaskCountState(mubSABlSilverMaskCount + 16)
@@ -646,6 +805,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSABlInsanityCountState(mubSABlInsanityCount + 7)
                     setmubSABlOriCountState(mubSABlOriCount + 1)
                     setmubSABlRupeeCost(mubSABlRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubSABlSilverMaskCountState(mubSABlSilverMaskCount + 80)
@@ -654,6 +818,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSABlGaleCountState(mubSABlGaleCount + 20)
                     setmubSABlOriCountState(mubSABlOriCount + 20)
                     setmubSABlRupeeCost(mubSABlRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 30)
+                    setallmubSAGaleCount(allmubSAGaleCount + 20)
+                    setallmubSAOriCount(allmubSAOriCount + 20)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
             }
         }
@@ -675,6 +845,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSABlOriCountState(wbSABlOriCount - 1);
                     setmubSABlRupeeCost(mubSABlRupeeCost - 2.5);
                     setwbSABlRupeeCost(wbSABlRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubSABlSilverMaskCountState(mubSABlSilverMaskCount - 40)
@@ -683,6 +858,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSABlGaleCountState(mubSABlGaleCount - 10);
                     setmubSABlOriCountState(mubSABlOriCount - 10);
                     setmubSABlRupeeCost(mubSABlRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 10)
+                    setallmubSAGaleCount(allmubSAGaleCount - 10)
+                    setallmubSAOriCount(allmubSAOriCount - 10)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
             }
         }
@@ -700,6 +881,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSABlOriCountState(wbSABlOriCount + 1);
                     setmubSABlRupeeCost(mubSABlRupeeCost + 2.5);
                     setwbSABlRupeeCost(wbSABlRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubSABlSilverMaskCountState(mubSABlSilverMaskCount + 40)
@@ -708,6 +894,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSABlGaleCountState(mubSABlGaleCount + 10);
                     setmubSABlOriCountState(mubSABlOriCount + 10);
                     setmubSABlRupeeCost(mubSABlRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 10)
+                    setallmubSAGaleCount(allmubSAGaleCount + 10)
+                    setallmubSAOriCount(allmubSAOriCount + 10)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
             }
         }
@@ -725,6 +917,10 @@ export default function ShadowAgitoWeapons() {
             setwbSADSandCountState(wbSADSandCount - 1)
             setmubSADRupeeCost(mubSADRupeeCost - 2)
             setwbSADRupeeCost(wbSADRupeeCost - 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+            setallmubSASandCount(allmubSASandCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2)
         }
         else if (shadowDaggerCraftState == "grayscale(0%)") {
             setShadowDaggerCraftState("grayscale(100%)")
@@ -737,6 +933,10 @@ export default function ShadowAgitoWeapons() {
             setwbSADSandCountState(wbSADSandCount + 1)
             setmubSADRupeeCost(mubSADRupeeCost + 2)
             setwbSADRupeeCost(wbSADRupeeCost + 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+            setallmubSASandCount(allmubSASandCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2)
         }
     }
 
@@ -754,6 +954,11 @@ export default function ShadowAgitoWeapons() {
             setwbSADOriCountState(wbSADOriCount - 30)
             setmubSADRupeeCost(mubSADRupeeCost - 10)
             setwbSADRupeeCost(wbSADRupeeCost - 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount - 14)
+            setallmubSAOriCount(allmubSAOriCount - 30)
+            setallmubSARupeeCost(allmubSARupeeCost - 10)
         }
         else if (shadowDaggerWeaponBonusState == "grayscale(0%)") {
             setShadowDaggerWeaponBonusState("grayscale(100%)");
@@ -768,6 +973,11 @@ export default function ShadowAgitoWeapons() {
             setwbSADOriCountState(wbSADOriCount + 30)
             setmubSADRupeeCost(mubSADRupeeCost + 10)
             setwbSADRupeeCost(wbSADRupeeCost + 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount + 14)
+            setallmubSAOriCount(allmubSAOriCount + 30)
+            setallmubSARupeeCost(allmubSARupeeCost + 10)
         }
     }
 
@@ -779,6 +989,10 @@ export default function ShadowAgitoWeapons() {
             setmubSADGoldMaskCountState(mubSADGoldMaskCount - 10)
             setmubSADOriCountState(mubSADOriCount - 1)
             setmubSADRupeeCost(mubSADRupeeCost - 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+            setallmubSAOriCount(allmubSAOriCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2.5)
         }
         else if (shadowDaggerWyrmprintSlotState == "grayscale(0%)") {
             setShadowDaggerWyrmprintSlotState("grayscale(100%)");
@@ -787,6 +1001,10 @@ export default function ShadowAgitoWeapons() {
             setmubSADGoldMaskCountState(mubSADGoldMaskCount + 10)
             setmubSADOriCountState(mubSADOriCount + 1)
             setmubSADRupeeCost(mubSADRupeeCost + 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+            setallmubSAOriCount(allmubSAOriCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2.5)
         }
     }
 
@@ -804,6 +1022,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSADSandCountState(wbSADSandCount - 1)
                     setmubSADRupeeCost(mubSADRupeeCost - 2)
                     setwbSADRupeeCost(wbSADRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSASandCount(allmubSASandCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubSADSilverMaskCountState(mubSADSilverMaskCount - 16)
@@ -816,6 +1038,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSADOriCountState(wbSADOriCount - 1)
                     setmubSADRupeeCost(mubSADRupeeCost - 7.5)
                     setwbSADRupeeCost(wbSADRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubSADSilverMaskCountState(mubSADSilverMaskCount - 16)
@@ -823,6 +1050,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSADInsanityCountState(mubSADInsanityCount - 7)
                     setmubSADOriCountState(mubSADOriCount - 1)
                     setmubSADRupeeCost(mubSADRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubSADSilverMaskCountState(mubSADSilverMaskCount - 80)
@@ -831,6 +1063,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSADGaleCountState(mubSADGaleCount - 20)
                     setmubSADOriCountState(mubSADOriCount - 20)
                     setmubSADRupeeCost(mubSADRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 30)
+                    setallmubSAGaleCount(allmubSAGaleCount - 20)
+                    setallmubSAOriCount(allmubSAOriCount - 20)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
             }
         }
@@ -846,6 +1084,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSADSandCountState(wbSADSandCount + 1)
                     setmubSADRupeeCost(mubSADRupeeCost + 2)
                     setwbSADRupeeCost(wbSADRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSASandCount(allmubSASandCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubSADSilverMaskCountState(mubSADSilverMaskCount + 16)
@@ -858,6 +1100,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSADOriCountState(wbSADOriCount + 1)
                     setmubSADRupeeCost(mubSADRupeeCost + 7.5)
                     setwbSADRupeeCost(wbSADRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubSADSilverMaskCountState(mubSADSilverMaskCount + 16)
@@ -865,6 +1112,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSADInsanityCountState(mubSADInsanityCount + 7)
                     setmubSADOriCountState(mubSADOriCount + 1)
                     setmubSADRupeeCost(mubSADRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubSADSilverMaskCountState(mubSADSilverMaskCount + 80)
@@ -873,6 +1125,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSADGaleCountState(mubSADGaleCount + 20)
                     setmubSADOriCountState(mubSADOriCount + 20)
                     setmubSADRupeeCost(mubSADRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 30)
+                    setallmubSAGaleCount(allmubSAGaleCount + 20)
+                    setallmubSAOriCount(allmubSAOriCount + 20)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
             }
         }
@@ -894,6 +1152,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSADOriCountState(wbSADOriCount - 1);
                     setmubSADRupeeCost(mubSADRupeeCost - 2.5);
                     setwbSADRupeeCost(wbSADRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubSADSilverMaskCountState(mubSADSilverMaskCount - 40)
@@ -902,6 +1165,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSADGaleCountState(mubSADGaleCount - 10);
                     setmubSADOriCountState(mubSADOriCount - 10);
                     setmubSADRupeeCost(mubSADRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 10)
+                    setallmubSAGaleCount(allmubSAGaleCount - 10)
+                    setallmubSAOriCount(allmubSAOriCount - 10)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
             }
         }
@@ -919,6 +1188,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSADOriCountState(wbSADOriCount + 1);
                     setmubSADRupeeCost(mubSADRupeeCost + 2.5);
                     setwbSADRupeeCost(wbSADRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubSADSilverMaskCountState(mubSADSilverMaskCount + 40)
@@ -927,6 +1201,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSADGaleCountState(mubSADGaleCount + 10);
                     setmubSADOriCountState(mubSADOriCount + 10);
                     setmubSADRupeeCost(mubSADRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 10)
+                    setallmubSAGaleCount(allmubSAGaleCount + 10)
+                    setallmubSAOriCount(allmubSAOriCount + 10)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
             }
         }
@@ -944,6 +1224,10 @@ export default function ShadowAgitoWeapons() {
             setwbSAASandCountState(wbSAASandCount - 1)
             setmubSAARupeeCost(mubSAARupeeCost - 2)
             setwbSAARupeeCost(wbSAARupeeCost - 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+            setallmubSASandCount(allmubSASandCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2)
         }
         else if (shadowAxeCraftState == "grayscale(0%)") {
             setShadowAxeCraftState("grayscale(100%)")
@@ -956,6 +1240,10 @@ export default function ShadowAgitoWeapons() {
             setwbSAASandCountState(wbSAASandCount + 1)
             setmubSAARupeeCost(mubSAARupeeCost + 2)
             setwbSAARupeeCost(wbSAARupeeCost + 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+            setallmubSASandCount(allmubSASandCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2)
         }
     }
 
@@ -973,6 +1261,11 @@ export default function ShadowAgitoWeapons() {
             setwbSAAOriCountState(wbSAAOriCount - 30)
             setmubSAARupeeCost(mubSAARupeeCost - 10)
             setwbSAARupeeCost(wbSAARupeeCost - 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount - 14)
+            setallmubSAOriCount(allmubSAOriCount - 30)
+            setallmubSARupeeCost(allmubSARupeeCost - 10)
         }
         else if (shadowAxeWeaponBonusState == "grayscale(0%)") {
             setShadowAxeWeaponBonusState("grayscale(100%)");
@@ -987,6 +1280,11 @@ export default function ShadowAgitoWeapons() {
             setwbSAAOriCountState(wbSAAOriCount + 30)
             setmubSAARupeeCost(mubSAARupeeCost + 10)
             setwbSAARupeeCost(wbSAARupeeCost + 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount + 14)
+            setallmubSAOriCount(allmubSAOriCount + 30)
+            setallmubSARupeeCost(allmubSARupeeCost + 10)
         }
     }
 
@@ -998,6 +1296,10 @@ export default function ShadowAgitoWeapons() {
             setmubSAAGoldMaskCountState(mubSAAGoldMaskCount - 10)
             setmubSAAOriCountState(mubSAAOriCount - 1)
             setmubSAARupeeCost(mubSAARupeeCost - 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+            setallmubSAOriCount(allmubSAOriCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2.5)
         }
         else if (shadowAxeWyrmprintSlotState == "grayscale(0%)") {
             setShadowAxeWyrmprintSlotState("grayscale(100%)");
@@ -1006,6 +1308,10 @@ export default function ShadowAgitoWeapons() {
             setmubSAAGoldMaskCountState(mubSAAGoldMaskCount + 10)
             setmubSAAOriCountState(mubSAAOriCount + 1)
             setmubSAARupeeCost(mubSAARupeeCost + 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+            setallmubSAOriCount(allmubSAOriCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2.5)
         }
     }
 
@@ -1023,6 +1329,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSAASandCountState(wbSAASandCount - 1)
                     setmubSAARupeeCost(mubSAARupeeCost - 2)
                     setwbSAARupeeCost(wbSAARupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSASandCount(allmubSASandCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubSAASilverMaskCountState(mubSAASilverMaskCount - 16)
@@ -1035,6 +1345,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAAOriCountState(wbSAAOriCount - 1)
                     setmubSAARupeeCost(mubSAARupeeCost - 7.5)
                     setwbSAARupeeCost(wbSAARupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubSAASilverMaskCountState(mubSAASilverMaskCount - 16)
@@ -1042,6 +1357,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSAAInsanityCountState(mubSAAInsanityCount - 7)
                     setmubSAAOriCountState(mubSAAOriCount - 1)
                     setmubSAARupeeCost(mubSAARupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubSAASilverMaskCountState(mubSAASilverMaskCount - 80)
@@ -1050,6 +1370,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAAGaleCountState(mubSAAGaleCount - 20)
                     setmubSAAOriCountState(mubSAAOriCount - 20)
                     setmubSAARupeeCost(mubSAARupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 30)
+                    setallmubSAGaleCount(allmubSAGaleCount - 20)
+                    setallmubSAOriCount(allmubSAOriCount - 20)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
             }
         }
@@ -1065,6 +1391,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSAASandCountState(wbSAASandCount + 1)
                     setmubSAARupeeCost(mubSAARupeeCost + 2)
                     setwbSAARupeeCost(wbSAARupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSASandCount(allmubSASandCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubSAASilverMaskCountState(mubSAASilverMaskCount + 16)
@@ -1077,6 +1407,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAAOriCountState(wbSAAOriCount + 1)
                     setmubSAARupeeCost(mubSAARupeeCost + 7.5)
                     setwbSAARupeeCost(wbSAARupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubSAASilverMaskCountState(mubSAASilverMaskCount + 16)
@@ -1084,6 +1419,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSAAInsanityCountState(mubSAAInsanityCount + 7)
                     setmubSAAOriCountState(mubSAAOriCount + 1)
                     setmubSAARupeeCost(mubSAARupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubSAASilverMaskCountState(mubSAASilverMaskCount + 80)
@@ -1092,6 +1432,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAAGaleCountState(mubSAAGaleCount + 20)
                     setmubSAAOriCountState(mubSAAOriCount + 20)
                     setmubSAARupeeCost(mubSAARupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 30)
+                    setallmubSAGaleCount(allmubSAGaleCount + 20)
+                    setallmubSAOriCount(allmubSAOriCount + 20)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
             }
         }
@@ -1113,6 +1459,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAAOriCountState(wbSAAOriCount - 1);
                     setmubSAARupeeCost(mubSAARupeeCost - 2.5);
                     setwbSAARupeeCost(wbSAARupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubSAASilverMaskCountState(mubSAASilverMaskCount - 40)
@@ -1121,6 +1472,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAAGaleCountState(mubSAAGaleCount - 10);
                     setmubSAAOriCountState(mubSAAOriCount - 10);
                     setmubSAARupeeCost(mubSAARupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 10)
+                    setallmubSAGaleCount(allmubSAGaleCount - 10)
+                    setallmubSAOriCount(allmubSAOriCount - 10)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
             }
         }
@@ -1138,6 +1495,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAAOriCountState(wbSAAOriCount + 1);
                     setmubSAARupeeCost(mubSAARupeeCost + 2.5);
                     setwbSAARupeeCost(wbSAARupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubSAASilverMaskCountState(mubSAASilverMaskCount + 40)
@@ -1146,6 +1508,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAAGaleCountState(mubSAAGaleCount + 10);
                     setmubSAAOriCountState(mubSAAOriCount + 10);
                     setmubSAARupeeCost(mubSAARupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 10)
+                    setallmubSAGaleCount(allmubSAGaleCount + 10)
+                    setallmubSAOriCount(allmubSAOriCount + 10)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
             }
         }
@@ -1163,6 +1531,10 @@ export default function ShadowAgitoWeapons() {
             setwbSALSandCountState(wbSALSandCount - 1)
             setmubSALRupeeCost(mubSALRupeeCost - 2)
             setwbSALRupeeCost(wbSALRupeeCost - 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+            setallmubSASandCount(allmubSASandCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2)
         }
         else if (shadowLanceCraftState == "grayscale(0%)") {
             setShadowLanceCraftState("grayscale(100%)")
@@ -1175,6 +1547,10 @@ export default function ShadowAgitoWeapons() {
             setwbSALSandCountState(wbSALSandCount + 1)
             setmubSALRupeeCost(mubSALRupeeCost + 2)
             setwbSALRupeeCost(wbSALRupeeCost + 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+            setallmubSASandCount(allmubSASandCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2)
         }
     }
 
@@ -1192,6 +1568,11 @@ export default function ShadowAgitoWeapons() {
             setwbSALOriCountState(wbSALOriCount - 30)
             setmubSALRupeeCost(mubSALRupeeCost - 10)
             setwbSALRupeeCost(wbSALRupeeCost - 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount - 14)
+            setallmubSAOriCount(allmubSAOriCount - 30)
+            setallmubSARupeeCost(allmubSARupeeCost - 10)
         }
         else if (shadowLanceWeaponBonusState == "grayscale(0%)") {
             setShadowLanceWeaponBonusState("grayscale(100%)");
@@ -1206,6 +1587,11 @@ export default function ShadowAgitoWeapons() {
             setwbSALOriCountState(wbSALOriCount + 30)
             setmubSALRupeeCost(mubSALRupeeCost + 10)
             setwbSALRupeeCost(wbSALRupeeCost + 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount + 14)
+            setallmubSAOriCount(allmubSAOriCount + 30)
+            setallmubSARupeeCost(allmubSARupeeCost + 10)
         }
     }
 
@@ -1217,6 +1603,10 @@ export default function ShadowAgitoWeapons() {
             setmubSALGoldMaskCountState(mubSALGoldMaskCount - 10)
             setmubSALOriCountState(mubSALOriCount - 1)
             setmubSALRupeeCost(mubSALRupeeCost - 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+            setallmubSAOriCount(allmubSAOriCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2.5)
         }
         else if (shadowLanceWyrmprintSlotState == "grayscale(0%)") {
             setShadowLanceWyrmprintSlotState("grayscale(100%)");
@@ -1225,6 +1615,10 @@ export default function ShadowAgitoWeapons() {
             setmubSALGoldMaskCountState(mubSALGoldMaskCount + 10)
             setmubSALOriCountState(mubSALOriCount + 1)
             setmubSALRupeeCost(mubSALRupeeCost + 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+            setallmubSAOriCount(allmubSAOriCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2.5)
         }
     }
 
@@ -1242,6 +1636,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSALSandCountState(wbSALSandCount - 1)
                     setmubSALRupeeCost(mubSALRupeeCost - 2)
                     setwbSALRupeeCost(wbSALRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSASandCount(allmubSASandCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubSALSilverMaskCountState(mubSALSilverMaskCount - 16)
@@ -1254,6 +1652,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSALOriCountState(wbSALOriCount - 1)
                     setmubSALRupeeCost(mubSALRupeeCost - 7.5)
                     setwbSALRupeeCost(wbSALRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubSALSilverMaskCountState(mubSALSilverMaskCount - 16)
@@ -1261,6 +1664,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSALInsanityCountState(mubSALInsanityCount - 7)
                     setmubSALOriCountState(mubSALOriCount - 1)
                     setmubSALRupeeCost(mubSALRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubSALSilverMaskCountState(mubSALSilverMaskCount - 80)
@@ -1269,6 +1677,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSALGaleCountState(mubSALGaleCount - 20)
                     setmubSALOriCountState(mubSALOriCount - 20)
                     setmubSALRupeeCost(mubSALRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 30)
+                    setallmubSAGaleCount(allmubSAGaleCount - 20)
+                    setallmubSAOriCount(allmubSAOriCount - 20)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
             }
         }
@@ -1284,6 +1698,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSALSandCountState(wbSALSandCount + 1)
                     setmubSALRupeeCost(mubSALRupeeCost + 2)
                     setwbSALRupeeCost(wbSALRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSASandCount(allmubSASandCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubSALSilverMaskCountState(mubSALSilverMaskCount + 16)
@@ -1296,6 +1714,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSALOriCountState(wbSALOriCount + 1)
                     setmubSALRupeeCost(mubSALRupeeCost + 7.5)
                     setwbSALRupeeCost(wbSALRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubSALSilverMaskCountState(mubSALSilverMaskCount + 16)
@@ -1303,6 +1726,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSALInsanityCountState(mubSALInsanityCount + 7)
                     setmubSALOriCountState(mubSALOriCount + 1)
                     setmubSALRupeeCost(mubSALRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubSALSilverMaskCountState(mubSALSilverMaskCount + 80)
@@ -1311,6 +1739,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSALGaleCountState(mubSALGaleCount + 20)
                     setmubSALOriCountState(mubSALOriCount + 20)
                     setmubSALRupeeCost(mubSALRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 30)
+                    setallmubSAGaleCount(allmubSAGaleCount + 20)
+                    setallmubSAOriCount(allmubSAOriCount + 20)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
             }
         }
@@ -1332,6 +1766,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSALOriCountState(wbSALOriCount - 1);
                     setmubSALRupeeCost(mubSALRupeeCost - 2.5);
                     setwbSALRupeeCost(wbSALRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubSALSilverMaskCountState(mubSALSilverMaskCount - 40)
@@ -1340,6 +1779,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSALGaleCountState(mubSALGaleCount - 10);
                     setmubSALOriCountState(mubSALOriCount - 10);
                     setmubSALRupeeCost(mubSALRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 10)
+                    setallmubSAGaleCount(allmubSAGaleCount - 10)
+                    setallmubSAOriCount(allmubSAOriCount - 10)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
             }
         }
@@ -1357,6 +1802,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSALOriCountState(wbSALOriCount + 1);
                     setmubSALRupeeCost(mubSALRupeeCost + 2.5);
                     setwbSALRupeeCost(wbSALRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubSALSilverMaskCountState(mubSALSilverMaskCount + 40)
@@ -1365,6 +1815,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSALGaleCountState(mubSALGaleCount + 10);
                     setmubSALOriCountState(mubSALOriCount + 10);
                     setmubSALRupeeCost(mubSALRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 10)
+                    setallmubSAGaleCount(allmubSAGaleCount + 10)
+                    setallmubSAOriCount(allmubSAOriCount + 10)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
             }
         }
@@ -1382,6 +1838,10 @@ export default function ShadowAgitoWeapons() {
             setwbSAWSandCountState(wbSAWSandCount - 1)
             setmubSAWRupeeCost(mubSAWRupeeCost - 2)
             setwbSAWRupeeCost(wbSAWRupeeCost - 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+            setallmubSASandCount(allmubSASandCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2)
         }
         else if (shadowWandCraftState == "grayscale(0%)") {
             setShadowWandCraftState("grayscale(100%)")
@@ -1394,6 +1854,10 @@ export default function ShadowAgitoWeapons() {
             setwbSAWSandCountState(wbSAWSandCount + 1)
             setmubSAWRupeeCost(mubSAWRupeeCost + 2)
             setwbSAWRupeeCost(wbSAWRupeeCost + 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+            setallmubSASandCount(allmubSASandCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2)
         }
     }
 
@@ -1411,6 +1875,11 @@ export default function ShadowAgitoWeapons() {
             setwbSAWOriCountState(wbSAWOriCount - 30)
             setmubSAWRupeeCost(mubSAWRupeeCost - 10)
             setwbSAWRupeeCost(wbSAWRupeeCost - 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount - 14)
+            setallmubSAOriCount(allmubSAOriCount - 30)
+            setallmubSARupeeCost(allmubSARupeeCost - 10)
         }
         else if (shadowWandWeaponBonusState == "grayscale(0%)") {
             setShadowWandWeaponBonusState("grayscale(100%)");
@@ -1425,6 +1894,11 @@ export default function ShadowAgitoWeapons() {
             setwbSAWOriCountState(wbSAWOriCount + 30)
             setmubSAWRupeeCost(mubSAWRupeeCost + 10)
             setwbSAWRupeeCost(wbSAWRupeeCost + 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount + 14)
+            setallmubSAOriCount(allmubSAOriCount + 30)
+            setallmubSARupeeCost(allmubSARupeeCost + 10)
         }
     }
 
@@ -1436,6 +1910,10 @@ export default function ShadowAgitoWeapons() {
             setmubSAWGoldMaskCountState(mubSAWGoldMaskCount - 10)
             setmubSAWOriCountState(mubSAWOriCount - 1)
             setmubSAWRupeeCost(mubSAWRupeeCost - 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+            setallmubSAOriCount(allmubSAOriCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2.5)
         }
         else if (shadowWandWyrmprintSlotState == "grayscale(0%)") {
             setShadowWandWyrmprintSlotState("grayscale(100%)");
@@ -1444,6 +1922,10 @@ export default function ShadowAgitoWeapons() {
             setmubSAWGoldMaskCountState(mubSAWGoldMaskCount + 10)
             setmubSAWOriCountState(mubSAWOriCount + 1)
             setmubSAWRupeeCost(mubSAWRupeeCost + 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+            setallmubSAOriCount(allmubSAOriCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2.5)
         }
     }
 
@@ -1461,6 +1943,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSAWSandCountState(wbSAWSandCount - 1)
                     setmubSAWRupeeCost(mubSAWRupeeCost - 2)
                     setwbSAWRupeeCost(wbSAWRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSASandCount(allmubSASandCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubSAWSilverMaskCountState(mubSAWSilverMaskCount - 16)
@@ -1473,6 +1959,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAWOriCountState(wbSAWOriCount - 1)
                     setmubSAWRupeeCost(mubSAWRupeeCost - 7.5)
                     setwbSAWRupeeCost(wbSAWRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubSAWSilverMaskCountState(mubSAWSilverMaskCount - 16)
@@ -1480,6 +1971,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSAWInsanityCountState(mubSAWInsanityCount - 7)
                     setmubSAWOriCountState(mubSAWOriCount - 1)
                     setmubSAWRupeeCost(mubSAWRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubSAWSilverMaskCountState(mubSAWSilverMaskCount - 80)
@@ -1488,6 +1984,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAWGaleCountState(mubSAWGaleCount - 20)
                     setmubSAWOriCountState(mubSAWOriCount - 20)
                     setmubSAWRupeeCost(mubSAWRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 30)
+                    setallmubSAGaleCount(allmubSAGaleCount - 20)
+                    setallmubSAOriCount(allmubSAOriCount - 20)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
             }
         }
@@ -1503,6 +2005,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSAWSandCountState(wbSAWSandCount + 1)
                     setmubSAWRupeeCost(mubSAWRupeeCost + 2)
                     setwbSAWRupeeCost(wbSAWRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSASandCount(allmubSASandCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubSAWSilverMaskCountState(mubSAWSilverMaskCount + 16)
@@ -1515,6 +2021,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAWOriCountState(wbSAWOriCount + 1)
                     setmubSAWRupeeCost(mubSAWRupeeCost + 7.5)
                     setwbSAWRupeeCost(wbSAWRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubSAWSilverMaskCountState(mubSAWSilverMaskCount + 16)
@@ -1522,6 +2033,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSAWInsanityCountState(mubSAWInsanityCount + 7)
                     setmubSAWOriCountState(mubSAWOriCount + 1)
                     setmubSAWRupeeCost(mubSAWRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubSAWSilverMaskCountState(mubSAWSilverMaskCount + 80)
@@ -1530,6 +2046,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAWGaleCountState(mubSAWGaleCount + 20)
                     setmubSAWOriCountState(mubSAWOriCount + 20)
                     setmubSAWRupeeCost(mubSAWRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 30)
+                    setallmubSAGaleCount(allmubSAGaleCount + 20)
+                    setallmubSAOriCount(allmubSAOriCount + 20)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
             }
         }
@@ -1551,6 +2073,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAWOriCountState(wbSAWOriCount - 1);
                     setmubSAWRupeeCost(mubSAWRupeeCost - 2.5);
                     setwbSAWRupeeCost(wbSAWRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubSAWSilverMaskCountState(mubSAWSilverMaskCount - 40)
@@ -1559,6 +2086,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAWGaleCountState(mubSAWGaleCount - 10);
                     setmubSAWOriCountState(mubSAWOriCount - 10);
                     setmubSAWRupeeCost(mubSAWRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 10)
+                    setallmubSAGaleCount(allmubSAGaleCount - 10)
+                    setallmubSAOriCount(allmubSAOriCount - 10)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
             }
         }
@@ -1576,6 +2109,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAWOriCountState(wbSAWOriCount + 1);
                     setmubSAWRupeeCost(mubSAWRupeeCost + 2.5);
                     setwbSAWRupeeCost(wbSAWRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubSAWSilverMaskCountState(mubSAWSilverMaskCount + 40)
@@ -1584,6 +2122,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAWGaleCountState(mubSAWGaleCount + 10);
                     setmubSAWOriCountState(mubSAWOriCount + 10);
                     setmubSAWRupeeCost(mubSAWRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 10)
+                    setallmubSAGaleCount(allmubSAGaleCount + 10)
+                    setallmubSAOriCount(allmubSAOriCount + 10)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
             }
         }
@@ -1601,6 +2145,10 @@ export default function ShadowAgitoWeapons() {
             setwbSABoSandCountState(wbSABoSandCount - 1)
             setmubSABoRupeeCost(mubSABoRupeeCost - 2)
             setwbSABoRupeeCost(wbSABoRupeeCost - 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+            setallmubSASandCount(allmubSASandCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2)
         }
         else if (shadowBowCraftState == "grayscale(0%)") {
             setShadowBowCraftState("grayscale(100%)")
@@ -1613,6 +2161,10 @@ export default function ShadowAgitoWeapons() {
             setwbSABoSandCountState(wbSABoSandCount + 1)
             setmubSABoRupeeCost(mubSABoRupeeCost + 2)
             setwbSABoRupeeCost(wbSABoRupeeCost + 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+            setallmubSASandCount(allmubSASandCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2)
         }
     }
 
@@ -1630,6 +2182,11 @@ export default function ShadowAgitoWeapons() {
             setwbSABoOriCountState(wbSABoOriCount - 30)
             setmubSABoRupeeCost(mubSABoRupeeCost - 10)
             setwbSABoRupeeCost(wbSABoRupeeCost - 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount - 14)
+            setallmubSAOriCount(allmubSAOriCount - 30)
+            setallmubSARupeeCost(allmubSARupeeCost - 10)
         }
         else if (shadowBowWeaponBonusState == "grayscale(0%)") {
             setShadowBowWeaponBonusState("grayscale(100%)");
@@ -1644,6 +2201,11 @@ export default function ShadowAgitoWeapons() {
             setwbSABoOriCountState(wbSABoOriCount + 30)
             setmubSABoRupeeCost(mubSABoRupeeCost + 10)
             setwbSABoRupeeCost(wbSABoRupeeCost + 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount + 14)
+            setallmubSAOriCount(allmubSAOriCount + 30)
+            setallmubSARupeeCost(allmubSARupeeCost + 10)
         }
     }
 
@@ -1655,6 +2217,10 @@ export default function ShadowAgitoWeapons() {
             setmubSABoGoldMaskCountState(mubSABoGoldMaskCount - 10)
             setmubSABoOriCountState(mubSABoOriCount - 1)
             setmubSABoRupeeCost(mubSABoRupeeCost - 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+            setallmubSAOriCount(allmubSAOriCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2.5)
         }
         else if (shadowBowWyrmprintSlotState == "grayscale(0%)") {
             setShadowBowWyrmprintSlotState("grayscale(100%)");
@@ -1663,6 +2229,10 @@ export default function ShadowAgitoWeapons() {
             setmubSABoGoldMaskCountState(mubSABoGoldMaskCount + 10)
             setmubSABoOriCountState(mubSABoOriCount + 1)
             setmubSABoRupeeCost(mubSABoRupeeCost + 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+            setallmubSAOriCount(allmubSAOriCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2.5)
         }
     }
 
@@ -1680,6 +2250,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSABoSandCountState(wbSABoSandCount - 1)
                     setmubSABoRupeeCost(mubSABoRupeeCost - 2)
                     setwbSABoRupeeCost(wbSABoRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSASandCount(allmubSASandCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubSABoSilverMaskCountState(mubSABoSilverMaskCount - 16)
@@ -1692,6 +2266,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSABoOriCountState(wbSABoOriCount - 1)
                     setmubSABoRupeeCost(mubSABoRupeeCost - 7.5)
                     setwbSABoRupeeCost(wbSABoRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubSABoSilverMaskCountState(mubSABoSilverMaskCount - 16)
@@ -1699,6 +2278,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSABoInsanityCountState(mubSABoInsanityCount - 7)
                     setmubSABoOriCountState(mubSABoOriCount - 1)
                     setmubSABoRupeeCost(mubSABoRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubSABoSilverMaskCountState(mubSABoSilverMaskCount - 80)
@@ -1707,6 +2291,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSABoGaleCountState(mubSABoGaleCount - 20)
                     setmubSABoOriCountState(mubSABoOriCount - 20)
                     setmubSABoRupeeCost(mubSABoRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 30)
+                    setallmubSAGaleCount(allmubSAGaleCount - 20)
+                    setallmubSAOriCount(allmubSAOriCount - 20)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
             }
         }
@@ -1722,6 +2312,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSABoSandCountState(wbSABoSandCount + 1)
                     setmubSABoRupeeCost(mubSABoRupeeCost + 2)
                     setwbSABoRupeeCost(wbSABoRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSASandCount(allmubSASandCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubSABoSilverMaskCountState(mubSABoSilverMaskCount + 16)
@@ -1734,6 +2328,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSABoOriCountState(wbSABoOriCount + 1)
                     setmubSABoRupeeCost(mubSABoRupeeCost + 7.5)
                     setwbSABoRupeeCost(wbSABoRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubSABoSilverMaskCountState(mubSABoSilverMaskCount + 16)
@@ -1741,6 +2340,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSABoInsanityCountState(mubSABoInsanityCount + 7)
                     setmubSABoOriCountState(mubSABoOriCount + 1)
                     setmubSABoRupeeCost(mubSABoRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubSABoSilverMaskCountState(mubSABoSilverMaskCount + 80)
@@ -1749,6 +2353,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSABoGaleCountState(mubSABoGaleCount + 20)
                     setmubSABoOriCountState(mubSABoOriCount + 20)
                     setmubSABoRupeeCost(mubSABoRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 30)
+                    setallmubSAGaleCount(allmubSAGaleCount + 20)
+                    setallmubSAOriCount(allmubSAOriCount + 20)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
             }
         }
@@ -1770,6 +2380,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSABoOriCountState(wbSABoOriCount - 1);
                     setmubSABoRupeeCost(mubSABoRupeeCost - 2.5);
                     setwbSABoRupeeCost(wbSABoRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubSABoSilverMaskCountState(mubSABoSilverMaskCount - 40)
@@ -1778,6 +2393,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSABoGaleCountState(mubSABoGaleCount - 10);
                     setmubSABoOriCountState(mubSABoOriCount - 10);
                     setmubSABoRupeeCost(mubSABoRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 10)
+                    setallmubSAGaleCount(allmubSAGaleCount - 10)
+                    setallmubSAOriCount(allmubSAOriCount - 10)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
             }
         }
@@ -1795,6 +2416,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSABoOriCountState(wbSABoOriCount + 1);
                     setmubSABoRupeeCost(mubSABoRupeeCost + 2.5);
                     setwbSABoRupeeCost(wbSABoRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubSABoSilverMaskCountState(mubSABoSilverMaskCount + 40)
@@ -1803,6 +2429,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSABoGaleCountState(mubSABoGaleCount + 10);
                     setmubSABoOriCountState(mubSABoOriCount + 10);
                     setmubSABoRupeeCost(mubSABoRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 10)
+                    setallmubSAGaleCount(allmubSAGaleCount + 10)
+                    setallmubSAOriCount(allmubSAOriCount + 10)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
             }
         }
@@ -1820,6 +2452,11 @@ export default function ShadowAgitoWeapons() {
             setwbSAStSandCountState(wbSAStSandCount - 1)
             setmubSAStRupeeCost(mubSAStRupeeCost - 2)
             setwbSAStRupeeCost(wbSAStRupeeCost - 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+            setallmubSASandCount(allmubSASandCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2)
+
         }
         else if (shadowStaffCraftState == "grayscale(0%)") {
             setShadowStaffCraftState("grayscale(100%)")
@@ -1832,6 +2469,10 @@ export default function ShadowAgitoWeapons() {
             setwbSAStSandCountState(wbSAStSandCount + 1)
             setmubSAStRupeeCost(mubSAStRupeeCost + 2)
             setwbSAStRupeeCost(wbSAStRupeeCost + 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+            setallmubSASandCount(allmubSASandCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2)
         }
     }
 
@@ -1849,6 +2490,11 @@ export default function ShadowAgitoWeapons() {
             setwbSAStOriCountState(wbSAStOriCount - 30)
             setmubSAStRupeeCost(mubSAStRupeeCost - 10)
             setwbSAStRupeeCost(wbSAStRupeeCost - 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount - 14)
+            setallmubSAOriCount(allmubSAOriCount - 30)
+            setallmubSARupeeCost(allmubSARupeeCost - 10)
         }
         else if (shadowStaffWeaponBonusState == "grayscale(0%)") {
             setShadowStaffWeaponBonusState("grayscale(100%)");
@@ -1863,6 +2509,11 @@ export default function ShadowAgitoWeapons() {
             setwbSAStOriCountState(wbSAStOriCount + 30)
             setmubSAStRupeeCost(mubSAStRupeeCost + 10)
             setwbSAStRupeeCost(wbSAStRupeeCost + 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount + 14)
+            setallmubSAOriCount(allmubSAOriCount + 30)
+            setallmubSARupeeCost(allmubSARupeeCost + 10)
         }
     }
 
@@ -1874,6 +2525,10 @@ export default function ShadowAgitoWeapons() {
             setmubSAStGoldMaskCountState(mubSAStGoldMaskCount - 10)
             setmubSAStOriCountState(mubSAStOriCount - 1)
             setmubSAStRupeeCost(mubSAStRupeeCost - 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+            setallmubSAOriCount(allmubSAOriCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2.5)
         }
         else if (shadowStaffWyrmprintSlotState == "grayscale(0%)") {
             setShadowStaffWyrmprintSlotState("grayscale(100%)");
@@ -1882,6 +2537,10 @@ export default function ShadowAgitoWeapons() {
             setmubSAStGoldMaskCountState(mubSAStGoldMaskCount + 10)
             setmubSAStOriCountState(mubSAStOriCount + 1)
             setmubSAStRupeeCost(mubSAStRupeeCost + 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+            setallmubSAOriCount(allmubSAOriCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2.5)
         }
     }
 
@@ -1899,6 +2558,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSAStSandCountState(wbSAStSandCount - 1)
                     setmubSAStRupeeCost(mubSAStRupeeCost - 2)
                     setwbSAStRupeeCost(wbSAStRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSASandCount(allmubSASandCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubSAStSilverMaskCountState(mubSAStSilverMaskCount - 16)
@@ -1911,6 +2574,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAStOriCountState(wbSAStOriCount - 1)
                     setmubSAStRupeeCost(mubSAStRupeeCost - 7.5)
                     setwbSAStRupeeCost(wbSAStRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubSAStSilverMaskCountState(mubSAStSilverMaskCount - 16)
@@ -1918,6 +2586,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSAStInsanityCountState(mubSAStInsanityCount - 7)
                     setmubSAStOriCountState(mubSAStOriCount - 1)
                     setmubSAStRupeeCost(mubSAStRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubSAStSilverMaskCountState(mubSAStSilverMaskCount - 80)
@@ -1926,6 +2599,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAStGaleCountState(mubSAStGaleCount - 20)
                     setmubSAStOriCountState(mubSAStOriCount - 20)
                     setmubSAStRupeeCost(mubSAStRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 30)
+                    setallmubSAGaleCount(allmubSAGaleCount - 20)
+                    setallmubSAOriCount(allmubSAOriCount - 20)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
             }
         }
@@ -1941,6 +2620,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSAStSandCountState(wbSAStSandCount + 1)
                     setmubSAStRupeeCost(mubSAStRupeeCost + 2)
                     setwbSAStRupeeCost(wbSAStRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSASandCount(allmubSASandCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubSAStSilverMaskCountState(mubSAStSilverMaskCount + 16)
@@ -1953,6 +2636,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAStOriCountState(wbSAStOriCount + 1)
                     setmubSAStRupeeCost(mubSAStRupeeCost + 7.5)
                     setwbSAStRupeeCost(wbSAStRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubSAStSilverMaskCountState(mubSAStSilverMaskCount + 16)
@@ -1960,6 +2648,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSAStInsanityCountState(mubSAStInsanityCount + 7)
                     setmubSAStOriCountState(mubSAStOriCount + 1)
                     setmubSAStRupeeCost(mubSAStRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubSAStSilverMaskCountState(mubSAStSilverMaskCount + 80)
@@ -1968,6 +2661,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAStGaleCountState(mubSAStGaleCount + 20)
                     setmubSAStOriCountState(mubSAStOriCount + 20)
                     setmubSAStRupeeCost(mubSAStRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 30)
+                    setallmubSAGaleCount(allmubSAGaleCount + 20)
+                    setallmubSAOriCount(allmubSAOriCount + 20)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
             }
         }
@@ -1989,6 +2688,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAStOriCountState(wbSAStOriCount - 1);
                     setmubSAStRupeeCost(mubSAStRupeeCost - 2.5);
                     setwbSAStRupeeCost(wbSAStRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubSAStSilverMaskCountState(mubSAStSilverMaskCount - 40)
@@ -1997,6 +2701,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAStGaleCountState(mubSAStGaleCount - 10);
                     setmubSAStOriCountState(mubSAStOriCount - 10);
                     setmubSAStRupeeCost(mubSAStRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 10)
+                    setallmubSAGaleCount(allmubSAGaleCount - 10)
+                    setallmubSAOriCount(allmubSAOriCount - 10)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
             }
         }
@@ -2014,6 +2724,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAStOriCountState(wbSAStOriCount + 1);
                     setmubSAStRupeeCost(mubSAStRupeeCost + 2.5);
                     setwbSAStRupeeCost(wbSAStRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubSAStSilverMaskCountState(mubSAStSilverMaskCount + 40)
@@ -2022,6 +2737,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAStGaleCountState(mubSAStGaleCount + 10);
                     setmubSAStOriCountState(mubSAStOriCount + 10);
                     setmubSAStRupeeCost(mubSAStRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 10)
+                    setallmubSAGaleCount(allmubSAGaleCount + 10)
+                    setallmubSAOriCount(allmubSAOriCount + 10)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
             }
         }
@@ -2039,6 +2760,10 @@ export default function ShadowAgitoWeapons() {
             setwbSAMSandCountState(wbSAMSandCount - 1)
             setmubSAMRupeeCost(mubSAMRupeeCost - 2)
             setwbSAMRupeeCost(wbSAMRupeeCost - 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+            setallmubSASandCount(allmubSASandCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2)
         }
         else if (shadowManacasterCraftState == "grayscale(0%)") {
             setShadowManacasterCraftState("grayscale(100%)")
@@ -2051,6 +2776,10 @@ export default function ShadowAgitoWeapons() {
             setwbSAMSandCountState(wbSAMSandCount + 1)
             setmubSAMRupeeCost(mubSAMRupeeCost + 2)
             setwbSAMRupeeCost(wbSAMRupeeCost + 2)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+            setallmubSASandCount(allmubSASandCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2)
         }
     }
 
@@ -2068,6 +2797,11 @@ export default function ShadowAgitoWeapons() {
             setwbSAMOriCountState(wbSAMOriCount - 30)
             setmubSAMRupeeCost(mubSAMRupeeCost - 10)
             setwbSAMRupeeCost(wbSAMRupeeCost - 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount - 14)
+            setallmubSAOriCount(allmubSAOriCount - 30)
+            setallmubSARupeeCost(allmubSARupeeCost - 10)
         }
         else if (shadowManacasterWeaponBonusState == "grayscale(0%)") {
             setShadowManacasterWeaponBonusState("grayscale(100%)");
@@ -2082,6 +2816,11 @@ export default function ShadowAgitoWeapons() {
             setwbSAMOriCountState(wbSAMOriCount + 30)
             setmubSAMRupeeCost(mubSAMRupeeCost + 10)
             setwbSAMRupeeCost(wbSAMRupeeCost + 10)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 100)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 100)
+            setallmubSAInsanityCount(allmubSAInsanityCount + 14)
+            setallmubSAOriCount(allmubSAOriCount + 30)
+            setallmubSARupeeCost(allmubSARupeeCost + 10)
         }
     }
 
@@ -2093,6 +2832,10 @@ export default function ShadowAgitoWeapons() {
             setmubSAMGoldMaskCountState(mubSAMGoldMaskCount - 10)
             setmubSAMOriCountState(mubSAMOriCount - 1)
             setmubSAMRupeeCost(mubSAMRupeeCost - 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+            setallmubSAOriCount(allmubSAOriCount - 1)
+            setallmubSARupeeCost(allmubSARupeeCost - 2.5)
         }
         else if (shadowManacasterWyrmprintSlotState == "grayscale(0%)") {
             setShadowManacasterWyrmprintSlotState("grayscale(100%)");
@@ -2101,6 +2844,10 @@ export default function ShadowAgitoWeapons() {
             setmubSAMGoldMaskCountState(mubSAMGoldMaskCount + 10)
             setmubSAMOriCountState(mubSAMOriCount + 1)
             setmubSAMRupeeCost(mubSAMRupeeCost + 2.5)
+            setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+            setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+            setallmubSAOriCount(allmubSAOriCount + 1)
+            setallmubSARupeeCost(allmubSARupeeCost + 2.5)
         }
     }
 
@@ -2118,6 +2865,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSAMSandCountState(wbSAMSandCount - 1)
                     setmubSAMRupeeCost(mubSAMRupeeCost - 2)
                     setwbSAMRupeeCost(wbSAMRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSASandCount(allmubSASandCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubSAMSilverMaskCountState(mubSAMSilverMaskCount - 16)
@@ -2130,6 +2881,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAMOriCountState(wbSAMOriCount - 1)
                     setmubSAMRupeeCost(mubSAMRupeeCost - 7.5)
                     setwbSAMRupeeCost(wbSAMRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubSAMSilverMaskCountState(mubSAMSilverMaskCount - 16)
@@ -2137,6 +2893,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSAMInsanityCountState(mubSAMInsanityCount - 7)
                     setmubSAMOriCountState(mubSAMOriCount - 1)
                     setmubSAMRupeeCost(mubSAMRupeeCost - 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubSAMSilverMaskCountState(mubSAMSilverMaskCount - 80)
@@ -2145,6 +2906,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAMGaleCountState(mubSAMGaleCount - 20)
                     setmubSAMOriCountState(mubSAMOriCount - 20)
                     setmubSAMRupeeCost(mubSAMRupeeCost - 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 30)
+                    setallmubSAGaleCount(allmubSAGaleCount - 20)
+                    setallmubSAOriCount(allmubSAOriCount - 20)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2)
                 }
             }
         }
@@ -2160,6 +2927,10 @@ export default function ShadowAgitoWeapons() {
                     setwbSAMSandCountState(wbSAMSandCount + 1)
                     setmubSAMRupeeCost(mubSAMRupeeCost + 2)
                     setwbSAMRupeeCost(wbSAMRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSASandCount(allmubSASandCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubSAMSilverMaskCountState(mubSAMSilverMaskCount + 16)
@@ -2172,6 +2943,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAMOriCountState(wbSAMOriCount + 1)
                     setmubSAMRupeeCost(mubSAMRupeeCost + 7.5)
                     setwbSAMRupeeCost(wbSAMRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubSAMSilverMaskCountState(mubSAMSilverMaskCount + 16)
@@ -2179,6 +2955,11 @@ export default function ShadowAgitoWeapons() {
                     setmubSAMInsanityCountState(mubSAMInsanityCount + 7)
                     setmubSAMOriCountState(mubSAMOriCount + 1)
                     setmubSAMRupeeCost(mubSAMRupeeCost + 7.5)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubSAMSilverMaskCountState(mubSAMSilverMaskCount + 80)
@@ -2187,6 +2968,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAMGaleCountState(mubSAMGaleCount + 20)
                     setmubSAMOriCountState(mubSAMOriCount + 20)
                     setmubSAMRupeeCost(mubSAMRupeeCost + 2)
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 80)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 70)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 30)
+                    setallmubSAGaleCount(allmubSAGaleCount + 20)
+                    setallmubSAOriCount(allmubSAOriCount + 20)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2)
                 }
             }
         }
@@ -2208,6 +2995,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAMOriCountState(wbSAMOriCount - 1);
                     setmubSAMRupeeCost(mubSAMRupeeCost - 2.5);
                     setwbSAMRupeeCost(wbSAMRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 7)
+                    setallmubSAOriCount(allmubSAOriCount - 1)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubSAMSilverMaskCountState(mubSAMSilverMaskCount - 40)
@@ -2216,6 +3008,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAMGaleCountState(mubSAMGaleCount - 10);
                     setmubSAMOriCountState(mubSAMOriCount - 10);
                     setmubSAMRupeeCost(mubSAMRupeeCost - 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount - 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount - 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount - 10)
+                    setallmubSAGaleCount(allmubSAGaleCount - 10)
+                    setallmubSAOriCount(allmubSAOriCount - 10)
+                    setallmubSARupeeCost(allmubSARupeeCost - 2.5)
                 }
             }
         }
@@ -2233,6 +3031,11 @@ export default function ShadowAgitoWeapons() {
                     setwbSAMOriCountState(wbSAMOriCount + 1);
                     setmubSAMRupeeCost(mubSAMRupeeCost + 2.5);
                     setwbSAMRupeeCost(wbSAMRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 16)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 10)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 7)
+                    setallmubSAOriCount(allmubSAOriCount + 1)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubSAMSilverMaskCountState(mubSAMSilverMaskCount + 40)
@@ -2241,6 +3044,12 @@ export default function ShadowAgitoWeapons() {
                     setmubSAMGaleCountState(mubSAMGaleCount + 10);
                     setmubSAMOriCountState(mubSAMOriCount + 10);
                     setmubSAMRupeeCost(mubSAMRupeeCost + 2.5);
+                    setallmubSASilverMaskCount(allmubSASilverMaskCount + 40)
+                    setallmubSAGoldMaskCount(allmubSAGoldMaskCount + 30)
+                    setallmubSAInsanityCount(allmubSAInsanityCount + 10)
+                    setallmubSAGaleCount(allmubSAGaleCount + 10)
+                    setallmubSAOriCount(allmubSAOriCount + 10)
+                    setallmubSARupeeCost(allmubSARupeeCost + 2.5)
                 }
             }
         }
@@ -2856,6 +3665,48 @@ export default function ShadowAgitoWeapons() {
                 </Box>
                 {/* The box for the materials needed to 100% a weapon */}
                 {shadowWeaponSelection()}
+            </Flex>
+            <Flex>&nbsp;</Flex>
+            <Flex>
+                <Box width={[6 / 7, 1 / 2]} p={3} m={3} bg={"#152238"} sx={{ border: "3px solid blue" }}>
+                    <Flex>
+                        {/* <Box width={1 / 4}></Box> */}
+                        <Text fontSize={[1, 3]} ml="auto" mr="auto" color="gold">Materials Needed to MUB all Weapons</Text>
+                    </Flex>
+                    <Flex alignItems="center">
+                        <Card width={[75, 150]}>
+                            <Image src={ShadowAgitoSilverMask} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"purple"} fontSize={[1, 2]}>{allmubSASilverMaskCount}</Text>
+                        </Card>
+                        <Card width={[75, 150]}>
+                            <Image src={ShadowAgitoGoldMask} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"purple"} fontSize={[1, 2]}>{allmubSAGoldMaskCount}</Text>
+                        </Card>
+                        <Card width={[75, 150]}>
+                            <Image src={ShadowAgitoInsanity} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"purple"} fontSize={[1, 2]}>{allmubSAInsanityCount}</Text>
+                        </Card>
+                        <Card width={[75, 150]}>
+                            <Image src={FireAgitoGale} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"purple"} fontSize={[1, 2]}>{allmubSAGaleCount}</Text>
+                        </Card>
+                    </Flex>
+                    <Flex>&nbsp;</Flex>
+                    <Flex>
+                        <Card width={[75, 175]}>
+                            <Image src={TwinklingSand} sx={{ width: ["70%"], height: ["52%", "70%"] }} />
+                            <Text color={"purple"} fontSize={[1, 2]}>{allmubSASandCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={Orichalcum} sx={{ width: ["70%"], height: ["52%", "70%"] }} />
+                            <Text color={"purple"} fontSize={[1, 2]}>{allmubSAOriCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={Rupies} sx={{ width: ["70%"], height: ["52%", "70%"] }} />
+                            <Text color={"purple"} fontSize={[1, 2]}>{allmubSARupeeCost} million</Text>
+                        </Card>
+                    </Flex>
+                </Box>
             </Flex>
             <Flex>&nbsp;</Flex>
             <WeaponTypeNavTabs />
