@@ -14,6 +14,14 @@ import WindAgitoWand from "../Images/Wind_Agito_Wand.png";
 import WindAgitoStaff from "../Images/Wind_Agito_Staff.png";
 import WindAgitoManacaster from "../Images/Wind_Agito_Manacaster.png";
 
+import WindAgitoSilverMask from "../Images/Wind_Agito_Silver_Mask.png";
+import WindAgitoGoldMask from "../Images/Wind_Agito_Gold_Mask.png";
+import WindAgitoInsanity from "../Images/Wind_Agito_Insanity.png";
+import FireAgitoGale from "../Images/Fire_Agito_Gale.png";
+import TwinklingSand from "../Images/Twinkling_Sand.png";
+import Orichalcum from "../Images/Orichalcum.png";
+import Rupies from "../Images/Rupees.png";
+
 import Refine from "../Images/Refine.PNG";
 import Unbind from "../Images/Unbind.PNG";
 import WyrmprintSlots from "../Images/Wyrmprint_Slots.PNG";
@@ -31,6 +39,14 @@ import WindAgitoManacasterCost from "./WindAgitoManacasterMats"
 
 export default function WindAgitoWeapons() {
     const [windWeaponChoice, setWindWeaponChoiceState] = useLocalStorage("windWeaponChoice", "sword")
+
+    const [allmubWiASilverMaskCount, setallmubWiASilverMaskCount] = useLocalStorage("allmubWiASilverMaskState", 4644)
+    const [allmubWiAGoldMaskCount, setallmubWiAGoldMaskCount] = useLocalStorage("allmubWiAGoldMaskState", 3690)
+    const [allmubWiAInsanityCount, setallmubWiAInsanityCount] = useLocalStorage("allmubWiAInsanityCount", 801)
+    const [allmubWiAGaleCount, setallmubWiAGaleCount] = useLocalStorage("allmubWiAGaleCount", 270)
+    const [allmubWiASandCount, setallmubWiASandCount] = useLocalStorage("allmubWiASandCount", 45)
+    const [allmubWiAOriCount, setallmubWiAOriCount] = useLocalStorage("allmubWiAOriCount", 594)
+    const [allmubWiARupeeCost, setallmubWiARupeeCost] = useLocalStorage("allmubWiARupeeCost", 535.5)
 
     const [windSwordCraftState, setWindSwordCraftState] = useLocalStorage("windSwordCraftState", "grayscale(100%)")
     const [windSwordWeaponBonusState, setWindSwordWeaponBonusState] = useLocalStorage("windSwordWeaponBonusState", "grayscale(100%)")
@@ -287,6 +303,10 @@ export default function WindAgitoWeapons() {
             setwbWiASSandCountState(wbWiASSandCount - 1)
             setmubWiASRupeeCost(mubWiASRupeeCost - 2)
             setwbWiASRupeeCost(wbWiASRupeeCost - 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+            setallmubWiASandCount(allmubWiASandCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2)
         }
         else if (windSwordCraftState == "grayscale(0%)") {
             setWindSwordCraftState("grayscale(100%)")
@@ -299,6 +319,10 @@ export default function WindAgitoWeapons() {
             setwbWiASSandCountState(wbWiASSandCount + 1)
             setmubWiASRupeeCost(mubWiASRupeeCost + 2)
             setwbWiASRupeeCost(wbWiASRupeeCost + 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+            setallmubWiASandCount(allmubWiASandCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2)
         }
     }
 
@@ -316,6 +340,11 @@ export default function WindAgitoWeapons() {
             setwbWiASOriCountState(wbWiASOriCount - 30)
             setmubWiASRupeeCost(mubWiASRupeeCost - 10)
             setwbWiASRupeeCost(wbWiASRupeeCost - 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount - 14)
+            setallmubWiAOriCount(allmubWiAOriCount - 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 10)
         }
         else if (windSwordWeaponBonusState == "grayscale(0%)") {
             setWindSwordWeaponBonusState("grayscale(100%)");
@@ -330,6 +359,11 @@ export default function WindAgitoWeapons() {
             setwbWiASOriCountState(wbWiASOriCount + 30)
             setmubWiASRupeeCost(mubWiASRupeeCost + 10)
             setwbWiASRupeeCost(wbWiASRupeeCost + 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount + 14)
+            setallmubWiAOriCount(allmubWiAOriCount + 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 10)
         }
     }
 
@@ -341,6 +375,10 @@ export default function WindAgitoWeapons() {
             setmubWiASGoldMaskCountState(mubWiASGoldMaskCount - 10)
             setmubWiASOriCountState(mubWiASOriCount - 1)
             setmubWiASRupeeCost(mubWiASRupeeCost - 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+            setallmubWiAOriCount(allmubWiAOriCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
         }
         else if (windSwordWyrmprintSlotState == "grayscale(0%)") {
             setWindSwordWyrmprintSlotState("grayscale(100%)");
@@ -349,6 +387,10 @@ export default function WindAgitoWeapons() {
             setmubWiASGoldMaskCountState(mubWiASGoldMaskCount + 10)
             setmubWiASOriCountState(mubWiASOriCount + 1)
             setmubWiASRupeeCost(mubWiASRupeeCost + 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+            setallmubWiAOriCount(allmubWiAOriCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
         }
     }
 
@@ -366,6 +408,10 @@ export default function WindAgitoWeapons() {
                     setwbWiASSandCountState(wbWiASSandCount - 1)
                     setmubWiASRupeeCost(mubWiASRupeeCost - 2)
                     setwbWiASRupeeCost(wbWiASRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiASandCount(allmubWiASandCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWiASSilverMaskCountState(mubWiASSilverMaskCount - 16)
@@ -378,6 +424,11 @@ export default function WindAgitoWeapons() {
                     setwbWiASOriCountState(wbWiASOriCount - 1)
                     setmubWiASRupeeCost(mubWiASRupeeCost - 7.5)
                     setwbWiASRupeeCost(wbWiASRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWiASSilverMaskCountState(mubWiASSilverMaskCount - 16)
@@ -385,6 +436,11 @@ export default function WindAgitoWeapons() {
                     setmubWiASInsanityCountState(mubWiASInsanityCount - 7)
                     setmubWiASOriCountState(mubWiASOriCount - 1)
                     setmubWiASRupeeCost(mubWiASRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWiASSilverMaskCountState(mubWiASSilverMaskCount - 80)
@@ -393,6 +449,12 @@ export default function WindAgitoWeapons() {
                     setmubWiASGaleCountState(mubWiASGaleCount - 20)
                     setmubWiASOriCountState(mubWiASOriCount - 20)
                     setmubWiASRupeeCost(mubWiASRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 20)
+                    setallmubWiAOriCount(allmubWiAOriCount - 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
             }
         }
@@ -408,6 +470,10 @@ export default function WindAgitoWeapons() {
                     setwbWiASSandCountState(wbWiASSandCount + 1)
                     setmubWiASRupeeCost(mubWiASRupeeCost + 2)
                     setwbWiASRupeeCost(wbWiASRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiASandCount(allmubWiASandCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWiASSilverMaskCountState(mubWiASSilverMaskCount + 16)
@@ -420,6 +486,11 @@ export default function WindAgitoWeapons() {
                     setwbWiASOriCountState(wbWiASOriCount + 1)
                     setmubWiASRupeeCost(mubWiASRupeeCost + 7.5)
                     setwbWiASRupeeCost(wbWiASRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWiASSilverMaskCountState(mubWiASSilverMaskCount + 16)
@@ -427,6 +498,11 @@ export default function WindAgitoWeapons() {
                     setmubWiASInsanityCountState(mubWiASInsanityCount + 7)
                     setmubWiASOriCountState(mubWiASOriCount + 1)
                     setmubWiASRupeeCost(mubWiASRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWiASSilverMaskCountState(mubWiASSilverMaskCount + 80)
@@ -435,6 +511,12 @@ export default function WindAgitoWeapons() {
                     setmubWiASGaleCountState(mubWiASGaleCount + 20)
                     setmubWiASOriCountState(mubWiASOriCount + 20)
                     setmubWiASRupeeCost(mubWiASRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 20)
+                    setallmubWiAOriCount(allmubWiAOriCount + 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
             }
         }
@@ -456,6 +538,11 @@ export default function WindAgitoWeapons() {
                     setwbWiASOriCountState(wbWiASOriCount - 1);
                     setmubWiASRupeeCost(mubWiASRupeeCost - 2.5);
                     setwbWiASRupeeCost(wbWiASRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWiASSilverMaskCountState(mubWiASSilverMaskCount - 40)
@@ -464,6 +551,12 @@ export default function WindAgitoWeapons() {
                     setmubWiASGaleCountState(mubWiASGaleCount - 10);
                     setmubWiASOriCountState(mubWiASOriCount - 10);
                     setmubWiASRupeeCost(mubWiASRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 10)
+                    setallmubWiAOriCount(allmubWiAOriCount - 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
             }
         }
@@ -481,6 +574,11 @@ export default function WindAgitoWeapons() {
                     setwbWiASOriCountState(wbWiASOriCount + 1);
                     setmubWiASRupeeCost(mubWiASRupeeCost + 2.5);
                     setwbWiASRupeeCost(wbWiASRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWiASSilverMaskCountState(mubWiASSilverMaskCount + 40)
@@ -489,6 +587,12 @@ export default function WindAgitoWeapons() {
                     setmubWiASGaleCountState(mubWiASGaleCount + 10);
                     setmubWiASOriCountState(mubWiASOriCount + 10);
                     setmubWiASRupeeCost(mubWiASRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 10)
+                    setallmubWiAOriCount(allmubWiAOriCount + 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
             }
         }
@@ -506,6 +610,10 @@ export default function WindAgitoWeapons() {
             setwbWiABlSandCountState(wbWiABlSandCount - 1)
             setmubWiABlRupeeCost(mubWiABlRupeeCost - 2)
             setwbWiABlRupeeCost(wbWiABlRupeeCost - 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+            setallmubWiASandCount(allmubWiASandCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2)
         }
         else if (windBladeCraftState == "grayscale(0%)") {
             setWindBladeCraftState("grayscale(100%)")
@@ -518,6 +626,10 @@ export default function WindAgitoWeapons() {
             setwbWiABlSandCountState(wbWiABlSandCount + 1)
             setmubWiABlRupeeCost(mubWiABlRupeeCost + 2)
             setwbWiABlRupeeCost(wbWiABlRupeeCost + 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+            setallmubWiASandCount(allmubWiASandCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2)
         }
     }
 
@@ -535,6 +647,11 @@ export default function WindAgitoWeapons() {
             setwbWiABlOriCountState(wbWiABlOriCount - 30)
             setmubWiABlRupeeCost(mubWiABlRupeeCost - 10)
             setwbWiABlRupeeCost(wbWiABlRupeeCost - 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount - 14)
+            setallmubWiAOriCount(allmubWiAOriCount - 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 10)
         }
         else if (windBladeWeaponBonusState == "grayscale(0%)") {
             setWindBladeWeaponBonusState("grayscale(100%)");
@@ -549,6 +666,11 @@ export default function WindAgitoWeapons() {
             setwbWiABlOriCountState(wbWiABlOriCount + 30)
             setmubWiABlRupeeCost(mubWiABlRupeeCost + 10)
             setwbWiABlRupeeCost(wbWiABlRupeeCost + 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount + 14)
+            setallmubWiAOriCount(allmubWiAOriCount + 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 10)
         }
     }
 
@@ -560,6 +682,10 @@ export default function WindAgitoWeapons() {
             setmubWiABlGoldMaskCountState(mubWiABlGoldMaskCount - 10)
             setmubWiABlOriCountState(mubWiABlOriCount - 1)
             setmubWiABlRupeeCost(mubWiABlRupeeCost - 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+            setallmubWiAOriCount(allmubWiAOriCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
         }
         else if (windBladeWyrmprintSlotState == "grayscale(0%)") {
             setWindBladeWyrmprintSlotState("grayscale(100%)");
@@ -568,6 +694,10 @@ export default function WindAgitoWeapons() {
             setmubWiABlGoldMaskCountState(mubWiABlGoldMaskCount + 10)
             setmubWiABlOriCountState(mubWiABlOriCount + 1)
             setmubWiABlRupeeCost(mubWiABlRupeeCost + 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+            setallmubWiAOriCount(allmubWiAOriCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
         }
     }
 
@@ -585,6 +715,10 @@ export default function WindAgitoWeapons() {
                     setwbWiABlSandCountState(wbWiABlSandCount - 1)
                     setmubWiABlRupeeCost(mubWiABlRupeeCost - 2)
                     setwbWiABlRupeeCost(wbWiABlRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiASandCount(allmubWiASandCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWiABlSilverMaskCountState(mubWiABlSilverMaskCount - 16)
@@ -597,6 +731,11 @@ export default function WindAgitoWeapons() {
                     setwbWiABlOriCountState(wbWiABlOriCount - 1)
                     setmubWiABlRupeeCost(mubWiABlRupeeCost - 7.5)
                     setwbWiABlRupeeCost(wbWiABlRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWiABlSilverMaskCountState(mubWiABlSilverMaskCount - 16)
@@ -604,6 +743,11 @@ export default function WindAgitoWeapons() {
                     setmubWiABlInsanityCountState(mubWiABlInsanityCount - 7)
                     setmubWiABlOriCountState(mubWiABlOriCount - 1)
                     setmubWiABlRupeeCost(mubWiABlRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWiABlSilverMaskCountState(mubWiABlSilverMaskCount - 80)
@@ -612,6 +756,12 @@ export default function WindAgitoWeapons() {
                     setmubWiABlGaleCountState(mubWiABlGaleCount - 20)
                     setmubWiABlOriCountState(mubWiABlOriCount - 20)
                     setmubWiABlRupeeCost(mubWiABlRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 20)
+                    setallmubWiAOriCount(allmubWiAOriCount - 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
             }
         }
@@ -627,6 +777,10 @@ export default function WindAgitoWeapons() {
                     setwbWiABlSandCountState(wbWiABlSandCount + 1)
                     setmubWiABlRupeeCost(mubWiABlRupeeCost + 2)
                     setwbWiABlRupeeCost(wbWiABlRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiASandCount(allmubWiASandCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWiABlSilverMaskCountState(mubWiABlSilverMaskCount + 16)
@@ -639,6 +793,11 @@ export default function WindAgitoWeapons() {
                     setwbWiABlOriCountState(wbWiABlOriCount + 1)
                     setmubWiABlRupeeCost(mubWiABlRupeeCost + 7.5)
                     setwbWiABlRupeeCost(wbWiABlRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWiABlSilverMaskCountState(mubWiABlSilverMaskCount + 16)
@@ -646,6 +805,11 @@ export default function WindAgitoWeapons() {
                     setmubWiABlInsanityCountState(mubWiABlInsanityCount + 7)
                     setmubWiABlOriCountState(mubWiABlOriCount + 1)
                     setmubWiABlRupeeCost(mubWiABlRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWiABlSilverMaskCountState(mubWiABlSilverMaskCount + 80)
@@ -654,6 +818,12 @@ export default function WindAgitoWeapons() {
                     setmubWiABlGaleCountState(mubWiABlGaleCount + 20)
                     setmubWiABlOriCountState(mubWiABlOriCount + 20)
                     setmubWiABlRupeeCost(mubWiABlRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 20)
+                    setallmubWiAOriCount(allmubWiAOriCount + 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
             }
         }
@@ -675,6 +845,11 @@ export default function WindAgitoWeapons() {
                     setwbWiABlOriCountState(wbWiABlOriCount - 1);
                     setmubWiABlRupeeCost(mubWiABlRupeeCost - 2.5);
                     setwbWiABlRupeeCost(wbWiABlRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWiABlSilverMaskCountState(mubWiABlSilverMaskCount - 40)
@@ -683,6 +858,12 @@ export default function WindAgitoWeapons() {
                     setmubWiABlGaleCountState(mubWiABlGaleCount - 10);
                     setmubWiABlOriCountState(mubWiABlOriCount - 10);
                     setmubWiABlRupeeCost(mubWiABlRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 10)
+                    setallmubWiAOriCount(allmubWiAOriCount - 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
             }
         }
@@ -700,6 +881,11 @@ export default function WindAgitoWeapons() {
                     setwbWiABlOriCountState(wbWiABlOriCount + 1);
                     setmubWiABlRupeeCost(mubWiABlRupeeCost + 2.5);
                     setwbWiABlRupeeCost(wbWiABlRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWiABlSilverMaskCountState(mubWiABlSilverMaskCount + 40)
@@ -708,6 +894,12 @@ export default function WindAgitoWeapons() {
                     setmubWiABlGaleCountState(mubWiABlGaleCount + 10);
                     setmubWiABlOriCountState(mubWiABlOriCount + 10);
                     setmubWiABlRupeeCost(mubWiABlRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 10)
+                    setallmubWiAOriCount(allmubWiAOriCount + 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
             }
         }
@@ -725,6 +917,10 @@ export default function WindAgitoWeapons() {
             setwbWiADSandCountState(wbWiADSandCount - 1)
             setmubWiADRupeeCost(mubWiADRupeeCost - 2)
             setwbWiADRupeeCost(wbWiADRupeeCost - 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+            setallmubWiASandCount(allmubWiASandCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2)
         }
         else if (windDaggerCraftState == "grayscale(0%)") {
             setWindDaggerCraftState("grayscale(100%)")
@@ -737,6 +933,10 @@ export default function WindAgitoWeapons() {
             setwbWiADSandCountState(wbWiADSandCount + 1)
             setmubWiADRupeeCost(mubWiADRupeeCost + 2)
             setwbWiADRupeeCost(wbWiADRupeeCost + 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+            setallmubWiASandCount(allmubWiASandCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2)
         }
     }
 
@@ -754,6 +954,11 @@ export default function WindAgitoWeapons() {
             setwbWiADOriCountState(wbWiADOriCount - 30)
             setmubWiADRupeeCost(mubWiADRupeeCost - 10)
             setwbWiADRupeeCost(wbWiADRupeeCost - 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount - 14)
+            setallmubWiAOriCount(allmubWiAOriCount - 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 10)
         }
         else if (windDaggerWeaponBonusState == "grayscale(0%)") {
             setWindDaggerWeaponBonusState("grayscale(100%)");
@@ -768,6 +973,11 @@ export default function WindAgitoWeapons() {
             setwbWiADOriCountState(wbWiADOriCount + 30)
             setmubWiADRupeeCost(mubWiADRupeeCost + 10)
             setwbWiADRupeeCost(wbWiADRupeeCost + 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount + 14)
+            setallmubWiAOriCount(allmubWiAOriCount + 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 10)
         }
     }
 
@@ -779,6 +989,10 @@ export default function WindAgitoWeapons() {
             setmubWiADGoldMaskCountState(mubWiADGoldMaskCount - 10)
             setmubWiADOriCountState(mubWiADOriCount - 1)
             setmubWiADRupeeCost(mubWiADRupeeCost - 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+            setallmubWiAOriCount(allmubWiAOriCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
         }
         else if (windDaggerWyrmprintSlotState == "grayscale(0%)") {
             setWindDaggerWyrmprintSlotState("grayscale(100%)");
@@ -787,6 +1001,10 @@ export default function WindAgitoWeapons() {
             setmubWiADGoldMaskCountState(mubWiADGoldMaskCount + 10)
             setmubWiADOriCountState(mubWiADOriCount + 1)
             setmubWiADRupeeCost(mubWiADRupeeCost + 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+            setallmubWiAOriCount(allmubWiAOriCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
         }
     }
 
@@ -804,6 +1022,10 @@ export default function WindAgitoWeapons() {
                     setwbWiADSandCountState(wbWiADSandCount - 1)
                     setmubWiADRupeeCost(mubWiADRupeeCost - 2)
                     setwbWiADRupeeCost(wbWiADRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiASandCount(allmubWiASandCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWiADSilverMaskCountState(mubWiADSilverMaskCount - 16)
@@ -816,6 +1038,11 @@ export default function WindAgitoWeapons() {
                     setwbWiADOriCountState(wbWiADOriCount - 1)
                     setmubWiADRupeeCost(mubWiADRupeeCost - 7.5)
                     setwbWiADRupeeCost(wbWiADRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWiADSilverMaskCountState(mubWiADSilverMaskCount - 16)
@@ -823,6 +1050,11 @@ export default function WindAgitoWeapons() {
                     setmubWiADInsanityCountState(mubWiADInsanityCount - 7)
                     setmubWiADOriCountState(mubWiADOriCount - 1)
                     setmubWiADRupeeCost(mubWiADRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWiADSilverMaskCountState(mubWiADSilverMaskCount - 80)
@@ -831,6 +1063,12 @@ export default function WindAgitoWeapons() {
                     setmubWiADGaleCountState(mubWiADGaleCount - 20)
                     setmubWiADOriCountState(mubWiADOriCount - 20)
                     setmubWiADRupeeCost(mubWiADRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 20)
+                    setallmubWiAOriCount(allmubWiAOriCount - 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
             }
         }
@@ -846,6 +1084,10 @@ export default function WindAgitoWeapons() {
                     setwbWiADSandCountState(wbWiADSandCount + 1)
                     setmubWiADRupeeCost(mubWiADRupeeCost + 2)
                     setwbWiADRupeeCost(wbWiADRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiASandCount(allmubWiASandCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWiADSilverMaskCountState(mubWiADSilverMaskCount + 16)
@@ -858,6 +1100,11 @@ export default function WindAgitoWeapons() {
                     setwbWiADOriCountState(wbWiADOriCount + 1)
                     setmubWiADRupeeCost(mubWiADRupeeCost + 7.5)
                     setwbWiADRupeeCost(wbWiADRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWiADSilverMaskCountState(mubWiADSilverMaskCount + 16)
@@ -865,6 +1112,11 @@ export default function WindAgitoWeapons() {
                     setmubWiADInsanityCountState(mubWiADInsanityCount + 7)
                     setmubWiADOriCountState(mubWiADOriCount + 1)
                     setmubWiADRupeeCost(mubWiADRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWiADSilverMaskCountState(mubWiADSilverMaskCount + 80)
@@ -873,6 +1125,12 @@ export default function WindAgitoWeapons() {
                     setmubWiADGaleCountState(mubWiADGaleCount + 20)
                     setmubWiADOriCountState(mubWiADOriCount + 20)
                     setmubWiADRupeeCost(mubWiADRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 20)
+                    setallmubWiAOriCount(allmubWiAOriCount + 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
             }
         }
@@ -894,6 +1152,11 @@ export default function WindAgitoWeapons() {
                     setwbWiADOriCountState(wbWiADOriCount - 1);
                     setmubWiADRupeeCost(mubWiADRupeeCost - 2.5);
                     setwbWiADRupeeCost(wbWiADRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWiADSilverMaskCountState(mubWiADSilverMaskCount - 40)
@@ -902,6 +1165,12 @@ export default function WindAgitoWeapons() {
                     setmubWiADGaleCountState(mubWiADGaleCount - 10);
                     setmubWiADOriCountState(mubWiADOriCount - 10);
                     setmubWiADRupeeCost(mubWiADRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 10)
+                    setallmubWiAOriCount(allmubWiAOriCount - 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
             }
         }
@@ -919,6 +1188,11 @@ export default function WindAgitoWeapons() {
                     setwbWiADOriCountState(wbWiADOriCount + 1);
                     setmubWiADRupeeCost(mubWiADRupeeCost + 2.5);
                     setwbWiADRupeeCost(wbWiADRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWiADSilverMaskCountState(mubWiADSilverMaskCount + 40)
@@ -927,6 +1201,12 @@ export default function WindAgitoWeapons() {
                     setmubWiADGaleCountState(mubWiADGaleCount + 10);
                     setmubWiADOriCountState(mubWiADOriCount + 10);
                     setmubWiADRupeeCost(mubWiADRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 10)
+                    setallmubWiAOriCount(allmubWiAOriCount + 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
             }
         }
@@ -944,6 +1224,10 @@ export default function WindAgitoWeapons() {
             setwbWiAASandCountState(wbWiAASandCount - 1)
             setmubWiAARupeeCost(mubWiAARupeeCost - 2)
             setwbWiAARupeeCost(wbWiAARupeeCost - 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+            setallmubWiASandCount(allmubWiASandCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2)
         }
         else if (windAxeCraftState == "grayscale(0%)") {
             setWindAxeCraftState("grayscale(100%)")
@@ -956,6 +1240,10 @@ export default function WindAgitoWeapons() {
             setwbWiAASandCountState(wbWiAASandCount + 1)
             setmubWiAARupeeCost(mubWiAARupeeCost + 2)
             setwbWiAARupeeCost(wbWiAARupeeCost + 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+            setallmubWiASandCount(allmubWiASandCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2)
         }
     }
 
@@ -973,6 +1261,11 @@ export default function WindAgitoWeapons() {
             setwbWiAAOriCountState(wbWiAAOriCount - 30)
             setmubWiAARupeeCost(mubWiAARupeeCost - 10)
             setwbWiAARupeeCost(wbWiAARupeeCost - 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount - 14)
+            setallmubWiAOriCount(allmubWiAOriCount - 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 10)
         }
         else if (windAxeWeaponBonusState == "grayscale(0%)") {
             setWindAxeWeaponBonusState("grayscale(100%)");
@@ -987,6 +1280,11 @@ export default function WindAgitoWeapons() {
             setwbWiAAOriCountState(wbWiAAOriCount + 30)
             setmubWiAARupeeCost(mubWiAARupeeCost + 10)
             setwbWiAARupeeCost(wbWiAARupeeCost + 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount + 14)
+            setallmubWiAOriCount(allmubWiAOriCount + 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 10)
         }
     }
 
@@ -998,6 +1296,10 @@ export default function WindAgitoWeapons() {
             setmubWiAAGoldMaskCountState(mubWiAAGoldMaskCount - 10)
             setmubWiAAOriCountState(mubWiAAOriCount - 1)
             setmubWiAARupeeCost(mubWiAARupeeCost - 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+            setallmubWiAOriCount(allmubWiAOriCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
         }
         else if (windAxeWyrmprintSlotState == "grayscale(0%)") {
             setWindAxeWyrmprintSlotState("grayscale(100%)");
@@ -1006,6 +1308,10 @@ export default function WindAgitoWeapons() {
             setmubWiAAGoldMaskCountState(mubWiAAGoldMaskCount + 10)
             setmubWiAAOriCountState(mubWiAAOriCount + 1)
             setmubWiAARupeeCost(mubWiAARupeeCost + 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+            setallmubWiAOriCount(allmubWiAOriCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
         }
     }
 
@@ -1023,6 +1329,10 @@ export default function WindAgitoWeapons() {
                     setwbWiAASandCountState(wbWiAASandCount - 1)
                     setmubWiAARupeeCost(mubWiAARupeeCost - 2)
                     setwbWiAARupeeCost(wbWiAARupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiASandCount(allmubWiASandCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWiAASilverMaskCountState(mubWiAASilverMaskCount - 16)
@@ -1035,6 +1345,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAAOriCountState(wbWiAAOriCount - 1)
                     setmubWiAARupeeCost(mubWiAARupeeCost - 7.5)
                     setwbWiAARupeeCost(wbWiAARupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWiAASilverMaskCountState(mubWiAASilverMaskCount - 16)
@@ -1042,6 +1357,11 @@ export default function WindAgitoWeapons() {
                     setmubWiAAInsanityCountState(mubWiAAInsanityCount - 7)
                     setmubWiAAOriCountState(mubWiAAOriCount - 1)
                     setmubWiAARupeeCost(mubWiAARupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWiAASilverMaskCountState(mubWiAASilverMaskCount - 80)
@@ -1050,6 +1370,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAAGaleCountState(mubWiAAGaleCount - 20)
                     setmubWiAAOriCountState(mubWiAAOriCount - 20)
                     setmubWiAARupeeCost(mubWiAARupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 20)
+                    setallmubWiAOriCount(allmubWiAOriCount - 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
             }
         }
@@ -1065,6 +1391,10 @@ export default function WindAgitoWeapons() {
                     setwbWiAASandCountState(wbWiAASandCount + 1)
                     setmubWiAARupeeCost(mubWiAARupeeCost + 2)
                     setwbWiAARupeeCost(wbWiAARupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiASandCount(allmubWiASandCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWiAASilverMaskCountState(mubWiAASilverMaskCount + 16)
@@ -1077,6 +1407,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAAOriCountState(wbWiAAOriCount + 1)
                     setmubWiAARupeeCost(mubWiAARupeeCost + 7.5)
                     setwbWiAARupeeCost(wbWiAARupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWiAASilverMaskCountState(mubWiAASilverMaskCount + 16)
@@ -1084,6 +1419,11 @@ export default function WindAgitoWeapons() {
                     setmubWiAAInsanityCountState(mubWiAAInsanityCount + 7)
                     setmubWiAAOriCountState(mubWiAAOriCount + 1)
                     setmubWiAARupeeCost(mubWiAARupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWiAASilverMaskCountState(mubWiAASilverMaskCount + 80)
@@ -1092,6 +1432,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAAGaleCountState(mubWiAAGaleCount + 20)
                     setmubWiAAOriCountState(mubWiAAOriCount + 20)
                     setmubWiAARupeeCost(mubWiAARupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 20)
+                    setallmubWiAOriCount(allmubWiAOriCount + 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
             }
         }
@@ -1113,6 +1459,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAAOriCountState(wbWiAAOriCount - 1);
                     setmubWiAARupeeCost(mubWiAARupeeCost - 2.5);
                     setwbWiAARupeeCost(wbWiAARupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWiAASilverMaskCountState(mubWiAASilverMaskCount - 40)
@@ -1121,6 +1472,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAAGaleCountState(mubWiAAGaleCount - 10);
                     setmubWiAAOriCountState(mubWiAAOriCount - 10);
                     setmubWiAARupeeCost(mubWiAARupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 10)
+                    setallmubWiAOriCount(allmubWiAOriCount - 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
             }
         }
@@ -1138,6 +1495,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAAOriCountState(wbWiAAOriCount + 1);
                     setmubWiAARupeeCost(mubWiAARupeeCost + 2.5);
                     setwbWiAARupeeCost(wbWiAARupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWiAASilverMaskCountState(mubWiAASilverMaskCount + 40)
@@ -1146,6 +1508,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAAGaleCountState(mubWiAAGaleCount + 10);
                     setmubWiAAOriCountState(mubWiAAOriCount + 10);
                     setmubWiAARupeeCost(mubWiAARupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 10)
+                    setallmubWiAOriCount(allmubWiAOriCount + 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
             }
         }
@@ -1163,6 +1531,10 @@ export default function WindAgitoWeapons() {
             setwbWiALSandCountState(wbWiALSandCount - 1)
             setmubWiALRupeeCost(mubWiALRupeeCost - 2)
             setwbWiALRupeeCost(wbWiALRupeeCost - 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+            setallmubWiASandCount(allmubWiASandCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2)
         }
         else if (windLanceCraftState == "grayscale(0%)") {
             setWindLanceCraftState("grayscale(100%)")
@@ -1175,6 +1547,10 @@ export default function WindAgitoWeapons() {
             setwbWiALSandCountState(wbWiALSandCount + 1)
             setmubWiALRupeeCost(mubWiALRupeeCost + 2)
             setwbWiALRupeeCost(wbWiALRupeeCost + 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+            setallmubWiASandCount(allmubWiASandCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2)
         }
     }
 
@@ -1192,6 +1568,11 @@ export default function WindAgitoWeapons() {
             setwbWiALOriCountState(wbWiALOriCount - 30)
             setmubWiALRupeeCost(mubWiALRupeeCost - 10)
             setwbWiALRupeeCost(wbWiALRupeeCost - 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount - 14)
+            setallmubWiAOriCount(allmubWiAOriCount - 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 10)
         }
         else if (windLanceWeaponBonusState == "grayscale(0%)") {
             setWindLanceWeaponBonusState("grayscale(100%)");
@@ -1206,6 +1587,11 @@ export default function WindAgitoWeapons() {
             setwbWiALOriCountState(wbWiALOriCount + 30)
             setmubWiALRupeeCost(mubWiALRupeeCost + 10)
             setwbWiALRupeeCost(wbWiALRupeeCost + 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount + 14)
+            setallmubWiAOriCount(allmubWiAOriCount + 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 10)
         }
     }
 
@@ -1217,6 +1603,10 @@ export default function WindAgitoWeapons() {
             setmubWiALGoldMaskCountState(mubWiALGoldMaskCount - 10)
             setmubWiALOriCountState(mubWiALOriCount - 1)
             setmubWiALRupeeCost(mubWiALRupeeCost - 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+            setallmubWiAOriCount(allmubWiAOriCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
         }
         else if (windLanceWyrmprintSlotState == "grayscale(0%)") {
             setWindLanceWyrmprintSlotState("grayscale(100%)");
@@ -1225,6 +1615,10 @@ export default function WindAgitoWeapons() {
             setmubWiALGoldMaskCountState(mubWiALGoldMaskCount + 10)
             setmubWiALOriCountState(mubWiALOriCount + 1)
             setmubWiALRupeeCost(mubWiALRupeeCost + 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+            setallmubWiAOriCount(allmubWiAOriCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
         }
     }
 
@@ -1242,6 +1636,10 @@ export default function WindAgitoWeapons() {
                     setwbWiALSandCountState(wbWiALSandCount - 1)
                     setmubWiALRupeeCost(mubWiALRupeeCost - 2)
                     setwbWiALRupeeCost(wbWiALRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiASandCount(allmubWiASandCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWiALSilverMaskCountState(mubWiALSilverMaskCount - 16)
@@ -1254,6 +1652,11 @@ export default function WindAgitoWeapons() {
                     setwbWiALOriCountState(wbWiALOriCount - 1)
                     setmubWiALRupeeCost(mubWiALRupeeCost - 7.5)
                     setwbWiALRupeeCost(wbWiALRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWiALSilverMaskCountState(mubWiALSilverMaskCount - 16)
@@ -1261,6 +1664,11 @@ export default function WindAgitoWeapons() {
                     setmubWiALInsanityCountState(mubWiALInsanityCount - 7)
                     setmubWiALOriCountState(mubWiALOriCount - 1)
                     setmubWiALRupeeCost(mubWiALRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWiALSilverMaskCountState(mubWiALSilverMaskCount - 80)
@@ -1269,6 +1677,12 @@ export default function WindAgitoWeapons() {
                     setmubWiALGaleCountState(mubWiALGaleCount - 20)
                     setmubWiALOriCountState(mubWiALOriCount - 20)
                     setmubWiALRupeeCost(mubWiALRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 20)
+                    setallmubWiAOriCount(allmubWiAOriCount - 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
             }
         }
@@ -1284,6 +1698,10 @@ export default function WindAgitoWeapons() {
                     setwbWiALSandCountState(wbWiALSandCount + 1)
                     setmubWiALRupeeCost(mubWiALRupeeCost + 2)
                     setwbWiALRupeeCost(wbWiALRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiASandCount(allmubWiASandCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWiALSilverMaskCountState(mubWiALSilverMaskCount + 16)
@@ -1296,6 +1714,11 @@ export default function WindAgitoWeapons() {
                     setwbWiALOriCountState(wbWiALOriCount + 1)
                     setmubWiALRupeeCost(mubWiALRupeeCost + 7.5)
                     setwbWiALRupeeCost(wbWiALRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWiALSilverMaskCountState(mubWiALSilverMaskCount + 16)
@@ -1303,6 +1726,11 @@ export default function WindAgitoWeapons() {
                     setmubWiALInsanityCountState(mubWiALInsanityCount + 7)
                     setmubWiALOriCountState(mubWiALOriCount + 1)
                     setmubWiALRupeeCost(mubWiALRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWiALSilverMaskCountState(mubWiALSilverMaskCount + 80)
@@ -1311,6 +1739,12 @@ export default function WindAgitoWeapons() {
                     setmubWiALGaleCountState(mubWiALGaleCount + 20)
                     setmubWiALOriCountState(mubWiALOriCount + 20)
                     setmubWiALRupeeCost(mubWiALRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 20)
+                    setallmubWiAOriCount(allmubWiAOriCount + 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
             }
         }
@@ -1332,6 +1766,11 @@ export default function WindAgitoWeapons() {
                     setwbWiALOriCountState(wbWiALOriCount - 1);
                     setmubWiALRupeeCost(mubWiALRupeeCost - 2.5);
                     setwbWiALRupeeCost(wbWiALRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWiALSilverMaskCountState(mubWiALSilverMaskCount - 40)
@@ -1340,6 +1779,12 @@ export default function WindAgitoWeapons() {
                     setmubWiALGaleCountState(mubWiALGaleCount - 10);
                     setmubWiALOriCountState(mubWiALOriCount - 10);
                     setmubWiALRupeeCost(mubWiALRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 10)
+                    setallmubWiAOriCount(allmubWiAOriCount - 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
             }
         }
@@ -1357,6 +1802,11 @@ export default function WindAgitoWeapons() {
                     setwbWiALOriCountState(wbWiALOriCount + 1);
                     setmubWiALRupeeCost(mubWiALRupeeCost + 2.5);
                     setwbWiALRupeeCost(wbWiALRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWiALSilverMaskCountState(mubWiALSilverMaskCount + 40)
@@ -1365,6 +1815,12 @@ export default function WindAgitoWeapons() {
                     setmubWiALGaleCountState(mubWiALGaleCount + 10);
                     setmubWiALOriCountState(mubWiALOriCount + 10);
                     setmubWiALRupeeCost(mubWiALRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 10)
+                    setallmubWiAOriCount(allmubWiAOriCount + 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
             }
         }
@@ -1382,6 +1838,10 @@ export default function WindAgitoWeapons() {
             setwbWiAWSandCountState(wbWiAWSandCount - 1)
             setmubWiAWRupeeCost(mubWiAWRupeeCost - 2)
             setwbWiAWRupeeCost(wbWiAWRupeeCost - 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+            setallmubWiASandCount(allmubWiASandCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2)
         }
         else if (windWandCraftState == "grayscale(0%)") {
             setWindWandCraftState("grayscale(100%)")
@@ -1394,6 +1854,10 @@ export default function WindAgitoWeapons() {
             setwbWiAWSandCountState(wbWiAWSandCount + 1)
             setmubWiAWRupeeCost(mubWiAWRupeeCost + 2)
             setwbWiAWRupeeCost(wbWiAWRupeeCost + 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+            setallmubWiASandCount(allmubWiASandCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2)
         }
     }
 
@@ -1411,6 +1875,11 @@ export default function WindAgitoWeapons() {
             setwbWiAWOriCountState(wbWiAWOriCount - 30)
             setmubWiAWRupeeCost(mubWiAWRupeeCost - 10)
             setwbWiAWRupeeCost(wbWiAWRupeeCost - 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount - 14)
+            setallmubWiAOriCount(allmubWiAOriCount - 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 10)
         }
         else if (windWandWeaponBonusState == "grayscale(0%)") {
             setWindWandWeaponBonusState("grayscale(100%)");
@@ -1425,6 +1894,11 @@ export default function WindAgitoWeapons() {
             setwbWiAWOriCountState(wbWiAWOriCount + 30)
             setmubWiAWRupeeCost(mubWiAWRupeeCost + 10)
             setwbWiAWRupeeCost(wbWiAWRupeeCost + 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount + 14)
+            setallmubWiAOriCount(allmubWiAOriCount + 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 10)
         }
     }
 
@@ -1436,6 +1910,10 @@ export default function WindAgitoWeapons() {
             setmubWiAWGoldMaskCountState(mubWiAWGoldMaskCount - 10)
             setmubWiAWOriCountState(mubWiAWOriCount - 1)
             setmubWiAWRupeeCost(mubWiAWRupeeCost - 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+            setallmubWiAOriCount(allmubWiAOriCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
         }
         else if (windWandWyrmprintSlotState == "grayscale(0%)") {
             setWindWandWyrmprintSlotState("grayscale(100%)");
@@ -1444,6 +1922,10 @@ export default function WindAgitoWeapons() {
             setmubWiAWGoldMaskCountState(mubWiAWGoldMaskCount + 10)
             setmubWiAWOriCountState(mubWiAWOriCount + 1)
             setmubWiAWRupeeCost(mubWiAWRupeeCost + 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+            setallmubWiAOriCount(allmubWiAOriCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
         }
     }
 
@@ -1461,6 +1943,10 @@ export default function WindAgitoWeapons() {
                     setwbWiAWSandCountState(wbWiAWSandCount - 1)
                     setmubWiAWRupeeCost(mubWiAWRupeeCost - 2)
                     setwbWiAWRupeeCost(wbWiAWRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiASandCount(allmubWiASandCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWiAWSilverMaskCountState(mubWiAWSilverMaskCount - 16)
@@ -1473,6 +1959,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAWOriCountState(wbWiAWOriCount - 1)
                     setmubWiAWRupeeCost(mubWiAWRupeeCost - 7.5)
                     setwbWiAWRupeeCost(wbWiAWRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWiAWSilverMaskCountState(mubWiAWSilverMaskCount - 16)
@@ -1480,6 +1971,11 @@ export default function WindAgitoWeapons() {
                     setmubWiAWInsanityCountState(mubWiAWInsanityCount - 7)
                     setmubWiAWOriCountState(mubWiAWOriCount - 1)
                     setmubWiAWRupeeCost(mubWiAWRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWiAWSilverMaskCountState(mubWiAWSilverMaskCount - 80)
@@ -1488,6 +1984,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAWGaleCountState(mubWiAWGaleCount - 20)
                     setmubWiAWOriCountState(mubWiAWOriCount - 20)
                     setmubWiAWRupeeCost(mubWiAWRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 20)
+                    setallmubWiAOriCount(allmubWiAOriCount - 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
             }
         }
@@ -1503,6 +2005,10 @@ export default function WindAgitoWeapons() {
                     setwbWiAWSandCountState(wbWiAWSandCount + 1)
                     setmubWiAWRupeeCost(mubWiAWRupeeCost + 2)
                     setwbWiAWRupeeCost(wbWiAWRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiASandCount(allmubWiASandCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWiAWSilverMaskCountState(mubWiAWSilverMaskCount + 16)
@@ -1515,6 +2021,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAWOriCountState(wbWiAWOriCount + 1)
                     setmubWiAWRupeeCost(mubWiAWRupeeCost + 7.5)
                     setwbWiAWRupeeCost(wbWiAWRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWiAWSilverMaskCountState(mubWiAWSilverMaskCount + 16)
@@ -1522,6 +2033,11 @@ export default function WindAgitoWeapons() {
                     setmubWiAWInsanityCountState(mubWiAWInsanityCount + 7)
                     setmubWiAWOriCountState(mubWiAWOriCount + 1)
                     setmubWiAWRupeeCost(mubWiAWRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWiAWSilverMaskCountState(mubWiAWSilverMaskCount + 80)
@@ -1530,6 +2046,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAWGaleCountState(mubWiAWGaleCount + 20)
                     setmubWiAWOriCountState(mubWiAWOriCount + 20)
                     setmubWiAWRupeeCost(mubWiAWRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 20)
+                    setallmubWiAOriCount(allmubWiAOriCount + 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
             }
         }
@@ -1551,6 +2073,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAWOriCountState(wbWiAWOriCount - 1);
                     setmubWiAWRupeeCost(mubWiAWRupeeCost - 2.5);
                     setwbWiAWRupeeCost(wbWiAWRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWiAWSilverMaskCountState(mubWiAWSilverMaskCount - 40)
@@ -1559,6 +2086,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAWGaleCountState(mubWiAWGaleCount - 10);
                     setmubWiAWOriCountState(mubWiAWOriCount - 10);
                     setmubWiAWRupeeCost(mubWiAWRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 10)
+                    setallmubWiAOriCount(allmubWiAOriCount - 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
             }
         }
@@ -1576,6 +2109,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAWOriCountState(wbWiAWOriCount + 1);
                     setmubWiAWRupeeCost(mubWiAWRupeeCost + 2.5);
                     setwbWiAWRupeeCost(wbWiAWRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWiAWSilverMaskCountState(mubWiAWSilverMaskCount + 40)
@@ -1584,6 +2122,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAWGaleCountState(mubWiAWGaleCount + 10);
                     setmubWiAWOriCountState(mubWiAWOriCount + 10);
                     setmubWiAWRupeeCost(mubWiAWRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 10)
+                    setallmubWiAOriCount(allmubWiAOriCount + 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
             }
         }
@@ -1601,6 +2145,10 @@ export default function WindAgitoWeapons() {
             setwbWiABoSandCountState(wbWiABoSandCount - 1)
             setmubWiABoRupeeCost(mubWiABoRupeeCost - 2)
             setwbWiABoRupeeCost(wbWiABoRupeeCost - 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+            setallmubWiASandCount(allmubWiASandCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2)
         }
         else if (windBowCraftState == "grayscale(0%)") {
             setWindBowCraftState("grayscale(100%)")
@@ -1613,6 +2161,10 @@ export default function WindAgitoWeapons() {
             setwbWiABoSandCountState(wbWiABoSandCount + 1)
             setmubWiABoRupeeCost(mubWiABoRupeeCost + 2)
             setwbWiABoRupeeCost(wbWiABoRupeeCost + 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+            setallmubWiASandCount(allmubWiASandCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2)
         }
     }
 
@@ -1630,6 +2182,11 @@ export default function WindAgitoWeapons() {
             setwbWiABoOriCountState(wbWiABoOriCount - 30)
             setmubWiABoRupeeCost(mubWiABoRupeeCost - 10)
             setwbWiABoRupeeCost(wbWiABoRupeeCost - 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount - 14)
+            setallmubWiAOriCount(allmubWiAOriCount - 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 10)
         }
         else if (windBowWeaponBonusState == "grayscale(0%)") {
             setWindBowWeaponBonusState("grayscale(100%)");
@@ -1644,6 +2201,11 @@ export default function WindAgitoWeapons() {
             setwbWiABoOriCountState(wbWiABoOriCount + 30)
             setmubWiABoRupeeCost(mubWiABoRupeeCost + 10)
             setwbWiABoRupeeCost(wbWiABoRupeeCost + 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount + 14)
+            setallmubWiAOriCount(allmubWiAOriCount + 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 10)
         }
     }
 
@@ -1655,6 +2217,10 @@ export default function WindAgitoWeapons() {
             setmubWiABoGoldMaskCountState(mubWiABoGoldMaskCount - 10)
             setmubWiABoOriCountState(mubWiABoOriCount - 1)
             setmubWiABoRupeeCost(mubWiABoRupeeCost - 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+            setallmubWiAOriCount(allmubWiAOriCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
         }
         else if (windBowWyrmprintSlotState == "grayscale(0%)") {
             setWindBowWyrmprintSlotState("grayscale(100%)");
@@ -1663,6 +2229,10 @@ export default function WindAgitoWeapons() {
             setmubWiABoGoldMaskCountState(mubWiABoGoldMaskCount + 10)
             setmubWiABoOriCountState(mubWiABoOriCount + 1)
             setmubWiABoRupeeCost(mubWiABoRupeeCost + 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+            setallmubWiAOriCount(allmubWiAOriCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
         }
     }
 
@@ -1680,6 +2250,10 @@ export default function WindAgitoWeapons() {
                     setwbWiABoSandCountState(wbWiABoSandCount - 1)
                     setmubWiABoRupeeCost(mubWiABoRupeeCost - 2)
                     setwbWiABoRupeeCost(wbWiABoRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiASandCount(allmubWiASandCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWiABoSilverMaskCountState(mubWiABoSilverMaskCount - 16)
@@ -1692,6 +2266,11 @@ export default function WindAgitoWeapons() {
                     setwbWiABoOriCountState(wbWiABoOriCount - 1)
                     setmubWiABoRupeeCost(mubWiABoRupeeCost - 7.5)
                     setwbWiABoRupeeCost(wbWiABoRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWiABoSilverMaskCountState(mubWiABoSilverMaskCount - 16)
@@ -1699,6 +2278,11 @@ export default function WindAgitoWeapons() {
                     setmubWiABoInsanityCountState(mubWiABoInsanityCount - 7)
                     setmubWiABoOriCountState(mubWiABoOriCount - 1)
                     setmubWiABoRupeeCost(mubWiABoRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWiABoSilverMaskCountState(mubWiABoSilverMaskCount - 80)
@@ -1707,6 +2291,12 @@ export default function WindAgitoWeapons() {
                     setmubWiABoGaleCountState(mubWiABoGaleCount - 20)
                     setmubWiABoOriCountState(mubWiABoOriCount - 20)
                     setmubWiABoRupeeCost(mubWiABoRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 20)
+                    setallmubWiAOriCount(allmubWiAOriCount - 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
             }
         }
@@ -1722,6 +2312,10 @@ export default function WindAgitoWeapons() {
                     setwbWiABoSandCountState(wbWiABoSandCount + 1)
                     setmubWiABoRupeeCost(mubWiABoRupeeCost + 2)
                     setwbWiABoRupeeCost(wbWiABoRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiASandCount(allmubWiASandCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWiABoSilverMaskCountState(mubWiABoSilverMaskCount + 16)
@@ -1734,6 +2328,11 @@ export default function WindAgitoWeapons() {
                     setwbWiABoOriCountState(wbWiABoOriCount + 1)
                     setmubWiABoRupeeCost(mubWiABoRupeeCost + 7.5)
                     setwbWiABoRupeeCost(wbWiABoRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWiABoSilverMaskCountState(mubWiABoSilverMaskCount + 16)
@@ -1741,6 +2340,11 @@ export default function WindAgitoWeapons() {
                     setmubWiABoInsanityCountState(mubWiABoInsanityCount + 7)
                     setmubWiABoOriCountState(mubWiABoOriCount + 1)
                     setmubWiABoRupeeCost(mubWiABoRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWiABoSilverMaskCountState(mubWiABoSilverMaskCount + 80)
@@ -1749,6 +2353,12 @@ export default function WindAgitoWeapons() {
                     setmubWiABoGaleCountState(mubWiABoGaleCount + 20)
                     setmubWiABoOriCountState(mubWiABoOriCount + 20)
                     setmubWiABoRupeeCost(mubWiABoRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 20)
+                    setallmubWiAOriCount(allmubWiAOriCount + 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
             }
         }
@@ -1770,6 +2380,11 @@ export default function WindAgitoWeapons() {
                     setwbWiABoOriCountState(wbWiABoOriCount - 1);
                     setmubWiABoRupeeCost(mubWiABoRupeeCost - 2.5);
                     setwbWiABoRupeeCost(wbWiABoRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWiABoSilverMaskCountState(mubWiABoSilverMaskCount - 40)
@@ -1778,6 +2393,12 @@ export default function WindAgitoWeapons() {
                     setmubWiABoGaleCountState(mubWiABoGaleCount - 10);
                     setmubWiABoOriCountState(mubWiABoOriCount - 10);
                     setmubWiABoRupeeCost(mubWiABoRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 10)
+                    setallmubWiAOriCount(allmubWiAOriCount - 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
             }
         }
@@ -1795,6 +2416,11 @@ export default function WindAgitoWeapons() {
                     setwbWiABoOriCountState(wbWiABoOriCount + 1);
                     setmubWiABoRupeeCost(mubWiABoRupeeCost + 2.5);
                     setwbWiABoRupeeCost(wbWiABoRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWiABoSilverMaskCountState(mubWiABoSilverMaskCount + 40)
@@ -1803,6 +2429,12 @@ export default function WindAgitoWeapons() {
                     setmubWiABoGaleCountState(mubWiABoGaleCount + 10);
                     setmubWiABoOriCountState(mubWiABoOriCount + 10);
                     setmubWiABoRupeeCost(mubWiABoRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 10)
+                    setallmubWiAOriCount(allmubWiAOriCount + 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
             }
         }
@@ -1820,6 +2452,10 @@ export default function WindAgitoWeapons() {
             setwbWiAStSandCountState(wbWiAStSandCount - 1)
             setmubWiAStRupeeCost(mubWiAStRupeeCost - 2)
             setwbWiAStRupeeCost(wbWiAStRupeeCost - 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+            setallmubWiASandCount(allmubWiASandCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2)
         }
         else if (windStaffCraftState == "grayscale(0%)") {
             setWindStaffCraftState("grayscale(100%)")
@@ -1832,6 +2468,10 @@ export default function WindAgitoWeapons() {
             setwbWiAStSandCountState(wbWiAStSandCount + 1)
             setmubWiAStRupeeCost(mubWiAStRupeeCost + 2)
             setwbWiAStRupeeCost(wbWiAStRupeeCost + 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+            setallmubWiASandCount(allmubWiASandCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2)
         }
     }
 
@@ -1849,6 +2489,11 @@ export default function WindAgitoWeapons() {
             setwbWiAStOriCountState(wbWiAStOriCount - 30)
             setmubWiAStRupeeCost(mubWiAStRupeeCost - 10)
             setwbWiAStRupeeCost(wbWiAStRupeeCost - 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount - 14)
+            setallmubWiAOriCount(allmubWiAOriCount - 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 10)
         }
         else if (windStaffWeaponBonusState == "grayscale(0%)") {
             setWindStaffWeaponBonusState("grayscale(100%)");
@@ -1863,6 +2508,11 @@ export default function WindAgitoWeapons() {
             setwbWiAStOriCountState(wbWiAStOriCount + 30)
             setmubWiAStRupeeCost(mubWiAStRupeeCost + 10)
             setwbWiAStRupeeCost(wbWiAStRupeeCost + 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount + 14)
+            setallmubWiAOriCount(allmubWiAOriCount + 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 10)
         }
     }
 
@@ -1874,6 +2524,10 @@ export default function WindAgitoWeapons() {
             setmubWiAStGoldMaskCountState(mubWiAStGoldMaskCount - 10)
             setmubWiAStOriCountState(mubWiAStOriCount - 1)
             setmubWiAStRupeeCost(mubWiAStRupeeCost - 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+            setallmubWiAOriCount(allmubWiAOriCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
         }
         else if (windStaffWyrmprintSlotState == "grayscale(0%)") {
             setWindStaffWyrmprintSlotState("grayscale(100%)");
@@ -1882,6 +2536,10 @@ export default function WindAgitoWeapons() {
             setmubWiAStGoldMaskCountState(mubWiAStGoldMaskCount + 10)
             setmubWiAStOriCountState(mubWiAStOriCount + 1)
             setmubWiAStRupeeCost(mubWiAStRupeeCost + 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+            setallmubWiAOriCount(allmubWiAOriCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
         }
     }
 
@@ -1899,6 +2557,10 @@ export default function WindAgitoWeapons() {
                     setwbWiAStSandCountState(wbWiAStSandCount - 1)
                     setmubWiAStRupeeCost(mubWiAStRupeeCost - 2)
                     setwbWiAStRupeeCost(wbWiAStRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiASandCount(allmubWiASandCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWiAStSilverMaskCountState(mubWiAStSilverMaskCount - 16)
@@ -1911,6 +2573,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAStOriCountState(wbWiAStOriCount - 1)
                     setmubWiAStRupeeCost(mubWiAStRupeeCost - 7.5)
                     setwbWiAStRupeeCost(wbWiAStRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWiAStSilverMaskCountState(mubWiAStSilverMaskCount - 16)
@@ -1918,6 +2585,11 @@ export default function WindAgitoWeapons() {
                     setmubWiAStInsanityCountState(mubWiAStInsanityCount - 7)
                     setmubWiAStOriCountState(mubWiAStOriCount - 1)
                     setmubWiAStRupeeCost(mubWiAStRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWiAStSilverMaskCountState(mubWiAStSilverMaskCount - 80)
@@ -1926,6 +2598,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAStGaleCountState(mubWiAStGaleCount - 20)
                     setmubWiAStOriCountState(mubWiAStOriCount - 20)
                     setmubWiAStRupeeCost(mubWiAStRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 20)
+                    setallmubWiAOriCount(allmubWiAOriCount - 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
             }
         }
@@ -1941,6 +2619,10 @@ export default function WindAgitoWeapons() {
                     setwbWiAStSandCountState(wbWiAStSandCount + 1)
                     setmubWiAStRupeeCost(mubWiAStRupeeCost + 2)
                     setwbWiAStRupeeCost(wbWiAStRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiASandCount(allmubWiASandCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWiAStSilverMaskCountState(mubWiAStSilverMaskCount + 16)
@@ -1953,6 +2635,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAStOriCountState(wbWiAStOriCount + 1)
                     setmubWiAStRupeeCost(mubWiAStRupeeCost + 7.5)
                     setwbWiAStRupeeCost(wbWiAStRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWiAStSilverMaskCountState(mubWiAStSilverMaskCount + 16)
@@ -1960,6 +2647,11 @@ export default function WindAgitoWeapons() {
                     setmubWiAStInsanityCountState(mubWiAStInsanityCount + 7)
                     setmubWiAStOriCountState(mubWiAStOriCount + 1)
                     setmubWiAStRupeeCost(mubWiAStRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWiAStSilverMaskCountState(mubWiAStSilverMaskCount + 80)
@@ -1968,6 +2660,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAStGaleCountState(mubWiAStGaleCount + 20)
                     setmubWiAStOriCountState(mubWiAStOriCount + 20)
                     setmubWiAStRupeeCost(mubWiAStRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 20)
+                    setallmubWiAOriCount(allmubWiAOriCount + 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
             }
         }
@@ -1989,6 +2687,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAStOriCountState(wbWiAStOriCount - 1);
                     setmubWiAStRupeeCost(mubWiAStRupeeCost - 2.5);
                     setwbWiAStRupeeCost(wbWiAStRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWiAStSilverMaskCountState(mubWiAStSilverMaskCount - 40)
@@ -1997,6 +2700,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAStGaleCountState(mubWiAStGaleCount - 10);
                     setmubWiAStOriCountState(mubWiAStOriCount - 10);
                     setmubWiAStRupeeCost(mubWiAStRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 10)
+                    setallmubWiAOriCount(allmubWiAOriCount - 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
             }
         }
@@ -2014,6 +2723,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAStOriCountState(wbWiAStOriCount + 1);
                     setmubWiAStRupeeCost(mubWiAStRupeeCost + 2.5);
                     setwbWiAStRupeeCost(wbWiAStRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWiAStSilverMaskCountState(mubWiAStSilverMaskCount + 40)
@@ -2022,6 +2736,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAStGaleCountState(mubWiAStGaleCount + 10);
                     setmubWiAStOriCountState(mubWiAStOriCount + 10);
                     setmubWiAStRupeeCost(mubWiAStRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 10)
+                    setallmubWiAOriCount(allmubWiAOriCount + 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
             }
         }
@@ -2039,6 +2759,10 @@ export default function WindAgitoWeapons() {
             setwbWiAMSandCountState(wbWiAMSandCount - 1)
             setmubWiAMRupeeCost(mubWiAMRupeeCost - 2)
             setwbWiAMRupeeCost(wbWiAMRupeeCost - 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+            setallmubWiASandCount(allmubWiASandCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2)
         }
         else if (windManacasterCraftState == "grayscale(0%)") {
             setWindManacasterCraftState("grayscale(100%)")
@@ -2051,6 +2775,10 @@ export default function WindAgitoWeapons() {
             setwbWiAMSandCountState(wbWiAMSandCount + 1)
             setmubWiAMRupeeCost(mubWiAMRupeeCost + 2)
             setwbWiAMRupeeCost(wbWiAMRupeeCost + 2)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+            setallmubWiASandCount(allmubWiASandCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2)
         }
     }
 
@@ -2068,6 +2796,11 @@ export default function WindAgitoWeapons() {
             setwbWiAMOriCountState(wbWiAMOriCount - 30)
             setmubWiAMRupeeCost(mubWiAMRupeeCost - 10)
             setwbWiAMRupeeCost(wbWiAMRupeeCost - 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount - 14)
+            setallmubWiAOriCount(allmubWiAOriCount - 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 10)
         }
         else if (windManacasterWeaponBonusState == "grayscale(0%)") {
             setWindManacasterWeaponBonusState("grayscale(100%)");
@@ -2082,6 +2815,11 @@ export default function WindAgitoWeapons() {
             setwbWiAMOriCountState(wbWiAMOriCount + 30)
             setmubWiAMRupeeCost(mubWiAMRupeeCost + 10)
             setwbWiAMRupeeCost(wbWiAMRupeeCost + 10)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 100)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 100)
+            setallmubWiAInsanityCount(allmubWiAInsanityCount + 14)
+            setallmubWiAOriCount(allmubWiAOriCount + 30)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 10)
         }
     }
 
@@ -2093,6 +2831,10 @@ export default function WindAgitoWeapons() {
             setmubWiAMGoldMaskCountState(mubWiAMGoldMaskCount - 10)
             setmubWiAMOriCountState(mubWiAMOriCount - 1)
             setmubWiAMRupeeCost(mubWiAMRupeeCost - 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+            setallmubWiAOriCount(allmubWiAOriCount - 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
         }
         else if (windManacasterWyrmprintSlotState == "grayscale(0%)") {
             setWindManacasterWyrmprintSlotState("grayscale(100%)");
@@ -2101,6 +2843,10 @@ export default function WindAgitoWeapons() {
             setmubWiAMGoldMaskCountState(mubWiAMGoldMaskCount + 10)
             setmubWiAMOriCountState(mubWiAMOriCount + 1)
             setmubWiAMRupeeCost(mubWiAMRupeeCost + 2.5)
+            setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+            setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+            setallmubWiAOriCount(allmubWiAOriCount + 1)
+            setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
         }
     }
 
@@ -2118,6 +2864,10 @@ export default function WindAgitoWeapons() {
                     setwbWiAMSandCountState(wbWiAMSandCount - 1)
                     setmubWiAMRupeeCost(mubWiAMRupeeCost - 2)
                     setwbWiAMRupeeCost(wbWiAMRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiASandCount(allmubWiASandCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWiAMSilverMaskCountState(mubWiAMSilverMaskCount - 16)
@@ -2130,13 +2880,23 @@ export default function WindAgitoWeapons() {
                     setwbWiAMOriCountState(wbWiAMOriCount - 1)
                     setmubWiAMRupeeCost(mubWiAMRupeeCost - 7.5)
                     setwbWiAMRupeeCost(wbWiAMRupeeCost - 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWiAMSilverMaskCountState(mubWiAMSilverMaskCount - 16)
                     setmubWiAMGoldMaskCountState(mubWiAMGoldMaskCount - 10)
                     setmubWiAMInsanityCountState(mubWiAMInsanityCount - 7)
                     setmubWiAMOriCountState(mubWiAMOriCount - 1)
-                    setmubWiAMRupeeCost(mubWiAMRupeeCost - 7.5)
+                    setmubWiAMRupeeCost(mubWiAMRupeeCost - 7.5) 
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWiAMSilverMaskCountState(mubWiAMSilverMaskCount - 80)
@@ -2145,6 +2905,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAMGaleCountState(mubWiAMGaleCount - 20)
                     setmubWiAMOriCountState(mubWiAMOriCount - 20)
                     setmubWiAMRupeeCost(mubWiAMRupeeCost - 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 20)
+                    setallmubWiAOriCount(allmubWiAOriCount - 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2)
                 }
             }
         }
@@ -2160,6 +2926,10 @@ export default function WindAgitoWeapons() {
                     setwbWiAMSandCountState(wbWiAMSandCount + 1)
                     setmubWiAMRupeeCost(mubWiAMRupeeCost + 2)
                     setwbWiAMRupeeCost(wbWiAMRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiASandCount(allmubWiASandCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWiAMSilverMaskCountState(mubWiAMSilverMaskCount + 16)
@@ -2172,6 +2942,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAMOriCountState(wbWiAMOriCount + 1)
                     setmubWiAMRupeeCost(mubWiAMRupeeCost + 7.5)
                     setwbWiAMRupeeCost(wbWiAMRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWiAMSilverMaskCountState(mubWiAMSilverMaskCount + 16)
@@ -2179,6 +2954,11 @@ export default function WindAgitoWeapons() {
                     setmubWiAMInsanityCountState(mubWiAMInsanityCount + 7)
                     setmubWiAMOriCountState(mubWiAMOriCount + 1)
                     setmubWiAMRupeeCost(mubWiAMRupeeCost + 7.5)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWiAMSilverMaskCountState(mubWiAMSilverMaskCount + 80)
@@ -2187,6 +2967,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAMGaleCountState(mubWiAMGaleCount + 20)
                     setmubWiAMOriCountState(mubWiAMOriCount + 20)
                     setmubWiAMRupeeCost(mubWiAMRupeeCost + 2)
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 80)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 70)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 30)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 20)
+                    setallmubWiAOriCount(allmubWiAOriCount + 20)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2)
                 }
             }
         }
@@ -2208,6 +2994,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAMOriCountState(wbWiAMOriCount - 1);
                     setmubWiAMRupeeCost(mubWiAMRupeeCost - 2.5);
                     setwbWiAMRupeeCost(wbWiAMRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 7)
+                    setallmubWiAOriCount(allmubWiAOriCount - 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWiAMSilverMaskCountState(mubWiAMSilverMaskCount - 40)
@@ -2216,6 +3007,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAMGaleCountState(mubWiAMGaleCount - 10);
                     setmubWiAMOriCountState(mubWiAMOriCount - 10);
                     setmubWiAMRupeeCost(mubWiAMRupeeCost - 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount - 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount - 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount - 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount - 10)
+                    setallmubWiAOriCount(allmubWiAOriCount - 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost - 2.5)
                 }
             }
         }
@@ -2233,6 +3030,11 @@ export default function WindAgitoWeapons() {
                     setwbWiAMOriCountState(wbWiAMOriCount + 1);
                     setmubWiAMRupeeCost(mubWiAMRupeeCost + 2.5);
                     setwbWiAMRupeeCost(wbWiAMRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 16)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 10)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 7)
+                    setallmubWiAOriCount(allmubWiAOriCount + 1)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWiAMSilverMaskCountState(mubWiAMSilverMaskCount + 40)
@@ -2241,6 +3043,12 @@ export default function WindAgitoWeapons() {
                     setmubWiAMGaleCountState(mubWiAMGaleCount + 10);
                     setmubWiAMOriCountState(mubWiAMOriCount + 10);
                     setmubWiAMRupeeCost(mubWiAMRupeeCost + 2.5);
+                    setallmubWiASilverMaskCount(allmubWiASilverMaskCount + 40)
+                    setallmubWiAGoldMaskCount(allmubWiAGoldMaskCount + 30)
+                    setallmubWiAInsanityCount(allmubWiAInsanityCount + 10)
+                    setallmubWiAGaleCount(allmubWiAGaleCount + 10)
+                    setallmubWiAOriCount(allmubWiAOriCount + 10)
+                    setallmubWiARupeeCost(allmubWiARupeeCost + 2.5)
                 }
             }
         }
@@ -2856,6 +3664,48 @@ export default function WindAgitoWeapons() {
                 </Box>
                 {/* The box for the materials needed to 100% a weapon */}
                 {windWeaponSelection()}
+            </Flex>
+            <Flex>&nbsp;</Flex>
+            <Flex>
+                <Box width={[6 / 7, 1 / 2]} p={3} m={3} bg={"#152238"} sx={{ border: "3px solid blue" }}>
+                    <Flex>
+                        {/* <Box width={1 / 4}></Box> */}
+                        <Text fontSize={[1, 3]} ml="auto" mr="auto" color="gold">Materials Needed to MUB all Weapons</Text>
+                    </Flex>
+                    <Flex alignItems="center">
+                        <Card width={[75, 150]}>
+                            <Image src={WindAgitoSilverMask} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"green"} fontSize={[1, 2]}>{allmubWiASilverMaskCount}</Text>
+                        </Card>
+                        <Card width={[75, 150]}>
+                            <Image src={WindAgitoGoldMask} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"green"} fontSize={[1, 2]}>{allmubWiAGoldMaskCount}</Text>
+                        </Card>
+                        <Card width={[75, 150]}>
+                            <Image src={WindAgitoInsanity} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"green"} fontSize={[1, 2]}>{allmubWiAInsanityCount}</Text>
+                        </Card>
+                        <Card width={[75, 150]}>
+                            <Image src={FireAgitoGale} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"green"} fontSize={[1, 2]}>{allmubWiAGaleCount}</Text>
+                        </Card>
+                    </Flex>
+                    <Flex>&nbsp;</Flex>
+                    <Flex>
+                        <Card width={[75, 175]}>
+                            <Image src={TwinklingSand} sx={{ width: ["70%"], height: ["52%", "70%"] }} />
+                            <Text color={"green"} fontSize={[1, 2]}>{allmubWiASandCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={Orichalcum} sx={{ width: ["70%"], height: ["52%", "70%"] }} />
+                            <Text color={"green"} fontSize={[1, 2]}>{allmubWiAOriCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={Rupies} sx={{ width: ["70%"], height: ["52%", "70%"] }} />
+                            <Text color={"green"} fontSize={[1, 2]}>{allmubWiARupeeCost} million</Text>
+                        </Card>
+                    </Flex>
+                </Box>
             </Flex>
             <Flex>&nbsp;</Flex>
             <WeaponTypeNavTabs />

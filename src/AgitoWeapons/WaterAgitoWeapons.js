@@ -14,6 +14,14 @@ import WaterAgitoWand from "../Images/Water_Agito_Wand.png";
 import WaterAgitoStaff from "../Images/Water_Agito_Staff.png";
 import WaterAgitoManacaster from "../Images/Water_Agito_Manacaster.png";
 
+import WaterAgitoSilverMask from "../Images/Water_Agito_Silver_Mask.png";
+import WaterAgitoGoldMask from "../Images/Water_Agito_Gold_Mask.png";
+import WaterAgitoInsanity from "../Images/Water_Agito_Insanity.png";
+import FireAgitoGale from "../Images/Fire_Agito_Gale.png";
+import TwinklingSand from "../Images/Twinkling_Sand.png";
+import Orichalcum from "../Images/Orichalcum.png";
+import Rupies from "../Images/Rupees.png";
+
 import Refine from "../Images/Refine.PNG";
 import Unbind from "../Images/Unbind.PNG";
 import WyrmprintSlots from "../Images/Wyrmprint_Slots.PNG";
@@ -31,6 +39,14 @@ import WaterAgitoManacasterCost from "./WaterAgitoManacasterMats"
 
 export default function WaterAgitoWeapons() {
     const [waterWeaponChoice, setWaterWeaponChoiceState] = useLocalStorage("waterWeaponChoice", "sword")
+
+    const [allmubWaASilverMaskCount, setallmubWaASilverMaskCount] = useLocalStorage("allmubWaASilverMaskState", 4644)
+    const [allmubWaAGoldMaskCount, setallmubWaAGoldMaskCount] = useLocalStorage("allmubWaAGoldMaskState", 3690)
+    const [allmubWaAInsanityCount, setallmubWaAInsanityCount] = useLocalStorage("allmubWaAInsanityCount", 801)
+    const [allmubWaAGaleCount, setallmubWaAGaleCount] = useLocalStorage("allmubWaAGaleCount", 270)
+    const [allmubWaASandCount, setallmubWaASandCount] = useLocalStorage("allmubWaASandCount", 45)
+    const [allmubWaAOriCount, setallmubWaAOriCount] = useLocalStorage("allmubWaAOriCount", 594)
+    const [allmubWaARupeeCost, setallmubWaARupeeCost] = useLocalStorage("allmubWaARupeeCost", 535.5)
 
     const [waterSwordCraftState, setWaterSwordCraftState] = useLocalStorage("waterSwordCraftState", "grayscale(100%)")
     const [waterSwordWeaponBonusState, setWaterSwordWeaponBonusState] = useLocalStorage("waterSwordWeaponBonusState", "grayscale(100%)")
@@ -287,6 +303,10 @@ export default function WaterAgitoWeapons() {
             setwbWaASSandCountState(wbWaASSandCount - 1)
             setmubWaASRupeeCost(mubWaASRupeeCost - 2)
             setwbWaASRupeeCost(wbWaASRupeeCost - 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+            setallmubWaASandCount(allmubWaASandCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2)
         }
         else if (waterSwordCraftState == "grayscale(0%)") {
             setWaterSwordCraftState("grayscale(100%)")
@@ -299,6 +319,10 @@ export default function WaterAgitoWeapons() {
             setwbWaASSandCountState(wbWaASSandCount + 1)
             setmubWaASRupeeCost(mubWaASRupeeCost + 2)
             setwbWaASRupeeCost(wbWaASRupeeCost + 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+            setallmubWaASandCount(allmubWaASandCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2)
         }
     }
 
@@ -316,6 +340,11 @@ export default function WaterAgitoWeapons() {
             setwbWaASOriCountState(wbWaASOriCount - 30)
             setmubWaASRupeeCost(mubWaASRupeeCost - 10)
             setwbWaASRupeeCost(wbWaASRupeeCost - 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount - 14)
+            setallmubWaAOriCount(allmubWaAOriCount - 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 10)
         }
         else if (waterSwordWeaponBonusState == "grayscale(0%)") {
             setWaterSwordWeaponBonusState("grayscale(100%)");
@@ -330,6 +359,11 @@ export default function WaterAgitoWeapons() {
             setwbWaASOriCountState(wbWaASOriCount + 30)
             setmubWaASRupeeCost(mubWaASRupeeCost + 10)
             setwbWaASRupeeCost(wbWaASRupeeCost + 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount + 14)
+            setallmubWaAOriCount(allmubWaAOriCount + 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 10)
         }
     }
 
@@ -341,6 +375,10 @@ export default function WaterAgitoWeapons() {
             setmubWaASGoldMaskCountState(mubWaASGoldMaskCount - 10)
             setmubWaASOriCountState(mubWaASOriCount - 1)
             setmubWaASRupeeCost(mubWaASRupeeCost - 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+            setallmubWaAOriCount(allmubWaAOriCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
         }
         else if (waterSwordWyrmprintSlotState == "grayscale(0%)") {
             setWaterSwordWyrmprintSlotState("grayscale(100%)");
@@ -349,6 +387,10 @@ export default function WaterAgitoWeapons() {
             setmubWaASGoldMaskCountState(mubWaASGoldMaskCount + 10)
             setmubWaASOriCountState(mubWaASOriCount + 1)
             setmubWaASRupeeCost(mubWaASRupeeCost + 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+            setallmubWaAOriCount(allmubWaAOriCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
         }
     }
 
@@ -366,6 +408,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaASSandCountState(wbWaASSandCount - 1)
                     setmubWaASRupeeCost(mubWaASRupeeCost - 2)
                     setwbWaASRupeeCost(wbWaASRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaASandCount(allmubWaASandCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWaASSilverMaskCountState(mubWaASSilverMaskCount - 16)
@@ -378,6 +424,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaASOriCountState(wbWaASOriCount - 1)
                     setmubWaASRupeeCost(mubWaASRupeeCost - 7.5)
                     setwbWaASRupeeCost(wbWaASRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWaASSilverMaskCountState(mubWaASSilverMaskCount - 16)
@@ -385,6 +436,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaASInsanityCountState(mubWaASInsanityCount - 7)
                     setmubWaASOriCountState(mubWaASOriCount - 1)
                     setmubWaASRupeeCost(mubWaASRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWaASSilverMaskCountState(mubWaASSilverMaskCount - 80)
@@ -393,6 +449,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaASGaleCountState(mubWaASGaleCount - 20)
                     setmubWaASOriCountState(mubWaASOriCount - 20)
                     setmubWaASRupeeCost(mubWaASRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 20)
+                    setallmubWaAOriCount(allmubWaAOriCount - 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
             }
         }
@@ -408,6 +470,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaASSandCountState(wbWaASSandCount + 1)
                     setmubWaASRupeeCost(mubWaASRupeeCost + 2)
                     setwbWaASRupeeCost(wbWaASRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaASandCount(allmubWaASandCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWaASSilverMaskCountState(mubWaASSilverMaskCount + 16)
@@ -420,6 +486,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaASOriCountState(wbWaASOriCount + 1)
                     setmubWaASRupeeCost(mubWaASRupeeCost + 7.5)
                     setwbWaASRupeeCost(wbWaASRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWaASSilverMaskCountState(mubWaASSilverMaskCount + 16)
@@ -427,6 +498,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaASInsanityCountState(mubWaASInsanityCount + 7)
                     setmubWaASOriCountState(mubWaASOriCount + 1)
                     setmubWaASRupeeCost(mubWaASRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWaASSilverMaskCountState(mubWaASSilverMaskCount + 80)
@@ -435,6 +511,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaASGaleCountState(mubWaASGaleCount + 20)
                     setmubWaASOriCountState(mubWaASOriCount + 20)
                     setmubWaASRupeeCost(mubWaASRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 20)
+                    setallmubWaAOriCount(allmubWaAOriCount + 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
             }
         }
@@ -456,6 +538,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaASOriCountState(wbWaASOriCount - 1);
                     setmubWaASRupeeCost(mubWaASRupeeCost - 2.5);
                     setwbWaASRupeeCost(wbWaASRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWaASSilverMaskCountState(mubWaASSilverMaskCount - 40)
@@ -464,6 +551,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaASGaleCountState(mubWaASGaleCount - 10);
                     setmubWaASOriCountState(mubWaASOriCount - 10);
                     setmubWaASRupeeCost(mubWaASRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 10)
+                    setallmubWaAOriCount(allmubWaAOriCount - 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
             }
         }
@@ -481,6 +574,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaASOriCountState(wbWaASOriCount + 1);
                     setmubWaASRupeeCost(mubWaASRupeeCost + 2.5);
                     setwbWaASRupeeCost(wbWaASRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWaASSilverMaskCountState(mubWaASSilverMaskCount + 40)
@@ -489,6 +587,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaASGaleCountState(mubWaASGaleCount + 10);
                     setmubWaASOriCountState(mubWaASOriCount + 10);
                     setmubWaASRupeeCost(mubWaASRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 10)
+                    setallmubWaAOriCount(allmubWaAOriCount + 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
             }
         }
@@ -506,6 +610,10 @@ export default function WaterAgitoWeapons() {
             setwbWaABlSandCountState(wbWaABlSandCount - 1)
             setmubWaABlRupeeCost(mubWaABlRupeeCost - 2)
             setwbWaABlRupeeCost(wbWaABlRupeeCost - 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+            setallmubWaASandCount(allmubWaASandCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2)
         }
         else if (waterBladeCraftState == "grayscale(0%)") {
             setWaterBladeCraftState("grayscale(100%)")
@@ -518,6 +626,10 @@ export default function WaterAgitoWeapons() {
             setwbWaABlSandCountState(wbWaABlSandCount + 1)
             setmubWaABlRupeeCost(mubWaABlRupeeCost + 2)
             setwbWaABlRupeeCost(wbWaABlRupeeCost + 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+            setallmubWaASandCount(allmubWaASandCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2)
         }
     }
 
@@ -535,6 +647,11 @@ export default function WaterAgitoWeapons() {
             setwbWaABlOriCountState(wbWaABlOriCount - 30)
             setmubWaABlRupeeCost(mubWaABlRupeeCost - 10)
             setwbWaABlRupeeCost(wbWaABlRupeeCost - 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount - 14)
+            setallmubWaAOriCount(allmubWaAOriCount - 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 10)
         }
         else if (waterBladeWeaponBonusState == "grayscale(0%)") {
             setWaterBladeWeaponBonusState("grayscale(100%)");
@@ -549,6 +666,11 @@ export default function WaterAgitoWeapons() {
             setwbWaABlOriCountState(wbWaABlOriCount + 30)
             setmubWaABlRupeeCost(mubWaABlRupeeCost + 10)
             setwbWaABlRupeeCost(wbWaABlRupeeCost + 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount + 14)
+            setallmubWaAOriCount(allmubWaAOriCount + 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 10)
         }
     }
 
@@ -560,6 +682,10 @@ export default function WaterAgitoWeapons() {
             setmubWaABlGoldMaskCountState(mubWaABlGoldMaskCount - 10)
             setmubWaABlOriCountState(mubWaABlOriCount - 1)
             setmubWaABlRupeeCost(mubWaABlRupeeCost - 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+            setallmubWaAOriCount(allmubWaAOriCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
         }
         else if (waterBladeWyrmprintSlotState == "grayscale(0%)") {
             setWaterBladeWyrmprintSlotState("grayscale(100%)");
@@ -568,6 +694,10 @@ export default function WaterAgitoWeapons() {
             setmubWaABlGoldMaskCountState(mubWaABlGoldMaskCount + 10)
             setmubWaABlOriCountState(mubWaABlOriCount + 1)
             setmubWaABlRupeeCost(mubWaABlRupeeCost + 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+            setallmubWaAOriCount(allmubWaAOriCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
         }
     }
 
@@ -585,6 +715,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaABlSandCountState(wbWaABlSandCount - 1)
                     setmubWaABlRupeeCost(mubWaABlRupeeCost - 2)
                     setwbWaABlRupeeCost(wbWaABlRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaASandCount(allmubWaASandCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWaABlSilverMaskCountState(mubWaABlSilverMaskCount - 16)
@@ -597,6 +731,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaABlOriCountState(wbWaABlOriCount - 1)
                     setmubWaABlRupeeCost(mubWaABlRupeeCost - 7.5)
                     setwbWaABlRupeeCost(wbWaABlRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWaABlSilverMaskCountState(mubWaABlSilverMaskCount - 16)
@@ -604,6 +743,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaABlInsanityCountState(mubWaABlInsanityCount - 7)
                     setmubWaABlOriCountState(mubWaABlOriCount - 1)
                     setmubWaABlRupeeCost(mubWaABlRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWaABlSilverMaskCountState(mubWaABlSilverMaskCount - 80)
@@ -612,6 +756,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaABlGaleCountState(mubWaABlGaleCount - 20)
                     setmubWaABlOriCountState(mubWaABlOriCount - 20)
                     setmubWaABlRupeeCost(mubWaABlRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 20)
+                    setallmubWaAOriCount(allmubWaAOriCount - 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
             }
         }
@@ -627,6 +777,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaABlSandCountState(wbWaABlSandCount + 1)
                     setmubWaABlRupeeCost(mubWaABlRupeeCost + 2)
                     setwbWaABlRupeeCost(wbWaABlRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaASandCount(allmubWaASandCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWaABlSilverMaskCountState(mubWaABlSilverMaskCount + 16)
@@ -639,6 +793,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaABlOriCountState(wbWaABlOriCount + 1)
                     setmubWaABlRupeeCost(mubWaABlRupeeCost + 7.5)
                     setwbWaABlRupeeCost(wbWaABlRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWaABlSilverMaskCountState(mubWaABlSilverMaskCount + 16)
@@ -646,6 +805,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaABlInsanityCountState(mubWaABlInsanityCount + 7)
                     setmubWaABlOriCountState(mubWaABlOriCount + 1)
                     setmubWaABlRupeeCost(mubWaABlRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWaABlSilverMaskCountState(mubWaABlSilverMaskCount + 80)
@@ -654,6 +818,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaABlGaleCountState(mubWaABlGaleCount + 20)
                     setmubWaABlOriCountState(mubWaABlOriCount + 20)
                     setmubWaABlRupeeCost(mubWaABlRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 20)
+                    setallmubWaAOriCount(allmubWaAOriCount + 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
             }
         }
@@ -675,6 +845,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaABlOriCountState(wbWaABlOriCount - 1);
                     setmubWaABlRupeeCost(mubWaABlRupeeCost - 2.5);
                     setwbWaABlRupeeCost(wbWaABlRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWaABlSilverMaskCountState(mubWaABlSilverMaskCount - 40)
@@ -683,6 +858,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaABlGaleCountState(mubWaABlGaleCount - 10);
                     setmubWaABlOriCountState(mubWaABlOriCount - 10);
                     setmubWaABlRupeeCost(mubWaABlRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 10)
+                    setallmubWaAOriCount(allmubWaAOriCount - 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
             }
         }
@@ -700,6 +881,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaABlOriCountState(wbWaABlOriCount + 1);
                     setmubWaABlRupeeCost(mubWaABlRupeeCost + 2.5);
                     setwbWaABlRupeeCost(wbWaABlRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWaABlSilverMaskCountState(mubWaABlSilverMaskCount + 40)
@@ -708,6 +894,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaABlGaleCountState(mubWaABlGaleCount + 10);
                     setmubWaABlOriCountState(mubWaABlOriCount + 10);
                     setmubWaABlRupeeCost(mubWaABlRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 10)
+                    setallmubWaAOriCount(allmubWaAOriCount + 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
             }
         }
@@ -725,6 +917,10 @@ export default function WaterAgitoWeapons() {
             setwbWaADSandCountState(wbWaADSandCount - 1)
             setmubWaADRupeeCost(mubWaADRupeeCost - 2)
             setwbWaADRupeeCost(wbWaADRupeeCost - 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+            setallmubWaASandCount(allmubWaASandCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2)
         }
         else if (waterDaggerCraftState == "grayscale(0%)") {
             setWaterDaggerCraftState("grayscale(100%)")
@@ -737,6 +933,10 @@ export default function WaterAgitoWeapons() {
             setwbWaADSandCountState(wbWaADSandCount + 1)
             setmubWaADRupeeCost(mubWaADRupeeCost + 2)
             setwbWaADRupeeCost(wbWaADRupeeCost + 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+            setallmubWaASandCount(allmubWaASandCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2)
         }
     }
 
@@ -754,6 +954,11 @@ export default function WaterAgitoWeapons() {
             setwbWaADOriCountState(wbWaADOriCount - 30)
             setmubWaADRupeeCost(mubWaADRupeeCost - 10)
             setwbWaADRupeeCost(wbWaADRupeeCost - 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount - 14)
+            setallmubWaAOriCount(allmubWaAOriCount - 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 10)
         }
         else if (waterDaggerWeaponBonusState == "grayscale(0%)") {
             setWaterDaggerWeaponBonusState("grayscale(100%)");
@@ -768,6 +973,11 @@ export default function WaterAgitoWeapons() {
             setwbWaADOriCountState(wbWaADOriCount + 30)
             setmubWaADRupeeCost(mubWaADRupeeCost + 10)
             setwbWaADRupeeCost(wbWaADRupeeCost + 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount + 14)
+            setallmubWaAOriCount(allmubWaAOriCount + 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 10)
         }
     }
 
@@ -779,6 +989,10 @@ export default function WaterAgitoWeapons() {
             setmubWaADGoldMaskCountState(mubWaADGoldMaskCount - 10)
             setmubWaADOriCountState(mubWaADOriCount - 1)
             setmubWaADRupeeCost(mubWaADRupeeCost - 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+            setallmubWaAOriCount(allmubWaAOriCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
         }
         else if (waterDaggerWyrmprintSlotState == "grayscale(0%)") {
             setWaterDaggerWyrmprintSlotState("grayscale(100%)");
@@ -787,6 +1001,10 @@ export default function WaterAgitoWeapons() {
             setmubWaADGoldMaskCountState(mubWaADGoldMaskCount + 10)
             setmubWaADOriCountState(mubWaADOriCount + 1)
             setmubWaADRupeeCost(mubWaADRupeeCost + 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+            setallmubWaAOriCount(allmubWaAOriCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
         }
     }
 
@@ -804,6 +1022,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaADSandCountState(wbWaADSandCount - 1)
                     setmubWaADRupeeCost(mubWaADRupeeCost - 2)
                     setwbWaADRupeeCost(wbWaADRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaASandCount(allmubWaASandCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWaADSilverMaskCountState(mubWaADSilverMaskCount - 16)
@@ -816,6 +1038,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaADOriCountState(wbWaADOriCount - 1)
                     setmubWaADRupeeCost(mubWaADRupeeCost - 7.5)
                     setwbWaADRupeeCost(wbWaADRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWaADSilverMaskCountState(mubWaADSilverMaskCount - 16)
@@ -823,6 +1050,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaADInsanityCountState(mubWaADInsanityCount - 7)
                     setmubWaADOriCountState(mubWaADOriCount - 1)
                     setmubWaADRupeeCost(mubWaADRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWaADSilverMaskCountState(mubWaADSilverMaskCount - 80)
@@ -831,6 +1063,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaADGaleCountState(mubWaADGaleCount - 20)
                     setmubWaADOriCountState(mubWaADOriCount - 20)
                     setmubWaADRupeeCost(mubWaADRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 20)
+                    setallmubWaAOriCount(allmubWaAOriCount - 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
             }
         }
@@ -846,6 +1084,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaADSandCountState(wbWaADSandCount + 1)
                     setmubWaADRupeeCost(mubWaADRupeeCost + 2)
                     setwbWaADRupeeCost(wbWaADRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaASandCount(allmubWaASandCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWaADSilverMaskCountState(mubWaADSilverMaskCount + 16)
@@ -858,6 +1100,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaADOriCountState(wbWaADOriCount + 1)
                     setmubWaADRupeeCost(mubWaADRupeeCost + 7.5)
                     setwbWaADRupeeCost(wbWaADRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWaADSilverMaskCountState(mubWaADSilverMaskCount + 16)
@@ -865,6 +1112,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaADInsanityCountState(mubWaADInsanityCount + 7)
                     setmubWaADOriCountState(mubWaADOriCount + 1)
                     setmubWaADRupeeCost(mubWaADRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWaADSilverMaskCountState(mubWaADSilverMaskCount + 80)
@@ -873,6 +1125,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaADGaleCountState(mubWaADGaleCount + 20)
                     setmubWaADOriCountState(mubWaADOriCount + 20)
                     setmubWaADRupeeCost(mubWaADRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 20)
+                    setallmubWaAOriCount(allmubWaAOriCount + 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
             }
         }
@@ -894,6 +1152,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaADOriCountState(wbWaADOriCount - 1);
                     setmubWaADRupeeCost(mubWaADRupeeCost - 2.5);
                     setwbWaADRupeeCost(wbWaADRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWaADSilverMaskCountState(mubWaADSilverMaskCount - 40)
@@ -902,6 +1165,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaADGaleCountState(mubWaADGaleCount - 10);
                     setmubWaADOriCountState(mubWaADOriCount - 10);
                     setmubWaADRupeeCost(mubWaADRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 10)
+                    setallmubWaAOriCount(allmubWaAOriCount - 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
             }
         }
@@ -919,6 +1188,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaADOriCountState(wbWaADOriCount + 1);
                     setmubWaADRupeeCost(mubWaADRupeeCost + 2.5);
                     setwbWaADRupeeCost(wbWaADRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWaADSilverMaskCountState(mubWaADSilverMaskCount + 40)
@@ -927,6 +1201,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaADGaleCountState(mubWaADGaleCount + 10);
                     setmubWaADOriCountState(mubWaADOriCount + 10);
                     setmubWaADRupeeCost(mubWaADRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 10)
+                    setallmubWaAOriCount(allmubWaAOriCount + 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
             }
         }
@@ -944,6 +1224,10 @@ export default function WaterAgitoWeapons() {
             setwbWaAASandCountState(wbWaAASandCount - 1)
             setmubWaAARupeeCost(mubWaAARupeeCost - 2)
             setwbWaAARupeeCost(wbWaAARupeeCost - 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+            setallmubWaASandCount(allmubWaASandCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2)
         }
         else if (waterAxeCraftState == "grayscale(0%)") {
             setWaterAxeCraftState("grayscale(100%)")
@@ -956,6 +1240,10 @@ export default function WaterAgitoWeapons() {
             setwbWaAASandCountState(wbWaAASandCount + 1)
             setmubWaAARupeeCost(mubWaAARupeeCost + 2)
             setwbWaAARupeeCost(wbWaAARupeeCost + 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+            setallmubWaASandCount(allmubWaASandCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2)
         }
     }
 
@@ -973,6 +1261,11 @@ export default function WaterAgitoWeapons() {
             setwbWaAAOriCountState(wbWaAAOriCount - 30)
             setmubWaAARupeeCost(mubWaAARupeeCost - 10)
             setwbWaAARupeeCost(wbWaAARupeeCost - 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount - 14)
+            setallmubWaAOriCount(allmubWaAOriCount - 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 10)
         }
         else if (waterAxeWeaponBonusState == "grayscale(0%)") {
             setWaterAxeWeaponBonusState("grayscale(100%)");
@@ -987,6 +1280,11 @@ export default function WaterAgitoWeapons() {
             setwbWaAAOriCountState(wbWaAAOriCount + 30)
             setmubWaAARupeeCost(mubWaAARupeeCost + 10)
             setwbWaAARupeeCost(wbWaAARupeeCost + 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount + 14)
+            setallmubWaAOriCount(allmubWaAOriCount + 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 10)
         }
     }
 
@@ -998,6 +1296,10 @@ export default function WaterAgitoWeapons() {
             setmubWaAAGoldMaskCountState(mubWaAAGoldMaskCount - 10)
             setmubWaAAOriCountState(mubWaAAOriCount - 1)
             setmubWaAARupeeCost(mubWaAARupeeCost - 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+            setallmubWaAOriCount(allmubWaAOriCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
         }
         else if (waterAxeWyrmprintSlotState == "grayscale(0%)") {
             setWaterAxeWyrmprintSlotState("grayscale(100%)");
@@ -1006,6 +1308,10 @@ export default function WaterAgitoWeapons() {
             setmubWaAAGoldMaskCountState(mubWaAAGoldMaskCount + 10)
             setmubWaAAOriCountState(mubWaAAOriCount + 1)
             setmubWaAARupeeCost(mubWaAARupeeCost + 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+            setallmubWaAOriCount(allmubWaAOriCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
         }
     }
 
@@ -1023,6 +1329,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaAASandCountState(wbWaAASandCount - 1)
                     setmubWaAARupeeCost(mubWaAARupeeCost - 2)
                     setwbWaAARupeeCost(wbWaAARupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaASandCount(allmubWaASandCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWaAASilverMaskCountState(mubWaAASilverMaskCount - 16)
@@ -1035,6 +1345,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAAOriCountState(wbWaAAOriCount - 1)
                     setmubWaAARupeeCost(mubWaAARupeeCost - 7.5)
                     setwbWaAARupeeCost(wbWaAARupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWaAASilverMaskCountState(mubWaAASilverMaskCount - 16)
@@ -1042,6 +1357,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaAAInsanityCountState(mubWaAAInsanityCount - 7)
                     setmubWaAAOriCountState(mubWaAAOriCount - 1)
                     setmubWaAARupeeCost(mubWaAARupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWaAASilverMaskCountState(mubWaAASilverMaskCount - 80)
@@ -1050,6 +1370,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAAGaleCountState(mubWaAAGaleCount - 20)
                     setmubWaAAOriCountState(mubWaAAOriCount - 20)
                     setmubWaAARupeeCost(mubWaAARupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 20)
+                    setallmubWaAOriCount(allmubWaAOriCount - 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
             }
         }
@@ -1065,6 +1391,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaAASandCountState(wbWaAASandCount + 1)
                     setmubWaAARupeeCost(mubWaAARupeeCost + 2)
                     setwbWaAARupeeCost(wbWaAARupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaASandCount(allmubWaASandCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWaAASilverMaskCountState(mubWaAASilverMaskCount + 16)
@@ -1077,6 +1407,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAAOriCountState(wbWaAAOriCount + 1)
                     setmubWaAARupeeCost(mubWaAARupeeCost + 7.5)
                     setwbWaAARupeeCost(wbWaAARupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWaAASilverMaskCountState(mubWaAASilverMaskCount + 16)
@@ -1084,6 +1419,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaAAInsanityCountState(mubWaAAInsanityCount + 7)
                     setmubWaAAOriCountState(mubWaAAOriCount + 1)
                     setmubWaAARupeeCost(mubWaAARupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWaAASilverMaskCountState(mubWaAASilverMaskCount + 80)
@@ -1092,6 +1432,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAAGaleCountState(mubWaAAGaleCount + 20)
                     setmubWaAAOriCountState(mubWaAAOriCount + 20)
                     setmubWaAARupeeCost(mubWaAARupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 20)
+                    setallmubWaAOriCount(allmubWaAOriCount + 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
             }
         }
@@ -1113,6 +1459,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAAOriCountState(wbWaAAOriCount - 1);
                     setmubWaAARupeeCost(mubWaAARupeeCost - 2.5);
                     setwbWaAARupeeCost(wbWaAARupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWaAASilverMaskCountState(mubWaAASilverMaskCount - 40)
@@ -1121,6 +1472,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAAGaleCountState(mubWaAAGaleCount - 10);
                     setmubWaAAOriCountState(mubWaAAOriCount - 10);
                     setmubWaAARupeeCost(mubWaAARupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 10)
+                    setallmubWaAOriCount(allmubWaAOriCount - 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
             }
         }
@@ -1138,6 +1495,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAAOriCountState(wbWaAAOriCount + 1);
                     setmubWaAARupeeCost(mubWaAARupeeCost + 2.5);
                     setwbWaAARupeeCost(wbWaAARupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWaAASilverMaskCountState(mubWaAASilverMaskCount + 40)
@@ -1146,6 +1508,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAAGaleCountState(mubWaAAGaleCount + 10);
                     setmubWaAAOriCountState(mubWaAAOriCount + 10);
                     setmubWaAARupeeCost(mubWaAARupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 10)
+                    setallmubWaAOriCount(allmubWaAOriCount + 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
             }
         }
@@ -1163,6 +1531,10 @@ export default function WaterAgitoWeapons() {
             setwbWaALSandCountState(wbWaALSandCount - 1)
             setmubWaALRupeeCost(mubWaALRupeeCost - 2)
             setwbWaALRupeeCost(wbWaALRupeeCost - 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+            setallmubWaASandCount(allmubWaASandCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2)
         }
         else if (waterLanceCraftState == "grayscale(0%)") {
             setWaterLanceCraftState("grayscale(100%)")
@@ -1175,6 +1547,10 @@ export default function WaterAgitoWeapons() {
             setwbWaALSandCountState(wbWaALSandCount + 1)
             setmubWaALRupeeCost(mubWaALRupeeCost + 2)
             setwbWaALRupeeCost(wbWaALRupeeCost + 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+            setallmubWaASandCount(allmubWaASandCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2)
         }
     }
 
@@ -1192,6 +1568,11 @@ export default function WaterAgitoWeapons() {
             setwbWaALOriCountState(wbWaALOriCount - 30)
             setmubWaALRupeeCost(mubWaALRupeeCost - 10)
             setwbWaALRupeeCost(wbWaALRupeeCost - 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount - 14)
+            setallmubWaAOriCount(allmubWaAOriCount - 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 10)
         }
         else if (waterLanceWeaponBonusState == "grayscale(0%)") {
             setWaterLanceWeaponBonusState("grayscale(100%)");
@@ -1206,6 +1587,11 @@ export default function WaterAgitoWeapons() {
             setwbWaALOriCountState(wbWaALOriCount + 30)
             setmubWaALRupeeCost(mubWaALRupeeCost + 10)
             setwbWaALRupeeCost(wbWaALRupeeCost + 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount + 14)
+            setallmubWaAOriCount(allmubWaAOriCount + 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 10)
         }
     }
 
@@ -1217,6 +1603,10 @@ export default function WaterAgitoWeapons() {
             setmubWaALGoldMaskCountState(mubWaALGoldMaskCount - 10)
             setmubWaALOriCountState(mubWaALOriCount - 1)
             setmubWaALRupeeCost(mubWaALRupeeCost - 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+            setallmubWaAOriCount(allmubWaAOriCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
         }
         else if (waterLanceWyrmprintSlotState == "grayscale(0%)") {
             setWaterLanceWyrmprintSlotState("grayscale(100%)");
@@ -1225,6 +1615,10 @@ export default function WaterAgitoWeapons() {
             setmubWaALGoldMaskCountState(mubWaALGoldMaskCount + 10)
             setmubWaALOriCountState(mubWaALOriCount + 1)
             setmubWaALRupeeCost(mubWaALRupeeCost + 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+            setallmubWaAOriCount(allmubWaAOriCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
         }
     }
 
@@ -1242,6 +1636,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaALSandCountState(wbWaALSandCount - 1)
                     setmubWaALRupeeCost(mubWaALRupeeCost - 2)
                     setwbWaALRupeeCost(wbWaALRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaASandCount(allmubWaASandCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWaALSilverMaskCountState(mubWaALSilverMaskCount - 16)
@@ -1254,6 +1652,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaALOriCountState(wbWaALOriCount - 1)
                     setmubWaALRupeeCost(mubWaALRupeeCost - 7.5)
                     setwbWaALRupeeCost(wbWaALRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWaALSilverMaskCountState(mubWaALSilverMaskCount - 16)
@@ -1261,6 +1664,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaALInsanityCountState(mubWaALInsanityCount - 7)
                     setmubWaALOriCountState(mubWaALOriCount - 1)
                     setmubWaALRupeeCost(mubWaALRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWaALSilverMaskCountState(mubWaALSilverMaskCount - 80)
@@ -1269,6 +1677,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaALGaleCountState(mubWaALGaleCount - 20)
                     setmubWaALOriCountState(mubWaALOriCount - 20)
                     setmubWaALRupeeCost(mubWaALRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 20)
+                    setallmubWaAOriCount(allmubWaAOriCount - 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
             }
         }
@@ -1284,6 +1698,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaALSandCountState(wbWaALSandCount + 1)
                     setmubWaALRupeeCost(mubWaALRupeeCost + 2)
                     setwbWaALRupeeCost(wbWaALRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaASandCount(allmubWaASandCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWaALSilverMaskCountState(mubWaALSilverMaskCount + 16)
@@ -1296,6 +1714,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaALOriCountState(wbWaALOriCount + 1)
                     setmubWaALRupeeCost(mubWaALRupeeCost + 7.5)
                     setwbWaALRupeeCost(wbWaALRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWaALSilverMaskCountState(mubWaALSilverMaskCount + 16)
@@ -1303,6 +1726,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaALInsanityCountState(mubWaALInsanityCount + 7)
                     setmubWaALOriCountState(mubWaALOriCount + 1)
                     setmubWaALRupeeCost(mubWaALRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWaALSilverMaskCountState(mubWaALSilverMaskCount + 80)
@@ -1311,6 +1739,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaALGaleCountState(mubWaALGaleCount + 20)
                     setmubWaALOriCountState(mubWaALOriCount + 20)
                     setmubWaALRupeeCost(mubWaALRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 20)
+                    setallmubWaAOriCount(allmubWaAOriCount + 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
             }
         }
@@ -1332,6 +1766,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaALOriCountState(wbWaALOriCount - 1);
                     setmubWaALRupeeCost(mubWaALRupeeCost - 2.5);
                     setwbWaALRupeeCost(wbWaALRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWaALSilverMaskCountState(mubWaALSilverMaskCount - 40)
@@ -1340,6 +1779,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaALGaleCountState(mubWaALGaleCount - 10);
                     setmubWaALOriCountState(mubWaALOriCount - 10);
                     setmubWaALRupeeCost(mubWaALRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 10)
+                    setallmubWaAOriCount(allmubWaAOriCount - 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
             }
         }
@@ -1357,6 +1802,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaALOriCountState(wbWaALOriCount + 1);
                     setmubWaALRupeeCost(mubWaALRupeeCost + 2.5);
                     setwbWaALRupeeCost(wbWaALRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWaALSilverMaskCountState(mubWaALSilverMaskCount + 40)
@@ -1365,6 +1815,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaALGaleCountState(mubWaALGaleCount + 10);
                     setmubWaALOriCountState(mubWaALOriCount + 10);
                     setmubWaALRupeeCost(mubWaALRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 10)
+                    setallmubWaAOriCount(allmubWaAOriCount + 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
             }
         }
@@ -1382,6 +1838,10 @@ export default function WaterAgitoWeapons() {
             setwbWaAWSandCountState(wbWaAWSandCount - 1)
             setmubWaAWRupeeCost(mubWaAWRupeeCost - 2)
             setwbWaAWRupeeCost(wbWaAWRupeeCost - 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+            setallmubWaASandCount(allmubWaASandCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2)
         }
         else if (waterWandCraftState == "grayscale(0%)") {
             setWaterWandCraftState("grayscale(100%)")
@@ -1394,6 +1854,10 @@ export default function WaterAgitoWeapons() {
             setwbWaAWSandCountState(wbWaAWSandCount + 1)
             setmubWaAWRupeeCost(mubWaAWRupeeCost + 2)
             setwbWaAWRupeeCost(wbWaAWRupeeCost + 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+            setallmubWaASandCount(allmubWaASandCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2)
         }
     }
 
@@ -1411,6 +1875,11 @@ export default function WaterAgitoWeapons() {
             setwbWaAWOriCountState(wbWaAWOriCount - 30)
             setmubWaAWRupeeCost(mubWaAWRupeeCost - 10)
             setwbWaAWRupeeCost(wbWaAWRupeeCost - 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount - 14)
+            setallmubWaAOriCount(allmubWaAOriCount - 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 10)
         }
         else if (waterWandWeaponBonusState == "grayscale(0%)") {
             setWaterWandWeaponBonusState("grayscale(100%)");
@@ -1425,6 +1894,11 @@ export default function WaterAgitoWeapons() {
             setwbWaAWOriCountState(wbWaAWOriCount + 30)
             setmubWaAWRupeeCost(mubWaAWRupeeCost + 10)
             setwbWaAWRupeeCost(wbWaAWRupeeCost + 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount + 14)
+            setallmubWaAOriCount(allmubWaAOriCount + 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 10)
         }
     }
 
@@ -1436,6 +1910,10 @@ export default function WaterAgitoWeapons() {
             setmubWaAWGoldMaskCountState(mubWaAWGoldMaskCount - 10)
             setmubWaAWOriCountState(mubWaAWOriCount - 1)
             setmubWaAWRupeeCost(mubWaAWRupeeCost - 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+            setallmubWaAOriCount(allmubWaAOriCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
         }
         else if (waterWandWyrmprintSlotState == "grayscale(0%)") {
             setWaterWandWyrmprintSlotState("grayscale(100%)");
@@ -1444,6 +1922,10 @@ export default function WaterAgitoWeapons() {
             setmubWaAWGoldMaskCountState(mubWaAWGoldMaskCount + 10)
             setmubWaAWOriCountState(mubWaAWOriCount + 1)
             setmubWaAWRupeeCost(mubWaAWRupeeCost + 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+            setallmubWaAOriCount(allmubWaAOriCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
         }
     }
 
@@ -1461,6 +1943,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaAWSandCountState(wbWaAWSandCount - 1)
                     setmubWaAWRupeeCost(mubWaAWRupeeCost - 2)
                     setwbWaAWRupeeCost(wbWaAWRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaASandCount(allmubWaASandCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWaAWSilverMaskCountState(mubWaAWSilverMaskCount - 16)
@@ -1473,6 +1959,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAWOriCountState(wbWaAWOriCount - 1)
                     setmubWaAWRupeeCost(mubWaAWRupeeCost - 7.5)
                     setwbWaAWRupeeCost(wbWaAWRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWaAWSilverMaskCountState(mubWaAWSilverMaskCount - 16)
@@ -1480,6 +1971,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaAWInsanityCountState(mubWaAWInsanityCount - 7)
                     setmubWaAWOriCountState(mubWaAWOriCount - 1)
                     setmubWaAWRupeeCost(mubWaAWRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWaAWSilverMaskCountState(mubWaAWSilverMaskCount - 80)
@@ -1488,6 +1984,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAWGaleCountState(mubWaAWGaleCount - 20)
                     setmubWaAWOriCountState(mubWaAWOriCount - 20)
                     setmubWaAWRupeeCost(mubWaAWRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 20)
+                    setallmubWaAOriCount(allmubWaAOriCount - 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
             }
         }
@@ -1503,6 +2005,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaAWSandCountState(wbWaAWSandCount + 1)
                     setmubWaAWRupeeCost(mubWaAWRupeeCost + 2)
                     setwbWaAWRupeeCost(wbWaAWRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaASandCount(allmubWaASandCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWaAWSilverMaskCountState(mubWaAWSilverMaskCount + 16)
@@ -1515,6 +2021,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAWOriCountState(wbWaAWOriCount + 1)
                     setmubWaAWRupeeCost(mubWaAWRupeeCost + 7.5)
                     setwbWaAWRupeeCost(wbWaAWRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWaAWSilverMaskCountState(mubWaAWSilverMaskCount + 16)
@@ -1522,6 +2033,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaAWInsanityCountState(mubWaAWInsanityCount + 7)
                     setmubWaAWOriCountState(mubWaAWOriCount + 1)
                     setmubWaAWRupeeCost(mubWaAWRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWaAWSilverMaskCountState(mubWaAWSilverMaskCount + 80)
@@ -1530,6 +2046,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAWGaleCountState(mubWaAWGaleCount + 20)
                     setmubWaAWOriCountState(mubWaAWOriCount + 20)
                     setmubWaAWRupeeCost(mubWaAWRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 20)
+                    setallmubWaAOriCount(allmubWaAOriCount + 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
             }
         }
@@ -1551,6 +2073,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAWOriCountState(wbWaAWOriCount - 1);
                     setmubWaAWRupeeCost(mubWaAWRupeeCost - 2.5);
                     setwbWaAWRupeeCost(wbWaAWRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWaAWSilverMaskCountState(mubWaAWSilverMaskCount - 40)
@@ -1559,6 +2086,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAWGaleCountState(mubWaAWGaleCount - 10);
                     setmubWaAWOriCountState(mubWaAWOriCount - 10);
                     setmubWaAWRupeeCost(mubWaAWRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 10)
+                    setallmubWaAOriCount(allmubWaAOriCount - 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
             }
         }
@@ -1576,6 +2109,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAWOriCountState(wbWaAWOriCount + 1);
                     setmubWaAWRupeeCost(mubWaAWRupeeCost + 2.5);
                     setwbWaAWRupeeCost(wbWaAWRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWaAWSilverMaskCountState(mubWaAWSilverMaskCount + 40)
@@ -1584,6 +2122,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAWGaleCountState(mubWaAWGaleCount + 10);
                     setmubWaAWOriCountState(mubWaAWOriCount + 10);
                     setmubWaAWRupeeCost(mubWaAWRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 10)
+                    setallmubWaAOriCount(allmubWaAOriCount + 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
             }
         }
@@ -1601,6 +2145,10 @@ export default function WaterAgitoWeapons() {
             setwbWaABoSandCountState(wbWaABoSandCount - 1)
             setmubWaABoRupeeCost(mubWaABoRupeeCost - 2)
             setwbWaABoRupeeCost(wbWaABoRupeeCost - 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+            setallmubWaASandCount(allmubWaASandCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2)
         }
         else if (waterBowCraftState == "grayscale(0%)") {
             setWaterBowCraftState("grayscale(100%)")
@@ -1613,6 +2161,10 @@ export default function WaterAgitoWeapons() {
             setwbWaABoSandCountState(wbWaABoSandCount + 1)
             setmubWaABoRupeeCost(mubWaABoRupeeCost + 2)
             setwbWaABoRupeeCost(wbWaABoRupeeCost + 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+            setallmubWaASandCount(allmubWaASandCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2)
         }
     }
 
@@ -1630,6 +2182,11 @@ export default function WaterAgitoWeapons() {
             setwbWaABoOriCountState(wbWaABoOriCount - 30)
             setmubWaABoRupeeCost(mubWaABoRupeeCost - 10)
             setwbWaABoRupeeCost(wbWaABoRupeeCost - 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount - 14)
+            setallmubWaAOriCount(allmubWaAOriCount - 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 10)
         }
         else if (waterBowWeaponBonusState == "grayscale(0%)") {
             setWaterBowWeaponBonusState("grayscale(100%)");
@@ -1644,6 +2201,11 @@ export default function WaterAgitoWeapons() {
             setwbWaABoOriCountState(wbWaABoOriCount + 30)
             setmubWaABoRupeeCost(mubWaABoRupeeCost + 10)
             setwbWaABoRupeeCost(wbWaABoRupeeCost + 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount + 14)
+            setallmubWaAOriCount(allmubWaAOriCount + 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 10)
         }
     }
 
@@ -1655,6 +2217,10 @@ export default function WaterAgitoWeapons() {
             setmubWaABoGoldMaskCountState(mubWaABoGoldMaskCount - 10)
             setmubWaABoOriCountState(mubWaABoOriCount - 1)
             setmubWaABoRupeeCost(mubWaABoRupeeCost - 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+            setallmubWaAOriCount(allmubWaAOriCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
         }
         else if (waterBowWyrmprintSlotState == "grayscale(0%)") {
             setWaterBowWyrmprintSlotState("grayscale(100%)");
@@ -1663,6 +2229,10 @@ export default function WaterAgitoWeapons() {
             setmubWaABoGoldMaskCountState(mubWaABoGoldMaskCount + 10)
             setmubWaABoOriCountState(mubWaABoOriCount + 1)
             setmubWaABoRupeeCost(mubWaABoRupeeCost + 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+            setallmubWaAOriCount(allmubWaAOriCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
         }
     }
 
@@ -1680,6 +2250,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaABoSandCountState(wbWaABoSandCount - 1)
                     setmubWaABoRupeeCost(mubWaABoRupeeCost - 2)
                     setwbWaABoRupeeCost(wbWaABoRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaASandCount(allmubWaASandCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWaABoSilverMaskCountState(mubWaABoSilverMaskCount - 16)
@@ -1692,6 +2266,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaABoOriCountState(wbWaABoOriCount - 1)
                     setmubWaABoRupeeCost(mubWaABoRupeeCost - 7.5)
                     setwbWaABoRupeeCost(wbWaABoRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWaABoSilverMaskCountState(mubWaABoSilverMaskCount - 16)
@@ -1699,6 +2278,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaABoInsanityCountState(mubWaABoInsanityCount - 7)
                     setmubWaABoOriCountState(mubWaABoOriCount - 1)
                     setmubWaABoRupeeCost(mubWaABoRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWaABoSilverMaskCountState(mubWaABoSilverMaskCount - 80)
@@ -1707,6 +2291,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaABoGaleCountState(mubWaABoGaleCount - 20)
                     setmubWaABoOriCountState(mubWaABoOriCount - 20)
                     setmubWaABoRupeeCost(mubWaABoRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 20)
+                    setallmubWaAOriCount(allmubWaAOriCount - 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
             }
         }
@@ -1722,6 +2312,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaABoSandCountState(wbWaABoSandCount + 1)
                     setmubWaABoRupeeCost(mubWaABoRupeeCost + 2)
                     setwbWaABoRupeeCost(wbWaABoRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaASandCount(allmubWaASandCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWaABoSilverMaskCountState(mubWaABoSilverMaskCount + 16)
@@ -1734,6 +2328,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaABoOriCountState(wbWaABoOriCount + 1)
                     setmubWaABoRupeeCost(mubWaABoRupeeCost + 7.5)
                     setwbWaABoRupeeCost(wbWaABoRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWaABoSilverMaskCountState(mubWaABoSilverMaskCount + 16)
@@ -1741,6 +2340,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaABoInsanityCountState(mubWaABoInsanityCount + 7)
                     setmubWaABoOriCountState(mubWaABoOriCount + 1)
                     setmubWaABoRupeeCost(mubWaABoRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWaABoSilverMaskCountState(mubWaABoSilverMaskCount + 80)
@@ -1749,6 +2353,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaABoGaleCountState(mubWaABoGaleCount + 20)
                     setmubWaABoOriCountState(mubWaABoOriCount + 20)
                     setmubWaABoRupeeCost(mubWaABoRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 20)
+                    setallmubWaAOriCount(allmubWaAOriCount + 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
             }
         }
@@ -1770,6 +2380,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaABoOriCountState(wbWaABoOriCount - 1);
                     setmubWaABoRupeeCost(mubWaABoRupeeCost - 2.5);
                     setwbWaABoRupeeCost(wbWaABoRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWaABoSilverMaskCountState(mubWaABoSilverMaskCount - 40)
@@ -1778,6 +2393,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaABoGaleCountState(mubWaABoGaleCount - 10);
                     setmubWaABoOriCountState(mubWaABoOriCount - 10);
                     setmubWaABoRupeeCost(mubWaABoRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 10)
+                    setallmubWaAOriCount(allmubWaAOriCount - 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
             }
         }
@@ -1795,6 +2416,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaABoOriCountState(wbWaABoOriCount + 1);
                     setmubWaABoRupeeCost(mubWaABoRupeeCost + 2.5);
                     setwbWaABoRupeeCost(wbWaABoRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWaABoSilverMaskCountState(mubWaABoSilverMaskCount + 40)
@@ -1803,6 +2429,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaABoGaleCountState(mubWaABoGaleCount + 10);
                     setmubWaABoOriCountState(mubWaABoOriCount + 10);
                     setmubWaABoRupeeCost(mubWaABoRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 10)
+                    setallmubWaAOriCount(allmubWaAOriCount + 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
             }
         }
@@ -1820,6 +2452,10 @@ export default function WaterAgitoWeapons() {
             setwbWaAStSandCountState(wbWaAStSandCount - 1)
             setmubWaAStRupeeCost(mubWaAStRupeeCost - 2)
             setwbWaAStRupeeCost(wbWaAStRupeeCost - 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+            setallmubWaASandCount(allmubWaASandCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2)
         }
         else if (waterStaffCraftState == "grayscale(0%)") {
             setWaterStaffCraftState("grayscale(100%)")
@@ -1832,6 +2468,10 @@ export default function WaterAgitoWeapons() {
             setwbWaAStSandCountState(wbWaAStSandCount + 1)
             setmubWaAStRupeeCost(mubWaAStRupeeCost + 2)
             setwbWaAStRupeeCost(wbWaAStRupeeCost + 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+            setallmubWaASandCount(allmubWaASandCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2)
         }
     }
 
@@ -1849,6 +2489,11 @@ export default function WaterAgitoWeapons() {
             setwbWaAStOriCountState(wbWaAStOriCount - 30)
             setmubWaAStRupeeCost(mubWaAStRupeeCost - 10)
             setwbWaAStRupeeCost(wbWaAStRupeeCost - 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount - 14)
+            setallmubWaAOriCount(allmubWaAOriCount - 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 10)
         }
         else if (waterStaffWeaponBonusState == "grayscale(0%)") {
             setWaterStaffWeaponBonusState("grayscale(100%)");
@@ -1863,6 +2508,11 @@ export default function WaterAgitoWeapons() {
             setwbWaAStOriCountState(wbWaAStOriCount + 30)
             setmubWaAStRupeeCost(mubWaAStRupeeCost + 10)
             setwbWaAStRupeeCost(wbWaAStRupeeCost + 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount + 14)
+            setallmubWaAOriCount(allmubWaAOriCount + 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 10)
         }
     }
 
@@ -1874,6 +2524,10 @@ export default function WaterAgitoWeapons() {
             setmubWaAStGoldMaskCountState(mubWaAStGoldMaskCount - 10)
             setmubWaAStOriCountState(mubWaAStOriCount - 1)
             setmubWaAStRupeeCost(mubWaAStRupeeCost - 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+            setallmubWaAOriCount(allmubWaAOriCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
         }
         else if (waterStaffWyrmprintSlotState == "grayscale(0%)") {
             setWaterStaffWyrmprintSlotState("grayscale(100%)");
@@ -1882,6 +2536,10 @@ export default function WaterAgitoWeapons() {
             setmubWaAStGoldMaskCountState(mubWaAStGoldMaskCount + 10)
             setmubWaAStOriCountState(mubWaAStOriCount + 1)
             setmubWaAStRupeeCost(mubWaAStRupeeCost + 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+            setallmubWaAOriCount(allmubWaAOriCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
         }
     }
 
@@ -1899,6 +2557,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaAStSandCountState(wbWaAStSandCount - 1)
                     setmubWaAStRupeeCost(mubWaAStRupeeCost - 2)
                     setwbWaAStRupeeCost(wbWaAStRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaASandCount(allmubWaASandCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWaAStSilverMaskCountState(mubWaAStSilverMaskCount - 16)
@@ -1911,6 +2573,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAStOriCountState(wbWaAStOriCount - 1)
                     setmubWaAStRupeeCost(mubWaAStRupeeCost - 7.5)
                     setwbWaAStRupeeCost(wbWaAStRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWaAStSilverMaskCountState(mubWaAStSilverMaskCount - 16)
@@ -1918,6 +2585,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaAStInsanityCountState(mubWaAStInsanityCount - 7)
                     setmubWaAStOriCountState(mubWaAStOriCount - 1)
                     setmubWaAStRupeeCost(mubWaAStRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWaAStSilverMaskCountState(mubWaAStSilverMaskCount - 80)
@@ -1926,6 +2598,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAStGaleCountState(mubWaAStGaleCount - 20)
                     setmubWaAStOriCountState(mubWaAStOriCount - 20)
                     setmubWaAStRupeeCost(mubWaAStRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 20)
+                    setallmubWaAOriCount(allmubWaAOriCount - 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
             }
         }
@@ -1941,6 +2619,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaAStSandCountState(wbWaAStSandCount + 1)
                     setmubWaAStRupeeCost(mubWaAStRupeeCost + 2)
                     setwbWaAStRupeeCost(wbWaAStRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaASandCount(allmubWaASandCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWaAStSilverMaskCountState(mubWaAStSilverMaskCount + 16)
@@ -1953,6 +2635,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAStOriCountState(wbWaAStOriCount + 1)
                     setmubWaAStRupeeCost(mubWaAStRupeeCost + 7.5)
                     setwbWaAStRupeeCost(wbWaAStRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWaAStSilverMaskCountState(mubWaAStSilverMaskCount + 16)
@@ -1960,6 +2647,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaAStInsanityCountState(mubWaAStInsanityCount + 7)
                     setmubWaAStOriCountState(mubWaAStOriCount + 1)
                     setmubWaAStRupeeCost(mubWaAStRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWaAStSilverMaskCountState(mubWaAStSilverMaskCount + 80)
@@ -1968,6 +2660,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAStGaleCountState(mubWaAStGaleCount + 20)
                     setmubWaAStOriCountState(mubWaAStOriCount + 20)
                     setmubWaAStRupeeCost(mubWaAStRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 20)
+                    setallmubWaAOriCount(allmubWaAOriCount + 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
             }
         }
@@ -1989,6 +2687,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAStOriCountState(wbWaAStOriCount - 1);
                     setmubWaAStRupeeCost(mubWaAStRupeeCost - 2.5);
                     setwbWaAStRupeeCost(wbWaAStRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWaAStSilverMaskCountState(mubWaAStSilverMaskCount - 40)
@@ -1997,6 +2700,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAStGaleCountState(mubWaAStGaleCount - 10);
                     setmubWaAStOriCountState(mubWaAStOriCount - 10);
                     setmubWaAStRupeeCost(mubWaAStRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 10)
+                    setallmubWaAOriCount(allmubWaAOriCount - 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
             }
         }
@@ -2014,6 +2723,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAStOriCountState(wbWaAStOriCount + 1);
                     setmubWaAStRupeeCost(mubWaAStRupeeCost + 2.5);
                     setwbWaAStRupeeCost(wbWaAStRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWaAStSilverMaskCountState(mubWaAStSilverMaskCount + 40)
@@ -2022,6 +2736,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAStGaleCountState(mubWaAStGaleCount + 10);
                     setmubWaAStOriCountState(mubWaAStOriCount + 10);
                     setmubWaAStRupeeCost(mubWaAStRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 10)
+                    setallmubWaAOriCount(allmubWaAOriCount + 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
             }
         }
@@ -2039,6 +2759,10 @@ export default function WaterAgitoWeapons() {
             setwbWaAMSandCountState(wbWaAMSandCount - 1)
             setmubWaAMRupeeCost(mubWaAMRupeeCost - 2)
             setwbWaAMRupeeCost(wbWaAMRupeeCost - 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+            setallmubWaASandCount(allmubWaASandCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2)
         }
         else if (waterManacasterCraftState == "grayscale(0%)") {
             setWaterManacasterCraftState("grayscale(100%)")
@@ -2051,6 +2775,10 @@ export default function WaterAgitoWeapons() {
             setwbWaAMSandCountState(wbWaAMSandCount + 1)
             setmubWaAMRupeeCost(mubWaAMRupeeCost + 2)
             setwbWaAMRupeeCost(wbWaAMRupeeCost + 2)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+            setallmubWaASandCount(allmubWaASandCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2)
         }
     }
 
@@ -2068,6 +2796,11 @@ export default function WaterAgitoWeapons() {
             setwbWaAMOriCountState(wbWaAMOriCount - 30)
             setmubWaAMRupeeCost(mubWaAMRupeeCost - 10)
             setwbWaAMRupeeCost(wbWaAMRupeeCost - 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount - 14)
+            setallmubWaAOriCount(allmubWaAOriCount - 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 10)
         }
         else if (waterManacasterWeaponBonusState == "grayscale(0%)") {
             setWaterManacasterWeaponBonusState("grayscale(100%)");
@@ -2082,6 +2815,11 @@ export default function WaterAgitoWeapons() {
             setwbWaAMOriCountState(wbWaAMOriCount + 30)
             setmubWaAMRupeeCost(mubWaAMRupeeCost + 10)
             setwbWaAMRupeeCost(wbWaAMRupeeCost + 10)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 100)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 100)
+            setallmubWaAInsanityCount(allmubWaAInsanityCount + 14)
+            setallmubWaAOriCount(allmubWaAOriCount + 30)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 10)
         }
     }
 
@@ -2093,6 +2831,10 @@ export default function WaterAgitoWeapons() {
             setmubWaAMGoldMaskCountState(mubWaAMGoldMaskCount - 10)
             setmubWaAMOriCountState(mubWaAMOriCount - 1)
             setmubWaAMRupeeCost(mubWaAMRupeeCost - 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+            setallmubWaAOriCount(allmubWaAOriCount - 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
         }
         else if (waterManacasterWyrmprintSlotState == "grayscale(0%)") {
             setWaterManacasterWyrmprintSlotState("grayscale(100%)");
@@ -2101,6 +2843,10 @@ export default function WaterAgitoWeapons() {
             setmubWaAMGoldMaskCountState(mubWaAMGoldMaskCount + 10)
             setmubWaAMOriCountState(mubWaAMOriCount + 1)
             setmubWaAMRupeeCost(mubWaAMRupeeCost + 2.5)
+            setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+            setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+            setallmubWaAOriCount(allmubWaAOriCount + 1)
+            setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
         }
     }
 
@@ -2118,6 +2864,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaAMSandCountState(wbWaAMSandCount - 1)
                     setmubWaAMRupeeCost(mubWaAMRupeeCost - 2)
                     setwbWaAMRupeeCost(wbWaAMRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaASandCount(allmubWaASandCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
                 else if (event.target.value == 5) {
                     setmubWaAMSilverMaskCountState(mubWaAMSilverMaskCount - 16)
@@ -2130,6 +2880,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAMOriCountState(wbWaAMOriCount - 1)
                     setmubWaAMRupeeCost(mubWaAMRupeeCost - 7.5)
                     setwbWaAMRupeeCost(wbWaAMRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 8) {
                     setmubWaAMSilverMaskCountState(mubWaAMSilverMaskCount - 16)
@@ -2137,6 +2892,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaAMInsanityCountState(mubWaAMInsanityCount - 7)
                     setmubWaAMOriCountState(mubWaAMOriCount - 1)
                     setmubWaAMRupeeCost(mubWaAMRupeeCost - 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 7.5)
                 }
                 else if (event.target.value > 8) {
                     setmubWaAMSilverMaskCountState(mubWaAMSilverMaskCount - 80)
@@ -2145,6 +2905,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAMGaleCountState(mubWaAMGaleCount - 20)
                     setmubWaAMOriCountState(mubWaAMOriCount - 20)
                     setmubWaAMRupeeCost(mubWaAMRupeeCost - 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 20)
+                    setallmubWaAOriCount(allmubWaAOriCount - 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2)
                 }
             }
         }
@@ -2160,6 +2926,10 @@ export default function WaterAgitoWeapons() {
                     setwbWaAMSandCountState(wbWaAMSandCount + 1)
                     setmubWaAMRupeeCost(mubWaAMRupeeCost + 2)
                     setwbWaAMRupeeCost(wbWaAMRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaASandCount(allmubWaASandCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
                 else if (event.target.value == 4) {
                     setmubWaAMSilverMaskCountState(mubWaAMSilverMaskCount + 16)
@@ -2172,6 +2942,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAMOriCountState(wbWaAMOriCount + 1)
                     setmubWaAMRupeeCost(mubWaAMRupeeCost + 7.5)
                     setwbWaAMRupeeCost(wbWaAMRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value >= 5 && event.target.value <= 7) {
                     setmubWaAMSilverMaskCountState(mubWaAMSilverMaskCount + 16)
@@ -2179,6 +2954,11 @@ export default function WaterAgitoWeapons() {
                     setmubWaAMInsanityCountState(mubWaAMInsanityCount + 7)
                     setmubWaAMOriCountState(mubWaAMOriCount + 1)
                     setmubWaAMRupeeCost(mubWaAMRupeeCost + 7.5)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 7.5)
                 }
                 else if (event.target.value == 8) {
                     setmubWaAMSilverMaskCountState(mubWaAMSilverMaskCount + 80)
@@ -2187,6 +2967,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAMGaleCountState(mubWaAMGaleCount + 20)
                     setmubWaAMOriCountState(mubWaAMOriCount + 20)
                     setmubWaAMRupeeCost(mubWaAMRupeeCost + 2)
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 80)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 70)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 30)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 20)
+                    setallmubWaAOriCount(allmubWaAOriCount + 20)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2)
                 }
             }
         }
@@ -2208,6 +2994,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAMOriCountState(wbWaAMOriCount - 1);
                     setmubWaAMRupeeCost(mubWaAMRupeeCost - 2.5);
                     setwbWaAMRupeeCost(wbWaAMRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 7)
+                    setallmubWaAOriCount(allmubWaAOriCount - 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
                 if (event.target.value == 2) {
                     setmubWaAMSilverMaskCountState(mubWaAMSilverMaskCount - 40)
@@ -2216,6 +3007,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAMGaleCountState(mubWaAMGaleCount - 10);
                     setmubWaAMOriCountState(mubWaAMOriCount - 10);
                     setmubWaAMRupeeCost(mubWaAMRupeeCost - 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount - 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount - 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount - 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount - 10)
+                    setallmubWaAOriCount(allmubWaAOriCount - 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost - 2.5)
                 }
             }
         }
@@ -2233,6 +3030,11 @@ export default function WaterAgitoWeapons() {
                     setwbWaAMOriCountState(wbWaAMOriCount + 1);
                     setmubWaAMRupeeCost(mubWaAMRupeeCost + 2.5);
                     setwbWaAMRupeeCost(wbWaAMRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 16)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 10)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 7)
+                    setallmubWaAOriCount(allmubWaAOriCount + 1)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
                 if (event.target.value == 1) {
                     setmubWaAMSilverMaskCountState(mubWaAMSilverMaskCount + 40)
@@ -2241,6 +3043,12 @@ export default function WaterAgitoWeapons() {
                     setmubWaAMGaleCountState(mubWaAMGaleCount + 10);
                     setmubWaAMOriCountState(mubWaAMOriCount + 10);
                     setmubWaAMRupeeCost(mubWaAMRupeeCost + 2.5);
+                    setallmubWaASilverMaskCount(allmubWaASilverMaskCount + 40)
+                    setallmubWaAGoldMaskCount(allmubWaAGoldMaskCount + 30)
+                    setallmubWaAInsanityCount(allmubWaAInsanityCount + 10)
+                    setallmubWaAGaleCount(allmubWaAGaleCount + 10)
+                    setallmubWaAOriCount(allmubWaAOriCount + 10)
+                    setallmubWaARupeeCost(allmubWaARupeeCost + 2.5)
                 }
             }
         }
@@ -2856,6 +3664,48 @@ export default function WaterAgitoWeapons() {
                 </Box>
                 {/* The box for the materials needed to 100% a weapon */}
                 {waterWeaponSelection()}
+            </Flex>
+            <Flex>&nbsp;</Flex>
+            <Flex>
+                <Box width={[6 / 7, 1 / 2]} p={3} m={3} bg={"#152238"} sx={{ border: "3px solid blue" }}>
+                    <Flex>
+                        {/* <Box width={1 / 4}></Box> */}
+                        <Text fontSize={[1, 3]} ml="auto" mr="auto" color="gold">Materials Needed to MUB all Weapons</Text>
+                    </Flex>
+                    <Flex alignItems="center">
+                        <Card width={[75, 150]}>
+                            <Image src={WaterAgitoSilverMask} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"lightblue"} fontSize={[1, 2]}>{allmubWaASilverMaskCount}</Text>
+                        </Card>
+                        <Card width={[75, 150]}>
+                            <Image src={WaterAgitoGoldMask} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"lightblue"} fontSize={[1, 2]}>{allmubWaAGoldMaskCount}</Text>
+                        </Card>
+                        <Card width={[75, 150]}>
+                            <Image src={WaterAgitoInsanity} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"lightblue"} fontSize={[1, 2]}>{allmubWaAInsanityCount}</Text>
+                        </Card>
+                        <Card width={[75, 150]}>
+                            <Image src={FireAgitoGale} sx={{ width: ["100%"], height: ["75%"] }} />
+                            <Text color={"lightblue"} fontSize={[1, 2]}>{allmubWaAGaleCount}</Text>
+                        </Card>
+                    </Flex>
+                    <Flex>&nbsp;</Flex>
+                    <Flex>
+                        <Card width={[75, 175]}>
+                            <Image src={TwinklingSand} sx={{ width: ["70%"], height: ["52%", "70%"] }} />
+                            <Text color={"lightblue"} fontSize={[1, 2]}>{allmubWaASandCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={Orichalcum} sx={{ width: ["70%"], height: ["52%", "70%"] }} />
+                            <Text color={"lightblue"} fontSize={[1, 2]}>{allmubWaAOriCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={Rupies} sx={{ width: ["70%"], height: ["52%", "70%"] }} />
+                            <Text color={"lightblue"} fontSize={[1, 2]}>{allmubWaARupeeCost} million</Text>
+                        </Card>
+                    </Flex>
+                </Box>
             </Flex>
             <Flex>&nbsp;</Flex>
             <WeaponTypeNavTabs />
