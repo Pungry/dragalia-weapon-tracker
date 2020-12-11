@@ -12,41 +12,41 @@ function NavTabs() {
 
   return (<>
   <Flex>
-    <Box width={2/5}>
+    <Box width={[1/6, 2/5]}>
     </Box>
     <Box width={1/5}>
       <Flex>
         <Link to="/hdt/fire">
           <Box p={[1/2, 5/2]} bg="#d3809b">
-            <img src={FireButton} alt="Link to Fire hdt Weapons section" height="40" width="40" />
+            <img src={FireButton} alt="Link to Fire HDT Weapons section" height="40" width="40" />
           </Box>
         </Link>
         <Box p={[5/2]}>
         </Box>
         <Link to="/hdt/water">
           <Box p={[1/2, 5/2]} bg="#87CEFA">
-          <img src={WaterButton} alt="Link to Water hdt Weapons section" height="40" width="40" />
+          <img src={WaterButton} alt="Link to Water HDT Weapons section" height="40" width="40" />
           </Box>
         </Link>
         <Box p={[5/2]}>
         </Box>
         <Link to="/hdt/wind">
           <Box p={[1/2, 5/2]} bg="palegreen">
-          <img src={WindButton} alt="Link to Wind hdt Weapons section" height="40" width="40" />
+          <img src={WindButton} alt="Link to Wind HDT Weapons section" height="40" width="40" />
           </Box>
         </Link>
         <Box p={[5/2]}>
         </Box>
         <Link to="/hdt/light">
           <Box p={[1/2, 5/2]} bg="lightyellow">
-          <img src={LightButton} alt="Link to Light hdt Weapons section" height="40" width="40" />
+          <img src={LightButton} alt="Link to Light HDT Weapons section" height="40" width="40" />
           </Box>
         </Link>
         <Box p={[5/2]}>
         </Box>
         <Link to="/hdt/shadow">
           <Box p={[1/2, 5/2]} bg="violet">
-          <img src={ShadowButton} alt="Link to Fire hdt Weapons section" height="40" width="40" />
+          <img src={ShadowButton} alt="Link to Fire HDT Weapons section" height="40" width="40" />
           </Box>
         </Link>
       </Flex>

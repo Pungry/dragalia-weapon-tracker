@@ -14,6 +14,13 @@ import FireHDTWand from "../Images/Fire_HDT_Wand.png";
 import FireHDTStaff from "../Images/Fire_HDT_Staff.png";
 import FireHDTManacaster from "../Images/Fire_HDT_Manacaster.png";
 
+import FireHDTSphere from "../Images/Fire_HDT_Sphere.png";
+import FireHDTTail from "../Images/Fire_HDT_Tail.png";
+import FireHDTHorn from "../Images/Fire_HDT_Horn.png";
+import FireHDTHeart from "../Images/Fire_HDT_Heart.png";
+import Orichalcum from "../Images/Orichalcum.png";
+import Rupies from "../Images/Rupees.png";
+
 import Refine from "../Images/Refine.PNG";
 import Unbind from "../Images/Unbind.PNG";
 import WeaponBonus from "../Images/Weapon_Bonus.PNG";
@@ -30,6 +37,13 @@ import FireHDTManacasterCost from "./FireHDTManacasterMats"
 
 export default function FireHDTWeapons() {
     const [fireHWeaponChoice, setFireHWeaponChoiceState] = useLocalStorage("fireHWeaponChoice", "sword")
+
+    const [allwbFHSphereCount, setallwbFHSphereCount] = useLocalStorage("allwbFHSphereCount", 4500)
+    const [allwbFHTailCount, setallwbFHTailCount] = useLocalStorage("allwbFHTailCount", 3240)
+    const [allwbFHHeartCount, setallwbFHHeartCount] = useLocalStorage("allwbFHHeartCount", 720)
+    const [allwbFHHornCount, setallwbFHHornCount] = useLocalStorage("allwbFHHornCount", 810)
+    const [allwbFHOriCount, setallwbFHOriCount] = useLocalStorage("allwbFHOriCount", 414)
+    const [allwbFHRupeeCost, setallwbFHRupeeCost] = useLocalStorage("allwbFHRupeeCost", 225)
 
     const [fireHSwordCraftState, setFireHSwordCraftState] = useLocalStorage("fireHSwordCraftState", "grayscale(100%)")
     const [fireHSwordWeaponBonusState, setFireHSwordWeaponBonusState] = useLocalStorage("fireHSwordWeaponBonusState", "grayscale(100%)")
@@ -202,6 +216,11 @@ export default function FireHDTWeapons() {
             setwbFHHeartCountState(wbFHHeartCount - 5)
             setwbFHOriCountState(wbFHOriCount - 1)
             setwbFHRupeeCost(parseFloat(wbFHRupeeCost - 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount - 25)
+            setallwbFHTailCount(allwbFHTailCount - 18)
+            setallwbFHHeartCount(allwbFHHeartCount - 5)
+            setallwbFHOriCount(allwbFHOriCount - 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
         }
         else if (fireHSwordCraftState == "grayscale(0%)") {
             setFireHSwordCraftState("grayscale(100%)")
@@ -211,6 +230,11 @@ export default function FireHDTWeapons() {
             setwbFHHeartCountState(wbFHHeartCount + 5)
             setwbFHOriCountState(wbFHOriCount + 1)
             setwbFHRupeeCost(parseFloat(wbFHRupeeCost + 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount + 25)
+            setallwbFHTailCount(allwbFHTailCount + 18)
+            setallwbFHHeartCount(allwbFHHeartCount + 5)
+            setallwbFHOriCount(allwbFHOriCount + 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
         }
     }
 
@@ -224,6 +248,12 @@ export default function FireHDTWeapons() {
             setwbFHHeartCountState(wbFHHeartCount - 10)
             setwbFHOriCountState(wbFHOriCount - 30)
             setwbFHRupeeCost(parseFloat(wbFHRupeeCost - 10))
+            setallwbFHSphereCount(allwbFHSphereCount - 150)
+            setallwbFHTailCount(allwbFHTailCount - 100)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 10))
         }
         else if (fireHSwordWeaponBonusState == "grayscale(0%)") {
             setFireHSwordWeaponBonusState("grayscale(100%)")
@@ -234,6 +264,12 @@ export default function FireHDTWeapons() {
             setwbFHHeartCountState(wbFHHeartCount + 10)
             setwbFHOriCountState(wbFHOriCount + 30)
             setwbFHRupeeCost(parseFloat(wbFHRupeeCost + 10))
+            setallwbFHSphereCount(allwbFHSphereCount + 150)
+            setallwbFHTailCount(allwbFHTailCount + 100)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 10))
         }
     }
 
@@ -247,6 +283,12 @@ export default function FireHDTWeapons() {
             setwbFHHeartCountState(wbFHHeartCount - 10)
             setwbFHOriCountState(wbFHOriCount - 3)
             setwbFHRupeeCost(parseFloat(wbFHRupeeCost - 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount - 50)
+            setallwbFHTailCount(allwbFHTailCount - 40)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.5))
         }
         else if (fireHSwordRefineState == "grayscale(0%)") {
             setFireHSwordRefineState("grayscale(100%)")
@@ -257,6 +299,12 @@ export default function FireHDTWeapons() {
             setwbFHHeartCountState(wbFHHeartCount + 10)
             setwbFHOriCountState(wbFHOriCount + 3)
             setwbFHRupeeCost(parseFloat(wbFHRupeeCost + 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount + 50)
+            setallwbFHTailCount(allwbFHTailCount + 40)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.5))
         }
     }
 
@@ -271,6 +319,11 @@ export default function FireHDTWeapons() {
                     setwbFHHeartCountState(wbFHHeartCount - 5)
                     setwbFHOriCountState(wbFHOriCount - 1)
                     setwbFHRupeeCost(parseFloat(wbFHRupeeCost - 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount - 25)
+                    setallwbFHTailCount(allwbFHTailCount - 18)
+                    setallwbFHHeartCount(allwbFHHeartCount - 5)
+                    setallwbFHOriCount(allwbFHOriCount - 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbFHSphereCountState(wbFHSphereCount - 175)
@@ -279,6 +332,12 @@ export default function FireHDTWeapons() {
                     setwbFHHeartCountState(wbFHHeartCount - 35)
                     setwbFHOriCountState(wbFHOriCount - 8)
                     setwbFHRupeeCost(parseFloat(wbFHRupeeCost - 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount - 175)
+                    setallwbFHTailCount(allwbFHTailCount - 130)
+                    setallwbFHHornCount(allwbFHHornCount - 30)
+                    setallwbFHHeartCount(allwbFHHeartCount - 35)
+                    setallwbFHOriCount(allwbFHOriCount - 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 7.5))
                 }
             }
         }
@@ -291,6 +350,11 @@ export default function FireHDTWeapons() {
                     setwbFHHeartCountState(wbFHHeartCount + 5)
                     setwbFHOriCountState(wbFHOriCount + 1)
                     setwbFHRupeeCost(parseFloat(wbFHRupeeCost + 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount + 25)
+                    setallwbFHTailCount(allwbFHTailCount + 18)
+                    setallwbFHHeartCount(allwbFHHeartCount + 5)
+                    setallwbFHOriCount(allwbFHOriCount + 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbFHSphereCountState(wbFHSphereCount + 175)
@@ -299,6 +363,12 @@ export default function FireHDTWeapons() {
                     setwbFHHeartCountState(wbFHHeartCount + 35)
                     setwbFHOriCountState(wbFHOriCount + 8)
                     setwbFHRupeeCost(parseFloat(wbFHRupeeCost + 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount + 175)
+                    setallwbFHTailCount(allwbFHTailCount + 130)
+                    setallwbFHHornCount(allwbFHHornCount + 30)
+                    setallwbFHHeartCount(allwbFHHeartCount + 35)
+                    setallwbFHOriCount(allwbFHOriCount + 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 7.5))
                 }
             }
         }
@@ -313,6 +383,11 @@ export default function FireHDTWeapons() {
             setwbFHBlHeartCountState(wbFHBlHeartCount - 5)
             setwbFHBlOriCountState(wbFHBlOriCount - 1)
             setwbFHBlRupeeCost(parseFloat(wbFHBlRupeeCost - 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount - 25)
+            setallwbFHTailCount(allwbFHTailCount - 18)
+            setallwbFHHeartCount(allwbFHHeartCount - 5)
+            setallwbFHOriCount(allwbFHOriCount - 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
         }
         else if (fireHBladeCraftState == "grayscale(0%)") {
             setFireHBladeCraftState("grayscale(100%)")
@@ -322,6 +397,11 @@ export default function FireHDTWeapons() {
             setwbFHBlHeartCountState(wbFHBlHeartCount + 5)
             setwbFHBlOriCountState(wbFHBlOriCount + 1)
             setwbFHBlRupeeCost(parseFloat(wbFHBlRupeeCost + 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount + 25)
+            setallwbFHTailCount(allwbFHTailCount + 18)
+            setallwbFHHeartCount(allwbFHHeartCount + 5)
+            setallwbFHOriCount(allwbFHOriCount + 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
         }
     }
 
@@ -335,6 +415,12 @@ export default function FireHDTWeapons() {
             setwbFHBlHeartCountState(wbFHBlHeartCount - 10)
             setwbFHBlOriCountState(wbFHBlOriCount - 30)
             setwbFHBlRupeeCost(parseFloat(wbFHBlRupeeCost - 10))
+            setallwbFHSphereCount(allwbFHSphereCount - 150)
+            setallwbFHTailCount(allwbFHTailCount - 100)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 10))
         }
         else if (fireHBladeWeaponBonusState == "grayscale(0%)") {
             setFireHBladeWeaponBonusState("grayscale(100%)")
@@ -345,6 +431,12 @@ export default function FireHDTWeapons() {
             setwbFHBlHeartCountState(wbFHBlHeartCount + 10)
             setwbFHBlOriCountState(wbFHBlOriCount + 30)
             setwbFHBlRupeeCost(parseFloat(wbFHBlRupeeCost + 10))
+            setallwbFHSphereCount(allwbFHSphereCount + 150)
+            setallwbFHTailCount(allwbFHTailCount + 100)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 10))
         }
     }
 
@@ -358,6 +450,12 @@ export default function FireHDTWeapons() {
             setwbFHBlHeartCountState(wbFHBlHeartCount - 10)
             setwbFHBlOriCountState(wbFHBlOriCount - 3)
             setwbFHBlRupeeCost(parseFloat(wbFHBlRupeeCost - 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount - 50)
+            setallwbFHTailCount(allwbFHTailCount - 40)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.5))
         }
         else if (fireHBladeRefineState == "grayscale(0%)") {
             setFireHBladeRefineState("grayscale(100%)")
@@ -368,6 +466,12 @@ export default function FireHDTWeapons() {
             setwbFHBlHeartCountState(wbFHBlHeartCount + 10)
             setwbFHBlOriCountState(wbFHBlOriCount + 3)
             setwbFHBlRupeeCost(parseFloat(wbFHBlRupeeCost + 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount + 50)
+            setallwbFHTailCount(allwbFHTailCount + 40)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.5))
         }
     }
 
@@ -382,6 +486,11 @@ export default function FireHDTWeapons() {
                     setwbFHBlHeartCountState(wbFHBlHeartCount - 5)
                     setwbFHBlOriCountState(wbFHBlOriCount - 1)
                     setwbFHBlRupeeCost(parseFloat(wbFHBlRupeeCost - 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount - 25)
+                    setallwbFHTailCount(allwbFHTailCount - 18)
+                    setallwbFHHeartCount(allwbFHHeartCount - 5)
+                    setallwbFHOriCount(allwbFHOriCount - 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbFHBlSphereCountState(wbFHBlSphereCount - 175)
@@ -390,6 +499,12 @@ export default function FireHDTWeapons() {
                     setwbFHBlHeartCountState(wbFHBlHeartCount - 35)
                     setwbFHBlOriCountState(wbFHBlOriCount - 8)
                     setwbFHBlRupeeCost(parseFloat(wbFHBlRupeeCost - 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount - 175)
+                    setallwbFHTailCount(allwbFHTailCount - 130)
+                    setallwbFHHornCount(allwbFHHornCount - 30)
+                    setallwbFHHeartCount(allwbFHHeartCount - 35)
+                    setallwbFHOriCount(allwbFHOriCount - 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 7.5))
                 }
             }
         }
@@ -402,6 +517,11 @@ export default function FireHDTWeapons() {
                     setwbFHBlHeartCountState(wbFHBlHeartCount + 5)
                     setwbFHBlOriCountState(wbFHBlOriCount + 1)
                     setwbFHBlRupeeCost(parseFloat(wbFHBlRupeeCost + 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount + 25)
+                    setallwbFHTailCount(allwbFHTailCount + 18)
+                    setallwbFHHeartCount(allwbFHHeartCount + 5)
+                    setallwbFHOriCount(allwbFHOriCount + 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbFHBlSphereCountState(wbFHBlSphereCount + 175)
@@ -410,6 +530,12 @@ export default function FireHDTWeapons() {
                     setwbFHBlHeartCountState(wbFHBlHeartCount + 35)
                     setwbFHBlOriCountState(wbFHBlOriCount + 8)
                     setwbFHBlRupeeCost(parseFloat(wbFHBlRupeeCost + 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount + 175)
+                    setallwbFHTailCount(allwbFHTailCount + 130)
+                    setallwbFHHornCount(allwbFHHornCount + 30)
+                    setallwbFHHeartCount(allwbFHHeartCount + 35)
+                    setallwbFHOriCount(allwbFHOriCount + 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 7.5))
                 }
             }
         }
@@ -424,6 +550,11 @@ export default function FireHDTWeapons() {
             setwbFHDHeartCountState(wbFHDHeartCount - 5)
             setwbFHDOriCountState(wbFHDOriCount - 1)
             setwbFHDRupeeCost(parseFloat(wbFHDRupeeCost - 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount - 25)
+            setallwbFHTailCount(allwbFHTailCount - 18)
+            setallwbFHHeartCount(allwbFHHeartCount - 5)
+            setallwbFHOriCount(allwbFHOriCount - 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
         }
         else if (fireHDaggerCraftState == "grayscale(0%)") {
             setFireHDaggerCraftState("grayscale(100%)")
@@ -433,6 +564,11 @@ export default function FireHDTWeapons() {
             setwbFHDHeartCountState(wbFHDHeartCount + 5)
             setwbFHDOriCountState(wbFHDOriCount + 1)
             setwbFHDRupeeCost(parseFloat(wbFHDRupeeCost + 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount + 25)
+            setallwbFHTailCount(allwbFHTailCount + 18)
+            setallwbFHHeartCount(allwbFHHeartCount + 5)
+            setallwbFHOriCount(allwbFHOriCount + 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
         }
     }
 
@@ -446,6 +582,12 @@ export default function FireHDTWeapons() {
             setwbFHDHeartCountState(wbFHDHeartCount - 10)
             setwbFHDOriCountState(wbFHDOriCount - 30)
             setwbFHDRupeeCost(parseFloat(wbFHDRupeeCost - 10))
+            setallwbFHSphereCount(allwbFHSphereCount - 150)
+            setallwbFHTailCount(allwbFHTailCount - 100)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 10))
         }
         else if (fireHDaggerWeaponBonusState == "grayscale(0%)") {
             setFireHDaggerWeaponBonusState("grayscale(100%)")
@@ -456,6 +598,12 @@ export default function FireHDTWeapons() {
             setwbFHDHeartCountState(wbFHDHeartCount + 10)
             setwbFHDOriCountState(wbFHDOriCount + 30)
             setwbFHDRupeeCost(parseFloat(wbFHDRupeeCost + 10))
+            setallwbFHSphereCount(allwbFHSphereCount + 150)
+            setallwbFHTailCount(allwbFHTailCount + 100)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 10))
         }
     }
 
@@ -469,6 +617,12 @@ export default function FireHDTWeapons() {
             setwbFHDHeartCountState(wbFHDHeartCount - 10)
             setwbFHDOriCountState(wbFHDOriCount - 3)
             setwbFHDRupeeCost(parseFloat(wbFHDRupeeCost - 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount - 50)
+            setallwbFHTailCount(allwbFHTailCount - 40)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.5))
         }
         else if (fireHDaggerRefineState == "grayscale(0%)") {
             setFireHDaggerRefineState("grayscale(100%)")
@@ -479,6 +633,12 @@ export default function FireHDTWeapons() {
             setwbFHDHeartCountState(wbFHDHeartCount + 10)
             setwbFHDOriCountState(wbFHDOriCount + 3)
             setwbFHDRupeeCost(parseFloat(wbFHDRupeeCost + 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount + 50)
+            setallwbFHTailCount(allwbFHTailCount + 40)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.5))
         }
     }
 
@@ -493,6 +653,11 @@ export default function FireHDTWeapons() {
                     setwbFHDHeartCountState(wbFHDHeartCount - 5)
                     setwbFHDOriCountState(wbFHDOriCount - 1)
                     setwbFHDRupeeCost(parseFloat(wbFHDRupeeCost - 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount - 25)
+                    setallwbFHTailCount(allwbFHTailCount - 18)
+                    setallwbFHHeartCount(allwbFHHeartCount - 5)
+                    setallwbFHOriCount(allwbFHOriCount - 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbFHDSphereCountState(wbFHDSphereCount - 175)
@@ -501,6 +666,12 @@ export default function FireHDTWeapons() {
                     setwbFHDHeartCountState(wbFHDHeartCount - 35)
                     setwbFHDOriCountState(wbFHDOriCount - 8)
                     setwbFHDRupeeCost(parseFloat(wbFHDRupeeCost - 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount - 175)
+                    setallwbFHTailCount(allwbFHTailCount - 130)
+                    setallwbFHHornCount(allwbFHHornCount - 30)
+                    setallwbFHHeartCount(allwbFHHeartCount - 35)
+                    setallwbFHOriCount(allwbFHOriCount - 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 7.5))
                 }
             }
         }
@@ -513,6 +684,11 @@ export default function FireHDTWeapons() {
                     setwbFHDHeartCountState(wbFHDHeartCount + 5)
                     setwbFHDOriCountState(wbFHDOriCount + 1)
                     setwbFHDRupeeCost(parseFloat(wbFHDRupeeCost + 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount + 25)
+                    setallwbFHTailCount(allwbFHTailCount + 18)
+                    setallwbFHHeartCount(allwbFHHeartCount + 5)
+                    setallwbFHOriCount(allwbFHOriCount + 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbFHDSphereCountState(wbFHDSphereCount + 175)
@@ -521,6 +697,12 @@ export default function FireHDTWeapons() {
                     setwbFHDHeartCountState(wbFHDHeartCount + 35)
                     setwbFHDOriCountState(wbFHDOriCount + 8)
                     setwbFHDRupeeCost(parseFloat(wbFHDRupeeCost + 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount + 175)
+                    setallwbFHTailCount(allwbFHTailCount + 130)
+                    setallwbFHHornCount(allwbFHHornCount + 30)
+                    setallwbFHHeartCount(allwbFHHeartCount + 35)
+                    setallwbFHOriCount(allwbFHOriCount + 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 7.5))
                 }
             }
         }
@@ -535,6 +717,11 @@ export default function FireHDTWeapons() {
             setwbFHAHeartCountState(wbFHAHeartCount - 5)
             setwbFHAOriCountState(wbFHAOriCount - 1)
             setwbFHARupeeCost(parseFloat(wbFHARupeeCost - 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount - 25)
+            setallwbFHTailCount(allwbFHTailCount - 18)
+            setallwbFHHeartCount(allwbFHHeartCount - 5)
+            setallwbFHOriCount(allwbFHOriCount - 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
         }
         else if (fireHAxeCraftState == "grayscale(0%)") {
             setFireHAxeCraftState("grayscale(100%)")
@@ -544,6 +731,11 @@ export default function FireHDTWeapons() {
             setwbFHAHeartCountState(wbFHAHeartCount + 5)
             setwbFHAOriCountState(wbFHAOriCount + 1)
             setwbFHARupeeCost(parseFloat(wbFHARupeeCost + 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount + 25)
+            setallwbFHTailCount(allwbFHTailCount + 18)
+            setallwbFHHeartCount(allwbFHHeartCount + 5)
+            setallwbFHOriCount(allwbFHOriCount + 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
         }
     }
 
@@ -557,6 +749,12 @@ export default function FireHDTWeapons() {
             setwbFHAHeartCountState(wbFHAHeartCount - 10)
             setwbFHAOriCountState(wbFHAOriCount - 30)
             setwbFHARupeeCost(parseFloat(wbFHARupeeCost - 10))
+            setallwbFHSphereCount(allwbFHSphereCount - 150)
+            setallwbFHTailCount(allwbFHTailCount - 100)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 10))
         }
         else if (fireHAxeWeaponBonusState == "grayscale(0%)") {
             setFireHAxeWeaponBonusState("grayscale(100%)")
@@ -567,6 +765,12 @@ export default function FireHDTWeapons() {
             setwbFHAHeartCountState(wbFHAHeartCount + 10)
             setwbFHAOriCountState(wbFHAOriCount + 30)
             setwbFHARupeeCost(parseFloat(wbFHARupeeCost + 10))
+            setallwbFHSphereCount(allwbFHSphereCount + 150)
+            setallwbFHTailCount(allwbFHTailCount + 100)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 10))
         }
     }
 
@@ -580,6 +784,12 @@ export default function FireHDTWeapons() {
             setwbFHAHeartCountState(wbFHAHeartCount - 10)
             setwbFHAOriCountState(wbFHAOriCount - 3)
             setwbFHARupeeCost(parseFloat(wbFHARupeeCost - 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount - 50)
+            setallwbFHTailCount(allwbFHTailCount - 40)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.5))
         }
         else if (fireHAxeRefineState == "grayscale(0%)") {
             setFireHAxeRefineState("grayscale(100%)")
@@ -590,6 +800,12 @@ export default function FireHDTWeapons() {
             setwbFHAHeartCountState(wbFHAHeartCount + 10)
             setwbFHAOriCountState(wbFHAOriCount + 3)
             setwbFHARupeeCost(parseFloat(wbFHARupeeCost + 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount + 50)
+            setallwbFHTailCount(allwbFHTailCount + 40)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.5))
         }
     }
 
@@ -604,6 +820,11 @@ export default function FireHDTWeapons() {
                     setwbFHAHeartCountState(wbFHAHeartCount - 5)
                     setwbFHAOriCountState(wbFHAOriCount - 1)
                     setwbFHARupeeCost(parseFloat(wbFHARupeeCost - 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount - 25)
+                    setallwbFHTailCount(allwbFHTailCount - 18)
+                    setallwbFHHeartCount(allwbFHHeartCount - 5)
+                    setallwbFHOriCount(allwbFHOriCount - 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbFHASphereCountState(wbFHASphereCount - 175)
@@ -612,6 +833,12 @@ export default function FireHDTWeapons() {
                     setwbFHAHeartCountState(wbFHAHeartCount - 35)
                     setwbFHAOriCountState(wbFHAOriCount - 8)
                     setwbFHARupeeCost(parseFloat(wbFHARupeeCost - 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount - 175)
+                    setallwbFHTailCount(allwbFHTailCount - 130)
+                    setallwbFHHornCount(allwbFHHornCount - 30)
+                    setallwbFHHeartCount(allwbFHHeartCount - 35)
+                    setallwbFHOriCount(allwbFHOriCount - 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 7.5))
                 }
             }
         }
@@ -624,6 +851,11 @@ export default function FireHDTWeapons() {
                     setwbFHAHeartCountState(wbFHAHeartCount + 5)
                     setwbFHAOriCountState(wbFHAOriCount + 1)
                     setwbFHARupeeCost(parseFloat(wbFHARupeeCost + 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount + 25)
+                    setallwbFHTailCount(allwbFHTailCount + 18)
+                    setallwbFHHeartCount(allwbFHHeartCount + 5)
+                    setallwbFHOriCount(allwbFHOriCount + 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbFHASphereCountState(wbFHASphereCount + 175)
@@ -632,6 +864,12 @@ export default function FireHDTWeapons() {
                     setwbFHAHeartCountState(wbFHAHeartCount + 35)
                     setwbFHAOriCountState(wbFHAOriCount + 8)
                     setwbFHARupeeCost(parseFloat(wbFHARupeeCost + 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount + 175)
+                    setallwbFHTailCount(allwbFHTailCount + 130)
+                    setallwbFHHornCount(allwbFHHornCount + 30)
+                    setallwbFHHeartCount(allwbFHHeartCount + 35)
+                    setallwbFHOriCount(allwbFHOriCount + 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 7.5))
                 }
             }
         }
@@ -646,6 +884,11 @@ export default function FireHDTWeapons() {
             setwbFHLHeartCountState(wbFHLHeartCount - 5)
             setwbFHLOriCountState(wbFHLOriCount - 1)
             setwbFHLRupeeCost(parseFloat(wbFHLRupeeCost - 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount - 25)
+            setallwbFHTailCount(allwbFHTailCount - 18)
+            setallwbFHHeartCount(allwbFHHeartCount - 5)
+            setallwbFHOriCount(allwbFHOriCount - 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
         }
         else if (fireHLanceCraftState == "grayscale(0%)") {
             setFireHLanceCraftState("grayscale(100%)")
@@ -655,6 +898,11 @@ export default function FireHDTWeapons() {
             setwbFHLHeartCountState(wbFHLHeartCount + 5)
             setwbFHLOriCountState(wbFHLOriCount + 1)
             setwbFHLRupeeCost(parseFloat(wbFHLRupeeCost + 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount + 25)
+            setallwbFHTailCount(allwbFHTailCount + 18)
+            setallwbFHHeartCount(allwbFHHeartCount + 5)
+            setallwbFHOriCount(allwbFHOriCount + 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
         }
     }
 
@@ -668,6 +916,12 @@ export default function FireHDTWeapons() {
             setwbFHLHeartCountState(wbFHLHeartCount - 10)
             setwbFHLOriCountState(wbFHLOriCount - 30)
             setwbFHLRupeeCost(parseFloat(wbFHLRupeeCost - 10))
+            setallwbFHSphereCount(allwbFHSphereCount - 150)
+            setallwbFHTailCount(allwbFHTailCount - 100)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 10))
         }
         else if (fireHLanceWeaponBonusState == "grayscale(0%)") {
             setFireHLanceWeaponBonusState("grayscale(100%)")
@@ -678,6 +932,12 @@ export default function FireHDTWeapons() {
             setwbFHLHeartCountState(wbFHLHeartCount + 10)
             setwbFHLOriCountState(wbFHLOriCount + 30)
             setwbFHLRupeeCost(parseFloat(wbFHLRupeeCost + 10))
+            setallwbFHSphereCount(allwbFHSphereCount + 150)
+            setallwbFHTailCount(allwbFHTailCount + 100)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 10))
         }
     }
 
@@ -691,6 +951,12 @@ export default function FireHDTWeapons() {
             setwbFHLHeartCountState(wbFHLHeartCount - 10)
             setwbFHLOriCountState(wbFHLOriCount - 3)
             setwbFHLRupeeCost(parseFloat(wbFHLRupeeCost - 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount - 50)
+            setallwbFHTailCount(allwbFHTailCount - 40)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.5))
         }
         else if (fireHLanceRefineState == "grayscale(0%)") {
             setFireHLanceRefineState("grayscale(100%)")
@@ -701,6 +967,12 @@ export default function FireHDTWeapons() {
             setwbFHLHeartCountState(wbFHLHeartCount + 10)
             setwbFHLOriCountState(wbFHLOriCount + 3)
             setwbFHLRupeeCost(parseFloat(wbFHLRupeeCost + 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount + 50)
+            setallwbFHTailCount(allwbFHTailCount + 40)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.5))
         }
     }
 
@@ -715,6 +987,11 @@ export default function FireHDTWeapons() {
                     setwbFHLHeartCountState(wbFHLHeartCount - 5)
                     setwbFHLOriCountState(wbFHLOriCount - 1)
                     setwbFHLRupeeCost(parseFloat(wbFHLRupeeCost - 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount - 25)
+                    setallwbFHTailCount(allwbFHTailCount - 18)
+                    setallwbFHHeartCount(allwbFHHeartCount - 5)
+                    setallwbFHOriCount(allwbFHOriCount - 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbFHLSphereCountState(wbFHLSphereCount - 175)
@@ -723,6 +1000,12 @@ export default function FireHDTWeapons() {
                     setwbFHLHeartCountState(wbFHLHeartCount - 35)
                     setwbFHLOriCountState(wbFHLOriCount - 8)
                     setwbFHLRupeeCost(parseFloat(wbFHLRupeeCost - 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount - 175)
+                    setallwbFHTailCount(allwbFHTailCount - 130)
+                    setallwbFHHornCount(allwbFHHornCount - 30)
+                    setallwbFHHeartCount(allwbFHHeartCount - 35)
+                    setallwbFHOriCount(allwbFHOriCount - 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 7.5))
                 }
             }
         }
@@ -735,6 +1018,11 @@ export default function FireHDTWeapons() {
                     setwbFHLHeartCountState(wbFHLHeartCount + 5)
                     setwbFHLOriCountState(wbFHLOriCount + 1)
                     setwbFHLRupeeCost(parseFloat(wbFHLRupeeCost + 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount + 25)
+                    setallwbFHTailCount(allwbFHTailCount + 18)
+                    setallwbFHHeartCount(allwbFHHeartCount + 5)
+                    setallwbFHOriCount(allwbFHOriCount + 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbFHLSphereCountState(wbFHLSphereCount + 175)
@@ -743,6 +1031,12 @@ export default function FireHDTWeapons() {
                     setwbFHLHeartCountState(wbFHLHeartCount + 35)
                     setwbFHLOriCountState(wbFHLOriCount + 8)
                     setwbFHLRupeeCost(parseFloat(wbFHLRupeeCost + 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount + 175)
+                    setallwbFHTailCount(allwbFHTailCount + 130)
+                    setallwbFHHornCount(allwbFHHornCount + 30)
+                    setallwbFHHeartCount(allwbFHHeartCount + 35)
+                    setallwbFHOriCount(allwbFHOriCount + 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 7.5))
                 }
             }
         }
@@ -757,6 +1051,11 @@ export default function FireHDTWeapons() {
             setwbFHBoHeartCountState(wbFHBoHeartCount - 5)
             setwbFHBoOriCountState(wbFHBoOriCount - 1)
             setwbFHBoRupeeCost(parseFloat(wbFHBoRupeeCost - 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount - 25)
+            setallwbFHTailCount(allwbFHTailCount - 18)
+            setallwbFHHeartCount(allwbFHHeartCount - 5)
+            setallwbFHOriCount(allwbFHOriCount - 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
         }
         else if (fireHBowCraftState == "grayscale(0%)") {
             setFireHBowCraftState("grayscale(100%)")
@@ -766,6 +1065,11 @@ export default function FireHDTWeapons() {
             setwbFHBoHeartCountState(wbFHBoHeartCount + 5)
             setwbFHBoOriCountState(wbFHBoOriCount + 1)
             setwbFHBoRupeeCost(parseFloat(wbFHBoRupeeCost + 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount + 25)
+            setallwbFHTailCount(allwbFHTailCount + 18)
+            setallwbFHHeartCount(allwbFHHeartCount + 5)
+            setallwbFHOriCount(allwbFHOriCount + 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
         }
     }
 
@@ -779,6 +1083,12 @@ export default function FireHDTWeapons() {
             setwbFHBoHeartCountState(wbFHBoHeartCount - 10)
             setwbFHBoOriCountState(wbFHBoOriCount - 30)
             setwbFHBoRupeeCost(parseFloat(wbFHBoRupeeCost - 10))
+            setallwbFHSphereCount(allwbFHSphereCount - 150)
+            setallwbFHTailCount(allwbFHTailCount - 100)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 10))
         }
         else if (fireHBowWeaponBonusState == "grayscale(0%)") {
             setFireHBowWeaponBonusState("grayscale(100%)")
@@ -789,6 +1099,12 @@ export default function FireHDTWeapons() {
             setwbFHBoHeartCountState(wbFHBoHeartCount + 10)
             setwbFHBoOriCountState(wbFHBoOriCount + 30)
             setwbFHBoRupeeCost(parseFloat(wbFHBoRupeeCost + 10))
+            setallwbFHSphereCount(allwbFHSphereCount + 150)
+            setallwbFHTailCount(allwbFHTailCount + 100)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 10))
         }
     }
 
@@ -802,6 +1118,12 @@ export default function FireHDTWeapons() {
             setwbFHBoHeartCountState(wbFHBoHeartCount - 10)
             setwbFHBoOriCountState(wbFHBoOriCount - 3)
             setwbFHBoRupeeCost(parseFloat(wbFHBoRupeeCost - 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount - 50)
+            setallwbFHTailCount(allwbFHTailCount - 40)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.5))
         }
         else if (fireHBowRefineState == "grayscale(0%)") {
             setFireHBowRefineState("grayscale(100%)")
@@ -812,6 +1134,12 @@ export default function FireHDTWeapons() {
             setwbFHBoHeartCountState(wbFHBoHeartCount + 10)
             setwbFHBoOriCountState(wbFHBoOriCount + 3)
             setwbFHBoRupeeCost(parseFloat(wbFHBoRupeeCost + 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount + 50)
+            setallwbFHTailCount(allwbFHTailCount + 40)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.5))
         }
     }
 
@@ -826,6 +1154,11 @@ export default function FireHDTWeapons() {
                     setwbFHBoHeartCountState(wbFHBoHeartCount - 5)
                     setwbFHBoOriCountState(wbFHBoOriCount - 1)
                     setwbFHBoRupeeCost(parseFloat(wbFHBoRupeeCost - 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount - 25)
+                    setallwbFHTailCount(allwbFHTailCount - 18)
+                    setallwbFHHeartCount(allwbFHHeartCount - 5)
+                    setallwbFHOriCount(allwbFHOriCount - 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbFHBoSphereCountState(wbFHBoSphereCount - 175)
@@ -834,6 +1167,12 @@ export default function FireHDTWeapons() {
                     setwbFHBoHeartCountState(wbFHBoHeartCount - 35)
                     setwbFHBoOriCountState(wbFHBoOriCount - 8)
                     setwbFHBoRupeeCost(parseFloat(wbFHBoRupeeCost - 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount - 175)
+                    setallwbFHTailCount(allwbFHTailCount - 130)
+                    setallwbFHHornCount(allwbFHHornCount - 30)
+                    setallwbFHHeartCount(allwbFHHeartCount - 35)
+                    setallwbFHOriCount(allwbFHOriCount - 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 7.5))
                 }
             }
         }
@@ -846,6 +1185,11 @@ export default function FireHDTWeapons() {
                     setwbFHBoHeartCountState(wbFHBoHeartCount + 5)
                     setwbFHBoOriCountState(wbFHBoOriCount + 1)
                     setwbFHBoRupeeCost(parseFloat(wbFHBoRupeeCost + 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount + 25)
+                    setallwbFHTailCount(allwbFHTailCount + 18)
+                    setallwbFHHeartCount(allwbFHHeartCount + 5)
+                    setallwbFHOriCount(allwbFHOriCount + 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbFHBoSphereCountState(wbFHBoSphereCount + 175)
@@ -854,6 +1198,12 @@ export default function FireHDTWeapons() {
                     setwbFHBoHeartCountState(wbFHBoHeartCount + 35)
                     setwbFHBoOriCountState(wbFHBoOriCount + 8)
                     setwbFHBoRupeeCost(parseFloat(wbFHBoRupeeCost + 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount + 175)
+                    setallwbFHTailCount(allwbFHTailCount + 130)
+                    setallwbFHHornCount(allwbFHHornCount + 30)
+                    setallwbFHHeartCount(allwbFHHeartCount + 35)
+                    setallwbFHOriCount(allwbFHOriCount + 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 7.5))
                 }
             }
         }
@@ -868,6 +1218,11 @@ export default function FireHDTWeapons() {
             setwbFHWHeartCountState(wbFHWHeartCount - 5)
             setwbFHWOriCountState(wbFHWOriCount - 1)
             setwbFHWRupeeCost(parseFloat(wbFHWRupeeCost - 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount - 25)
+            setallwbFHTailCount(allwbFHTailCount - 18)
+            setallwbFHHeartCount(allwbFHHeartCount - 5)
+            setallwbFHOriCount(allwbFHOriCount - 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
         }
         else if (fireHWandCraftState == "grayscale(0%)") {
             setFireHWandCraftState("grayscale(100%)")
@@ -877,6 +1232,11 @@ export default function FireHDTWeapons() {
             setwbFHWHeartCountState(wbFHWHeartCount + 5)
             setwbFHWOriCountState(wbFHWOriCount + 1)
             setwbFHWRupeeCost(parseFloat(wbFHWRupeeCost + 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount + 25)
+            setallwbFHTailCount(allwbFHTailCount + 18)
+            setallwbFHHeartCount(allwbFHHeartCount + 5)
+            setallwbFHOriCount(allwbFHOriCount + 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
         }
     }
 
@@ -890,6 +1250,12 @@ export default function FireHDTWeapons() {
             setwbFHWHeartCountState(wbFHWHeartCount - 10)
             setwbFHWOriCountState(wbFHWOriCount - 30)
             setwbFHWRupeeCost(parseFloat(wbFHWRupeeCost - 10))
+            setallwbFHSphereCount(allwbFHSphereCount - 150)
+            setallwbFHTailCount(allwbFHTailCount - 100)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 10))
         }
         else if (fireHWandWeaponBonusState == "grayscale(0%)") {
             setFireHWandWeaponBonusState("grayscale(100%)")
@@ -900,6 +1266,12 @@ export default function FireHDTWeapons() {
             setwbFHWHeartCountState(wbFHWHeartCount + 10)
             setwbFHWOriCountState(wbFHWOriCount + 30)
             setwbFHWRupeeCost(parseFloat(wbFHWRupeeCost + 10))
+            setallwbFHSphereCount(allwbFHSphereCount + 150)
+            setallwbFHTailCount(allwbFHTailCount + 100)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 10))
         }
     }
 
@@ -913,6 +1285,12 @@ export default function FireHDTWeapons() {
             setwbFHWHeartCountState(wbFHWHeartCount - 10)
             setwbFHWOriCountState(wbFHWOriCount - 3)
             setwbFHWRupeeCost(parseFloat(wbFHWRupeeCost - 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount - 50)
+            setallwbFHTailCount(allwbFHTailCount - 40)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.5))
         }
         else if (fireHWandRefineState == "grayscale(0%)") {
             setFireHWandRefineState("grayscale(100%)")
@@ -923,6 +1301,12 @@ export default function FireHDTWeapons() {
             setwbFHWHeartCountState(wbFHWHeartCount + 10)
             setwbFHWOriCountState(wbFHWOriCount + 3)
             setwbFHWRupeeCost(parseFloat(wbFHWRupeeCost + 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount + 50)
+            setallwbFHTailCount(allwbFHTailCount + 40)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.5))
         }
     }
 
@@ -937,6 +1321,11 @@ export default function FireHDTWeapons() {
                     setwbFHWHeartCountState(wbFHWHeartCount - 5)
                     setwbFHWOriCountState(wbFHWOriCount - 1)
                     setwbFHWRupeeCost(parseFloat(wbFHWRupeeCost - 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount - 25)
+                    setallwbFHTailCount(allwbFHTailCount - 18)
+                    setallwbFHHeartCount(allwbFHHeartCount - 5)
+                    setallwbFHOriCount(allwbFHOriCount - 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbFHWSphereCountState(wbFHWSphereCount - 175)
@@ -945,6 +1334,12 @@ export default function FireHDTWeapons() {
                     setwbFHWHeartCountState(wbFHWHeartCount - 35)
                     setwbFHWOriCountState(wbFHWOriCount - 8)
                     setwbFHWRupeeCost(parseFloat(wbFHWRupeeCost - 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount - 175)
+                    setallwbFHTailCount(allwbFHTailCount - 130)
+                    setallwbFHHornCount(allwbFHHornCount - 30)
+                    setallwbFHHeartCount(allwbFHHeartCount - 35)
+                    setallwbFHOriCount(allwbFHOriCount - 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 7.5))
                 }
             }
         }
@@ -957,6 +1352,11 @@ export default function FireHDTWeapons() {
                     setwbFHWHeartCountState(wbFHWHeartCount + 5)
                     setwbFHWOriCountState(wbFHWOriCount + 1)
                     setwbFHWRupeeCost(parseFloat(wbFHWRupeeCost + 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount + 25)
+                    setallwbFHTailCount(allwbFHTailCount + 18)
+                    setallwbFHHeartCount(allwbFHHeartCount + 5)
+                    setallwbFHOriCount(allwbFHOriCount + 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbFHWSphereCountState(wbFHWSphereCount + 175)
@@ -965,6 +1365,12 @@ export default function FireHDTWeapons() {
                     setwbFHWHeartCountState(wbFHWHeartCount + 35)
                     setwbFHWOriCountState(wbFHWOriCount + 8)
                     setwbFHWRupeeCost(parseFloat(wbFHWRupeeCost + 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount + 175)
+                    setallwbFHTailCount(allwbFHTailCount + 130)
+                    setallwbFHHornCount(allwbFHHornCount + 30)
+                    setallwbFHHeartCount(allwbFHHeartCount + 35)
+                    setallwbFHOriCount(allwbFHOriCount + 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 7.5))
                 }
             }
         }
@@ -979,6 +1385,11 @@ export default function FireHDTWeapons() {
             setwbFHStHeartCountState(wbFHStHeartCount - 5)
             setwbFHStOriCountState(wbFHStOriCount - 1)
             setwbFHStRupeeCost(parseFloat(wbFHStRupeeCost - 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount - 25)
+            setallwbFHTailCount(allwbFHTailCount - 18)
+            setallwbFHHeartCount(allwbFHHeartCount - 5)
+            setallwbFHOriCount(allwbFHOriCount - 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
         }
         else if (fireHStaffCraftState == "grayscale(0%)") {
             setFireHStaffCraftState("grayscale(100%)")
@@ -988,6 +1399,11 @@ export default function FireHDTWeapons() {
             setwbFHStHeartCountState(wbFHStHeartCount + 5)
             setwbFHStOriCountState(wbFHStOriCount + 1)
             setwbFHStRupeeCost(parseFloat(wbFHStRupeeCost + 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount + 25)
+            setallwbFHTailCount(allwbFHTailCount + 18)
+            setallwbFHHeartCount(allwbFHHeartCount + 5)
+            setallwbFHOriCount(allwbFHOriCount + 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
         }
     }
 
@@ -1001,6 +1417,12 @@ export default function FireHDTWeapons() {
             setwbFHStHeartCountState(wbFHStHeartCount - 10)
             setwbFHStOriCountState(wbFHStOriCount - 30)
             setwbFHStRupeeCost(parseFloat(wbFHStRupeeCost - 10))
+            setallwbFHSphereCount(allwbFHSphereCount - 150)
+            setallwbFHTailCount(allwbFHTailCount - 100)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 10))
         }
         else if (fireHStaffWeaponBonusState == "grayscale(0%)") {
             setFireHStaffWeaponBonusState("grayscale(100%)")
@@ -1011,6 +1433,12 @@ export default function FireHDTWeapons() {
             setwbFHStHeartCountState(wbFHStHeartCount + 10)
             setwbFHStOriCountState(wbFHStOriCount + 30)
             setwbFHStRupeeCost(parseFloat(wbFHStRupeeCost + 10))
+            setallwbFHSphereCount(allwbFHSphereCount + 150)
+            setallwbFHTailCount(allwbFHTailCount + 100)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 10))
         }
     }
 
@@ -1024,6 +1452,12 @@ export default function FireHDTWeapons() {
             setwbFHStHeartCountState(wbFHStHeartCount - 10)
             setwbFHStOriCountState(wbFHStOriCount - 3)
             setwbFHStRupeeCost(parseFloat(wbFHStRupeeCost - 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount - 50)
+            setallwbFHTailCount(allwbFHTailCount - 40)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.5))
         }
         else if (fireHStaffRefineState == "grayscale(0%)") {
             setFireHStaffRefineState("grayscale(100%)")
@@ -1034,6 +1468,12 @@ export default function FireHDTWeapons() {
             setwbFHStHeartCountState(wbFHStHeartCount + 10)
             setwbFHStOriCountState(wbFHStOriCount + 3)
             setwbFHStRupeeCost(parseFloat(wbFHStRupeeCost + 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount + 50)
+            setallwbFHTailCount(allwbFHTailCount + 40)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.5))
         }
     }
 
@@ -1048,6 +1488,11 @@ export default function FireHDTWeapons() {
                     setwbFHStHeartCountState(wbFHStHeartCount - 5)
                     setwbFHStOriCountState(wbFHStOriCount - 1)
                     setwbFHStRupeeCost(parseFloat(wbFHStRupeeCost - 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount - 25)
+                    setallwbFHTailCount(allwbFHTailCount - 18)
+                    setallwbFHHeartCount(allwbFHHeartCount - 5)
+                    setallwbFHOriCount(allwbFHOriCount - 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbFHStSphereCountState(wbFHStSphereCount - 175)
@@ -1056,6 +1501,12 @@ export default function FireHDTWeapons() {
                     setwbFHStHeartCountState(wbFHStHeartCount - 35)
                     setwbFHStOriCountState(wbFHStOriCount - 8)
                     setwbFHStRupeeCost(parseFloat(wbFHStRupeeCost - 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount - 175)
+                    setallwbFHTailCount(allwbFHTailCount - 130)
+                    setallwbFHHornCount(allwbFHHornCount - 30)
+                    setallwbFHHeartCount(allwbFHHeartCount - 35)
+                    setallwbFHOriCount(allwbFHOriCount - 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 7.5))
                 }
             }
         }
@@ -1068,6 +1519,11 @@ export default function FireHDTWeapons() {
                     setwbFHStHeartCountState(wbFHStHeartCount + 5)
                     setwbFHStOriCountState(wbFHStOriCount + 1)
                     setwbFHStRupeeCost(parseFloat(wbFHStRupeeCost + 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount + 25)
+                    setallwbFHTailCount(allwbFHTailCount + 18)
+                    setallwbFHHeartCount(allwbFHHeartCount + 5)
+                    setallwbFHOriCount(allwbFHOriCount + 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbFHStSphereCountState(wbFHStSphereCount + 175)
@@ -1076,6 +1532,12 @@ export default function FireHDTWeapons() {
                     setwbFHStHeartCountState(wbFHStHeartCount + 35)
                     setwbFHStOriCountState(wbFHStOriCount + 8)
                     setwbFHStRupeeCost(parseFloat(wbFHStRupeeCost + 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount + 175)
+                    setallwbFHTailCount(allwbFHTailCount + 130)
+                    setallwbFHHornCount(allwbFHHornCount + 30)
+                    setallwbFHHeartCount(allwbFHHeartCount + 35)
+                    setallwbFHOriCount(allwbFHOriCount + 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 7.5))
                 }
             }
         }
@@ -1090,6 +1552,11 @@ export default function FireHDTWeapons() {
             setwbFHMHeartCountState(wbFHMHeartCount - 5)
             setwbFHMOriCountState(wbFHMOriCount - 1)
             setwbFHMRupeeCost(parseFloat(wbFHMRupeeCost - 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount - 25)
+            setallwbFHTailCount(allwbFHTailCount - 18)
+            setallwbFHHeartCount(allwbFHHeartCount - 5)
+            setallwbFHOriCount(allwbFHOriCount - 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
         }
         else if (fireHManacasterCraftState == "grayscale(0%)") {
             setFireHManacasterCraftState("grayscale(100%)")
@@ -1099,6 +1566,11 @@ export default function FireHDTWeapons() {
             setwbFHMHeartCountState(wbFHMHeartCount + 5)
             setwbFHMOriCountState(wbFHMOriCount + 1)
             setwbFHMRupeeCost(parseFloat(wbFHMRupeeCost + 1.2))
+            setallwbFHSphereCount(allwbFHSphereCount + 25)
+            setallwbFHTailCount(allwbFHTailCount + 18)
+            setallwbFHHeartCount(allwbFHHeartCount + 5)
+            setallwbFHOriCount(allwbFHOriCount + 1)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
         }
     }
 
@@ -1112,6 +1584,12 @@ export default function FireHDTWeapons() {
             setwbFHMHeartCountState(wbFHMHeartCount - 10)
             setwbFHMOriCountState(wbFHMOriCount - 30)
             setwbFHMRupeeCost(parseFloat(wbFHMRupeeCost - 10))
+            setallwbFHSphereCount(allwbFHSphereCount - 150)
+            setallwbFHTailCount(allwbFHTailCount - 100)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 10))
         }
         else if (fireHManacasterWeaponBonusState == "grayscale(0%)") {
             setFireHManacasterWeaponBonusState("grayscale(100%)")
@@ -1122,6 +1600,12 @@ export default function FireHDTWeapons() {
             setwbFHMHeartCountState(wbFHMHeartCount + 10)
             setwbFHMOriCountState(wbFHMOriCount + 30)
             setwbFHMRupeeCost(parseFloat(wbFHMRupeeCost + 10))
+            setallwbFHSphereCount(allwbFHSphereCount + 150)
+            setallwbFHTailCount(allwbFHTailCount + 100)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 30)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 10))
         }
     }
 
@@ -1135,6 +1619,12 @@ export default function FireHDTWeapons() {
             setwbFHMHeartCountState(wbFHMHeartCount - 10)
             setwbFHMOriCountState(wbFHMOriCount - 3)
             setwbFHMRupeeCost(parseFloat(wbFHMRupeeCost - 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount - 50)
+            setallwbFHTailCount(allwbFHTailCount - 40)
+            setallwbFHHornCount(allwbFHHornCount - 30)
+            setallwbFHHeartCount(allwbFHHeartCount - 10)
+            setallwbFHOriCount(allwbFHOriCount - 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.5))
         }
         else if (fireHManacasterRefineState == "grayscale(0%)") {
             setFireHManacasterRefineState("grayscale(100%)")
@@ -1145,6 +1635,12 @@ export default function FireHDTWeapons() {
             setwbFHMHeartCountState(wbFHMHeartCount + 10)
             setwbFHMOriCountState(wbFHMOriCount + 3)
             setwbFHMRupeeCost(parseFloat(wbFHMRupeeCost + 1.5))
+            setallwbFHSphereCount(allwbFHSphereCount + 50)
+            setallwbFHTailCount(allwbFHTailCount + 40)
+            setallwbFHHornCount(allwbFHHornCount + 30)
+            setallwbFHHeartCount(allwbFHHeartCount + 10)
+            setallwbFHOriCount(allwbFHOriCount + 3)
+            setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.5))
         }
     }
 
@@ -1159,6 +1655,11 @@ export default function FireHDTWeapons() {
                     setwbFHMHeartCountState(wbFHMHeartCount - 5)
                     setwbFHMOriCountState(wbFHMOriCount - 1)
                     setwbFHMRupeeCost(parseFloat(wbFHMRupeeCost - 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount - 25)
+                    setallwbFHTailCount(allwbFHTailCount - 18)
+                    setallwbFHHeartCount(allwbFHHeartCount - 5)
+                    setallwbFHOriCount(allwbFHOriCount - 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbFHMSphereCountState(wbFHMSphereCount - 175)
@@ -1167,6 +1668,12 @@ export default function FireHDTWeapons() {
                     setwbFHMHeartCountState(wbFHMHeartCount - 35)
                     setwbFHMOriCountState(wbFHMOriCount - 8)
                     setwbFHMRupeeCost(parseFloat(wbFHMRupeeCost - 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount - 175)
+                    setallwbFHTailCount(allwbFHTailCount - 130)
+                    setallwbFHHornCount(allwbFHHornCount - 30)
+                    setallwbFHHeartCount(allwbFHHeartCount - 35)
+                    setallwbFHOriCount(allwbFHOriCount - 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost - 7.5))
                 }
             }
         }
@@ -1179,6 +1686,11 @@ export default function FireHDTWeapons() {
                     setwbFHMHeartCountState(wbFHMHeartCount + 5)
                     setwbFHMOriCountState(wbFHMOriCount + 1)
                     setwbFHMRupeeCost(parseFloat(wbFHMRupeeCost + 1.2))
+                    setallwbFHSphereCount(allwbFHSphereCount + 25)
+                    setallwbFHTailCount(allwbFHTailCount + 18)
+                    setallwbFHHeartCount(allwbFHHeartCount + 5)
+                    setallwbFHOriCount(allwbFHOriCount + 1)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbFHMSphereCountState(wbFHMSphereCount + 175)
@@ -1187,6 +1699,12 @@ export default function FireHDTWeapons() {
                     setwbFHMHeartCountState(wbFHMHeartCount + 35)
                     setwbFHMOriCountState(wbFHMOriCount + 8)
                     setwbFHMRupeeCost(parseFloat(wbFHMRupeeCost + 7.5))
+                    setallwbFHSphereCount(allwbFHSphereCount + 175)
+                    setallwbFHTailCount(allwbFHTailCount + 130)
+                    setallwbFHHornCount(allwbFHHornCount + 30)
+                    setallwbFHHeartCount(allwbFHHeartCount + 35)
+                    setallwbFHOriCount(allwbFHOriCount + 8)
+                    setallwbFHRupeeCost(parseFloat(allwbFHRupeeCost + 7.5))
                 }
             }
         }
@@ -1195,376 +1713,429 @@ export default function FireHDTWeapons() {
     return (
         <div>
             <HDTNavTabs />
-            <Flex>
-                <Box width={1 / 2}>
+            <Flex>&nbsp;</Flex>
+            <Flex flexWrap="wrap">
+                <Box width={[6/7, 1 / 2]} p={3} m={3} bg={"#152238"} sx={{ border: "3px solid blue" }}>
                     <Flex>
                         <Box width={2 / 5}>
 
                         </Box>
-                        <Box width={3 / 5}>
-                            Fire HDT Weapons
+                        <Box width={[0, 3 / 5]}>
+                            <Text fontSize={[1, 3]} ml="auto" mr="auto" color="crimson">Fire HDT Weapons</Text>
                         </Box>
                     </Flex>
                         <Flex>
                             <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTSword} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHSwordCraftState }} onClick={craftFireSword} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={FireHDTSword} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireHSwordCraftState }} onClick={craftFireSword} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Absolute Crimson</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleFireSwordUnbindIncrement}
                                             defaultValue={fireHSwordUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="crimson"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{fireHSwordUnbindState}</Text>
+                                        <Text color="crimson" fontSize={[1, 3]}>{fireHSwordUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireHSwordWeaponBonusState }} onClick={fireSwordWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireHSwordRefineState }} onClick={fireSwordRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: fireHSwordWeaponBonusState }} onClick={fireSwordWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: fireHSwordRefineState }} onClick={fireSwordRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTBlade} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHBladeCraftState }} onClick={craftFireBlade} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={FireHDTBlade} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireHBladeCraftState }} onClick={craftFireBlade} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Blinding Conflagaration</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleFireBladeUnbindIncrement}
                                             defaultValue={fireHBladeUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="crimson"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{fireHBladeUnbindState}</Text>
+                                        <Text color="crimson" fontSize={[1, 3]}>{fireHBladeUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireHBladeWeaponBonusState }} onClick={fireBladeWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireHBladeRefineState }} onClick={fireBladeRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: fireHBladeWeaponBonusState }} onClick={fireBladeWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: fireHBladeRefineState }} onClick={fireBladeRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTDagger} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHDaggerCraftState }} onClick={craftFireDagger} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={FireHDTDagger} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireHDaggerCraftState }} onClick={craftFireDagger} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Flameruler's Maw</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleFireDaggerUnbindIncrement}
                                             defaultValue={fireHDaggerUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="crimson"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{fireHDaggerUnbindState}</Text>
+                                        <Text color="crimson" fontSize={[1, 3]}>{fireHDaggerUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireHDaggerWeaponBonusState }} onClick={fireDaggerWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireHDaggerRefineState }} onClick={fireDaggerRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: fireHDaggerWeaponBonusState }} onClick={fireDaggerWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: fireHDaggerRefineState }} onClick={fireDaggerRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                         </Flex>
                         <Flex>
                         <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTAxe} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHAxeCraftState }} onClick={craftFireAxe} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={FireHDTAxe} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireHAxeCraftState }} onClick={craftFireAxe} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Royal Crimson Heat</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleFireAxeUnbindIncrement}
                                             defaultValue={fireHAxeUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="crimson"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{fireHAxeUnbindState}</Text>
+                                        <Text color="crimson" fontSize={[1, 3]}>{fireHAxeUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireHAxeWeaponBonusState }} onClick={fireAxeWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireHAxeRefineState }} onClick={fireAxeRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: fireHAxeWeaponBonusState }} onClick={fireAxeWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: fireHAxeRefineState }} onClick={fireAxeRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTLance} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHLanceCraftState }} onClick={craftFireLance} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={FireHDTLance} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireHLanceCraftState }} onClick={craftFireLance} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Pureflame Lance</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleFireLanceUnbindIncrement}
                                             defaultValue={fireHLanceUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="crimson"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{fireHLanceUnbindState}</Text>
+                                        <Text color="crimson" fontSize={[1, 3]}>{fireHLanceUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireHLanceWeaponBonusState }} onClick={fireLanceWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireHLanceRefineState }} onClick={fireLanceRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: fireHLanceWeaponBonusState }} onClick={fireLanceWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: fireHLanceRefineState }} onClick={fireLanceRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTBow} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHBowCraftState }} onClick={craftFireBow} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={FireHDTBow} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireHBowCraftState }} onClick={craftFireBow} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Valkyrie's Fire</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleFireBowUnbindIncrement}
                                             defaultValue={fireHBowUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="crimson"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{fireHBowUnbindState}</Text>
+                                        <Text color="crimson" fontSize={[1, 3]}>{fireHBowUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireHBowWeaponBonusState }} onClick={fireBowWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireHBowRefineState }} onClick={fireBowRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: fireHBowWeaponBonusState }} onClick={fireBowWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: fireHBowRefineState }} onClick={fireBowRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                         </Flex>
                         <Flex>
                         <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTWand} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHWandCraftState }} onClick={craftFireWand} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={FireHDTWand} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireHWandCraftState }} onClick={craftFireWand} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Infernoblaze</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleFireWandUnbindIncrement}
                                             defaultValue={fireHWandUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="crimson"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{fireHWandUnbindState}</Text>
+                                        <Text color="crimson" fontSize={[1, 3]}>{fireHWandUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireHWandWeaponBonusState }} onClick={fireWandWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireHWandRefineState }} onClick={fireWandRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: fireHWandWeaponBonusState }} onClick={fireWandWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: fireHWandRefineState }} onClick={fireWandRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTStaff} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHStaffCraftState }} onClick={craftFireStaff} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={FireHDTStaff} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireHStaffCraftState }} onClick={craftFireStaff} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Blazegambol</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleFireStaffUnbindIncrement}
                                             defaultValue={fireHStaffUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="crimson"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{fireHStaffUnbindState}</Text>
+                                        <Text color="crimson" fontSize={[1, 3]}>{fireHStaffUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireHStaffWeaponBonusState }} onClick={fireStaffWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireHStaffRefineState }} onClick={fireStaffRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: fireHStaffWeaponBonusState }} onClick={fireStaffWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: fireHStaffRefineState }} onClick={fireStaffRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTManacaster} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: fireHManacasterCraftState }} onClick={craftFireManacaster} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={FireHDTManacaster} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireHManacasterCraftState }} onClick={craftFireManacaster} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Crimson Trigger</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleFireManacasterUnbindIncrement}
                                             defaultValue={fireHManacasterUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="crimson"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{fireHManacasterUnbindState}</Text>
+                                        <Text color="crimson" fontSize={[1, 3]}>{fireHManacasterUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: fireHManacasterWeaponBonusState }} onClick={fireManacasterWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: fireHManacasterRefineState }} onClick={fireManacasterRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: fireHManacasterWeaponBonusState }} onClick={fireManacasterWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: fireHManacasterRefineState }} onClick={fireManacasterRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                         </Flex>
                 </Box>
                 {fireHDTWeaponSelection()}
             </Flex>
+            <Box width={[3/4, 1 / 2]} p={3} m={3} bg={"#152238"} sx={{ border: "3px solid blue" }}>
+                    <Flex>
+                        <Text fontSize={[1, 3]} ml="auto" mr="auto" color="gold">Materials Needed to get all Weapon Bonuses</Text>
+                    </Flex>
+                    <Flex alignItems="center">
+                        <Card width={[75, 175]}>
+                            <Image src={FireHDTSphere} sx={{ width: ["80%","70%"], height: ["75%", "55%"] }} />
+                            <Text color={"crimson"} fontSize={[1, 2]}>{allwbFHSphereCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={FireHDTTail} sx={{ width: ["80%","70%"], height: ["75%", "55%"] }} />
+                            <Text color={"crimson"} fontSize={[1, 2]}>{allwbFHTailCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={FireHDTHorn} sx={{ width: ["80%","70%"], height: ["75%", "55%"] }} />
+                            <Text color={"crimson"} fontSize={[1, 2]}>{allwbFHHornCount}</Text>
+                        </Card>
+                    </Flex>
+                    <Flex>&nbsp;</Flex>
+                    <Flex>
+                        <Card width={[75, 175]}>
+                            <Image src={FireHDTHeart} sx={{ width: ["80%", "70%"], height: ["70%"] }} />
+                            <Text color={"crimson"} fontSize={[1, 2]}>{allwbFHHeartCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={Orichalcum} sx={{ width: ["80%", "70%"], height: ["70%"]}} />
+                            <Text color={"crimson"} fontSize={[1, 2]}>{allwbFHOriCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={Rupies} sx={{ width: ["80%", "70%"], height: ["70%"] }} />
+                            <Text color={"crimson"} fontSize={[1, 2]}>{allwbFHRupeeCost.toFixed(1)} million</Text>
+                        </Card>
+                    </Flex>
+            </Box>
             <WeaponTypeNavTabs />
         </div>
     )
