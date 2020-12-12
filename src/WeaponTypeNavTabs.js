@@ -23,7 +23,7 @@ function WeaponTypeNavTabs() {
           <Image src={HDTWeapon} alt="Link to HDT Weapons section" sx={{ width: ["100%", "50%"] }}/>
         </Link>
       </Flex>
-      <Flex className="nav-item">
+      {/* <Flex className="nav-item">
         <Link to="/chimera/fire">
           <Image src={ChimeraWeapon}  alt="Link to Chimera Weapons section" sx={{ width: ["100%", "50%"] }}/>
         </Link>
@@ -42,7 +42,7 @@ function WeaponTypeNavTabs() {
         <Link to="/other">
           <Image src={OtherWeapon} alt="Link to Other Weapons section" sx={{ width: ["100%", "50%"] }}/>
         </Link>
-      </Flex>
+      </Flex> */}
     </Box>
   </Flex>
   </>);

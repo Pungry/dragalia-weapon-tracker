@@ -14,6 +14,13 @@ import ShadowHDTWand from "../Images/Shadow_HDT_Wand.png";
 import ShadowHDTStaff from "../Images/Shadow_HDT_Staff.png";
 import FireHDTManacaster from "../Images/Fire_HDT_Manacaster.png";
 
+import ShadowHDTSphere from "../Images/Shadow_HDT_Sphere.png";
+import ShadowHDTTail from "../Images/Shadow_HDT_Tail.png";
+import ShadowHDTHorn from "../Images/Shadow_HDT_Horn.png";
+import ShadowHDTHeart from "../Images/Shadow_HDT_Heart.png";
+import Orichalcum from "../Images/Orichalcum.png";
+import Rupies from "../Images/Rupees.png";
+
 import Refine from "../Images/Refine.PNG";
 import Unbind from "../Images/Unbind.PNG";
 import WeaponBonus from "../Images/Weapon_Bonus.PNG";
@@ -30,6 +37,13 @@ import ShadowHDTManacasterCost from "./ShadowHDTManacasterMats"
 
 export default function ShadowHDTWeapons() {
     const [shadowHWeaponChoice, setShadowHWeaponChoiceState] = useLocalStorage("shadowHWeaponChoice", "sword")
+
+    const [allwbSHSphereCount, setallwbSHSphereCount] = useLocalStorage("allwbSHSphereCount", 4500)
+    const [allwbSHTailCount, setallwbSHTailCount] = useLocalStorage("allwbSHTailCount", 3240)
+    const [allwbSHHeartCount, setallwbSHHeartCount] = useLocalStorage("allwbSHHeartCount", 720)
+    const [allwbSHHornCount, setallwbSHHornCount] = useLocalStorage("allwbSHHornCount", 810)
+    const [allwbSHOriCount, setallwbSHOriCount] = useLocalStorage("allwbSHOriCount", 414)
+    const [allwbSHRupeeCost, setallwbSHRupeeCost] = useLocalStorage("allwbSHRupeeCost", 225)
 
     const [shadowHSwordCraftState, setShadowHSwordCraftState] = useLocalStorage("shadowHSwordCraftState", "grayscale(100%)")
     const [shadowHSwordWeaponBonusState, setShadowHSwordWeaponBonusState] = useLocalStorage("shadowHSwordWeaponBonusState", "grayscale(100%)")
@@ -69,7 +83,7 @@ export default function ShadowHDTWeapons() {
 
     const [shadowHAxeCraftState, setShadowHAxeCraftState] = useLocalStorage("shadowHAxeCraftState", "grayscale(100%)")
     const [shadowHAxeWeaponBonusState, setShadowHAxeWeaponBonusState] = useLocalStorage("shadowHAxeWeaponBonusState", "grayscale(100%)")
-    const [shadowHAxeRefineState, setShadowHAxeRefineState] = useLocalStorage("shadowAxeRefineState", "grayscale(100%)");
+    const [shadowHAxeRefineState, setShadowHAxeRefineState] = useLocalStorage("shadowHAxeRefineState", "grayscale(100%)");
     const [shadowHAxeUnbindState, setShadowHAxeUnbindState] = useLocalStorage("shadowHAxeUnbindState", 0);
 
     const [wbSHASphereCount, setwbSHASphereCountState] = useLocalStorage("wbSHASphereCount", 500);
@@ -202,6 +216,11 @@ export default function ShadowHDTWeapons() {
             setwbSHHeartCountState(wbSHHeartCount - 5)
             setwbSHOriCountState(wbSHOriCount - 1)
             setwbSHRupeeCost(parseFloat(wbSHRupeeCost - 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount - 25)
+            setallwbSHTailCount(allwbSHTailCount - 18)
+            setallwbSHHeartCount(allwbSHHeartCount - 5)
+            setallwbSHOriCount(allwbSHOriCount - 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
         }
         else if (shadowHSwordCraftState == "grayscale(0%)") {
             setShadowHSwordCraftState("grayscale(100%)")
@@ -211,6 +230,11 @@ export default function ShadowHDTWeapons() {
             setwbSHHeartCountState(wbSHHeartCount + 5)
             setwbSHOriCountState(wbSHOriCount + 1)
             setwbSHRupeeCost(parseFloat(wbSHRupeeCost + 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount + 25)
+            setallwbSHTailCount(allwbSHTailCount + 18)
+            setallwbSHHeartCount(allwbSHHeartCount + 5)
+            setallwbSHOriCount(allwbSHOriCount + 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
         }
     }
 
@@ -224,6 +248,12 @@ export default function ShadowHDTWeapons() {
             setwbSHHeartCountState(wbSHHeartCount - 10)
             setwbSHOriCountState(wbSHOriCount - 30)
             setwbSHRupeeCost(parseFloat(wbSHRupeeCost - 10))
+            setallwbSHSphereCount(allwbSHSphereCount - 150)
+            setallwbSHTailCount(allwbSHTailCount - 100)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 10))
         }
         else if (shadowHSwordWeaponBonusState == "grayscale(0%)") {
             setShadowHSwordWeaponBonusState("grayscale(100%)")
@@ -234,6 +264,12 @@ export default function ShadowHDTWeapons() {
             setwbSHHeartCountState(wbSHHeartCount + 10)
             setwbSHOriCountState(wbSHOriCount + 30)
             setwbSHRupeeCost(parseFloat(wbSHRupeeCost + 10))
+            setallwbSHSphereCount(allwbSHSphereCount + 150)
+            setallwbSHTailCount(allwbSHTailCount + 100)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 10))
         }
     }
 
@@ -247,6 +283,12 @@ export default function ShadowHDTWeapons() {
             setwbSHHeartCountState(wbSHHeartCount - 10)
             setwbSHOriCountState(wbSHOriCount - 3)
             setwbSHRupeeCost(parseFloat(wbSHRupeeCost - 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount - 50)
+            setallwbSHTailCount(allwbSHTailCount - 40)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.5))
         }
         else if (shadowHSwordRefineState == "grayscale(0%)") {
             setShadowHSwordRefineState("grayscale(100%)")
@@ -257,6 +299,12 @@ export default function ShadowHDTWeapons() {
             setwbSHHeartCountState(wbSHHeartCount + 10)
             setwbSHOriCountState(wbSHOriCount + 3)
             setwbSHRupeeCost(parseFloat(wbSHRupeeCost + 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount + 50)
+            setallwbSHTailCount(allwbSHTailCount + 40)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.5))
         }
     }
 
@@ -271,6 +319,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHHeartCountState(wbSHHeartCount - 5)
                     setwbSHOriCountState(wbSHOriCount - 1)
                     setwbSHRupeeCost(parseFloat(wbSHRupeeCost - 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount - 25)
+                    setallwbSHTailCount(allwbSHTailCount - 18)
+                    setallwbSHHeartCount(allwbSHHeartCount - 5)
+                    setallwbSHOriCount(allwbSHOriCount - 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbSHSphereCountState(wbSHSphereCount - 175)
@@ -279,6 +332,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHHeartCountState(wbSHHeartCount - 35)
                     setwbSHOriCountState(wbSHOriCount - 8)
                     setwbSHRupeeCost(parseFloat(wbSHRupeeCost - 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount - 175)
+                    setallwbSHTailCount(allwbSHTailCount - 130)
+                    setallwbSHHornCount(allwbSHHornCount - 30)
+                    setallwbSHHeartCount(allwbSHHeartCount - 35)
+                    setallwbSHOriCount(allwbSHOriCount - 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 7.5))
                 }
             }
         }
@@ -291,6 +350,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHHeartCountState(wbSHHeartCount + 5)
                     setwbSHOriCountState(wbSHOriCount + 1)
                     setwbSHRupeeCost(parseFloat(wbSHRupeeCost + 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount + 25)
+                    setallwbSHTailCount(allwbSHTailCount + 18)
+                    setallwbSHHeartCount(allwbSHHeartCount + 5)
+                    setallwbSHOriCount(allwbSHOriCount + 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbSHSphereCountState(wbSHSphereCount + 175)
@@ -299,6 +363,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHHeartCountState(wbSHHeartCount + 35)
                     setwbSHOriCountState(wbSHOriCount + 8)
                     setwbSHRupeeCost(parseFloat(wbSHRupeeCost + 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount + 175)
+                    setallwbSHTailCount(allwbSHTailCount + 130)
+                    setallwbSHHornCount(allwbSHHornCount + 30)
+                    setallwbSHHeartCount(allwbSHHeartCount + 35)
+                    setallwbSHOriCount(allwbSHOriCount + 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 7.5))
                 }
             }
         }
@@ -313,6 +383,11 @@ export default function ShadowHDTWeapons() {
             setwbSHBlHeartCountState(wbSHBlHeartCount - 5)
             setwbSHBlOriCountState(wbSHBlOriCount - 1)
             setwbSHBlRupeeCost(parseFloat(wbSHBlRupeeCost - 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount - 25)
+            setallwbSHTailCount(allwbSHTailCount - 18)
+            setallwbSHHeartCount(allwbSHHeartCount - 5)
+            setallwbSHOriCount(allwbSHOriCount - 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
         }
         else if (shadowHBladeCraftState == "grayscale(0%)") {
             setShadowHBladeCraftState("grayscale(100%)")
@@ -322,6 +397,11 @@ export default function ShadowHDTWeapons() {
             setwbSHBlHeartCountState(wbSHBlHeartCount + 5)
             setwbSHBlOriCountState(wbSHBlOriCount + 1)
             setwbSHBlRupeeCost(parseFloat(wbSHBlRupeeCost + 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount + 25)
+            setallwbSHTailCount(allwbSHTailCount + 18)
+            setallwbSHHeartCount(allwbSHHeartCount + 5)
+            setallwbSHOriCount(allwbSHOriCount + 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
         }
     }
 
@@ -335,6 +415,12 @@ export default function ShadowHDTWeapons() {
             setwbSHBlHeartCountState(wbSHBlHeartCount - 10)
             setwbSHBlOriCountState(wbSHBlOriCount - 30)
             setwbSHBlRupeeCost(parseFloat(wbSHBlRupeeCost - 10))
+            setallwbSHSphereCount(allwbSHSphereCount - 150)
+            setallwbSHTailCount(allwbSHTailCount - 100)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 10))
         }
         else if (shadowHBladeWeaponBonusState == "grayscale(0%)") {
             setShadowHBladeWeaponBonusState("grayscale(100%)")
@@ -345,6 +431,12 @@ export default function ShadowHDTWeapons() {
             setwbSHBlHeartCountState(wbSHBlHeartCount + 10)
             setwbSHBlOriCountState(wbSHBlOriCount + 30)
             setwbSHBlRupeeCost(parseFloat(wbSHBlRupeeCost + 10))
+            setallwbSHSphereCount(allwbSHSphereCount + 150)
+            setallwbSHTailCount(allwbSHTailCount + 100)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 10))
         }
     }
 
@@ -358,6 +450,12 @@ export default function ShadowHDTWeapons() {
             setwbSHBlHeartCountState(wbSHBlHeartCount - 10)
             setwbSHBlOriCountState(wbSHBlOriCount - 3)
             setwbSHBlRupeeCost(parseFloat(wbSHBlRupeeCost - 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount - 50)
+            setallwbSHTailCount(allwbSHTailCount - 40)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.5))
         }
         else if (shadowHBladeRefineState == "grayscale(0%)") {
             setShadowHBladeRefineState("grayscale(100%)")
@@ -368,6 +466,12 @@ export default function ShadowHDTWeapons() {
             setwbSHBlHeartCountState(wbSHBlHeartCount + 10)
             setwbSHBlOriCountState(wbSHBlOriCount + 3)
             setwbSHBlRupeeCost(parseFloat(wbSHBlRupeeCost + 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount + 50)
+            setallwbSHTailCount(allwbSHTailCount + 40)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.5))
         }
     }
 
@@ -382,6 +486,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHBlHeartCountState(wbSHBlHeartCount - 5)
                     setwbSHBlOriCountState(wbSHBlOriCount - 1)
                     setwbSHBlRupeeCost(parseFloat(wbSHBlRupeeCost - 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount - 25)
+                    setallwbSHTailCount(allwbSHTailCount - 18)
+                    setallwbSHHeartCount(allwbSHHeartCount - 5)
+                    setallwbSHOriCount(allwbSHOriCount - 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbSHBlSphereCountState(wbSHBlSphereCount - 175)
@@ -390,6 +499,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHBlHeartCountState(wbSHBlHeartCount - 35)
                     setwbSHBlOriCountState(wbSHBlOriCount - 8)
                     setwbSHBlRupeeCost(parseFloat(wbSHBlRupeeCost - 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount - 175)
+                    setallwbSHTailCount(allwbSHTailCount - 130)
+                    setallwbSHHornCount(allwbSHHornCount - 30)
+                    setallwbSHHeartCount(allwbSHHeartCount - 35)
+                    setallwbSHOriCount(allwbSHOriCount - 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 7.5))
                 }
             }
         }
@@ -402,6 +517,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHBlHeartCountState(wbSHBlHeartCount + 5)
                     setwbSHBlOriCountState(wbSHBlOriCount + 1)
                     setwbSHBlRupeeCost(parseFloat(wbSHBlRupeeCost + 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount + 25)
+                    setallwbSHTailCount(allwbSHTailCount + 18)
+                    setallwbSHHeartCount(allwbSHHeartCount + 5)
+                    setallwbSHOriCount(allwbSHOriCount + 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbSHBlSphereCountState(wbSHBlSphereCount + 175)
@@ -410,6 +530,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHBlHeartCountState(wbSHBlHeartCount + 35)
                     setwbSHBlOriCountState(wbSHBlOriCount + 8)
                     setwbSHBlRupeeCost(parseFloat(wbSHBlRupeeCost + 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount + 175)
+                    setallwbSHTailCount(allwbSHTailCount + 130)
+                    setallwbSHHornCount(allwbSHHornCount + 30)
+                    setallwbSHHeartCount(allwbSHHeartCount + 35)
+                    setallwbSHOriCount(allwbSHOriCount + 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 7.5))
                 }
             }
         }
@@ -424,6 +550,11 @@ export default function ShadowHDTWeapons() {
             setwbSHDHeartCountState(wbSHDHeartCount - 5)
             setwbSHDOriCountState(wbSHDOriCount - 1)
             setwbSHDRupeeCost(parseFloat(wbSHDRupeeCost - 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount - 25)
+            setallwbSHTailCount(allwbSHTailCount - 18)
+            setallwbSHHeartCount(allwbSHHeartCount - 5)
+            setallwbSHOriCount(allwbSHOriCount - 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
         }
         else if (shadowHDaggerCraftState == "grayscale(0%)") {
             setShadowHDaggerCraftState("grayscale(100%)")
@@ -433,6 +564,11 @@ export default function ShadowHDTWeapons() {
             setwbSHDHeartCountState(wbSHDHeartCount + 5)
             setwbSHDOriCountState(wbSHDOriCount + 1)
             setwbSHDRupeeCost(parseFloat(wbSHDRupeeCost + 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount + 25)
+            setallwbSHTailCount(allwbSHTailCount + 18)
+            setallwbSHHeartCount(allwbSHHeartCount + 5)
+            setallwbSHOriCount(allwbSHOriCount + 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
         }
     }
 
@@ -446,6 +582,12 @@ export default function ShadowHDTWeapons() {
             setwbSHDHeartCountState(wbSHDHeartCount - 10)
             setwbSHDOriCountState(wbSHDOriCount - 30)
             setwbSHDRupeeCost(parseFloat(wbSHDRupeeCost - 10))
+            setallwbSHSphereCount(allwbSHSphereCount - 150)
+            setallwbSHTailCount(allwbSHTailCount - 100)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 10))
         }
         else if (shadowHDaggerWeaponBonusState == "grayscale(0%)") {
             setShadowHDaggerWeaponBonusState("grayscale(100%)")
@@ -456,6 +598,12 @@ export default function ShadowHDTWeapons() {
             setwbSHDHeartCountState(wbSHDHeartCount + 10)
             setwbSHDOriCountState(wbSHDOriCount + 30)
             setwbSHDRupeeCost(parseFloat(wbSHDRupeeCost + 10))
+            setallwbSHSphereCount(allwbSHSphereCount + 150)
+            setallwbSHTailCount(allwbSHTailCount + 100)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 10))
         }
     }
 
@@ -469,6 +617,12 @@ export default function ShadowHDTWeapons() {
             setwbSHDHeartCountState(wbSHDHeartCount - 10)
             setwbSHDOriCountState(wbSHDOriCount - 3)
             setwbSHDRupeeCost(parseFloat(wbSHDRupeeCost - 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount - 50)
+            setallwbSHTailCount(allwbSHTailCount - 40)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.5))
         }
         else if (shadowHDaggerRefineState == "grayscale(0%)") {
             setShadowHDaggerRefineState("grayscale(100%)")
@@ -479,6 +633,12 @@ export default function ShadowHDTWeapons() {
             setwbSHDHeartCountState(wbSHDHeartCount + 10)
             setwbSHDOriCountState(wbSHDOriCount + 3)
             setwbSHDRupeeCost(parseFloat(wbSHDRupeeCost + 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount + 50)
+            setallwbSHTailCount(allwbSHTailCount + 40)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.5))
         }
     }
 
@@ -493,6 +653,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHDHeartCountState(wbSHDHeartCount - 5)
                     setwbSHDOriCountState(wbSHDOriCount - 1)
                     setwbSHDRupeeCost(parseFloat(wbSHDRupeeCost - 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount - 25)
+                    setallwbSHTailCount(allwbSHTailCount - 18)
+                    setallwbSHHeartCount(allwbSHHeartCount - 5)
+                    setallwbSHOriCount(allwbSHOriCount - 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbSHDSphereCountState(wbSHDSphereCount - 175)
@@ -501,6 +666,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHDHeartCountState(wbSHDHeartCount - 35)
                     setwbSHDOriCountState(wbSHDOriCount - 8)
                     setwbSHDRupeeCost(parseFloat(wbSHDRupeeCost - 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount - 175)
+                    setallwbSHTailCount(allwbSHTailCount - 130)
+                    setallwbSHHornCount(allwbSHHornCount - 30)
+                    setallwbSHHeartCount(allwbSHHeartCount - 35)
+                    setallwbSHOriCount(allwbSHOriCount - 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 7.5))
                 }
             }
         }
@@ -513,6 +684,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHDHeartCountState(wbSHDHeartCount + 5)
                     setwbSHDOriCountState(wbSHDOriCount + 1)
                     setwbSHDRupeeCost(parseFloat(wbSHDRupeeCost + 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount + 25)
+                    setallwbSHTailCount(allwbSHTailCount + 18)
+                    setallwbSHHeartCount(allwbSHHeartCount + 5)
+                    setallwbSHOriCount(allwbSHOriCount + 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbSHDSphereCountState(wbSHDSphereCount + 175)
@@ -521,6 +697,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHDHeartCountState(wbSHDHeartCount + 35)
                     setwbSHDOriCountState(wbSHDOriCount + 8)
                     setwbSHDRupeeCost(parseFloat(wbSHDRupeeCost + 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount + 175)
+                    setallwbSHTailCount(allwbSHTailCount + 130)
+                    setallwbSHHornCount(allwbSHHornCount + 30)
+                    setallwbSHHeartCount(allwbSHHeartCount + 35)
+                    setallwbSHOriCount(allwbSHOriCount + 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 7.5))
                 }
             }
         }
@@ -535,6 +717,11 @@ export default function ShadowHDTWeapons() {
             setwbSHAHeartCountState(wbSHAHeartCount - 5)
             setwbSHAOriCountState(wbSHAOriCount - 1)
             setwbSHARupeeCost(parseFloat(wbSHARupeeCost - 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount - 25)
+            setallwbSHTailCount(allwbSHTailCount - 18)
+            setallwbSHHeartCount(allwbSHHeartCount - 5)
+            setallwbSHOriCount(allwbSHOriCount - 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
         }
         else if (shadowHAxeCraftState == "grayscale(0%)") {
             setShadowHAxeCraftState("grayscale(100%)")
@@ -544,6 +731,11 @@ export default function ShadowHDTWeapons() {
             setwbSHAHeartCountState(wbSHAHeartCount + 5)
             setwbSHAOriCountState(wbSHAOriCount + 1)
             setwbSHARupeeCost(parseFloat(wbSHARupeeCost + 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount + 25)
+            setallwbSHTailCount(allwbSHTailCount + 18)
+            setallwbSHHeartCount(allwbSHHeartCount + 5)
+            setallwbSHOriCount(allwbSHOriCount + 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
         }
     }
 
@@ -557,6 +749,12 @@ export default function ShadowHDTWeapons() {
             setwbSHAHeartCountState(wbSHAHeartCount - 10)
             setwbSHAOriCountState(wbSHAOriCount - 30)
             setwbSHARupeeCost(parseFloat(wbSHARupeeCost - 10))
+            setallwbSHSphereCount(allwbSHSphereCount - 150)
+            setallwbSHTailCount(allwbSHTailCount - 100)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 10))
         }
         else if (shadowHAxeWeaponBonusState == "grayscale(0%)") {
             setShadowHAxeWeaponBonusState("grayscale(100%)")
@@ -567,6 +765,12 @@ export default function ShadowHDTWeapons() {
             setwbSHAHeartCountState(wbSHAHeartCount + 10)
             setwbSHAOriCountState(wbSHAOriCount + 30)
             setwbSHARupeeCost(parseFloat(wbSHARupeeCost + 10))
+            setallwbSHSphereCount(allwbSHSphereCount + 150)
+            setallwbSHTailCount(allwbSHTailCount + 100)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 10))
         }
     }
 
@@ -580,6 +784,12 @@ export default function ShadowHDTWeapons() {
             setwbSHAHeartCountState(wbSHAHeartCount - 10)
             setwbSHAOriCountState(wbSHAOriCount - 3)
             setwbSHARupeeCost(parseFloat(wbSHARupeeCost - 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount - 50)
+            setallwbSHTailCount(allwbSHTailCount - 40)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.5))
         }
         else if (shadowHAxeRefineState == "grayscale(0%)") {
             setShadowHAxeRefineState("grayscale(100%)")
@@ -590,6 +800,12 @@ export default function ShadowHDTWeapons() {
             setwbSHAHeartCountState(wbSHAHeartCount + 10)
             setwbSHAOriCountState(wbSHAOriCount + 3)
             setwbSHARupeeCost(parseFloat(wbSHARupeeCost + 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount + 50)
+            setallwbSHTailCount(allwbSHTailCount + 40)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.5))
         }
     }
 
@@ -604,6 +820,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHAHeartCountState(wbSHAHeartCount - 5)
                     setwbSHAOriCountState(wbSHAOriCount - 1)
                     setwbSHARupeeCost(parseFloat(wbSHARupeeCost - 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount - 25)
+                    setallwbSHTailCount(allwbSHTailCount - 18)
+                    setallwbSHHeartCount(allwbSHHeartCount - 5)
+                    setallwbSHOriCount(allwbSHOriCount - 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbSHASphereCountState(wbSHASphereCount - 175)
@@ -612,6 +833,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHAHeartCountState(wbSHAHeartCount - 35)
                     setwbSHAOriCountState(wbSHAOriCount - 8)
                     setwbSHARupeeCost(parseFloat(wbSHARupeeCost - 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount - 175)
+                    setallwbSHTailCount(allwbSHTailCount - 130)
+                    setallwbSHHornCount(allwbSHHornCount - 30)
+                    setallwbSHHeartCount(allwbSHHeartCount - 35)
+                    setallwbSHOriCount(allwbSHOriCount - 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 7.5))
                 }
             }
         }
@@ -624,6 +851,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHAHeartCountState(wbSHAHeartCount + 5)
                     setwbSHAOriCountState(wbSHAOriCount + 1)
                     setwbSHARupeeCost(parseFloat(wbSHARupeeCost + 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount + 25)
+                    setallwbSHTailCount(allwbSHTailCount + 18)
+                    setallwbSHHeartCount(allwbSHHeartCount + 5)
+                    setallwbSHOriCount(allwbSHOriCount + 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbSHASphereCountState(wbSHASphereCount + 175)
@@ -632,6 +864,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHAHeartCountState(wbSHAHeartCount + 35)
                     setwbSHAOriCountState(wbSHAOriCount + 8)
                     setwbSHARupeeCost(parseFloat(wbSHARupeeCost + 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount + 175)
+                    setallwbSHTailCount(allwbSHTailCount + 130)
+                    setallwbSHHornCount(allwbSHHornCount + 30)
+                    setallwbSHHeartCount(allwbSHHeartCount + 35)
+                    setallwbSHOriCount(allwbSHOriCount + 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 7.5))
                 }
             }
         }
@@ -646,6 +884,11 @@ export default function ShadowHDTWeapons() {
             setwbSHLHeartCountState(wbSHLHeartCount - 5)
             setwbSHLOriCountState(wbSHLOriCount - 1)
             setwbSHLRupeeCost(parseFloat(wbSHLRupeeCost - 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount - 25)
+            setallwbSHTailCount(allwbSHTailCount - 18)
+            setallwbSHHeartCount(allwbSHHeartCount - 5)
+            setallwbSHOriCount(allwbSHOriCount - 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
         }
         else if (shadowHLanceCraftState == "grayscale(0%)") {
             setShadowHLanceCraftState("grayscale(100%)")
@@ -655,6 +898,11 @@ export default function ShadowHDTWeapons() {
             setwbSHLHeartCountState(wbSHLHeartCount + 5)
             setwbSHLOriCountState(wbSHLOriCount + 1)
             setwbSHLRupeeCost(parseFloat(wbSHLRupeeCost + 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount + 25)
+            setallwbSHTailCount(allwbSHTailCount + 18)
+            setallwbSHHeartCount(allwbSHHeartCount + 5)
+            setallwbSHOriCount(allwbSHOriCount + 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
         }
     }
 
@@ -668,6 +916,12 @@ export default function ShadowHDTWeapons() {
             setwbSHLHeartCountState(wbSHLHeartCount - 10)
             setwbSHLOriCountState(wbSHLOriCount - 30)
             setwbSHLRupeeCost(parseFloat(wbSHLRupeeCost - 10))
+            setallwbSHSphereCount(allwbSHSphereCount - 150)
+            setallwbSHTailCount(allwbSHTailCount - 100)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 10))
         }
         else if (shadowHLanceWeaponBonusState == "grayscale(0%)") {
             setShadowHLanceWeaponBonusState("grayscale(100%)")
@@ -678,6 +932,12 @@ export default function ShadowHDTWeapons() {
             setwbSHLHeartCountState(wbSHLHeartCount + 10)
             setwbSHLOriCountState(wbSHLOriCount + 30)
             setwbSHLRupeeCost(parseFloat(wbSHLRupeeCost + 10))
+            setallwbSHSphereCount(allwbSHSphereCount + 150)
+            setallwbSHTailCount(allwbSHTailCount + 100)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 10))
         }
     }
 
@@ -691,6 +951,12 @@ export default function ShadowHDTWeapons() {
             setwbSHLHeartCountState(wbSHLHeartCount - 10)
             setwbSHLOriCountState(wbSHLOriCount - 3)
             setwbSHLRupeeCost(parseFloat(wbSHLRupeeCost - 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount - 50)
+            setallwbSHTailCount(allwbSHTailCount - 40)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.5))
         }
         else if (shadowHLanceRefineState == "grayscale(0%)") {
             setShadowHLanceRefineState("grayscale(100%)")
@@ -701,6 +967,12 @@ export default function ShadowHDTWeapons() {
             setwbSHLHeartCountState(wbSHLHeartCount + 10)
             setwbSHLOriCountState(wbSHLOriCount + 3)
             setwbSHLRupeeCost(parseFloat(wbSHLRupeeCost + 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount + 50)
+            setallwbSHTailCount(allwbSHTailCount + 40)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.5))
         }
     }
 
@@ -715,6 +987,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHLHeartCountState(wbSHLHeartCount - 5)
                     setwbSHLOriCountState(wbSHLOriCount - 1)
                     setwbSHLRupeeCost(parseFloat(wbSHLRupeeCost - 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount - 25)
+                    setallwbSHTailCount(allwbSHTailCount - 18)
+                    setallwbSHHeartCount(allwbSHHeartCount - 5)
+                    setallwbSHOriCount(allwbSHOriCount - 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbSHLSphereCountState(wbSHLSphereCount - 175)
@@ -723,6 +1000,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHLHeartCountState(wbSHLHeartCount - 35)
                     setwbSHLOriCountState(wbSHLOriCount - 8)
                     setwbSHLRupeeCost(parseFloat(wbSHLRupeeCost - 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount - 175)
+                    setallwbSHTailCount(allwbSHTailCount - 130)
+                    setallwbSHHornCount(allwbSHHornCount - 30)
+                    setallwbSHHeartCount(allwbSHHeartCount - 35)
+                    setallwbSHOriCount(allwbSHOriCount - 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 7.5))
                 }
             }
         }
@@ -735,6 +1018,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHLHeartCountState(wbSHLHeartCount + 5)
                     setwbSHLOriCountState(wbSHLOriCount + 1)
                     setwbSHLRupeeCost(parseFloat(wbSHLRupeeCost + 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount + 25)
+                    setallwbSHTailCount(allwbSHTailCount + 18)
+                    setallwbSHHeartCount(allwbSHHeartCount + 5)
+                    setallwbSHOriCount(allwbSHOriCount + 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbSHLSphereCountState(wbSHLSphereCount + 175)
@@ -743,6 +1031,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHLHeartCountState(wbSHLHeartCount + 35)
                     setwbSHLOriCountState(wbSHLOriCount + 8)
                     setwbSHLRupeeCost(parseFloat(wbSHLRupeeCost + 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount + 175)
+                    setallwbSHTailCount(allwbSHTailCount + 130)
+                    setallwbSHHornCount(allwbSHHornCount + 30)
+                    setallwbSHHeartCount(allwbSHHeartCount + 35)
+                    setallwbSHOriCount(allwbSHOriCount + 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 7.5))
                 }
             }
         }
@@ -757,6 +1051,11 @@ export default function ShadowHDTWeapons() {
             setwbSHBoHeartCountState(wbSHBoHeartCount - 5)
             setwbSHBoOriCountState(wbSHBoOriCount - 1)
             setwbSHBoRupeeCost(parseFloat(wbSHBoRupeeCost - 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount - 25)
+            setallwbSHTailCount(allwbSHTailCount - 18)
+            setallwbSHHeartCount(allwbSHHeartCount - 5)
+            setallwbSHOriCount(allwbSHOriCount - 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
         }
         else if (shadowHBowCraftState == "grayscale(0%)") {
             setShadowHBowCraftState("grayscale(100%)")
@@ -766,6 +1065,11 @@ export default function ShadowHDTWeapons() {
             setwbSHBoHeartCountState(wbSHBoHeartCount + 5)
             setwbSHBoOriCountState(wbSHBoOriCount + 1)
             setwbSHBoRupeeCost(parseFloat(wbSHBoRupeeCost + 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount + 25)
+            setallwbSHTailCount(allwbSHTailCount + 18)
+            setallwbSHHeartCount(allwbSHHeartCount + 5)
+            setallwbSHOriCount(allwbSHOriCount + 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
         }
     }
 
@@ -779,6 +1083,12 @@ export default function ShadowHDTWeapons() {
             setwbSHBoHeartCountState(wbSHBoHeartCount - 10)
             setwbSHBoOriCountState(wbSHBoOriCount - 30)
             setwbSHBoRupeeCost(parseFloat(wbSHBoRupeeCost - 10))
+            setallwbSHSphereCount(allwbSHSphereCount - 150)
+            setallwbSHTailCount(allwbSHTailCount - 100)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 10))
         }
         else if (shadowHBowWeaponBonusState == "grayscale(0%)") {
             setShadowHBowWeaponBonusState("grayscale(100%)")
@@ -789,6 +1099,12 @@ export default function ShadowHDTWeapons() {
             setwbSHBoHeartCountState(wbSHBoHeartCount + 10)
             setwbSHBoOriCountState(wbSHBoOriCount + 30)
             setwbSHBoRupeeCost(parseFloat(wbSHBoRupeeCost + 10))
+            setallwbSHSphereCount(allwbSHSphereCount + 150)
+            setallwbSHTailCount(allwbSHTailCount + 100)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 10))
         }
     }
 
@@ -802,6 +1118,12 @@ export default function ShadowHDTWeapons() {
             setwbSHBoHeartCountState(wbSHBoHeartCount - 10)
             setwbSHBoOriCountState(wbSHBoOriCount - 3)
             setwbSHBoRupeeCost(parseFloat(wbSHBoRupeeCost - 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount - 50)
+            setallwbSHTailCount(allwbSHTailCount - 40)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.5))
         }
         else if (shadowHBowRefineState == "grayscale(0%)") {
             setShadowHBowRefineState("grayscale(100%)")
@@ -812,6 +1134,12 @@ export default function ShadowHDTWeapons() {
             setwbSHBoHeartCountState(wbSHBoHeartCount + 10)
             setwbSHBoOriCountState(wbSHBoOriCount + 3)
             setwbSHBoRupeeCost(parseFloat(wbSHBoRupeeCost + 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount + 50)
+            setallwbSHTailCount(allwbSHTailCount + 40)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.5))
         }
     }
 
@@ -826,6 +1154,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHBoHeartCountState(wbSHBoHeartCount - 5)
                     setwbSHBoOriCountState(wbSHBoOriCount - 1)
                     setwbSHBoRupeeCost(parseFloat(wbSHBoRupeeCost - 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount - 25)
+                    setallwbSHTailCount(allwbSHTailCount - 18)
+                    setallwbSHHeartCount(allwbSHHeartCount - 5)
+                    setallwbSHOriCount(allwbSHOriCount - 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbSHBoSphereCountState(wbSHBoSphereCount - 175)
@@ -834,6 +1167,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHBoHeartCountState(wbSHBoHeartCount - 35)
                     setwbSHBoOriCountState(wbSHBoOriCount - 8)
                     setwbSHBoRupeeCost(parseFloat(wbSHBoRupeeCost - 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount - 175)
+                    setallwbSHTailCount(allwbSHTailCount - 130)
+                    setallwbSHHornCount(allwbSHHornCount - 30)
+                    setallwbSHHeartCount(allwbSHHeartCount - 35)
+                    setallwbSHOriCount(allwbSHOriCount - 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 7.5))
                 }
             }
         }
@@ -846,6 +1185,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHBoHeartCountState(wbSHBoHeartCount + 5)
                     setwbSHBoOriCountState(wbSHBoOriCount + 1)
                     setwbSHBoRupeeCost(parseFloat(wbSHBoRupeeCost + 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount + 25)
+                    setallwbSHTailCount(allwbSHTailCount + 18)
+                    setallwbSHHeartCount(allwbSHHeartCount + 5)
+                    setallwbSHOriCount(allwbSHOriCount + 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbSHBoSphereCountState(wbSHBoSphereCount + 175)
@@ -854,6 +1198,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHBoHeartCountState(wbSHBoHeartCount + 35)
                     setwbSHBoOriCountState(wbSHBoOriCount + 8)
                     setwbSHBoRupeeCost(parseFloat(wbSHBoRupeeCost + 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount + 175)
+                    setallwbSHTailCount(allwbSHTailCount + 130)
+                    setallwbSHHornCount(allwbSHHornCount + 30)
+                    setallwbSHHeartCount(allwbSHHeartCount + 35)
+                    setallwbSHOriCount(allwbSHOriCount + 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 7.5))
                 }
             }
         }
@@ -868,6 +1218,11 @@ export default function ShadowHDTWeapons() {
             setwbSHWHeartCountState(wbSHWHeartCount - 5)
             setwbSHWOriCountState(wbSHWOriCount - 1)
             setwbSHWRupeeCost(parseFloat(wbSHWRupeeCost - 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount - 25)
+            setallwbSHTailCount(allwbSHTailCount - 18)
+            setallwbSHHeartCount(allwbSHHeartCount - 5)
+            setallwbSHOriCount(allwbSHOriCount - 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
         }
         else if (shadowHWandCraftState == "grayscale(0%)") {
             setShadowHWandCraftState("grayscale(100%)")
@@ -877,6 +1232,11 @@ export default function ShadowHDTWeapons() {
             setwbSHWHeartCountState(wbSHWHeartCount + 5)
             setwbSHWOriCountState(wbSHWOriCount + 1)
             setwbSHWRupeeCost(parseFloat(wbSHWRupeeCost + 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount + 25)
+            setallwbSHTailCount(allwbSHTailCount + 18)
+            setallwbSHHeartCount(allwbSHHeartCount + 5)
+            setallwbSHOriCount(allwbSHOriCount + 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
         }
     }
 
@@ -890,6 +1250,12 @@ export default function ShadowHDTWeapons() {
             setwbSHWHeartCountState(wbSHWHeartCount - 10)
             setwbSHWOriCountState(wbSHWOriCount - 30)
             setwbSHWRupeeCost(parseFloat(wbSHWRupeeCost - 10))
+            setallwbSHSphereCount(allwbSHSphereCount - 150)
+            setallwbSHTailCount(allwbSHTailCount - 100)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 10))
         }
         else if (shadowHWandWeaponBonusState == "grayscale(0%)") {
             setShadowHWandWeaponBonusState("grayscale(100%)")
@@ -900,6 +1266,12 @@ export default function ShadowHDTWeapons() {
             setwbSHWHeartCountState(wbSHWHeartCount + 10)
             setwbSHWOriCountState(wbSHWOriCount + 30)
             setwbSHWRupeeCost(parseFloat(wbSHWRupeeCost + 10))
+            setallwbSHSphereCount(allwbSHSphereCount + 150)
+            setallwbSHTailCount(allwbSHTailCount + 100)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 10))
         }
     }
 
@@ -913,6 +1285,12 @@ export default function ShadowHDTWeapons() {
             setwbSHWHeartCountState(wbSHWHeartCount - 10)
             setwbSHWOriCountState(wbSHWOriCount - 3)
             setwbSHWRupeeCost(parseFloat(wbSHWRupeeCost - 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount - 50)
+            setallwbSHTailCount(allwbSHTailCount - 40)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.5))
         }
         else if (shadowHWandRefineState == "grayscale(0%)") {
             setShadowHWandRefineState("grayscale(100%)")
@@ -923,6 +1301,12 @@ export default function ShadowHDTWeapons() {
             setwbSHWHeartCountState(wbSHWHeartCount + 10)
             setwbSHWOriCountState(wbSHWOriCount + 3)
             setwbSHWRupeeCost(parseFloat(wbSHWRupeeCost + 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount + 50)
+            setallwbSHTailCount(allwbSHTailCount + 40)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.5))
         }
     }
 
@@ -937,6 +1321,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHWHeartCountState(wbSHWHeartCount - 5)
                     setwbSHWOriCountState(wbSHWOriCount - 1)
                     setwbSHWRupeeCost(parseFloat(wbSHWRupeeCost - 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount - 25)
+                    setallwbSHTailCount(allwbSHTailCount - 18)
+                    setallwbSHHeartCount(allwbSHHeartCount - 5)
+                    setallwbSHOriCount(allwbSHOriCount - 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbSHWSphereCountState(wbSHWSphereCount - 175)
@@ -945,6 +1334,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHWHeartCountState(wbSHWHeartCount - 35)
                     setwbSHWOriCountState(wbSHWOriCount - 8)
                     setwbSHWRupeeCost(parseFloat(wbSHWRupeeCost - 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount - 175)
+                    setallwbSHTailCount(allwbSHTailCount - 130)
+                    setallwbSHHornCount(allwbSHHornCount - 30)
+                    setallwbSHHeartCount(allwbSHHeartCount - 35)
+                    setallwbSHOriCount(allwbSHOriCount - 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 7.5))
                 }
             }
         }
@@ -957,6 +1352,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHWHeartCountState(wbSHWHeartCount + 5)
                     setwbSHWOriCountState(wbSHWOriCount + 1)
                     setwbSHWRupeeCost(parseFloat(wbSHWRupeeCost + 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount + 25)
+                    setallwbSHTailCount(allwbSHTailCount + 18)
+                    setallwbSHHeartCount(allwbSHHeartCount + 5)
+                    setallwbSHOriCount(allwbSHOriCount + 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbSHWSphereCountState(wbSHWSphereCount + 175)
@@ -965,6 +1365,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHWHeartCountState(wbSHWHeartCount + 35)
                     setwbSHWOriCountState(wbSHWOriCount + 8)
                     setwbSHWRupeeCost(parseFloat(wbSHWRupeeCost + 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount + 175)
+                    setallwbSHTailCount(allwbSHTailCount + 130)
+                    setallwbSHHornCount(allwbSHHornCount + 30)
+                    setallwbSHHeartCount(allwbSHHeartCount + 35)
+                    setallwbSHOriCount(allwbSHOriCount + 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 7.5))
                 }
             }
         }
@@ -979,6 +1385,11 @@ export default function ShadowHDTWeapons() {
             setwbSHStHeartCountState(wbSHStHeartCount - 5)
             setwbSHStOriCountState(wbSHStOriCount - 1)
             setwbSHStRupeeCost(parseFloat(wbSHStRupeeCost - 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount - 25)
+            setallwbSHTailCount(allwbSHTailCount - 18)
+            setallwbSHHeartCount(allwbSHHeartCount - 5)
+            setallwbSHOriCount(allwbSHOriCount - 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
         }
         else if (shadowHStaffCraftState == "grayscale(0%)") {
             setShadowHStaffCraftState("grayscale(100%)")
@@ -988,6 +1399,11 @@ export default function ShadowHDTWeapons() {
             setwbSHStHeartCountState(wbSHStHeartCount + 5)
             setwbSHStOriCountState(wbSHStOriCount + 1)
             setwbSHStRupeeCost(parseFloat(wbSHStRupeeCost + 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount + 25)
+            setallwbSHTailCount(allwbSHTailCount + 18)
+            setallwbSHHeartCount(allwbSHHeartCount + 5)
+            setallwbSHOriCount(allwbSHOriCount + 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
         }
     }
 
@@ -1001,6 +1417,12 @@ export default function ShadowHDTWeapons() {
             setwbSHStHeartCountState(wbSHStHeartCount - 10)
             setwbSHStOriCountState(wbSHStOriCount - 30)
             setwbSHStRupeeCost(parseFloat(wbSHStRupeeCost - 10))
+            setallwbSHSphereCount(allwbSHSphereCount - 150)
+            setallwbSHTailCount(allwbSHTailCount - 100)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 10))
         }
         else if (shadowHStaffWeaponBonusState == "grayscale(0%)") {
             setShadowHStaffWeaponBonusState("grayscale(100%)")
@@ -1011,6 +1433,12 @@ export default function ShadowHDTWeapons() {
             setwbSHStHeartCountState(wbSHStHeartCount + 10)
             setwbSHStOriCountState(wbSHStOriCount + 30)
             setwbSHStRupeeCost(parseFloat(wbSHStRupeeCost + 10))
+            setallwbSHSphereCount(allwbSHSphereCount + 150)
+            setallwbSHTailCount(allwbSHTailCount + 100)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 10))
         }
     }
 
@@ -1024,6 +1452,12 @@ export default function ShadowHDTWeapons() {
             setwbSHStHeartCountState(wbSHStHeartCount - 10)
             setwbSHStOriCountState(wbSHStOriCount - 3)
             setwbSHStRupeeCost(parseFloat(wbSHStRupeeCost - 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount - 50)
+            setallwbSHTailCount(allwbSHTailCount - 40)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.5))
         }
         else if (shadowHStaffRefineState == "grayscale(0%)") {
             setShadowHStaffRefineState("grayscale(100%)")
@@ -1034,6 +1468,12 @@ export default function ShadowHDTWeapons() {
             setwbSHStHeartCountState(wbSHStHeartCount + 10)
             setwbSHStOriCountState(wbSHStOriCount + 3)
             setwbSHStRupeeCost(parseFloat(wbSHStRupeeCost + 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount + 50)
+            setallwbSHTailCount(allwbSHTailCount + 40)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.5))
         }
     }
 
@@ -1048,6 +1488,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHStHeartCountState(wbSHStHeartCount - 5)
                     setwbSHStOriCountState(wbSHStOriCount - 1)
                     setwbSHStRupeeCost(parseFloat(wbSHStRupeeCost - 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount - 25)
+                    setallwbSHTailCount(allwbSHTailCount - 18)
+                    setallwbSHHeartCount(allwbSHHeartCount - 5)
+                    setallwbSHOriCount(allwbSHOriCount - 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbSHStSphereCountState(wbSHStSphereCount - 175)
@@ -1056,6 +1501,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHStHeartCountState(wbSHStHeartCount - 35)
                     setwbSHStOriCountState(wbSHStOriCount - 8)
                     setwbSHStRupeeCost(parseFloat(wbSHStRupeeCost - 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount - 175)
+                    setallwbSHTailCount(allwbSHTailCount - 130)
+                    setallwbSHHornCount(allwbSHHornCount - 30)
+                    setallwbSHHeartCount(allwbSHHeartCount - 35)
+                    setallwbSHOriCount(allwbSHOriCount - 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 7.5))
                 }
             }
         }
@@ -1068,6 +1519,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHStHeartCountState(wbSHStHeartCount + 5)
                     setwbSHStOriCountState(wbSHStOriCount + 1)
                     setwbSHStRupeeCost(parseFloat(wbSHStRupeeCost + 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount + 25)
+                    setallwbSHTailCount(allwbSHTailCount + 18)
+                    setallwbSHHeartCount(allwbSHHeartCount + 5)
+                    setallwbSHOriCount(allwbSHOriCount + 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbSHStSphereCountState(wbSHStSphereCount + 175)
@@ -1076,6 +1532,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHStHeartCountState(wbSHStHeartCount + 35)
                     setwbSHStOriCountState(wbSHStOriCount + 8)
                     setwbSHStRupeeCost(parseFloat(wbSHStRupeeCost + 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount + 175)
+                    setallwbSHTailCount(allwbSHTailCount + 130)
+                    setallwbSHHornCount(allwbSHHornCount + 30)
+                    setallwbSHHeartCount(allwbSHHeartCount + 35)
+                    setallwbSHOriCount(allwbSHOriCount + 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 7.5))
                 }
             }
         }
@@ -1090,6 +1552,11 @@ export default function ShadowHDTWeapons() {
             setwbSHMHeartCountState(wbSHMHeartCount - 5)
             setwbSHMOriCountState(wbSHMOriCount - 1)
             setwbSHMRupeeCost(parseFloat(wbSHMRupeeCost - 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount - 25)
+            setallwbSHTailCount(allwbSHTailCount - 18)
+            setallwbSHHeartCount(allwbSHHeartCount - 5)
+            setallwbSHOriCount(allwbSHOriCount - 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
         }
         else if (shadowHManacasterCraftState == "grayscale(0%)") {
             setShadowHManacasterCraftState("grayscale(100%)")
@@ -1099,6 +1566,11 @@ export default function ShadowHDTWeapons() {
             setwbSHMHeartCountState(wbSHMHeartCount + 5)
             setwbSHMOriCountState(wbSHMOriCount + 1)
             setwbSHMRupeeCost(parseFloat(wbSHMRupeeCost + 1.2))
+            setallwbSHSphereCount(allwbSHSphereCount + 25)
+            setallwbSHTailCount(allwbSHTailCount + 18)
+            setallwbSHHeartCount(allwbSHHeartCount + 5)
+            setallwbSHOriCount(allwbSHOriCount + 1)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
         }
     }
 
@@ -1112,6 +1584,12 @@ export default function ShadowHDTWeapons() {
             setwbSHMHeartCountState(wbSHMHeartCount - 10)
             setwbSHMOriCountState(wbSHMOriCount - 30)
             setwbSHMRupeeCost(parseFloat(wbSHMRupeeCost - 10))
+            setallwbSHSphereCount(allwbSHSphereCount - 150)
+            setallwbSHTailCount(allwbSHTailCount - 100)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 10))
         }
         else if (shadowHManacasterWeaponBonusState == "grayscale(0%)") {
             setShadowHManacasterWeaponBonusState("grayscale(100%)")
@@ -1122,6 +1600,12 @@ export default function ShadowHDTWeapons() {
             setwbSHMHeartCountState(wbSHMHeartCount + 10)
             setwbSHMOriCountState(wbSHMOriCount + 30)
             setwbSHMRupeeCost(parseFloat(wbSHMRupeeCost + 10))
+            setallwbSHSphereCount(allwbSHSphereCount + 150)
+            setallwbSHTailCount(allwbSHTailCount + 100)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 30)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 10))
         }
     }
 
@@ -1135,6 +1619,12 @@ export default function ShadowHDTWeapons() {
             setwbSHMHeartCountState(wbSHMHeartCount - 10)
             setwbSHMOriCountState(wbSHMOriCount - 3)
             setwbSHMRupeeCost(parseFloat(wbSHMRupeeCost - 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount - 50)
+            setallwbSHTailCount(allwbSHTailCount - 40)
+            setallwbSHHornCount(allwbSHHornCount - 30)
+            setallwbSHHeartCount(allwbSHHeartCount - 10)
+            setallwbSHOriCount(allwbSHOriCount - 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.5))
         }
         else if (shadowHManacasterRefineState == "grayscale(0%)") {
             setShadowHManacasterRefineState("grayscale(100%)")
@@ -1145,6 +1635,12 @@ export default function ShadowHDTWeapons() {
             setwbSHMHeartCountState(wbSHMHeartCount + 10)
             setwbSHMOriCountState(wbSHMOriCount + 3)
             setwbSHMRupeeCost(parseFloat(wbSHMRupeeCost + 1.5))
+            setallwbSHSphereCount(allwbSHSphereCount + 50)
+            setallwbSHTailCount(allwbSHTailCount + 40)
+            setallwbSHHornCount(allwbSHHornCount + 30)
+            setallwbSHHeartCount(allwbSHHeartCount + 10)
+            setallwbSHOriCount(allwbSHOriCount + 3)
+            setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.5))
         }
     }
 
@@ -1159,6 +1655,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHMHeartCountState(wbSHMHeartCount - 5)
                     setwbSHMOriCountState(wbSHMOriCount - 1)
                     setwbSHMRupeeCost(parseFloat(wbSHMRupeeCost - 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount - 25)
+                    setallwbSHTailCount(allwbSHTailCount - 18)
+                    setallwbSHHeartCount(allwbSHHeartCount - 5)
+                    setallwbSHOriCount(allwbSHOriCount - 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 1.2))
                 }
                 else if (event.target.value == 5) {
                     setwbSHMSphereCountState(wbSHMSphereCount - 175)
@@ -1167,6 +1668,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHMHeartCountState(wbSHMHeartCount - 35)
                     setwbSHMOriCountState(wbSHMOriCount - 8)
                     setwbSHMRupeeCost(parseFloat(wbSHMRupeeCost - 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount - 175)
+                    setallwbSHTailCount(allwbSHTailCount - 130)
+                    setallwbSHHornCount(allwbSHHornCount - 30)
+                    setallwbSHHeartCount(allwbSHHeartCount - 35)
+                    setallwbSHOriCount(allwbSHOriCount - 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost - 7.5))
                 }
             }
         }
@@ -1179,6 +1686,11 @@ export default function ShadowHDTWeapons() {
                     setwbSHMHeartCountState(wbSHMHeartCount + 5)
                     setwbSHMOriCountState(wbSHMOriCount + 1)
                     setwbSHMRupeeCost(parseFloat(wbSHMRupeeCost + 1.2))
+                    setallwbSHSphereCount(allwbSHSphereCount + 25)
+                    setallwbSHTailCount(allwbSHTailCount + 18)
+                    setallwbSHHeartCount(allwbSHHeartCount + 5)
+                    setallwbSHOriCount(allwbSHOriCount + 1)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 1.2))
                 }
                 else if (event.target.value == 4) {
                     setwbSHMSphereCountState(wbSHMSphereCount + 175)
@@ -1187,6 +1699,12 @@ export default function ShadowHDTWeapons() {
                     setwbSHMHeartCountState(wbSHMHeartCount + 35)
                     setwbSHMOriCountState(wbSHMOriCount + 8)
                     setwbSHMRupeeCost(parseFloat(wbSHMRupeeCost + 7.5))
+                    setallwbSHSphereCount(allwbSHSphereCount + 175)
+                    setallwbSHTailCount(allwbSHTailCount + 130)
+                    setallwbSHHornCount(allwbSHHornCount + 30)
+                    setallwbSHHeartCount(allwbSHHeartCount + 35)
+                    setallwbSHOriCount(allwbSHOriCount + 8)
+                    setallwbSHRupeeCost(parseFloat(allwbSHRupeeCost + 7.5))
                 }
             }
         }
@@ -1195,376 +1713,429 @@ export default function ShadowHDTWeapons() {
     return (
         <div>
             <HDTNavTabs />
-            <Flex>
-                <Box width={1 / 2}>
+            <Flex>&nbsp;</Flex>
+            <Flex flexWrap="wrap">
+                <Box width={[6/7, 1 / 2]} p={3} m={3} bg={"#152238"} sx={{ border: "3px solid blue" }}>
                     <Flex>
                         <Box width={2 / 5}>
 
                         </Box>
-                        <Box width={3 / 5}>
-                            Shadow HDT Weapons
+                        <Box width={[0, 3 / 5]}>
+                            <Text fontSize={[1, 3]} ml="auto" mr="auto" color="purple">Shadow HDT Weapons</Text>
                         </Box>
                     </Flex>
                         <Flex>
                             <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={ShadowHDTSword} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: shadowHSwordCraftState }} onClick={craftShadowSword} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={ShadowHDTSword} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: shadowHSwordCraftState }} onClick={craftShadowSword} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="purple">Absolute Hex</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleShadowSwordUnbindIncrement}
                                             defaultValue={shadowHSwordUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="purple"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{shadowHSwordUnbindState}</Text>
+                                        <Text color="purple" fontSize={[1, 3]}>{shadowHSwordUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: shadowHSwordWeaponBonusState }} onClick={shadowSwordWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: shadowHSwordRefineState }} onClick={shadowSwordRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: shadowHSwordWeaponBonusState }} onClick={shadowSwordWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: shadowHSwordRefineState }} onClick={shadowSwordRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={ShadowHDTBlade} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: shadowHBladeCraftState }} onClick={craftShadowBlade} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={ShadowHDTBlade} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: shadowHBladeCraftState }} onClick={craftShadowBlade} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="purple">True Abyss</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleShadowBladeUnbindIncrement}
                                             defaultValue={shadowHBladeUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="purple"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{shadowHBladeUnbindState}</Text>
+                                        <Text color="purple" fontSize={[1, 3]}>{shadowHBladeUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: shadowHBladeWeaponBonusState }} onClick={shadowBladeWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: shadowHBladeRefineState }} onClick={shadowBladeRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: shadowHBladeWeaponBonusState }} onClick={shadowBladeWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: shadowHBladeRefineState }} onClick={shadowBladeRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={ShadowHDTDagger} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: shadowHDaggerCraftState }} onClick={craftShadowDagger} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={ShadowHDTDagger} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: shadowHDaggerCraftState }} onClick={craftShadowDagger} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="purple">Shaderuler's Maw</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleShadowDaggerUnbindIncrement}
                                             defaultValue={shadowHDaggerUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="purple"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{shadowHDaggerUnbindState}</Text>
+                                        <Text color="purple" fontSize={[1, 3]}>{shadowHDaggerUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: shadowHDaggerWeaponBonusState }} onClick={shadowDaggerWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: shadowHDaggerRefineState }} onClick={shadowDaggerRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: shadowHDaggerWeaponBonusState }} onClick={shadowDaggerWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: shadowHDaggerRefineState }} onClick={shadowDaggerRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                         </Flex>
                         <Flex>
                         <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={ShadowHDTAxe} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: shadowHAxeCraftState }} onClick={craftShadowAxe} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={ShadowHDTAxe} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: shadowHAxeCraftState }} onClick={craftShadowAxe} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="purple">Shadowy Darkbite Axe</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleShadowAxeUnbindIncrement}
                                             defaultValue={shadowHAxeUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="purple"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{shadowHAxeUnbindState}</Text>
+                                        <Text color="purple" fontSize={[1, 3]}>{shadowHAxeUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: shadowHAxeWeaponBonusState }} onClick={shadowAxeWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: shadowHAxeRefineState }} onClick={shadowAxeRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: shadowHAxeWeaponBonusState }} onClick={shadowAxeWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: shadowHAxeRefineState }} onClick={shadowAxeRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={ShadowHDTLance} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: shadowHLanceCraftState }} onClick={craftShadowLance} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={ShadowHDTLance} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: shadowHLanceCraftState }} onClick={craftShadowLance} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="purple">Ebon Scourge Lance</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleShadowLanceUnbindIncrement}
                                             defaultValue={shadowHLanceUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="purple"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{shadowHLanceUnbindState}</Text>
+                                        <Text color="purple" fontSize={[1, 3]}>{shadowHLanceUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: shadowHLanceWeaponBonusState }} onClick={shadowLanceWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: shadowHLanceRefineState }} onClick={shadowLanceRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: shadowHLanceWeaponBonusState }} onClick={shadowLanceWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: shadowHLanceRefineState }} onClick={shadowLanceRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={ShadowHDTBow} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: shadowHBowCraftState }} onClick={craftShadowBow} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={ShadowHDTBow} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: shadowHBowCraftState }} onClick={craftShadowBow} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="purple">Hellish Prophecy</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleShadowBowUnbindIncrement}
                                             defaultValue={shadowHBowUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="purple"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{shadowHBowUnbindState}</Text>
+                                        <Text color="purple" fontSize={[1, 3]}>{shadowHBowUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: shadowHBowWeaponBonusState }} onClick={shadowBowWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: shadowHBowRefineState }} onClick={shadowBowRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: shadowHBowWeaponBonusState }} onClick={shadowBowWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: shadowHBowRefineState }} onClick={shadowBowRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                         </Flex>
                         <Flex>
                         <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={ShadowHDTWand} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: shadowHWandCraftState }} onClick={craftShadowWand} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={ShadowHDTWand} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: shadowHWandCraftState }} onClick={craftShadowWand} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="purple">Darkbinder</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleShadowWandUnbindIncrement}
                                             defaultValue={shadowHWandUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="purple"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{shadowHWandUnbindState}</Text>
+                                        <Text color="purple" fontSize={[1, 3]}>{shadowHWandUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: shadowHWandWeaponBonusState }} onClick={shadowWandWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: shadowHWandRefineState }} onClick={shadowWandRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: shadowHWandWeaponBonusState }} onClick={shadowWandWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: shadowHWandRefineState }} onClick={shadowWandRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={ShadowHDTStaff} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: shadowHStaffCraftState }} onClick={craftShadowStaff} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={ShadowHDTStaff} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: shadowHStaffCraftState }} onClick={craftShadowStaff} />
                                 </Flex>
                                 <Flex>
                                     <Text fontSize={[1, 3]} px={[1, 4]} color="purple">Dark Hunger</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleShadowStaffUnbindIncrement}
                                             defaultValue={shadowHStaffUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="purple"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{shadowHStaffUnbindState}</Text>
+                                        <Text color="purple" fontSize={[1, 3]}>{shadowHStaffUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: shadowHStaffWeaponBonusState }} onClick={shadowStaffWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: shadowHStaffRefineState }} onClick={shadowStaffRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: shadowHStaffWeaponBonusState }} onClick={shadowStaffWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: shadowHStaffRefineState }} onClick={shadowStaffRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                             <Card width={[150, 200]}>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={FireHDTManacaster} sx={{ width: ["100px"] }} filter="grayscale(100%)" style={{ filter: shadowHManacasterCraftState }} onClick={craftShadowManacaster} />
+                                    <Box width={[0, 1 / 10]}></Box>
+                                    <Image src={FireHDTManacaster} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: shadowHManacasterCraftState }} onClick={craftShadowManacaster} />
                                 </Flex>
                                 <Flex>
-                                    <Text fontSize={[1, 3]} px={[1, 4]} color="purple">?????</Text>
+                                    <Text fontSize={[1, 3]} px={[1, 4]} color="purple">???</Text>
                                 </Flex>
                                 <Box width={[125, 150]}>
                                     <Flex>
-                                        <Box width={1 / 3}>
+                                        <Box width={[1/6, 1 / 3]}>
 
                                         </Box>
-                                        <Image src={Unbind} />
+                                        <Image src={Unbind} sx={{ width: ["30%", "35%"] }}/>
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 10}></Box>
+                                        <Box width={[0, 1 / 10]}></Box>
                                         <Slider
                                             onChange={handleShadowManacasterUnbindIncrement}
                                             defaultValue={shadowHManacasterUnbindState}
                                             step="1"
                                             max="5"
                                             bg="primary"
+                                            width={[3/5, 1]}
+                                            color="purple"
                                         />
                                     </Flex>
                                     <Flex>
-                                        <Box width={1 / 2}>
+                                        <Box width={[1/4, 1 / 2]}>
 
                                         </Box>
-                                        <Text>{shadowHManacasterUnbindState}</Text>
+                                        <Text color="purple" fontSize={[1, 3]}>{shadowHManacasterUnbindState}</Text>
                                     </Flex>
                                 </Box>
                                 <Flex>
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={WeaponBonus} style={{ filter: shadowHManacasterWeaponBonusState }} onClick={shadowManacasterWeaponBonus} />
-                                    <Box width={1 / 8}></Box>
-                                    <Image src={Refine} style={{ filter: shadowHManacasterRefineState }} onClick={shadowManacasterRefine} />
+                                    <Box width={[0, 1 / 8]}></Box>
+                                    <Image src={WeaponBonus} style={{ filter: shadowHManacasterWeaponBonusState }} onClick={shadowManacasterWeaponBonus} sx={{ width: ["40%", "25%"], height: ["30%","25%"] }}/>
+                                    <Box width={[1 / 8]}></Box>
+                                    <Image src={Refine} style={{ filter: shadowHManacasterRefineState }} onClick={shadowManacasterRefine} sx={{ width: ["40%", "25%"], height: ["30%", "25%"] }}/>
                                 </Flex>
                             </Card>
                         </Flex>
                 </Box>
                 {shadowHDTWeaponSelection()}
             </Flex>
+            <Box width={[3/4, 1 / 2]} p={3} m={3} bg={"#152238"} sx={{ border: "3px solid blue" }}>
+                    <Flex>
+                        <Text fontSize={[1, 3]} ml="auto" mr="auto" color="gold">Materials Needed to get all Weapon Bonuses</Text>
+                    </Flex>
+                    <Flex alignItems="center">
+                        <Card width={[75, 175]}>
+                            <Image src={ShadowHDTSphere} sx={{ width: ["80%","70%"], height: ["75%", "55%"] }} />
+                            <Text color={"purple"} fontSize={[1, 2]}>{allwbSHSphereCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={ShadowHDTTail} sx={{ width: ["80%","70%"], height: ["75%", "55%"] }} />
+                            <Text color={"purple"} fontSize={[1, 2]}>{allwbSHTailCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={ShadowHDTHorn} sx={{ width: ["80%","70%"], height: ["75%", "55%"] }} />
+                            <Text color={"purple"} fontSize={[1, 2]}>{allwbSHHornCount}</Text>
+                        </Card>
+                    </Flex>
+                    <Flex>&nbsp;</Flex>
+                    <Flex>
+                        <Card width={[75, 175]}>
+                            <Image src={ShadowHDTHeart} sx={{ width: ["80%", "70%"], height: ["70%"] }} />
+                            <Text color={"purple"} fontSize={[1, 2]}>{allwbSHHeartCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={Orichalcum} sx={{ width: ["80%", "70%"], height: ["70%"]}} />
+                            <Text color={"purple"} fontSize={[1, 2]}>{allwbSHOriCount}</Text>
+                        </Card>
+                        <Card width={[75, 175]}>
+                            <Image src={Rupies} sx={{ width: ["80%", "70%"], height: ["70%"] }} />
+                            <Text color={"purple"} fontSize={[1, 2]}>{allwbSHRupeeCost.toFixed(1)} million</Text>
+                        </Card>
+                    </Flex>
+            </Box>
             <WeaponTypeNavTabs />
         </div>
     )
