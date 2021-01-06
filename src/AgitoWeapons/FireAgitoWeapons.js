@@ -397,8 +397,7 @@ export default function FireAgitoWeapons() {
     function handleFireSwordUnbindIncrement(event) {
         setFireWeaponChoiceState("sword");
         if (fireSwordUnbindState < event.target.value) {
-            if (event.target.value == 9 && fireSwordUnbindState == 0)
-            {
+            if (event.target.value == 9 && fireSwordUnbindState == 0) {
                 setmubFASSilverMaskCountState(mubFASSilverMaskCount - 304);
                 setwbFASSilverMaskCountState(wbFASSilverMaskCount - 176);
                 setallmubFASilverMaskCount(allmubFASilverMaskCount - 304);
@@ -421,8 +420,7 @@ export default function FireAgitoWeapons() {
                 setallmubFARupeeCost(allmubFARupeeCost - 40);
                 setFireSwordUnbindState(event.target.value);
             }
-            else if (event.target.value == 9 && fireSwordUnbindState >= 1 && fireSwordUnbindState <= 4)
-            {
+            else if (event.target.value == 9 && fireSwordUnbindState >= 1 && fireSwordUnbindState <= 4) {
                 setmubFASSilverMaskCountState(mubFASSilverMaskCount - 144 - ((4 - fireSwordUnbindState) * 40));
                 setwbFASSilverMaskCountState(wbFASSilverMaskCount - 16 - ((4 - fireSwordUnbindState) * 40));
                 setallmubFASilverMaskCount(allmubFASilverMaskCount - 144 - ((4 - fireSwordUnbindState) * 40));
@@ -445,8 +443,7 @@ export default function FireAgitoWeapons() {
                 setallmubFARupeeCost(allmubFARupeeCost - 32 - ((4 - fireSwordUnbindState) * 2));
                 setFireSwordUnbindState(event.target.value);
             }
-            else if (event.target.value == 9 && fireSwordUnbindState >= 5 && fireSwordUnbindState <=8)
-            {
+            else if (event.target.value == 9 && fireSwordUnbindState >= 5 && fireSwordUnbindState <= 8) {
                 setmubFASSilverMaskCountState(mubFASSilverMaskCount - 80 - ((8 - fireSwordUnbindState) * 16));
                 setallmubFASilverMaskCount(allmubFASilverMaskCount - 80 - ((8 - fireSwordUnbindState) * 16));
                 setmubFASGoldMaskCountState(mubFASGoldMaskCount - 70 - ((8 - fireSwordUnbindState) * 10));
@@ -461,8 +458,7 @@ export default function FireAgitoWeapons() {
                 setallmubFARupeeCost(allmubFARupeeCost - 2 - ((8 - fireSwordUnbindState) * 7.5));
                 setFireSwordUnbindState(event.target.value);
             }
-            else if (event.target.value <=8 && event.target.value >= 5 && fireSwordUnbindState <= 7 && fireSwordUnbindState >= 5)
-            {
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireSwordUnbindState <= 7 && fireSwordUnbindState >= 5) {
                 setmubFASSilverMaskCountState(mubFASSilverMaskCount - ((event.target.value - fireSwordUnbindState) * 16))
                 setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireSwordUnbindState) * 16));
                 setmubFASGoldMaskCountState(mubFASGoldMaskCount - ((event.target.value - fireSwordUnbindState) * 10));
@@ -475,8 +471,7 @@ export default function FireAgitoWeapons() {
                 setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireSwordUnbindState) * 7.5));
                 setFireSwordUnbindState(event.target.value)
             }
-            else if (event.target.value <= 8 && event.target.value >= 5 && fireSwordUnbindState <= 4 && fireSwordUnbindState >= 0)
-            {
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireSwordUnbindState <= 4 && fireSwordUnbindState >= 0) {
                 setmubFASSilverMaskCountState(mubFASSilverMaskCount - ((4 - fireSwordUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
                 setwbFASSilverMaskCountState(wbFASSilverMaskCount - 16 - ((4 - fireSwordUnbindState) * 40));
                 setallmubFASilverMaskCount(allmubFASilverMaskCount - ((4 - fireSwordUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
@@ -496,8 +491,7 @@ export default function FireAgitoWeapons() {
                 setwbFASRupeeCost(wbFASRupeeCost - 7.5 - ((4 - fireSwordUnbindState) * 2))
                 setFireSwordUnbindState(event.target.value)
             }
-            else if (event.target.value <= 4 && event.target.value >= 1 && fireSwordUnbindState <= 3 && fireSwordUnbindState >= 0)
-            {
+            else if (event.target.value <= 4 && event.target.value >= 1 && fireSwordUnbindState <= 3 && fireSwordUnbindState >= 0) {
                 setmubFASSilverMaskCountState(mubFASSilverMaskCount - ((event.target.value - fireSwordUnbindState) * 40));
                 setwbFASSilverMaskCountState(wbFASSilverMaskCount - ((event.target.value - fireSwordUnbindState) * 40));
                 setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireSwordUnbindState) * 40));
@@ -506,7 +500,7 @@ export default function FireAgitoWeapons() {
                 setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireSwordUnbindState) * 30));
                 setmubFASSandCountState(mubFASSandCount - (event.target.value - fireSwordUnbindState));
                 setwbFASSandCountState(wbFASSandCount - (event.target.value - fireSwordUnbindState));
-                setallmubFASandCount(allmubFASandCount - (event.target.value - fireSwordUnbindState)); 
+                setallmubFASandCount(allmubFASandCount - (event.target.value - fireSwordUnbindState));
                 setmubFASRupeeCost(mubFASRupeeCost - ((event.target.value - fireSwordUnbindState) * 2));
                 setwbFASRupeeCost(wbFASRupeeCost - ((event.target.value - fireSwordUnbindState) * 2));
                 setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireSwordUnbindState) * 2));
@@ -514,39 +508,127 @@ export default function FireAgitoWeapons() {
             }
         }
         else if (fireSwordUnbindState > event.target.value) {
-            if (event.target.value == 0 && fireSwordUnbindState == 9)
-            {
+            if (event.target.value == 0 && fireSwordUnbindState == 9) {
                 setmubFASSilverMaskCountState(mubFASSilverMaskCount + 304);
+                setwbFASSilverMaskCountState(wbFASSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 304);
+                setmubFASGoldMaskCountState(mubFASGoldMaskCount + 230);
+                setwbFASGoldMaskCountState(wbFASGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 230);
+                setmubFASInsanityCountState(mubFASInsanityCount + 58);
+                setwbFASInsanityCountState(wbFASInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 58);
+                setmubFASGaleCountState(mubFASGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFASSandCountState(mubFASSandCount + 4);
+                setwbFASSandCountState(wbFASSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFASOriCountState(mubFASOriCount + 24);
+                setwbFASOriCountState(wbFASOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + 24);
+                setmubFASRupeeCost(mubFASRupeeCost + 40);
+                setwbFASRupeeCost(wbFASRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 40);
                 setFireSwordUnbindState(event.target.value);
             }
-            else if (event.target.value == 0 && fireSwordUnbindState >= 5 && fireSwordUnbindState <= 8)
-            {
+            else if (event.target.value == 0 && fireSwordUnbindState >= 5 && fireSwordUnbindState <= 8) {
                 setmubFASSilverMaskCountState(mubFASSilverMaskCount + 160 + ((-1 * (4 - fireSwordUnbindState)) * 16));
+                setwbFASSilverMaskCountState(wbFASSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 160 + ((-1 * (4 - fireSwordUnbindState)) * 16));
+                setmubFASGoldMaskCountState(mubFASGoldMaskCount + 120 + ((-1 * (4 - fireSwordUnbindState)) * 10));
+                setwbFASGoldMaskCountState(wbFASGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 120 + ((-1 * (4 - fireSwordUnbindState)) * 10));
+                setmubFASInsanityCountState(mubFASInsanityCount + ((-1 * (4 - fireSwordUnbindState)) * 7));
+                setwbFASInsanityCountState(wbFASInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((-1 * (4 - fireSwordUnbindState)) * 7));
+                setmubFASSandCountState(mubFASSandCount + 4);
+                setwbFASSandCountState(wbFASSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFASOriCountState(mubFASOriCount + (-1 * (4 - fireSwordUnbindState)));
+                setwbFASOriCountState(wbFASOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + (-1 * (4 - fireSwordUnbindState)));
+                setmubFASRupeeCost(mubFASRupeeCost + 8 + (-1 * (4 - fireSwordUnbindState) * 7.5));
+                setwbFASRupeeCost(wbFASRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 8 + (-1 * (4 - fireSwordUnbindState) * 7.5));
                 setFireSwordUnbindState(event.target.value);
             }
-            else if (event.target.value == 0 && fireSwordUnbindState >= 1 && fireSwordUnbindState <= 4)
-            {
+            else if (event.target.value == 0 && fireSwordUnbindState >= 1 && fireSwordUnbindState <= 4) {
                 setmubFASSilverMaskCountState(mubFASSilverMaskCount + (fireSwordUnbindState * 40));
+                setwbFASSilverMaskCountState(wbFASSilverMaskCount + (fireSwordUnbindState * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + (fireSwordUnbindState * 40));
+                setmubFASGoldMaskCountState(mubFASGoldMaskCount + (fireSwordUnbindState * 30));
+                setwbFASGoldMaskCountState(wbFASGoldMaskCount + (fireSwordUnbindState * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + (fireSwordUnbindState * 30));
+                setmubFASSandCountState(mubFASSandCount + fireSwordUnbindState);
+                setwbFASSandCountState(wbFASSandCount + fireSwordUnbindState);
+                setallmubFASandCount(allmubFASandCount + fireSwordUnbindState);
+                setmubFASRupeeCost(mubFASRupeeCost + (fireSwordUnbindState * 2));
+                setwbFASRupeeCost(wbFASRupeeCost + (fireSwordUnbindState * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + (fireSwordUnbindState * 2));
                 setFireSwordUnbindState(event.target.value);
             }
-            else if (event.target.value >= 1 && event.target.value <= 4 && fireSwordUnbindState >=1 && fireSwordUnbindState <= 4)
-            {
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireSwordUnbindState >= 1 && fireSwordUnbindState <= 4) {
                 setmubFASSilverMaskCountState(mubFASSilverMaskCount + ((fireSwordUnbindState - event.target.value) * 40))
+                setwbFASSilverMaskCountState(wbFASSilverMaskCount + ((fireSwordUnbindState - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireSwordUnbindState - event.target.value) * 40));
+                setmubFASGoldMaskCountState(mubFASGoldMaskCount + ((fireSwordUnbindState - event.target.value) * 30));
+                setwbFASGoldMaskCountState(wbFASGoldMaskCount + ((fireSwordUnbindState - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireSwordUnbindState - event.target.value) * 30));
+                setmubFASSandCountState(mubFASSandCount + (fireSwordUnbindState - event.target.value));
+                setwbFASSandCountState(wbFASSandCount + (fireSwordUnbindState - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (fireSwordUnbindState - event.target.value));
+                setmubFASRupeeCost(mubFASRupeeCost + ((fireSwordUnbindState - event.target.value) * 2));
+                setwbFASRupeeCost(wbFASRupeeCost + ((fireSwordUnbindState - event.target.value) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireSwordUnbindState - event.target.value) * 2))
                 setFireSwordUnbindState(event.target.value);
             }
-            else if (event.target.value >= 1 && event.target.value <= 4 && fireSwordUnbindState >= 5 && fireSwordUnbindState <= 8)
-            {
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireSwordUnbindState >= 5 && fireSwordUnbindState <= 8) {
                 setmubFASSilverMaskCountState(mubFASSilverMaskCount + ((fireSwordUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbFASSilverMaskCountState(wbFASSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireSwordUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubFASGoldMaskCountState(mubFASGoldMaskCount + ((fireSwordUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbFASGoldMaskCountState(wbFASGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireSwordUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubFASInsanityCountState(mubFASInsanityCount + ((fireSwordUnbindState - 4) * 7));
+                setwbFASInsanityCountState(wbFASInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireSwordUnbindState - 4) * 7));
+                setmubFASSandCountState(mubFASSandCount + (4 - event.target.value));
+                setwbFASSandCountState(wbFASSandCount + (4 - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (4 - event.target.value));
+                setmubFASOriCountState(mubFASOriCount + (fireSwordUnbindState - 4));
+                setwbFASOriCountState(wbFASOriCount + (fireSwordUnbindState - 4));
+                setallmubFAOriCount(allmubFAOriCount + (fireSwordUnbindState - 4));
+                setmubFASRupeeCost(mubFASRupeeCost + ((fireSwordUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbFASRupeeCost(wbFASRupeeCost + 7.5 + ((fireSwordUnbindState - 4) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireSwordUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
                 setFireSwordUnbindState(event.target.value)
             }
-            else if (event.target.value >= 5 && event.target.value <= 8 && fireSwordUnbindState == 9)
-            {
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireSwordUnbindState == 9) {
                 setmubFASSilverMaskCountState(mubFASSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubFASGoldMaskCountState(mubFASGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubFASInsanityCountState(mubFASInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubFASGaleCountState(mubFASGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFASOriCountState(mubFASOriCount + 20 + (8 - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + 20 + (8 - event.target.value));
+                setmubFASRupeeCost(mubFASRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + 2 + ((8 - event.target.value) * 7.5));
                 setFireSwordUnbindState(event.target.value)
             }
-            else if (event.target.value >= 5 && event.target.value <= 8 && fireSwordUnbindState >= 5 && fireSwordUnbindState <= 8)
-            {
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireSwordUnbindState >= 5 && fireSwordUnbindState <= 8) {
                 setmubFASSilverMaskCountState(mubFASSilverMaskCount + ((fireSwordUnbindState - event.target.value) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireSwordUnbindState - event.target.value) * 16));
+                setmubFASGoldMaskCountState(mubFASGoldMaskCount + ((fireSwordUnbindState - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireSwordUnbindState - event.target.value) * 10));
+                setmubFASInsanityCountState(mubFASInsanityCount + ((fireSwordUnbindState - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireSwordUnbindState - event.target.value) * 7));
+                setmubFASOriCountState(mubFASOriCount + (fireSwordUnbindState - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + (fireSwordUnbindState - event.target.value));
+                setmubFASRupeeCost(mubFASRupeeCost + ((fireSwordUnbindState - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireSwordUnbindState - event.target.value) * 7.5));
                 setFireSwordUnbindState(event.target.value)
             }
         }
@@ -555,75 +637,116 @@ export default function FireAgitoWeapons() {
     function handleFireSwordRefineIncrement(event) {
         setFireWeaponChoiceState("sword");
         if (fireSwordRefineState < event.target.value) {
-            if (event.target.value - fireSwordRefineState == 1) {
+            if (fireSwordRefineState == 0 && event.target.value == 1) {
+                setmubFASSilverMaskCountState(mubFASSilverMaskCount - 16);
+                setwbFASSilverMaskCountState(wbFASSilverMaskCount - 16);
+                setmubFASGoldMaskCountState(mubFASGoldMaskCount - 10);
+                setwbFASGoldMaskCountState(wbFASGoldMaskCount - 10);
+                setmubFASInsanityCountState(mubFASInsanityCount - 7);
+                setwbFASInsanityCountState(wbFASInsanityCount - 7);
+                setmubFASOriCountState(mubFASOriCount - 1);
+                setwbFASOriCountState(wbFASOriCount - 1);
+                setmubFASRupeeCost(mubFASRupeeCost - 2.5);
+                setwbFASRupeeCost(wbFASRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                setallmubFAOriCount(allmubFAOriCount - 1)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 setFireSwordRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubFASSilverMaskCountState(mubFASSilverMaskCount - 16);
-                    setwbFASSilverMaskCountState(wbFASSilverMaskCount - 16);
-                    setmubFASGoldMaskCountState(mubFASGoldMaskCount - 10);
-                    setwbFASGoldMaskCountState(wbFASGoldMaskCount - 10);
-                    setmubFASInsanityCountState(mubFASInsanityCount - 7);
-                    setwbFASInsanityCountState(wbFASInsanityCount - 7);
-                    setmubFASOriCountState(mubFASOriCount - 1);
-                    setwbFASOriCountState(wbFASOriCount - 1);
-                    setmubFASRupeeCost(mubFASRupeeCost - 2.5);
-                    setwbFASRupeeCost(wbFASRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubFASSilverMaskCountState(mubFASSilverMaskCount - 40)
-                    setmubFASGoldMaskCountState(mubFASGoldMaskCount - 30);
-                    setmubFASInsanityCountState(mubFASInsanityCount - 10);
-                    setmubFASGaleCountState(mubFASGaleCount - 10);
-                    setmubFASOriCountState(mubFASOriCount - 10);
-                    setmubFASRupeeCost(mubFASRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
-                    setallmubFAGaleCount(allmubFAGaleCount - 10)
-                    setallmubFAOriCount(allmubFAOriCount - 10)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
+            }
+            else if (fireSwordRefineState == 0 && event.target.value == 2) {
+                setmubFASSilverMaskCountState(mubFASSilverMaskCount - 56);
+                setwbFASSilverMaskCountState(wbFASSilverMaskCount - 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 56);
+                setmubFASGoldMaskCountState(mubFASGoldMaskCount - 40);
+                setwbFASGoldMaskCountState(wbFASGoldMaskCount - 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 40);
+                setmubFASInsanityCountState(mubFASInsanityCount - 17);
+                setwbFASInsanityCountState(wbFASInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 17);
+                setmubFASGaleCountState(mubFASGaleCount - 10);
+                setallmubFAGaleCount(allmubFAGaleCount - 10);
+                setmubFASOriCountState(mubFASOriCount - 11);
+                setwbFASOriCountState(wbFASOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 11);
+                setmubFASRupeeCost(mubFASRupeeCost - 5);
+                setwbFASRupeeCost(wbFASRupeeCost - 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 5);
+                setFireSwordRefineState(event.target.value);
+            }
+            else if (fireSwordRefineState == 1 && event.target.value == 2) {
+                setmubFASSilverMaskCountState(mubFASSilverMaskCount - 40)
+                setmubFASGoldMaskCountState(mubFASGoldMaskCount - 30);
+                setmubFASInsanityCountState(mubFASInsanityCount - 10);
+                setmubFASGaleCountState(mubFASGaleCount - 10);
+                setmubFASOriCountState(mubFASOriCount - 10);
+                setmubFASRupeeCost(mubFASRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                setallmubFAGaleCount(allmubFAGaleCount - 10)
+                setallmubFAOriCount(allmubFAOriCount - 10)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
+                setFireSwordRefineState(event.target.value);
             }
         }
         else if (fireSwordRefineState > event.target.value) {
-            if (fireSwordRefineState - event.target.value == 1) {
-                setFireSwordRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubFASSilverMaskCountState(mubFASSilverMaskCount + 16);
-                    setwbFASSilverMaskCountState(wbFASSilverMaskCount + 16);
-                    setmubFASGoldMaskCountState(mubFASGoldMaskCount + 10);
-                    setwbFASGoldMaskCountState(wbFASGoldMaskCount + 10);
-                    setmubFASInsanityCountState(mubFASInsanityCount + 7);
-                    setwbFASInsanityCountState(wbFASInsanityCount + 7);
-                    setmubFASOriCountState(mubFASOriCount + 1);
-                    setwbFASOriCountState(wbFASOriCount + 1);
-                    setmubFASRupeeCost(mubFASRupeeCost + 2.5);
-                    setwbFASRupeeCost(wbFASRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubFASSilverMaskCountState(mubFASSilverMaskCount + 40)
-                    setmubFASGoldMaskCountState(mubFASGoldMaskCount + 30);
-                    setmubFASInsanityCountState(mubFASInsanityCount + 10);
-                    setmubFASGaleCountState(mubFASGaleCount + 10);
-                    setmubFASOriCountState(mubFASOriCount + 10);
-                    setmubFASRupeeCost(mubFASRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
-                    setallmubFAGaleCount(allmubFAGaleCount + 10)
-                    setallmubFAOriCount(allmubFAOriCount + 10)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
+            if (fireSwordRefineState == 2 && event.target.value == 1) 
+            {
+                setmubFASSilverMaskCountState(mubFASSilverMaskCount + 40)
+                setmubFASGoldMaskCountState(mubFASGoldMaskCount + 30);
+                setmubFASInsanityCountState(mubFASInsanityCount + 10);
+                setmubFASGaleCountState(mubFASGaleCount + 10);
+                setmubFASOriCountState(mubFASOriCount + 10);
+                setmubFASRupeeCost(mubFASRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                setallmubFAGaleCount(allmubFAGaleCount + 10)
+                setallmubFAOriCount(allmubFAOriCount + 10)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireSwordRefineState(event.target.value);
+            }
+            else if (fireSwordRefineState == 2 && event.target.value == 0) 
+            {
+                setmubFASSilverMaskCountState(mubFASSilverMaskCount + 56);
+                setwbFASSilverMaskCountState(wbFASSilverMaskCount + 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 56);
+                setmubFASGoldMaskCountState(mubFASGoldMaskCount + 40);
+                setwbFASGoldMaskCountState(wbFASGoldMaskCount + 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 40);
+                setmubFASInsanityCountState(mubFASInsanityCount + 17);
+                setwbFASInsanityCountState(wbFASInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 17);
+                setmubFASGaleCountState(mubFASGaleCount + 10);
+                setallmubFAGaleCount(allmubFAGaleCount + 10);
+                setmubFASOriCountState(mubFASOriCount + 11);
+                setwbFASOriCountState(wbFASOriCount + 1); 
+                setallmubFAOriCount(allmubFAOriCount + 11);
+                setmubFASRupeeCost(mubFASRupeeCost + 5);
+                setwbFASRupeeCost(wbFASRupeeCost + 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 5)
+                setFireSwordRefineState(event.target.value);
+            }
+            else if (fireSwordRefineState == 1 && event.target.value == 0) 
+            {
+                setmubFASSilverMaskCountState(mubFASSilverMaskCount + 16);
+                setwbFASSilverMaskCountState(wbFASSilverMaskCount + 16);
+                setmubFASGoldMaskCountState(mubFASGoldMaskCount + 10);
+                setwbFASGoldMaskCountState(wbFASGoldMaskCount + 10);
+                setmubFASInsanityCountState(mubFASInsanityCount + 7);
+                setwbFASInsanityCountState(wbFASInsanityCount + 7);
+                setmubFASOriCountState(mubFASOriCount + 1);
+                setwbFASOriCountState(wbFASOriCount + 1);
+                setmubFASRupeeCost(mubFASRupeeCost + 2.5);
+                setwbFASRupeeCost(wbFASRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                setallmubFAOriCount(allmubFAOriCount + 1)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireSwordRefineState(event.target.value);
             }
         }
     }
@@ -732,129 +855,241 @@ export default function FireAgitoWeapons() {
     }
 
     function handleFireBladeUnbindIncrement(event) {
-        setFireWeaponChoiceState("blade")
+        setFireWeaponChoiceState("blade");
         if (fireBladeUnbindState < event.target.value) {
-            if (event.target.value - fireBladeUnbindState == 1) {
+            if (event.target.value == 9 && fireBladeUnbindState == 0) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 304);
+                setwbFABlSilverMaskCountState(wbFABlSilverMaskCount - 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 304);
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - 230);
+                setwbFABlSilverMaskCountState(wbFABlSilverMaskCount - 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 230);
+                setmubFABlInsanityCountState(mubFABlInsanityCount - 58);
+                setwbFABlInsanityCountState(wbFABlInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFABlGaleCountState(mubFABlGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFABlSandCountState(mubFABlSandCount - 4);
+                setwbFABlSandCountState(wbFABlSandCount - 4);
+                setallmubFASandCount(allmubFASandCount - 4);
+                setmubFABlOriCountState(mubFABlOriCount - 24);
+                setwbFABlOriCountState(wbFABlOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFABlRupeeCost(mubFABlRupeeCost - 40);
+                setwbFABlRupeeCost(wbFABlRupeeCost - 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 40);
                 setFireBladeUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 40)
-                    setwbFABlSilverMaskCountState(wbFABlSilverMaskCount - 40)
-                    setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - 30)
-                    setwbFABlGoldMaskCountState(wbFABlGoldMaskCount - 30)
-                    setmubFABlSandCountState(mubFABlSandCount - 1)
-                    setwbFABlSandCountState(wbFABlSandCount - 1)
-                    setmubFABlRupeeCost(mubFABlRupeeCost - 2)
-                    setwbFABlRupeeCost(wbFABlRupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFASandCount(allmubFASandCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 16)
-                    setwbFABlSilverMaskCountState(wbFABlSilverMaskCount - 16)
-                    setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - 10)
-                    setwbFABlGoldMaskCountState(wbFABlGoldMaskCount - 10)
-                    setmubFABlInsanityCountState(mubFABlInsanityCount - 7)
-                    setwbFABlInsanityCountState(wbFABlInsanityCount - 7)
-                    setmubFABlOriCountState(mubFABlOriCount - 1)
-                    setwbFABlOriCountState(wbFABlOriCount - 1)
-                    setmubFABlRupeeCost(mubFABlRupeeCost - 7.5)
-                    setwbFABlRupeeCost(wbFABlRupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 16)
-                    setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - 10)
-                    setmubFABlInsanityCountState(mubFABlInsanityCount - 7)
-                    setmubFABlOriCountState(mubFABlOriCount - 1)
-                    setmubFABlRupeeCost(mubFABlRupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 80)
-                    setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - 70)
-                    setmubFABlInsanityCountState(mubFABlInsanityCount - 30)
-                    setmubFABlGaleCountState(mubFABlGaleCount - 20)
-                    setmubFABlOriCountState(mubFABlOriCount - 20)
-                    setmubFABlRupeeCost(mubFABlRupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
-                    setallmubFAGaleCount(allmubFAGaleCount - 20)
-                    setallmubFAOriCount(allmubFAOriCount - 20)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && fireBladeUnbindState >= 1 && fireBladeUnbindState <= 4) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 144 - ((4 - fireBladeUnbindState) * 40));
+                setwbFABlSilverMaskCountState(wbFABlSilverMaskCount - 16 - ((4 - fireBladeUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 144 - ((4 - fireBladeUnbindState) * 40));
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - 110 - ((4 - fireBladeUnbindState) * 30));
+                setwbFABlGoldMaskCountState(wbFABlGoldMaskCount - 10 - ((4 - fireBladeUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 110 - ((4 - fireBladeUnbindState) * 30));
+                setmubFABlInsanityCountState(mubFABlInsanityCount - 58);
+                setwbFABlInsanityCountState(wbFABlInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFABlGaleCountState(mubFABlGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFABlSandCountState(mubFABlSandCount - (4 - fireBladeUnbindState));
+                setwbFABlSandCountState(wbFABlSandCount - (4 - fireBladeUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireBladeUnbindState));
+                setmubFABlOriCountState(mubFABlOriCount - 24);
+                setwbFABlOriCountState(wbFABlOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFABlRupeeCost(mubFABlRupeeCost - 32 - ((4 - fireBladeUnbindState) * 2));
+                setwbFABlRupeeCost(wbFABlRupeeCost - 7.5 - ((4 - fireBladeUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - 32 - ((4 - fireBladeUnbindState) * 2));
+                setFireBladeUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && fireBladeUnbindState >= 5 && fireBladeUnbindState <= 8) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 80 - ((8 - fireBladeUnbindState) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 80 - ((8 - fireBladeUnbindState) * 16));
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - 70 - ((8 - fireBladeUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70 - ((8 - fireBladeUnbindState) * 10));
+                setmubFABlInsanityCountState(mubFABlInsanityCount - 30 - ((8 - fireBladeUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - 30 - ((8 - fireBladeUnbindState) * 7));
+                setmubFABlGaleCountState(mubFABlGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFABlOriCountState(mubFABlOriCount - 20 - ((8 - fireBladeUnbindState) * 1));
+                setallmubFAOriCount(allmubFAOriCount - 20 - ((8 - fireBladeUnbindState) * 1));
+                setmubFABlRupeeCost(mubFABlRupeeCost - 2 - ((8 - fireBladeUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - 2 - ((8 - fireBladeUnbindState) * 7.5));
+                setFireBladeUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireBladeUnbindState <= 7 && fireBladeUnbindState >= 5) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - ((event.target.value - fireBladeUnbindState) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireBladeUnbindState) * 16));
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - ((event.target.value - fireBladeUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireBladeUnbindState) * 10));
+                setmubFABlInsanityCountState(mubFABlInsanityCount - ((event.target.value - fireBladeUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - ((event.target.value - fireBladeUnbindState) * 7));
+                setmubFABlOriCountState(mubFABlOriCount - (event.target.value - fireBladeUnbindState));
+                setallmubFAOriCount(allmubFAOriCount - (event.target.value - fireBladeUnbindState));
+                setmubFABlRupeeCost(mubFABlRupeeCost - ((event.target.value - fireBladeUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireBladeUnbindState) * 7.5));
+                setFireBladeUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireBladeUnbindState <= 4 && fireBladeUnbindState >= 0) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - ((4 - fireBladeUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbFABlSilverMaskCountState(wbFABlSilverMaskCount - 16 - ((4 - fireBladeUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((4 - fireBladeUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - ((4 - fireBladeUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbFABlGoldMaskCountState(wbFABlGoldMaskCount - 10 - ((4 - fireBladeUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((4 - fireBladeUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubFABlInsanityCountState(mubFABlInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbFABlInsanityCountState(wbFABlInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubFABlSandCountState(mubFABlSandCount - (4 - fireBladeUnbindState));
+                setwbFABlSandCountState(wbFABlSandCount - (4 - fireBladeUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireBladeUnbindState));
+                setmubFABlOriCountState(mubFABlOriCount - (-1 * (4 - event.target.value)));
+                setwbFABlOriCountState(wbFABlOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - (-1 * (4 - event.target.value)));
+                setmubFABlRupeeCost(mubFABlRupeeCost - ((4 - fireBladeUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbFABlRupeeCost(wbFABlRupeeCost - 7.5 - ((4 - fireBladeUnbindState) * 2))
+                setFireBladeUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && fireBladeUnbindState <= 3 && fireBladeUnbindState >= 0) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - ((event.target.value - fireBladeUnbindState) * 40));
+                setwbFABlSilverMaskCountState(wbFABlSilverMaskCount - ((event.target.value - fireBladeUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireBladeUnbindState) * 40));
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - ((event.target.value - fireBladeUnbindState) * 30));
+                setwbFABlGoldMaskCountState(wbFABlGoldMaskCount - ((event.target.value - fireBladeUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireBladeUnbindState) * 30));
+                setmubFABlSandCountState(mubFABlSandCount - (event.target.value - fireBladeUnbindState));
+                setwbFABlSandCountState(wbFABlSandCount - (event.target.value - fireBladeUnbindState));
+                setallmubFASandCount(allmubFASandCount - (event.target.value - fireBladeUnbindState));
+                setmubFABlRupeeCost(mubFABlRupeeCost - ((event.target.value - fireBladeUnbindState) * 2));
+                setwbFABlRupeeCost(wbFABlRupeeCost - ((event.target.value - fireBladeUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireBladeUnbindState) * 2));
+                setFireBladeUnbindState(event.target.value)
             }
         }
         else if (fireBladeUnbindState > event.target.value) {
-            if (fireBladeUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && fireBladeUnbindState == 9) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 304);
+                setwbFABlSilverMaskCountState(wbFABlSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 304);
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + 230);
+                setwbFABlGoldMaskCountState(wbFABlGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 230);
+                setmubFABlInsanityCountState(mubFABlInsanityCount + 58);
+                setwbFABlInsanityCountState(wbFABlInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 58);
+                setmubFABlGaleCountState(mubFABlGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFABlSandCountState(mubFABlSandCount + 4);
+                setwbFABlSandCountState(wbFABlSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFABlOriCountState(mubFABlOriCount + 24);
+                setwbFABlOriCountState(wbFABlOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + 24);
+                setmubFABlRupeeCost(mubFABlRupeeCost + 40);
+                setwbFABlRupeeCost(wbFABlRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 40);
                 setFireBladeUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 40)
-                    setwbFABlSilverMaskCountState(wbFABlSilverMaskCount + 40)
-                    setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + 30)
-                    setwbFABlGoldMaskCountState(wbFABlGoldMaskCount + 30)
-                    setmubFABlSandCountState(mubFABlSandCount + 1)
-                    setwbFABlSandCountState(wbFABlSandCount + 1)
-                    setmubFABlRupeeCost(mubFABlRupeeCost + 2)
-                    setwbFABlRupeeCost(wbFABlRupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFASandCount(allmubFASandCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 16)
-                    setwbFABlSilverMaskCountState(wbFABlSilverMaskCount + 16)
-                    setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + 10)
-                    setwbFABlGoldMaskCountState(wbFABlGoldMaskCount + 10)
-                    setmubFABlInsanityCountState(mubFABlInsanityCount + 7)
-                    setwbFABlInsanityCountState(wbFABlInsanityCount + 7)
-                    setmubFABlOriCountState(mubFABlOriCount + 1)
-                    setwbFABlOriCountState(wbFABlOriCount + 1)
-                    setmubFABlRupeeCost(mubFABlRupeeCost + 7.5)
-                    setwbFABlRupeeCost(wbFABlRupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 16)
-                    setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + 10)
-                    setmubFABlInsanityCountState(mubFABlInsanityCount + 7)
-                    setmubFABlOriCountState(mubFABlOriCount + 1)
-                    setmubFABlRupeeCost(mubFABlRupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 80)
-                    setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + 70)
-                    setmubFABlInsanityCountState(mubFABlInsanityCount + 30)
-                    setmubFABlGaleCountState(mubFABlGaleCount + 20)
-                    setmubFABlOriCountState(mubFABlOriCount + 20)
-                    setmubFABlRupeeCost(mubFABlRupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
-                    setallmubFAGaleCount(allmubFAGaleCount + 20)
-                    setallmubFAOriCount(allmubFAOriCount + 20)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && fireBladeUnbindState >= 5 && fireBladeUnbindState <= 8) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 160 + ((-1 * (4 - fireBladeUnbindState)) * 16));
+                setwbFABlSilverMaskCountState(wbFABlSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 160 + ((-1 * (4 - fireBladeUnbindState)) * 16));
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + 120 + ((-1 * (4 - fireBladeUnbindState)) * 10));
+                setwbFABlGoldMaskCountState(wbFABlGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 120 + ((-1 * (4 - fireBladeUnbindState)) * 10));
+                setmubFABlInsanityCountState(mubFABlInsanityCount + ((-1 * (4 - fireBladeUnbindState)) * 7));
+                setwbFABlInsanityCountState(wbFABlInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((-1 * (4 - fireBladeUnbindState)) * 7));
+                setmubFABlSandCountState(mubFABlSandCount + 4);
+                setwbFABlSandCountState(wbFABlSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFABlOriCountState(mubFABlOriCount + (-1 * (4 - fireBladeUnbindState)));
+                setwbFABlOriCountState(wbFABlOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + (-1 * (4 - fireBladeUnbindState)));
+                setmubFABlRupeeCost(mubFABlRupeeCost + 8 + (-1 * (4 - fireBladeUnbindState) * 7.5));
+                setwbFABlRupeeCost(wbFABlRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 8 + (-1 * (4 - fireBladeUnbindState) * 7.5));
+                setFireBladeUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && fireBladeUnbindState >= 1 && fireBladeUnbindState <= 4) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + (fireBladeUnbindState * 40));
+                setwbFABlSilverMaskCountState(wbFABlSilverMaskCount + (fireBladeUnbindState * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + (fireBladeUnbindState * 40));
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + (fireBladeUnbindState * 30));
+                setwbFABlGoldMaskCountState(wbFABlGoldMaskCount + (fireBladeUnbindState * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + (fireBladeUnbindState * 30));
+                setmubFABlSandCountState(mubFABlSandCount + fireBladeUnbindState);
+                setwbFABlSandCountState(wbFABlSandCount + fireBladeUnbindState);
+                setallmubFASandCount(allmubFASandCount + fireBladeUnbindState);
+                setmubFABlRupeeCost(mubFABlRupeeCost + (fireBladeUnbindState * 2));
+                setwbFABlRupeeCost(wbFABlRupeeCost + (fireBladeUnbindState * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + (fireBladeUnbindState * 2));
+                setFireBladeUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireBladeUnbindState >= 1 && fireBladeUnbindState <= 4) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + ((fireBladeUnbindState - event.target.value) * 40))
+                setwbFABlSilverMaskCountState(wbFABlSilverMaskCount + ((fireBladeUnbindState - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireBladeUnbindState - event.target.value) * 40));
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + ((fireBladeUnbindState - event.target.value) * 30));
+                setwbFABlGoldMaskCountState(wbFABlGoldMaskCount + ((fireBladeUnbindState - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireBladeUnbindState - event.target.value) * 30));
+                setmubFABlSandCountState(mubFABlSandCount + (fireBladeUnbindState - event.target.value));
+                setwbFABlSandCountState(wbFABlSandCount + (fireBladeUnbindState - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (fireBladeUnbindState - event.target.value));
+                setmubFABlRupeeCost(mubFABlRupeeCost + ((fireBladeUnbindState - event.target.value) * 2));
+                setwbFABlRupeeCost(wbFABlRupeeCost + ((fireBladeUnbindState - event.target.value) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireBladeUnbindState - event.target.value) * 2))
+                setFireBladeUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireBladeUnbindState >= 5 && fireBladeUnbindState <= 8) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + ((fireBladeUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbFABlSilverMaskCountState(wbFABlSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireBladeUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + ((fireBladeUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbFABlGoldMaskCountState(wbFABlGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireBladeUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubFABlInsanityCountState(mubFABlInsanityCount + ((fireBladeUnbindState - 4) * 7));
+                setwbFABlInsanityCountState(wbFABlInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireBladeUnbindState - 4) * 7));
+                setmubFABlSandCountState(mubFABlSandCount + (4 - event.target.value));
+                setwbFABlSandCountState(wbFABlSandCount + (4 - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (4 - event.target.value));
+                setmubFABlOriCountState(mubFABlOriCount + (fireBladeUnbindState - 4));
+                setwbFABlOriCountState(wbFABlOriCount + (fireBladeUnbindState - 4));
+                setallmubFAOriCount(allmubFAOriCount + (fireBladeUnbindState - 4));
+                setmubFABlRupeeCost(mubFABlRupeeCost + ((fireBladeUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbFABlRupeeCost(wbFABlRupeeCost + 7.5 + ((fireBladeUnbindState - 4) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireBladeUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setFireBladeUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireBladeUnbindState == 9) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubFABlInsanityCountState(mubFABlInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubFABlGaleCountState(mubFABlGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFABlOriCountState(mubFABlOriCount + 20 + (8 - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + 20 + (8 - event.target.value));
+                setmubFABlRupeeCost(mubFABlRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setFireBladeUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireBladeUnbindState >= 5 && fireBladeUnbindState <= 8) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + ((fireBladeUnbindState - event.target.value) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireBladeUnbindState - event.target.value) * 16));
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + ((fireBladeUnbindState - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireBladeUnbindState - event.target.value) * 10));
+                setmubFABlInsanityCountState(mubFABlInsanityCount + ((fireBladeUnbindState - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireBladeUnbindState - event.target.value) * 7));
+                setmubFABlOriCountState(mubFABlOriCount + (fireBladeUnbindState - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + (fireBladeUnbindState - event.target.value));
+                setmubFABlRupeeCost(mubFABlRupeeCost + ((fireBladeUnbindState - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireBladeUnbindState - event.target.value) * 7.5));
+                setFireBladeUnbindState(event.target.value)
             }
         }
     }
@@ -862,75 +1097,116 @@ export default function FireAgitoWeapons() {
     function handleFireBladeRefineIncrement(event) {
         setFireWeaponChoiceState("blade");
         if (fireBladeRefineState < event.target.value) {
-            if (event.target.value - fireBladeRefineState == 1) {
+            if (fireBladeRefineState == 0 && event.target.value == 1) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 16);
+                setwbFABlSilverMaskCountState(wbFABlSilverMaskCount - 16);
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - 10);
+                setwbFABlGoldMaskCountState(wbFABlGoldMaskCount - 10);
+                setmubFABlInsanityCountState(mubFABlInsanityCount - 7);
+                setwbFABlInsanityCountState(wbFABlInsanityCount - 7);
+                setmubFABlOriCountState(mubFABlOriCount - 1);
+                setwbFABlOriCountState(wbFABlOriCount - 1);
+                setmubFABlRupeeCost(mubFABlRupeeCost - 2.5);
+                setwbFABlRupeeCost(wbFABlRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                setallmubFAOriCount(allmubFAOriCount - 1)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 setFireBladeRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 16);
-                    setwbFABlSilverMaskCountState(wbFABlSilverMaskCount - 16);
-                    setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - 10);
-                    setwbFABlGoldMaskCountState(wbFABlGoldMaskCount - 10);
-                    setmubFABlInsanityCountState(mubFABlInsanityCount - 7);
-                    setwbFABlInsanityCountState(wbFABlInsanityCount - 7);
-                    setmubFABlOriCountState(mubFABlOriCount - 1);
-                    setwbFABlOriCountState(wbFABlOriCount - 1);
-                    setmubFABlRupeeCost(mubFABlRupeeCost - 2.5);
-                    setwbFABlRupeeCost(wbFABlRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 40)
-                    setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - 30);
-                    setmubFABlInsanityCountState(mubFABlInsanityCount - 10);
-                    setmubFABlGaleCountState(mubFABlGaleCount - 10);
-                    setmubFABlOriCountState(mubFABlOriCount - 10);
-                    setmubFABlRupeeCost(mubFABlRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
-                    setallmubFAGaleCount(allmubFAGaleCount - 10)
-                    setallmubFAOriCount(allmubFAOriCount - 10)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
+            }
+            else if (fireBladeRefineState == 0 && event.target.value == 2) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 56);
+                setwbFABlSilverMaskCountState(wbFABlSilverMaskCount - 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 56);
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - 40);
+                setwbFABlGoldMaskCountState(wbFABlGoldMaskCount - 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 40);
+                setmubFABlInsanityCountState(mubFABlInsanityCount - 17);
+                setwbFABlInsanityCountState(wbFABlInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 17);
+                setmubFABlGaleCountState(mubFABlGaleCount - 10);
+                setallmubFAGaleCount(allmubFAGaleCount - 10);
+                setmubFABlOriCountState(mubFABlOriCount - 11);
+                setwbFABlOriCountState(wbFABlOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 11);
+                setmubFABlRupeeCost(mubFABlRupeeCost - 5);
+                setwbFABlRupeeCost(wbFABlRupeeCost - 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 5);
+                setFireBladeRefineState(event.target.value);
+            }
+            else if (fireBladeRefineState == 1 && event.target.value == 2) {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount - 40)
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount - 30);
+                setmubFABlInsanityCountState(mubFABlInsanityCount - 10);
+                setmubFABlGaleCountState(mubFABlGaleCount - 10);
+                setmubFABlOriCountState(mubFABlOriCount - 10);
+                setmubFABlRupeeCost(mubFABlRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                setallmubFAGaleCount(allmubFAGaleCount - 10)
+                setallmubFAOriCount(allmubFAOriCount - 10)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
+                setFireBladeRefineState(event.target.value);
             }
         }
         else if (fireBladeRefineState > event.target.value) {
-            if (fireBladeRefineState - event.target.value == 1) {
-                setFireBladeRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 16);
-                    setwbFABlSilverMaskCountState(wbFABlSilverMaskCount + 16);
-                    setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + 10);
-                    setwbFABlGoldMaskCountState(wbFABlGoldMaskCount + 10);
-                    setmubFABlInsanityCountState(mubFABlInsanityCount + 7);
-                    setwbFABlInsanityCountState(wbFABlInsanityCount + 7);
-                    setmubFABlOriCountState(mubFABlOriCount + 1);
-                    setwbFABlOriCountState(wbFABlOriCount + 1);
-                    setmubFABlRupeeCost(mubFABlRupeeCost + 2.5);
-                    setwbFABlRupeeCost(wbFABlRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 40)
-                    setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + 30);
-                    setmubFABlInsanityCountState(mubFABlInsanityCount + 10);
-                    setmubFABlGaleCountState(mubFABlGaleCount + 10);
-                    setmubFABlOriCountState(mubFABlOriCount + 10);
-                    setmubFABlRupeeCost(mubFABlRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
-                    setallmubFAGaleCount(allmubFAGaleCount + 10)
-                    setallmubFAOriCount(allmubFAOriCount + 10)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
+            if (fireBladeRefineState == 2 && event.target.value == 1) 
+            {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 40)
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + 30);
+                setmubFABlInsanityCountState(mubFABlInsanityCount + 10);
+                setmubFABlGaleCountState(mubFABlGaleCount + 10);
+                setmubFABlOriCountState(mubFABlOriCount + 10);
+                setmubFABlRupeeCost(mubFABlRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                setallmubFAGaleCount(allmubFAGaleCount + 10)
+                setallmubFAOriCount(allmubFAOriCount + 10)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireBladeRefineState(event.target.value);
+            }
+            else if (fireBladeRefineState == 2 && event.target.value == 0) 
+            {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 56);
+                setwbFABlSilverMaskCountState(wbFABlSilverMaskCount + 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 56);
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + 40);
+                setwbFABlGoldMaskCountState(wbFABlGoldMaskCount + 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 40);
+                setmubFABlInsanityCountState(mubFABlInsanityCount + 17);
+                setwbFABlInsanityCountState(wbFABlInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 17);
+                setmubFABlGaleCountState(mubFABlGaleCount + 10);
+                setallmubFAGaleCount(allmubFAGaleCount + 10);
+                setmubFABlOriCountState(mubFABlOriCount + 11);
+                setwbFABlOriCountState(wbFABlOriCount + 1); 
+                setallmubFAOriCount(allmubFAOriCount + 11);
+                setmubFABlRupeeCost(mubFABlRupeeCost + 5);
+                setwbFABlRupeeCost(wbFABlRupeeCost + 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 5)
+                setFireBladeRefineState(event.target.value);
+            }
+            else if (fireBladeRefineState == 1 && event.target.value == 0) 
+            {
+                setmubFABlSilverMaskCountState(mubFABlSilverMaskCount + 16);
+                setwbFABlSilverMaskCountState(wbFABlSilverMaskCount + 16);
+                setmubFABlGoldMaskCountState(mubFABlGoldMaskCount + 10);
+                setwbFABlGoldMaskCountState(wbFABlGoldMaskCount + 10);
+                setmubFABlInsanityCountState(mubFABlInsanityCount + 7);
+                setwbFABlInsanityCountState(wbFABlInsanityCount + 7);
+                setmubFABlOriCountState(mubFABlOriCount + 1);
+                setwbFABlOriCountState(wbFABlOriCount + 1);
+                setmubFABlRupeeCost(mubFABlRupeeCost + 2.5);
+                setwbFABlRupeeCost(wbFABlRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                setallmubFAOriCount(allmubFAOriCount + 1)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireBladeRefineState(event.target.value);
             }
         }
     }
@@ -1039,129 +1315,241 @@ export default function FireAgitoWeapons() {
     }
 
     function handleFireDaggerUnbindIncrement(event) {
-        setFireWeaponChoiceState("dagger")
+        setFireWeaponChoiceState("dagger");
         if (fireDaggerUnbindState < event.target.value) {
-            if (event.target.value - fireDaggerUnbindState == 1) {
+            if (event.target.value == 9 && fireDaggerUnbindState == 0) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount - 304);
+                setwbFADSilverMaskCountState(wbFADSilverMaskCount - 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 304);
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount - 230);
+                setwbFADSilverMaskCountState(wbFADSilverMaskCount - 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 230);
+                setmubFADInsanityCountState(mubFADInsanityCount - 58);
+                setwbFADInsanityCountState(wbFADInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFADGaleCountState(mubFADGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFADSandCountState(mubFADSandCount - 4);
+                setwbFADSandCountState(wbFADSandCount - 4);
+                setallmubFASandCount(allmubFASandCount - 4);
+                setmubFADOriCountState(mubFADOriCount - 24);
+                setwbFADOriCountState(wbFADOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFADRupeeCost(mubFADRupeeCost - 40);
+                setwbFADRupeeCost(wbFADRupeeCost - 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 40);
                 setFireDaggerUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubFADSilverMaskCountState(mubFADSilverMaskCount - 40)
-                    setwbFADSilverMaskCountState(wbFADSilverMaskCount - 40)
-                    setmubFADGoldMaskCountState(mubFADGoldMaskCount - 30)
-                    setwbFADGoldMaskCountState(wbFADGoldMaskCount - 30)
-                    setmubFADSandCountState(mubFADSandCount - 1)
-                    setwbFADSandCountState(wbFADSandCount - 1)
-                    setmubFADRupeeCost(mubFADRupeeCost - 2)
-                    setwbFADRupeeCost(wbFADRupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFASandCount(allmubFASandCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubFADSilverMaskCountState(mubFADSilverMaskCount - 16)
-                    setwbFADSilverMaskCountState(wbFADSilverMaskCount - 16)
-                    setmubFADGoldMaskCountState(mubFADGoldMaskCount - 10)
-                    setwbFADGoldMaskCountState(wbFADGoldMaskCount - 10)
-                    setmubFADInsanityCountState(mubFADInsanityCount - 7)
-                    setwbFADInsanityCountState(wbFADInsanityCount - 7)
-                    setmubFADOriCountState(mubFADOriCount - 1)
-                    setwbFADOriCountState(wbFADOriCount - 1)
-                    setmubFADRupeeCost(mubFADRupeeCost - 7.5)
-                    setwbFADRupeeCost(wbFADRupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubFADSilverMaskCountState(mubFADSilverMaskCount - 16)
-                    setmubFADGoldMaskCountState(mubFADGoldMaskCount - 10)
-                    setmubFADInsanityCountState(mubFADInsanityCount - 7)
-                    setmubFADOriCountState(mubFADOriCount - 1)
-                    setmubFADRupeeCost(mubFADRupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubFADSilverMaskCountState(mubFADSilverMaskCount - 80)
-                    setmubFADGoldMaskCountState(mubFADGoldMaskCount - 70)
-                    setmubFADInsanityCountState(mubFADInsanityCount - 30)
-                    setmubFADGaleCountState(mubFADGaleCount - 20)
-                    setmubFADOriCountState(mubFADOriCount - 20)
-                    setmubFADRupeeCost(mubFADRupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
-                    setallmubFAGaleCount(allmubFAGaleCount - 20)
-                    setallmubFAOriCount(allmubFAOriCount - 20)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && fireDaggerUnbindState >= 1 && fireDaggerUnbindState <= 4) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount - 144 - ((4 - fireDaggerUnbindState) * 40));
+                setwbFADSilverMaskCountState(wbFADSilverMaskCount - 16 - ((4 - fireDaggerUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 144 - ((4 - fireDaggerUnbindState) * 40));
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount - 110 - ((4 - fireDaggerUnbindState) * 30));
+                setwbFADGoldMaskCountState(wbFADGoldMaskCount - 10 - ((4 - fireDaggerUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 110 - ((4 - fireDaggerUnbindState) * 30));
+                setmubFADInsanityCountState(mubFADInsanityCount - 58);
+                setwbFADInsanityCountState(wbFADInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFADGaleCountState(mubFADGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFADSandCountState(mubFADSandCount - (4 - fireDaggerUnbindState));
+                setwbFADSandCountState(wbFADSandCount - (4 - fireDaggerUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireDaggerUnbindState));
+                setmubFADOriCountState(mubFADOriCount - 24);
+                setwbFADOriCountState(wbFADOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFADRupeeCost(mubFADRupeeCost - 32 - ((4 - fireDaggerUnbindState) * 2));
+                setwbFADRupeeCost(wbFADRupeeCost - 7.5 - ((4 - fireDaggerUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - 32 - ((4 - fireDaggerUnbindState) * 2));
+                setFireDaggerUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && fireDaggerUnbindState >= 5 && fireDaggerUnbindState <= 8) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount - 80 - ((8 - fireDaggerUnbindState) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 80 - ((8 - fireDaggerUnbindState) * 16));
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount - 70 - ((8 - fireDaggerUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70 - ((8 - fireDaggerUnbindState) * 10));
+                setmubFADInsanityCountState(mubFADInsanityCount - 30 - ((8 - fireDaggerUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - 30 - ((8 - fireDaggerUnbindState) * 7));
+                setmubFADGaleCountState(mubFADGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFADOriCountState(mubFADOriCount - 20 - ((8 - fireDaggerUnbindState) * 1));
+                setallmubFAOriCount(allmubFAOriCount - 20 - ((8 - fireDaggerUnbindState) * 1));
+                setmubFADRupeeCost(mubFADRupeeCost - 2 - ((8 - fireDaggerUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - 2 - ((8 - fireDaggerUnbindState) * 7.5));
+                setFireDaggerUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireDaggerUnbindState <= 7 && fireDaggerUnbindState >= 5) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount - ((event.target.value - fireDaggerUnbindState) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireDaggerUnbindState) * 16));
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount - ((event.target.value - fireDaggerUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireDaggerUnbindState) * 10));
+                setmubFADInsanityCountState(mubFADInsanityCount - ((event.target.value - fireDaggerUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - ((event.target.value - fireDaggerUnbindState) * 7));
+                setmubFADOriCountState(mubFADOriCount - (event.target.value - fireDaggerUnbindState));
+                setallmubFAOriCount(allmubFAOriCount - (event.target.value - fireDaggerUnbindState));
+                setmubFADRupeeCost(mubFADRupeeCost - ((event.target.value - fireDaggerUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireDaggerUnbindState) * 7.5));
+                setFireDaggerUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireDaggerUnbindState <= 4 && fireDaggerUnbindState >= 0) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount - ((4 - fireDaggerUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbFADSilverMaskCountState(wbFADSilverMaskCount - 16 - ((4 - fireDaggerUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((4 - fireDaggerUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount - ((4 - fireDaggerUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbFADGoldMaskCountState(wbFADGoldMaskCount - 10 - ((4 - fireDaggerUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((4 - fireDaggerUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubFADInsanityCountState(mubFADInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbFADInsanityCountState(wbFADInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubFADSandCountState(mubFADSandCount - (4 - fireDaggerUnbindState));
+                setwbFADSandCountState(wbFADSandCount - (4 - fireDaggerUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireDaggerUnbindState));
+                setmubFADOriCountState(mubFADOriCount - (-1 * (4 - event.target.value)));
+                setwbFADOriCountState(wbFADOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - (-1 * (4 - event.target.value)));
+                setmubFADRupeeCost(mubFADRupeeCost - ((4 - fireDaggerUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbFADRupeeCost(wbFADRupeeCost - 7.5 - ((4 - fireDaggerUnbindState) * 2))
+                setFireDaggerUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && fireDaggerUnbindState <= 3 && fireDaggerUnbindState >= 0) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount - ((event.target.value - fireDaggerUnbindState) * 40));
+                setwbFADSilverMaskCountState(wbFADSilverMaskCount - ((event.target.value - fireDaggerUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireDaggerUnbindState) * 40));
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount - ((event.target.value - fireDaggerUnbindState) * 30));
+                setwbFADGoldMaskCountState(wbFADGoldMaskCount - ((event.target.value - fireDaggerUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireDaggerUnbindState) * 30));
+                setmubFADSandCountState(mubFADSandCount - (event.target.value - fireDaggerUnbindState));
+                setwbFADSandCountState(wbFADSandCount - (event.target.value - fireDaggerUnbindState));
+                setallmubFASandCount(allmubFASandCount - (event.target.value - fireDaggerUnbindState));
+                setmubFADRupeeCost(mubFADRupeeCost - ((event.target.value - fireDaggerUnbindState) * 2));
+                setwbFADRupeeCost(wbFADRupeeCost - ((event.target.value - fireDaggerUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireDaggerUnbindState) * 2));
+                setFireDaggerUnbindState(event.target.value)
             }
         }
         else if (fireDaggerUnbindState > event.target.value) {
-            if (fireDaggerUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && fireDaggerUnbindState == 9) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount + 304);
+                setwbFADSilverMaskCountState(wbFADSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 304);
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount + 230);
+                setwbFADGoldMaskCountState(wbFADGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 230);
+                setmubFADInsanityCountState(mubFADInsanityCount + 58);
+                setwbFADInsanityCountState(wbFADInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 58);
+                setmubFADGaleCountState(mubFADGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFADSandCountState(mubFADSandCount + 4);
+                setwbFADSandCountState(wbFADSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFADOriCountState(mubFADOriCount + 24);
+                setwbFADOriCountState(wbFADOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + 24);
+                setmubFADRupeeCost(mubFADRupeeCost + 40);
+                setwbFADRupeeCost(wbFADRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 40);
                 setFireDaggerUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubFADSilverMaskCountState(mubFADSilverMaskCount + 40)
-                    setwbFADSilverMaskCountState(wbFADSilverMaskCount + 40)
-                    setmubFADGoldMaskCountState(mubFADGoldMaskCount + 30)
-                    setwbFADGoldMaskCountState(wbFADGoldMaskCount + 30)
-                    setmubFADSandCountState(mubFADSandCount + 1)
-                    setwbFADSandCountState(wbFADSandCount + 1)
-                    setmubFADRupeeCost(mubFADRupeeCost + 2)
-                    setwbFADRupeeCost(wbFADRupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFASandCount(allmubFASandCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubFADSilverMaskCountState(mubFADSilverMaskCount + 16)
-                    setwbFADSilverMaskCountState(wbFADSilverMaskCount + 16)
-                    setmubFADGoldMaskCountState(mubFADGoldMaskCount + 10)
-                    setwbFADGoldMaskCountState(wbFADGoldMaskCount + 10)
-                    setmubFADInsanityCountState(mubFADInsanityCount + 7)
-                    setwbFADInsanityCountState(wbFADInsanityCount + 7)
-                    setmubFADOriCountState(mubFADOriCount + 1)
-                    setwbFADOriCountState(wbFADOriCount + 1)
-                    setmubFADRupeeCost(mubFADRupeeCost + 7.5)
-                    setwbFADRupeeCost(wbFADRupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubFADSilverMaskCountState(mubFADSilverMaskCount + 16)
-                    setmubFADGoldMaskCountState(mubFADGoldMaskCount + 10)
-                    setmubFADInsanityCountState(mubFADInsanityCount + 7)
-                    setmubFADOriCountState(mubFADOriCount + 1)
-                    setmubFADRupeeCost(mubFADRupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubFADSilverMaskCountState(mubFADSilverMaskCount + 80)
-                    setmubFADGoldMaskCountState(mubFADGoldMaskCount + 70)
-                    setmubFADInsanityCountState(mubFADInsanityCount + 30)
-                    setmubFADGaleCountState(mubFADGaleCount + 20)
-                    setmubFADOriCountState(mubFADOriCount + 20)
-                    setmubFADRupeeCost(mubFADRupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
-                    setallmubFAGaleCount(allmubFAGaleCount + 20)
-                    setallmubFAOriCount(allmubFAOriCount + 20)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && fireDaggerUnbindState >= 5 && fireDaggerUnbindState <= 8) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount + 160 + ((-1 * (4 - fireDaggerUnbindState)) * 16));
+                setwbFADSilverMaskCountState(wbFADSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 160 + ((-1 * (4 - fireDaggerUnbindState)) * 16));
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount + 120 + ((-1 * (4 - fireDaggerUnbindState)) * 10));
+                setwbFADGoldMaskCountState(wbFADGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 120 + ((-1 * (4 - fireDaggerUnbindState)) * 10));
+                setmubFADInsanityCountState(mubFADInsanityCount + ((-1 * (4 - fireDaggerUnbindState)) * 7));
+                setwbFADInsanityCountState(wbFADInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((-1 * (4 - fireDaggerUnbindState)) * 7));
+                setmubFADSandCountState(mubFADSandCount + 4);
+                setwbFADSandCountState(wbFADSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFADOriCountState(mubFADOriCount + (-1 * (4 - fireDaggerUnbindState)));
+                setwbFADOriCountState(wbFADOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + (-1 * (4 - fireDaggerUnbindState)));
+                setmubFADRupeeCost(mubFADRupeeCost + 8 + (-1 * (4 - fireDaggerUnbindState) * 7.5));
+                setwbFADRupeeCost(wbFADRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 8 + (-1 * (4 - fireDaggerUnbindState) * 7.5));
+                setFireDaggerUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && fireDaggerUnbindState >= 1 && fireDaggerUnbindState <= 4) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount + (fireDaggerUnbindState * 40));
+                setwbFADSilverMaskCountState(wbFADSilverMaskCount + (fireDaggerUnbindState * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + (fireDaggerUnbindState * 40));
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount + (fireDaggerUnbindState * 30));
+                setwbFADGoldMaskCountState(wbFADGoldMaskCount + (fireDaggerUnbindState * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + (fireDaggerUnbindState * 30));
+                setmubFADSandCountState(mubFADSandCount + fireDaggerUnbindState);
+                setwbFADSandCountState(wbFADSandCount + fireDaggerUnbindState);
+                setallmubFASandCount(allmubFASandCount + fireDaggerUnbindState);
+                setmubFADRupeeCost(mubFADRupeeCost + (fireDaggerUnbindState * 2));
+                setwbFADRupeeCost(wbFADRupeeCost + (fireDaggerUnbindState * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + (fireDaggerUnbindState * 2));
+                setFireDaggerUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireDaggerUnbindState >= 1 && fireDaggerUnbindState <= 4) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount + ((fireDaggerUnbindState - event.target.value) * 40))
+                setwbFADSilverMaskCountState(wbFADSilverMaskCount + ((fireDaggerUnbindState - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireDaggerUnbindState - event.target.value) * 40));
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount + ((fireDaggerUnbindState - event.target.value) * 30));
+                setwbFADGoldMaskCountState(wbFADGoldMaskCount + ((fireDaggerUnbindState - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireDaggerUnbindState - event.target.value) * 30));
+                setmubFADSandCountState(mubFADSandCount + (fireDaggerUnbindState - event.target.value));
+                setwbFADSandCountState(wbFADSandCount + (fireDaggerUnbindState - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (fireDaggerUnbindState - event.target.value));
+                setmubFADRupeeCost(mubFADRupeeCost + ((fireDaggerUnbindState - event.target.value) * 2));
+                setwbFADRupeeCost(wbFADRupeeCost + ((fireDaggerUnbindState - event.target.value) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireDaggerUnbindState - event.target.value) * 2))
+                setFireDaggerUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireDaggerUnbindState >= 5 && fireDaggerUnbindState <= 8) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount + ((fireDaggerUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbFADSilverMaskCountState(wbFADSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireDaggerUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount + ((fireDaggerUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbFADGoldMaskCountState(wbFADGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireDaggerUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubFADInsanityCountState(mubFADInsanityCount + ((fireDaggerUnbindState - 4) * 7));
+                setwbFADInsanityCountState(wbFADInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireDaggerUnbindState - 4) * 7));
+                setmubFADSandCountState(mubFADSandCount + (4 - event.target.value));
+                setwbFADSandCountState(wbFADSandCount + (4 - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (4 - event.target.value));
+                setmubFADOriCountState(mubFADOriCount + (fireDaggerUnbindState - 4));
+                setwbFADOriCountState(wbFADOriCount + (fireDaggerUnbindState - 4));
+                setallmubFAOriCount(allmubFAOriCount + (fireDaggerUnbindState - 4));
+                setmubFADRupeeCost(mubFADRupeeCost + ((fireDaggerUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbFADRupeeCost(wbFADRupeeCost + 7.5 + ((fireDaggerUnbindState - 4) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireDaggerUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setFireDaggerUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireDaggerUnbindState == 9) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubFADInsanityCountState(mubFADInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubFADGaleCountState(mubFADGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFADOriCountState(mubFADOriCount + 20 + (8 - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + 20 + (8 - event.target.value));
+                setmubFADRupeeCost(mubFADRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setFireDaggerUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireDaggerUnbindState >= 5 && fireDaggerUnbindState <= 8) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount + ((fireDaggerUnbindState - event.target.value) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireDaggerUnbindState - event.target.value) * 16));
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount + ((fireDaggerUnbindState - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireDaggerUnbindState - event.target.value) * 10));
+                setmubFADInsanityCountState(mubFADInsanityCount + ((fireDaggerUnbindState - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireDaggerUnbindState - event.target.value) * 7));
+                setmubFADOriCountState(mubFADOriCount + (fireDaggerUnbindState - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + (fireDaggerUnbindState - event.target.value));
+                setmubFADRupeeCost(mubFADRupeeCost + ((fireDaggerUnbindState - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireDaggerUnbindState - event.target.value) * 7.5));
+                setFireDaggerUnbindState(event.target.value)
             }
         }
     }
@@ -1169,75 +1557,116 @@ export default function FireAgitoWeapons() {
     function handleFireDaggerRefineIncrement(event) {
         setFireWeaponChoiceState("dagger");
         if (fireDaggerRefineState < event.target.value) {
-            if (event.target.value - fireDaggerRefineState == 1) {
+            if (fireDaggerRefineState == 0 && event.target.value == 1) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount - 16);
+                setwbFADSilverMaskCountState(wbFADSilverMaskCount - 16);
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount - 10);
+                setwbFADGoldMaskCountState(wbFADGoldMaskCount - 10);
+                setmubFADInsanityCountState(mubFADInsanityCount - 7);
+                setwbFADInsanityCountState(wbFADInsanityCount - 7);
+                setmubFADOriCountState(mubFADOriCount - 1);
+                setwbFADOriCountState(wbFADOriCount - 1);
+                setmubFADRupeeCost(mubFADRupeeCost - 2.5);
+                setwbFADRupeeCost(wbFADRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                setallmubFAOriCount(allmubFAOriCount - 1)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 setFireDaggerRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubFADSilverMaskCountState(mubFADSilverMaskCount - 16);
-                    setwbFADSilverMaskCountState(wbFADSilverMaskCount - 16);
-                    setmubFADGoldMaskCountState(mubFADGoldMaskCount - 10);
-                    setwbFADGoldMaskCountState(wbFADGoldMaskCount - 10);
-                    setmubFADInsanityCountState(mubFADInsanityCount - 7);
-                    setwbFADInsanityCountState(wbFADInsanityCount - 7);
-                    setmubFADOriCountState(mubFADOriCount - 1);
-                    setwbFADOriCountState(wbFADOriCount - 1);
-                    setmubFADRupeeCost(mubFADRupeeCost - 2.5);
-                    setwbFADRupeeCost(wbFADRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubFADSilverMaskCountState(mubFADSilverMaskCount - 40)
-                    setmubFADGoldMaskCountState(mubFADGoldMaskCount - 30);
-                    setmubFADInsanityCountState(mubFADInsanityCount - 10);
-                    setmubFADGaleCountState(mubFADGaleCount - 10);
-                    setmubFADOriCountState(mubFADOriCount - 10);
-                    setmubFADRupeeCost(mubFADRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
-                    setallmubFAGaleCount(allmubFAGaleCount - 10)
-                    setallmubFAOriCount(allmubFAOriCount - 10)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
+            }
+            else if (fireDaggerRefineState == 0 && event.target.value == 2) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount - 56);
+                setwbFADSilverMaskCountState(wbFADSilverMaskCount - 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 56);
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount - 40);
+                setwbFADGoldMaskCountState(wbFADGoldMaskCount - 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 40);
+                setmubFADInsanityCountState(mubFADInsanityCount - 17);
+                setwbFADInsanityCountState(wbFADInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 17);
+                setmubFADGaleCountState(mubFADGaleCount - 10);
+                setallmubFAGaleCount(allmubFAGaleCount - 10);
+                setmubFADOriCountState(mubFADOriCount - 11);
+                setwbFADOriCountState(wbFADOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 11);
+                setmubFADRupeeCost(mubFADRupeeCost - 5);
+                setwbFADRupeeCost(wbFADRupeeCost - 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 5);
+                setFireDaggerRefineState(event.target.value);
+            }
+            else if (fireDaggerRefineState == 1 && event.target.value == 2) {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount - 40)
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount - 30);
+                setmubFADInsanityCountState(mubFADInsanityCount - 10);
+                setmubFADGaleCountState(mubFADGaleCount - 10);
+                setmubFADOriCountState(mubFADOriCount - 10);
+                setmubFADRupeeCost(mubFADRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                setallmubFAGaleCount(allmubFAGaleCount - 10)
+                setallmubFAOriCount(allmubFAOriCount - 10)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
+                setFireDaggerRefineState(event.target.value);
             }
         }
         else if (fireDaggerRefineState > event.target.value) {
-            if (fireDaggerRefineState - event.target.value == 1) {
-                setFireDaggerRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubFADSilverMaskCountState(mubFADSilverMaskCount + 16);
-                    setwbFADSilverMaskCountState(wbFADSilverMaskCount + 16);
-                    setmubFADGoldMaskCountState(mubFADGoldMaskCount + 10);
-                    setwbFADGoldMaskCountState(wbFADGoldMaskCount + 10);
-                    setmubFADInsanityCountState(mubFADInsanityCount + 7);
-                    setwbFADInsanityCountState(wbFADInsanityCount + 7);
-                    setmubFADOriCountState(mubFADOriCount + 1);
-                    setwbFADOriCountState(wbFADOriCount + 1);
-                    setmubFADRupeeCost(mubFADRupeeCost + 2.5);
-                    setwbFADRupeeCost(wbFADRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubFADSilverMaskCountState(mubFADSilverMaskCount + 40)
-                    setmubFADGoldMaskCountState(mubFADGoldMaskCount + 30);
-                    setmubFADInsanityCountState(mubFADInsanityCount + 10);
-                    setmubFADGaleCountState(mubFADGaleCount + 10);
-                    setmubFADOriCountState(mubFADOriCount + 10);
-                    setmubFADRupeeCost(mubFADRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
-                    setallmubFAGaleCount(allmubFAGaleCount + 10)
-                    setallmubFAOriCount(allmubFAOriCount + 10)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
+            if (fireDaggerRefineState == 2 && event.target.value == 1) 
+            {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount + 40)
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount + 30);
+                setmubFADInsanityCountState(mubFADInsanityCount + 10);
+                setmubFADGaleCountState(mubFADGaleCount + 10);
+                setmubFADOriCountState(mubFADOriCount + 10);
+                setmubFADRupeeCost(mubFADRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                setallmubFAGaleCount(allmubFAGaleCount + 10)
+                setallmubFAOriCount(allmubFAOriCount + 10)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireDaggerRefineState(event.target.value);
+            }
+            else if (fireDaggerRefineState == 2 && event.target.value == 0) 
+            {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount + 56);
+                setwbFADSilverMaskCountState(wbFADSilverMaskCount + 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 56);
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount + 40);
+                setwbFADGoldMaskCountState(wbFADGoldMaskCount + 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 40);
+                setmubFADInsanityCountState(mubFADInsanityCount + 17);
+                setwbFADInsanityCountState(wbFADInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 17);
+                setmubFADGaleCountState(mubFADGaleCount + 10);
+                setallmubFAGaleCount(allmubFAGaleCount + 10);
+                setmubFADOriCountState(mubFADOriCount + 11);
+                setwbFADOriCountState(wbFADOriCount + 1); 
+                setallmubFAOriCount(allmubFAOriCount + 11);
+                setmubFADRupeeCost(mubFADRupeeCost + 5);
+                setwbFADRupeeCost(wbFADRupeeCost + 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 5)
+                setFireDaggerRefineState(event.target.value);
+            }
+            else if (fireDaggerRefineState == 1 && event.target.value == 0) 
+            {
+                setmubFADSilverMaskCountState(mubFADSilverMaskCount + 16);
+                setwbFADSilverMaskCountState(wbFADSilverMaskCount + 16);
+                setmubFADGoldMaskCountState(mubFADGoldMaskCount + 10);
+                setwbFADGoldMaskCountState(wbFADGoldMaskCount + 10);
+                setmubFADInsanityCountState(mubFADInsanityCount + 7);
+                setwbFADInsanityCountState(wbFADInsanityCount + 7);
+                setmubFADOriCountState(mubFADOriCount + 1);
+                setwbFADOriCountState(wbFADOriCount + 1);
+                setmubFADRupeeCost(mubFADRupeeCost + 2.5);
+                setwbFADRupeeCost(wbFADRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                setallmubFAOriCount(allmubFAOriCount + 1)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireDaggerRefineState(event.target.value);
             }
         }
     }
@@ -1346,129 +1775,241 @@ export default function FireAgitoWeapons() {
     }
 
     function handleFireAxeUnbindIncrement(event) {
-        setFireWeaponChoiceState("axe")
+        setFireWeaponChoiceState("axe");
         if (fireAxeUnbindState < event.target.value) {
-            if (event.target.value - fireAxeUnbindState == 1) {
+            if (event.target.value == 9 && fireAxeUnbindState == 0) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount - 304);
+                setwbFAASilverMaskCountState(wbFAASilverMaskCount - 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 304);
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - 230);
+                setwbFAASilverMaskCountState(wbFAASilverMaskCount - 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 230);
+                setmubFAAInsanityCountState(mubFAAInsanityCount - 58);
+                setwbFAAInsanityCountState(wbFAAInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFAAGaleCountState(mubFAAGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFAASandCountState(mubFAASandCount - 4);
+                setwbFAASandCountState(wbFAASandCount - 4);
+                setallmubFASandCount(allmubFASandCount - 4);
+                setmubFAAOriCountState(mubFAAOriCount - 24);
+                setwbFAAOriCountState(wbFAAOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFAARupeeCost(mubFAARupeeCost - 40);
+                setwbFAARupeeCost(wbFAARupeeCost - 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 40);
                 setFireAxeUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubFAASilverMaskCountState(mubFAASilverMaskCount - 40)
-                    setwbFAASilverMaskCountState(wbFAASilverMaskCount - 40)
-                    setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - 30)
-                    setwbFAAGoldMaskCountState(wbFAAGoldMaskCount - 30)
-                    setmubFAASandCountState(mubFAASandCount - 1)
-                    setwbFAASandCountState(wbFAASandCount - 1)
-                    setmubFAARupeeCost(mubFAARupeeCost - 2)
-                    setwbFAARupeeCost(wbFAARupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFASandCount(allmubFASandCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubFAASilverMaskCountState(mubFAASilverMaskCount - 16)
-                    setwbFAASilverMaskCountState(wbFAASilverMaskCount - 16)
-                    setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - 10)
-                    setwbFAAGoldMaskCountState(wbFAAGoldMaskCount - 10)
-                    setmubFAAInsanityCountState(mubFAAInsanityCount - 7)
-                    setwbFAAInsanityCountState(wbFAAInsanityCount - 7)
-                    setmubFAAOriCountState(mubFAAOriCount - 1)
-                    setwbFAAOriCountState(wbFAAOriCount - 1)
-                    setmubFAARupeeCost(mubFAARupeeCost - 7.5)
-                    setwbFAARupeeCost(wbFAARupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubFAASilverMaskCountState(mubFAASilverMaskCount - 16)
-                    setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - 10)
-                    setmubFAAInsanityCountState(mubFAAInsanityCount - 7)
-                    setmubFAAOriCountState(mubFAAOriCount - 1)
-                    setmubFAARupeeCost(mubFAARupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubFAASilverMaskCountState(mubFAASilverMaskCount - 80)
-                    setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - 70)
-                    setmubFAAInsanityCountState(mubFAAInsanityCount - 30)
-                    setmubFAAGaleCountState(mubFAAGaleCount - 20)
-                    setmubFAAOriCountState(mubFAAOriCount - 20)
-                    setmubFAARupeeCost(mubFAARupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
-                    setallmubFAGaleCount(allmubFAGaleCount - 20)
-                    setallmubFAOriCount(allmubFAOriCount - 20)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && fireAxeUnbindState >= 1 && fireAxeUnbindState <= 4) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount - 144 - ((4 - fireAxeUnbindState) * 40));
+                setwbFAASilverMaskCountState(wbFAASilverMaskCount - 16 - ((4 - fireAxeUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 144 - ((4 - fireAxeUnbindState) * 40));
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - 110 - ((4 - fireAxeUnbindState) * 30));
+                setwbFAAGoldMaskCountState(wbFAAGoldMaskCount - 10 - ((4 - fireAxeUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 110 - ((4 - fireAxeUnbindState) * 30));
+                setmubFAAInsanityCountState(mubFAAInsanityCount - 58);
+                setwbFAAInsanityCountState(wbFAAInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFAAGaleCountState(mubFAAGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFAASandCountState(mubFAASandCount - (4 - fireAxeUnbindState));
+                setwbFAASandCountState(wbFAASandCount - (4 - fireAxeUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireAxeUnbindState));
+                setmubFAAOriCountState(mubFAAOriCount - 24);
+                setwbFAAOriCountState(wbFAAOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFAARupeeCost(mubFAARupeeCost - 32 - ((4 - fireAxeUnbindState) * 2));
+                setwbFAARupeeCost(wbFAARupeeCost - 7.5 - ((4 - fireAxeUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - 32 - ((4 - fireAxeUnbindState) * 2));
+                setFireAxeUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && fireAxeUnbindState >= 5 && fireAxeUnbindState <= 8) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount - 80 - ((8 - fireAxeUnbindState) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 80 - ((8 - fireAxeUnbindState) * 16));
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - 70 - ((8 - fireAxeUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70 - ((8 - fireAxeUnbindState) * 10));
+                setmubFAAInsanityCountState(mubFAAInsanityCount - 30 - ((8 - fireAxeUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - 30 - ((8 - fireAxeUnbindState) * 7));
+                setmubFAAGaleCountState(mubFAAGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFAAOriCountState(mubFAAOriCount - 20 - ((8 - fireAxeUnbindState) * 1));
+                setallmubFAOriCount(allmubFAOriCount - 20 - ((8 - fireAxeUnbindState) * 1));
+                setmubFAARupeeCost(mubFAARupeeCost - 2 - ((8 - fireAxeUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - 2 - ((8 - fireAxeUnbindState) * 7.5));
+                setFireAxeUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireAxeUnbindState <= 7 && fireAxeUnbindState >= 5) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount - ((event.target.value - fireAxeUnbindState) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireAxeUnbindState) * 16));
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - ((event.target.value - fireAxeUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireAxeUnbindState) * 10));
+                setmubFAAInsanityCountState(mubFAAInsanityCount - ((event.target.value - fireAxeUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - ((event.target.value - fireAxeUnbindState) * 7));
+                setmubFAAOriCountState(mubFAAOriCount - (event.target.value - fireAxeUnbindState));
+                setallmubFAOriCount(allmubFAOriCount - (event.target.value - fireAxeUnbindState));
+                setmubFAARupeeCost(mubFAARupeeCost - ((event.target.value - fireAxeUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireAxeUnbindState) * 7.5));
+                setFireAxeUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireAxeUnbindState <= 4 && fireAxeUnbindState >= 0) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount - ((4 - fireAxeUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbFAASilverMaskCountState(wbFAASilverMaskCount - 16 - ((4 - fireAxeUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((4 - fireAxeUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - ((4 - fireAxeUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbFAAGoldMaskCountState(wbFAAGoldMaskCount - 10 - ((4 - fireAxeUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((4 - fireAxeUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubFAAInsanityCountState(mubFAAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbFAAInsanityCountState(wbFAAInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubFAASandCountState(mubFAASandCount - (4 - fireAxeUnbindState));
+                setwbFAASandCountState(wbFAASandCount - (4 - fireAxeUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireAxeUnbindState));
+                setmubFAAOriCountState(mubFAAOriCount - (-1 * (4 - event.target.value)));
+                setwbFAAOriCountState(wbFAAOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - (-1 * (4 - event.target.value)));
+                setmubFAARupeeCost(mubFAARupeeCost - ((4 - fireAxeUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbFAARupeeCost(wbFAARupeeCost - 7.5 - ((4 - fireAxeUnbindState) * 2))
+                setFireAxeUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && fireAxeUnbindState <= 3 && fireAxeUnbindState >= 0) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount - ((event.target.value - fireAxeUnbindState) * 40));
+                setwbFAASilverMaskCountState(wbFAASilverMaskCount - ((event.target.value - fireAxeUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireAxeUnbindState) * 40));
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - ((event.target.value - fireAxeUnbindState) * 30));
+                setwbFAAGoldMaskCountState(wbFAAGoldMaskCount - ((event.target.value - fireAxeUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireAxeUnbindState) * 30));
+                setmubFAASandCountState(mubFAASandCount - (event.target.value - fireAxeUnbindState));
+                setwbFAASandCountState(wbFAASandCount - (event.target.value - fireAxeUnbindState));
+                setallmubFASandCount(allmubFASandCount - (event.target.value - fireAxeUnbindState));
+                setmubFAARupeeCost(mubFAARupeeCost - ((event.target.value - fireAxeUnbindState) * 2));
+                setwbFAARupeeCost(wbFAARupeeCost - ((event.target.value - fireAxeUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireAxeUnbindState) * 2));
+                setFireAxeUnbindState(event.target.value)
             }
         }
         else if (fireAxeUnbindState > event.target.value) {
-            if (fireAxeUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && fireAxeUnbindState == 9) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount + 304);
+                setwbFAASilverMaskCountState(wbFAASilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 304);
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + 230);
+                setwbFAAGoldMaskCountState(wbFAAGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 230);
+                setmubFAAInsanityCountState(mubFAAInsanityCount + 58);
+                setwbFAAInsanityCountState(wbFAAInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 58);
+                setmubFAAGaleCountState(mubFAAGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFAASandCountState(mubFAASandCount + 4);
+                setwbFAASandCountState(wbFAASandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFAAOriCountState(mubFAAOriCount + 24);
+                setwbFAAOriCountState(wbFAAOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + 24);
+                setmubFAARupeeCost(mubFAARupeeCost + 40);
+                setwbFAARupeeCost(wbFAARupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 40);
                 setFireAxeUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubFAASilverMaskCountState(mubFAASilverMaskCount + 40)
-                    setwbFAASilverMaskCountState(wbFAASilverMaskCount + 40)
-                    setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + 30)
-                    setwbFAAGoldMaskCountState(wbFAAGoldMaskCount + 30)
-                    setmubFAASandCountState(mubFAASandCount + 1)
-                    setwbFAASandCountState(wbFAASandCount + 1)
-                    setmubFAARupeeCost(mubFAARupeeCost + 2)
-                    setwbFAARupeeCost(wbFAARupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFASandCount(allmubFASandCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubFAASilverMaskCountState(mubFAASilverMaskCount + 16)
-                    setwbFAASilverMaskCountState(wbFAASilverMaskCount + 16)
-                    setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + 10)
-                    setwbFAAGoldMaskCountState(wbFAAGoldMaskCount + 10)
-                    setmubFAAInsanityCountState(mubFAAInsanityCount + 7)
-                    setwbFAAInsanityCountState(wbFAAInsanityCount + 7)
-                    setmubFAAOriCountState(mubFAAOriCount + 1)
-                    setwbFAAOriCountState(wbFAAOriCount + 1)
-                    setmubFAARupeeCost(mubFAARupeeCost + 7.5)
-                    setwbFAARupeeCost(wbFAARupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubFAASilverMaskCountState(mubFAASilverMaskCount + 16)
-                    setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + 10)
-                    setmubFAAInsanityCountState(mubFAAInsanityCount + 7)
-                    setmubFAAOriCountState(mubFAAOriCount + 1)
-                    setmubFAARupeeCost(mubFAARupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubFAASilverMaskCountState(mubFAASilverMaskCount + 80)
-                    setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + 70)
-                    setmubFAAInsanityCountState(mubFAAInsanityCount + 30)
-                    setmubFAAGaleCountState(mubFAAGaleCount + 20)
-                    setmubFAAOriCountState(mubFAAOriCount + 20)
-                    setmubFAARupeeCost(mubFAARupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
-                    setallmubFAGaleCount(allmubFAGaleCount + 20)
-                    setallmubFAOriCount(allmubFAOriCount + 20)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && fireAxeUnbindState >= 5 && fireAxeUnbindState <= 8) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount + 160 + ((-1 * (4 - fireAxeUnbindState)) * 16));
+                setwbFAASilverMaskCountState(wbFAASilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 160 + ((-1 * (4 - fireAxeUnbindState)) * 16));
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + 120 + ((-1 * (4 - fireAxeUnbindState)) * 10));
+                setwbFAAGoldMaskCountState(wbFAAGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 120 + ((-1 * (4 - fireAxeUnbindState)) * 10));
+                setmubFAAInsanityCountState(mubFAAInsanityCount + ((-1 * (4 - fireAxeUnbindState)) * 7));
+                setwbFAAInsanityCountState(wbFAAInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((-1 * (4 - fireAxeUnbindState)) * 7));
+                setmubFAASandCountState(mubFAASandCount + 4);
+                setwbFAASandCountState(wbFAASandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFAAOriCountState(mubFAAOriCount + (-1 * (4 - fireAxeUnbindState)));
+                setwbFAAOriCountState(wbFAAOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + (-1 * (4 - fireAxeUnbindState)));
+                setmubFAARupeeCost(mubFAARupeeCost + 8 + (-1 * (4 - fireAxeUnbindState) * 7.5));
+                setwbFAARupeeCost(wbFAARupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 8 + (-1 * (4 - fireAxeUnbindState) * 7.5));
+                setFireAxeUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && fireAxeUnbindState >= 1 && fireAxeUnbindState <= 4) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount + (fireAxeUnbindState * 40));
+                setwbFAASilverMaskCountState(wbFAASilverMaskCount + (fireAxeUnbindState * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + (fireAxeUnbindState * 40));
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + (fireAxeUnbindState * 30));
+                setwbFAAGoldMaskCountState(wbFAAGoldMaskCount + (fireAxeUnbindState * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + (fireAxeUnbindState * 30));
+                setmubFAASandCountState(mubFAASandCount + fireAxeUnbindState);
+                setwbFAASandCountState(wbFAASandCount + fireAxeUnbindState);
+                setallmubFASandCount(allmubFASandCount + fireAxeUnbindState);
+                setmubFAARupeeCost(mubFAARupeeCost + (fireAxeUnbindState * 2));
+                setwbFAARupeeCost(wbFAARupeeCost + (fireAxeUnbindState * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + (fireAxeUnbindState * 2));
+                setFireAxeUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireAxeUnbindState >= 1 && fireAxeUnbindState <= 4) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount + ((fireAxeUnbindState - event.target.value) * 40))
+                setwbFAASilverMaskCountState(wbFAASilverMaskCount + ((fireAxeUnbindState - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireAxeUnbindState - event.target.value) * 40));
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + ((fireAxeUnbindState - event.target.value) * 30));
+                setwbFAAGoldMaskCountState(wbFAAGoldMaskCount + ((fireAxeUnbindState - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireAxeUnbindState - event.target.value) * 30));
+                setmubFAASandCountState(mubFAASandCount + (fireAxeUnbindState - event.target.value));
+                setwbFAASandCountState(wbFAASandCount + (fireAxeUnbindState - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (fireAxeUnbindState - event.target.value));
+                setmubFAARupeeCost(mubFAARupeeCost + ((fireAxeUnbindState - event.target.value) * 2));
+                setwbFAARupeeCost(wbFAARupeeCost + ((fireAxeUnbindState - event.target.value) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireAxeUnbindState - event.target.value) * 2))
+                setFireAxeUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireAxeUnbindState >= 5 && fireAxeUnbindState <= 8) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount + ((fireAxeUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbFAASilverMaskCountState(wbFAASilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireAxeUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + ((fireAxeUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbFAAGoldMaskCountState(wbFAAGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireAxeUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubFAAInsanityCountState(mubFAAInsanityCount + ((fireAxeUnbindState - 4) * 7));
+                setwbFAAInsanityCountState(wbFAAInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireAxeUnbindState - 4) * 7));
+                setmubFAASandCountState(mubFAASandCount + (4 - event.target.value));
+                setwbFAASandCountState(wbFAASandCount + (4 - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (4 - event.target.value));
+                setmubFAAOriCountState(mubFAAOriCount + (fireAxeUnbindState - 4));
+                setwbFAAOriCountState(wbFAAOriCount + (fireAxeUnbindState - 4));
+                setallmubFAOriCount(allmubFAOriCount + (fireAxeUnbindState - 4));
+                setmubFAARupeeCost(mubFAARupeeCost + ((fireAxeUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbFAARupeeCost(wbFAARupeeCost + 7.5 + ((fireAxeUnbindState - 4) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireAxeUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setFireAxeUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireAxeUnbindState == 9) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubFAAInsanityCountState(mubFAAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubFAAGaleCountState(mubFAAGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFAAOriCountState(mubFAAOriCount + 20 + (8 - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + 20 + (8 - event.target.value));
+                setmubFAARupeeCost(mubFAARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setFireAxeUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireAxeUnbindState >= 5 && fireAxeUnbindState <= 8) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount + ((fireAxeUnbindState - event.target.value) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireAxeUnbindState - event.target.value) * 16));
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + ((fireAxeUnbindState - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireAxeUnbindState - event.target.value) * 10));
+                setmubFAAInsanityCountState(mubFAAInsanityCount + ((fireAxeUnbindState - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireAxeUnbindState - event.target.value) * 7));
+                setmubFAAOriCountState(mubFAAOriCount + (fireAxeUnbindState - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + (fireAxeUnbindState - event.target.value));
+                setmubFAARupeeCost(mubFAARupeeCost + ((fireAxeUnbindState - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireAxeUnbindState - event.target.value) * 7.5));
+                setFireAxeUnbindState(event.target.value)
             }
         }
     }
@@ -1476,75 +2017,116 @@ export default function FireAgitoWeapons() {
     function handleFireAxeRefineIncrement(event) {
         setFireWeaponChoiceState("axe");
         if (fireAxeRefineState < event.target.value) {
-            if (event.target.value - fireAxeRefineState == 1) {
+            if (fireAxeRefineState == 0 && event.target.value == 1) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount - 16);
+                setwbFAASilverMaskCountState(wbFAASilverMaskCount - 16);
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - 10);
+                setwbFAAGoldMaskCountState(wbFAAGoldMaskCount - 10);
+                setmubFAAInsanityCountState(mubFAAInsanityCount - 7);
+                setwbFAAInsanityCountState(wbFAAInsanityCount - 7);
+                setmubFAAOriCountState(mubFAAOriCount - 1);
+                setwbFAAOriCountState(wbFAAOriCount - 1);
+                setmubFAARupeeCost(mubFAARupeeCost - 2.5);
+                setwbFAARupeeCost(wbFAARupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                setallmubFAOriCount(allmubFAOriCount - 1)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 setFireAxeRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubFAASilverMaskCountState(mubFAASilverMaskCount - 16);
-                    setwbFAASilverMaskCountState(wbFAASilverMaskCount - 16);
-                    setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - 10);
-                    setwbFAAGoldMaskCountState(wbFAAGoldMaskCount - 10);
-                    setmubFAAInsanityCountState(mubFAAInsanityCount - 7);
-                    setwbFAAInsanityCountState(wbFAAInsanityCount - 7);
-                    setmubFAAOriCountState(mubFAAOriCount - 1);
-                    setwbFAAOriCountState(wbFAAOriCount - 1);
-                    setmubFAARupeeCost(mubFAARupeeCost - 2.5);
-                    setwbFAARupeeCost(wbFAARupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubFAASilverMaskCountState(mubFAASilverMaskCount - 40)
-                    setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - 30);
-                    setmubFAAInsanityCountState(mubFAAInsanityCount - 10);
-                    setmubFAAGaleCountState(mubFAAGaleCount - 10);
-                    setmubFAAOriCountState(mubFAAOriCount - 10);
-                    setmubFAARupeeCost(mubFAARupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
-                    setallmubFAGaleCount(allmubFAGaleCount - 10)
-                    setallmubFAOriCount(allmubFAOriCount - 10)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
+            }
+            else if (fireAxeRefineState == 0 && event.target.value == 2) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount - 56);
+                setwbFAASilverMaskCountState(wbFAASilverMaskCount - 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 56);
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - 40);
+                setwbFAAGoldMaskCountState(wbFAAGoldMaskCount - 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 40);
+                setmubFAAInsanityCountState(mubFAAInsanityCount - 17);
+                setwbFAAInsanityCountState(wbFAAInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 17);
+                setmubFAAGaleCountState(mubFAAGaleCount - 10);
+                setallmubFAGaleCount(allmubFAGaleCount - 10);
+                setmubFAAOriCountState(mubFAAOriCount - 11);
+                setwbFAAOriCountState(wbFAAOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 11);
+                setmubFAARupeeCost(mubFAARupeeCost - 5);
+                setwbFAARupeeCost(wbFAARupeeCost - 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 5);
+                setFireAxeRefineState(event.target.value);
+            }
+            else if (fireAxeRefineState == 1 && event.target.value == 2) {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount - 40)
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount - 30);
+                setmubFAAInsanityCountState(mubFAAInsanityCount - 10);
+                setmubFAAGaleCountState(mubFAAGaleCount - 10);
+                setmubFAAOriCountState(mubFAAOriCount - 10);
+                setmubFAARupeeCost(mubFAARupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                setallmubFAGaleCount(allmubFAGaleCount - 10)
+                setallmubFAOriCount(allmubFAOriCount - 10)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
+                setFireAxeRefineState(event.target.value);
             }
         }
         else if (fireAxeRefineState > event.target.value) {
-            if (fireAxeRefineState - event.target.value == 1) {
-                setFireAxeRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubFAASilverMaskCountState(mubFAASilverMaskCount + 16);
-                    setwbFAASilverMaskCountState(wbFAASilverMaskCount + 16);
-                    setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + 10);
-                    setwbFAAGoldMaskCountState(wbFAAGoldMaskCount + 10);
-                    setmubFAAInsanityCountState(mubFAAInsanityCount + 7);
-                    setwbFAAInsanityCountState(wbFAAInsanityCount + 7);
-                    setmubFAAOriCountState(mubFAAOriCount + 1);
-                    setwbFAAOriCountState(wbFAAOriCount + 1);
-                    setmubFAARupeeCost(mubFAARupeeCost + 2.5);
-                    setwbFAARupeeCost(wbFAARupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubFAASilverMaskCountState(mubFAASilverMaskCount + 40)
-                    setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + 30);
-                    setmubFAAInsanityCountState(mubFAAInsanityCount + 10);
-                    setmubFAAGaleCountState(mubFAAGaleCount + 10);
-                    setmubFAAOriCountState(mubFAAOriCount + 10);
-                    setmubFAARupeeCost(mubFAARupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
-                    setallmubFAGaleCount(allmubFAGaleCount + 10)
-                    setallmubFAOriCount(allmubFAOriCount + 10)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
+            if (fireAxeRefineState == 2 && event.target.value == 1) 
+            {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount + 40)
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + 30);
+                setmubFAAInsanityCountState(mubFAAInsanityCount + 10);
+                setmubFAAGaleCountState(mubFAAGaleCount + 10);
+                setmubFAAOriCountState(mubFAAOriCount + 10);
+                setmubFAARupeeCost(mubFAARupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                setallmubFAGaleCount(allmubFAGaleCount + 10)
+                setallmubFAOriCount(allmubFAOriCount + 10)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireAxeRefineState(event.target.value);
+            }
+            else if (fireAxeRefineState == 2 && event.target.value == 0) 
+            {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount + 56);
+                setwbFAASilverMaskCountState(wbFAASilverMaskCount + 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 56);
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + 40);
+                setwbFAAGoldMaskCountState(wbFAAGoldMaskCount + 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 40);
+                setmubFAAInsanityCountState(mubFAAInsanityCount + 17);
+                setwbFAAInsanityCountState(wbFAAInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 17);
+                setmubFAAGaleCountState(mubFAAGaleCount + 10);
+                setallmubFAGaleCount(allmubFAGaleCount + 10);
+                setmubFAAOriCountState(mubFAAOriCount + 11);
+                setwbFAAOriCountState(wbFAAOriCount + 1); 
+                setallmubFAOriCount(allmubFAOriCount + 11);
+                setmubFAARupeeCost(mubFAARupeeCost + 5);
+                setwbFAARupeeCost(wbFAARupeeCost + 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 5)
+                setFireAxeRefineState(event.target.value);
+            }
+            else if (fireAxeRefineState == 1 && event.target.value == 0) 
+            {
+                setmubFAASilverMaskCountState(mubFAASilverMaskCount + 16);
+                setwbFAASilverMaskCountState(wbFAASilverMaskCount + 16);
+                setmubFAAGoldMaskCountState(mubFAAGoldMaskCount + 10);
+                setwbFAAGoldMaskCountState(wbFAAGoldMaskCount + 10);
+                setmubFAAInsanityCountState(mubFAAInsanityCount + 7);
+                setwbFAAInsanityCountState(wbFAAInsanityCount + 7);
+                setmubFAAOriCountState(mubFAAOriCount + 1);
+                setwbFAAOriCountState(wbFAAOriCount + 1);
+                setmubFAARupeeCost(mubFAARupeeCost + 2.5);
+                setwbFAARupeeCost(wbFAARupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                setallmubFAOriCount(allmubFAOriCount + 1)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireAxeRefineState(event.target.value);
             }
         }
     }
@@ -1653,129 +2235,241 @@ export default function FireAgitoWeapons() {
     }
 
     function handleFireLanceUnbindIncrement(event) {
-        setFireWeaponChoiceState("lance")
+        setFireWeaponChoiceState("lance");
         if (fireLanceUnbindState < event.target.value) {
-            if (event.target.value - fireLanceUnbindState == 1) {
+            if (event.target.value == 9 && fireLanceUnbindState == 0) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount - 304);
+                setwbFALSilverMaskCountState(wbFALSilverMaskCount - 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 304);
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount - 230);
+                setwbFALSilverMaskCountState(wbFALSilverMaskCount - 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 230);
+                setmubFALInsanityCountState(mubFALInsanityCount - 58);
+                setwbFALInsanityCountState(wbFALInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFALGaleCountState(mubFALGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFALSandCountState(mubFALSandCount - 4);
+                setwbFALSandCountState(wbFALSandCount - 4);
+                setallmubFASandCount(allmubFASandCount - 4);
+                setmubFALOriCountState(mubFALOriCount - 24);
+                setwbFALOriCountState(wbFALOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFALRupeeCost(mubFALRupeeCost - 40);
+                setwbFALRupeeCost(wbFALRupeeCost - 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 40);
                 setFireLanceUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubFALSilverMaskCountState(mubFALSilverMaskCount - 40)
-                    setwbFALSilverMaskCountState(wbFALSilverMaskCount - 40)
-                    setmubFALGoldMaskCountState(mubFALGoldMaskCount - 30)
-                    setwbFALGoldMaskCountState(wbFALGoldMaskCount - 30)
-                    setmubFALSandCountState(mubFALSandCount - 1)
-                    setwbFALSandCountState(wbFALSandCount - 1)
-                    setmubFALRupeeCost(mubFALRupeeCost - 2)
-                    setwbFALRupeeCost(wbFALRupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFASandCount(allmubFASandCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubFALSilverMaskCountState(mubFALSilverMaskCount - 16)
-                    setwbFALSilverMaskCountState(wbFALSilverMaskCount - 16)
-                    setmubFALGoldMaskCountState(mubFALGoldMaskCount - 10)
-                    setwbFALGoldMaskCountState(wbFALGoldMaskCount - 10)
-                    setmubFALInsanityCountState(mubFALInsanityCount - 7)
-                    setwbFALInsanityCountState(wbFALInsanityCount - 7)
-                    setmubFALOriCountState(mubFALOriCount - 1)
-                    setwbFALOriCountState(wbFALOriCount - 1)
-                    setmubFALRupeeCost(mubFALRupeeCost - 7.5)
-                    setwbFALRupeeCost(wbFALRupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubFALSilverMaskCountState(mubFALSilverMaskCount - 16)
-                    setmubFALGoldMaskCountState(mubFALGoldMaskCount - 10)
-                    setmubFALInsanityCountState(mubFALInsanityCount - 7)
-                    setmubFALOriCountState(mubFALOriCount - 1)
-                    setmubFALRupeeCost(mubFALRupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubFALSilverMaskCountState(mubFALSilverMaskCount - 80)
-                    setmubFALGoldMaskCountState(mubFALGoldMaskCount - 70)
-                    setmubFALInsanityCountState(mubFALInsanityCount - 30)
-                    setmubFALGaleCountState(mubFALGaleCount - 20)
-                    setmubFALOriCountState(mubFALOriCount - 20)
-                    setmubFALRupeeCost(mubFALRupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
-                    setallmubFAGaleCount(allmubFAGaleCount - 20)
-                    setallmubFAOriCount(allmubFAOriCount - 20)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && fireLanceUnbindState >= 1 && fireLanceUnbindState <= 4) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount - 144 - ((4 - fireLanceUnbindState) * 40));
+                setwbFALSilverMaskCountState(wbFALSilverMaskCount - 16 - ((4 - fireLanceUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 144 - ((4 - fireLanceUnbindState) * 40));
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount - 110 - ((4 - fireLanceUnbindState) * 30));
+                setwbFALGoldMaskCountState(wbFALGoldMaskCount - 10 - ((4 - fireLanceUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 110 - ((4 - fireLanceUnbindState) * 30));
+                setmubFALInsanityCountState(mubFALInsanityCount - 58);
+                setwbFALInsanityCountState(wbFALInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFALGaleCountState(mubFALGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFALSandCountState(mubFALSandCount - (4 - fireLanceUnbindState));
+                setwbFALSandCountState(wbFALSandCount - (4 - fireLanceUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireLanceUnbindState));
+                setmubFALOriCountState(mubFALOriCount - 24);
+                setwbFALOriCountState(wbFALOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFALRupeeCost(mubFALRupeeCost - 32 - ((4 - fireLanceUnbindState) * 2));
+                setwbFALRupeeCost(wbFALRupeeCost - 7.5 - ((4 - fireLanceUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - 32 - ((4 - fireLanceUnbindState) * 2));
+                setFireLanceUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && fireLanceUnbindState >= 5 && fireLanceUnbindState <= 8) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount - 80 - ((8 - fireLanceUnbindState) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 80 - ((8 - fireLanceUnbindState) * 16));
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount - 70 - ((8 - fireLanceUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70 - ((8 - fireLanceUnbindState) * 10));
+                setmubFALInsanityCountState(mubFALInsanityCount - 30 - ((8 - fireLanceUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - 30 - ((8 - fireLanceUnbindState) * 7));
+                setmubFALGaleCountState(mubFALGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFALOriCountState(mubFALOriCount - 20 - ((8 - fireLanceUnbindState) * 1));
+                setallmubFAOriCount(allmubFAOriCount - 20 - ((8 - fireLanceUnbindState) * 1));
+                setmubFALRupeeCost(mubFALRupeeCost - 2 - ((8 - fireLanceUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - 2 - ((8 - fireLanceUnbindState) * 7.5));
+                setFireLanceUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireLanceUnbindState <= 7 && fireLanceUnbindState >= 5) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount - ((event.target.value - fireLanceUnbindState) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireLanceUnbindState) * 16));
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount - ((event.target.value - fireLanceUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireLanceUnbindState) * 10));
+                setmubFALInsanityCountState(mubFALInsanityCount - ((event.target.value - fireLanceUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - ((event.target.value - fireLanceUnbindState) * 7));
+                setmubFALOriCountState(mubFALOriCount - (event.target.value - fireLanceUnbindState));
+                setallmubFAOriCount(allmubFAOriCount - (event.target.value - fireLanceUnbindState));
+                setmubFALRupeeCost(mubFALRupeeCost - ((event.target.value - fireLanceUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireLanceUnbindState) * 7.5));
+                setFireLanceUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireLanceUnbindState <= 4 && fireLanceUnbindState >= 0) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount - ((4 - fireLanceUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbFALSilverMaskCountState(wbFALSilverMaskCount - 16 - ((4 - fireLanceUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((4 - fireLanceUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount - ((4 - fireLanceUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbFALGoldMaskCountState(wbFALGoldMaskCount - 10 - ((4 - fireLanceUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((4 - fireLanceUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubFALInsanityCountState(mubFALInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbFALInsanityCountState(wbFALInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubFALSandCountState(mubFALSandCount - (4 - fireLanceUnbindState));
+                setwbFALSandCountState(wbFALSandCount - (4 - fireLanceUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireLanceUnbindState));
+                setmubFALOriCountState(mubFALOriCount - (-1 * (4 - event.target.value)));
+                setwbFALOriCountState(wbFALOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - (-1 * (4 - event.target.value)));
+                setmubFALRupeeCost(mubFALRupeeCost - ((4 - fireLanceUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbFALRupeeCost(wbFALRupeeCost - 7.5 - ((4 - fireLanceUnbindState) * 2))
+                setFireLanceUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && fireLanceUnbindState <= 3 && fireLanceUnbindState >= 0) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount - ((event.target.value - fireLanceUnbindState) * 40));
+                setwbFALSilverMaskCountState(wbFALSilverMaskCount - ((event.target.value - fireLanceUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireLanceUnbindState) * 40));
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount - ((event.target.value - fireLanceUnbindState) * 30));
+                setwbFALGoldMaskCountState(wbFALGoldMaskCount - ((event.target.value - fireLanceUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireLanceUnbindState) * 30));
+                setmubFALSandCountState(mubFALSandCount - (event.target.value - fireLanceUnbindState));
+                setwbFALSandCountState(wbFALSandCount - (event.target.value - fireLanceUnbindState));
+                setallmubFASandCount(allmubFASandCount - (event.target.value - fireLanceUnbindState));
+                setmubFALRupeeCost(mubFALRupeeCost - ((event.target.value - fireLanceUnbindState) * 2));
+                setwbFALRupeeCost(wbFALRupeeCost - ((event.target.value - fireLanceUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireLanceUnbindState) * 2));
+                setFireLanceUnbindState(event.target.value)
             }
         }
         else if (fireLanceUnbindState > event.target.value) {
-            if (fireLanceUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && fireLanceUnbindState == 9) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount + 304);
+                setwbFALSilverMaskCountState(wbFALSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 304);
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount + 230);
+                setwbFALGoldMaskCountState(wbFALGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 230);
+                setmubFALInsanityCountState(mubFALInsanityCount + 58);
+                setwbFALInsanityCountState(wbFALInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 58);
+                setmubFALGaleCountState(mubFALGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFALSandCountState(mubFALSandCount + 4);
+                setwbFALSandCountState(wbFALSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFALOriCountState(mubFALOriCount + 24);
+                setwbFALOriCountState(wbFALOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + 24);
+                setmubFALRupeeCost(mubFALRupeeCost + 40);
+                setwbFALRupeeCost(wbFALRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 40);
                 setFireLanceUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubFALSilverMaskCountState(mubFALSilverMaskCount + 40)
-                    setwbFALSilverMaskCountState(wbFALSilverMaskCount + 40)
-                    setmubFALGoldMaskCountState(mubFALGoldMaskCount + 30)
-                    setwbFALGoldMaskCountState(wbFALGoldMaskCount + 30)
-                    setmubFALSandCountState(mubFALSandCount + 1)
-                    setwbFALSandCountState(wbFALSandCount + 1)
-                    setmubFALRupeeCost(mubFALRupeeCost + 2)
-                    setwbFALRupeeCost(wbFALRupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFASandCount(allmubFASandCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubFALSilverMaskCountState(mubFALSilverMaskCount + 16)
-                    setwbFALSilverMaskCountState(wbFALSilverMaskCount + 16)
-                    setmubFALGoldMaskCountState(mubFALGoldMaskCount + 10)
-                    setwbFALGoldMaskCountState(wbFALGoldMaskCount + 10)
-                    setmubFALInsanityCountState(mubFALInsanityCount + 7)
-                    setwbFALInsanityCountState(wbFALInsanityCount + 7)
-                    setmubFALOriCountState(mubFALOriCount + 1)
-                    setwbFALOriCountState(wbFALOriCount + 1)
-                    setmubFALRupeeCost(mubFALRupeeCost + 7.5)
-                    setwbFALRupeeCost(wbFALRupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubFALSilverMaskCountState(mubFALSilverMaskCount + 16)
-                    setmubFALGoldMaskCountState(mubFALGoldMaskCount + 10)
-                    setmubFALInsanityCountState(mubFALInsanityCount + 7)
-                    setmubFALOriCountState(mubFALOriCount + 1)
-                    setmubFALRupeeCost(mubFALRupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubFALSilverMaskCountState(mubFALSilverMaskCount + 80)
-                    setmubFALGoldMaskCountState(mubFALGoldMaskCount + 70)
-                    setmubFALInsanityCountState(mubFALInsanityCount + 30)
-                    setmubFALGaleCountState(mubFALGaleCount + 20)
-                    setmubFALOriCountState(mubFALOriCount + 20)
-                    setmubFALRupeeCost(mubFALRupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
-                    setallmubFAGaleCount(allmubFAGaleCount + 20)
-                    setallmubFAOriCount(allmubFAOriCount + 20)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && fireLanceUnbindState >= 5 && fireLanceUnbindState <= 8) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount + 160 + ((-1 * (4 - fireLanceUnbindState)) * 16));
+                setwbFALSilverMaskCountState(wbFALSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 160 + ((-1 * (4 - fireLanceUnbindState)) * 16));
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount + 120 + ((-1 * (4 - fireLanceUnbindState)) * 10));
+                setwbFALGoldMaskCountState(wbFALGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 120 + ((-1 * (4 - fireLanceUnbindState)) * 10));
+                setmubFALInsanityCountState(mubFALInsanityCount + ((-1 * (4 - fireLanceUnbindState)) * 7));
+                setwbFALInsanityCountState(wbFALInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((-1 * (4 - fireLanceUnbindState)) * 7));
+                setmubFALSandCountState(mubFALSandCount + 4);
+                setwbFALSandCountState(wbFALSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFALOriCountState(mubFALOriCount + (-1 * (4 - fireLanceUnbindState)));
+                setwbFALOriCountState(wbFALOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + (-1 * (4 - fireLanceUnbindState)));
+                setmubFALRupeeCost(mubFALRupeeCost + 8 + (-1 * (4 - fireLanceUnbindState) * 7.5));
+                setwbFALRupeeCost(wbFALRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 8 + (-1 * (4 - fireLanceUnbindState) * 7.5));
+                setFireLanceUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && fireLanceUnbindState >= 1 && fireLanceUnbindState <= 4) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount + (fireLanceUnbindState * 40));
+                setwbFALSilverMaskCountState(wbFALSilverMaskCount + (fireLanceUnbindState * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + (fireLanceUnbindState * 40));
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount + (fireLanceUnbindState * 30));
+                setwbFALGoldMaskCountState(wbFALGoldMaskCount + (fireLanceUnbindState * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + (fireLanceUnbindState * 30));
+                setmubFALSandCountState(mubFALSandCount + fireLanceUnbindState);
+                setwbFALSandCountState(wbFALSandCount + fireLanceUnbindState);
+                setallmubFASandCount(allmubFASandCount + fireLanceUnbindState);
+                setmubFALRupeeCost(mubFALRupeeCost + (fireLanceUnbindState * 2));
+                setwbFALRupeeCost(wbFALRupeeCost + (fireLanceUnbindState * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + (fireLanceUnbindState * 2));
+                setFireLanceUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireLanceUnbindState >= 1 && fireLanceUnbindState <= 4) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount + ((fireLanceUnbindState - event.target.value) * 40))
+                setwbFALSilverMaskCountState(wbFALSilverMaskCount + ((fireLanceUnbindState - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireLanceUnbindState - event.target.value) * 40));
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount + ((fireLanceUnbindState - event.target.value) * 30));
+                setwbFALGoldMaskCountState(wbFALGoldMaskCount + ((fireLanceUnbindState - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireLanceUnbindState - event.target.value) * 30));
+                setmubFALSandCountState(mubFALSandCount + (fireLanceUnbindState - event.target.value));
+                setwbFALSandCountState(wbFALSandCount + (fireLanceUnbindState - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (fireLanceUnbindState - event.target.value));
+                setmubFALRupeeCost(mubFALRupeeCost + ((fireLanceUnbindState - event.target.value) * 2));
+                setwbFALRupeeCost(wbFALRupeeCost + ((fireLanceUnbindState - event.target.value) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireLanceUnbindState - event.target.value) * 2))
+                setFireLanceUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireLanceUnbindState >= 5 && fireLanceUnbindState <= 8) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount + ((fireLanceUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbFALSilverMaskCountState(wbFALSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireLanceUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount + ((fireLanceUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbFALGoldMaskCountState(wbFALGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireLanceUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubFALInsanityCountState(mubFALInsanityCount + ((fireLanceUnbindState - 4) * 7));
+                setwbFALInsanityCountState(wbFALInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireLanceUnbindState - 4) * 7));
+                setmubFALSandCountState(mubFALSandCount + (4 - event.target.value));
+                setwbFALSandCountState(wbFALSandCount + (4 - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (4 - event.target.value));
+                setmubFALOriCountState(mubFALOriCount + (fireLanceUnbindState - 4));
+                setwbFALOriCountState(wbFALOriCount + (fireLanceUnbindState - 4));
+                setallmubFAOriCount(allmubFAOriCount + (fireLanceUnbindState - 4));
+                setmubFALRupeeCost(mubFALRupeeCost + ((fireLanceUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbFALRupeeCost(wbFALRupeeCost + 7.5 + ((fireLanceUnbindState - 4) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireLanceUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setFireLanceUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireLanceUnbindState == 9) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubFALInsanityCountState(mubFALInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubFALGaleCountState(mubFALGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFALOriCountState(mubFALOriCount + 20 + (8 - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + 20 + (8 - event.target.value));
+                setmubFALRupeeCost(mubFALRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setFireLanceUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireLanceUnbindState >= 5 && fireLanceUnbindState <= 8) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount + ((fireLanceUnbindState - event.target.value) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireLanceUnbindState - event.target.value) * 16));
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount + ((fireLanceUnbindState - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireLanceUnbindState - event.target.value) * 10));
+                setmubFALInsanityCountState(mubFALInsanityCount + ((fireLanceUnbindState - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireLanceUnbindState - event.target.value) * 7));
+                setmubFALOriCountState(mubFALOriCount + (fireLanceUnbindState - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + (fireLanceUnbindState - event.target.value));
+                setmubFALRupeeCost(mubFALRupeeCost + ((fireLanceUnbindState - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireLanceUnbindState - event.target.value) * 7.5));
+                setFireLanceUnbindState(event.target.value)
             }
         }
     }
@@ -1783,75 +2477,116 @@ export default function FireAgitoWeapons() {
     function handleFireLanceRefineIncrement(event) {
         setFireWeaponChoiceState("lance");
         if (fireLanceRefineState < event.target.value) {
-            if (event.target.value - fireLanceRefineState == 1) {
+            if (fireLanceRefineState == 0 && event.target.value == 1) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount - 16);
+                setwbFALSilverMaskCountState(wbFALSilverMaskCount - 16);
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount - 10);
+                setwbFALGoldMaskCountState(wbFALGoldMaskCount - 10);
+                setmubFALInsanityCountState(mubFALInsanityCount - 7);
+                setwbFALInsanityCountState(wbFALInsanityCount - 7);
+                setmubFALOriCountState(mubFALOriCount - 1);
+                setwbFALOriCountState(wbFALOriCount - 1);
+                setmubFALRupeeCost(mubFALRupeeCost - 2.5);
+                setwbFALRupeeCost(wbFALRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                setallmubFAOriCount(allmubFAOriCount - 1)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 setFireLanceRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubFALSilverMaskCountState(mubFALSilverMaskCount - 16);
-                    setwbFALSilverMaskCountState(wbFALSilverMaskCount - 16);
-                    setmubFALGoldMaskCountState(mubFALGoldMaskCount - 10);
-                    setwbFALGoldMaskCountState(wbFALGoldMaskCount - 10);
-                    setmubFALInsanityCountState(mubFALInsanityCount - 7);
-                    setwbFALInsanityCountState(wbFALInsanityCount - 7);
-                    setmubFALOriCountState(mubFALOriCount - 1);
-                    setwbFALOriCountState(wbFALOriCount - 1);
-                    setmubFALRupeeCost(mubFALRupeeCost - 2.5);
-                    setwbFALRupeeCost(wbFALRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubFALSilverMaskCountState(mubFALSilverMaskCount - 40)
-                    setmubFALGoldMaskCountState(mubFALGoldMaskCount - 30);
-                    setmubFALInsanityCountState(mubFALInsanityCount - 10);
-                    setmubFALGaleCountState(mubFALGaleCount - 10);
-                    setmubFALOriCountState(mubFALOriCount - 10);
-                    setmubFALRupeeCost(mubFALRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
-                    setallmubFAGaleCount(allmubFAGaleCount - 10)
-                    setallmubFAOriCount(allmubFAOriCount - 10)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
+            }
+            else if (fireLanceRefineState == 0 && event.target.value == 2) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount - 56);
+                setwbFALSilverMaskCountState(wbFALSilverMaskCount - 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 56);
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount - 40);
+                setwbFALGoldMaskCountState(wbFALGoldMaskCount - 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 40);
+                setmubFALInsanityCountState(mubFALInsanityCount - 17);
+                setwbFALInsanityCountState(wbFALInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 17);
+                setmubFALGaleCountState(mubFALGaleCount - 10);
+                setallmubFAGaleCount(allmubFAGaleCount - 10);
+                setmubFALOriCountState(mubFALOriCount - 11);
+                setwbFALOriCountState(wbFALOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 11);
+                setmubFALRupeeCost(mubFALRupeeCost - 5);
+                setwbFALRupeeCost(wbFALRupeeCost - 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 5);
+                setFireLanceRefineState(event.target.value);
+            }
+            else if (fireLanceRefineState == 1 && event.target.value == 2) {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount - 40)
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount - 30);
+                setmubFALInsanityCountState(mubFALInsanityCount - 10);
+                setmubFALGaleCountState(mubFALGaleCount - 10);
+                setmubFALOriCountState(mubFALOriCount - 10);
+                setmubFALRupeeCost(mubFALRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                setallmubFAGaleCount(allmubFAGaleCount - 10)
+                setallmubFAOriCount(allmubFAOriCount - 10)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
+                setFireLanceRefineState(event.target.value);
             }
         }
         else if (fireLanceRefineState > event.target.value) {
-            if (fireLanceRefineState - event.target.value == 1) {
-                setFireLanceRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubFALSilverMaskCountState(mubFALSilverMaskCount + 16);
-                    setwbFALSilverMaskCountState(wbFALSilverMaskCount + 16);
-                    setmubFALGoldMaskCountState(mubFALGoldMaskCount + 10);
-                    setwbFALGoldMaskCountState(wbFALGoldMaskCount + 10);
-                    setmubFALInsanityCountState(mubFALInsanityCount + 7);
-                    setwbFALInsanityCountState(wbFALInsanityCount + 7);
-                    setmubFALOriCountState(mubFALOriCount + 1);
-                    setwbFALOriCountState(wbFALOriCount + 1);
-                    setmubFALRupeeCost(mubFALRupeeCost + 2.5);
-                    setwbFALRupeeCost(wbFALRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubFALSilverMaskCountState(mubFALSilverMaskCount + 40)
-                    setmubFALGoldMaskCountState(mubFALGoldMaskCount + 30);
-                    setmubFALInsanityCountState(mubFALInsanityCount + 10);
-                    setmubFALGaleCountState(mubFALGaleCount + 10);
-                    setmubFALOriCountState(mubFALOriCount + 10);
-                    setmubFALRupeeCost(mubFALRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
-                    setallmubFAGaleCount(allmubFAGaleCount + 10)
-                    setallmubFAOriCount(allmubFAOriCount + 10)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
+            if (fireLanceRefineState == 2 && event.target.value == 1) 
+            {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount + 40)
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount + 30);
+                setmubFALInsanityCountState(mubFALInsanityCount + 10);
+                setmubFALGaleCountState(mubFALGaleCount + 10);
+                setmubFALOriCountState(mubFALOriCount + 10);
+                setmubFALRupeeCost(mubFALRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                setallmubFAGaleCount(allmubFAGaleCount + 10)
+                setallmubFAOriCount(allmubFAOriCount + 10)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireLanceRefineState(event.target.value);
+            }
+            else if (fireLanceRefineState == 2 && event.target.value == 0) 
+            {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount + 56);
+                setwbFALSilverMaskCountState(wbFALSilverMaskCount + 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 56);
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount + 40);
+                setwbFALGoldMaskCountState(wbFALGoldMaskCount + 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 40);
+                setmubFALInsanityCountState(mubFALInsanityCount + 17);
+                setwbFALInsanityCountState(wbFALInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 17);
+                setmubFALGaleCountState(mubFALGaleCount + 10);
+                setallmubFAGaleCount(allmubFAGaleCount + 10);
+                setmubFALOriCountState(mubFALOriCount + 11);
+                setwbFALOriCountState(wbFALOriCount + 1); 
+                setallmubFAOriCount(allmubFAOriCount + 11);
+                setmubFALRupeeCost(mubFALRupeeCost + 5);
+                setwbFALRupeeCost(wbFALRupeeCost + 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 5)
+                setFireLanceRefineState(event.target.value);
+            }
+            else if (fireLanceRefineState == 1 && event.target.value == 0) 
+            {
+                setmubFALSilverMaskCountState(mubFALSilverMaskCount + 16);
+                setwbFALSilverMaskCountState(wbFALSilverMaskCount + 16);
+                setmubFALGoldMaskCountState(mubFALGoldMaskCount + 10);
+                setwbFALGoldMaskCountState(wbFALGoldMaskCount + 10);
+                setmubFALInsanityCountState(mubFALInsanityCount + 7);
+                setwbFALInsanityCountState(wbFALInsanityCount + 7);
+                setmubFALOriCountState(mubFALOriCount + 1);
+                setwbFALOriCountState(wbFALOriCount + 1);
+                setmubFALRupeeCost(mubFALRupeeCost + 2.5);
+                setwbFALRupeeCost(wbFALRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                setallmubFAOriCount(allmubFAOriCount + 1)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireLanceRefineState(event.target.value);
             }
         }
     }
@@ -1960,129 +2695,241 @@ export default function FireAgitoWeapons() {
     }
 
     function handleFireWandUnbindIncrement(event) {
-        setFireWeaponChoiceState("wand")
+        setFireWeaponChoiceState("wand");
         if (fireWandUnbindState < event.target.value) {
-            if (event.target.value - fireWandUnbindState == 1) {
+            if (event.target.value == 9 && fireWandUnbindState == 0) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 304);
+                setwbFAWSilverMaskCountState(wbFAWSilverMaskCount - 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 304);
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - 230);
+                setwbFAWSilverMaskCountState(wbFAWSilverMaskCount - 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 230);
+                setmubFAWInsanityCountState(mubFAWInsanityCount - 58);
+                setwbFAWInsanityCountState(wbFAWInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFAWGaleCountState(mubFAWGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFAWSandCountState(mubFAWSandCount - 4);
+                setwbFAWSandCountState(wbFAWSandCount - 4);
+                setallmubFASandCount(allmubFASandCount - 4);
+                setmubFAWOriCountState(mubFAWOriCount - 24);
+                setwbFAWOriCountState(wbFAWOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFAWRupeeCost(mubFAWRupeeCost - 40);
+                setwbFAWRupeeCost(wbFAWRupeeCost - 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 40);
                 setFireWandUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 40)
-                    setwbFAWSilverMaskCountState(wbFAWSilverMaskCount - 40)
-                    setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - 30)
-                    setwbFAWGoldMaskCountState(wbFAWGoldMaskCount - 30)
-                    setmubFAWSandCountState(mubFAWSandCount - 1)
-                    setwbFAWSandCountState(wbFAWSandCount - 1)
-                    setmubFAWRupeeCost(mubFAWRupeeCost - 2)
-                    setwbFAWRupeeCost(wbFAWRupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFASandCount(allmubFASandCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 16)
-                    setwbFAWSilverMaskCountState(wbFAWSilverMaskCount - 16)
-                    setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - 10)
-                    setwbFAWGoldMaskCountState(wbFAWGoldMaskCount - 10)
-                    setmubFAWInsanityCountState(mubFAWInsanityCount - 7)
-                    setwbFAWInsanityCountState(wbFAWInsanityCount - 7)
-                    setmubFAWOriCountState(mubFAWOriCount - 1)
-                    setwbFAWOriCountState(wbFAWOriCount - 1)
-                    setmubFAWRupeeCost(mubFAWRupeeCost - 7.5)
-                    setwbFAWRupeeCost(wbFAWRupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 16)
-                    setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - 10)
-                    setmubFAWInsanityCountState(mubFAWInsanityCount - 7)
-                    setmubFAWOriCountState(mubFAWOriCount - 1)
-                    setmubFAWRupeeCost(mubFAWRupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 80)
-                    setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - 70)
-                    setmubFAWInsanityCountState(mubFAWInsanityCount - 30)
-                    setmubFAWGaleCountState(mubFAWGaleCount - 20)
-                    setmubFAWOriCountState(mubFAWOriCount - 20)
-                    setmubFAWRupeeCost(mubFAWRupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
-                    setallmubFAGaleCount(allmubFAGaleCount - 20)
-                    setallmubFAOriCount(allmubFAOriCount - 20)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && fireWandUnbindState >= 1 && fireWandUnbindState <= 4) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 144 - ((4 - fireWandUnbindState) * 40));
+                setwbFAWSilverMaskCountState(wbFAWSilverMaskCount - 16 - ((4 - fireWandUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 144 - ((4 - fireWandUnbindState) * 40));
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - 110 - ((4 - fireWandUnbindState) * 30));
+                setwbFAWGoldMaskCountState(wbFAWGoldMaskCount - 10 - ((4 - fireWandUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 110 - ((4 - fireWandUnbindState) * 30));
+                setmubFAWInsanityCountState(mubFAWInsanityCount - 58);
+                setwbFAWInsanityCountState(wbFAWInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFAWGaleCountState(mubFAWGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFAWSandCountState(mubFAWSandCount - (4 - fireWandUnbindState));
+                setwbFAWSandCountState(wbFAWSandCount - (4 - fireWandUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireWandUnbindState));
+                setmubFAWOriCountState(mubFAWOriCount - 24);
+                setwbFAWOriCountState(wbFAWOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFAWRupeeCost(mubFAWRupeeCost - 32 - ((4 - fireWandUnbindState) * 2));
+                setwbFAWRupeeCost(wbFAWRupeeCost - 7.5 - ((4 - fireWandUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - 32 - ((4 - fireWandUnbindState) * 2));
+                setFireWandUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && fireWandUnbindState >= 5 && fireWandUnbindState <= 8) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 80 - ((8 - fireWandUnbindState) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 80 - ((8 - fireWandUnbindState) * 16));
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - 70 - ((8 - fireWandUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70 - ((8 - fireWandUnbindState) * 10));
+                setmubFAWInsanityCountState(mubFAWInsanityCount - 30 - ((8 - fireWandUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - 30 - ((8 - fireWandUnbindState) * 7));
+                setmubFAWGaleCountState(mubFAWGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFAWOriCountState(mubFAWOriCount - 20 - ((8 - fireWandUnbindState) * 1));
+                setallmubFAOriCount(allmubFAOriCount - 20 - ((8 - fireWandUnbindState) * 1));
+                setmubFAWRupeeCost(mubFAWRupeeCost - 2 - ((8 - fireWandUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - 2 - ((8 - fireWandUnbindState) * 7.5));
+                setFireWandUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireWandUnbindState <= 7 && fireWandUnbindState >= 5) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - ((event.target.value - fireWandUnbindState) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireWandUnbindState) * 16));
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - ((event.target.value - fireWandUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireWandUnbindState) * 10));
+                setmubFAWInsanityCountState(mubFAWInsanityCount - ((event.target.value - fireWandUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - ((event.target.value - fireWandUnbindState) * 7));
+                setmubFAWOriCountState(mubFAWOriCount - (event.target.value - fireWandUnbindState));
+                setallmubFAOriCount(allmubFAOriCount - (event.target.value - fireWandUnbindState));
+                setmubFAWRupeeCost(mubFAWRupeeCost - ((event.target.value - fireWandUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireWandUnbindState) * 7.5));
+                setFireWandUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireWandUnbindState <= 4 && fireWandUnbindState >= 0) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - ((4 - fireWandUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbFAWSilverMaskCountState(wbFAWSilverMaskCount - 16 - ((4 - fireWandUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((4 - fireWandUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - ((4 - fireWandUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbFAWGoldMaskCountState(wbFAWGoldMaskCount - 10 - ((4 - fireWandUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((4 - fireWandUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubFAWInsanityCountState(mubFAWInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbFAWInsanityCountState(wbFAWInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubFAWSandCountState(mubFAWSandCount - (4 - fireWandUnbindState));
+                setwbFAWSandCountState(wbFAWSandCount - (4 - fireWandUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireWandUnbindState));
+                setmubFAWOriCountState(mubFAWOriCount - (-1 * (4 - event.target.value)));
+                setwbFAWOriCountState(wbFAWOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - (-1 * (4 - event.target.value)));
+                setmubFAWRupeeCost(mubFAWRupeeCost - ((4 - fireWandUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbFAWRupeeCost(wbFAWRupeeCost - 7.5 - ((4 - fireWandUnbindState) * 2))
+                setFireWandUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && fireWandUnbindState <= 3 && fireWandUnbindState >= 0) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - ((event.target.value - fireWandUnbindState) * 40));
+                setwbFAWSilverMaskCountState(wbFAWSilverMaskCount - ((event.target.value - fireWandUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireWandUnbindState) * 40));
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - ((event.target.value - fireWandUnbindState) * 30));
+                setwbFAWGoldMaskCountState(wbFAWGoldMaskCount - ((event.target.value - fireWandUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireWandUnbindState) * 30));
+                setmubFAWSandCountState(mubFAWSandCount - (event.target.value - fireWandUnbindState));
+                setwbFAWSandCountState(wbFAWSandCount - (event.target.value - fireWandUnbindState));
+                setallmubFASandCount(allmubFASandCount - (event.target.value - fireWandUnbindState));
+                setmubFAWRupeeCost(mubFAWRupeeCost - ((event.target.value - fireWandUnbindState) * 2));
+                setwbFAWRupeeCost(wbFAWRupeeCost - ((event.target.value - fireWandUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireWandUnbindState) * 2));
+                setFireWandUnbindState(event.target.value)
             }
         }
         else if (fireWandUnbindState > event.target.value) {
-            if (fireWandUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && fireWandUnbindState == 9) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 304);
+                setwbFAWSilverMaskCountState(wbFAWSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 304);
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + 230);
+                setwbFAWGoldMaskCountState(wbFAWGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 230);
+                setmubFAWInsanityCountState(mubFAWInsanityCount + 58);
+                setwbFAWInsanityCountState(wbFAWInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 58);
+                setmubFAWGaleCountState(mubFAWGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFAWSandCountState(mubFAWSandCount + 4);
+                setwbFAWSandCountState(wbFAWSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFAWOriCountState(mubFAWOriCount + 24);
+                setwbFAWOriCountState(wbFAWOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + 24);
+                setmubFAWRupeeCost(mubFAWRupeeCost + 40);
+                setwbFAWRupeeCost(wbFAWRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 40);
                 setFireWandUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 40)
-                    setwbFAWSilverMaskCountState(wbFAWSilverMaskCount + 40)
-                    setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + 30)
-                    setwbFAWGoldMaskCountState(wbFAWGoldMaskCount + 30)
-                    setmubFAWSandCountState(mubFAWSandCount + 1)
-                    setwbFAWSandCountState(wbFAWSandCount + 1)
-                    setmubFAWRupeeCost(mubFAWRupeeCost + 2)
-                    setwbFAWRupeeCost(wbFAWRupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFASandCount(allmubFASandCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 16)
-                    setwbFAWSilverMaskCountState(wbFAWSilverMaskCount + 16)
-                    setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + 10)
-                    setwbFAWGoldMaskCountState(wbFAWGoldMaskCount + 10)
-                    setmubFAWInsanityCountState(mubFAWInsanityCount + 7)
-                    setwbFAWInsanityCountState(wbFAWInsanityCount + 7)
-                    setmubFAWOriCountState(mubFAWOriCount + 1)
-                    setwbFAWOriCountState(wbFAWOriCount + 1)
-                    setmubFAWRupeeCost(mubFAWRupeeCost + 7.5)
-                    setwbFAWRupeeCost(wbFAWRupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 16)
-                    setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + 10)
-                    setmubFAWInsanityCountState(mubFAWInsanityCount + 7)
-                    setmubFAWOriCountState(mubFAWOriCount + 1)
-                    setmubFAWRupeeCost(mubFAWRupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 80)
-                    setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + 70)
-                    setmubFAWInsanityCountState(mubFAWInsanityCount + 30)
-                    setmubFAWGaleCountState(mubFAWGaleCount + 20)
-                    setmubFAWOriCountState(mubFAWOriCount + 20)
-                    setmubFAWRupeeCost(mubFAWRupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
-                    setallmubFAGaleCount(allmubFAGaleCount + 20)
-                    setallmubFAOriCount(allmubFAOriCount + 20)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && fireWandUnbindState >= 5 && fireWandUnbindState <= 8) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 160 + ((-1 * (4 - fireWandUnbindState)) * 16));
+                setwbFAWSilverMaskCountState(wbFAWSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 160 + ((-1 * (4 - fireWandUnbindState)) * 16));
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + 120 + ((-1 * (4 - fireWandUnbindState)) * 10));
+                setwbFAWGoldMaskCountState(wbFAWGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 120 + ((-1 * (4 - fireWandUnbindState)) * 10));
+                setmubFAWInsanityCountState(mubFAWInsanityCount + ((-1 * (4 - fireWandUnbindState)) * 7));
+                setwbFAWInsanityCountState(wbFAWInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((-1 * (4 - fireWandUnbindState)) * 7));
+                setmubFAWSandCountState(mubFAWSandCount + 4);
+                setwbFAWSandCountState(wbFAWSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFAWOriCountState(mubFAWOriCount + (-1 * (4 - fireWandUnbindState)));
+                setwbFAWOriCountState(wbFAWOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + (-1 * (4 - fireWandUnbindState)));
+                setmubFAWRupeeCost(mubFAWRupeeCost + 8 + (-1 * (4 - fireWandUnbindState) * 7.5));
+                setwbFAWRupeeCost(wbFAWRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 8 + (-1 * (4 - fireWandUnbindState) * 7.5));
+                setFireWandUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && fireWandUnbindState >= 1 && fireWandUnbindState <= 4) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + (fireWandUnbindState * 40));
+                setwbFAWSilverMaskCountState(wbFAWSilverMaskCount + (fireWandUnbindState * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + (fireWandUnbindState * 40));
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + (fireWandUnbindState * 30));
+                setwbFAWGoldMaskCountState(wbFAWGoldMaskCount + (fireWandUnbindState * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + (fireWandUnbindState * 30));
+                setmubFAWSandCountState(mubFAWSandCount + fireWandUnbindState);
+                setwbFAWSandCountState(wbFAWSandCount + fireWandUnbindState);
+                setallmubFASandCount(allmubFASandCount + fireWandUnbindState);
+                setmubFAWRupeeCost(mubFAWRupeeCost + (fireWandUnbindState * 2));
+                setwbFAWRupeeCost(wbFAWRupeeCost + (fireWandUnbindState * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + (fireWandUnbindState * 2));
+                setFireWandUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireWandUnbindState >= 1 && fireWandUnbindState <= 4) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + ((fireWandUnbindState - event.target.value) * 40))
+                setwbFAWSilverMaskCountState(wbFAWSilverMaskCount + ((fireWandUnbindState - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireWandUnbindState - event.target.value) * 40));
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + ((fireWandUnbindState - event.target.value) * 30));
+                setwbFAWGoldMaskCountState(wbFAWGoldMaskCount + ((fireWandUnbindState - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireWandUnbindState - event.target.value) * 30));
+                setmubFAWSandCountState(mubFAWSandCount + (fireWandUnbindState - event.target.value));
+                setwbFAWSandCountState(wbFAWSandCount + (fireWandUnbindState - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (fireWandUnbindState - event.target.value));
+                setmubFAWRupeeCost(mubFAWRupeeCost + ((fireWandUnbindState - event.target.value) * 2));
+                setwbFAWRupeeCost(wbFAWRupeeCost + ((fireWandUnbindState - event.target.value) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireWandUnbindState - event.target.value) * 2))
+                setFireWandUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireWandUnbindState >= 5 && fireWandUnbindState <= 8) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + ((fireWandUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbFAWSilverMaskCountState(wbFAWSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireWandUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + ((fireWandUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbFAWGoldMaskCountState(wbFAWGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireWandUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubFAWInsanityCountState(mubFAWInsanityCount + ((fireWandUnbindState - 4) * 7));
+                setwbFAWInsanityCountState(wbFAWInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireWandUnbindState - 4) * 7));
+                setmubFAWSandCountState(mubFAWSandCount + (4 - event.target.value));
+                setwbFAWSandCountState(wbFAWSandCount + (4 - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (4 - event.target.value));
+                setmubFAWOriCountState(mubFAWOriCount + (fireWandUnbindState - 4));
+                setwbFAWOriCountState(wbFAWOriCount + (fireWandUnbindState - 4));
+                setallmubFAOriCount(allmubFAOriCount + (fireWandUnbindState - 4));
+                setmubFAWRupeeCost(mubFAWRupeeCost + ((fireWandUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbFAWRupeeCost(wbFAWRupeeCost + 7.5 + ((fireWandUnbindState - 4) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireWandUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setFireWandUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireWandUnbindState == 9) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubFAWInsanityCountState(mubFAWInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubFAWGaleCountState(mubFAWGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFAWOriCountState(mubFAWOriCount + 20 + (8 - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + 20 + (8 - event.target.value));
+                setmubFAWRupeeCost(mubFAWRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setFireWandUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireWandUnbindState >= 5 && fireWandUnbindState <= 8) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + ((fireWandUnbindState - event.target.value) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireWandUnbindState - event.target.value) * 16));
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + ((fireWandUnbindState - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireWandUnbindState - event.target.value) * 10));
+                setmubFAWInsanityCountState(mubFAWInsanityCount + ((fireWandUnbindState - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireWandUnbindState - event.target.value) * 7));
+                setmubFAWOriCountState(mubFAWOriCount + (fireWandUnbindState - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + (fireWandUnbindState - event.target.value));
+                setmubFAWRupeeCost(mubFAWRupeeCost + ((fireWandUnbindState - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireWandUnbindState - event.target.value) * 7.5));
+                setFireWandUnbindState(event.target.value)
             }
         }
     }
@@ -2090,75 +2937,116 @@ export default function FireAgitoWeapons() {
     function handleFireWandRefineIncrement(event) {
         setFireWeaponChoiceState("wand");
         if (fireWandRefineState < event.target.value) {
-            if (event.target.value - fireWandRefineState == 1) {
+            if (fireWandRefineState == 0 && event.target.value == 1) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 16);
+                setwbFAWSilverMaskCountState(wbFAWSilverMaskCount - 16);
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - 10);
+                setwbFAWGoldMaskCountState(wbFAWGoldMaskCount - 10);
+                setmubFAWInsanityCountState(mubFAWInsanityCount - 7);
+                setwbFAWInsanityCountState(wbFAWInsanityCount - 7);
+                setmubFAWOriCountState(mubFAWOriCount - 1);
+                setwbFAWOriCountState(wbFAWOriCount - 1);
+                setmubFAWRupeeCost(mubFAWRupeeCost - 2.5);
+                setwbFAWRupeeCost(wbFAWRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                setallmubFAOriCount(allmubFAOriCount - 1)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 setFireWandRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 16);
-                    setwbFAWSilverMaskCountState(wbFAWSilverMaskCount - 16);
-                    setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - 10);
-                    setwbFAWGoldMaskCountState(wbFAWGoldMaskCount - 10);
-                    setmubFAWInsanityCountState(mubFAWInsanityCount - 7);
-                    setwbFAWInsanityCountState(wbFAWInsanityCount - 7);
-                    setmubFAWOriCountState(mubFAWOriCount - 1);
-                    setwbFAWOriCountState(wbFAWOriCount - 1);
-                    setmubFAWRupeeCost(mubFAWRupeeCost - 2.5);
-                    setwbFAWRupeeCost(wbFAWRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 40)
-                    setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - 30);
-                    setmubFAWInsanityCountState(mubFAWInsanityCount - 10);
-                    setmubFAWGaleCountState(mubFAWGaleCount - 10);
-                    setmubFAWOriCountState(mubFAWOriCount - 10);
-                    setmubFAWRupeeCost(mubFAWRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
-                    setallmubFAGaleCount(allmubFAGaleCount - 10)
-                    setallmubFAOriCount(allmubFAOriCount - 10)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
+            }
+            else if (fireWandRefineState == 0 && event.target.value == 2) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 56);
+                setwbFAWSilverMaskCountState(wbFAWSilverMaskCount - 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 56);
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - 40);
+                setwbFAWGoldMaskCountState(wbFAWGoldMaskCount - 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 40);
+                setmubFAWInsanityCountState(mubFAWInsanityCount - 17);
+                setwbFAWInsanityCountState(wbFAWInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 17);
+                setmubFAWGaleCountState(mubFAWGaleCount - 10);
+                setallmubFAGaleCount(allmubFAGaleCount - 10);
+                setmubFAWOriCountState(mubFAWOriCount - 11);
+                setwbFAWOriCountState(wbFAWOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 11);
+                setmubFAWRupeeCost(mubFAWRupeeCost - 5);
+                setwbFAWRupeeCost(wbFAWRupeeCost - 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 5);
+                setFireWandRefineState(event.target.value);
+            }
+            else if (fireWandRefineState == 1 && event.target.value == 2) {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount - 40)
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount - 30);
+                setmubFAWInsanityCountState(mubFAWInsanityCount - 10);
+                setmubFAWGaleCountState(mubFAWGaleCount - 10);
+                setmubFAWOriCountState(mubFAWOriCount - 10);
+                setmubFAWRupeeCost(mubFAWRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                setallmubFAGaleCount(allmubFAGaleCount - 10)
+                setallmubFAOriCount(allmubFAOriCount - 10)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
+                setFireWandRefineState(event.target.value);
             }
         }
         else if (fireWandRefineState > event.target.value) {
-            if (fireWandRefineState - event.target.value == 1) {
-                setFireWandRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 16);
-                    setwbFAWSilverMaskCountState(wbFAWSilverMaskCount + 16);
-                    setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + 10);
-                    setwbFAWGoldMaskCountState(wbFAWGoldMaskCount + 10);
-                    setmubFAWInsanityCountState(mubFAWInsanityCount + 7);
-                    setwbFAWInsanityCountState(wbFAWInsanityCount + 7);
-                    setmubFAWOriCountState(mubFAWOriCount + 1);
-                    setwbFAWOriCountState(wbFAWOriCount + 1);
-                    setmubFAWRupeeCost(mubFAWRupeeCost + 2.5);
-                    setwbFAWRupeeCost(wbFAWRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 40)
-                    setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + 30);
-                    setmubFAWInsanityCountState(mubFAWInsanityCount + 10);
-                    setmubFAWGaleCountState(mubFAWGaleCount + 10);
-                    setmubFAWOriCountState(mubFAWOriCount + 10);
-                    setmubFAWRupeeCost(mubFAWRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
-                    setallmubFAGaleCount(allmubFAGaleCount + 10)
-                    setallmubFAOriCount(allmubFAOriCount + 10)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
+            if (fireWandRefineState == 2 && event.target.value == 1) 
+            {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 40)
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + 30);
+                setmubFAWInsanityCountState(mubFAWInsanityCount + 10);
+                setmubFAWGaleCountState(mubFAWGaleCount + 10);
+                setmubFAWOriCountState(mubFAWOriCount + 10);
+                setmubFAWRupeeCost(mubFAWRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                setallmubFAGaleCount(allmubFAGaleCount + 10)
+                setallmubFAOriCount(allmubFAOriCount + 10)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireWandRefineState(event.target.value);
+            }
+            else if (fireWandRefineState == 2 && event.target.value == 0) 
+            {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 56);
+                setwbFAWSilverMaskCountState(wbFAWSilverMaskCount + 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 56);
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + 40);
+                setwbFAWGoldMaskCountState(wbFAWGoldMaskCount + 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 40);
+                setmubFAWInsanityCountState(mubFAWInsanityCount + 17);
+                setwbFAWInsanityCountState(wbFAWInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 17);
+                setmubFAWGaleCountState(mubFAWGaleCount + 10);
+                setallmubFAGaleCount(allmubFAGaleCount + 10);
+                setmubFAWOriCountState(mubFAWOriCount + 11);
+                setwbFAWOriCountState(wbFAWOriCount + 1); 
+                setallmubFAOriCount(allmubFAOriCount + 11);
+                setmubFAWRupeeCost(mubFAWRupeeCost + 5);
+                setwbFAWRupeeCost(wbFAWRupeeCost + 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 5)
+                setFireWandRefineState(event.target.value);
+            }
+            else if (fireWandRefineState == 1 && event.target.value == 0) 
+            {
+                setmubFAWSilverMaskCountState(mubFAWSilverMaskCount + 16);
+                setwbFAWSilverMaskCountState(wbFAWSilverMaskCount + 16);
+                setmubFAWGoldMaskCountState(mubFAWGoldMaskCount + 10);
+                setwbFAWGoldMaskCountState(wbFAWGoldMaskCount + 10);
+                setmubFAWInsanityCountState(mubFAWInsanityCount + 7);
+                setwbFAWInsanityCountState(wbFAWInsanityCount + 7);
+                setmubFAWOriCountState(mubFAWOriCount + 1);
+                setwbFAWOriCountState(wbFAWOriCount + 1);
+                setmubFAWRupeeCost(mubFAWRupeeCost + 2.5);
+                setwbFAWRupeeCost(wbFAWRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                setallmubFAOriCount(allmubFAOriCount + 1)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireWandRefineState(event.target.value);
             }
         }
     }
@@ -2267,129 +3155,241 @@ export default function FireAgitoWeapons() {
     }
 
     function handleFireBowUnbindIncrement(event) {
-        setFireWeaponChoiceState("bow")
+        setFireWeaponChoiceState("bow");
         if (fireBowUnbindState < event.target.value) {
-            if (event.target.value - fireBowUnbindState == 1) {
+            if (event.target.value == 9 && fireBowUnbindState == 0) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 304);
+                setwbFABoSilverMaskCountState(wbFABoSilverMaskCount - 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 304);
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - 230);
+                setwbFABoSilverMaskCountState(wbFABoSilverMaskCount - 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 230);
+                setmubFABoInsanityCountState(mubFABoInsanityCount - 58);
+                setwbFABoInsanityCountState(wbFABoInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFABoGaleCountState(mubFABoGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFABoSandCountState(mubFABoSandCount - 4);
+                setwbFABoSandCountState(wbFABoSandCount - 4);
+                setallmubFASandCount(allmubFASandCount - 4);
+                setmubFABoOriCountState(mubFABoOriCount - 24);
+                setwbFABoOriCountState(wbFABoOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFABoRupeeCost(mubFABoRupeeCost - 40);
+                setwbFABoRupeeCost(wbFABoRupeeCost - 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 40);
                 setFireBowUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 40)
-                    setwbFABoSilverMaskCountState(wbFABoSilverMaskCount - 40)
-                    setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - 30)
-                    setwbFABoGoldMaskCountState(wbFABoGoldMaskCount - 30)
-                    setmubFABoSandCountState(mubFABoSandCount - 1)
-                    setwbFABoSandCountState(wbFABoSandCount - 1)
-                    setmubFABoRupeeCost(mubFABoRupeeCost - 2)
-                    setwbFABoRupeeCost(wbFABoRupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFASandCount(allmubFASandCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 16)
-                    setwbFABoSilverMaskCountState(wbFABoSilverMaskCount - 16)
-                    setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - 10)
-                    setwbFABoGoldMaskCountState(wbFABoGoldMaskCount - 10)
-                    setmubFABoInsanityCountState(mubFABoInsanityCount - 7)
-                    setwbFABoInsanityCountState(wbFABoInsanityCount - 7)
-                    setmubFABoOriCountState(mubFABoOriCount - 1)
-                    setwbFABoOriCountState(wbFABoOriCount - 1)
-                    setmubFABoRupeeCost(mubFABoRupeeCost - 7.5)
-                    setwbFABoRupeeCost(wbFABoRupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 16)
-                    setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - 10)
-                    setmubFABoInsanityCountState(mubFABoInsanityCount - 7)
-                    setmubFABoOriCountState(mubFABoOriCount - 1)
-                    setmubFABoRupeeCost(mubFABoRupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 80)
-                    setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - 70)
-                    setmubFABoInsanityCountState(mubFABoInsanityCount - 30)
-                    setmubFABoGaleCountState(mubFABoGaleCount - 20)
-                    setmubFABoOriCountState(mubFABoOriCount - 20)
-                    setmubFABoRupeeCost(mubFABoRupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
-                    setallmubFAGaleCount(allmubFAGaleCount - 20)
-                    setallmubFAOriCount(allmubFAOriCount - 20)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && fireBowUnbindState >= 1 && fireBowUnbindState <= 4) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 144 - ((4 - fireBowUnbindState) * 40));
+                setwbFABoSilverMaskCountState(wbFABoSilverMaskCount - 16 - ((4 - fireBowUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 144 - ((4 - fireBowUnbindState) * 40));
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - 110 - ((4 - fireBowUnbindState) * 30));
+                setwbFABoGoldMaskCountState(wbFABoGoldMaskCount - 10 - ((4 - fireBowUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 110 - ((4 - fireBowUnbindState) * 30));
+                setmubFABoInsanityCountState(mubFABoInsanityCount - 58);
+                setwbFABoInsanityCountState(wbFABoInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFABoGaleCountState(mubFABoGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFABoSandCountState(mubFABoSandCount - (4 - fireBowUnbindState));
+                setwbFABoSandCountState(wbFABoSandCount - (4 - fireBowUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireBowUnbindState));
+                setmubFABoOriCountState(mubFABoOriCount - 24);
+                setwbFABoOriCountState(wbFABoOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFABoRupeeCost(mubFABoRupeeCost - 32 - ((4 - fireBowUnbindState) * 2));
+                setwbFABoRupeeCost(wbFABoRupeeCost - 7.5 - ((4 - fireBowUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - 32 - ((4 - fireBowUnbindState) * 2));
+                setFireBowUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && fireBowUnbindState >= 5 && fireBowUnbindState <= 8) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 80 - ((8 - fireBowUnbindState) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 80 - ((8 - fireBowUnbindState) * 16));
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - 70 - ((8 - fireBowUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70 - ((8 - fireBowUnbindState) * 10));
+                setmubFABoInsanityCountState(mubFABoInsanityCount - 30 - ((8 - fireBowUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - 30 - ((8 - fireBowUnbindState) * 7));
+                setmubFABoGaleCountState(mubFABoGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFABoOriCountState(mubFABoOriCount - 20 - ((8 - fireBowUnbindState) * 1));
+                setallmubFAOriCount(allmubFAOriCount - 20 - ((8 - fireBowUnbindState) * 1));
+                setmubFABoRupeeCost(mubFABoRupeeCost - 2 - ((8 - fireBowUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - 2 - ((8 - fireBowUnbindState) * 7.5));
+                setFireBowUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireBowUnbindState <= 7 && fireBowUnbindState >= 5) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - ((event.target.value - fireBowUnbindState) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireBowUnbindState) * 16));
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - ((event.target.value - fireBowUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireBowUnbindState) * 10));
+                setmubFABoInsanityCountState(mubFABoInsanityCount - ((event.target.value - fireBowUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - ((event.target.value - fireBowUnbindState) * 7));
+                setmubFABoOriCountState(mubFABoOriCount - (event.target.value - fireBowUnbindState));
+                setallmubFAOriCount(allmubFAOriCount - (event.target.value - fireBowUnbindState));
+                setmubFABoRupeeCost(mubFABoRupeeCost - ((event.target.value - fireBowUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireBowUnbindState) * 7.5));
+                setFireBowUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireBowUnbindState <= 4 && fireBowUnbindState >= 0) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - ((4 - fireBowUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbFABoSilverMaskCountState(wbFABoSilverMaskCount - 16 - ((4 - fireBowUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((4 - fireBowUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - ((4 - fireBowUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbFABoGoldMaskCountState(wbFABoGoldMaskCount - 10 - ((4 - fireBowUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((4 - fireBowUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubFABoInsanityCountState(mubFABoInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbFABoInsanityCountState(wbFABoInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubFABoSandCountState(mubFABoSandCount - (4 - fireBowUnbindState));
+                setwbFABoSandCountState(wbFABoSandCount - (4 - fireBowUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireBowUnbindState));
+                setmubFABoOriCountState(mubFABoOriCount - (-1 * (4 - event.target.value)));
+                setwbFABoOriCountState(wbFABoOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - (-1 * (4 - event.target.value)));
+                setmubFABoRupeeCost(mubFABoRupeeCost - ((4 - fireBowUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbFABoRupeeCost(wbFABoRupeeCost - 7.5 - ((4 - fireBowUnbindState) * 2))
+                setFireBowUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && fireBowUnbindState <= 3 && fireBowUnbindState >= 0) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - ((event.target.value - fireBowUnbindState) * 40));
+                setwbFABoSilverMaskCountState(wbFABoSilverMaskCount - ((event.target.value - fireBowUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireBowUnbindState) * 40));
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - ((event.target.value - fireBowUnbindState) * 30));
+                setwbFABoGoldMaskCountState(wbFABoGoldMaskCount - ((event.target.value - fireBowUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireBowUnbindState) * 30));
+                setmubFABoSandCountState(mubFABoSandCount - (event.target.value - fireBowUnbindState));
+                setwbFABoSandCountState(wbFABoSandCount - (event.target.value - fireBowUnbindState));
+                setallmubFASandCount(allmubFASandCount - (event.target.value - fireBowUnbindState));
+                setmubFABoRupeeCost(mubFABoRupeeCost - ((event.target.value - fireBowUnbindState) * 2));
+                setwbFABoRupeeCost(wbFABoRupeeCost - ((event.target.value - fireBowUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireBowUnbindState) * 2));
+                setFireBowUnbindState(event.target.value)
             }
         }
         else if (fireBowUnbindState > event.target.value) {
-            if (fireBowUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && fireBowUnbindState == 9) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 304);
+                setwbFABoSilverMaskCountState(wbFABoSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 304);
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + 230);
+                setwbFABoGoldMaskCountState(wbFABoGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 230);
+                setmubFABoInsanityCountState(mubFABoInsanityCount + 58);
+                setwbFABoInsanityCountState(wbFABoInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 58);
+                setmubFABoGaleCountState(mubFABoGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFABoSandCountState(mubFABoSandCount + 4);
+                setwbFABoSandCountState(wbFABoSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFABoOriCountState(mubFABoOriCount + 24);
+                setwbFABoOriCountState(wbFABoOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + 24);
+                setmubFABoRupeeCost(mubFABoRupeeCost + 40);
+                setwbFABoRupeeCost(wbFABoRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 40);
                 setFireBowUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 40)
-                    setwbFABoSilverMaskCountState(wbFABoSilverMaskCount + 40)
-                    setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + 30)
-                    setwbFABoGoldMaskCountState(wbFABoGoldMaskCount + 30)
-                    setmubFABoSandCountState(mubFABoSandCount + 1)
-                    setwbFABoSandCountState(wbFABoSandCount + 1)
-                    setmubFABoRupeeCost(mubFABoRupeeCost + 2)
-                    setwbFABoRupeeCost(wbFABoRupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFASandCount(allmubFASandCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 16)
-                    setwbFABoSilverMaskCountState(wbFABoSilverMaskCount + 16)
-                    setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + 10)
-                    setwbFABoGoldMaskCountState(wbFABoGoldMaskCount + 10)
-                    setmubFABoInsanityCountState(mubFABoInsanityCount + 7)
-                    setwbFABoInsanityCountState(wbFABoInsanityCount + 7)
-                    setmubFABoOriCountState(mubFABoOriCount + 1)
-                    setwbFABoOriCountState(wbFABoOriCount + 1)
-                    setmubFABoRupeeCost(mubFABoRupeeCost + 7.5)
-                    setwbFABoRupeeCost(wbFABoRupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 16)
-                    setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + 10)
-                    setmubFABoInsanityCountState(mubFABoInsanityCount + 7)
-                    setmubFABoOriCountState(mubFABoOriCount + 1)
-                    setmubFABoRupeeCost(mubFABoRupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 80)
-                    setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + 70)
-                    setmubFABoInsanityCountState(mubFABoInsanityCount + 30)
-                    setmubFABoGaleCountState(mubFABoGaleCount + 20)
-                    setmubFABoOriCountState(mubFABoOriCount + 20)
-                    setmubFABoRupeeCost(mubFABoRupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
-                    setallmubFAGaleCount(allmubFAGaleCount + 20)
-                    setallmubFAOriCount(allmubFAOriCount + 20)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && fireBowUnbindState >= 5 && fireBowUnbindState <= 8) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 160 + ((-1 * (4 - fireBowUnbindState)) * 16));
+                setwbFABoSilverMaskCountState(wbFABoSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 160 + ((-1 * (4 - fireBowUnbindState)) * 16));
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + 120 + ((-1 * (4 - fireBowUnbindState)) * 10));
+                setwbFABoGoldMaskCountState(wbFABoGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 120 + ((-1 * (4 - fireBowUnbindState)) * 10));
+                setmubFABoInsanityCountState(mubFABoInsanityCount + ((-1 * (4 - fireBowUnbindState)) * 7));
+                setwbFABoInsanityCountState(wbFABoInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((-1 * (4 - fireBowUnbindState)) * 7));
+                setmubFABoSandCountState(mubFABoSandCount + 4);
+                setwbFABoSandCountState(wbFABoSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFABoOriCountState(mubFABoOriCount + (-1 * (4 - fireBowUnbindState)));
+                setwbFABoOriCountState(wbFABoOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + (-1 * (4 - fireBowUnbindState)));
+                setmubFABoRupeeCost(mubFABoRupeeCost + 8 + (-1 * (4 - fireBowUnbindState) * 7.5));
+                setwbFABoRupeeCost(wbFABoRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 8 + (-1 * (4 - fireBowUnbindState) * 7.5));
+                setFireBowUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && fireBowUnbindState >= 1 && fireBowUnbindState <= 4) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + (fireBowUnbindState * 40));
+                setwbFABoSilverMaskCountState(wbFABoSilverMaskCount + (fireBowUnbindState * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + (fireBowUnbindState * 40));
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + (fireBowUnbindState * 30));
+                setwbFABoGoldMaskCountState(wbFABoGoldMaskCount + (fireBowUnbindState * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + (fireBowUnbindState * 30));
+                setmubFABoSandCountState(mubFABoSandCount + fireBowUnbindState);
+                setwbFABoSandCountState(wbFABoSandCount + fireBowUnbindState);
+                setallmubFASandCount(allmubFASandCount + fireBowUnbindState);
+                setmubFABoRupeeCost(mubFABoRupeeCost + (fireBowUnbindState * 2));
+                setwbFABoRupeeCost(wbFABoRupeeCost + (fireBowUnbindState * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + (fireBowUnbindState * 2));
+                setFireBowUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireBowUnbindState >= 1 && fireBowUnbindState <= 4) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + ((fireBowUnbindState - event.target.value) * 40))
+                setwbFABoSilverMaskCountState(wbFABoSilverMaskCount + ((fireBowUnbindState - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireBowUnbindState - event.target.value) * 40));
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + ((fireBowUnbindState - event.target.value) * 30));
+                setwbFABoGoldMaskCountState(wbFABoGoldMaskCount + ((fireBowUnbindState - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireBowUnbindState - event.target.value) * 30));
+                setmubFABoSandCountState(mubFABoSandCount + (fireBowUnbindState - event.target.value));
+                setwbFABoSandCountState(wbFABoSandCount + (fireBowUnbindState - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (fireBowUnbindState - event.target.value));
+                setmubFABoRupeeCost(mubFABoRupeeCost + ((fireBowUnbindState - event.target.value) * 2));
+                setwbFABoRupeeCost(wbFABoRupeeCost + ((fireBowUnbindState - event.target.value) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireBowUnbindState - event.target.value) * 2))
+                setFireBowUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireBowUnbindState >= 5 && fireBowUnbindState <= 8) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + ((fireBowUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbFABoSilverMaskCountState(wbFABoSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireBowUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + ((fireBowUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbFABoGoldMaskCountState(wbFABoGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireBowUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubFABoInsanityCountState(mubFABoInsanityCount + ((fireBowUnbindState - 4) * 7));
+                setwbFABoInsanityCountState(wbFABoInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireBowUnbindState - 4) * 7));
+                setmubFABoSandCountState(mubFABoSandCount + (4 - event.target.value));
+                setwbFABoSandCountState(wbFABoSandCount + (4 - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (4 - event.target.value));
+                setmubFABoOriCountState(mubFABoOriCount + (fireBowUnbindState - 4));
+                setwbFABoOriCountState(wbFABoOriCount + (fireBowUnbindState - 4));
+                setallmubFAOriCount(allmubFAOriCount + (fireBowUnbindState - 4));
+                setmubFABoRupeeCost(mubFABoRupeeCost + ((fireBowUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbFABoRupeeCost(wbFABoRupeeCost + 7.5 + ((fireBowUnbindState - 4) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireBowUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setFireBowUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireBowUnbindState == 9) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubFABoInsanityCountState(mubFABoInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubFABoGaleCountState(mubFABoGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFABoOriCountState(mubFABoOriCount + 20 + (8 - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + 20 + (8 - event.target.value));
+                setmubFABoRupeeCost(mubFABoRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setFireBowUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireBowUnbindState >= 5 && fireBowUnbindState <= 8) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + ((fireBowUnbindState - event.target.value) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireBowUnbindState - event.target.value) * 16));
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + ((fireBowUnbindState - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireBowUnbindState - event.target.value) * 10));
+                setmubFABoInsanityCountState(mubFABoInsanityCount + ((fireBowUnbindState - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireBowUnbindState - event.target.value) * 7));
+                setmubFABoOriCountState(mubFABoOriCount + (fireBowUnbindState - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + (fireBowUnbindState - event.target.value));
+                setmubFABoRupeeCost(mubFABoRupeeCost + ((fireBowUnbindState - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireBowUnbindState - event.target.value) * 7.5));
+                setFireBowUnbindState(event.target.value)
             }
         }
     }
@@ -2397,75 +3397,116 @@ export default function FireAgitoWeapons() {
     function handleFireBowRefineIncrement(event) {
         setFireWeaponChoiceState("bow");
         if (fireBowRefineState < event.target.value) {
-            if (event.target.value - fireBowRefineState == 1) {
+            if (fireBowRefineState == 0 && event.target.value == 1) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 16);
+                setwbFABoSilverMaskCountState(wbFABoSilverMaskCount - 16);
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - 10);
+                setwbFABoGoldMaskCountState(wbFABoGoldMaskCount - 10);
+                setmubFABoInsanityCountState(mubFABoInsanityCount - 7);
+                setwbFABoInsanityCountState(wbFABoInsanityCount - 7);
+                setmubFABoOriCountState(mubFABoOriCount - 1);
+                setwbFABoOriCountState(wbFABoOriCount - 1);
+                setmubFABoRupeeCost(mubFABoRupeeCost - 2.5);
+                setwbFABoRupeeCost(wbFABoRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                setallmubFAOriCount(allmubFAOriCount - 1)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 setFireBowRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 16);
-                    setwbFABoSilverMaskCountState(wbFABoSilverMaskCount - 16);
-                    setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - 10);
-                    setwbFABoGoldMaskCountState(wbFABoGoldMaskCount - 10);
-                    setmubFABoInsanityCountState(mubFABoInsanityCount - 7);
-                    setwbFABoInsanityCountState(wbFABoInsanityCount - 7);
-                    setmubFABoOriCountState(mubFABoOriCount - 1);
-                    setwbFABoOriCountState(wbFABoOriCount - 1);
-                    setmubFABoRupeeCost(mubFABoRupeeCost - 2.5);
-                    setwbFABoRupeeCost(wbFABoRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 40)
-                    setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - 30);
-                    setmubFABoInsanityCountState(mubFABoInsanityCount - 10);
-                    setmubFABoGaleCountState(mubFABoGaleCount - 10);
-                    setmubFABoOriCountState(mubFABoOriCount - 10);
-                    setmubFABoRupeeCost(mubFABoRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
-                    setallmubFAGaleCount(allmubFAGaleCount - 10)
-                    setallmubFAOriCount(allmubFAOriCount - 10)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
+            }
+            else if (fireBowRefineState == 0 && event.target.value == 2) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 56);
+                setwbFABoSilverMaskCountState(wbFABoSilverMaskCount - 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 56);
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - 40);
+                setwbFABoGoldMaskCountState(wbFABoGoldMaskCount - 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 40);
+                setmubFABoInsanityCountState(mubFABoInsanityCount - 17);
+                setwbFABoInsanityCountState(wbFABoInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 17);
+                setmubFABoGaleCountState(mubFABoGaleCount - 10);
+                setallmubFAGaleCount(allmubFAGaleCount - 10);
+                setmubFABoOriCountState(mubFABoOriCount - 11);
+                setwbFABoOriCountState(wbFABoOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 11);
+                setmubFABoRupeeCost(mubFABoRupeeCost - 5);
+                setwbFABoRupeeCost(wbFABoRupeeCost - 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 5);
+                setFireBowRefineState(event.target.value);
+            }
+            else if (fireBowRefineState == 1 && event.target.value == 2) {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount - 40)
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount - 30);
+                setmubFABoInsanityCountState(mubFABoInsanityCount - 10);
+                setmubFABoGaleCountState(mubFABoGaleCount - 10);
+                setmubFABoOriCountState(mubFABoOriCount - 10);
+                setmubFABoRupeeCost(mubFABoRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                setallmubFAGaleCount(allmubFAGaleCount - 10)
+                setallmubFAOriCount(allmubFAOriCount - 10)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
+                setFireBowRefineState(event.target.value);
             }
         }
         else if (fireBowRefineState > event.target.value) {
-            if (event.target.value - fireBowRefineState == 1) {
-                setFireBowRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 16);
-                    setwbFABoSilverMaskCountState(wbFABoSilverMaskCount + 16);
-                    setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + 10);
-                    setwbFABoGoldMaskCountState(wbFABoGoldMaskCount + 10);
-                    setmubFABoInsanityCountState(mubFABoInsanityCount + 7);
-                    setwbFABoInsanityCountState(wbFABoInsanityCount + 7);
-                    setmubFABoOriCountState(mubFABoOriCount + 1);
-                    setwbFABoOriCountState(wbFABoOriCount + 1);
-                    setmubFABoRupeeCost(mubFABoRupeeCost + 2.5);
-                    setwbFABoRupeeCost(wbFABoRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 40)
-                    setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + 30);
-                    setmubFABoInsanityCountState(mubFABoInsanityCount + 10);
-                    setmubFABoGaleCountState(mubFABoGaleCount + 10);
-                    setmubFABoOriCountState(mubFABoOriCount + 10);
-                    setmubFABoRupeeCost(mubFABoRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
-                    setallmubFAGaleCount(allmubFAGaleCount + 10)
-                    setallmubFAOriCount(allmubFAOriCount + 10)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
+            if (fireBowRefineState == 2 && event.target.value == 1) 
+            {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 40)
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + 30);
+                setmubFABoInsanityCountState(mubFABoInsanityCount + 10);
+                setmubFABoGaleCountState(mubFABoGaleCount + 10);
+                setmubFABoOriCountState(mubFABoOriCount + 10);
+                setmubFABoRupeeCost(mubFABoRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                setallmubFAGaleCount(allmubFAGaleCount + 10)
+                setallmubFAOriCount(allmubFAOriCount + 10)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireBowRefineState(event.target.value);
+            }
+            else if (fireBowRefineState == 2 && event.target.value == 0) 
+            {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 56);
+                setwbFABoSilverMaskCountState(wbFABoSilverMaskCount + 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 56);
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + 40);
+                setwbFABoGoldMaskCountState(wbFABoGoldMaskCount + 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 40);
+                setmubFABoInsanityCountState(mubFABoInsanityCount + 17);
+                setwbFABoInsanityCountState(wbFABoInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 17);
+                setmubFABoGaleCountState(mubFABoGaleCount + 10);
+                setallmubFAGaleCount(allmubFAGaleCount + 10);
+                setmubFABoOriCountState(mubFABoOriCount + 11);
+                setwbFABoOriCountState(wbFABoOriCount + 1); 
+                setallmubFAOriCount(allmubFAOriCount + 11);
+                setmubFABoRupeeCost(mubFABoRupeeCost + 5);
+                setwbFABoRupeeCost(wbFABoRupeeCost + 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 5)
+                setFireBowRefineState(event.target.value);
+            }
+            else if (fireBowRefineState == 1 && event.target.value == 0) 
+            {
+                setmubFABoSilverMaskCountState(mubFABoSilverMaskCount + 16);
+                setwbFABoSilverMaskCountState(wbFABoSilverMaskCount + 16);
+                setmubFABoGoldMaskCountState(mubFABoGoldMaskCount + 10);
+                setwbFABoGoldMaskCountState(wbFABoGoldMaskCount + 10);
+                setmubFABoInsanityCountState(mubFABoInsanityCount + 7);
+                setwbFABoInsanityCountState(wbFABoInsanityCount + 7);
+                setmubFABoOriCountState(mubFABoOriCount + 1);
+                setwbFABoOriCountState(wbFABoOriCount + 1);
+                setmubFABoRupeeCost(mubFABoRupeeCost + 2.5);
+                setwbFABoRupeeCost(wbFABoRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                setallmubFAOriCount(allmubFAOriCount + 1)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireBowRefineState(event.target.value);
             }
         }
     }
@@ -2574,129 +3615,241 @@ export default function FireAgitoWeapons() {
     }
 
     function handleFireStaffUnbindIncrement(event) {
-        setFireWeaponChoiceState("staff")
+        setFireWeaponChoiceState("staff");
         if (fireStaffUnbindState < event.target.value) {
-            if (event.target.value - fireStaffUnbindState == 1) {
+            if (event.target.value == 9 && fireStaffUnbindState == 0) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 304);
+                setwbFAStSilverMaskCountState(wbFAStSilverMaskCount - 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 304);
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - 230);
+                setwbFAStSilverMaskCountState(wbFAStSilverMaskCount - 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 230);
+                setmubFAStInsanityCountState(mubFAStInsanityCount - 58);
+                setwbFAStInsanityCountState(wbFAStInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFAStGaleCountState(mubFAStGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFAStSandCountState(mubFAStSandCount - 4);
+                setwbFAStSandCountState(wbFAStSandCount - 4);
+                setallmubFASandCount(allmubFASandCount - 4);
+                setmubFAStOriCountState(mubFAStOriCount - 24);
+                setwbFAStOriCountState(wbFAStOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFAStRupeeCost(mubFAStRupeeCost - 40);
+                setwbFAStRupeeCost(wbFAStRupeeCost - 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 40);
                 setFireStaffUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 40)
-                    setwbFAStSilverMaskCountState(wbFAStSilverMaskCount - 40)
-                    setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - 30)
-                    setwbFAStGoldMaskCountState(wbFAStGoldMaskCount - 30)
-                    setmubFAStSandCountState(mubFAStSandCount - 1)
-                    setwbFAStSandCountState(wbFAStSandCount - 1)
-                    setmubFAStRupeeCost(mubFAStRupeeCost - 2)
-                    setwbFAStRupeeCost(wbFAStRupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFASandCount(allmubFASandCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 16)
-                    setwbFAStSilverMaskCountState(wbFAStSilverMaskCount - 16)
-                    setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - 10)
-                    setwbFAStGoldMaskCountState(wbFAStGoldMaskCount - 10)
-                    setmubFAStInsanityCountState(mubFAStInsanityCount - 7)
-                    setwbFAStInsanityCountState(wbFAStInsanityCount - 7)
-                    setmubFAStOriCountState(mubFAStOriCount - 1)
-                    setwbFAStOriCountState(wbFAStOriCount - 1)
-                    setmubFAStRupeeCost(mubFAStRupeeCost - 7.5)
-                    setwbFAStRupeeCost(wbFAStRupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 16)
-                    setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - 10)
-                    setmubFAStInsanityCountState(mubFAStInsanityCount - 7)
-                    setmubFAStOriCountState(mubFAStOriCount - 1)
-                    setmubFAStRupeeCost(mubFAStRupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 80)
-                    setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - 70)
-                    setmubFAStInsanityCountState(mubFAStInsanityCount - 30)
-                    setmubFAStGaleCountState(mubFAStGaleCount - 20)
-                    setmubFAStOriCountState(mubFAStOriCount - 20)
-                    setmubFAStRupeeCost(mubFAStRupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
-                    setallmubFAGaleCount(allmubFAGaleCount - 20)
-                    setallmubFAOriCount(allmubFAOriCount - 20)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && fireStaffUnbindState >= 1 && fireStaffUnbindState <= 4) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 144 - ((4 - fireStaffUnbindState) * 40));
+                setwbFAStSilverMaskCountState(wbFAStSilverMaskCount - 16 - ((4 - fireStaffUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 144 - ((4 - fireStaffUnbindState) * 40));
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - 110 - ((4 - fireStaffUnbindState) * 30));
+                setwbFAStGoldMaskCountState(wbFAStGoldMaskCount - 10 - ((4 - fireStaffUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 110 - ((4 - fireStaffUnbindState) * 30));
+                setmubFAStInsanityCountState(mubFAStInsanityCount - 58);
+                setwbFAStInsanityCountState(wbFAStInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFAStGaleCountState(mubFAStGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFAStSandCountState(mubFAStSandCount - (4 - fireStaffUnbindState));
+                setwbFAStSandCountState(wbFAStSandCount - (4 - fireStaffUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireStaffUnbindState));
+                setmubFAStOriCountState(mubFAStOriCount - 24);
+                setwbFAStOriCountState(wbFAStOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFAStRupeeCost(mubFAStRupeeCost - 32 - ((4 - fireStaffUnbindState) * 2));
+                setwbFAStRupeeCost(wbFAStRupeeCost - 7.5 - ((4 - fireStaffUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - 32 - ((4 - fireStaffUnbindState) * 2));
+                setFireStaffUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && fireStaffUnbindState >= 5 && fireStaffUnbindState <= 8) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 80 - ((8 - fireStaffUnbindState) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 80 - ((8 - fireStaffUnbindState) * 16));
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - 70 - ((8 - fireStaffUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70 - ((8 - fireStaffUnbindState) * 10));
+                setmubFAStInsanityCountState(mubFAStInsanityCount - 30 - ((8 - fireStaffUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - 30 - ((8 - fireStaffUnbindState) * 7));
+                setmubFAStGaleCountState(mubFAStGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFAStOriCountState(mubFAStOriCount - 20 - ((8 - fireStaffUnbindState) * 1));
+                setallmubFAOriCount(allmubFAOriCount - 20 - ((8 - fireStaffUnbindState) * 1));
+                setmubFAStRupeeCost(mubFAStRupeeCost - 2 - ((8 - fireStaffUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - 2 - ((8 - fireStaffUnbindState) * 7.5));
+                setFireStaffUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireStaffUnbindState <= 7 && fireStaffUnbindState >= 5) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - ((event.target.value - fireStaffUnbindState) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireStaffUnbindState) * 16));
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - ((event.target.value - fireStaffUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireStaffUnbindState) * 10));
+                setmubFAStInsanityCountState(mubFAStInsanityCount - ((event.target.value - fireStaffUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - ((event.target.value - fireStaffUnbindState) * 7));
+                setmubFAStOriCountState(mubFAStOriCount - (event.target.value - fireStaffUnbindState));
+                setallmubFAOriCount(allmubFAOriCount - (event.target.value - fireStaffUnbindState));
+                setmubFAStRupeeCost(mubFAStRupeeCost - ((event.target.value - fireStaffUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireStaffUnbindState) * 7.5));
+                setFireStaffUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireStaffUnbindState <= 4 && fireStaffUnbindState >= 0) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - ((4 - fireStaffUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbFAStSilverMaskCountState(wbFAStSilverMaskCount - 16 - ((4 - fireStaffUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((4 - fireStaffUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - ((4 - fireStaffUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbFAStGoldMaskCountState(wbFAStGoldMaskCount - 10 - ((4 - fireStaffUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((4 - fireStaffUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubFAStInsanityCountState(mubFAStInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbFAStInsanityCountState(wbFAStInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubFAStSandCountState(mubFAStSandCount - (4 - fireStaffUnbindState));
+                setwbFAStSandCountState(wbFAStSandCount - (4 - fireStaffUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireStaffUnbindState));
+                setmubFAStOriCountState(mubFAStOriCount - (-1 * (4 - event.target.value)));
+                setwbFAStOriCountState(wbFAStOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - (-1 * (4 - event.target.value)));
+                setmubFAStRupeeCost(mubFAStRupeeCost - ((4 - fireStaffUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbFAStRupeeCost(wbFAStRupeeCost - 7.5 - ((4 - fireStaffUnbindState) * 2))
+                setFireStaffUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && fireStaffUnbindState <= 3 && fireStaffUnbindState >= 0) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - ((event.target.value - fireStaffUnbindState) * 40));
+                setwbFAStSilverMaskCountState(wbFAStSilverMaskCount - ((event.target.value - fireStaffUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireStaffUnbindState) * 40));
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - ((event.target.value - fireStaffUnbindState) * 30));
+                setwbFAStGoldMaskCountState(wbFAStGoldMaskCount - ((event.target.value - fireStaffUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireStaffUnbindState) * 30));
+                setmubFAStSandCountState(mubFAStSandCount - (event.target.value - fireStaffUnbindState));
+                setwbFAStSandCountState(wbFAStSandCount - (event.target.value - fireStaffUnbindState));
+                setallmubFASandCount(allmubFASandCount - (event.target.value - fireStaffUnbindState));
+                setmubFAStRupeeCost(mubFAStRupeeCost - ((event.target.value - fireStaffUnbindState) * 2));
+                setwbFAStRupeeCost(wbFAStRupeeCost - ((event.target.value - fireStaffUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireStaffUnbindState) * 2));
+                setFireStaffUnbindState(event.target.value)
             }
         }
         else if (fireStaffUnbindState > event.target.value) {
-            if (fireStaffUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && fireStaffUnbindState == 9) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 304);
+                setwbFAStSilverMaskCountState(wbFAStSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 304);
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + 230);
+                setwbFAStGoldMaskCountState(wbFAStGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 230);
+                setmubFAStInsanityCountState(mubFAStInsanityCount + 58);
+                setwbFAStInsanityCountState(wbFAStInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 58);
+                setmubFAStGaleCountState(mubFAStGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFAStSandCountState(mubFAStSandCount + 4);
+                setwbFAStSandCountState(wbFAStSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFAStOriCountState(mubFAStOriCount + 24);
+                setwbFAStOriCountState(wbFAStOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + 24);
+                setmubFAStRupeeCost(mubFAStRupeeCost + 40);
+                setwbFAStRupeeCost(wbFAStRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 40);
                 setFireStaffUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 40)
-                    setwbFAStSilverMaskCountState(wbFAStSilverMaskCount + 40)
-                    setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + 30)
-                    setwbFAStGoldMaskCountState(wbFAStGoldMaskCount + 30)
-                    setmubFAStSandCountState(mubFAStSandCount + 1)
-                    setwbFAStSandCountState(wbFAStSandCount + 1)
-                    setmubFAStRupeeCost(mubFAStRupeeCost + 2)
-                    setwbFAStRupeeCost(wbFAStRupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFASandCount(allmubFASandCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 16)
-                    setwbFAStSilverMaskCountState(wbFAStSilverMaskCount + 16)
-                    setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + 10)
-                    setwbFAStGoldMaskCountState(wbFAStGoldMaskCount + 10)
-                    setmubFAStInsanityCountState(mubFAStInsanityCount + 7)
-                    setwbFAStInsanityCountState(wbFAStInsanityCount + 7)
-                    setmubFAStOriCountState(mubFAStOriCount + 1)
-                    setwbFAStOriCountState(wbFAStOriCount + 1)
-                    setmubFAStRupeeCost(mubFAStRupeeCost + 7.5)
-                    setwbFAStRupeeCost(wbFAStRupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 16)
-                    setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + 10)
-                    setmubFAStInsanityCountState(mubFAStInsanityCount + 7)
-                    setmubFAStOriCountState(mubFAStOriCount + 1)
-                    setmubFAStRupeeCost(mubFAStRupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 80)
-                    setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + 70)
-                    setmubFAStInsanityCountState(mubFAStInsanityCount + 30)
-                    setmubFAStGaleCountState(mubFAStGaleCount + 20)
-                    setmubFAStOriCountState(mubFAStOriCount + 20)
-                    setmubFAStRupeeCost(mubFAStRupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
-                    setallmubFAGaleCount(allmubFAGaleCount + 20)
-                    setallmubFAOriCount(allmubFAOriCount + 20)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && fireStaffUnbindState >= 5 && fireStaffUnbindState <= 8) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 160 + ((-1 * (4 - fireStaffUnbindState)) * 16));
+                setwbFAStSilverMaskCountState(wbFAStSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 160 + ((-1 * (4 - fireStaffUnbindState)) * 16));
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + 120 + ((-1 * (4 - fireStaffUnbindState)) * 10));
+                setwbFAStGoldMaskCountState(wbFAStGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 120 + ((-1 * (4 - fireStaffUnbindState)) * 10));
+                setmubFAStInsanityCountState(mubFAStInsanityCount + ((-1 * (4 - fireStaffUnbindState)) * 7));
+                setwbFAStInsanityCountState(wbFAStInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((-1 * (4 - fireStaffUnbindState)) * 7));
+                setmubFAStSandCountState(mubFAStSandCount + 4);
+                setwbFAStSandCountState(wbFAStSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFAStOriCountState(mubFAStOriCount + (-1 * (4 - fireStaffUnbindState)));
+                setwbFAStOriCountState(wbFAStOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + (-1 * (4 - fireStaffUnbindState)));
+                setmubFAStRupeeCost(mubFAStRupeeCost + 8 + (-1 * (4 - fireStaffUnbindState) * 7.5));
+                setwbFAStRupeeCost(wbFAStRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 8 + (-1 * (4 - fireStaffUnbindState) * 7.5));
+                setFireStaffUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && fireStaffUnbindState >= 1 && fireStaffUnbindState <= 4) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + (fireStaffUnbindState * 40));
+                setwbFAStSilverMaskCountState(wbFAStSilverMaskCount + (fireStaffUnbindState * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + (fireStaffUnbindState * 40));
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + (fireStaffUnbindState * 30));
+                setwbFAStGoldMaskCountState(wbFAStGoldMaskCount + (fireStaffUnbindState * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + (fireStaffUnbindState * 30));
+                setmubFAStSandCountState(mubFAStSandCount + fireStaffUnbindState);
+                setwbFAStSandCountState(wbFAStSandCount + fireStaffUnbindState);
+                setallmubFASandCount(allmubFASandCount + fireStaffUnbindState);
+                setmubFAStRupeeCost(mubFAStRupeeCost + (fireStaffUnbindState * 2));
+                setwbFAStRupeeCost(wbFAStRupeeCost + (fireStaffUnbindState * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + (fireStaffUnbindState * 2));
+                setFireStaffUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireStaffUnbindState >= 1 && fireStaffUnbindState <= 4) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + ((fireStaffUnbindState - event.target.value) * 40))
+                setwbFAStSilverMaskCountState(wbFAStSilverMaskCount + ((fireStaffUnbindState - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireStaffUnbindState - event.target.value) * 40));
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + ((fireStaffUnbindState - event.target.value) * 30));
+                setwbFAStGoldMaskCountState(wbFAStGoldMaskCount + ((fireStaffUnbindState - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireStaffUnbindState - event.target.value) * 30));
+                setmubFAStSandCountState(mubFAStSandCount + (fireStaffUnbindState - event.target.value));
+                setwbFAStSandCountState(wbFAStSandCount + (fireStaffUnbindState - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (fireStaffUnbindState - event.target.value));
+                setmubFAStRupeeCost(mubFAStRupeeCost + ((fireStaffUnbindState - event.target.value) * 2));
+                setwbFAStRupeeCost(wbFAStRupeeCost + ((fireStaffUnbindState - event.target.value) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireStaffUnbindState - event.target.value) * 2))
+                setFireStaffUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireStaffUnbindState >= 5 && fireStaffUnbindState <= 8) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + ((fireStaffUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbFAStSilverMaskCountState(wbFAStSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireStaffUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + ((fireStaffUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbFAStGoldMaskCountState(wbFAStGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireStaffUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubFAStInsanityCountState(mubFAStInsanityCount + ((fireStaffUnbindState - 4) * 7));
+                setwbFAStInsanityCountState(wbFAStInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireStaffUnbindState - 4) * 7));
+                setmubFAStSandCountState(mubFAStSandCount + (4 - event.target.value));
+                setwbFAStSandCountState(wbFAStSandCount + (4 - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (4 - event.target.value));
+                setmubFAStOriCountState(mubFAStOriCount + (fireStaffUnbindState - 4));
+                setwbFAStOriCountState(wbFAStOriCount + (fireStaffUnbindState - 4));
+                setallmubFAOriCount(allmubFAOriCount + (fireStaffUnbindState - 4));
+                setmubFAStRupeeCost(mubFAStRupeeCost + ((fireStaffUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbFAStRupeeCost(wbFAStRupeeCost + 7.5 + ((fireStaffUnbindState - 4) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireStaffUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setFireStaffUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireStaffUnbindState == 9) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubFAStInsanityCountState(mubFAStInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubFAStGaleCountState(mubFAStGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFAStOriCountState(mubFAStOriCount + 20 + (8 - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + 20 + (8 - event.target.value));
+                setmubFAStRupeeCost(mubFAStRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setFireStaffUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireStaffUnbindState >= 5 && fireStaffUnbindState <= 8) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + ((fireStaffUnbindState - event.target.value) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireStaffUnbindState - event.target.value) * 16));
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + ((fireStaffUnbindState - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireStaffUnbindState - event.target.value) * 10));
+                setmubFAStInsanityCountState(mubFAStInsanityCount + ((fireStaffUnbindState - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireStaffUnbindState - event.target.value) * 7));
+                setmubFAStOriCountState(mubFAStOriCount + (fireStaffUnbindState - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + (fireStaffUnbindState - event.target.value));
+                setmubFAStRupeeCost(mubFAStRupeeCost + ((fireStaffUnbindState - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireStaffUnbindState - event.target.value) * 7.5));
+                setFireStaffUnbindState(event.target.value)
             }
         }
     }
@@ -2704,75 +3857,116 @@ export default function FireAgitoWeapons() {
     function handleFireStaffRefineIncrement(event) {
         setFireWeaponChoiceState("staff");
         if (fireStaffRefineState < event.target.value) {
-            if (event.target.value - fireStaffRefineState == 1) {
+            if (fireStaffRefineState == 0 && event.target.value == 1) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 16);
+                setwbFAStSilverMaskCountState(wbFAStSilverMaskCount - 16);
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - 10);
+                setwbFAStGoldMaskCountState(wbFAStGoldMaskCount - 10);
+                setmubFAStInsanityCountState(mubFAStInsanityCount - 7);
+                setwbFAStInsanityCountState(wbFAStInsanityCount - 7);
+                setmubFAStOriCountState(mubFAStOriCount - 1);
+                setwbFAStOriCountState(wbFAStOriCount - 1);
+                setmubFAStRupeeCost(mubFAStRupeeCost - 2.5);
+                setwbFAStRupeeCost(wbFAStRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                setallmubFAOriCount(allmubFAOriCount - 1)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 setFireStaffRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 16);
-                    setwbFAStSilverMaskCountState(wbFAStSilverMaskCount - 16);
-                    setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - 10);
-                    setwbFAStGoldMaskCountState(wbFAStGoldMaskCount - 10);
-                    setmubFAStInsanityCountState(mubFAStInsanityCount - 7);
-                    setwbFAStInsanityCountState(wbFAStInsanityCount - 7);
-                    setmubFAStOriCountState(mubFAStOriCount - 1);
-                    setwbFAStOriCountState(wbFAStOriCount - 1);
-                    setmubFAStRupeeCost(mubFAStRupeeCost - 2.5);
-                    setwbFAStRupeeCost(wbFAStRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 40)
-                    setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - 30);
-                    setmubFAStInsanityCountState(mubFAStInsanityCount - 10);
-                    setmubFAStGaleCountState(mubFAStGaleCount - 10);
-                    setmubFAStOriCountState(mubFAStOriCount - 10);
-                    setmubFAStRupeeCost(mubFAStRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
-                    setallmubFAGaleCount(allmubFAGaleCount - 10)
-                    setallmubFAOriCount(allmubFAOriCount - 10)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
+            }
+            else if (fireStaffRefineState == 0 && event.target.value == 2) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 56);
+                setwbFAStSilverMaskCountState(wbFAStSilverMaskCount - 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 56);
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - 40);
+                setwbFAStGoldMaskCountState(wbFAStGoldMaskCount - 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 40);
+                setmubFAStInsanityCountState(mubFAStInsanityCount - 17);
+                setwbFAStInsanityCountState(wbFAStInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 17);
+                setmubFAStGaleCountState(mubFAStGaleCount - 10);
+                setallmubFAGaleCount(allmubFAGaleCount - 10);
+                setmubFAStOriCountState(mubFAStOriCount - 11);
+                setwbFAStOriCountState(wbFAStOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 11);
+                setmubFAStRupeeCost(mubFAStRupeeCost - 5);
+                setwbFAStRupeeCost(wbFAStRupeeCost - 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 5);
+                setFireStaffRefineState(event.target.value);
+            }
+            else if (fireStaffRefineState == 1 && event.target.value == 2) {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount - 40)
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount - 30);
+                setmubFAStInsanityCountState(mubFAStInsanityCount - 10);
+                setmubFAStGaleCountState(mubFAStGaleCount - 10);
+                setmubFAStOriCountState(mubFAStOriCount - 10);
+                setmubFAStRupeeCost(mubFAStRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                setallmubFAGaleCount(allmubFAGaleCount - 10)
+                setallmubFAOriCount(allmubFAOriCount - 10)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
+                setFireStaffRefineState(event.target.value);
             }
         }
         else if (fireStaffRefineState > event.target.value) {
-            if (fireStaffRefineState - event.target.value == 1) {
-                setFireStaffRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 16);
-                    setwbFAStSilverMaskCountState(wbFAStSilverMaskCount + 16);
-                    setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + 10);
-                    setwbFAStGoldMaskCountState(wbFAStGoldMaskCount + 10);
-                    setmubFAStInsanityCountState(mubFAStInsanityCount + 7);
-                    setwbFAStInsanityCountState(wbFAStInsanityCount + 7);
-                    setmubFAStOriCountState(mubFAStOriCount + 1);
-                    setwbFAStOriCountState(wbFAStOriCount + 1);
-                    setmubFAStRupeeCost(mubFAStRupeeCost + 2.5);
-                    setwbFAStRupeeCost(wbFAStRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 40)
-                    setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + 30);
-                    setmubFAStInsanityCountState(mubFAStInsanityCount + 10);
-                    setmubFAStGaleCountState(mubFAStGaleCount + 10);
-                    setmubFAStOriCountState(mubFAStOriCount + 10);
-                    setmubFAStRupeeCost(mubFAStRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
-                    setallmubFAGaleCount(allmubFAGaleCount + 10)
-                    setallmubFAOriCount(allmubFAOriCount + 10)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
+            if (fireStaffRefineState == 2 && event.target.value == 1) 
+            {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 40)
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + 30);
+                setmubFAStInsanityCountState(mubFAStInsanityCount + 10);
+                setmubFAStGaleCountState(mubFAStGaleCount + 10);
+                setmubFAStOriCountState(mubFAStOriCount + 10);
+                setmubFAStRupeeCost(mubFAStRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                setallmubFAGaleCount(allmubFAGaleCount + 10)
+                setallmubFAOriCount(allmubFAOriCount + 10)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireStaffRefineState(event.target.value);
+            }
+            else if (fireStaffRefineState == 2 && event.target.value == 0) 
+            {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 56);
+                setwbFAStSilverMaskCountState(wbFAStSilverMaskCount + 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 56);
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + 40);
+                setwbFAStGoldMaskCountState(wbFAStGoldMaskCount + 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 40);
+                setmubFAStInsanityCountState(mubFAStInsanityCount + 17);
+                setwbFAStInsanityCountState(wbFAStInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 17);
+                setmubFAStGaleCountState(mubFAStGaleCount + 10);
+                setallmubFAGaleCount(allmubFAGaleCount + 10);
+                setmubFAStOriCountState(mubFAStOriCount + 11);
+                setwbFAStOriCountState(wbFAStOriCount + 1); 
+                setallmubFAOriCount(allmubFAOriCount + 11);
+                setmubFAStRupeeCost(mubFAStRupeeCost + 5);
+                setwbFAStRupeeCost(wbFAStRupeeCost + 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 5)
+                setFireStaffRefineState(event.target.value);
+            }
+            else if (fireStaffRefineState == 1 && event.target.value == 0) 
+            {
+                setmubFAStSilverMaskCountState(mubFAStSilverMaskCount + 16);
+                setwbFAStSilverMaskCountState(wbFAStSilverMaskCount + 16);
+                setmubFAStGoldMaskCountState(mubFAStGoldMaskCount + 10);
+                setwbFAStGoldMaskCountState(wbFAStGoldMaskCount + 10);
+                setmubFAStInsanityCountState(mubFAStInsanityCount + 7);
+                setwbFAStInsanityCountState(wbFAStInsanityCount + 7);
+                setmubFAStOriCountState(mubFAStOriCount + 1);
+                setwbFAStOriCountState(wbFAStOriCount + 1);
+                setmubFAStRupeeCost(mubFAStRupeeCost + 2.5);
+                setwbFAStRupeeCost(wbFAStRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                setallmubFAOriCount(allmubFAOriCount + 1)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireStaffRefineState(event.target.value);
             }
         }
     }
@@ -2881,129 +4075,241 @@ export default function FireAgitoWeapons() {
     }
 
     function handleFireManacasterUnbindIncrement(event) {
-        setFireWeaponChoiceState("manacaster")
+        setFireWeaponChoiceState("manacaster");
         if (fireManacasterUnbindState < event.target.value) {
-            if (event.target.value - fireManacasterUnbindState == 1) {
+            if (event.target.value == 9 && fireManacasterUnbindState == 0) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 304);
+                setwbFAMSilverMaskCountState(wbFAMSilverMaskCount - 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 304);
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - 230);
+                setwbFAMSilverMaskCountState(wbFAMSilverMaskCount - 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 230);
+                setmubFAMInsanityCountState(mubFAMInsanityCount - 58);
+                setwbFAMInsanityCountState(wbFAMInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFAMGaleCountState(mubFAMGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFAMSandCountState(mubFAMSandCount - 4);
+                setwbFAMSandCountState(wbFAMSandCount - 4);
+                setallmubFASandCount(allmubFASandCount - 4);
+                setmubFAMOriCountState(mubFAMOriCount - 24);
+                setwbFAMOriCountState(wbFAMOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFAMRupeeCost(mubFAMRupeeCost - 40);
+                setwbFAMRupeeCost(wbFAMRupeeCost - 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 40);
                 setFireManacasterUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 40)
-                    setwbFAMSilverMaskCountState(wbFAMSilverMaskCount - 40)
-                    setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - 30)
-                    setwbFAMGoldMaskCountState(wbFAMGoldMaskCount - 30)
-                    setmubFAMSandCountState(mubFAMSandCount - 1)
-                    setwbFAMSandCountState(wbFAMSandCount - 1)
-                    setmubFAMRupeeCost(mubFAMRupeeCost - 2)
-                    setwbFAMRupeeCost(wbFAMRupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFASandCount(allmubFASandCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 16)
-                    setwbFAMSilverMaskCountState(wbFAMSilverMaskCount - 16)
-                    setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - 10)
-                    setwbFAMGoldMaskCountState(wbFAMGoldMaskCount - 10)
-                    setmubFAMInsanityCountState(mubFAMInsanityCount - 7)
-                    setwbFAMInsanityCountState(wbFAMInsanityCount - 7)
-                    setmubFAMOriCountState(mubFAMOriCount - 1)
-                    setwbFAMOriCountState(wbFAMOriCount - 1)
-                    setmubFAMRupeeCost(mubFAMRupeeCost - 7.5)
-                    setwbFAMRupeeCost(wbFAMRupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 16)
-                    setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - 10)
-                    setmubFAMInsanityCountState(mubFAMInsanityCount - 7)
-                    setmubFAMOriCountState(mubFAMOriCount - 1)
-                    setmubFAMRupeeCost(mubFAMRupeeCost - 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 80)
-                    setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - 70)
-                    setmubFAMInsanityCountState(mubFAMInsanityCount - 30)
-                    setmubFAMGaleCountState(mubFAMGaleCount - 20)
-                    setmubFAMOriCountState(mubFAMOriCount - 20)
-                    setmubFAMRupeeCost(mubFAMRupeeCost - 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 30)
-                    setallmubFAGaleCount(allmubFAGaleCount - 20)
-                    setallmubFAOriCount(allmubFAOriCount - 20)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && fireManacasterUnbindState >= 1 && fireManacasterUnbindState <= 4) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 144 - ((4 - fireManacasterUnbindState) * 40));
+                setwbFAMSilverMaskCountState(wbFAMSilverMaskCount - 16 - ((4 - fireManacasterUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 144 - ((4 - fireManacasterUnbindState) * 40));
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - 110 - ((4 - fireManacasterUnbindState) * 30));
+                setwbFAMGoldMaskCountState(wbFAMGoldMaskCount - 10 - ((4 - fireManacasterUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 110 - ((4 - fireManacasterUnbindState) * 30));
+                setmubFAMInsanityCountState(mubFAMInsanityCount - 58);
+                setwbFAMInsanityCountState(wbFAMInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 58);
+                setmubFAMGaleCountState(mubFAMGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFAMSandCountState(mubFAMSandCount - (4 - fireManacasterUnbindState));
+                setwbFAMSandCountState(wbFAMSandCount - (4 - fireManacasterUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireManacasterUnbindState));
+                setmubFAMOriCountState(mubFAMOriCount - 24);
+                setwbFAMOriCountState(wbFAMOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 24);
+                setmubFAMRupeeCost(mubFAMRupeeCost - 32 - ((4 - fireManacasterUnbindState) * 2));
+                setwbFAMRupeeCost(wbFAMRupeeCost - 7.5 - ((4 - fireManacasterUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - 32 - ((4 - fireManacasterUnbindState) * 2));
+                setFireManacasterUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && fireManacasterUnbindState >= 5 && fireManacasterUnbindState <= 8) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 80 - ((8 - fireManacasterUnbindState) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 80 - ((8 - fireManacasterUnbindState) * 16));
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - 70 - ((8 - fireManacasterUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 70 - ((8 - fireManacasterUnbindState) * 10));
+                setmubFAMInsanityCountState(mubFAMInsanityCount - 30 - ((8 - fireManacasterUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - 30 - ((8 - fireManacasterUnbindState) * 7));
+                setmubFAMGaleCountState(mubFAMGaleCount - 20);
+                setallmubFAGaleCount(allmubFAGaleCount - 20);
+                setmubFAMOriCountState(mubFAMOriCount - 20 - ((8 - fireManacasterUnbindState) * 1));
+                setallmubFAOriCount(allmubFAOriCount - 20 - ((8 - fireManacasterUnbindState) * 1));
+                setmubFAMRupeeCost(mubFAMRupeeCost - 2 - ((8 - fireManacasterUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - 2 - ((8 - fireManacasterUnbindState) * 7.5));
+                setFireManacasterUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireManacasterUnbindState <= 7 && fireManacasterUnbindState >= 5) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - ((event.target.value - fireManacasterUnbindState) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireManacasterUnbindState) * 16));
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - ((event.target.value - fireManacasterUnbindState) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireManacasterUnbindState) * 10));
+                setmubFAMInsanityCountState(mubFAMInsanityCount - ((event.target.value - fireManacasterUnbindState) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount - ((event.target.value - fireManacasterUnbindState) * 7));
+                setmubFAMOriCountState(mubFAMOriCount - (event.target.value - fireManacasterUnbindState));
+                setallmubFAOriCount(allmubFAOriCount - (event.target.value - fireManacasterUnbindState));
+                setmubFAMRupeeCost(mubFAMRupeeCost - ((event.target.value - fireManacasterUnbindState) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireManacasterUnbindState) * 7.5));
+                setFireManacasterUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && fireManacasterUnbindState <= 4 && fireManacasterUnbindState >= 0) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - ((4 - fireManacasterUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbFAMSilverMaskCountState(wbFAMSilverMaskCount - 16 - ((4 - fireManacasterUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((4 - fireManacasterUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - ((4 - fireManacasterUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbFAMGoldMaskCountState(wbFAMGoldMaskCount - 10 - ((4 - fireManacasterUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((4 - fireManacasterUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubFAMInsanityCountState(mubFAMInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbFAMInsanityCountState(wbFAMInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubFAMSandCountState(mubFAMSandCount - (4 - fireManacasterUnbindState));
+                setwbFAMSandCountState(wbFAMSandCount - (4 - fireManacasterUnbindState));
+                setallmubFASandCount(allmubFASandCount - (4 - fireManacasterUnbindState));
+                setmubFAMOriCountState(mubFAMOriCount - (-1 * (4 - event.target.value)));
+                setwbFAMOriCountState(wbFAMOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - (-1 * (4 - event.target.value)));
+                setmubFAMRupeeCost(mubFAMRupeeCost - ((4 - fireManacasterUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbFAMRupeeCost(wbFAMRupeeCost - 7.5 - ((4 - fireManacasterUnbindState) * 2))
+                setFireManacasterUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && fireManacasterUnbindState <= 3 && fireManacasterUnbindState >= 0) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - ((event.target.value - fireManacasterUnbindState) * 40));
+                setwbFAMSilverMaskCountState(wbFAMSilverMaskCount - ((event.target.value - fireManacasterUnbindState) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - ((event.target.value - fireManacasterUnbindState) * 40));
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - ((event.target.value - fireManacasterUnbindState) * 30));
+                setwbFAMGoldMaskCountState(wbFAMGoldMaskCount - ((event.target.value - fireManacasterUnbindState) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - ((event.target.value - fireManacasterUnbindState) * 30));
+                setmubFAMSandCountState(mubFAMSandCount - (event.target.value - fireManacasterUnbindState));
+                setwbFAMSandCountState(wbFAMSandCount - (event.target.value - fireManacasterUnbindState));
+                setallmubFASandCount(allmubFASandCount - (event.target.value - fireManacasterUnbindState));
+                setmubFAMRupeeCost(mubFAMRupeeCost - ((event.target.value - fireManacasterUnbindState) * 2));
+                setwbFAMRupeeCost(wbFAMRupeeCost - ((event.target.value - fireManacasterUnbindState) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost - ((event.target.value - fireManacasterUnbindState) * 2));
+                setFireManacasterUnbindState(event.target.value)
             }
         }
         else if (fireManacasterUnbindState > event.target.value) {
-            if (fireManacasterUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && fireManacasterUnbindState == 9) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 304);
+                setwbFAMSilverMaskCountState(wbFAMSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 304);
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + 230);
+                setwbFAMGoldMaskCountState(wbFAMGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 230);
+                setmubFAMInsanityCountState(mubFAMInsanityCount + 58);
+                setwbFAMInsanityCountState(wbFAMInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 58);
+                setmubFAMGaleCountState(mubFAMGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFAMSandCountState(mubFAMSandCount + 4);
+                setwbFAMSandCountState(wbFAMSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFAMOriCountState(mubFAMOriCount + 24);
+                setwbFAMOriCountState(wbFAMOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + 24);
+                setmubFAMRupeeCost(mubFAMRupeeCost + 40);
+                setwbFAMRupeeCost(wbFAMRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 40);
                 setFireManacasterUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 40)
-                    setwbFAMSilverMaskCountState(wbFAMSilverMaskCount + 40)
-                    setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + 30)
-                    setwbFAMGoldMaskCountState(wbFAMGoldMaskCount + 30)
-                    setmubFAMSandCountState(mubFAMSandCount + 1)
-                    setwbFAMSandCountState(wbFAMSandCount + 1)
-                    setmubFAMRupeeCost(mubFAMRupeeCost + 2)
-                    setwbFAMRupeeCost(wbFAMRupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFASandCount(allmubFASandCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 16)
-                    setwbFAMSilverMaskCountState(wbFAMSilverMaskCount + 16)
-                    setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + 10)
-                    setwbFAMGoldMaskCountState(wbFAMGoldMaskCount + 10)
-                    setmubFAMInsanityCountState(mubFAMInsanityCount + 7)
-                    setwbFAMInsanityCountState(wbFAMInsanityCount + 7)
-                    setmubFAMOriCountState(mubFAMOriCount + 1)
-                    setwbFAMOriCountState(wbFAMOriCount + 1)
-                    setmubFAMRupeeCost(mubFAMRupeeCost + 7.5)
-                    setwbFAMRupeeCost(wbFAMRupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 16)
-                    setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + 10)
-                    setmubFAMInsanityCountState(mubFAMInsanityCount + 7)
-                    setmubFAMOriCountState(mubFAMOriCount + 1)
-                    setmubFAMRupeeCost(mubFAMRupeeCost + 7.5)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 80)
-                    setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + 70)
-                    setmubFAMInsanityCountState(mubFAMInsanityCount + 30)
-                    setmubFAMGaleCountState(mubFAMGaleCount + 20)
-                    setmubFAMOriCountState(mubFAMOriCount + 20)
-                    setmubFAMRupeeCost(mubFAMRupeeCost + 2)
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 80)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 30)
-                    setallmubFAGaleCount(allmubFAGaleCount + 20)
-                    setallmubFAOriCount(allmubFAOriCount + 20)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && fireManacasterUnbindState >= 5 && fireManacasterUnbindState <= 8) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 160 + ((-1 * (4 - fireManacasterUnbindState)) * 16));
+                setwbFAMSilverMaskCountState(wbFAMSilverMaskCount + 176);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 160 + ((-1 * (4 - fireManacasterUnbindState)) * 16));
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + 120 + ((-1 * (4 - fireManacasterUnbindState)) * 10));
+                setwbFAMGoldMaskCountState(wbFAMGoldMaskCount + 130);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 120 + ((-1 * (4 - fireManacasterUnbindState)) * 10));
+                setmubFAMInsanityCountState(mubFAMInsanityCount + ((-1 * (4 - fireManacasterUnbindState)) * 7));
+                setwbFAMInsanityCountState(wbFAMInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((-1 * (4 - fireManacasterUnbindState)) * 7));
+                setmubFAMSandCountState(mubFAMSandCount + 4);
+                setwbFAMSandCountState(wbFAMSandCount + 4);
+                setallmubFASandCount(allmubFASandCount + 4);
+                setmubFAMOriCountState(mubFAMOriCount + (-1 * (4 - fireManacasterUnbindState)));
+                setwbFAMOriCountState(wbFAMOriCount + 1);
+                setallmubFAOriCount(allmubFAOriCount + (-1 * (4 - fireManacasterUnbindState)));
+                setmubFAMRupeeCost(mubFAMRupeeCost + 8 + (-1 * (4 - fireManacasterUnbindState) * 7.5));
+                setwbFAMRupeeCost(wbFAMRupeeCost + 15.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 8 + (-1 * (4 - fireManacasterUnbindState) * 7.5));
+                setFireManacasterUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && fireManacasterUnbindState >= 1 && fireManacasterUnbindState <= 4) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + (fireManacasterUnbindState * 40));
+                setwbFAMSilverMaskCountState(wbFAMSilverMaskCount + (fireManacasterUnbindState * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + (fireManacasterUnbindState * 40));
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + (fireManacasterUnbindState * 30));
+                setwbFAMGoldMaskCountState(wbFAMGoldMaskCount + (fireManacasterUnbindState * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + (fireManacasterUnbindState * 30));
+                setmubFAMSandCountState(mubFAMSandCount + fireManacasterUnbindState);
+                setwbFAMSandCountState(wbFAMSandCount + fireManacasterUnbindState);
+                setallmubFASandCount(allmubFASandCount + fireManacasterUnbindState);
+                setmubFAMRupeeCost(mubFAMRupeeCost + (fireManacasterUnbindState * 2));
+                setwbFAMRupeeCost(wbFAMRupeeCost + (fireManacasterUnbindState * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + (fireManacasterUnbindState * 2));
+                setFireManacasterUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireManacasterUnbindState >= 1 && fireManacasterUnbindState <= 4) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + ((fireManacasterUnbindState - event.target.value) * 40))
+                setwbFAMSilverMaskCountState(wbFAMSilverMaskCount + ((fireManacasterUnbindState - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireManacasterUnbindState - event.target.value) * 40));
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + ((fireManacasterUnbindState - event.target.value) * 30));
+                setwbFAMGoldMaskCountState(wbFAMGoldMaskCount + ((fireManacasterUnbindState - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireManacasterUnbindState - event.target.value) * 30));
+                setmubFAMSandCountState(mubFAMSandCount + (fireManacasterUnbindState - event.target.value));
+                setwbFAMSandCountState(wbFAMSandCount + (fireManacasterUnbindState - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (fireManacasterUnbindState - event.target.value));
+                setmubFAMRupeeCost(mubFAMRupeeCost + ((fireManacasterUnbindState - event.target.value) * 2));
+                setwbFAMRupeeCost(wbFAMRupeeCost + ((fireManacasterUnbindState - event.target.value) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireManacasterUnbindState - event.target.value) * 2))
+                setFireManacasterUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && fireManacasterUnbindState >= 5 && fireManacasterUnbindState <= 8) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + ((fireManacasterUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbFAMSilverMaskCountState(wbFAMSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireManacasterUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + ((fireManacasterUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbFAMGoldMaskCountState(wbFAMGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireManacasterUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubFAMInsanityCountState(mubFAMInsanityCount + ((fireManacasterUnbindState - 4) * 7));
+                setwbFAMInsanityCountState(wbFAMInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireManacasterUnbindState - 4) * 7));
+                setmubFAMSandCountState(mubFAMSandCount + (4 - event.target.value));
+                setwbFAMSandCountState(wbFAMSandCount + (4 - event.target.value));
+                setallmubFASandCount(allmubFASandCount + (4 - event.target.value));
+                setmubFAMOriCountState(mubFAMOriCount + (fireManacasterUnbindState - 4));
+                setwbFAMOriCountState(wbFAMOriCount + (fireManacasterUnbindState - 4));
+                setallmubFAOriCount(allmubFAOriCount + (fireManacasterUnbindState - 4));
+                setmubFAMRupeeCost(mubFAMRupeeCost + ((fireManacasterUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbFAMRupeeCost(wbFAMRupeeCost + 7.5 + ((fireManacasterUnbindState - 4) * 2));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireManacasterUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setFireManacasterUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireManacasterUnbindState == 9) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubFAMInsanityCountState(mubFAMInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubFAMGaleCountState(mubFAMGaleCount + 20);
+                setallmubFAGaleCount(allmubFAGaleCount + 20);
+                setmubFAMOriCountState(mubFAMOriCount + 20 + (8 - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + 20 + (8 - event.target.value));
+                setmubFAMRupeeCost(mubFAMRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setFireManacasterUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && fireManacasterUnbindState >= 5 && fireManacasterUnbindState <= 8) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + ((fireManacasterUnbindState - event.target.value) * 16))
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + ((fireManacasterUnbindState - event.target.value) * 16));
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + ((fireManacasterUnbindState - event.target.value) * 10));
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + ((fireManacasterUnbindState - event.target.value) * 10));
+                setmubFAMInsanityCountState(mubFAMInsanityCount + ((fireManacasterUnbindState - event.target.value) * 7));
+                setallmubFAInsanityCount(allmubFAInsanityCount + ((fireManacasterUnbindState - event.target.value) * 7));
+                setmubFAMOriCountState(mubFAMOriCount + (fireManacasterUnbindState - event.target.value));
+                setallmubFAOriCount(allmubFAOriCount + (fireManacasterUnbindState - event.target.value));
+                setmubFAMRupeeCost(mubFAMRupeeCost + ((fireManacasterUnbindState - event.target.value) * 7.5));
+                setallmubFARupeeCost(allmubFARupeeCost + ((fireManacasterUnbindState - event.target.value) * 7.5));
+                setFireManacasterUnbindState(event.target.value)
             }
         }
     }
@@ -3011,75 +4317,116 @@ export default function FireAgitoWeapons() {
     function handleFireManacasterRefineIncrement(event) {
         setFireWeaponChoiceState("manacaster");
         if (fireManacasterRefineState < event.target.value) {
-            if (event.target.value - fireManacasterRefineState == 1) {
+            if (fireManacasterRefineState == 0 && event.target.value == 1) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 16);
+                setwbFAMSilverMaskCountState(wbFAMSilverMaskCount - 16);
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - 10);
+                setwbFAMGoldMaskCountState(wbFAMGoldMaskCount - 10);
+                setmubFAMInsanityCountState(mubFAMInsanityCount - 7);
+                setwbFAMInsanityCountState(wbFAMInsanityCount - 7);
+                setmubFAMOriCountState(mubFAMOriCount - 1);
+                setwbFAMOriCountState(wbFAMOriCount - 1);
+                setmubFAMRupeeCost(mubFAMRupeeCost - 2.5);
+                setwbFAMRupeeCost(wbFAMRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 7)
+                setallmubFAOriCount(allmubFAOriCount - 1)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
                 setFireManacasterRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 16);
-                    setwbFAMSilverMaskCountState(wbFAMSilverMaskCount - 16);
-                    setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - 10);
-                    setwbFAMGoldMaskCountState(wbFAMGoldMaskCount - 10);
-                    setmubFAMInsanityCountState(mubFAMInsanityCount - 7);
-                    setwbFAMInsanityCountState(wbFAMInsanityCount - 7);
-                    setmubFAMOriCountState(mubFAMOriCount - 1);
-                    setwbFAMOriCountState(wbFAMOriCount - 1);
-                    setmubFAMRupeeCost(mubFAMRupeeCost - 2.5);
-                    setwbFAMRupeeCost(wbFAMRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 7)
-                    setallmubFAOriCount(allmubFAOriCount - 1)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 40)
-                    setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - 30);
-                    setmubFAMInsanityCountState(mubFAMInsanityCount - 10);
-                    setmubFAMGaleCountState(mubFAMGaleCount - 10);
-                    setmubFAMOriCountState(mubFAMOriCount - 10);
-                    setmubFAMRupeeCost(mubFAMRupeeCost - 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount - 10)
-                    setallmubFAGaleCount(allmubFAGaleCount - 10)
-                    setallmubFAOriCount(allmubFAOriCount - 10)
-                    setallmubFARupeeCost(allmubFARupeeCost - 2.5)
-                }
+            }
+            else if (fireManacasterRefineState == 0 && event.target.value == 2) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 56);
+                setwbFAMSilverMaskCountState(wbFAMSilverMaskCount - 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 56);
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - 40);
+                setwbFAMGoldMaskCountState(wbFAMGoldMaskCount - 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 40);
+                setmubFAMInsanityCountState(mubFAMInsanityCount - 17);
+                setwbFAMInsanityCountState(wbFAMInsanityCount - 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount - 17);
+                setmubFAMGaleCountState(mubFAMGaleCount - 10);
+                setallmubFAGaleCount(allmubFAGaleCount - 10);
+                setmubFAMOriCountState(mubFAMOriCount - 11);
+                setwbFAMOriCountState(wbFAMOriCount - 1);
+                setallmubFAOriCount(allmubFAOriCount - 11);
+                setmubFAMRupeeCost(mubFAMRupeeCost - 5);
+                setwbFAMRupeeCost(wbFAMRupeeCost - 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost - 5);
+                setFireManacasterRefineState(event.target.value);
+            }
+            else if (fireManacasterRefineState == 1 && event.target.value == 2) {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount - 40)
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount - 30);
+                setmubFAMInsanityCountState(mubFAMInsanityCount - 10);
+                setmubFAMGaleCountState(mubFAMGaleCount - 10);
+                setmubFAMOriCountState(mubFAMOriCount - 10);
+                setmubFAMRupeeCost(mubFAMRupeeCost - 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount - 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount - 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount - 10)
+                setallmubFAGaleCount(allmubFAGaleCount - 10)
+                setallmubFAOriCount(allmubFAOriCount - 10)
+                setallmubFARupeeCost(allmubFARupeeCost - 2.5)
+                setFireManacasterRefineState(event.target.value);
             }
         }
         else if (fireManacasterRefineState > event.target.value) {
-            if (fireManacasterRefineState - event.target.value == 1) {
-                setFireManacasterRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 16);
-                    setwbFAMSilverMaskCountState(wbFAMSilverMaskCount + 16);
-                    setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + 10);
-                    setwbFAMGoldMaskCountState(wbFAMGoldMaskCount + 10);
-                    setmubFAMInsanityCountState(mubFAMInsanityCount + 7);
-                    setwbFAMInsanityCountState(wbFAMInsanityCount + 7);
-                    setmubFAMOriCountState(mubFAMOriCount + 1);
-                    setwbFAMOriCountState(wbFAMOriCount + 1);
-                    setmubFAMRupeeCost(mubFAMRupeeCost + 2.5);
-                    setwbFAMRupeeCost(wbFAMRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 7)
-                    setallmubFAOriCount(allmubFAOriCount + 1)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 40)
-                    setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + 30);
-                    setmubFAMInsanityCountState(mubFAMInsanityCount + 10);
-                    setmubFAMGaleCountState(mubFAMGaleCount + 10);
-                    setmubFAMOriCountState(mubFAMOriCount + 10);
-                    setmubFAMRupeeCost(mubFAMRupeeCost + 2.5);
-                    setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
-                    setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
-                    setallmubFAInsanityCount(allmubFAInsanityCount + 10)
-                    setallmubFAGaleCount(allmubFAGaleCount + 10)
-                    setallmubFAOriCount(allmubFAOriCount + 10)
-                    setallmubFARupeeCost(allmubFARupeeCost + 2.5)
-                }
+            if (fireManacasterRefineState == 2 && event.target.value == 1) 
+            {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 40)
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + 30);
+                setmubFAMInsanityCountState(mubFAMInsanityCount + 10);
+                setmubFAMGaleCountState(mubFAMGaleCount + 10);
+                setmubFAMOriCountState(mubFAMOriCount + 10);
+                setmubFAMRupeeCost(mubFAMRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 40)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 30)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 10)
+                setallmubFAGaleCount(allmubFAGaleCount + 10)
+                setallmubFAOriCount(allmubFAOriCount + 10)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireManacasterRefineState(event.target.value);
+            }
+            else if (fireManacasterRefineState == 2 && event.target.value == 0) 
+            {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 56);
+                setwbFAMSilverMaskCountState(wbFAMSilverMaskCount + 16);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 56);
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + 40);
+                setwbFAMGoldMaskCountState(wbFAMGoldMaskCount + 10);
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 40);
+                setmubFAMInsanityCountState(mubFAMInsanityCount + 17);
+                setwbFAMInsanityCountState(wbFAMInsanityCount + 7);
+                setallmubFAInsanityCount(allmubFAInsanityCount + 17);
+                setmubFAMGaleCountState(mubFAMGaleCount + 10);
+                setallmubFAGaleCount(allmubFAGaleCount + 10);
+                setmubFAMOriCountState(mubFAMOriCount + 11);
+                setwbFAMOriCountState(wbFAMOriCount + 1); 
+                setallmubFAOriCount(allmubFAOriCount + 11);
+                setmubFAMRupeeCost(mubFAMRupeeCost + 5);
+                setwbFAMRupeeCost(wbFAMRupeeCost + 2.5);
+                setallmubFARupeeCost(allmubFARupeeCost + 5)
+                setFireManacasterRefineState(event.target.value);
+            }
+            else if (fireManacasterRefineState == 1 && event.target.value == 0) 
+            {
+                setmubFAMSilverMaskCountState(mubFAMSilverMaskCount + 16);
+                setwbFAMSilverMaskCountState(wbFAMSilverMaskCount + 16);
+                setmubFAMGoldMaskCountState(mubFAMGoldMaskCount + 10);
+                setwbFAMGoldMaskCountState(wbFAMGoldMaskCount + 10);
+                setmubFAMInsanityCountState(mubFAMInsanityCount + 7);
+                setwbFAMInsanityCountState(wbFAMInsanityCount + 7);
+                setmubFAMOriCountState(mubFAMOriCount + 1);
+                setwbFAMOriCountState(wbFAMOriCount + 1);
+                setmubFAMRupeeCost(mubFAMRupeeCost + 2.5);
+                setwbFAMRupeeCost(wbFAMRupeeCost + 2.5);
+                setallmubFASilverMaskCount(allmubFASilverMaskCount + 16)
+                setallmubFAGoldMaskCount(allmubFAGoldMaskCount + 10)
+                setallmubFAInsanityCount(allmubFAInsanityCount + 7)
+                setallmubFAOriCount(allmubFAOriCount + 1)
+                setallmubFARupeeCost(allmubFARupeeCost + 2.5)
+                setFireManacasterRefineState(event.target.value);
             }
         }
     }
@@ -3103,7 +4450,7 @@ export default function FireAgitoWeapons() {
                         <Card width={[150, 200]}>
                             <Flex>
                                 <Box width={[0, 1 / 10]}></Box>
-                                <Image src={FireAgitoSword} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireSwordCraftState }} onClick={craftFireSword} />
+                                <Image src={FireAgitoSword} sx={{ width: ["75px", "100px"] }, {height: ["75px", "100px"]}} filter="grayscale(100%)" style={{ filter: fireSwordCraftState }} onClick={craftFireSword} />
                             </Flex>
                             <Flex>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Nothung</Text>
@@ -3168,7 +4515,7 @@ export default function FireAgitoWeapons() {
                         <Card width={[150, 200]}>
                             <Flex>
                                 <Box width={[0, 1 / 10]}></Box>
-                                <Image src={FireAgitoBlade} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireBladeCraftState }} onClick={craftFireBlade} />
+                                <Image src={FireAgitoBlade} sx={{ width: ["75px", "100px"] }, {height: ["75px", "100px"]}} filter="grayscale(100%)" style={{ filter: fireBladeCraftState }} onClick={craftFireBlade} />
                             </Flex>
                             <Flex>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Tyrfing</Text>
@@ -3233,7 +4580,7 @@ export default function FireAgitoWeapons() {
                         <Card width={[150, 200]}>
                             <Flex>
                                 <Box width={[0, 1 / 10]}></Box>
-                                <Image src={FireAgitoDagger} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireDaggerCraftState }} onClick={craftFireDagger} />
+                                <Image src={FireAgitoDagger} sx={{ width: ["75px", "100px"] }, {height: ["75px", "100px"]}} filter="grayscale(100%)" style={{ filter: fireDaggerCraftState }} onClick={craftFireDagger} />
                             </Flex>
                             <Flex>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Hrotti</Text>
@@ -3300,7 +4647,7 @@ export default function FireAgitoWeapons() {
                         <Card width={[150, 200]}>
                             <Flex>
                                 <Box width={[0, 1 / 10]}></Box>
-                                <Image src={FireAgitoAxe} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireAxeCraftState }} onClick={craftFireAxe} />
+                                <Image src={FireAgitoAxe} sx={{ width: ["75px", "100px"] }, {height: ["75px", "100px"]}} filter="grayscale(100%)" style={{ filter: fireAxeCraftState }} onClick={craftFireAxe} />
                             </Flex>
                             <Flex>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Mjolnir</Text>
@@ -3365,7 +4712,7 @@ export default function FireAgitoWeapons() {
                         <Card width={[150, 200]}>
                             <Flex>
                                 <Box width={[0, 1 / 10]}></Box>
-                                <Image src={FireAgitoLance} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireLanceCraftState }} onClick={craftFireLance} />
+                                <Image src={FireAgitoLance} sx={{ width: ["75px", "100px"] }, {height: ["75px", "100px"]}} filter="grayscale(100%)" style={{ filter: fireLanceCraftState }} onClick={craftFireLance} />
                             </Flex>
                             <Flex>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Gungnir</Text>
@@ -3430,7 +4777,7 @@ export default function FireAgitoWeapons() {
                         <Card width={[150, 200]}>
                             <Flex>
                                 <Box width={[0, 1 / 10]}></Box>
-                                <Image src={FireAgitoBow} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireBowCraftState }} onClick={craftFireBow} />
+                                <Image src={FireAgitoBow} sx={{ width: ["75px", "100px"] }, {height: ["75px", "100px"]}} filter="grayscale(100%)" style={{ filter: fireBowCraftState }} onClick={craftFireBow} />
                             </Flex>
                             <Flex>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Ydalir</Text>
@@ -3497,7 +4844,7 @@ export default function FireAgitoWeapons() {
                         <Card width={[150, 200]}>
                             <Flex>
                                 <Box width={[0, 1 / 10]}></Box>
-                                <Image src={FireAgitoWand} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireWandCraftState }} onClick={craftFireWand} />
+                                <Image src={FireAgitoWand} sx={{ width: ["75px", "100px"] }, {height: ["75px", "100px"]}} filter="grayscale(100%)" style={{ filter: fireWandCraftState }} onClick={craftFireWand} />
                             </Flex>
                             <Flex>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Brisingr</Text>
@@ -3562,7 +4909,7 @@ export default function FireAgitoWeapons() {
                         <Card width={[150, 200]}>
                             <Flex>
                                 <Box width={[0, 1 / 10]}></Box>
-                                <Image src={FireAgitoStaff} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireStaffCraftState }} onClick={craftFireStaff} />
+                                <Image src={FireAgitoStaff} sx={{ width: ["75px", "100px"] }, {height: ["75px", "100px"]}} filter="grayscale(100%)" style={{ filter: fireStaffCraftState }} onClick={craftFireStaff} />
                             </Flex>
                             <Flex>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Gjallarhorn</Text>
@@ -3627,7 +4974,7 @@ export default function FireAgitoWeapons() {
                         <Card width={[150, 200]}>
                             <Flex>
                                 <Box width={[0, 1 / 10]}></Box>
-                                <Image src={FireAgitoManacaster} sx={{ width: ["75px", "100px"] }} filter="grayscale(100%)" style={{ filter: fireManacasterCraftState }} onClick={craftFireManacaster} />
+                                <Image src={FireAgitoManacaster} sx={{ width: ["75px", "100px"] }, {height: ["75px", "100px"]}} filter="grayscale(100%)" style={{ filter: fireManacasterCraftState }} onClick={craftFireManacaster} />
                             </Flex>
                             <Flex>
                                 <Text fontSize={[1, 3]} px={[1, 4]} color="crimson">Draupnir</Text>

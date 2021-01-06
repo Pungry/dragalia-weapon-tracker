@@ -17,7 +17,7 @@ export default function FireAgitoManacasterMats(props) {
                 <Box sx={{ border: "3px solid blue" }}>
                     <Flex>
                         <Box width={1 / 4}></Box>
-                        <Image src={FireAgitoManacaster} sx={{ width: ["50%", "50%"] }} />
+                        <Image src={FireAgitoManacaster} sx={{ width: ["50%", "35%"] }, {height: ["50%", "35%"]}} />
                     </Flex>
                     <Flex>
                         <Text fontSize={[1, 3]} ml="auto" mr="auto" color="gold">Full Capabilities</Text>

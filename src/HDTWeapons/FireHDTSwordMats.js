@@ -15,7 +15,7 @@ export default function FireHDTSwordMats(props) {
             <Box sx={{ border: "3px solid blue" }} bg={"#152238"}>
                 <Flex>
                     <Box width={[1 / 4, 2 / 5]}></Box>
-                    <Image src={FireHDTSword} sx={{ width: ["50%", "20%"] }} />
+                    <Image src={FireHDTSword} sx={{ width: ["50%", "20%"] }, {height: ["50%", "20%"]}} />
                 </Flex>
                 <Flex>
                     <Text fontSize={[1, 3]} ml="auto" mr="auto" color="gold">To Weapon Bonus</Text>
