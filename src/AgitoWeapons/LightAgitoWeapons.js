@@ -396,127 +396,239 @@ export default function LightAgitoWeapons() {
     function handleLightSwordUnbindIncrement(event) {
         setLightWeaponChoiceState("sword");
         if (lightSwordUnbindState < event.target.value) {
-            if (event.target.value - lightSwordUnbindState == 1) {
+            if (event.target.value == 9 && lightSwordUnbindState == 0) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount - 304);
+                setwbLASSilverMaskCountState(wbLASSilverMaskCount - 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 304);
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount - 230);
+                setwbLASGoldMaskCountState(wbLASGoldMaskCount - 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 230);
+                setmubLASInsanityCountState(mubLASInsanityCount - 58);
+                setwbLASInsanityCountState(wbLASInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLASGaleCountState(mubLASGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLASSandCountState(mubLASSandCount - 4);
+                setwbLASSandCountState(wbLASSandCount - 4);
+                setallmubLASandCount(allmubLASandCount - 4);
+                setmubLASOriCountState(mubLASOriCount - 24);
+                setwbLASOriCountState(wbLASOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLASRupeeCost(mubLASRupeeCost - 40);
+                setwbLASRupeeCost(wbLASRupeeCost - 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 40);
                 setLightSwordUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubLASSilverMaskCountState(mubLASSilverMaskCount - 40)
-                    setwbLASSilverMaskCountState(wbLASSilverMaskCount - 40)
-                    setmubLASGoldMaskCountState(mubLASGoldMaskCount - 30)
-                    setwbLASGoldMaskCountState(wbLASGoldMaskCount - 30)
-                    setmubLASSandCountState(mubLASSandCount - 1)
-                    setwbLASSandCountState(wbLASSandCount - 1)
-                    setmubLASRupeeCost(mubLASRupeeCost - 2)
-                    setwbLASRupeeCost(wbLASRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLASandCount(allmubLASandCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubLASSilverMaskCountState(mubLASSilverMaskCount - 16)
-                    setwbLASSilverMaskCountState(wbLASSilverMaskCount - 16)
-                    setmubLASGoldMaskCountState(mubLASGoldMaskCount - 10)
-                    setwbLASGoldMaskCountState(wbLASGoldMaskCount - 10)
-                    setmubLASInsanityCountState(mubLASInsanityCount - 7)
-                    setwbLASInsanityCountState(wbLASInsanityCount - 7)
-                    setmubLASOriCountState(mubLASOriCount - 1)
-                    setwbLASOriCountState(wbLASOriCount - 1)
-                    setmubLASRupeeCost(mubLASRupeeCost - 7.5)
-                    setwbLASRupeeCost(wbLASRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubLASSilverMaskCountState(mubLASSilverMaskCount - 16)
-                    setmubLASGoldMaskCountState(mubLASGoldMaskCount - 10)
-                    setmubLASInsanityCountState(mubLASInsanityCount - 7)
-                    setmubLASOriCountState(mubLASOriCount - 1)
-                    setmubLASRupeeCost(mubLASRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubLASSilverMaskCountState(mubLASSilverMaskCount - 80)
-                    setmubLASGoldMaskCountState(mubLASGoldMaskCount - 70)
-                    setmubLASInsanityCountState(mubLASInsanityCount - 30)
-                    setmubLASGaleCountState(mubLASGaleCount - 20)
-                    setmubLASOriCountState(mubLASOriCount - 20)
-                    setmubLASRupeeCost(mubLASRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 30)
-                    setallmubLAGaleCount(allmubLAGaleCount - 20)
-                    setallmubLAOriCount(allmubLAOriCount - 20)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && lightSwordUnbindState >= 1 && lightSwordUnbindState <= 4) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount - 144 - ((4 - lightSwordUnbindState) * 40));
+                setwbLASSilverMaskCountState(wbLASSilverMaskCount - 16 - ((4 - lightSwordUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 144 - ((4 - lightSwordUnbindState) * 40));
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount - 110 - ((4 - lightSwordUnbindState) * 30));
+                setwbLASGoldMaskCountState(wbLASGoldMaskCount - 10 - ((4 - lightSwordUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 110 - ((4 - lightSwordUnbindState) * 30));
+                setmubLASInsanityCountState(mubLASInsanityCount - 58);
+                setwbLASInsanityCountState(wbLASInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLASGaleCountState(mubLASGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLASSandCountState(mubLASSandCount - (4 - lightSwordUnbindState));
+                setwbLASSandCountState(wbLASSandCount - (4 - lightSwordUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightSwordUnbindState));
+                setmubLASOriCountState(mubLASOriCount - 24);
+                setwbLASOriCountState(wbLASOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLASRupeeCost(mubLASRupeeCost - 32 - ((4 - lightSwordUnbindState) * 2));
+                setwbLASRupeeCost(wbLASRupeeCost - 7.5 - ((4 - lightSwordUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - 32 - ((4 - lightSwordUnbindState) * 2));
+                setLightSwordUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && lightSwordUnbindState >= 5 && lightSwordUnbindState <= 8) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount - 80 - ((8 - lightSwordUnbindState) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 80 - ((8 - lightSwordUnbindState) * 16));
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount - 70 - ((8 - lightSwordUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70 - ((8 - lightSwordUnbindState) * 10));
+                setmubLASInsanityCountState(mubLASInsanityCount - 30 - ((8 - lightSwordUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - 30 - ((8 - lightSwordUnbindState) * 7));
+                setmubLASGaleCountState(mubLASGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLASOriCountState(mubLASOriCount - 20 - ((8 - lightSwordUnbindState) * 1));
+                setallmubLAOriCount(allmubLAOriCount - 20 - ((8 - lightSwordUnbindState) * 1));
+                setmubLASRupeeCost(mubLASRupeeCost - 2 - ((8 - lightSwordUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - 2 - ((8 - lightSwordUnbindState) * 7.5));
+                setLightSwordUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightSwordUnbindState <= 7 && lightSwordUnbindState >= 5) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount - ((event.target.value - lightSwordUnbindState) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightSwordUnbindState) * 16));
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount - ((event.target.value - lightSwordUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightSwordUnbindState) * 10));
+                setmubLASInsanityCountState(mubLASInsanityCount - ((event.target.value - lightSwordUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - ((event.target.value - lightSwordUnbindState) * 7));
+                setmubLASOriCountState(mubLASOriCount - (event.target.value - lightSwordUnbindState));
+                setallmubLAOriCount(allmubLAOriCount - (event.target.value - lightSwordUnbindState));
+                setmubLASRupeeCost(mubLASRupeeCost - ((event.target.value - lightSwordUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightSwordUnbindState) * 7.5));
+                setLightSwordUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightSwordUnbindState <= 4 && lightSwordUnbindState >= 0) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount - ((4 - lightSwordUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbLASSilverMaskCountState(wbLASSilverMaskCount - 16 - ((4 - lightSwordUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((4 - lightSwordUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount - ((4 - lightSwordUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbLASGoldMaskCountState(wbLASGoldMaskCount - 10 - ((4 - lightSwordUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((4 - lightSwordUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubLASInsanityCountState(mubLASInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbLASInsanityCountState(wbLASInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubLASSandCountState(mubLASSandCount - (4 - lightSwordUnbindState));
+                setwbLASSandCountState(wbLASSandCount - (4 - lightSwordUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightSwordUnbindState));
+                setmubLASOriCountState(mubLASOriCount - (-1 * (4 - event.target.value)));
+                setwbLASOriCountState(wbLASOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - (-1 * (4 - event.target.value)));
+                setmubLASRupeeCost(mubLASRupeeCost - ((4 - lightSwordUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbLASRupeeCost(wbLASRupeeCost - 7.5 - ((4 - lightSwordUnbindState) * 2))
+                setLightSwordUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && lightSwordUnbindState <= 3 && lightSwordUnbindState >= 0) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount - ((event.target.value - lightSwordUnbindState) * 40));
+                setwbLASSilverMaskCountState(wbLASSilverMaskCount - ((event.target.value - lightSwordUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightSwordUnbindState) * 40));
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount - ((event.target.value - lightSwordUnbindState) * 30));
+                setwbLASGoldMaskCountState(wbLASGoldMaskCount - ((event.target.value - lightSwordUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightSwordUnbindState) * 30));
+                setmubLASSandCountState(mubLASSandCount - (event.target.value - lightSwordUnbindState));
+                setwbLASSandCountState(wbLASSandCount - (event.target.value - lightSwordUnbindState));
+                setallmubLASandCount(allmubLASandCount - (event.target.value - lightSwordUnbindState));
+                setmubLASRupeeCost(mubLASRupeeCost - ((event.target.value - lightSwordUnbindState) * 2));
+                setwbLASRupeeCost(wbLASRupeeCost - ((event.target.value - lightSwordUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightSwordUnbindState) * 2));
+                setLightSwordUnbindState(event.target.value)
             }
         }
         else if (lightSwordUnbindState > event.target.value) {
-            if (lightSwordUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && lightSwordUnbindState == 9) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount + 304);
+                setwbLASSilverMaskCountState(wbLASSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 304);
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount + 230);
+                setwbLASGoldMaskCountState(wbLASGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 230);
+                setmubLASInsanityCountState(mubLASInsanityCount + 58);
+                setwbLASInsanityCountState(wbLASInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 58);
+                setmubLASGaleCountState(mubLASGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLASSandCountState(mubLASSandCount + 4);
+                setwbLASSandCountState(wbLASSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLASOriCountState(mubLASOriCount + 24);
+                setwbLASOriCountState(wbLASOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + 24);
+                setmubLASRupeeCost(mubLASRupeeCost + 40);
+                setwbLASRupeeCost(wbLASRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 40);
                 setLightSwordUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubLASSilverMaskCountState(mubLASSilverMaskCount + 40)
-                    setwbLASSilverMaskCountState(wbLASSilverMaskCount + 40)
-                    setmubLASGoldMaskCountState(mubLASGoldMaskCount + 30)
-                    setwbLASGoldMaskCountState(wbLASGoldMaskCount + 30)
-                    setmubLASSandCountState(mubLASSandCount + 1)
-                    setwbLASSandCountState(wbLASSandCount + 1)
-                    setmubLASRupeeCost(mubLASRupeeCost + 2)
-                    setwbLASRupeeCost(wbLASRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLASandCount(allmubLASandCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubLASSilverMaskCountState(mubLASSilverMaskCount + 16)
-                    setwbLASSilverMaskCountState(wbLASSilverMaskCount + 16)
-                    setmubLASGoldMaskCountState(mubLASGoldMaskCount + 10)
-                    setwbLASGoldMaskCountState(wbLASGoldMaskCount + 10)
-                    setmubLASInsanityCountState(mubLASInsanityCount + 7)
-                    setwbLASInsanityCountState(wbLASInsanityCount + 7)
-                    setmubLASOriCountState(mubLASOriCount + 1)
-                    setwbLASOriCountState(wbLASOriCount + 1)
-                    setmubLASRupeeCost(mubLASRupeeCost + 7.5)
-                    setwbLASRupeeCost(wbLASRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubLASSilverMaskCountState(mubLASSilverMaskCount + 16)
-                    setmubLASGoldMaskCountState(mubLASGoldMaskCount + 10)
-                    setmubLASInsanityCountState(mubLASInsanityCount + 7)
-                    setmubLASOriCountState(mubLASOriCount + 1)
-                    setmubLASRupeeCost(mubLASRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubLASSilverMaskCountState(mubLASSilverMaskCount + 80)
-                    setmubLASGoldMaskCountState(mubLASGoldMaskCount + 70)
-                    setmubLASInsanityCountState(mubLASInsanityCount + 30)
-                    setmubLASGaleCountState(mubLASGaleCount + 20)
-                    setmubLASOriCountState(mubLASOriCount + 20)
-                    setmubLASRupeeCost(mubLASRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 30)
-                    setallmubLAGaleCount(allmubLAGaleCount + 20)
-                    setallmubLAOriCount(allmubLAOriCount + 20)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && lightSwordUnbindState >= 5 && lightSwordUnbindState <= 8) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount + 160 + ((-1 * (4 - lightSwordUnbindState)) * 16));
+                setwbLASSilverMaskCountState(wbLASSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 160 + ((-1 * (4 - lightSwordUnbindState)) * 16));
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount + 120 + ((-1 * (4 - lightSwordUnbindState)) * 10));
+                setwbLASGoldMaskCountState(wbLASGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 120 + ((-1 * (4 - lightSwordUnbindState)) * 10));
+                setmubLASInsanityCountState(mubLASInsanityCount + ((-1 * (4 - lightSwordUnbindState)) * 7));
+                setwbLASInsanityCountState(wbLASInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((-1 * (4 - lightSwordUnbindState)) * 7));
+                setmubLASSandCountState(mubLASSandCount + 4);
+                setwbLASSandCountState(wbLASSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLASOriCountState(mubLASOriCount + (-1 * (4 - lightSwordUnbindState)));
+                setwbLASOriCountState(wbLASOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + (-1 * (4 - lightSwordUnbindState)));
+                setmubLASRupeeCost(mubLASRupeeCost + 8 + (-1 * (4 - lightSwordUnbindState) * 7.5));
+                setwbLASRupeeCost(wbLASRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 8 + (-1 * (4 - lightSwordUnbindState) * 7.5));
+                setLightSwordUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && lightSwordUnbindState >= 1 && lightSwordUnbindState <= 4) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount + (lightSwordUnbindState * 40));
+                setwbLASSilverMaskCountState(wbLASSilverMaskCount + (lightSwordUnbindState * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + (lightSwordUnbindState * 40));
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount + (lightSwordUnbindState * 30));
+                setwbLASGoldMaskCountState(wbLASGoldMaskCount + (lightSwordUnbindState * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + (lightSwordUnbindState * 30));
+                setmubLASSandCountState(mubLASSandCount + (lightSwordUnbindState * 1));
+                setwbLASSandCountState(wbLASSandCount + (lightSwordUnbindState * 1));
+                setallmubLASandCount(allmubLASandCount + (lightSwordUnbindState * 1));
+                setmubLASRupeeCost(mubLASRupeeCost + (lightSwordUnbindState * 2));
+                setwbLASRupeeCost(wbLASRupeeCost + (lightSwordUnbindState * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + (lightSwordUnbindState * 2));
+                setLightSwordUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightSwordUnbindState >= 1 && lightSwordUnbindState <= 4) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount + ((lightSwordUnbindState - event.target.value) * 40))
+                setwbLASSilverMaskCountState(wbLASSilverMaskCount + ((lightSwordUnbindState - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightSwordUnbindState - event.target.value) * 40));
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount + ((lightSwordUnbindState - event.target.value) * 30));
+                setwbLASGoldMaskCountState(wbLASGoldMaskCount + ((lightSwordUnbindState - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightSwordUnbindState - event.target.value) * 30));
+                setmubLASSandCountState(mubLASSandCount + (lightSwordUnbindState - event.target.value));
+                setwbLASSandCountState(wbLASSandCount + (lightSwordUnbindState - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (lightSwordUnbindState - event.target.value));
+                setmubLASRupeeCost(mubLASRupeeCost + ((lightSwordUnbindState - event.target.value) * 2));
+                setwbLASRupeeCost(wbLASRupeeCost + ((lightSwordUnbindState - event.target.value) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightSwordUnbindState - event.target.value) * 2))
+                setLightSwordUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightSwordUnbindState >= 5 && lightSwordUnbindState <= 8) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount + ((lightSwordUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbLASSilverMaskCountState(wbLASSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightSwordUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount + ((lightSwordUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbLASGoldMaskCountState(wbLASGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightSwordUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubLASInsanityCountState(mubLASInsanityCount + ((lightSwordUnbindState - 4) * 7));
+                setwbLASInsanityCountState(wbLASInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightSwordUnbindState - 4) * 7));
+                setmubLASSandCountState(mubLASSandCount + (4 - event.target.value));
+                setwbLASSandCountState(wbLASSandCount + (4 - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (4 - event.target.value));
+                setmubLASOriCountState(mubLASOriCount + (lightSwordUnbindState - 4));
+                setwbLASOriCountState(wbLASOriCount + (lightSwordUnbindState - 4));
+                setallmubLAOriCount(allmubLAOriCount + (lightSwordUnbindState - 4));
+                setmubLASRupeeCost(mubLASRupeeCost + ((lightSwordUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbLASRupeeCost(wbLASRupeeCost + 7.5 + ((lightSwordUnbindState - 4) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightSwordUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setLightSwordUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightSwordUnbindState == 9) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubLASInsanityCountState(mubLASInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubLASGaleCountState(mubLASGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLASOriCountState(mubLASOriCount + 20 + (8 - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + 20 + (8 - event.target.value));
+                setmubLASRupeeCost(mubLASRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setLightSwordUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightSwordUnbindState >= 5 && lightSwordUnbindState <= 8) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount + ((lightSwordUnbindState - event.target.value) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightSwordUnbindState - event.target.value) * 16));
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount + ((lightSwordUnbindState - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightSwordUnbindState - event.target.value) * 10));
+                setmubLASInsanityCountState(mubLASInsanityCount + ((lightSwordUnbindState - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightSwordUnbindState - event.target.value) * 7));
+                setmubLASOriCountState(mubLASOriCount + (lightSwordUnbindState - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + (lightSwordUnbindState - event.target.value));
+                setmubLASRupeeCost(mubLASRupeeCost + ((lightSwordUnbindState - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightSwordUnbindState - event.target.value) * 7.5));
+                setLightSwordUnbindState(event.target.value)
             }
         }
     }
@@ -524,75 +636,116 @@ export default function LightAgitoWeapons() {
     function handleLightSwordRefineIncrement(event) {
         setLightWeaponChoiceState("sword");
         if (lightSwordRefineState < event.target.value) {
-            if (event.target.value - lightSwordRefineState == 1) {
+            if (lightSwordRefineState == 0 && event.target.value == 1) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount - 16);
+                setwbLASSilverMaskCountState(wbLASSilverMaskCount - 16);
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount - 10);
+                setwbLASGoldMaskCountState(wbLASGoldMaskCount - 10);
+                setmubLASInsanityCountState(mubLASInsanityCount - 7);
+                setwbLASInsanityCountState(wbLASInsanityCount - 7);
+                setmubLASOriCountState(mubLASOriCount - 1);
+                setwbLASOriCountState(wbLASOriCount - 1);
+                setmubLASRupeeCost(mubLASRupeeCost - 2.5);
+                setwbLASRupeeCost(wbLASRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 7)
+                setallmubLAOriCount(allmubLAOriCount - 1)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
                 setLightSwordRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubLASSilverMaskCountState(mubLASSilverMaskCount - 16);
-                    setwbLASSilverMaskCountState(wbLASSilverMaskCount - 16);
-                    setmubLASGoldMaskCountState(mubLASGoldMaskCount - 10);
-                    setwbLASGoldMaskCountState(wbLASGoldMaskCount - 10);
-                    setmubLASInsanityCountState(mubLASInsanityCount - 7);
-                    setwbLASInsanityCountState(wbLASInsanityCount - 7);
-                    setmubLASOriCountState(mubLASOriCount - 1);
-                    setwbLASOriCountState(wbLASOriCount - 1);
-                    setmubLASRupeeCost(mubLASRupeeCost - 2.5);
-                    setwbLASRupeeCost(wbLASRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubLASSilverMaskCountState(mubLASSilverMaskCount - 40)
-                    setmubLASGoldMaskCountState(mubLASGoldMaskCount - 30);
-                    setmubLASInsanityCountState(mubLASInsanityCount - 10);
-                    setmubLASGaleCountState(mubLASGaleCount - 10);
-                    setmubLASOriCountState(mubLASOriCount - 10);
-                    setmubLASRupeeCost(mubLASRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 10)
-                    setallmubLAGaleCount(allmubLAGaleCount - 10)
-                    setallmubLAOriCount(allmubLAOriCount - 10)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
+            }
+            else if (lightSwordRefineState == 0 && event.target.value == 2) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount - 56);
+                setwbLASSilverMaskCountState(wbLASSilverMaskCount - 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 56);
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount - 40);
+                setwbLASGoldMaskCountState(wbLASGoldMaskCount - 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 40);
+                setmubLASInsanityCountState(mubLASInsanityCount - 17);
+                setwbLASInsanityCountState(wbLASInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 17);
+                setmubLASGaleCountState(mubLASGaleCount - 10);
+                setallmubLAGaleCount(allmubLAGaleCount - 10);
+                setmubLASOriCountState(mubLASOriCount - 11);
+                setwbLASOriCountState(wbLASOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 11);
+                setmubLASRupeeCost(mubLASRupeeCost - 5);
+                setwbLASRupeeCost(wbLASRupeeCost - 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 5);
+                setLightSwordRefineState(event.target.value);
+            }
+            else if (lightSwordRefineState == 1 && event.target.value == 2) {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount - 40)
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount - 30);
+                setmubLASInsanityCountState(mubLASInsanityCount - 10);
+                setmubLASGaleCountState(mubLASGaleCount - 10);
+                setmubLASOriCountState(mubLASOriCount - 10);
+                setmubLASRupeeCost(mubLASRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 10)
+                setallmubLAGaleCount(allmubLAGaleCount - 10)
+                setallmubLAOriCount(allmubLAOriCount - 10)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
+                setLightSwordRefineState(event.target.value);
             }
         }
         else if (lightSwordRefineState > event.target.value) {
-            if (lightSwordRefineState - event.target.value == 1) {
-                setLightSwordRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubLASSilverMaskCountState(mubLASSilverMaskCount + 16);
-                    setwbLASSilverMaskCountState(wbLASSilverMaskCount + 16);
-                    setmubLASGoldMaskCountState(mubLASGoldMaskCount + 10);
-                    setwbLASGoldMaskCountState(wbLASGoldMaskCount + 10);
-                    setmubLASInsanityCountState(mubLASInsanityCount + 7);
-                    setwbLASInsanityCountState(wbLASInsanityCount + 7);
-                    setmubLASOriCountState(mubLASOriCount + 1);
-                    setwbLASOriCountState(wbLASOriCount + 1);
-                    setmubLASRupeeCost(mubLASRupeeCost + 2.5);
-                    setwbLASRupeeCost(wbLASRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubLASSilverMaskCountState(mubLASSilverMaskCount + 40)
-                    setmubLASGoldMaskCountState(mubLASGoldMaskCount + 30);
-                    setmubLASInsanityCountState(mubLASInsanityCount + 10);
-                    setmubLASGaleCountState(mubLASGaleCount + 10);
-                    setmubLASOriCountState(mubLASOriCount + 10);
-                    setmubLASRupeeCost(mubLASRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 10)
-                    setallmubLAGaleCount(allmubLAGaleCount + 10)
-                    setallmubLAOriCount(allmubLAOriCount + 10)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
+            if (lightSwordRefineState == 2 && event.target.value == 1) 
+            {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount + 40)
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount + 30);
+                setmubLASInsanityCountState(mubLASInsanityCount + 10);
+                setmubLASGaleCountState(mubLASGaleCount + 10);
+                setmubLASOriCountState(mubLASOriCount + 10);
+                setmubLASRupeeCost(mubLASRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 10)
+                setallmubLAGaleCount(allmubLAGaleCount + 10)
+                setallmubLAOriCount(allmubLAOriCount + 10)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightSwordRefineState(event.target.value);
+            }
+            else if (lightSwordRefineState == 2 && event.target.value == 0) 
+            {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount + 56);
+                setwbLASSilverMaskCountState(wbLASSilverMaskCount + 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 56);
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount + 40);
+                setwbLASGoldMaskCountState(wbLASGoldMaskCount + 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 40);
+                setmubLASInsanityCountState(mubLASInsanityCount + 17);
+                setwbLASInsanityCountState(wbLASInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 17);
+                setmubLASGaleCountState(mubLASGaleCount + 10);
+                setallmubLAGaleCount(allmubLAGaleCount + 10);
+                setmubLASOriCountState(mubLASOriCount + 11);
+                setwbLASOriCountState(wbLASOriCount + 1); 
+                setallmubLAOriCount(allmubLAOriCount + 11);
+                setmubLASRupeeCost(mubLASRupeeCost + 5);
+                setwbLASRupeeCost(wbLASRupeeCost + 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 5)
+                setLightSwordRefineState(event.target.value);
+            }
+            else if (lightSwordRefineState == 1 && event.target.value == 0) 
+            {
+                setmubLASSilverMaskCountState(mubLASSilverMaskCount + 16);
+                setwbLASSilverMaskCountState(wbLASSilverMaskCount + 16);
+                setmubLASGoldMaskCountState(mubLASGoldMaskCount + 10);
+                setwbLASGoldMaskCountState(wbLASGoldMaskCount + 10);
+                setmubLASInsanityCountState(mubLASInsanityCount + 7);
+                setwbLASInsanityCountState(wbLASInsanityCount + 7);
+                setmubLASOriCountState(mubLASOriCount + 1);
+                setwbLASOriCountState(wbLASOriCount + 1);
+                setmubLASRupeeCost(mubLASRupeeCost + 2.5);
+                setwbLASRupeeCost(wbLASRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 7)
+                setallmubLAOriCount(allmubLAOriCount + 1)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightSwordRefineState(event.target.value);
             }
         }
     }
@@ -701,129 +854,241 @@ export default function LightAgitoWeapons() {
     }
 
     function handleLightBladeUnbindIncrement(event) {
-        setLightWeaponChoiceState("blade")
+        setLightWeaponChoiceState("blade");
         if (lightBladeUnbindState < event.target.value) {
-            if (event.target.value - lightBladeUnbindState == 1) {
+            if (event.target.value == 9 && lightBladeUnbindState == 0) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - 304);
+                setwbLABlSilverMaskCountState(wbLABlSilverMaskCount - 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 304);
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - 230);
+                setwbLABlGoldMaskCountState(wbLABlGoldMaskCount - 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 230);
+                setmubLABlInsanityCountState(mubLABlInsanityCount - 58);
+                setwbLABlInsanityCountState(wbLABlInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLABlGaleCountState(mubLABlGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLABlSandCountState(mubLABlSandCount - 4);
+                setwbLABlSandCountState(wbLABlSandCount - 4);
+                setallmubLASandCount(allmubLASandCount - 4);
+                setmubLABlOriCountState(mubLABlOriCount - 24);
+                setwbLABlOriCountState(wbLABlOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLABlRupeeCost(mubLABlRupeeCost - 40);
+                setwbLABlRupeeCost(wbLABlRupeeCost - 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 40);
                 setLightBladeUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - 40)
-                    setwbLABlSilverMaskCountState(wbLABlSilverMaskCount - 40)
-                    setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - 30)
-                    setwbLABlGoldMaskCountState(wbLABlGoldMaskCount - 30)
-                    setmubLABlSandCountState(mubLABlSandCount - 1)
-                    setwbLABlSandCountState(wbLABlSandCount - 1)
-                    setmubLABlRupeeCost(mubLABlRupeeCost - 2)
-                    setwbLABlRupeeCost(wbLABlRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLASandCount(allmubLASandCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - 16)
-                    setwbLABlSilverMaskCountState(wbLABlSilverMaskCount - 16)
-                    setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - 10)
-                    setwbLABlGoldMaskCountState(wbLABlGoldMaskCount - 10)
-                    setmubLABlInsanityCountState(mubLABlInsanityCount - 7)
-                    setwbLABlInsanityCountState(wbLABlInsanityCount - 7)
-                    setmubLABlOriCountState(mubLABlOriCount - 1)
-                    setwbLABlOriCountState(wbLABlOriCount - 1)
-                    setmubLABlRupeeCost(mubLABlRupeeCost - 7.5)
-                    setwbLABlRupeeCost(wbLABlRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - 16)
-                    setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - 10)
-                    setmubLABlInsanityCountState(mubLABlInsanityCount - 7)
-                    setmubLABlOriCountState(mubLABlOriCount - 1)
-                    setmubLABlRupeeCost(mubLABlRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - 80)
-                    setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - 70)
-                    setmubLABlInsanityCountState(mubLABlInsanityCount - 30)
-                    setmubLABlGaleCountState(mubLABlGaleCount - 20)
-                    setmubLABlOriCountState(mubLABlOriCount - 20)
-                    setmubLABlRupeeCost(mubLABlRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 30)
-                    setallmubLAGaleCount(allmubLAGaleCount - 20)
-                    setallmubLAOriCount(allmubLAOriCount - 20)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && lightBladeUnbindState >= 1 && lightBladeUnbindState <= 4) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - 144 - ((4 - lightBladeUnbindState) * 40));
+                setwbLABlSilverMaskCountState(wbLABlSilverMaskCount - 16 - ((4 - lightBladeUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 144 - ((4 - lightBladeUnbindState) * 40));
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - 110 - ((4 - lightBladeUnbindState) * 30));
+                setwbLABlGoldMaskCountState(wbLABlGoldMaskCount - 10 - ((4 - lightBladeUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 110 - ((4 - lightBladeUnbindState) * 30));
+                setmubLABlInsanityCountState(mubLABlInsanityCount - 58);
+                setwbLABlInsanityCountState(wbLABlInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLABlGaleCountState(mubLABlGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLABlSandCountState(mubLABlSandCount - (4 - lightBladeUnbindState));
+                setwbLABlSandCountState(wbLABlSandCount - (4 - lightBladeUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightBladeUnbindState));
+                setmubLABlOriCountState(mubLABlOriCount - 24);
+                setwbLABlOriCountState(wbLABlOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLABlRupeeCost(mubLABlRupeeCost - 32 - ((4 - lightBladeUnbindState) * 2));
+                setwbLABlRupeeCost(wbLABlRupeeCost - 7.5 - ((4 - lightBladeUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - 32 - ((4 - lightBladeUnbindState) * 2));
+                setLightBladeUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && lightBladeUnbindState >= 5 && lightBladeUnbindState <= 8) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - 80 - ((8 - lightBladeUnbindState) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 80 - ((8 - lightBladeUnbindState) * 16));
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - 70 - ((8 - lightBladeUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70 - ((8 - lightBladeUnbindState) * 10));
+                setmubLABlInsanityCountState(mubLABlInsanityCount - 30 - ((8 - lightBladeUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - 30 - ((8 - lightBladeUnbindState) * 7));
+                setmubLABlGaleCountState(mubLABlGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLABlOriCountState(mubLABlOriCount - 20 - ((8 - lightBladeUnbindState) * 1));
+                setallmubLAOriCount(allmubLAOriCount - 20 - ((8 - lightBladeUnbindState) * 1));
+                setmubLABlRupeeCost(mubLABlRupeeCost - 2 - ((8 - lightBladeUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - 2 - ((8 - lightBladeUnbindState) * 7.5));
+                setLightBladeUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightBladeUnbindState <= 7 && lightBladeUnbindState >= 5) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - ((event.target.value - lightBladeUnbindState) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightBladeUnbindState) * 16));
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - ((event.target.value - lightBladeUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightBladeUnbindState) * 10));
+                setmubLABlInsanityCountState(mubLABlInsanityCount - ((event.target.value - lightBladeUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - ((event.target.value - lightBladeUnbindState) * 7));
+                setmubLABlOriCountState(mubLABlOriCount - (event.target.value - lightBladeUnbindState));
+                setallmubLAOriCount(allmubLAOriCount - (event.target.value - lightBladeUnbindState));
+                setmubLABlRupeeCost(mubLABlRupeeCost - ((event.target.value - lightBladeUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightBladeUnbindState) * 7.5));
+                setLightBladeUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightBladeUnbindState <= 4 && lightBladeUnbindState >= 0) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - ((4 - lightBladeUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbLABlSilverMaskCountState(wbLABlSilverMaskCount - 16 - ((4 - lightBladeUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((4 - lightBladeUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - ((4 - lightBladeUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbLABlGoldMaskCountState(wbLABlGoldMaskCount - 10 - ((4 - lightBladeUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((4 - lightBladeUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubLABlInsanityCountState(mubLABlInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbLABlInsanityCountState(wbLABlInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubLABlSandCountState(mubLABlSandCount - (4 - lightBladeUnbindState));
+                setwbLABlSandCountState(wbLABlSandCount - (4 - lightBladeUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightBladeUnbindState));
+                setmubLABlOriCountState(mubLABlOriCount - (-1 * (4 - event.target.value)));
+                setwbLABlOriCountState(wbLABlOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - (-1 * (4 - event.target.value)));
+                setmubLABlRupeeCost(mubLABlRupeeCost - ((4 - lightBladeUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbLABlRupeeCost(wbLABlRupeeCost - 7.5 - ((4 - lightBladeUnbindState) * 2))
+                setLightBladeUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && lightBladeUnbindState <= 3 && lightBladeUnbindState >= 0) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - ((event.target.value - lightBladeUnbindState) * 40));
+                setwbLABlSilverMaskCountState(wbLABlSilverMaskCount - ((event.target.value - lightBladeUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightBladeUnbindState) * 40));
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - ((event.target.value - lightBladeUnbindState) * 30));
+                setwbLABlGoldMaskCountState(wbLABlGoldMaskCount - ((event.target.value - lightBladeUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightBladeUnbindState) * 30));
+                setmubLABlSandCountState(mubLABlSandCount - (event.target.value - lightBladeUnbindState));
+                setwbLABlSandCountState(wbLABlSandCount - (event.target.value - lightBladeUnbindState));
+                setallmubLASandCount(allmubLASandCount - (event.target.value - lightBladeUnbindState));
+                setmubLABlRupeeCost(mubLABlRupeeCost - ((event.target.value - lightBladeUnbindState) * 2));
+                setwbLABlRupeeCost(wbLABlRupeeCost - ((event.target.value - lightBladeUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightBladeUnbindState) * 2));
+                setLightBladeUnbindState(event.target.value)
             }
         }
         else if (lightBladeUnbindState > event.target.value) {
-            if (lightBladeUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && lightBladeUnbindState == 9) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + 304);
+                setwbLABlSilverMaskCountState(wbLABlSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 304);
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + 230);
+                setwbLABlGoldMaskCountState(wbLABlGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 230);
+                setmubLABlInsanityCountState(mubLABlInsanityCount + 58);
+                setwbLABlInsanityCountState(wbLABlInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 58);
+                setmubLABlGaleCountState(mubLABlGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLABlSandCountState(mubLABlSandCount + 4);
+                setwbLABlSandCountState(wbLABlSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLABlOriCountState(mubLABlOriCount + 24);
+                setwbLABlOriCountState(wbLABlOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + 24);
+                setmubLABlRupeeCost(mubLABlRupeeCost + 40);
+                setwbLABlRupeeCost(wbLABlRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 40);
                 setLightBladeUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + 40)
-                    setwbLABlSilverMaskCountState(wbLABlSilverMaskCount + 40)
-                    setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + 30)
-                    setwbLABlGoldMaskCountState(wbLABlGoldMaskCount + 30)
-                    setmubLABlSandCountState(mubLABlSandCount + 1)
-                    setwbLABlSandCountState(wbLABlSandCount + 1)
-                    setmubLABlRupeeCost(mubLABlRupeeCost + 2)
-                    setwbLABlRupeeCost(wbLABlRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLASandCount(allmubLASandCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + 16)
-                    setwbLABlSilverMaskCountState(wbLABlSilverMaskCount + 16)
-                    setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + 10)
-                    setwbLABlGoldMaskCountState(wbLABlGoldMaskCount + 10)
-                    setmubLABlInsanityCountState(mubLABlInsanityCount + 7)
-                    setwbLABlInsanityCountState(wbLABlInsanityCount + 7)
-                    setmubLABlOriCountState(mubLABlOriCount + 1)
-                    setwbLABlOriCountState(wbLABlOriCount + 1)
-                    setmubLABlRupeeCost(mubLABlRupeeCost + 7.5)
-                    setwbLABlRupeeCost(wbLABlRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + 16)
-                    setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + 10)
-                    setmubLABlInsanityCountState(mubLABlInsanityCount + 7)
-                    setmubLABlOriCountState(mubLABlOriCount + 1)
-                    setmubLABlRupeeCost(mubLABlRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + 80)
-                    setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + 70)
-                    setmubLABlInsanityCountState(mubLABlInsanityCount + 30)
-                    setmubLABlGaleCountState(mubLABlGaleCount + 20)
-                    setmubLABlOriCountState(mubLABlOriCount + 20)
-                    setmubLABlRupeeCost(mubLABlRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 30)
-                    setallmubLAGaleCount(allmubLAGaleCount + 20)
-                    setallmubLAOriCount(allmubLAOriCount + 20)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && lightBladeUnbindState >= 5 && lightBladeUnbindState <= 8) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + 160 + ((-1 * (4 - lightBladeUnbindState)) * 16));
+                setwbLABlSilverMaskCountState(wbLABlSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 160 + ((-1 * (4 - lightBladeUnbindState)) * 16));
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + 120 + ((-1 * (4 - lightBladeUnbindState)) * 10));
+                setwbLABlGoldMaskCountState(wbLABlGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 120 + ((-1 * (4 - lightBladeUnbindState)) * 10));
+                setmubLABlInsanityCountState(mubLABlInsanityCount + ((-1 * (4 - lightBladeUnbindState)) * 7));
+                setwbLABlInsanityCountState(wbLABlInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((-1 * (4 - lightBladeUnbindState)) * 7));
+                setmubLABlSandCountState(mubLABlSandCount + 4);
+                setwbLABlSandCountState(wbLABlSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLABlOriCountState(mubLABlOriCount + (-1 * (4 - lightBladeUnbindState)));
+                setwbLABlOriCountState(wbLABlOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + (-1 * (4 - lightBladeUnbindState)));
+                setmubLABlRupeeCost(mubLABlRupeeCost + 8 + (-1 * (4 - lightBladeUnbindState) * 7.5));
+                setwbLABlRupeeCost(wbLABlRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 8 + (-1 * (4 - lightBladeUnbindState) * 7.5));
+                setLightBladeUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && lightBladeUnbindState >= 1 && lightBladeUnbindState <= 4) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + (lightBladeUnbindState * 40));
+                setwbLABlSilverMaskCountState(wbLABlSilverMaskCount + (lightBladeUnbindState * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + (lightBladeUnbindState * 40));
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + (lightBladeUnbindState * 30));
+                setwbLABlGoldMaskCountState(wbLABlGoldMaskCount + (lightBladeUnbindState * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + (lightBladeUnbindState * 30));
+                setmubLABlSandCountState(mubLABlSandCount + (lightBladeUnbindState * 1));
+                setwbLABlSandCountState(wbLABlSandCount + (lightBladeUnbindState * 1));
+                setallmubLASandCount(allmubLASandCount + (lightBladeUnbindState * 1));
+                setmubLABlRupeeCost(mubLABlRupeeCost + (lightBladeUnbindState * 2));
+                setwbLABlRupeeCost(wbLABlRupeeCost + (lightBladeUnbindState * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + (lightBladeUnbindState * 2));
+                setLightBladeUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightBladeUnbindState >= 1 && lightBladeUnbindState <= 4) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + ((lightBladeUnbindState - event.target.value) * 40))
+                setwbLABlSilverMaskCountState(wbLABlSilverMaskCount + ((lightBladeUnbindState - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightBladeUnbindState - event.target.value) * 40));
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + ((lightBladeUnbindState - event.target.value) * 30));
+                setwbLABlGoldMaskCountState(wbLABlGoldMaskCount + ((lightBladeUnbindState - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightBladeUnbindState - event.target.value) * 30));
+                setmubLABlSandCountState(mubLABlSandCount + (lightBladeUnbindState - event.target.value));
+                setwbLABlSandCountState(wbLABlSandCount + (lightBladeUnbindState - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (lightBladeUnbindState - event.target.value));
+                setmubLABlRupeeCost(mubLABlRupeeCost + ((lightBladeUnbindState - event.target.value) * 2));
+                setwbLABlRupeeCost(wbLABlRupeeCost + ((lightBladeUnbindState - event.target.value) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightBladeUnbindState - event.target.value) * 2))
+                setLightBladeUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightBladeUnbindState >= 5 && lightBladeUnbindState <= 8) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + ((lightBladeUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbLABlSilverMaskCountState(wbLABlSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightBladeUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + ((lightBladeUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbLABlGoldMaskCountState(wbLABlGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightBladeUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubLABlInsanityCountState(mubLABlInsanityCount + ((lightBladeUnbindState - 4) * 7));
+                setwbLABlInsanityCountState(wbLABlInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightBladeUnbindState - 4) * 7));
+                setmubLABlSandCountState(mubLABlSandCount + (4 - event.target.value));
+                setwbLABlSandCountState(wbLABlSandCount + (4 - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (4 - event.target.value));
+                setmubLABlOriCountState(mubLABlOriCount + (lightBladeUnbindState - 4));
+                setwbLABlOriCountState(wbLABlOriCount + (lightBladeUnbindState - 4));
+                setallmubLAOriCount(allmubLAOriCount + (lightBladeUnbindState - 4));
+                setmubLABlRupeeCost(mubLABlRupeeCost + ((lightBladeUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbLABlRupeeCost(wbLABlRupeeCost + 7.5 + ((lightBladeUnbindState - 4) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightBladeUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setLightBladeUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightBladeUnbindState == 9) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubLABlInsanityCountState(mubLABlInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubLABlGaleCountState(mubLABlGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLABlOriCountState(mubLABlOriCount + 20 + (8 - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + 20 + (8 - event.target.value));
+                setmubLABlRupeeCost(mubLABlRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setLightBladeUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightBladeUnbindState >= 5 && lightBladeUnbindState <= 8) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + ((lightBladeUnbindState - event.target.value) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightBladeUnbindState - event.target.value) * 16));
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + ((lightBladeUnbindState - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightBladeUnbindState - event.target.value) * 10));
+                setmubLABlInsanityCountState(mubLABlInsanityCount + ((lightBladeUnbindState - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightBladeUnbindState - event.target.value) * 7));
+                setmubLABlOriCountState(mubLABlOriCount + (lightBladeUnbindState - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + (lightBladeUnbindState - event.target.value));
+                setmubLABlRupeeCost(mubLABlRupeeCost + ((lightBladeUnbindState - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightBladeUnbindState - event.target.value) * 7.5));
+                setLightBladeUnbindState(event.target.value)
             }
         }
     }
@@ -831,75 +1096,116 @@ export default function LightAgitoWeapons() {
     function handleLightBladeRefineIncrement(event) {
         setLightWeaponChoiceState("blade");
         if (lightBladeRefineState < event.target.value) {
-            if (event.target.value - lightBladeRefineState == 1) {
+            if (lightBladeRefineState == 0 && event.target.value == 1) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - 16);
+                setwbLABlSilverMaskCountState(wbLABlSilverMaskCount - 16);
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - 10);
+                setwbLABlGoldMaskCountState(wbLABlGoldMaskCount - 10);
+                setmubLABlInsanityCountState(mubLABlInsanityCount - 7);
+                setwbLABlInsanityCountState(wbLABlInsanityCount - 7);
+                setmubLABlOriCountState(mubLABlOriCount - 1);
+                setwbLABlOriCountState(wbLABlOriCount - 1);
+                setmubLABlRupeeCost(mubLABlRupeeCost - 2.5);
+                setwbLABlRupeeCost(wbLABlRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 7)
+                setallmubLAOriCount(allmubLAOriCount - 1)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
                 setLightBladeRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - 16);
-                    setwbLABlSilverMaskCountState(wbLABlSilverMaskCount - 16);
-                    setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - 10);
-                    setwbLABlGoldMaskCountState(wbLABlGoldMaskCount - 10);
-                    setmubLABlInsanityCountState(mubLABlInsanityCount - 7);
-                    setwbLABlInsanityCountState(wbLABlInsanityCount - 7);
-                    setmubLABlOriCountState(mubLABlOriCount - 1);
-                    setwbLABlOriCountState(wbLABlOriCount - 1);
-                    setmubLABlRupeeCost(mubLABlRupeeCost - 2.5);
-                    setwbLABlRupeeCost(wbLABlRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - 40)
-                    setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - 30);
-                    setmubLABlInsanityCountState(mubLABlInsanityCount - 10);
-                    setmubLABlGaleCountState(mubLABlGaleCount - 10);
-                    setmubLABlOriCountState(mubLABlOriCount - 10);
-                    setmubLABlRupeeCost(mubLABlRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 10)
-                    setallmubLAGaleCount(allmubLAGaleCount - 10)
-                    setallmubLAOriCount(allmubLAOriCount - 10)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
+            }
+            else if (lightBladeRefineState == 0 && event.target.value == 2) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - 56);
+                setwbLABlSilverMaskCountState(wbLABlSilverMaskCount - 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 56);
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - 40);
+                setwbLABlGoldMaskCountState(wbLABlGoldMaskCount - 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 40);
+                setmubLABlInsanityCountState(mubLABlInsanityCount - 17);
+                setwbLABlInsanityCountState(wbLABlInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 17);
+                setmubLABlGaleCountState(mubLABlGaleCount - 10);
+                setallmubLAGaleCount(allmubLAGaleCount - 10);
+                setmubLABlOriCountState(mubLABlOriCount - 11);
+                setwbLABlOriCountState(wbLABlOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 11);
+                setmubLABlRupeeCost(mubLABlRupeeCost - 5);
+                setwbLABlRupeeCost(wbLABlRupeeCost - 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 5);
+                setLightBladeRefineState(event.target.value);
+            }
+            else if (lightBladeRefineState == 1 && event.target.value == 2) {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount - 40)
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount - 30);
+                setmubLABlInsanityCountState(mubLABlInsanityCount - 10);
+                setmubLABlGaleCountState(mubLABlGaleCount - 10);
+                setmubLABlOriCountState(mubLABlOriCount - 10);
+                setmubLABlRupeeCost(mubLABlRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 10)
+                setallmubLAGaleCount(allmubLAGaleCount - 10)
+                setallmubLAOriCount(allmubLAOriCount - 10)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
+                setLightBladeRefineState(event.target.value);
             }
         }
         else if (lightBladeRefineState > event.target.value) {
-            if (lightBladeRefineState - event.target.value == 1) {
-                setLightBladeRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + 16);
-                    setwbLABlSilverMaskCountState(wbLABlSilverMaskCount + 16);
-                    setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + 10);
-                    setwbLABlGoldMaskCountState(wbLABlGoldMaskCount + 10);
-                    setmubLABlInsanityCountState(mubLABlInsanityCount + 7);
-                    setwbLABlInsanityCountState(wbLABlInsanityCount + 7);
-                    setmubLABlOriCountState(mubLABlOriCount + 1);
-                    setwbLABlOriCountState(wbLABlOriCount + 1);
-                    setmubLABlRupeeCost(mubLABlRupeeCost + 2.5);
-                    setwbLABlRupeeCost(wbLABlRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + 40)
-                    setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + 30);
-                    setmubLABlInsanityCountState(mubLABlInsanityCount + 10);
-                    setmubLABlGaleCountState(mubLABlGaleCount + 10);
-                    setmubLABlOriCountState(mubLABlOriCount + 10);
-                    setmubLABlRupeeCost(mubLABlRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 10)
-                    setallmubLAGaleCount(allmubLAGaleCount + 10)
-                    setallmubLAOriCount(allmubLAOriCount + 10)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
+            if (lightBladeRefineState == 2 && event.target.value == 1) 
+            {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + 40)
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + 30);
+                setmubLABlInsanityCountState(mubLABlInsanityCount + 10);
+                setmubLABlGaleCountState(mubLABlGaleCount + 10);
+                setmubLABlOriCountState(mubLABlOriCount + 10);
+                setmubLABlRupeeCost(mubLABlRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 10)
+                setallmubLAGaleCount(allmubLAGaleCount + 10)
+                setallmubLAOriCount(allmubLAOriCount + 10)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightBladeRefineState(event.target.value);
+            }
+            else if (lightBladeRefineState == 2 && event.target.value == 0) 
+            {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + 56);
+                setwbLABlSilverMaskCountState(wbLABlSilverMaskCount + 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 56);
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + 40);
+                setwbLABlGoldMaskCountState(wbLABlGoldMaskCount + 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 40);
+                setmubLABlInsanityCountState(mubLABlInsanityCount + 17);
+                setwbLABlInsanityCountState(wbLABlInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 17);
+                setmubLABlGaleCountState(mubLABlGaleCount + 10);
+                setallmubLAGaleCount(allmubLAGaleCount + 10);
+                setmubLABlOriCountState(mubLABlOriCount + 11);
+                setwbLABlOriCountState(wbLABlOriCount + 1); 
+                setallmubLAOriCount(allmubLAOriCount + 11);
+                setmubLABlRupeeCost(mubLABlRupeeCost + 5);
+                setwbLABlRupeeCost(wbLABlRupeeCost + 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 5)
+                setLightBladeRefineState(event.target.value);
+            }
+            else if (lightBladeRefineState == 1 && event.target.value == 0) 
+            {
+                setmubLABlSilverMaskCountState(mubLABlSilverMaskCount + 16);
+                setwbLABlSilverMaskCountState(wbLABlSilverMaskCount + 16);
+                setmubLABlGoldMaskCountState(mubLABlGoldMaskCount + 10);
+                setwbLABlGoldMaskCountState(wbLABlGoldMaskCount + 10);
+                setmubLABlInsanityCountState(mubLABlInsanityCount + 7);
+                setwbLABlInsanityCountState(wbLABlInsanityCount + 7);
+                setmubLABlOriCountState(mubLABlOriCount + 1);
+                setwbLABlOriCountState(wbLABlOriCount + 1);
+                setmubLABlRupeeCost(mubLABlRupeeCost + 2.5);
+                setwbLABlRupeeCost(wbLABlRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 7)
+                setallmubLAOriCount(allmubLAOriCount + 1)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightBladeRefineState(event.target.value);
             }
         }
     }
@@ -1008,129 +1314,241 @@ export default function LightAgitoWeapons() {
     }
 
     function handleLightDaggerUnbindIncrement(event) {
-        setLightWeaponChoiceState("dagger")
+        setLightWeaponChoiceState("dagger");
         if (lightDaggerUnbindState < event.target.value) {
-            if (event.target.value - lightDaggerUnbindState == 1) {
+            if (event.target.value == 9 && lightDaggerUnbindState == 0) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount - 304);
+                setwbLADSilverMaskCountState(wbLADSilverMaskCount - 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 304);
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount - 230);
+                setwbLADGoldMaskCountState(wbLADGoldMaskCount - 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 230);
+                setmubLADInsanityCountState(mubLADInsanityCount - 58);
+                setwbLADInsanityCountState(wbLADInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLADGaleCountState(mubLADGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLADSandCountState(mubLADSandCount - 4);
+                setwbLADSandCountState(wbLADSandCount - 4);
+                setallmubLASandCount(allmubLASandCount - 4);
+                setmubLADOriCountState(mubLADOriCount - 24);
+                setwbLADOriCountState(wbLADOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLADRupeeCost(mubLADRupeeCost - 40);
+                setwbLADRupeeCost(wbLADRupeeCost - 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 40);
                 setLightDaggerUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubLADSilverMaskCountState(mubLADSilverMaskCount - 40)
-                    setwbLADSilverMaskCountState(wbLADSilverMaskCount - 40)
-                    setmubLADGoldMaskCountState(mubLADGoldMaskCount - 30)
-                    setwbLADGoldMaskCountState(wbLADGoldMaskCount - 30)
-                    setmubLADSandCountState(mubLADSandCount - 1)
-                    setwbLADSandCountState(wbLADSandCount - 1)
-                    setmubLADRupeeCost(mubLADRupeeCost - 2)
-                    setwbLADRupeeCost(wbLADRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLASandCount(allmubLASandCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubLADSilverMaskCountState(mubLADSilverMaskCount - 16)
-                    setwbLADSilverMaskCountState(wbLADSilverMaskCount - 16)
-                    setmubLADGoldMaskCountState(mubLADGoldMaskCount - 10)
-                    setwbLADGoldMaskCountState(wbLADGoldMaskCount - 10)
-                    setmubLADInsanityCountState(mubLADInsanityCount - 7)
-                    setwbLADInsanityCountState(wbLADInsanityCount - 7)
-                    setmubLADOriCountState(mubLADOriCount - 1)
-                    setwbLADOriCountState(wbLADOriCount - 1)
-                    setmubLADRupeeCost(mubLADRupeeCost - 7.5)
-                    setwbLADRupeeCost(wbLADRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubLADSilverMaskCountState(mubLADSilverMaskCount - 16)
-                    setmubLADGoldMaskCountState(mubLADGoldMaskCount - 10)
-                    setmubLADInsanityCountState(mubLADInsanityCount - 7)
-                    setmubLADOriCountState(mubLADOriCount - 1)
-                    setmubLADRupeeCost(mubLADRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubLADSilverMaskCountState(mubLADSilverMaskCount - 80)
-                    setmubLADGoldMaskCountState(mubLADGoldMaskCount - 70)
-                    setmubLADInsanityCountState(mubLADInsanityCount - 30)
-                    setmubLADGaleCountState(mubLADGaleCount - 20)
-                    setmubLADOriCountState(mubLADOriCount - 20)
-                    setmubLADRupeeCost(mubLADRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 30)
-                    setallmubLAGaleCount(allmubLAGaleCount - 20)
-                    setallmubLAOriCount(allmubLAOriCount - 20)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && lightDaggerUnbindState >= 1 && lightDaggerUnbindState <= 4) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount - 144 - ((4 - lightDaggerUnbindState) * 40));
+                setwbLADSilverMaskCountState(wbLADSilverMaskCount - 16 - ((4 - lightDaggerUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 144 - ((4 - lightDaggerUnbindState) * 40));
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount - 110 - ((4 - lightDaggerUnbindState) * 30));
+                setwbLADGoldMaskCountState(wbLADGoldMaskCount - 10 - ((4 - lightDaggerUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 110 - ((4 - lightDaggerUnbindState) * 30));
+                setmubLADInsanityCountState(mubLADInsanityCount - 58);
+                setwbLADInsanityCountState(wbLADInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLADGaleCountState(mubLADGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLADSandCountState(mubLADSandCount - (4 - lightDaggerUnbindState));
+                setwbLADSandCountState(wbLADSandCount - (4 - lightDaggerUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightDaggerUnbindState));
+                setmubLADOriCountState(mubLADOriCount - 24);
+                setwbLADOriCountState(wbLADOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLADRupeeCost(mubLADRupeeCost - 32 - ((4 - lightDaggerUnbindState) * 2));
+                setwbLADRupeeCost(wbLADRupeeCost - 7.5 - ((4 - lightDaggerUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - 32 - ((4 - lightDaggerUnbindState) * 2));
+                setLightDaggerUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && lightDaggerUnbindState >= 5 && lightDaggerUnbindState <= 8) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount - 80 - ((8 - lightDaggerUnbindState) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 80 - ((8 - lightDaggerUnbindState) * 16));
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount - 70 - ((8 - lightDaggerUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70 - ((8 - lightDaggerUnbindState) * 10));
+                setmubLADInsanityCountState(mubLADInsanityCount - 30 - ((8 - lightDaggerUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - 30 - ((8 - lightDaggerUnbindState) * 7));
+                setmubLADGaleCountState(mubLADGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLADOriCountState(mubLADOriCount - 20 - ((8 - lightDaggerUnbindState) * 1));
+                setallmubLAOriCount(allmubLAOriCount - 20 - ((8 - lightDaggerUnbindState) * 1));
+                setmubLADRupeeCost(mubLADRupeeCost - 2 - ((8 - lightDaggerUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - 2 - ((8 - lightDaggerUnbindState) * 7.5));
+                setLightDaggerUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightDaggerUnbindState <= 7 && lightDaggerUnbindState >= 5) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount - ((event.target.value - lightDaggerUnbindState) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightDaggerUnbindState) * 16));
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount - ((event.target.value - lightDaggerUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightDaggerUnbindState) * 10));
+                setmubLADInsanityCountState(mubLADInsanityCount - ((event.target.value - lightDaggerUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - ((event.target.value - lightDaggerUnbindState) * 7));
+                setmubLADOriCountState(mubLADOriCount - (event.target.value - lightDaggerUnbindState));
+                setallmubLAOriCount(allmubLAOriCount - (event.target.value - lightDaggerUnbindState));
+                setmubLADRupeeCost(mubLADRupeeCost - ((event.target.value - lightDaggerUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightDaggerUnbindState) * 7.5));
+                setLightDaggerUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightDaggerUnbindState <= 4 && lightDaggerUnbindState >= 0) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount - ((4 - lightDaggerUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbLADSilverMaskCountState(wbLADSilverMaskCount - 16 - ((4 - lightDaggerUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((4 - lightDaggerUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount - ((4 - lightDaggerUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbLADGoldMaskCountState(wbLADGoldMaskCount - 10 - ((4 - lightDaggerUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((4 - lightDaggerUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubLADInsanityCountState(mubLADInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbLADInsanityCountState(wbLADInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubLADSandCountState(mubLADSandCount - (4 - lightDaggerUnbindState));
+                setwbLADSandCountState(wbLADSandCount - (4 - lightDaggerUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightDaggerUnbindState));
+                setmubLADOriCountState(mubLADOriCount - (-1 * (4 - event.target.value)));
+                setwbLADOriCountState(wbLADOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - (-1 * (4 - event.target.value)));
+                setmubLADRupeeCost(mubLADRupeeCost - ((4 - lightDaggerUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbLADRupeeCost(wbLADRupeeCost - 7.5 - ((4 - lightDaggerUnbindState) * 2))
+                setLightDaggerUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && lightDaggerUnbindState <= 3 && lightDaggerUnbindState >= 0) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount - ((event.target.value - lightDaggerUnbindState) * 40));
+                setwbLADSilverMaskCountState(wbLADSilverMaskCount - ((event.target.value - lightDaggerUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightDaggerUnbindState) * 40));
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount - ((event.target.value - lightDaggerUnbindState) * 30));
+                setwbLADGoldMaskCountState(wbLADGoldMaskCount - ((event.target.value - lightDaggerUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightDaggerUnbindState) * 30));
+                setmubLADSandCountState(mubLADSandCount - (event.target.value - lightDaggerUnbindState));
+                setwbLADSandCountState(wbLADSandCount - (event.target.value - lightDaggerUnbindState));
+                setallmubLASandCount(allmubLASandCount - (event.target.value - lightDaggerUnbindState));
+                setmubLADRupeeCost(mubLADRupeeCost - ((event.target.value - lightDaggerUnbindState) * 2));
+                setwbLADRupeeCost(wbLADRupeeCost - ((event.target.value - lightDaggerUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightDaggerUnbindState) * 2));
+                setLightDaggerUnbindState(event.target.value)
             }
         }
         else if (lightDaggerUnbindState > event.target.value) {
-            if (lightDaggerUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && lightDaggerUnbindState == 9) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount + 304);
+                setwbLADSilverMaskCountState(wbLADSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 304);
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount + 230);
+                setwbLADGoldMaskCountState(wbLADGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 230);
+                setmubLADInsanityCountState(mubLADInsanityCount + 58);
+                setwbLADInsanityCountState(wbLADInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 58);
+                setmubLADGaleCountState(mubLADGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLADSandCountState(mubLADSandCount + 4);
+                setwbLADSandCountState(wbLADSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLADOriCountState(mubLADOriCount + 24);
+                setwbLADOriCountState(wbLADOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + 24);
+                setmubLADRupeeCost(mubLADRupeeCost + 40);
+                setwbLADRupeeCost(wbLADRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 40);
                 setLightDaggerUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubLADSilverMaskCountState(mubLADSilverMaskCount + 40)
-                    setwbLADSilverMaskCountState(wbLADSilverMaskCount + 40)
-                    setmubLADGoldMaskCountState(mubLADGoldMaskCount + 30)
-                    setwbLADGoldMaskCountState(wbLADGoldMaskCount + 30)
-                    setmubLADSandCountState(mubLADSandCount + 1)
-                    setwbLADSandCountState(wbLADSandCount + 1)
-                    setmubLADRupeeCost(mubLADRupeeCost + 2)
-                    setwbLADRupeeCost(wbLADRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLASandCount(allmubLASandCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubLADSilverMaskCountState(mubLADSilverMaskCount + 16)
-                    setwbLADSilverMaskCountState(wbLADSilverMaskCount + 16)
-                    setmubLADGoldMaskCountState(mubLADGoldMaskCount + 10)
-                    setwbLADGoldMaskCountState(wbLADGoldMaskCount + 10)
-                    setmubLADInsanityCountState(mubLADInsanityCount + 7)
-                    setwbLADInsanityCountState(wbLADInsanityCount + 7)
-                    setmubLADOriCountState(mubLADOriCount + 1)
-                    setwbLADOriCountState(wbLADOriCount + 1)
-                    setmubLADRupeeCost(mubLADRupeeCost + 7.5)
-                    setwbLADRupeeCost(wbLADRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubLADSilverMaskCountState(mubLADSilverMaskCount + 16)
-                    setmubLADGoldMaskCountState(mubLADGoldMaskCount + 10)
-                    setmubLADInsanityCountState(mubLADInsanityCount + 7)
-                    setmubLADOriCountState(mubLADOriCount + 1)
-                    setmubLADRupeeCost(mubLADRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubLADSilverMaskCountState(mubLADSilverMaskCount + 80)
-                    setmubLADGoldMaskCountState(mubLADGoldMaskCount + 70)
-                    setmubLADInsanityCountState(mubLADInsanityCount + 30)
-                    setmubLADGaleCountState(mubLADGaleCount + 20)
-                    setmubLADOriCountState(mubLADOriCount + 20)
-                    setmubLADRupeeCost(mubLADRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 30)
-                    setallmubLAGaleCount(allmubLAGaleCount + 20)
-                    setallmubLAOriCount(allmubLAOriCount + 20)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && lightDaggerUnbindState >= 5 && lightDaggerUnbindState <= 8) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount + 160 + ((-1 * (4 - lightDaggerUnbindState)) * 16));
+                setwbLADSilverMaskCountState(wbLADSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 160 + ((-1 * (4 - lightDaggerUnbindState)) * 16));
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount + 120 + ((-1 * (4 - lightDaggerUnbindState)) * 10));
+                setwbLADGoldMaskCountState(wbLADGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 120 + ((-1 * (4 - lightDaggerUnbindState)) * 10));
+                setmubLADInsanityCountState(mubLADInsanityCount + ((-1 * (4 - lightDaggerUnbindState)) * 7));
+                setwbLADInsanityCountState(wbLADInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((-1 * (4 - lightDaggerUnbindState)) * 7));
+                setmubLADSandCountState(mubLADSandCount + 4);
+                setwbLADSandCountState(wbLADSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLADOriCountState(mubLADOriCount + (-1 * (4 - lightDaggerUnbindState)));
+                setwbLADOriCountState(wbLADOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + (-1 * (4 - lightDaggerUnbindState)));
+                setmubLADRupeeCost(mubLADRupeeCost + 8 + (-1 * (4 - lightDaggerUnbindState) * 7.5));
+                setwbLADRupeeCost(wbLADRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 8 + (-1 * (4 - lightDaggerUnbindState) * 7.5));
+                setLightDaggerUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && lightDaggerUnbindState >= 1 && lightDaggerUnbindState <= 4) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount + (lightDaggerUnbindState * 40));
+                setwbLADSilverMaskCountState(wbLADSilverMaskCount + (lightDaggerUnbindState * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + (lightDaggerUnbindState * 40));
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount + (lightDaggerUnbindState * 30));
+                setwbLADGoldMaskCountState(wbLADGoldMaskCount + (lightDaggerUnbindState * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + (lightDaggerUnbindState * 30));
+                setmubLADSandCountState(mubLADSandCount + (lightDaggerUnbindState * 1));
+                setwbLADSandCountState(wbLADSandCount + (lightDaggerUnbindState * 1));
+                setallmubLASandCount(allmubLASandCount + (lightDaggerUnbindState * 1));
+                setmubLADRupeeCost(mubLADRupeeCost + (lightDaggerUnbindState * 2));
+                setwbLADRupeeCost(wbLADRupeeCost + (lightDaggerUnbindState * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + (lightDaggerUnbindState * 2));
+                setLightDaggerUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightDaggerUnbindState >= 1 && lightDaggerUnbindState <= 4) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount + ((lightDaggerUnbindState - event.target.value) * 40))
+                setwbLADSilverMaskCountState(wbLADSilverMaskCount + ((lightDaggerUnbindState - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightDaggerUnbindState - event.target.value) * 40));
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount + ((lightDaggerUnbindState - event.target.value) * 30));
+                setwbLADGoldMaskCountState(wbLADGoldMaskCount + ((lightDaggerUnbindState - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightDaggerUnbindState - event.target.value) * 30));
+                setmubLADSandCountState(mubLADSandCount + (lightDaggerUnbindState - event.target.value));
+                setwbLADSandCountState(wbLADSandCount + (lightDaggerUnbindState - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (lightDaggerUnbindState - event.target.value));
+                setmubLADRupeeCost(mubLADRupeeCost + ((lightDaggerUnbindState - event.target.value) * 2));
+                setwbLADRupeeCost(wbLADRupeeCost + ((lightDaggerUnbindState - event.target.value) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightDaggerUnbindState - event.target.value) * 2))
+                setLightDaggerUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightDaggerUnbindState >= 5 && lightDaggerUnbindState <= 8) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount + ((lightDaggerUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbLADSilverMaskCountState(wbLADSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightDaggerUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount + ((lightDaggerUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbLADGoldMaskCountState(wbLADGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightDaggerUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubLADInsanityCountState(mubLADInsanityCount + ((lightDaggerUnbindState - 4) * 7));
+                setwbLADInsanityCountState(wbLADInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightDaggerUnbindState - 4) * 7));
+                setmubLADSandCountState(mubLADSandCount + (4 - event.target.value));
+                setwbLADSandCountState(wbLADSandCount + (4 - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (4 - event.target.value));
+                setmubLADOriCountState(mubLADOriCount + (lightDaggerUnbindState - 4));
+                setwbLADOriCountState(wbLADOriCount + (lightDaggerUnbindState - 4));
+                setallmubLAOriCount(allmubLAOriCount + (lightDaggerUnbindState - 4));
+                setmubLADRupeeCost(mubLADRupeeCost + ((lightDaggerUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbLADRupeeCost(wbLADRupeeCost + 7.5 + ((lightDaggerUnbindState - 4) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightDaggerUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setLightDaggerUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightDaggerUnbindState == 9) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubLADInsanityCountState(mubLADInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubLADGaleCountState(mubLADGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLADOriCountState(mubLADOriCount + 20 + (8 - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + 20 + (8 - event.target.value));
+                setmubLADRupeeCost(mubLADRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setLightDaggerUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightDaggerUnbindState >= 5 && lightDaggerUnbindState <= 8) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount + ((lightDaggerUnbindState - event.target.value) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightDaggerUnbindState - event.target.value) * 16));
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount + ((lightDaggerUnbindState - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightDaggerUnbindState - event.target.value) * 10));
+                setmubLADInsanityCountState(mubLADInsanityCount + ((lightDaggerUnbindState - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightDaggerUnbindState - event.target.value) * 7));
+                setmubLADOriCountState(mubLADOriCount + (lightDaggerUnbindState - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + (lightDaggerUnbindState - event.target.value));
+                setmubLADRupeeCost(mubLADRupeeCost + ((lightDaggerUnbindState - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightDaggerUnbindState - event.target.value) * 7.5));
+                setLightDaggerUnbindState(event.target.value)
             }
         }
     }
@@ -1138,75 +1556,116 @@ export default function LightAgitoWeapons() {
     function handleLightDaggerRefineIncrement(event) {
         setLightWeaponChoiceState("dagger");
         if (lightDaggerRefineState < event.target.value) {
-            if (event.target.value - lightDaggerRefineState == 1) {
+            if (lightDaggerRefineState == 0 && event.target.value == 1) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount - 16);
+                setwbLADSilverMaskCountState(wbLADSilverMaskCount - 16);
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount - 10);
+                setwbLADGoldMaskCountState(wbLADGoldMaskCount - 10);
+                setmubLADInsanityCountState(mubLADInsanityCount - 7);
+                setwbLADInsanityCountState(wbLADInsanityCount - 7);
+                setmubLADOriCountState(mubLADOriCount - 1);
+                setwbLADOriCountState(wbLADOriCount - 1);
+                setmubLADRupeeCost(mubLADRupeeCost - 2.5);
+                setwbLADRupeeCost(wbLADRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 7)
+                setallmubLAOriCount(allmubLAOriCount - 1)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
                 setLightDaggerRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubLADSilverMaskCountState(mubLADSilverMaskCount - 16);
-                    setwbLADSilverMaskCountState(wbLADSilverMaskCount - 16);
-                    setmubLADGoldMaskCountState(mubLADGoldMaskCount - 10);
-                    setwbLADGoldMaskCountState(wbLADGoldMaskCount - 10);
-                    setmubLADInsanityCountState(mubLADInsanityCount - 7);
-                    setwbLADInsanityCountState(wbLADInsanityCount - 7);
-                    setmubLADOriCountState(mubLADOriCount - 1);
-                    setwbLADOriCountState(wbLADOriCount - 1);
-                    setmubLADRupeeCost(mubLADRupeeCost - 2.5);
-                    setwbLADRupeeCost(wbLADRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubLADSilverMaskCountState(mubLADSilverMaskCount - 40)
-                    setmubLADGoldMaskCountState(mubLADGoldMaskCount - 30);
-                    setmubLADInsanityCountState(mubLADInsanityCount - 10);
-                    setmubLADGaleCountState(mubLADGaleCount - 10);
-                    setmubLADOriCountState(mubLADOriCount - 10);
-                    setmubLADRupeeCost(mubLADRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 10)
-                    setallmubLAGaleCount(allmubLAGaleCount - 10)
-                    setallmubLAOriCount(allmubLAOriCount - 10)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
+            }
+            else if (lightDaggerRefineState == 0 && event.target.value == 2) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount - 56);
+                setwbLADSilverMaskCountState(wbLADSilverMaskCount - 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 56);
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount - 40);
+                setwbLADGoldMaskCountState(wbLADGoldMaskCount - 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 40);
+                setmubLADInsanityCountState(mubLADInsanityCount - 17);
+                setwbLADInsanityCountState(wbLADInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 17);
+                setmubLADGaleCountState(mubLADGaleCount - 10);
+                setallmubLAGaleCount(allmubLAGaleCount - 10);
+                setmubLADOriCountState(mubLADOriCount - 11);
+                setwbLADOriCountState(wbLADOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 11);
+                setmubLADRupeeCost(mubLADRupeeCost - 5);
+                setwbLADRupeeCost(wbLADRupeeCost - 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 5);
+                setLightDaggerRefineState(event.target.value);
+            }
+            else if (lightDaggerRefineState == 1 && event.target.value == 2) {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount - 40)
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount - 30);
+                setmubLADInsanityCountState(mubLADInsanityCount - 10);
+                setmubLADGaleCountState(mubLADGaleCount - 10);
+                setmubLADOriCountState(mubLADOriCount - 10);
+                setmubLADRupeeCost(mubLADRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 10)
+                setallmubLAGaleCount(allmubLAGaleCount - 10)
+                setallmubLAOriCount(allmubLAOriCount - 10)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
+                setLightDaggerRefineState(event.target.value);
             }
         }
         else if (lightDaggerRefineState > event.target.value) {
-            if (lightDaggerRefineState - event.target.value == 1) {
-                setLightDaggerRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubLADSilverMaskCountState(mubLADSilverMaskCount + 16);
-                    setwbLADSilverMaskCountState(wbLADSilverMaskCount + 16);
-                    setmubLADGoldMaskCountState(mubLADGoldMaskCount + 10);
-                    setwbLADGoldMaskCountState(wbLADGoldMaskCount + 10);
-                    setmubLADInsanityCountState(mubLADInsanityCount + 7);
-                    setwbLADInsanityCountState(wbLADInsanityCount + 7);
-                    setmubLADOriCountState(mubLADOriCount + 1);
-                    setwbLADOriCountState(wbLADOriCount + 1);
-                    setmubLADRupeeCost(mubLADRupeeCost + 2.5);
-                    setwbLADRupeeCost(wbLADRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubLADSilverMaskCountState(mubLADSilverMaskCount + 40)
-                    setmubLADGoldMaskCountState(mubLADGoldMaskCount + 30);
-                    setmubLADInsanityCountState(mubLADInsanityCount + 10);
-                    setmubLADGaleCountState(mubLADGaleCount + 10);
-                    setmubLADOriCountState(mubLADOriCount + 10);
-                    setmubLADRupeeCost(mubLADRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 10)
-                    setallmubLAGaleCount(allmubLAGaleCount + 10)
-                    setallmubLAOriCount(allmubLAOriCount + 10)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
+            if (lightDaggerRefineState == 2 && event.target.value == 1) 
+            {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount + 40)
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount + 30);
+                setmubLADInsanityCountState(mubLADInsanityCount + 10);
+                setmubLADGaleCountState(mubLADGaleCount + 10);
+                setmubLADOriCountState(mubLADOriCount + 10);
+                setmubLADRupeeCost(mubLADRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 10)
+                setallmubLAGaleCount(allmubLAGaleCount + 10)
+                setallmubLAOriCount(allmubLAOriCount + 10)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightDaggerRefineState(event.target.value);
+            }
+            else if (lightDaggerRefineState == 2 && event.target.value == 0) 
+            {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount + 56);
+                setwbLADSilverMaskCountState(wbLADSilverMaskCount + 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 56);
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount + 40);
+                setwbLADGoldMaskCountState(wbLADGoldMaskCount + 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 40);
+                setmubLADInsanityCountState(mubLADInsanityCount + 17);
+                setwbLADInsanityCountState(wbLADInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 17);
+                setmubLADGaleCountState(mubLADGaleCount + 10);
+                setallmubLAGaleCount(allmubLAGaleCount + 10);
+                setmubLADOriCountState(mubLADOriCount + 11);
+                setwbLADOriCountState(wbLADOriCount + 1); 
+                setallmubLAOriCount(allmubLAOriCount + 11);
+                setmubLADRupeeCost(mubLADRupeeCost + 5);
+                setwbLADRupeeCost(wbLADRupeeCost + 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 5)
+                setLightDaggerRefineState(event.target.value);
+            }
+            else if (lightDaggerRefineState == 1 && event.target.value == 0) 
+            {
+                setmubLADSilverMaskCountState(mubLADSilverMaskCount + 16);
+                setwbLADSilverMaskCountState(wbLADSilverMaskCount + 16);
+                setmubLADGoldMaskCountState(mubLADGoldMaskCount + 10);
+                setwbLADGoldMaskCountState(wbLADGoldMaskCount + 10);
+                setmubLADInsanityCountState(mubLADInsanityCount + 7);
+                setwbLADInsanityCountState(wbLADInsanityCount + 7);
+                setmubLADOriCountState(mubLADOriCount + 1);
+                setwbLADOriCountState(wbLADOriCount + 1);
+                setmubLADRupeeCost(mubLADRupeeCost + 2.5);
+                setwbLADRupeeCost(wbLADRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 7)
+                setallmubLAOriCount(allmubLAOriCount + 1)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightDaggerRefineState(event.target.value);
             }
         }
     }
@@ -1315,129 +1774,241 @@ export default function LightAgitoWeapons() {
     }
 
     function handleLightAxeUnbindIncrement(event) {
-        setLightWeaponChoiceState("axe")
+        setLightWeaponChoiceState("axe");
         if (lightAxeUnbindState < event.target.value) {
-            if (event.target.value - lightAxeUnbindState == 1) {
+            if (event.target.value == 9 && lightAxeUnbindState == 0) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount - 304);
+                setwbLAASilverMaskCountState(wbLAASilverMaskCount - 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 304);
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - 230);
+                setwbLAAGoldMaskCountState(wbLAAGoldMaskCount - 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 230);
+                setmubLAAInsanityCountState(mubLAAInsanityCount - 58);
+                setwbLAAInsanityCountState(wbLAAInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLAAGaleCountState(mubLAAGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLAASandCountState(mubLAASandCount - 4);
+                setwbLAASandCountState(wbLAASandCount - 4);
+                setallmubLASandCount(allmubLASandCount - 4);
+                setmubLAAOriCountState(mubLAAOriCount - 24);
+                setwbLAAOriCountState(wbLAAOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLAARupeeCost(mubLAARupeeCost - 40);
+                setwbLAARupeeCost(wbLAARupeeCost - 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 40);
                 setLightAxeUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubLAASilverMaskCountState(mubLAASilverMaskCount - 40)
-                    setwbLAASilverMaskCountState(wbLAASilverMaskCount - 40)
-                    setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - 30)
-                    setwbLAAGoldMaskCountState(wbLAAGoldMaskCount - 30)
-                    setmubLAASandCountState(mubLAASandCount - 1)
-                    setwbLAASandCountState(wbLAASandCount - 1)
-                    setmubLAARupeeCost(mubLAARupeeCost - 2)
-                    setwbLAARupeeCost(wbLAARupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLASandCount(allmubLASandCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubLAASilverMaskCountState(mubLAASilverMaskCount - 16)
-                    setwbLAASilverMaskCountState(wbLAASilverMaskCount - 16)
-                    setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - 10)
-                    setwbLAAGoldMaskCountState(wbLAAGoldMaskCount - 10)
-                    setmubLAAInsanityCountState(mubLAAInsanityCount - 7)
-                    setwbLAAInsanityCountState(wbLAAInsanityCount - 7)
-                    setmubLAAOriCountState(mubLAAOriCount - 1)
-                    setwbLAAOriCountState(wbLAAOriCount - 1)
-                    setmubLAARupeeCost(mubLAARupeeCost - 7.5)
-                    setwbLAARupeeCost(wbLAARupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubLAASilverMaskCountState(mubLAASilverMaskCount - 16)
-                    setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - 10)
-                    setmubLAAInsanityCountState(mubLAAInsanityCount - 7)
-                    setmubLAAOriCountState(mubLAAOriCount - 1)
-                    setmubLAARupeeCost(mubLAARupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubLAASilverMaskCountState(mubLAASilverMaskCount - 80)
-                    setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - 70)
-                    setmubLAAInsanityCountState(mubLAAInsanityCount - 30)
-                    setmubLAAGaleCountState(mubLAAGaleCount - 20)
-                    setmubLAAOriCountState(mubLAAOriCount - 20)
-                    setmubLAARupeeCost(mubLAARupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 30)
-                    setallmubLAGaleCount(allmubLAGaleCount - 20)
-                    setallmubLAOriCount(allmubLAOriCount - 20)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && lightAxeUnbindState >= 1 && lightAxeUnbindState <= 4) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount - 144 - ((4 - lightAxeUnbindState) * 40));
+                setwbLAASilverMaskCountState(wbLAASilverMaskCount - 16 - ((4 - lightAxeUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 144 - ((4 - lightAxeUnbindState) * 40));
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - 110 - ((4 - lightAxeUnbindState) * 30));
+                setwbLAAGoldMaskCountState(wbLAAGoldMaskCount - 10 - ((4 - lightAxeUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 110 - ((4 - lightAxeUnbindState) * 30));
+                setmubLAAInsanityCountState(mubLAAInsanityCount - 58);
+                setwbLAAInsanityCountState(wbLAAInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLAAGaleCountState(mubLAAGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLAASandCountState(mubLAASandCount - (4 - lightAxeUnbindState));
+                setwbLAASandCountState(wbLAASandCount - (4 - lightAxeUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightAxeUnbindState));
+                setmubLAAOriCountState(mubLAAOriCount - 24);
+                setwbLAAOriCountState(wbLAAOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLAARupeeCost(mubLAARupeeCost - 32 - ((4 - lightAxeUnbindState) * 2));
+                setwbLAARupeeCost(wbLAARupeeCost - 7.5 - ((4 - lightAxeUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - 32 - ((4 - lightAxeUnbindState) * 2));
+                setLightAxeUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && lightAxeUnbindState >= 5 && lightAxeUnbindState <= 8) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount - 80 - ((8 - lightAxeUnbindState) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 80 - ((8 - lightAxeUnbindState) * 16));
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - 70 - ((8 - lightAxeUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70 - ((8 - lightAxeUnbindState) * 10));
+                setmubLAAInsanityCountState(mubLAAInsanityCount - 30 - ((8 - lightAxeUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - 30 - ((8 - lightAxeUnbindState) * 7));
+                setmubLAAGaleCountState(mubLAAGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLAAOriCountState(mubLAAOriCount - 20 - ((8 - lightAxeUnbindState) * 1));
+                setallmubLAOriCount(allmubLAOriCount - 20 - ((8 - lightAxeUnbindState) * 1));
+                setmubLAARupeeCost(mubLAARupeeCost - 2 - ((8 - lightAxeUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - 2 - ((8 - lightAxeUnbindState) * 7.5));
+                setLightAxeUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightAxeUnbindState <= 7 && lightAxeUnbindState >= 5) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount - ((event.target.value - lightAxeUnbindState) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightAxeUnbindState) * 16));
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - ((event.target.value - lightAxeUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightAxeUnbindState) * 10));
+                setmubLAAInsanityCountState(mubLAAInsanityCount - ((event.target.value - lightAxeUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - ((event.target.value - lightAxeUnbindState) * 7));
+                setmubLAAOriCountState(mubLAAOriCount - (event.target.value - lightAxeUnbindState));
+                setallmubLAOriCount(allmubLAOriCount - (event.target.value - lightAxeUnbindState));
+                setmubLAARupeeCost(mubLAARupeeCost - ((event.target.value - lightAxeUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightAxeUnbindState) * 7.5));
+                setLightAxeUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightAxeUnbindState <= 4 && lightAxeUnbindState >= 0) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount - ((4 - lightAxeUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbLAASilverMaskCountState(wbLAASilverMaskCount - 16 - ((4 - lightAxeUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((4 - lightAxeUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - ((4 - lightAxeUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbLAAGoldMaskCountState(wbLAAGoldMaskCount - 10 - ((4 - lightAxeUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((4 - lightAxeUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubLAAInsanityCountState(mubLAAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbLAAInsanityCountState(wbLAAInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubLAASandCountState(mubLAASandCount - (4 - lightAxeUnbindState));
+                setwbLAASandCountState(wbLAASandCount - (4 - lightAxeUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightAxeUnbindState));
+                setmubLAAOriCountState(mubLAAOriCount - (-1 * (4 - event.target.value)));
+                setwbLAAOriCountState(wbLAAOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - (-1 * (4 - event.target.value)));
+                setmubLAARupeeCost(mubLAARupeeCost - ((4 - lightAxeUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbLAARupeeCost(wbLAARupeeCost - 7.5 - ((4 - lightAxeUnbindState) * 2))
+                setLightAxeUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && lightAxeUnbindState <= 3 && lightAxeUnbindState >= 0) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount - ((event.target.value - lightAxeUnbindState) * 40));
+                setwbLAASilverMaskCountState(wbLAASilverMaskCount - ((event.target.value - lightAxeUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightAxeUnbindState) * 40));
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - ((event.target.value - lightAxeUnbindState) * 30));
+                setwbLAAGoldMaskCountState(wbLAAGoldMaskCount - ((event.target.value - lightAxeUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightAxeUnbindState) * 30));
+                setmubLAASandCountState(mubLAASandCount - (event.target.value - lightAxeUnbindState));
+                setwbLAASandCountState(wbLAASandCount - (event.target.value - lightAxeUnbindState));
+                setallmubLASandCount(allmubLASandCount - (event.target.value - lightAxeUnbindState));
+                setmubLAARupeeCost(mubLAARupeeCost - ((event.target.value - lightAxeUnbindState) * 2));
+                setwbLAARupeeCost(wbLAARupeeCost - ((event.target.value - lightAxeUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightAxeUnbindState) * 2));
+                setLightAxeUnbindState(event.target.value)
             }
         }
         else if (lightAxeUnbindState > event.target.value) {
-            if (lightAxeUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && lightAxeUnbindState == 9) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount + 304);
+                setwbLAASilverMaskCountState(wbLAASilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 304);
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + 230);
+                setwbLAAGoldMaskCountState(wbLAAGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 230);
+                setmubLAAInsanityCountState(mubLAAInsanityCount + 58);
+                setwbLAAInsanityCountState(wbLAAInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 58);
+                setmubLAAGaleCountState(mubLAAGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLAASandCountState(mubLAASandCount + 4);
+                setwbLAASandCountState(wbLAASandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLAAOriCountState(mubLAAOriCount + 24);
+                setwbLAAOriCountState(wbLAAOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + 24);
+                setmubLAARupeeCost(mubLAARupeeCost + 40);
+                setwbLAARupeeCost(wbLAARupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 40);
                 setLightAxeUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubLAASilverMaskCountState(mubLAASilverMaskCount + 40)
-                    setwbLAASilverMaskCountState(wbLAASilverMaskCount + 40)
-                    setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + 30)
-                    setwbLAAGoldMaskCountState(wbLAAGoldMaskCount + 30)
-                    setmubLAASandCountState(mubLAASandCount + 1)
-                    setwbLAASandCountState(wbLAASandCount + 1)
-                    setmubLAARupeeCost(mubLAARupeeCost + 2)
-                    setwbLAARupeeCost(wbLAARupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLASandCount(allmubLASandCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubLAASilverMaskCountState(mubLAASilverMaskCount + 16)
-                    setwbLAASilverMaskCountState(wbLAASilverMaskCount + 16)
-                    setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + 10)
-                    setwbLAAGoldMaskCountState(wbLAAGoldMaskCount + 10)
-                    setmubLAAInsanityCountState(mubLAAInsanityCount + 7)
-                    setwbLAAInsanityCountState(wbLAAInsanityCount + 7)
-                    setmubLAAOriCountState(mubLAAOriCount + 1)
-                    setwbLAAOriCountState(wbLAAOriCount + 1)
-                    setmubLAARupeeCost(mubLAARupeeCost + 7.5)
-                    setwbLAARupeeCost(wbLAARupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubLAASilverMaskCountState(mubLAASilverMaskCount + 16)
-                    setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + 10)
-                    setmubLAAInsanityCountState(mubLAAInsanityCount + 7)
-                    setmubLAAOriCountState(mubLAAOriCount + 1)
-                    setmubLAARupeeCost(mubLAARupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubLAASilverMaskCountState(mubLAASilverMaskCount + 80)
-                    setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + 70)
-                    setmubLAAInsanityCountState(mubLAAInsanityCount + 30)
-                    setmubLAAGaleCountState(mubLAAGaleCount + 20)
-                    setmubLAAOriCountState(mubLAAOriCount + 20)
-                    setmubLAARupeeCost(mubLAARupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 30)
-                    setallmubLAGaleCount(allmubLAGaleCount + 20)
-                    setallmubLAOriCount(allmubLAOriCount + 20)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && lightAxeUnbindState >= 5 && lightAxeUnbindState <= 8) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount + 160 + ((-1 * (4 - lightAxeUnbindState)) * 16));
+                setwbLAASilverMaskCountState(wbLAASilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 160 + ((-1 * (4 - lightAxeUnbindState)) * 16));
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + 120 + ((-1 * (4 - lightAxeUnbindState)) * 10));
+                setwbLAAGoldMaskCountState(wbLAAGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 120 + ((-1 * (4 - lightAxeUnbindState)) * 10));
+                setmubLAAInsanityCountState(mubLAAInsanityCount + ((-1 * (4 - lightAxeUnbindState)) * 7));
+                setwbLAAInsanityCountState(wbLAAInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((-1 * (4 - lightAxeUnbindState)) * 7));
+                setmubLAASandCountState(mubLAASandCount + 4);
+                setwbLAASandCountState(wbLAASandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLAAOriCountState(mubLAAOriCount + (-1 * (4 - lightAxeUnbindState)));
+                setwbLAAOriCountState(wbLAAOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + (-1 * (4 - lightAxeUnbindState)));
+                setmubLAARupeeCost(mubLAARupeeCost + 8 + (-1 * (4 - lightAxeUnbindState) * 7.5));
+                setwbLAARupeeCost(wbLAARupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 8 + (-1 * (4 - lightAxeUnbindState) * 7.5));
+                setLightAxeUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && lightAxeUnbindState >= 1 && lightAxeUnbindState <= 4) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount + (lightAxeUnbindState * 40));
+                setwbLAASilverMaskCountState(wbLAASilverMaskCount + (lightAxeUnbindState * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + (lightAxeUnbindState * 40));
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + (lightAxeUnbindState * 30));
+                setwbLAAGoldMaskCountState(wbLAAGoldMaskCount + (lightAxeUnbindState * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + (lightAxeUnbindState * 30));
+                setmubLAASandCountState(mubLAASandCount + (lightAxeUnbindState * 1));
+                setwbLAASandCountState(wbLAASandCount + (lightAxeUnbindState * 1));
+                setallmubLASandCount(allmubLASandCount + (lightAxeUnbindState * 1));
+                setmubLAARupeeCost(mubLAARupeeCost + (lightAxeUnbindState * 2));
+                setwbLAARupeeCost(wbLAARupeeCost + (lightAxeUnbindState * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + (lightAxeUnbindState * 2));
+                setLightAxeUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightAxeUnbindState >= 1 && lightAxeUnbindState <= 4) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount + ((lightAxeUnbindState - event.target.value) * 40))
+                setwbLAASilverMaskCountState(wbLAASilverMaskCount + ((lightAxeUnbindState - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightAxeUnbindState - event.target.value) * 40));
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + ((lightAxeUnbindState - event.target.value) * 30));
+                setwbLAAGoldMaskCountState(wbLAAGoldMaskCount + ((lightAxeUnbindState - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightAxeUnbindState - event.target.value) * 30));
+                setmubLAASandCountState(mubLAASandCount + (lightAxeUnbindState - event.target.value));
+                setwbLAASandCountState(wbLAASandCount + (lightAxeUnbindState - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (lightAxeUnbindState - event.target.value));
+                setmubLAARupeeCost(mubLAARupeeCost + ((lightAxeUnbindState - event.target.value) * 2));
+                setwbLAARupeeCost(wbLAARupeeCost + ((lightAxeUnbindState - event.target.value) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightAxeUnbindState - event.target.value) * 2))
+                setLightAxeUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightAxeUnbindState >= 5 && lightAxeUnbindState <= 8) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount + ((lightAxeUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbLAASilverMaskCountState(wbLAASilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightAxeUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + ((lightAxeUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbLAAGoldMaskCountState(wbLAAGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightAxeUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubLAAInsanityCountState(mubLAAInsanityCount + ((lightAxeUnbindState - 4) * 7));
+                setwbLAAInsanityCountState(wbLAAInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightAxeUnbindState - 4) * 7));
+                setmubLAASandCountState(mubLAASandCount + (4 - event.target.value));
+                setwbLAASandCountState(wbLAASandCount + (4 - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (4 - event.target.value));
+                setmubLAAOriCountState(mubLAAOriCount + (lightAxeUnbindState - 4));
+                setwbLAAOriCountState(wbLAAOriCount + (lightAxeUnbindState - 4));
+                setallmubLAOriCount(allmubLAOriCount + (lightAxeUnbindState - 4));
+                setmubLAARupeeCost(mubLAARupeeCost + ((lightAxeUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbLAARupeeCost(wbLAARupeeCost + 7.5 + ((lightAxeUnbindState - 4) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightAxeUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setLightAxeUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightAxeUnbindState == 9) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubLAAInsanityCountState(mubLAAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubLAAGaleCountState(mubLAAGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLAAOriCountState(mubLAAOriCount + 20 + (8 - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + 20 + (8 - event.target.value));
+                setmubLAARupeeCost(mubLAARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setLightAxeUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightAxeUnbindState >= 5 && lightAxeUnbindState <= 8) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount + ((lightAxeUnbindState - event.target.value) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightAxeUnbindState - event.target.value) * 16));
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + ((lightAxeUnbindState - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightAxeUnbindState - event.target.value) * 10));
+                setmubLAAInsanityCountState(mubLAAInsanityCount + ((lightAxeUnbindState - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightAxeUnbindState - event.target.value) * 7));
+                setmubLAAOriCountState(mubLAAOriCount + (lightAxeUnbindState - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + (lightAxeUnbindState - event.target.value));
+                setmubLAARupeeCost(mubLAARupeeCost + ((lightAxeUnbindState - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightAxeUnbindState - event.target.value) * 7.5));
+                setLightAxeUnbindState(event.target.value)
             }
         }
     }
@@ -1445,75 +2016,116 @@ export default function LightAgitoWeapons() {
     function handleLightAxeRefineIncrement(event) {
         setLightWeaponChoiceState("axe");
         if (lightAxeRefineState < event.target.value) {
-            if (event.target.value - lightAxeRefineState == 1) {
+            if (lightAxeRefineState == 0 && event.target.value == 1) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount - 16);
+                setwbLAASilverMaskCountState(wbLAASilverMaskCount - 16);
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - 10);
+                setwbLAAGoldMaskCountState(wbLAAGoldMaskCount - 10);
+                setmubLAAInsanityCountState(mubLAAInsanityCount - 7);
+                setwbLAAInsanityCountState(wbLAAInsanityCount - 7);
+                setmubLAAOriCountState(mubLAAOriCount - 1);
+                setwbLAAOriCountState(wbLAAOriCount - 1);
+                setmubLAARupeeCost(mubLAARupeeCost - 2.5);
+                setwbLAARupeeCost(wbLAARupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 7)
+                setallmubLAOriCount(allmubLAOriCount - 1)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
                 setLightAxeRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubLAASilverMaskCountState(mubLAASilverMaskCount - 16);
-                    setwbLAASilverMaskCountState(wbLAASilverMaskCount - 16);
-                    setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - 10);
-                    setwbLAAGoldMaskCountState(wbLAAGoldMaskCount - 10);
-                    setmubLAAInsanityCountState(mubLAAInsanityCount - 7);
-                    setwbLAAInsanityCountState(wbLAAInsanityCount - 7);
-                    setmubLAAOriCountState(mubLAAOriCount - 1);
-                    setwbLAAOriCountState(wbLAAOriCount - 1);
-                    setmubLAARupeeCost(mubLAARupeeCost - 2.5);
-                    setwbLAARupeeCost(wbLAARupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubLAASilverMaskCountState(mubLAASilverMaskCount - 40)
-                    setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - 30);
-                    setmubLAAInsanityCountState(mubLAAInsanityCount - 10);
-                    setmubLAAGaleCountState(mubLAAGaleCount - 10);
-                    setmubLAAOriCountState(mubLAAOriCount - 10);
-                    setmubLAARupeeCost(mubLAARupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 10)
-                    setallmubLAGaleCount(allmubLAGaleCount - 10)
-                    setallmubLAOriCount(allmubLAOriCount - 10)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
+            }
+            else if (lightAxeRefineState == 0 && event.target.value == 2) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount - 56);
+                setwbLAASilverMaskCountState(wbLAASilverMaskCount - 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 56);
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - 40);
+                setwbLAAGoldMaskCountState(wbLAAGoldMaskCount - 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 40);
+                setmubLAAInsanityCountState(mubLAAInsanityCount - 17);
+                setwbLAAInsanityCountState(wbLAAInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 17);
+                setmubLAAGaleCountState(mubLAAGaleCount - 10);
+                setallmubLAGaleCount(allmubLAGaleCount - 10);
+                setmubLAAOriCountState(mubLAAOriCount - 11);
+                setwbLAAOriCountState(wbLAAOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 11);
+                setmubLAARupeeCost(mubLAARupeeCost - 5);
+                setwbLAARupeeCost(wbLAARupeeCost - 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 5);
+                setLightAxeRefineState(event.target.value);
+            }
+            else if (lightAxeRefineState == 1 && event.target.value == 2) {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount - 40)
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount - 30);
+                setmubLAAInsanityCountState(mubLAAInsanityCount - 10);
+                setmubLAAGaleCountState(mubLAAGaleCount - 10);
+                setmubLAAOriCountState(mubLAAOriCount - 10);
+                setmubLAARupeeCost(mubLAARupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 10)
+                setallmubLAGaleCount(allmubLAGaleCount - 10)
+                setallmubLAOriCount(allmubLAOriCount - 10)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
+                setLightAxeRefineState(event.target.value);
             }
         }
         else if (lightAxeRefineState > event.target.value) {
-            if (lightAxeRefineState - event.target.value == 1) {
-                setLightAxeRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubLAASilverMaskCountState(mubLAASilverMaskCount + 16);
-                    setwbLAASilverMaskCountState(wbLAASilverMaskCount + 16);
-                    setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + 10);
-                    setwbLAAGoldMaskCountState(wbLAAGoldMaskCount + 10);
-                    setmubLAAInsanityCountState(mubLAAInsanityCount + 7);
-                    setwbLAAInsanityCountState(wbLAAInsanityCount + 7);
-                    setmubLAAOriCountState(mubLAAOriCount + 1);
-                    setwbLAAOriCountState(wbLAAOriCount + 1);
-                    setmubLAARupeeCost(mubLAARupeeCost + 2.5);
-                    setwbLAARupeeCost(wbLAARupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubLAASilverMaskCountState(mubLAASilverMaskCount + 40)
-                    setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + 30);
-                    setmubLAAInsanityCountState(mubLAAInsanityCount + 10);
-                    setmubLAAGaleCountState(mubLAAGaleCount + 10);
-                    setmubLAAOriCountState(mubLAAOriCount + 10);
-                    setmubLAARupeeCost(mubLAARupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 10)
-                    setallmubLAGaleCount(allmubLAGaleCount + 10)
-                    setallmubLAOriCount(allmubLAOriCount + 10)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
+            if (lightAxeRefineState == 2 && event.target.value == 1) 
+            {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount + 40)
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + 30);
+                setmubLAAInsanityCountState(mubLAAInsanityCount + 10);
+                setmubLAAGaleCountState(mubLAAGaleCount + 10);
+                setmubLAAOriCountState(mubLAAOriCount + 10);
+                setmubLAARupeeCost(mubLAARupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 10)
+                setallmubLAGaleCount(allmubLAGaleCount + 10)
+                setallmubLAOriCount(allmubLAOriCount + 10)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightAxeRefineState(event.target.value);
+            }
+            else if (lightAxeRefineState == 2 && event.target.value == 0) 
+            {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount + 56);
+                setwbLAASilverMaskCountState(wbLAASilverMaskCount + 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 56);
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + 40);
+                setwbLAAGoldMaskCountState(wbLAAGoldMaskCount + 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 40);
+                setmubLAAInsanityCountState(mubLAAInsanityCount + 17);
+                setwbLAAInsanityCountState(wbLAAInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 17);
+                setmubLAAGaleCountState(mubLAAGaleCount + 10);
+                setallmubLAGaleCount(allmubLAGaleCount + 10);
+                setmubLAAOriCountState(mubLAAOriCount + 11);
+                setwbLAAOriCountState(wbLAAOriCount + 1); 
+                setallmubLAOriCount(allmubLAOriCount + 11);
+                setmubLAARupeeCost(mubLAARupeeCost + 5);
+                setwbLAARupeeCost(wbLAARupeeCost + 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 5)
+                setLightAxeRefineState(event.target.value);
+            }
+            else if (lightAxeRefineState == 1 && event.target.value == 0) 
+            {
+                setmubLAASilverMaskCountState(mubLAASilverMaskCount + 16);
+                setwbLAASilverMaskCountState(wbLAASilverMaskCount + 16);
+                setmubLAAGoldMaskCountState(mubLAAGoldMaskCount + 10);
+                setwbLAAGoldMaskCountState(wbLAAGoldMaskCount + 10);
+                setmubLAAInsanityCountState(mubLAAInsanityCount + 7);
+                setwbLAAInsanityCountState(wbLAAInsanityCount + 7);
+                setmubLAAOriCountState(mubLAAOriCount + 1);
+                setwbLAAOriCountState(wbLAAOriCount + 1);
+                setmubLAARupeeCost(mubLAARupeeCost + 2.5);
+                setwbLAARupeeCost(wbLAARupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 7)
+                setallmubLAOriCount(allmubLAOriCount + 1)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightAxeRefineState(event.target.value);
             }
         }
     }
@@ -1622,129 +2234,241 @@ export default function LightAgitoWeapons() {
     }
 
     function handleLightLanceUnbindIncrement(event) {
-        setLightWeaponChoiceState("lance")
+        setLightWeaponChoiceState("lance");
         if (lightLanceUnbindState < event.target.value) {
-            if (event.target.value - lightLanceUnbindState == 1) {
+            if (event.target.value == 9 && lightLanceUnbindState == 0) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount - 304);
+                setwbLALSilverMaskCountState(wbLALSilverMaskCount - 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 304);
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount - 230);
+                setwbLALGoldMaskCountState(wbLALGoldMaskCount - 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 230);
+                setmubLALInsanityCountState(mubLALInsanityCount - 58);
+                setwbLALInsanityCountState(wbLALInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLALGaleCountState(mubLALGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLALSandCountState(mubLALSandCount - 4);
+                setwbLALSandCountState(wbLALSandCount - 4);
+                setallmubLASandCount(allmubLASandCount - 4);
+                setmubLALOriCountState(mubLALOriCount - 24);
+                setwbLALOriCountState(wbLALOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLALRupeeCost(mubLALRupeeCost - 40);
+                setwbLALRupeeCost(wbLALRupeeCost - 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 40);
                 setLightLanceUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubLALSilverMaskCountState(mubLALSilverMaskCount - 40)
-                    setwbLALSilverMaskCountState(wbLALSilverMaskCount - 40)
-                    setmubLALGoldMaskCountState(mubLALGoldMaskCount - 30)
-                    setwbLALGoldMaskCountState(wbLALGoldMaskCount - 30)
-                    setmubLALSandCountState(mubLALSandCount - 1)
-                    setwbLALSandCountState(wbLALSandCount - 1)
-                    setmubLALRupeeCost(mubLALRupeeCost - 2)
-                    setwbLALRupeeCost(wbLALRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLASandCount(allmubLASandCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubLALSilverMaskCountState(mubLALSilverMaskCount - 16)
-                    setwbLALSilverMaskCountState(wbLALSilverMaskCount - 16)
-                    setmubLALGoldMaskCountState(mubLALGoldMaskCount - 10)
-                    setwbLALGoldMaskCountState(wbLALGoldMaskCount - 10)
-                    setmubLALInsanityCountState(mubLALInsanityCount - 7)
-                    setwbLALInsanityCountState(wbLALInsanityCount - 7)
-                    setmubLALOriCountState(mubLALOriCount - 1)
-                    setwbLALOriCountState(wbLALOriCount - 1)
-                    setmubLALRupeeCost(mubLALRupeeCost - 7.5)
-                    setwbLALRupeeCost(wbLALRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubLALSilverMaskCountState(mubLALSilverMaskCount - 16)
-                    setmubLALGoldMaskCountState(mubLALGoldMaskCount - 10)
-                    setmubLALInsanityCountState(mubLALInsanityCount - 7)
-                    setmubLALOriCountState(mubLALOriCount - 1)
-                    setmubLALRupeeCost(mubLALRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubLALSilverMaskCountState(mubLALSilverMaskCount - 80)
-                    setmubLALGoldMaskCountState(mubLALGoldMaskCount - 70)
-                    setmubLALInsanityCountState(mubLALInsanityCount - 30)
-                    setmubLALGaleCountState(mubLALGaleCount - 20)
-                    setmubLALOriCountState(mubLALOriCount - 20)
-                    setmubLALRupeeCost(mubLALRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 30)
-                    setallmubLAGaleCount(allmubLAGaleCount - 20)
-                    setallmubLAOriCount(allmubLAOriCount - 20)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && lightLanceUnbindState >= 1 && lightLanceUnbindState <= 4) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount - 144 - ((4 - lightLanceUnbindState) * 40));
+                setwbLALSilverMaskCountState(wbLALSilverMaskCount - 16 - ((4 - lightLanceUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 144 - ((4 - lightLanceUnbindState) * 40));
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount - 110 - ((4 - lightLanceUnbindState) * 30));
+                setwbLALGoldMaskCountState(wbLALGoldMaskCount - 10 - ((4 - lightLanceUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 110 - ((4 - lightLanceUnbindState) * 30));
+                setmubLALInsanityCountState(mubLALInsanityCount - 58);
+                setwbLALInsanityCountState(wbLALInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLALGaleCountState(mubLALGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLALSandCountState(mubLALSandCount - (4 - lightLanceUnbindState));
+                setwbLALSandCountState(wbLALSandCount - (4 - lightLanceUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightLanceUnbindState));
+                setmubLALOriCountState(mubLALOriCount - 24);
+                setwbLALOriCountState(wbLALOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLALRupeeCost(mubLALRupeeCost - 32 - ((4 - lightLanceUnbindState) * 2));
+                setwbLALRupeeCost(wbLALRupeeCost - 7.5 - ((4 - lightLanceUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - 32 - ((4 - lightLanceUnbindState) * 2));
+                setLightLanceUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && lightLanceUnbindState >= 5 && lightLanceUnbindState <= 8) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount - 80 - ((8 - lightLanceUnbindState) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 80 - ((8 - lightLanceUnbindState) * 16));
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount - 70 - ((8 - lightLanceUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70 - ((8 - lightLanceUnbindState) * 10));
+                setmubLALInsanityCountState(mubLALInsanityCount - 30 - ((8 - lightLanceUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - 30 - ((8 - lightLanceUnbindState) * 7));
+                setmubLALGaleCountState(mubLALGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLALOriCountState(mubLALOriCount - 20 - ((8 - lightLanceUnbindState) * 1));
+                setallmubLAOriCount(allmubLAOriCount - 20 - ((8 - lightLanceUnbindState) * 1));
+                setmubLALRupeeCost(mubLALRupeeCost - 2 - ((8 - lightLanceUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - 2 - ((8 - lightLanceUnbindState) * 7.5));
+                setLightLanceUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightLanceUnbindState <= 7 && lightLanceUnbindState >= 5) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount - ((event.target.value - lightLanceUnbindState) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightLanceUnbindState) * 16));
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount - ((event.target.value - lightLanceUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightLanceUnbindState) * 10));
+                setmubLALInsanityCountState(mubLALInsanityCount - ((event.target.value - lightLanceUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - ((event.target.value - lightLanceUnbindState) * 7));
+                setmubLALOriCountState(mubLALOriCount - (event.target.value - lightLanceUnbindState));
+                setallmubLAOriCount(allmubLAOriCount - (event.target.value - lightLanceUnbindState));
+                setmubLALRupeeCost(mubLALRupeeCost - ((event.target.value - lightLanceUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightLanceUnbindState) * 7.5));
+                setLightLanceUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightLanceUnbindState <= 4 && lightLanceUnbindState >= 0) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount - ((4 - lightLanceUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbLALSilverMaskCountState(wbLALSilverMaskCount - 16 - ((4 - lightLanceUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((4 - lightLanceUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount - ((4 - lightLanceUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbLALGoldMaskCountState(wbLALGoldMaskCount - 10 - ((4 - lightLanceUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((4 - lightLanceUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubLALInsanityCountState(mubLALInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbLALInsanityCountState(wbLALInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubLALSandCountState(mubLALSandCount - (4 - lightLanceUnbindState));
+                setwbLALSandCountState(wbLALSandCount - (4 - lightLanceUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightLanceUnbindState));
+                setmubLALOriCountState(mubLALOriCount - (-1 * (4 - event.target.value)));
+                setwbLALOriCountState(wbLALOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - (-1 * (4 - event.target.value)));
+                setmubLALRupeeCost(mubLALRupeeCost - ((4 - lightLanceUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbLALRupeeCost(wbLALRupeeCost - 7.5 - ((4 - lightLanceUnbindState) * 2))
+                setLightLanceUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && lightLanceUnbindState <= 3 && lightLanceUnbindState >= 0) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount - ((event.target.value - lightLanceUnbindState) * 40));
+                setwbLALSilverMaskCountState(wbLALSilverMaskCount - ((event.target.value - lightLanceUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightLanceUnbindState) * 40));
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount - ((event.target.value - lightLanceUnbindState) * 30));
+                setwbLALGoldMaskCountState(wbLALGoldMaskCount - ((event.target.value - lightLanceUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightLanceUnbindState) * 30));
+                setmubLALSandCountState(mubLALSandCount - (event.target.value - lightLanceUnbindState));
+                setwbLALSandCountState(wbLALSandCount - (event.target.value - lightLanceUnbindState));
+                setallmubLASandCount(allmubLASandCount - (event.target.value - lightLanceUnbindState));
+                setmubLALRupeeCost(mubLALRupeeCost - ((event.target.value - lightLanceUnbindState) * 2));
+                setwbLALRupeeCost(wbLALRupeeCost - ((event.target.value - lightLanceUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightLanceUnbindState) * 2));
+                setLightLanceUnbindState(event.target.value)
             }
         }
         else if (lightLanceUnbindState > event.target.value) {
-            if (lightLanceUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && lightLanceUnbindState == 9) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount + 304);
+                setwbLALSilverMaskCountState(wbLALSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 304);
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount + 230);
+                setwbLALGoldMaskCountState(wbLALGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 230);
+                setmubLALInsanityCountState(mubLALInsanityCount + 58);
+                setwbLALInsanityCountState(wbLALInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 58);
+                setmubLALGaleCountState(mubLALGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLALSandCountState(mubLALSandCount + 4);
+                setwbLALSandCountState(wbLALSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLALOriCountState(mubLALOriCount + 24);
+                setwbLALOriCountState(wbLALOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + 24);
+                setmubLALRupeeCost(mubLALRupeeCost + 40);
+                setwbLALRupeeCost(wbLALRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 40);
                 setLightLanceUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubLALSilverMaskCountState(mubLALSilverMaskCount + 40)
-                    setwbLALSilverMaskCountState(wbLALSilverMaskCount + 40)
-                    setmubLALGoldMaskCountState(mubLALGoldMaskCount + 30)
-                    setwbLALGoldMaskCountState(wbLALGoldMaskCount + 30)
-                    setmubLALSandCountState(mubLALSandCount + 1)
-                    setwbLALSandCountState(wbLALSandCount + 1)
-                    setmubLALRupeeCost(mubLALRupeeCost + 2)
-                    setwbLALRupeeCost(wbLALRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLASandCount(allmubLASandCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubLALSilverMaskCountState(mubLALSilverMaskCount + 16)
-                    setwbLALSilverMaskCountState(wbLALSilverMaskCount + 16)
-                    setmubLALGoldMaskCountState(mubLALGoldMaskCount + 10)
-                    setwbLALGoldMaskCountState(wbLALGoldMaskCount + 10)
-                    setmubLALInsanityCountState(mubLALInsanityCount + 7)
-                    setwbLALInsanityCountState(wbLALInsanityCount + 7)
-                    setmubLALOriCountState(mubLALOriCount + 1)
-                    setwbLALOriCountState(wbLALOriCount + 1)
-                    setmubLALRupeeCost(mubLALRupeeCost + 7.5)
-                    setwbLALRupeeCost(wbLALRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubLALSilverMaskCountState(mubLALSilverMaskCount + 16)
-                    setmubLALGoldMaskCountState(mubLALGoldMaskCount + 10)
-                    setmubLALInsanityCountState(mubLALInsanityCount + 7)
-                    setmubLALOriCountState(mubLALOriCount + 1)
-                    setmubLALRupeeCost(mubLALRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubLALSilverMaskCountState(mubLALSilverMaskCount + 80)
-                    setmubLALGoldMaskCountState(mubLALGoldMaskCount + 70)
-                    setmubLALInsanityCountState(mubLALInsanityCount + 30)
-                    setmubLALGaleCountState(mubLALGaleCount + 20)
-                    setmubLALOriCountState(mubLALOriCount + 20)
-                    setmubLALRupeeCost(mubLALRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 30)
-                    setallmubLAGaleCount(allmubLAGaleCount + 20)
-                    setallmubLAOriCount(allmubLAOriCount + 20)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && lightLanceUnbindState >= 5 && lightLanceUnbindState <= 8) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount + 160 + ((-1 * (4 - lightLanceUnbindState)) * 16));
+                setwbLALSilverMaskCountState(wbLALSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 160 + ((-1 * (4 - lightLanceUnbindState)) * 16));
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount + 120 + ((-1 * (4 - lightLanceUnbindState)) * 10));
+                setwbLALGoldMaskCountState(wbLALGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 120 + ((-1 * (4 - lightLanceUnbindState)) * 10));
+                setmubLALInsanityCountState(mubLALInsanityCount + ((-1 * (4 - lightLanceUnbindState)) * 7));
+                setwbLALInsanityCountState(wbLALInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((-1 * (4 - lightLanceUnbindState)) * 7));
+                setmubLALSandCountState(mubLALSandCount + 4);
+                setwbLALSandCountState(wbLALSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLALOriCountState(mubLALOriCount + (-1 * (4 - lightLanceUnbindState)));
+                setwbLALOriCountState(wbLALOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + (-1 * (4 - lightLanceUnbindState)));
+                setmubLALRupeeCost(mubLALRupeeCost + 8 + (-1 * (4 - lightLanceUnbindState) * 7.5));
+                setwbLALRupeeCost(wbLALRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 8 + (-1 * (4 - lightLanceUnbindState) * 7.5));
+                setLightLanceUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && lightLanceUnbindState >= 1 && lightLanceUnbindState <= 4) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount + (lightLanceUnbindState * 40));
+                setwbLALSilverMaskCountState(wbLALSilverMaskCount + (lightLanceUnbindState * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + (lightLanceUnbindState * 40));
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount + (lightLanceUnbindState * 30));
+                setwbLALGoldMaskCountState(wbLALGoldMaskCount + (lightLanceUnbindState * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + (lightLanceUnbindState * 30));
+                setmubLALSandCountState(mubLALSandCount + (lightLanceUnbindState * 1));
+                setwbLALSandCountState(wbLALSandCount + (lightLanceUnbindState * 1));
+                setallmubLASandCount(allmubLASandCount + (lightLanceUnbindState * 1));
+                setmubLALRupeeCost(mubLALRupeeCost + (lightLanceUnbindState * 2));
+                setwbLALRupeeCost(wbLALRupeeCost + (lightLanceUnbindState * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + (lightLanceUnbindState * 2));
+                setLightLanceUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightLanceUnbindState >= 1 && lightLanceUnbindState <= 4) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount + ((lightLanceUnbindState - event.target.value) * 40))
+                setwbLALSilverMaskCountState(wbLALSilverMaskCount + ((lightLanceUnbindState - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightLanceUnbindState - event.target.value) * 40));
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount + ((lightLanceUnbindState - event.target.value) * 30));
+                setwbLALGoldMaskCountState(wbLALGoldMaskCount + ((lightLanceUnbindState - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightLanceUnbindState - event.target.value) * 30));
+                setmubLALSandCountState(mubLALSandCount + (lightLanceUnbindState - event.target.value));
+                setwbLALSandCountState(wbLALSandCount + (lightLanceUnbindState - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (lightLanceUnbindState - event.target.value));
+                setmubLALRupeeCost(mubLALRupeeCost + ((lightLanceUnbindState - event.target.value) * 2));
+                setwbLALRupeeCost(wbLALRupeeCost + ((lightLanceUnbindState - event.target.value) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightLanceUnbindState - event.target.value) * 2))
+                setLightLanceUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightLanceUnbindState >= 5 && lightLanceUnbindState <= 8) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount + ((lightLanceUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbLALSilverMaskCountState(wbLALSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightLanceUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount + ((lightLanceUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbLALGoldMaskCountState(wbLALGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightLanceUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubLALInsanityCountState(mubLALInsanityCount + ((lightLanceUnbindState - 4) * 7));
+                setwbLALInsanityCountState(wbLALInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightLanceUnbindState - 4) * 7));
+                setmubLALSandCountState(mubLALSandCount + (4 - event.target.value));
+                setwbLALSandCountState(wbLALSandCount + (4 - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (4 - event.target.value));
+                setmubLALOriCountState(mubLALOriCount + (lightLanceUnbindState - 4));
+                setwbLALOriCountState(wbLALOriCount + (lightLanceUnbindState - 4));
+                setallmubLAOriCount(allmubLAOriCount + (lightLanceUnbindState - 4));
+                setmubLALRupeeCost(mubLALRupeeCost + ((lightLanceUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbLALRupeeCost(wbLALRupeeCost + 7.5 + ((lightLanceUnbindState - 4) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightLanceUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setLightLanceUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightLanceUnbindState == 9) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubLALInsanityCountState(mubLALInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubLALGaleCountState(mubLALGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLALOriCountState(mubLALOriCount + 20 + (8 - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + 20 + (8 - event.target.value));
+                setmubLALRupeeCost(mubLALRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setLightLanceUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightLanceUnbindState >= 5 && lightLanceUnbindState <= 8) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount + ((lightLanceUnbindState - event.target.value) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightLanceUnbindState - event.target.value) * 16));
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount + ((lightLanceUnbindState - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightLanceUnbindState - event.target.value) * 10));
+                setmubLALInsanityCountState(mubLALInsanityCount + ((lightLanceUnbindState - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightLanceUnbindState - event.target.value) * 7));
+                setmubLALOriCountState(mubLALOriCount + (lightLanceUnbindState - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + (lightLanceUnbindState - event.target.value));
+                setmubLALRupeeCost(mubLALRupeeCost + ((lightLanceUnbindState - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightLanceUnbindState - event.target.value) * 7.5));
+                setLightLanceUnbindState(event.target.value)
             }
         }
     }
@@ -1752,75 +2476,116 @@ export default function LightAgitoWeapons() {
     function handleLightLanceRefineIncrement(event) {
         setLightWeaponChoiceState("lance");
         if (lightLanceRefineState < event.target.value) {
-            if (event.target.value - lightLanceRefineState == 1) {
+            if (lightLanceRefineState == 0 && event.target.value == 1) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount - 16);
+                setwbLALSilverMaskCountState(wbLALSilverMaskCount - 16);
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount - 10);
+                setwbLALGoldMaskCountState(wbLALGoldMaskCount - 10);
+                setmubLALInsanityCountState(mubLALInsanityCount - 7);
+                setwbLALInsanityCountState(wbLALInsanityCount - 7);
+                setmubLALOriCountState(mubLALOriCount - 1);
+                setwbLALOriCountState(wbLALOriCount - 1);
+                setmubLALRupeeCost(mubLALRupeeCost - 2.5);
+                setwbLALRupeeCost(wbLALRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 7)
+                setallmubLAOriCount(allmubLAOriCount - 1)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
                 setLightLanceRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubLALSilverMaskCountState(mubLALSilverMaskCount - 16);
-                    setwbLALSilverMaskCountState(wbLALSilverMaskCount - 16);
-                    setmubLALGoldMaskCountState(mubLALGoldMaskCount - 10);
-                    setwbLALGoldMaskCountState(wbLALGoldMaskCount - 10);
-                    setmubLALInsanityCountState(mubLALInsanityCount - 7);
-                    setwbLALInsanityCountState(wbLALInsanityCount - 7);
-                    setmubLALOriCountState(mubLALOriCount - 1);
-                    setwbLALOriCountState(wbLALOriCount - 1);
-                    setmubLALRupeeCost(mubLALRupeeCost - 2.5);
-                    setwbLALRupeeCost(wbLALRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubLALSilverMaskCountState(mubLALSilverMaskCount - 40)
-                    setmubLALGoldMaskCountState(mubLALGoldMaskCount - 30);
-                    setmubLALInsanityCountState(mubLALInsanityCount - 10);
-                    setmubLALGaleCountState(mubLALGaleCount - 10);
-                    setmubLALOriCountState(mubLALOriCount - 10);
-                    setmubLALRupeeCost(mubLALRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 10)
-                    setallmubLAGaleCount(allmubLAGaleCount - 10)
-                    setallmubLAOriCount(allmubLAOriCount - 10)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
+            }
+            else if (lightLanceRefineState == 0 && event.target.value == 2) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount - 56);
+                setwbLALSilverMaskCountState(wbLALSilverMaskCount - 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 56);
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount - 40);
+                setwbLALGoldMaskCountState(wbLALGoldMaskCount - 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 40);
+                setmubLALInsanityCountState(mubLALInsanityCount - 17);
+                setwbLALInsanityCountState(wbLALInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 17);
+                setmubLALGaleCountState(mubLALGaleCount - 10);
+                setallmubLAGaleCount(allmubLAGaleCount - 10);
+                setmubLALOriCountState(mubLALOriCount - 11);
+                setwbLALOriCountState(wbLALOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 11);
+                setmubLALRupeeCost(mubLALRupeeCost - 5);
+                setwbLALRupeeCost(wbLALRupeeCost - 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 5);
+                setLightLanceRefineState(event.target.value);
+            }
+            else if (lightLanceRefineState == 1 && event.target.value == 2) {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount - 40)
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount - 30);
+                setmubLALInsanityCountState(mubLALInsanityCount - 10);
+                setmubLALGaleCountState(mubLALGaleCount - 10);
+                setmubLALOriCountState(mubLALOriCount - 10);
+                setmubLALRupeeCost(mubLALRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 10)
+                setallmubLAGaleCount(allmubLAGaleCount - 10)
+                setallmubLAOriCount(allmubLAOriCount - 10)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
+                setLightLanceRefineState(event.target.value);
             }
         }
         else if (lightLanceRefineState > event.target.value) {
-            if (lightLanceRefineState - event.target.value == 1) {
-                setLightLanceRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubLALSilverMaskCountState(mubLALSilverMaskCount + 16);
-                    setwbLALSilverMaskCountState(wbLALSilverMaskCount + 16);
-                    setmubLALGoldMaskCountState(mubLALGoldMaskCount + 10);
-                    setwbLALGoldMaskCountState(wbLALGoldMaskCount + 10);
-                    setmubLALInsanityCountState(mubLALInsanityCount + 7);
-                    setwbLALInsanityCountState(wbLALInsanityCount + 7);
-                    setmubLALOriCountState(mubLALOriCount + 1);
-                    setwbLALOriCountState(wbLALOriCount + 1);
-                    setmubLALRupeeCost(mubLALRupeeCost + 2.5);
-                    setwbLALRupeeCost(wbLALRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubLALSilverMaskCountState(mubLALSilverMaskCount + 40)
-                    setmubLALGoldMaskCountState(mubLALGoldMaskCount + 30);
-                    setmubLALInsanityCountState(mubLALInsanityCount + 10);
-                    setmubLALGaleCountState(mubLALGaleCount + 10);
-                    setmubLALOriCountState(mubLALOriCount + 10);
-                    setmubLALRupeeCost(mubLALRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 10)
-                    setallmubLAGaleCount(allmubLAGaleCount + 10)
-                    setallmubLAOriCount(allmubLAOriCount + 10)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
+            if (lightLanceRefineState == 2 && event.target.value == 1) 
+            {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount + 40)
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount + 30);
+                setmubLALInsanityCountState(mubLALInsanityCount + 10);
+                setmubLALGaleCountState(mubLALGaleCount + 10);
+                setmubLALOriCountState(mubLALOriCount + 10);
+                setmubLALRupeeCost(mubLALRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 10)
+                setallmubLAGaleCount(allmubLAGaleCount + 10)
+                setallmubLAOriCount(allmubLAOriCount + 10)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightLanceRefineState(event.target.value);
+            }
+            else if (lightLanceRefineState == 2 && event.target.value == 0) 
+            {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount + 56);
+                setwbLALSilverMaskCountState(wbLALSilverMaskCount + 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 56);
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount + 40);
+                setwbLALGoldMaskCountState(wbLALGoldMaskCount + 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 40);
+                setmubLALInsanityCountState(mubLALInsanityCount + 17);
+                setwbLALInsanityCountState(wbLALInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 17);
+                setmubLALGaleCountState(mubLALGaleCount + 10);
+                setallmubLAGaleCount(allmubLAGaleCount + 10);
+                setmubLALOriCountState(mubLALOriCount + 11);
+                setwbLALOriCountState(wbLALOriCount + 1); 
+                setallmubLAOriCount(allmubLAOriCount + 11);
+                setmubLALRupeeCost(mubLALRupeeCost + 5);
+                setwbLALRupeeCost(wbLALRupeeCost + 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 5)
+                setLightLanceRefineState(event.target.value);
+            }
+            else if (lightLanceRefineState == 1 && event.target.value == 0) 
+            {
+                setmubLALSilverMaskCountState(mubLALSilverMaskCount + 16);
+                setwbLALSilverMaskCountState(wbLALSilverMaskCount + 16);
+                setmubLALGoldMaskCountState(mubLALGoldMaskCount + 10);
+                setwbLALGoldMaskCountState(wbLALGoldMaskCount + 10);
+                setmubLALInsanityCountState(mubLALInsanityCount + 7);
+                setwbLALInsanityCountState(wbLALInsanityCount + 7);
+                setmubLALOriCountState(mubLALOriCount + 1);
+                setwbLALOriCountState(wbLALOriCount + 1);
+                setmubLALRupeeCost(mubLALRupeeCost + 2.5);
+                setwbLALRupeeCost(wbLALRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 7)
+                setallmubLAOriCount(allmubLAOriCount + 1)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightLanceRefineState(event.target.value);
             }
         }
     }
@@ -1929,129 +2694,241 @@ export default function LightAgitoWeapons() {
     }
 
     function handleLightWandUnbindIncrement(event) {
-        setLightWeaponChoiceState("wand")
+        setLightWeaponChoiceState("wand");
         if (lightWandUnbindState < event.target.value) {
-            if (event.target.value - lightWandUnbindState == 1) {
+            if (event.target.value == 9 && lightWandUnbindState == 0) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - 304);
+                setwbLAWSilverMaskCountState(wbLAWSilverMaskCount - 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 304);
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - 230);
+                setwbLAWGoldMaskCountState(wbLAWGoldMaskCount - 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 230);
+                setmubLAWInsanityCountState(mubLAWInsanityCount - 58);
+                setwbLAWInsanityCountState(wbLAWInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLAWGaleCountState(mubLAWGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLAWSandCountState(mubLAWSandCount - 4);
+                setwbLAWSandCountState(wbLAWSandCount - 4);
+                setallmubLASandCount(allmubLASandCount - 4);
+                setmubLAWOriCountState(mubLAWOriCount - 24);
+                setwbLAWOriCountState(wbLAWOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLAWRupeeCost(mubLAWRupeeCost - 40);
+                setwbLAWRupeeCost(wbLAWRupeeCost - 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 40);
                 setLightWandUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - 40)
-                    setwbLAWSilverMaskCountState(wbLAWSilverMaskCount - 40)
-                    setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - 30)
-                    setwbLAWGoldMaskCountState(wbLAWGoldMaskCount - 30)
-                    setmubLAWSandCountState(mubLAWSandCount - 1)
-                    setwbLAWSandCountState(wbLAWSandCount - 1)
-                    setmubLAWRupeeCost(mubLAWRupeeCost - 2)
-                    setwbLAWRupeeCost(wbLAWRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLASandCount(allmubLASandCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - 16)
-                    setwbLAWSilverMaskCountState(wbLAWSilverMaskCount - 16)
-                    setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - 10)
-                    setwbLAWGoldMaskCountState(wbLAWGoldMaskCount - 10)
-                    setmubLAWInsanityCountState(mubLAWInsanityCount - 7)
-                    setwbLAWInsanityCountState(wbLAWInsanityCount - 7)
-                    setmubLAWOriCountState(mubLAWOriCount - 1)
-                    setwbLAWOriCountState(wbLAWOriCount - 1)
-                    setmubLAWRupeeCost(mubLAWRupeeCost - 7.5)
-                    setwbLAWRupeeCost(wbLAWRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - 16)
-                    setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - 10)
-                    setmubLAWInsanityCountState(mubLAWInsanityCount - 7)
-                    setmubLAWOriCountState(mubLAWOriCount - 1)
-                    setmubLAWRupeeCost(mubLAWRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - 80)
-                    setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - 70)
-                    setmubLAWInsanityCountState(mubLAWInsanityCount - 30)
-                    setmubLAWGaleCountState(mubLAWGaleCount - 20)
-                    setmubLAWOriCountState(mubLAWOriCount - 20)
-                    setmubLAWRupeeCost(mubLAWRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 30)
-                    setallmubLAGaleCount(allmubLAGaleCount - 20)
-                    setallmubLAOriCount(allmubLAOriCount - 20)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && lightWandUnbindState >= 1 && lightWandUnbindState <= 4) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - 144 - ((4 - lightWandUnbindState) * 40));
+                setwbLAWSilverMaskCountState(wbLAWSilverMaskCount - 16 - ((4 - lightWandUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 144 - ((4 - lightWandUnbindState) * 40));
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - 110 - ((4 - lightWandUnbindState) * 30));
+                setwbLAWGoldMaskCountState(wbLAWGoldMaskCount - 10 - ((4 - lightWandUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 110 - ((4 - lightWandUnbindState) * 30));
+                setmubLAWInsanityCountState(mubLAWInsanityCount - 58);
+                setwbLAWInsanityCountState(wbLAWInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLAWGaleCountState(mubLAWGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLAWSandCountState(mubLAWSandCount - (4 - lightWandUnbindState));
+                setwbLAWSandCountState(wbLAWSandCount - (4 - lightWandUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightWandUnbindState));
+                setmubLAWOriCountState(mubLAWOriCount - 24);
+                setwbLAWOriCountState(wbLAWOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLAWRupeeCost(mubLAWRupeeCost - 32 - ((4 - lightWandUnbindState) * 2));
+                setwbLAWRupeeCost(wbLAWRupeeCost - 7.5 - ((4 - lightWandUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - 32 - ((4 - lightWandUnbindState) * 2));
+                setLightWandUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && lightWandUnbindState >= 5 && lightWandUnbindState <= 8) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - 80 - ((8 - lightWandUnbindState) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 80 - ((8 - lightWandUnbindState) * 16));
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - 70 - ((8 - lightWandUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70 - ((8 - lightWandUnbindState) * 10));
+                setmubLAWInsanityCountState(mubLAWInsanityCount - 30 - ((8 - lightWandUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - 30 - ((8 - lightWandUnbindState) * 7));
+                setmubLAWGaleCountState(mubLAWGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLAWOriCountState(mubLAWOriCount - 20 - ((8 - lightWandUnbindState) * 1));
+                setallmubLAOriCount(allmubLAOriCount - 20 - ((8 - lightWandUnbindState) * 1));
+                setmubLAWRupeeCost(mubLAWRupeeCost - 2 - ((8 - lightWandUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - 2 - ((8 - lightWandUnbindState) * 7.5));
+                setLightWandUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightWandUnbindState <= 7 && lightWandUnbindState >= 5) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - ((event.target.value - lightWandUnbindState) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightWandUnbindState) * 16));
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - ((event.target.value - lightWandUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightWandUnbindState) * 10));
+                setmubLAWInsanityCountState(mubLAWInsanityCount - ((event.target.value - lightWandUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - ((event.target.value - lightWandUnbindState) * 7));
+                setmubLAWOriCountState(mubLAWOriCount - (event.target.value - lightWandUnbindState));
+                setallmubLAOriCount(allmubLAOriCount - (event.target.value - lightWandUnbindState));
+                setmubLAWRupeeCost(mubLAWRupeeCost - ((event.target.value - lightWandUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightWandUnbindState) * 7.5));
+                setLightWandUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightWandUnbindState <= 4 && lightWandUnbindState >= 0) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - ((4 - lightWandUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbLAWSilverMaskCountState(wbLAWSilverMaskCount - 16 - ((4 - lightWandUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((4 - lightWandUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - ((4 - lightWandUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbLAWGoldMaskCountState(wbLAWGoldMaskCount - 10 - ((4 - lightWandUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((4 - lightWandUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubLAWInsanityCountState(mubLAWInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbLAWInsanityCountState(wbLAWInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubLAWSandCountState(mubLAWSandCount - (4 - lightWandUnbindState));
+                setwbLAWSandCountState(wbLAWSandCount - (4 - lightWandUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightWandUnbindState));
+                setmubLAWOriCountState(mubLAWOriCount - (-1 * (4 - event.target.value)));
+                setwbLAWOriCountState(wbLAWOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - (-1 * (4 - event.target.value)));
+                setmubLAWRupeeCost(mubLAWRupeeCost - ((4 - lightWandUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbLAWRupeeCost(wbLAWRupeeCost - 7.5 - ((4 - lightWandUnbindState) * 2))
+                setLightWandUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && lightWandUnbindState <= 3 && lightWandUnbindState >= 0) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - ((event.target.value - lightWandUnbindState) * 40));
+                setwbLAWSilverMaskCountState(wbLAWSilverMaskCount - ((event.target.value - lightWandUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightWandUnbindState) * 40));
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - ((event.target.value - lightWandUnbindState) * 30));
+                setwbLAWGoldMaskCountState(wbLAWGoldMaskCount - ((event.target.value - lightWandUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightWandUnbindState) * 30));
+                setmubLAWSandCountState(mubLAWSandCount - (event.target.value - lightWandUnbindState));
+                setwbLAWSandCountState(wbLAWSandCount - (event.target.value - lightWandUnbindState));
+                setallmubLASandCount(allmubLASandCount - (event.target.value - lightWandUnbindState));
+                setmubLAWRupeeCost(mubLAWRupeeCost - ((event.target.value - lightWandUnbindState) * 2));
+                setwbLAWRupeeCost(wbLAWRupeeCost - ((event.target.value - lightWandUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightWandUnbindState) * 2));
+                setLightWandUnbindState(event.target.value)
             }
         }
         else if (lightWandUnbindState > event.target.value) {
-            if (lightWandUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && lightWandUnbindState == 9) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + 304);
+                setwbLAWSilverMaskCountState(wbLAWSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 304);
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + 230);
+                setwbLAWGoldMaskCountState(wbLAWGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 230);
+                setmubLAWInsanityCountState(mubLAWInsanityCount + 58);
+                setwbLAWInsanityCountState(wbLAWInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 58);
+                setmubLAWGaleCountState(mubLAWGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLAWSandCountState(mubLAWSandCount + 4);
+                setwbLAWSandCountState(wbLAWSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLAWOriCountState(mubLAWOriCount + 24);
+                setwbLAWOriCountState(wbLAWOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + 24);
+                setmubLAWRupeeCost(mubLAWRupeeCost + 40);
+                setwbLAWRupeeCost(wbLAWRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 40);
                 setLightWandUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + 40)
-                    setwbLAWSilverMaskCountState(wbLAWSilverMaskCount + 40)
-                    setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + 30)
-                    setwbLAWGoldMaskCountState(wbLAWGoldMaskCount + 30)
-                    setmubLAWSandCountState(mubLAWSandCount + 1)
-                    setwbLAWSandCountState(wbLAWSandCount + 1)
-                    setmubLAWRupeeCost(mubLAWRupeeCost + 2)
-                    setwbLAWRupeeCost(wbLAWRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLASandCount(allmubLASandCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + 16)
-                    setwbLAWSilverMaskCountState(wbLAWSilverMaskCount + 16)
-                    setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + 10)
-                    setwbLAWGoldMaskCountState(wbLAWGoldMaskCount + 10)
-                    setmubLAWInsanityCountState(mubLAWInsanityCount + 7)
-                    setwbLAWInsanityCountState(wbLAWInsanityCount + 7)
-                    setmubLAWOriCountState(mubLAWOriCount + 1)
-                    setwbLAWOriCountState(wbLAWOriCount + 1)
-                    setmubLAWRupeeCost(mubLAWRupeeCost + 7.5)
-                    setwbLAWRupeeCost(wbLAWRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + 16)
-                    setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + 10)
-                    setmubLAWInsanityCountState(mubLAWInsanityCount + 7)
-                    setmubLAWOriCountState(mubLAWOriCount + 1)
-                    setmubLAWRupeeCost(mubLAWRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + 80)
-                    setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + 70)
-                    setmubLAWInsanityCountState(mubLAWInsanityCount + 30)
-                    setmubLAWGaleCountState(mubLAWGaleCount + 20)
-                    setmubLAWOriCountState(mubLAWOriCount + 20)
-                    setmubLAWRupeeCost(mubLAWRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 30)
-                    setallmubLAGaleCount(allmubLAGaleCount + 20)
-                    setallmubLAOriCount(allmubLAOriCount + 20)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && lightWandUnbindState >= 5 && lightWandUnbindState <= 8) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + 160 + ((-1 * (4 - lightWandUnbindState)) * 16));
+                setwbLAWSilverMaskCountState(wbLAWSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 160 + ((-1 * (4 - lightWandUnbindState)) * 16));
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + 120 + ((-1 * (4 - lightWandUnbindState)) * 10));
+                setwbLAWGoldMaskCountState(wbLAWGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 120 + ((-1 * (4 - lightWandUnbindState)) * 10));
+                setmubLAWInsanityCountState(mubLAWInsanityCount + ((-1 * (4 - lightWandUnbindState)) * 7));
+                setwbLAWInsanityCountState(wbLAWInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((-1 * (4 - lightWandUnbindState)) * 7));
+                setmubLAWSandCountState(mubLAWSandCount + 4);
+                setwbLAWSandCountState(wbLAWSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLAWOriCountState(mubLAWOriCount + (-1 * (4 - lightWandUnbindState)));
+                setwbLAWOriCountState(wbLAWOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + (-1 * (4 - lightWandUnbindState)));
+                setmubLAWRupeeCost(mubLAWRupeeCost + 8 + (-1 * (4 - lightWandUnbindState) * 7.5));
+                setwbLAWRupeeCost(wbLAWRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 8 + (-1 * (4 - lightWandUnbindState) * 7.5));
+                setLightWandUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && lightWandUnbindState >= 1 && lightWandUnbindState <= 4) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + (lightWandUnbindState * 40));
+                setwbLAWSilverMaskCountState(wbLAWSilverMaskCount + (lightWandUnbindState * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + (lightWandUnbindState * 40));
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + (lightWandUnbindState * 30));
+                setwbLAWGoldMaskCountState(wbLAWGoldMaskCount + (lightWandUnbindState * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + (lightWandUnbindState * 30));
+                setmubLAWSandCountState(mubLAWSandCount + (lightWandUnbindState * 1));
+                setwbLAWSandCountState(wbLAWSandCount + (lightWandUnbindState * 1));
+                setallmubLASandCount(allmubLASandCount + (lightWandUnbindState * 1));
+                setmubLAWRupeeCost(mubLAWRupeeCost + (lightWandUnbindState * 2));
+                setwbLAWRupeeCost(wbLAWRupeeCost + (lightWandUnbindState * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + (lightWandUnbindState * 2));
+                setLightWandUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightWandUnbindState >= 1 && lightWandUnbindState <= 4) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + ((lightWandUnbindState - event.target.value) * 40))
+                setwbLAWSilverMaskCountState(wbLAWSilverMaskCount + ((lightWandUnbindState - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightWandUnbindState - event.target.value) * 40));
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + ((lightWandUnbindState - event.target.value) * 30));
+                setwbLAWGoldMaskCountState(wbLAWGoldMaskCount + ((lightWandUnbindState - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightWandUnbindState - event.target.value) * 30));
+                setmubLAWSandCountState(mubLAWSandCount + (lightWandUnbindState - event.target.value));
+                setwbLAWSandCountState(wbLAWSandCount + (lightWandUnbindState - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (lightWandUnbindState - event.target.value));
+                setmubLAWRupeeCost(mubLAWRupeeCost + ((lightWandUnbindState - event.target.value) * 2));
+                setwbLAWRupeeCost(wbLAWRupeeCost + ((lightWandUnbindState - event.target.value) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightWandUnbindState - event.target.value) * 2))
+                setLightWandUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightWandUnbindState >= 5 && lightWandUnbindState <= 8) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + ((lightWandUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbLAWSilverMaskCountState(wbLAWSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightWandUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + ((lightWandUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbLAWGoldMaskCountState(wbLAWGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightWandUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubLAWInsanityCountState(mubLAWInsanityCount + ((lightWandUnbindState - 4) * 7));
+                setwbLAWInsanityCountState(wbLAWInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightWandUnbindState - 4) * 7));
+                setmubLAWSandCountState(mubLAWSandCount + (4 - event.target.value));
+                setwbLAWSandCountState(wbLAWSandCount + (4 - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (4 - event.target.value));
+                setmubLAWOriCountState(mubLAWOriCount + (lightWandUnbindState - 4));
+                setwbLAWOriCountState(wbLAWOriCount + (lightWandUnbindState - 4));
+                setallmubLAOriCount(allmubLAOriCount + (lightWandUnbindState - 4));
+                setmubLAWRupeeCost(mubLAWRupeeCost + ((lightWandUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbLAWRupeeCost(wbLAWRupeeCost + 7.5 + ((lightWandUnbindState - 4) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightWandUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setLightWandUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightWandUnbindState == 9) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubLAWInsanityCountState(mubLAWInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubLAWGaleCountState(mubLAWGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLAWOriCountState(mubLAWOriCount + 20 + (8 - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + 20 + (8 - event.target.value));
+                setmubLAWRupeeCost(mubLAWRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setLightWandUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightWandUnbindState >= 5 && lightWandUnbindState <= 8) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + ((lightWandUnbindState - event.target.value) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightWandUnbindState - event.target.value) * 16));
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + ((lightWandUnbindState - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightWandUnbindState - event.target.value) * 10));
+                setmubLAWInsanityCountState(mubLAWInsanityCount + ((lightWandUnbindState - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightWandUnbindState - event.target.value) * 7));
+                setmubLAWOriCountState(mubLAWOriCount + (lightWandUnbindState - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + (lightWandUnbindState - event.target.value));
+                setmubLAWRupeeCost(mubLAWRupeeCost + ((lightWandUnbindState - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightWandUnbindState - event.target.value) * 7.5));
+                setLightWandUnbindState(event.target.value)
             }
         }
     }
@@ -2059,75 +2936,116 @@ export default function LightAgitoWeapons() {
     function handleLightWandRefineIncrement(event) {
         setLightWeaponChoiceState("wand");
         if (lightWandRefineState < event.target.value) {
-            if (event.target.value - lightWandRefineState == 1) {
+            if (lightWandRefineState == 0 && event.target.value == 1) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - 16);
+                setwbLAWSilverMaskCountState(wbLAWSilverMaskCount - 16);
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - 10);
+                setwbLAWGoldMaskCountState(wbLAWGoldMaskCount - 10);
+                setmubLAWInsanityCountState(mubLAWInsanityCount - 7);
+                setwbLAWInsanityCountState(wbLAWInsanityCount - 7);
+                setmubLAWOriCountState(mubLAWOriCount - 1);
+                setwbLAWOriCountState(wbLAWOriCount - 1);
+                setmubLAWRupeeCost(mubLAWRupeeCost - 2.5);
+                setwbLAWRupeeCost(wbLAWRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 7)
+                setallmubLAOriCount(allmubLAOriCount - 1)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
                 setLightWandRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - 16);
-                    setwbLAWSilverMaskCountState(wbLAWSilverMaskCount - 16);
-                    setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - 10);
-                    setwbLAWGoldMaskCountState(wbLAWGoldMaskCount - 10);
-                    setmubLAWInsanityCountState(mubLAWInsanityCount - 7);
-                    setwbLAWInsanityCountState(wbLAWInsanityCount - 7);
-                    setmubLAWOriCountState(mubLAWOriCount - 1);
-                    setwbLAWOriCountState(wbLAWOriCount - 1);
-                    setmubLAWRupeeCost(mubLAWRupeeCost - 2.5);
-                    setwbLAWRupeeCost(wbLAWRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - 40)
-                    setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - 30);
-                    setmubLAWInsanityCountState(mubLAWInsanityCount - 10);
-                    setmubLAWGaleCountState(mubLAWGaleCount - 10);
-                    setmubLAWOriCountState(mubLAWOriCount - 10);
-                    setmubLAWRupeeCost(mubLAWRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 10)
-                    setallmubLAGaleCount(allmubLAGaleCount - 10)
-                    setallmubLAOriCount(allmubLAOriCount - 10)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
+            }
+            else if (lightWandRefineState == 0 && event.target.value == 2) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - 56);
+                setwbLAWSilverMaskCountState(wbLAWSilverMaskCount - 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 56);
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - 40);
+                setwbLAWGoldMaskCountState(wbLAWGoldMaskCount - 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 40);
+                setmubLAWInsanityCountState(mubLAWInsanityCount - 17);
+                setwbLAWInsanityCountState(wbLAWInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 17);
+                setmubLAWGaleCountState(mubLAWGaleCount - 10);
+                setallmubLAGaleCount(allmubLAGaleCount - 10);
+                setmubLAWOriCountState(mubLAWOriCount - 11);
+                setwbLAWOriCountState(wbLAWOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 11);
+                setmubLAWRupeeCost(mubLAWRupeeCost - 5);
+                setwbLAWRupeeCost(wbLAWRupeeCost - 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 5);
+                setLightWandRefineState(event.target.value);
+            }
+            else if (lightWandRefineState == 1 && event.target.value == 2) {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount - 40)
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount - 30);
+                setmubLAWInsanityCountState(mubLAWInsanityCount - 10);
+                setmubLAWGaleCountState(mubLAWGaleCount - 10);
+                setmubLAWOriCountState(mubLAWOriCount - 10);
+                setmubLAWRupeeCost(mubLAWRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 10)
+                setallmubLAGaleCount(allmubLAGaleCount - 10)
+                setallmubLAOriCount(allmubLAOriCount - 10)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
+                setLightWandRefineState(event.target.value);
             }
         }
         else if (lightWandRefineState > event.target.value) {
-            if (lightWandRefineState - event.target.value == 1) {
-                setLightWandRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + 16);
-                    setwbLAWSilverMaskCountState(wbLAWSilverMaskCount + 16);
-                    setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + 10);
-                    setwbLAWGoldMaskCountState(wbLAWGoldMaskCount + 10);
-                    setmubLAWInsanityCountState(mubLAWInsanityCount + 7);
-                    setwbLAWInsanityCountState(wbLAWInsanityCount + 7);
-                    setmubLAWOriCountState(mubLAWOriCount + 1);
-                    setwbLAWOriCountState(wbLAWOriCount + 1);
-                    setmubLAWRupeeCost(mubLAWRupeeCost + 2.5);
-                    setwbLAWRupeeCost(wbLAWRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + 40)
-                    setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + 30);
-                    setmubLAWInsanityCountState(mubLAWInsanityCount + 10);
-                    setmubLAWGaleCountState(mubLAWGaleCount + 10);
-                    setmubLAWOriCountState(mubLAWOriCount + 10);
-                    setmubLAWRupeeCost(mubLAWRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 10)
-                    setallmubLAGaleCount(allmubLAGaleCount + 10)
-                    setallmubLAOriCount(allmubLAOriCount + 10)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
+            if (lightWandRefineState == 2 && event.target.value == 1) 
+            {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + 40)
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + 30);
+                setmubLAWInsanityCountState(mubLAWInsanityCount + 10);
+                setmubLAWGaleCountState(mubLAWGaleCount + 10);
+                setmubLAWOriCountState(mubLAWOriCount + 10);
+                setmubLAWRupeeCost(mubLAWRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 10)
+                setallmubLAGaleCount(allmubLAGaleCount + 10)
+                setallmubLAOriCount(allmubLAOriCount + 10)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightWandRefineState(event.target.value);
+            }
+            else if (lightWandRefineState == 2 && event.target.value == 0) 
+            {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + 56);
+                setwbLAWSilverMaskCountState(wbLAWSilverMaskCount + 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 56);
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + 40);
+                setwbLAWGoldMaskCountState(wbLAWGoldMaskCount + 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 40);
+                setmubLAWInsanityCountState(mubLAWInsanityCount + 17);
+                setwbLAWInsanityCountState(wbLAWInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 17);
+                setmubLAWGaleCountState(mubLAWGaleCount + 10);
+                setallmubLAGaleCount(allmubLAGaleCount + 10);
+                setmubLAWOriCountState(mubLAWOriCount + 11);
+                setwbLAWOriCountState(wbLAWOriCount + 1); 
+                setallmubLAOriCount(allmubLAOriCount + 11);
+                setmubLAWRupeeCost(mubLAWRupeeCost + 5);
+                setwbLAWRupeeCost(wbLAWRupeeCost + 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 5)
+                setLightWandRefineState(event.target.value);
+            }
+            else if (lightWandRefineState == 1 && event.target.value == 0) 
+            {
+                setmubLAWSilverMaskCountState(mubLAWSilverMaskCount + 16);
+                setwbLAWSilverMaskCountState(wbLAWSilverMaskCount + 16);
+                setmubLAWGoldMaskCountState(mubLAWGoldMaskCount + 10);
+                setwbLAWGoldMaskCountState(wbLAWGoldMaskCount + 10);
+                setmubLAWInsanityCountState(mubLAWInsanityCount + 7);
+                setwbLAWInsanityCountState(wbLAWInsanityCount + 7);
+                setmubLAWOriCountState(mubLAWOriCount + 1);
+                setwbLAWOriCountState(wbLAWOriCount + 1);
+                setmubLAWRupeeCost(mubLAWRupeeCost + 2.5);
+                setwbLAWRupeeCost(wbLAWRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 7)
+                setallmubLAOriCount(allmubLAOriCount + 1)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightWandRefineState(event.target.value);
             }
         }
     }
@@ -2236,129 +3154,241 @@ export default function LightAgitoWeapons() {
     }
 
     function handleLightBowUnbindIncrement(event) {
-        setLightWeaponChoiceState("bow")
+        setLightWeaponChoiceState("bow");
         if (lightBowUnbindState < event.target.value) {
-            if (event.target.value - lightBowUnbindState == 1) {
+            if (event.target.value == 9 && lightBowUnbindState == 0) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - 304);
+                setwbLABoSilverMaskCountState(wbLABoSilverMaskCount - 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 304);
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - 230);
+                setwbLABoGoldMaskCountState(wbLABoGoldMaskCount - 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 230);
+                setmubLABoInsanityCountState(mubLABoInsanityCount - 58);
+                setwbLABoInsanityCountState(wbLABoInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLABoGaleCountState(mubLABoGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLABoSandCountState(mubLABoSandCount - 4);
+                setwbLABoSandCountState(wbLABoSandCount - 4);
+                setallmubLASandCount(allmubLASandCount - 4);
+                setmubLABoOriCountState(mubLABoOriCount - 24);
+                setwbLABoOriCountState(wbLABoOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLABoRupeeCost(mubLABoRupeeCost - 40);
+                setwbLABoRupeeCost(wbLABoRupeeCost - 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 40);
                 setLightBowUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - 40)
-                    setwbLABoSilverMaskCountState(wbLABoSilverMaskCount - 40)
-                    setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - 30)
-                    setwbLABoGoldMaskCountState(wbLABoGoldMaskCount - 30)
-                    setmubLABoSandCountState(mubLABoSandCount - 1)
-                    setwbLABoSandCountState(wbLABoSandCount - 1)
-                    setmubLABoRupeeCost(mubLABoRupeeCost - 2)
-                    setwbLABoRupeeCost(wbLABoRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLASandCount(allmubLASandCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - 16)
-                    setwbLABoSilverMaskCountState(wbLABoSilverMaskCount - 16)
-                    setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - 10)
-                    setwbLABoGoldMaskCountState(wbLABoGoldMaskCount - 10)
-                    setmubLABoInsanityCountState(mubLABoInsanityCount - 7)
-                    setwbLABoInsanityCountState(wbLABoInsanityCount - 7)
-                    setmubLABoOriCountState(mubLABoOriCount - 1)
-                    setwbLABoOriCountState(wbLABoOriCount - 1)
-                    setmubLABoRupeeCost(mubLABoRupeeCost - 7.5)
-                    setwbLABoRupeeCost(wbLABoRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - 16)
-                    setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - 10)
-                    setmubLABoInsanityCountState(mubLABoInsanityCount - 7)
-                    setmubLABoOriCountState(mubLABoOriCount - 1)
-                    setmubLABoRupeeCost(mubLABoRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - 80)
-                    setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - 70)
-                    setmubLABoInsanityCountState(mubLABoInsanityCount - 30)
-                    setmubLABoGaleCountState(mubLABoGaleCount - 20)
-                    setmubLABoOriCountState(mubLABoOriCount - 20)
-                    setmubLABoRupeeCost(mubLABoRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 30)
-                    setallmubLAGaleCount(allmubLAGaleCount - 20)
-                    setallmubLAOriCount(allmubLAOriCount - 20)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && lightBowUnbindState >= 1 && lightBowUnbindState <= 4) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - 144 - ((4 - lightBowUnbindState) * 40));
+                setwbLABoSilverMaskCountState(wbLABoSilverMaskCount - 16 - ((4 - lightBowUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 144 - ((4 - lightBowUnbindState) * 40));
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - 110 - ((4 - lightBowUnbindState) * 30));
+                setwbLABoGoldMaskCountState(wbLABoGoldMaskCount - 10 - ((4 - lightBowUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 110 - ((4 - lightBowUnbindState) * 30));
+                setmubLABoInsanityCountState(mubLABoInsanityCount - 58);
+                setwbLABoInsanityCountState(wbLABoInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLABoGaleCountState(mubLABoGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLABoSandCountState(mubLABoSandCount - (4 - lightBowUnbindState));
+                setwbLABoSandCountState(wbLABoSandCount - (4 - lightBowUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightBowUnbindState));
+                setmubLABoOriCountState(mubLABoOriCount - 24);
+                setwbLABoOriCountState(wbLABoOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLABoRupeeCost(mubLABoRupeeCost - 32 - ((4 - lightBowUnbindState) * 2));
+                setwbLABoRupeeCost(wbLABoRupeeCost - 7.5 - ((4 - lightBowUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - 32 - ((4 - lightBowUnbindState) * 2));
+                setLightBowUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && lightBowUnbindState >= 5 && lightBowUnbindState <= 8) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - 80 - ((8 - lightBowUnbindState) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 80 - ((8 - lightBowUnbindState) * 16));
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - 70 - ((8 - lightBowUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70 - ((8 - lightBowUnbindState) * 10));
+                setmubLABoInsanityCountState(mubLABoInsanityCount - 30 - ((8 - lightBowUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - 30 - ((8 - lightBowUnbindState) * 7));
+                setmubLABoGaleCountState(mubLABoGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLABoOriCountState(mubLABoOriCount - 20 - ((8 - lightBowUnbindState) * 1));
+                setallmubLAOriCount(allmubLAOriCount - 20 - ((8 - lightBowUnbindState) * 1));
+                setmubLABoRupeeCost(mubLABoRupeeCost - 2 - ((8 - lightBowUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - 2 - ((8 - lightBowUnbindState) * 7.5));
+                setLightBowUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightBowUnbindState <= 7 && lightBowUnbindState >= 5) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - ((event.target.value - lightBowUnbindState) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightBowUnbindState) * 16));
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - ((event.target.value - lightBowUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightBowUnbindState) * 10));
+                setmubLABoInsanityCountState(mubLABoInsanityCount - ((event.target.value - lightBowUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - ((event.target.value - lightBowUnbindState) * 7));
+                setmubLABoOriCountState(mubLABoOriCount - (event.target.value - lightBowUnbindState));
+                setallmubLAOriCount(allmubLAOriCount - (event.target.value - lightBowUnbindState));
+                setmubLABoRupeeCost(mubLABoRupeeCost - ((event.target.value - lightBowUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightBowUnbindState) * 7.5));
+                setLightBowUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightBowUnbindState <= 4 && lightBowUnbindState >= 0) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - ((4 - lightBowUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbLABoSilverMaskCountState(wbLABoSilverMaskCount - 16 - ((4 - lightBowUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((4 - lightBowUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - ((4 - lightBowUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbLABoGoldMaskCountState(wbLABoGoldMaskCount - 10 - ((4 - lightBowUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((4 - lightBowUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubLABoInsanityCountState(mubLABoInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbLABoInsanityCountState(wbLABoInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubLABoSandCountState(mubLABoSandCount - (4 - lightBowUnbindState));
+                setwbLABoSandCountState(wbLABoSandCount - (4 - lightBowUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightBowUnbindState));
+                setmubLABoOriCountState(mubLABoOriCount - (-1 * (4 - event.target.value)));
+                setwbLABoOriCountState(wbLABoOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - (-1 * (4 - event.target.value)));
+                setmubLABoRupeeCost(mubLABoRupeeCost - ((4 - lightBowUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbLABoRupeeCost(wbLABoRupeeCost - 7.5 - ((4 - lightBowUnbindState) * 2))
+                setLightBowUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && lightBowUnbindState <= 3 && lightBowUnbindState >= 0) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - ((event.target.value - lightBowUnbindState) * 40));
+                setwbLABoSilverMaskCountState(wbLABoSilverMaskCount - ((event.target.value - lightBowUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightBowUnbindState) * 40));
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - ((event.target.value - lightBowUnbindState) * 30));
+                setwbLABoGoldMaskCountState(wbLABoGoldMaskCount - ((event.target.value - lightBowUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightBowUnbindState) * 30));
+                setmubLABoSandCountState(mubLABoSandCount - (event.target.value - lightBowUnbindState));
+                setwbLABoSandCountState(wbLABoSandCount - (event.target.value - lightBowUnbindState));
+                setallmubLASandCount(allmubLASandCount - (event.target.value - lightBowUnbindState));
+                setmubLABoRupeeCost(mubLABoRupeeCost - ((event.target.value - lightBowUnbindState) * 2));
+                setwbLABoRupeeCost(wbLABoRupeeCost - ((event.target.value - lightBowUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightBowUnbindState) * 2));
+                setLightBowUnbindState(event.target.value)
             }
         }
         else if (lightBowUnbindState > event.target.value) {
-            if (lightBowUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && lightBowUnbindState == 9) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + 304);
+                setwbLABoSilverMaskCountState(wbLABoSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 304);
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + 230);
+                setwbLABoGoldMaskCountState(wbLABoGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 230);
+                setmubLABoInsanityCountState(mubLABoInsanityCount + 58);
+                setwbLABoInsanityCountState(wbLABoInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 58);
+                setmubLABoGaleCountState(mubLABoGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLABoSandCountState(mubLABoSandCount + 4);
+                setwbLABoSandCountState(wbLABoSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLABoOriCountState(mubLABoOriCount + 24);
+                setwbLABoOriCountState(wbLABoOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + 24);
+                setmubLABoRupeeCost(mubLABoRupeeCost + 40);
+                setwbLABoRupeeCost(wbLABoRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 40);
                 setLightBowUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + 40)
-                    setwbLABoSilverMaskCountState(wbLABoSilverMaskCount + 40)
-                    setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + 30)
-                    setwbLABoGoldMaskCountState(wbLABoGoldMaskCount + 30)
-                    setmubLABoSandCountState(mubLABoSandCount + 1)
-                    setwbLABoSandCountState(wbLABoSandCount + 1)
-                    setmubLABoRupeeCost(mubLABoRupeeCost + 2)
-                    setwbLABoRupeeCost(wbLABoRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLASandCount(allmubLASandCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + 16)
-                    setwbLABoSilverMaskCountState(wbLABoSilverMaskCount + 16)
-                    setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + 10)
-                    setwbLABoGoldMaskCountState(wbLABoGoldMaskCount + 10)
-                    setmubLABoInsanityCountState(mubLABoInsanityCount + 7)
-                    setwbLABoInsanityCountState(wbLABoInsanityCount + 7)
-                    setmubLABoOriCountState(mubLABoOriCount + 1)
-                    setwbLABoOriCountState(wbLABoOriCount + 1)
-                    setmubLABoRupeeCost(mubLABoRupeeCost + 7.5)
-                    setwbLABoRupeeCost(wbLABoRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + 16)
-                    setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + 10)
-                    setmubLABoInsanityCountState(mubLABoInsanityCount + 7)
-                    setmubLABoOriCountState(mubLABoOriCount + 1)
-                    setmubLABoRupeeCost(mubLABoRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + 80)
-                    setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + 70)
-                    setmubLABoInsanityCountState(mubLABoInsanityCount + 30)
-                    setmubLABoGaleCountState(mubLABoGaleCount + 20)
-                    setmubLABoOriCountState(mubLABoOriCount + 20)
-                    setmubLABoRupeeCost(mubLABoRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 30)
-                    setallmubLAGaleCount(allmubLAGaleCount + 20)
-                    setallmubLAOriCount(allmubLAOriCount + 20)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && lightBowUnbindState >= 5 && lightBowUnbindState <= 8) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + 160 + ((-1 * (4 - lightBowUnbindState)) * 16));
+                setwbLABoSilverMaskCountState(wbLABoSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 160 + ((-1 * (4 - lightBowUnbindState)) * 16));
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + 120 + ((-1 * (4 - lightBowUnbindState)) * 10));
+                setwbLABoGoldMaskCountState(wbLABoGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 120 + ((-1 * (4 - lightBowUnbindState)) * 10));
+                setmubLABoInsanityCountState(mubLABoInsanityCount + ((-1 * (4 - lightBowUnbindState)) * 7));
+                setwbLABoInsanityCountState(wbLABoInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((-1 * (4 - lightBowUnbindState)) * 7));
+                setmubLABoSandCountState(mubLABoSandCount + 4);
+                setwbLABoSandCountState(wbLABoSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLABoOriCountState(mubLABoOriCount + (-1 * (4 - lightBowUnbindState)));
+                setwbLABoOriCountState(wbLABoOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + (-1 * (4 - lightBowUnbindState)));
+                setmubLABoRupeeCost(mubLABoRupeeCost + 8 + (-1 * (4 - lightBowUnbindState) * 7.5));
+                setwbLABoRupeeCost(wbLABoRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 8 + (-1 * (4 - lightBowUnbindState) * 7.5));
+                setLightBowUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && lightBowUnbindState >= 1 && lightBowUnbindState <= 4) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + (lightBowUnbindState * 40));
+                setwbLABoSilverMaskCountState(wbLABoSilverMaskCount + (lightBowUnbindState * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + (lightBowUnbindState * 40));
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + (lightBowUnbindState * 30));
+                setwbLABoGoldMaskCountState(wbLABoGoldMaskCount + (lightBowUnbindState * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + (lightBowUnbindState * 30));
+                setmubLABoSandCountState(mubLABoSandCount + (lightBowUnbindState * 1));
+                setwbLABoSandCountState(wbLABoSandCount + (lightBowUnbindState * 1));
+                setallmubLASandCount(allmubLASandCount + (lightBowUnbindState * 1));
+                setmubLABoRupeeCost(mubLABoRupeeCost + (lightBowUnbindState * 2));
+                setwbLABoRupeeCost(wbLABoRupeeCost + (lightBowUnbindState * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + (lightBowUnbindState * 2));
+                setLightBowUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightBowUnbindState >= 1 && lightBowUnbindState <= 4) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + ((lightBowUnbindState - event.target.value) * 40))
+                setwbLABoSilverMaskCountState(wbLABoSilverMaskCount + ((lightBowUnbindState - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightBowUnbindState - event.target.value) * 40));
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + ((lightBowUnbindState - event.target.value) * 30));
+                setwbLABoGoldMaskCountState(wbLABoGoldMaskCount + ((lightBowUnbindState - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightBowUnbindState - event.target.value) * 30));
+                setmubLABoSandCountState(mubLABoSandCount + (lightBowUnbindState - event.target.value));
+                setwbLABoSandCountState(wbLABoSandCount + (lightBowUnbindState - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (lightBowUnbindState - event.target.value));
+                setmubLABoRupeeCost(mubLABoRupeeCost + ((lightBowUnbindState - event.target.value) * 2));
+                setwbLABoRupeeCost(wbLABoRupeeCost + ((lightBowUnbindState - event.target.value) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightBowUnbindState - event.target.value) * 2))
+                setLightBowUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightBowUnbindState >= 5 && lightBowUnbindState <= 8) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + ((lightBowUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbLABoSilverMaskCountState(wbLABoSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightBowUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + ((lightBowUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbLABoGoldMaskCountState(wbLABoGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightBowUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubLABoInsanityCountState(mubLABoInsanityCount + ((lightBowUnbindState - 4) * 7));
+                setwbLABoInsanityCountState(wbLABoInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightBowUnbindState - 4) * 7));
+                setmubLABoSandCountState(mubLABoSandCount + (4 - event.target.value));
+                setwbLABoSandCountState(wbLABoSandCount + (4 - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (4 - event.target.value));
+                setmubLABoOriCountState(mubLABoOriCount + (lightBowUnbindState - 4));
+                setwbLABoOriCountState(wbLABoOriCount + (lightBowUnbindState - 4));
+                setallmubLAOriCount(allmubLAOriCount + (lightBowUnbindState - 4));
+                setmubLABoRupeeCost(mubLABoRupeeCost + ((lightBowUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbLABoRupeeCost(wbLABoRupeeCost + 7.5 + ((lightBowUnbindState - 4) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightBowUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setLightBowUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightBowUnbindState == 9) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubLABoInsanityCountState(mubLABoInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubLABoGaleCountState(mubLABoGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLABoOriCountState(mubLABoOriCount + 20 + (8 - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + 20 + (8 - event.target.value));
+                setmubLABoRupeeCost(mubLABoRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setLightBowUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightBowUnbindState >= 5 && lightBowUnbindState <= 8) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + ((lightBowUnbindState - event.target.value) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightBowUnbindState - event.target.value) * 16));
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + ((lightBowUnbindState - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightBowUnbindState - event.target.value) * 10));
+                setmubLABoInsanityCountState(mubLABoInsanityCount + ((lightBowUnbindState - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightBowUnbindState - event.target.value) * 7));
+                setmubLABoOriCountState(mubLABoOriCount + (lightBowUnbindState - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + (lightBowUnbindState - event.target.value));
+                setmubLABoRupeeCost(mubLABoRupeeCost + ((lightBowUnbindState - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightBowUnbindState - event.target.value) * 7.5));
+                setLightBowUnbindState(event.target.value)
             }
         }
     }
@@ -2366,75 +3396,116 @@ export default function LightAgitoWeapons() {
     function handleLightBowRefineIncrement(event) {
         setLightWeaponChoiceState("bow");
         if (lightBowRefineState < event.target.value) {
-            if (event.target.value - lightBowRefineState == 1) {
+            if (lightBowRefineState == 0 && event.target.value == 1) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - 16);
+                setwbLABoSilverMaskCountState(wbLABoSilverMaskCount - 16);
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - 10);
+                setwbLABoGoldMaskCountState(wbLABoGoldMaskCount - 10);
+                setmubLABoInsanityCountState(mubLABoInsanityCount - 7);
+                setwbLABoInsanityCountState(wbLABoInsanityCount - 7);
+                setmubLABoOriCountState(mubLABoOriCount - 1);
+                setwbLABoOriCountState(wbLABoOriCount - 1);
+                setmubLABoRupeeCost(mubLABoRupeeCost - 2.5);
+                setwbLABoRupeeCost(wbLABoRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 7)
+                setallmubLAOriCount(allmubLAOriCount - 1)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
                 setLightBowRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - 16);
-                    setwbLABoSilverMaskCountState(wbLABoSilverMaskCount - 16);
-                    setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - 10);
-                    setwbLABoGoldMaskCountState(wbLABoGoldMaskCount - 10);
-                    setmubLABoInsanityCountState(mubLABoInsanityCount - 7);
-                    setwbLABoInsanityCountState(wbLABoInsanityCount - 7);
-                    setmubLABoOriCountState(mubLABoOriCount - 1);
-                    setwbLABoOriCountState(wbLABoOriCount - 1);
-                    setmubLABoRupeeCost(mubLABoRupeeCost - 2.5);
-                    setwbLABoRupeeCost(wbLABoRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - 40)
-                    setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - 30);
-                    setmubLABoInsanityCountState(mubLABoInsanityCount - 10);
-                    setmubLABoGaleCountState(mubLABoGaleCount - 10);
-                    setmubLABoOriCountState(mubLABoOriCount - 10);
-                    setmubLABoRupeeCost(mubLABoRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 10)
-                    setallmubLAGaleCount(allmubLAGaleCount - 10)
-                    setallmubLAOriCount(allmubLAOriCount - 10)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
+            }
+            else if (lightBowRefineState == 0 && event.target.value == 2) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - 56);
+                setwbLABoSilverMaskCountState(wbLABoSilverMaskCount - 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 56);
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - 40);
+                setwbLABoGoldMaskCountState(wbLABoGoldMaskCount - 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 40);
+                setmubLABoInsanityCountState(mubLABoInsanityCount - 17);
+                setwbLABoInsanityCountState(wbLABoInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 17);
+                setmubLABoGaleCountState(mubLABoGaleCount - 10);
+                setallmubLAGaleCount(allmubLAGaleCount - 10);
+                setmubLABoOriCountState(mubLABoOriCount - 11);
+                setwbLABoOriCountState(wbLABoOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 11);
+                setmubLABoRupeeCost(mubLABoRupeeCost - 5);
+                setwbLABoRupeeCost(wbLABoRupeeCost - 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 5);
+                setLightBowRefineState(event.target.value);
+            }
+            else if (lightBowRefineState == 1 && event.target.value == 2) {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount - 40)
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount - 30);
+                setmubLABoInsanityCountState(mubLABoInsanityCount - 10);
+                setmubLABoGaleCountState(mubLABoGaleCount - 10);
+                setmubLABoOriCountState(mubLABoOriCount - 10);
+                setmubLABoRupeeCost(mubLABoRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 10)
+                setallmubLAGaleCount(allmubLAGaleCount - 10)
+                setallmubLAOriCount(allmubLAOriCount - 10)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
+                setLightBowRefineState(event.target.value);
             }
         }
         else if (lightBowRefineState > event.target.value) {
-            if (event.target.value - lightBowRefineState == 1) {
-                setLightBowRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + 16);
-                    setwbLABoSilverMaskCountState(wbLABoSilverMaskCount + 16);
-                    setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + 10);
-                    setwbLABoGoldMaskCountState(wbLABoGoldMaskCount + 10);
-                    setmubLABoInsanityCountState(mubLABoInsanityCount + 7);
-                    setwbLABoInsanityCountState(wbLABoInsanityCount + 7);
-                    setmubLABoOriCountState(mubLABoOriCount + 1);
-                    setwbLABoOriCountState(wbLABoOriCount + 1);
-                    setmubLABoRupeeCost(mubLABoRupeeCost + 2.5);
-                    setwbLABoRupeeCost(wbLABoRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + 40)
-                    setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + 30);
-                    setmubLABoInsanityCountState(mubLABoInsanityCount + 10);
-                    setmubLABoGaleCountState(mubLABoGaleCount + 10);
-                    setmubLABoOriCountState(mubLABoOriCount + 10);
-                    setmubLABoRupeeCost(mubLABoRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 10)
-                    setallmubLAGaleCount(allmubLAGaleCount + 10)
-                    setallmubLAOriCount(allmubLAOriCount + 10)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
+            if (lightBowRefineState == 2 && event.target.value == 1) 
+            {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + 40)
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + 30);
+                setmubLABoInsanityCountState(mubLABoInsanityCount + 10);
+                setmubLABoGaleCountState(mubLABoGaleCount + 10);
+                setmubLABoOriCountState(mubLABoOriCount + 10);
+                setmubLABoRupeeCost(mubLABoRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 10)
+                setallmubLAGaleCount(allmubLAGaleCount + 10)
+                setallmubLAOriCount(allmubLAOriCount + 10)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightBowRefineState(event.target.value);
+            }
+            else if (lightBowRefineState == 2 && event.target.value == 0) 
+            {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + 56);
+                setwbLABoSilverMaskCountState(wbLABoSilverMaskCount + 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 56);
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + 40);
+                setwbLABoGoldMaskCountState(wbLABoGoldMaskCount + 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 40);
+                setmubLABoInsanityCountState(mubLABoInsanityCount + 17);
+                setwbLABoInsanityCountState(wbLABoInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 17);
+                setmubLABoGaleCountState(mubLABoGaleCount + 10);
+                setallmubLAGaleCount(allmubLAGaleCount + 10);
+                setmubLABoOriCountState(mubLABoOriCount + 11);
+                setwbLABoOriCountState(wbLABoOriCount + 1); 
+                setallmubLAOriCount(allmubLAOriCount + 11);
+                setmubLABoRupeeCost(mubLABoRupeeCost + 5);
+                setwbLABoRupeeCost(wbLABoRupeeCost + 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 5)
+                setLightBowRefineState(event.target.value);
+            }
+            else if (lightBowRefineState == 1 && event.target.value == 0) 
+            {
+                setmubLABoSilverMaskCountState(mubLABoSilverMaskCount + 16);
+                setwbLABoSilverMaskCountState(wbLABoSilverMaskCount + 16);
+                setmubLABoGoldMaskCountState(mubLABoGoldMaskCount + 10);
+                setwbLABoGoldMaskCountState(wbLABoGoldMaskCount + 10);
+                setmubLABoInsanityCountState(mubLABoInsanityCount + 7);
+                setwbLABoInsanityCountState(wbLABoInsanityCount + 7);
+                setmubLABoOriCountState(mubLABoOriCount + 1);
+                setwbLABoOriCountState(wbLABoOriCount + 1);
+                setmubLABoRupeeCost(mubLABoRupeeCost + 2.5);
+                setwbLABoRupeeCost(wbLABoRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 7)
+                setallmubLAOriCount(allmubLAOriCount + 1)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightBowRefineState(event.target.value);
             }
         }
     }
@@ -2543,129 +3614,241 @@ export default function LightAgitoWeapons() {
     }
 
     function handleLightStaffUnbindIncrement(event) {
-        setLightWeaponChoiceState("staff")
+        setLightWeaponChoiceState("staff");
         if (lightStaffUnbindState < event.target.value) {
-            if (event.target.value - lightStaffUnbindState == 1) {
+            if (event.target.value == 9 && lightStaffUnbindState == 0) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - 304);
+                setwbLAStSilverMaskCountState(wbLAStSilverMaskCount - 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 304);
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - 230);
+                setwbLAStGoldMaskCountState(wbLAStGoldMaskCount - 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 230);
+                setmubLAStInsanityCountState(mubLAStInsanityCount - 58);
+                setwbLAStInsanityCountState(wbLAStInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLAStGaleCountState(mubLAStGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLAStSandCountState(mubLAStSandCount - 4);
+                setwbLAStSandCountState(wbLAStSandCount - 4);
+                setallmubLASandCount(allmubLASandCount - 4);
+                setmubLAStOriCountState(mubLAStOriCount - 24);
+                setwbLAStOriCountState(wbLAStOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLAStRupeeCost(mubLAStRupeeCost - 40);
+                setwbLAStRupeeCost(wbLAStRupeeCost - 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 40);
                 setLightStaffUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - 40)
-                    setwbLAStSilverMaskCountState(wbLAStSilverMaskCount - 40)
-                    setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - 30)
-                    setwbLAStGoldMaskCountState(wbLAStGoldMaskCount - 30)
-                    setmubLAStSandCountState(mubLAStSandCount - 1)
-                    setwbLAStSandCountState(wbLAStSandCount - 1)
-                    setmubLAStRupeeCost(mubLAStRupeeCost - 2)
-                    setwbLAStRupeeCost(wbLAStRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLASandCount(allmubLASandCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - 16)
-                    setwbLAStSilverMaskCountState(wbLAStSilverMaskCount - 16)
-                    setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - 10)
-                    setwbLAStGoldMaskCountState(wbLAStGoldMaskCount - 10)
-                    setmubLAStInsanityCountState(mubLAStInsanityCount - 7)
-                    setwbLAStInsanityCountState(wbLAStInsanityCount - 7)
-                    setmubLAStOriCountState(mubLAStOriCount - 1)
-                    setwbLAStOriCountState(wbLAStOriCount - 1)
-                    setmubLAStRupeeCost(mubLAStRupeeCost - 7.5)
-                    setwbLAStRupeeCost(wbLAStRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - 16)
-                    setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - 10)
-                    setmubLAStInsanityCountState(mubLAStInsanityCount - 7)
-                    setmubLAStOriCountState(mubLAStOriCount - 1)
-                    setmubLAStRupeeCost(mubLAStRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - 80)
-                    setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - 70)
-                    setmubLAStInsanityCountState(mubLAStInsanityCount - 30)
-                    setmubLAStGaleCountState(mubLAStGaleCount - 20)
-                    setmubLAStOriCountState(mubLAStOriCount - 20)
-                    setmubLAStRupeeCost(mubLAStRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 30)
-                    setallmubLAGaleCount(allmubLAGaleCount - 20)
-                    setallmubLAOriCount(allmubLAOriCount - 20)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && lightStaffUnbindState >= 1 && lightStaffUnbindState <= 4) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - 144 - ((4 - lightStaffUnbindState) * 40));
+                setwbLAStSilverMaskCountState(wbLAStSilverMaskCount - 16 - ((4 - lightStaffUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 144 - ((4 - lightStaffUnbindState) * 40));
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - 110 - ((4 - lightStaffUnbindState) * 30));
+                setwbLAStGoldMaskCountState(wbLAStGoldMaskCount - 10 - ((4 - lightStaffUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 110 - ((4 - lightStaffUnbindState) * 30));
+                setmubLAStInsanityCountState(mubLAStInsanityCount - 58);
+                setwbLAStInsanityCountState(wbLAStInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLAStGaleCountState(mubLAStGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLAStSandCountState(mubLAStSandCount - (4 - lightStaffUnbindState));
+                setwbLAStSandCountState(wbLAStSandCount - (4 - lightStaffUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightStaffUnbindState));
+                setmubLAStOriCountState(mubLAStOriCount - 24);
+                setwbLAStOriCountState(wbLAStOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLAStRupeeCost(mubLAStRupeeCost - 32 - ((4 - lightStaffUnbindState) * 2));
+                setwbLAStRupeeCost(wbLAStRupeeCost - 7.5 - ((4 - lightStaffUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - 32 - ((4 - lightStaffUnbindState) * 2));
+                setLightStaffUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && lightStaffUnbindState >= 5 && lightStaffUnbindState <= 8) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - 80 - ((8 - lightStaffUnbindState) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 80 - ((8 - lightStaffUnbindState) * 16));
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - 70 - ((8 - lightStaffUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70 - ((8 - lightStaffUnbindState) * 10));
+                setmubLAStInsanityCountState(mubLAStInsanityCount - 30 - ((8 - lightStaffUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - 30 - ((8 - lightStaffUnbindState) * 7));
+                setmubLAStGaleCountState(mubLAStGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLAStOriCountState(mubLAStOriCount - 20 - ((8 - lightStaffUnbindState) * 1));
+                setallmubLAOriCount(allmubLAOriCount - 20 - ((8 - lightStaffUnbindState) * 1));
+                setmubLAStRupeeCost(mubLAStRupeeCost - 2 - ((8 - lightStaffUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - 2 - ((8 - lightStaffUnbindState) * 7.5));
+                setLightStaffUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightStaffUnbindState <= 7 && lightStaffUnbindState >= 5) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - ((event.target.value - lightStaffUnbindState) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightStaffUnbindState) * 16));
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - ((event.target.value - lightStaffUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightStaffUnbindState) * 10));
+                setmubLAStInsanityCountState(mubLAStInsanityCount - ((event.target.value - lightStaffUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - ((event.target.value - lightStaffUnbindState) * 7));
+                setmubLAStOriCountState(mubLAStOriCount - (event.target.value - lightStaffUnbindState));
+                setallmubLAOriCount(allmubLAOriCount - (event.target.value - lightStaffUnbindState));
+                setmubLAStRupeeCost(mubLAStRupeeCost - ((event.target.value - lightStaffUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightStaffUnbindState) * 7.5));
+                setLightStaffUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightStaffUnbindState <= 4 && lightStaffUnbindState >= 0) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - ((4 - lightStaffUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbLAStSilverMaskCountState(wbLAStSilverMaskCount - 16 - ((4 - lightStaffUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((4 - lightStaffUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - ((4 - lightStaffUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbLAStGoldMaskCountState(wbLAStGoldMaskCount - 10 - ((4 - lightStaffUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((4 - lightStaffUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubLAStInsanityCountState(mubLAStInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbLAStInsanityCountState(wbLAStInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubLAStSandCountState(mubLAStSandCount - (4 - lightStaffUnbindState));
+                setwbLAStSandCountState(wbLAStSandCount - (4 - lightStaffUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightStaffUnbindState));
+                setmubLAStOriCountState(mubLAStOriCount - (-1 * (4 - event.target.value)));
+                setwbLAStOriCountState(wbLAStOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - (-1 * (4 - event.target.value)));
+                setmubLAStRupeeCost(mubLAStRupeeCost - ((4 - lightStaffUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbLAStRupeeCost(wbLAStRupeeCost - 7.5 - ((4 - lightStaffUnbindState) * 2))
+                setLightStaffUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && lightStaffUnbindState <= 3 && lightStaffUnbindState >= 0) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - ((event.target.value - lightStaffUnbindState) * 40));
+                setwbLAStSilverMaskCountState(wbLAStSilverMaskCount - ((event.target.value - lightStaffUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightStaffUnbindState) * 40));
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - ((event.target.value - lightStaffUnbindState) * 30));
+                setwbLAStGoldMaskCountState(wbLAStGoldMaskCount - ((event.target.value - lightStaffUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightStaffUnbindState) * 30));
+                setmubLAStSandCountState(mubLAStSandCount - (event.target.value - lightStaffUnbindState));
+                setwbLAStSandCountState(wbLAStSandCount - (event.target.value - lightStaffUnbindState));
+                setallmubLASandCount(allmubLASandCount - (event.target.value - lightStaffUnbindState));
+                setmubLAStRupeeCost(mubLAStRupeeCost - ((event.target.value - lightStaffUnbindState) * 2));
+                setwbLAStRupeeCost(wbLAStRupeeCost - ((event.target.value - lightStaffUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightStaffUnbindState) * 2));
+                setLightStaffUnbindState(event.target.value)
             }
         }
         else if (lightStaffUnbindState > event.target.value) {
-            if (lightStaffUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && lightStaffUnbindState == 9) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + 304);
+                setwbLAStSilverMaskCountState(wbLAStSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 304);
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + 230);
+                setwbLAStGoldMaskCountState(wbLAStGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 230);
+                setmubLAStInsanityCountState(mubLAStInsanityCount + 58);
+                setwbLAStInsanityCountState(wbLAStInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 58);
+                setmubLAStGaleCountState(mubLAStGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLAStSandCountState(mubLAStSandCount + 4);
+                setwbLAStSandCountState(wbLAStSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLAStOriCountState(mubLAStOriCount + 24);
+                setwbLAStOriCountState(wbLAStOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + 24);
+                setmubLAStRupeeCost(mubLAStRupeeCost + 40);
+                setwbLAStRupeeCost(wbLAStRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 40);
                 setLightStaffUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + 40)
-                    setwbLAStSilverMaskCountState(wbLAStSilverMaskCount + 40)
-                    setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + 30)
-                    setwbLAStGoldMaskCountState(wbLAStGoldMaskCount + 30)
-                    setmubLAStSandCountState(mubLAStSandCount + 1)
-                    setwbLAStSandCountState(wbLAStSandCount + 1)
-                    setmubLAStRupeeCost(mubLAStRupeeCost + 2)
-                    setwbLAStRupeeCost(wbLAStRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLASandCount(allmubLASandCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + 16)
-                    setwbLAStSilverMaskCountState(wbLAStSilverMaskCount + 16)
-                    setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + 10)
-                    setwbLAStGoldMaskCountState(wbLAStGoldMaskCount + 10)
-                    setmubLAStInsanityCountState(mubLAStInsanityCount + 7)
-                    setwbLAStInsanityCountState(wbLAStInsanityCount + 7)
-                    setmubLAStOriCountState(mubLAStOriCount + 1)
-                    setwbLAStOriCountState(wbLAStOriCount + 1)
-                    setmubLAStRupeeCost(mubLAStRupeeCost + 7.5)
-                    setwbLAStRupeeCost(wbLAStRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + 16)
-                    setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + 10)
-                    setmubLAStInsanityCountState(mubLAStInsanityCount + 7)
-                    setmubLAStOriCountState(mubLAStOriCount + 1)
-                    setmubLAStRupeeCost(mubLAStRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + 80)
-                    setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + 70)
-                    setmubLAStInsanityCountState(mubLAStInsanityCount + 30)
-                    setmubLAStGaleCountState(mubLAStGaleCount + 20)
-                    setmubLAStOriCountState(mubLAStOriCount + 20)
-                    setmubLAStRupeeCost(mubLAStRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 30)
-                    setallmubLAGaleCount(allmubLAGaleCount + 20)
-                    setallmubLAOriCount(allmubLAOriCount + 20)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && lightStaffUnbindState >= 5 && lightStaffUnbindState <= 8) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + 160 + ((-1 * (4 - lightStaffUnbindState)) * 16));
+                setwbLAStSilverMaskCountState(wbLAStSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 160 + ((-1 * (4 - lightStaffUnbindState)) * 16));
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + 120 + ((-1 * (4 - lightStaffUnbindState)) * 10));
+                setwbLAStGoldMaskCountState(wbLAStGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 120 + ((-1 * (4 - lightStaffUnbindState)) * 10));
+                setmubLAStInsanityCountState(mubLAStInsanityCount + ((-1 * (4 - lightStaffUnbindState)) * 7));
+                setwbLAStInsanityCountState(wbLAStInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((-1 * (4 - lightStaffUnbindState)) * 7));
+                setmubLAStSandCountState(mubLAStSandCount + 4);
+                setwbLAStSandCountState(wbLAStSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLAStOriCountState(mubLAStOriCount + (-1 * (4 - lightStaffUnbindState)));
+                setwbLAStOriCountState(wbLAStOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + (-1 * (4 - lightStaffUnbindState)));
+                setmubLAStRupeeCost(mubLAStRupeeCost + 8 + (-1 * (4 - lightStaffUnbindState) * 7.5));
+                setwbLAStRupeeCost(wbLAStRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 8 + (-1 * (4 - lightStaffUnbindState) * 7.5));
+                setLightStaffUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && lightStaffUnbindState >= 1 && lightStaffUnbindState <= 4) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + (lightStaffUnbindState * 40));
+                setwbLAStSilverMaskCountState(wbLAStSilverMaskCount + (lightStaffUnbindState * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + (lightStaffUnbindState * 40));
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + (lightStaffUnbindState * 30));
+                setwbLAStGoldMaskCountState(wbLAStGoldMaskCount + (lightStaffUnbindState * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + (lightStaffUnbindState * 30));
+                setmubLAStSandCountState(mubLAStSandCount + (lightStaffUnbindState * 1));
+                setwbLAStSandCountState(wbLAStSandCount + (lightStaffUnbindState * 1));
+                setallmubLASandCount(allmubLASandCount + (lightStaffUnbindState * 1));
+                setmubLAStRupeeCost(mubLAStRupeeCost + (lightStaffUnbindState * 2));
+                setwbLAStRupeeCost(wbLAStRupeeCost + (lightStaffUnbindState * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + (lightStaffUnbindState * 2));
+                setLightStaffUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightStaffUnbindState >= 1 && lightStaffUnbindState <= 4) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + ((lightStaffUnbindState - event.target.value) * 40))
+                setwbLAStSilverMaskCountState(wbLAStSilverMaskCount + ((lightStaffUnbindState - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightStaffUnbindState - event.target.value) * 40));
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + ((lightStaffUnbindState - event.target.value) * 30));
+                setwbLAStGoldMaskCountState(wbLAStGoldMaskCount + ((lightStaffUnbindState - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightStaffUnbindState - event.target.value) * 30));
+                setmubLAStSandCountState(mubLAStSandCount + (lightStaffUnbindState - event.target.value));
+                setwbLAStSandCountState(wbLAStSandCount + (lightStaffUnbindState - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (lightStaffUnbindState - event.target.value));
+                setmubLAStRupeeCost(mubLAStRupeeCost + ((lightStaffUnbindState - event.target.value) * 2));
+                setwbLAStRupeeCost(wbLAStRupeeCost + ((lightStaffUnbindState - event.target.value) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightStaffUnbindState - event.target.value) * 2))
+                setLightStaffUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightStaffUnbindState >= 5 && lightStaffUnbindState <= 8) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + ((lightStaffUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbLAStSilverMaskCountState(wbLAStSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightStaffUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + ((lightStaffUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbLAStGoldMaskCountState(wbLAStGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightStaffUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubLAStInsanityCountState(mubLAStInsanityCount + ((lightStaffUnbindState - 4) * 7));
+                setwbLAStInsanityCountState(wbLAStInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightStaffUnbindState - 4) * 7));
+                setmubLAStSandCountState(mubLAStSandCount + (4 - event.target.value));
+                setwbLAStSandCountState(wbLAStSandCount + (4 - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (4 - event.target.value));
+                setmubLAStOriCountState(mubLAStOriCount + (lightStaffUnbindState - 4));
+                setwbLAStOriCountState(wbLAStOriCount + (lightStaffUnbindState - 4));
+                setallmubLAOriCount(allmubLAOriCount + (lightStaffUnbindState - 4));
+                setmubLAStRupeeCost(mubLAStRupeeCost + ((lightStaffUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbLAStRupeeCost(wbLAStRupeeCost + 7.5 + ((lightStaffUnbindState - 4) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightStaffUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setLightStaffUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightStaffUnbindState == 9) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubLAStInsanityCountState(mubLAStInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubLAStGaleCountState(mubLAStGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLAStOriCountState(mubLAStOriCount + 20 + (8 - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + 20 + (8 - event.target.value));
+                setmubLAStRupeeCost(mubLAStRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setLightStaffUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightStaffUnbindState >= 5 && lightStaffUnbindState <= 8) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + ((lightStaffUnbindState - event.target.value) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightStaffUnbindState - event.target.value) * 16));
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + ((lightStaffUnbindState - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightStaffUnbindState - event.target.value) * 10));
+                setmubLAStInsanityCountState(mubLAStInsanityCount + ((lightStaffUnbindState - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightStaffUnbindState - event.target.value) * 7));
+                setmubLAStOriCountState(mubLAStOriCount + (lightStaffUnbindState - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + (lightStaffUnbindState - event.target.value));
+                setmubLAStRupeeCost(mubLAStRupeeCost + ((lightStaffUnbindState - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightStaffUnbindState - event.target.value) * 7.5));
+                setLightStaffUnbindState(event.target.value)
             }
         }
     }
@@ -2673,75 +3856,116 @@ export default function LightAgitoWeapons() {
     function handleLightStaffRefineIncrement(event) {
         setLightWeaponChoiceState("staff");
         if (lightStaffRefineState < event.target.value) {
-            if (event.target.value - lightStaffRefineState == 1) {
+            if (lightStaffRefineState == 0 && event.target.value == 1) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - 16);
+                setwbLAStSilverMaskCountState(wbLAStSilverMaskCount - 16);
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - 10);
+                setwbLAStGoldMaskCountState(wbLAStGoldMaskCount - 10);
+                setmubLAStInsanityCountState(mubLAStInsanityCount - 7);
+                setwbLAStInsanityCountState(wbLAStInsanityCount - 7);
+                setmubLAStOriCountState(mubLAStOriCount - 1);
+                setwbLAStOriCountState(wbLAStOriCount - 1);
+                setmubLAStRupeeCost(mubLAStRupeeCost - 2.5);
+                setwbLAStRupeeCost(wbLAStRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 7)
+                setallmubLAOriCount(allmubLAOriCount - 1)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
                 setLightStaffRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - 16);
-                    setwbLAStSilverMaskCountState(wbLAStSilverMaskCount - 16);
-                    setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - 10);
-                    setwbLAStGoldMaskCountState(wbLAStGoldMaskCount - 10);
-                    setmubLAStInsanityCountState(mubLAStInsanityCount - 7);
-                    setwbLAStInsanityCountState(wbLAStInsanityCount - 7);
-                    setmubLAStOriCountState(mubLAStOriCount - 1);
-                    setwbLAStOriCountState(wbLAStOriCount - 1);
-                    setmubLAStRupeeCost(mubLAStRupeeCost - 2.5);
-                    setwbLAStRupeeCost(wbLAStRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - 40)
-                    setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - 30);
-                    setmubLAStInsanityCountState(mubLAStInsanityCount - 10);
-                    setmubLAStGaleCountState(mubLAStGaleCount - 10);
-                    setmubLAStOriCountState(mubLAStOriCount - 10);
-                    setmubLAStRupeeCost(mubLAStRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 10)
-                    setallmubLAGaleCount(allmubLAGaleCount - 10)
-                    setallmubLAOriCount(allmubLAOriCount - 10)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
+            }
+            else if (lightStaffRefineState == 0 && event.target.value == 2) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - 56);
+                setwbLAStSilverMaskCountState(wbLAStSilverMaskCount - 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 56);
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - 40);
+                setwbLAStGoldMaskCountState(wbLAStGoldMaskCount - 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 40);
+                setmubLAStInsanityCountState(mubLAStInsanityCount - 17);
+                setwbLAStInsanityCountState(wbLAStInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 17);
+                setmubLAStGaleCountState(mubLAStGaleCount - 10);
+                setallmubLAGaleCount(allmubLAGaleCount - 10);
+                setmubLAStOriCountState(mubLAStOriCount - 11);
+                setwbLAStOriCountState(wbLAStOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 11);
+                setmubLAStRupeeCost(mubLAStRupeeCost - 5);
+                setwbLAStRupeeCost(wbLAStRupeeCost - 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 5);
+                setLightStaffRefineState(event.target.value);
+            }
+            else if (lightStaffRefineState == 1 && event.target.value == 2) {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount - 40)
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount - 30);
+                setmubLAStInsanityCountState(mubLAStInsanityCount - 10);
+                setmubLAStGaleCountState(mubLAStGaleCount - 10);
+                setmubLAStOriCountState(mubLAStOriCount - 10);
+                setmubLAStRupeeCost(mubLAStRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 10)
+                setallmubLAGaleCount(allmubLAGaleCount - 10)
+                setallmubLAOriCount(allmubLAOriCount - 10)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
+                setLightStaffRefineState(event.target.value);
             }
         }
         else if (lightStaffRefineState > event.target.value) {
-            if (lightStaffRefineState - event.target.value == 1) {
-                setLightStaffRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + 16);
-                    setwbLAStSilverMaskCountState(wbLAStSilverMaskCount + 16);
-                    setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + 10);
-                    setwbLAStGoldMaskCountState(wbLAStGoldMaskCount + 10);
-                    setmubLAStInsanityCountState(mubLAStInsanityCount + 7);
-                    setwbLAStInsanityCountState(wbLAStInsanityCount + 7);
-                    setmubLAStOriCountState(mubLAStOriCount + 1);
-                    setwbLAStOriCountState(wbLAStOriCount + 1);
-                    setmubLAStRupeeCost(mubLAStRupeeCost + 2.5);
-                    setwbLAStRupeeCost(wbLAStRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + 40)
-                    setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + 30);
-                    setmubLAStInsanityCountState(mubLAStInsanityCount + 10);
-                    setmubLAStGaleCountState(mubLAStGaleCount + 10);
-                    setmubLAStOriCountState(mubLAStOriCount + 10);
-                    setmubLAStRupeeCost(mubLAStRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 10)
-                    setallmubLAGaleCount(allmubLAGaleCount + 10)
-                    setallmubLAOriCount(allmubLAOriCount + 10)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
+            if (lightStaffRefineState == 2 && event.target.value == 1) 
+            {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + 40)
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + 30);
+                setmubLAStInsanityCountState(mubLAStInsanityCount + 10);
+                setmubLAStGaleCountState(mubLAStGaleCount + 10);
+                setmubLAStOriCountState(mubLAStOriCount + 10);
+                setmubLAStRupeeCost(mubLAStRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 10)
+                setallmubLAGaleCount(allmubLAGaleCount + 10)
+                setallmubLAOriCount(allmubLAOriCount + 10)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightStaffRefineState(event.target.value);
+            }
+            else if (lightStaffRefineState == 2 && event.target.value == 0) 
+            {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + 56);
+                setwbLAStSilverMaskCountState(wbLAStSilverMaskCount + 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 56);
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + 40);
+                setwbLAStGoldMaskCountState(wbLAStGoldMaskCount + 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 40);
+                setmubLAStInsanityCountState(mubLAStInsanityCount + 17);
+                setwbLAStInsanityCountState(wbLAStInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 17);
+                setmubLAStGaleCountState(mubLAStGaleCount + 10);
+                setallmubLAGaleCount(allmubLAGaleCount + 10);
+                setmubLAStOriCountState(mubLAStOriCount + 11);
+                setwbLAStOriCountState(wbLAStOriCount + 1); 
+                setallmubLAOriCount(allmubLAOriCount + 11);
+                setmubLAStRupeeCost(mubLAStRupeeCost + 5);
+                setwbLAStRupeeCost(wbLAStRupeeCost + 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 5)
+                setLightStaffRefineState(event.target.value);
+            }
+            else if (lightStaffRefineState == 1 && event.target.value == 0) 
+            {
+                setmubLAStSilverMaskCountState(mubLAStSilverMaskCount + 16);
+                setwbLAStSilverMaskCountState(wbLAStSilverMaskCount + 16);
+                setmubLAStGoldMaskCountState(mubLAStGoldMaskCount + 10);
+                setwbLAStGoldMaskCountState(wbLAStGoldMaskCount + 10);
+                setmubLAStInsanityCountState(mubLAStInsanityCount + 7);
+                setwbLAStInsanityCountState(wbLAStInsanityCount + 7);
+                setmubLAStOriCountState(mubLAStOriCount + 1);
+                setwbLAStOriCountState(wbLAStOriCount + 1);
+                setmubLAStRupeeCost(mubLAStRupeeCost + 2.5);
+                setwbLAStRupeeCost(wbLAStRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 7)
+                setallmubLAOriCount(allmubLAOriCount + 1)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightStaffRefineState(event.target.value);
             }
         }
     }
@@ -2850,129 +4074,241 @@ export default function LightAgitoWeapons() {
     }
 
     function handleLightManacasterUnbindIncrement(event) {
-        setLightWeaponChoiceState("manacaster")
+        setLightWeaponChoiceState("manacaster");
         if (lightManacasterUnbindState < event.target.value) {
-            if (event.target.value - lightManacasterUnbindState == 1) {
+            if (event.target.value == 9 && lightManacasterUnbindState == 0) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - 304);
+                setwbLAMSilverMaskCountState(wbLAMSilverMaskCount - 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 304);
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - 230);
+                setwbLAMGoldMaskCountState(wbLAMGoldMaskCount - 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 230);
+                setmubLAMInsanityCountState(mubLAMInsanityCount - 58);
+                setwbLAMInsanityCountState(wbLAMInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLAMGaleCountState(mubLAMGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLAMSandCountState(mubLAMSandCount - 4);
+                setwbLAMSandCountState(wbLAMSandCount - 4);
+                setallmubLASandCount(allmubLASandCount - 4);
+                setmubLAMOriCountState(mubLAMOriCount - 24);
+                setwbLAMOriCountState(wbLAMOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLAMRupeeCost(mubLAMRupeeCost - 40);
+                setwbLAMRupeeCost(wbLAMRupeeCost - 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 40);
                 setLightManacasterUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 4) {
-                    setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - 40)
-                    setwbLAMSilverMaskCountState(wbLAMSilverMaskCount - 40)
-                    setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - 30)
-                    setwbLAMGoldMaskCountState(wbLAMGoldMaskCount - 30)
-                    setmubLAMSandCountState(mubLAMSandCount - 1)
-                    setwbLAMSandCountState(wbLAMSandCount - 1)
-                    setmubLAMRupeeCost(mubLAMRupeeCost - 2)
-                    setwbLAMRupeeCost(wbLAMRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLASandCount(allmubLASandCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
-                else if (event.target.value == 5) {
-                    setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - 16)
-                    setwbLAMSilverMaskCountState(wbLAMSilverMaskCount - 16)
-                    setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - 10)
-                    setwbLAMGoldMaskCountState(wbLAMGoldMaskCount - 10)
-                    setmubLAMInsanityCountState(mubLAMInsanityCount - 7)
-                    setwbLAMInsanityCountState(wbLAMInsanityCount - 7)
-                    setmubLAMOriCountState(mubLAMOriCount - 1)
-                    setwbLAMOriCountState(wbLAMOriCount - 1)
-                    setmubLAMRupeeCost(mubLAMRupeeCost - 7.5)
-                    setwbLAMRupeeCost(wbLAMRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 8) {
-                    setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - 16)
-                    setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - 10)
-                    setmubLAMInsanityCountState(mubLAMInsanityCount - 7)
-                    setmubLAMOriCountState(mubLAMOriCount - 1)
-                    setmubLAMRupeeCost(mubLAMRupeeCost - 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 7.5)
-                }
-                else if (event.target.value > 8) {
-                    setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - 80)
-                    setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - 70)
-                    setmubLAMInsanityCountState(mubLAMInsanityCount - 30)
-                    setmubLAMGaleCountState(mubLAMGaleCount - 20)
-                    setmubLAMOriCountState(mubLAMOriCount - 20)
-                    setmubLAMRupeeCost(mubLAMRupeeCost - 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 30)
-                    setallmubLAGaleCount(allmubLAGaleCount - 20)
-                    setallmubLAOriCount(allmubLAOriCount - 20)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2)
-                }
+            }
+            else if (event.target.value == 9 && lightManacasterUnbindState >= 1 && lightManacasterUnbindState <= 4) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - 144 - ((4 - lightManacasterUnbindState) * 40));
+                setwbLAMSilverMaskCountState(wbLAMSilverMaskCount - 16 - ((4 - lightManacasterUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 144 - ((4 - lightManacasterUnbindState) * 40));
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - 110 - ((4 - lightManacasterUnbindState) * 30));
+                setwbLAMGoldMaskCountState(wbLAMGoldMaskCount - 10 - ((4 - lightManacasterUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 110 - ((4 - lightManacasterUnbindState) * 30));
+                setmubLAMInsanityCountState(mubLAMInsanityCount - 58);
+                setwbLAMInsanityCountState(wbLAMInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 58);
+                setmubLAMGaleCountState(mubLAMGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLAMSandCountState(mubLAMSandCount - (4 - lightManacasterUnbindState));
+                setwbLAMSandCountState(wbLAMSandCount - (4 - lightManacasterUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightManacasterUnbindState));
+                setmubLAMOriCountState(mubLAMOriCount - 24);
+                setwbLAMOriCountState(wbLAMOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 24);
+                setmubLAMRupeeCost(mubLAMRupeeCost - 32 - ((4 - lightManacasterUnbindState) * 2));
+                setwbLAMRupeeCost(wbLAMRupeeCost - 7.5 - ((4 - lightManacasterUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - 32 - ((4 - lightManacasterUnbindState) * 2));
+                setLightManacasterUnbindState(event.target.value);
+            }
+            else if (event.target.value == 9 && lightManacasterUnbindState >= 5 && lightManacasterUnbindState <= 8) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - 80 - ((8 - lightManacasterUnbindState) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 80 - ((8 - lightManacasterUnbindState) * 16));
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - 70 - ((8 - lightManacasterUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 70 - ((8 - lightManacasterUnbindState) * 10));
+                setmubLAMInsanityCountState(mubLAMInsanityCount - 30 - ((8 - lightManacasterUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - 30 - ((8 - lightManacasterUnbindState) * 7));
+                setmubLAMGaleCountState(mubLAMGaleCount - 20);
+                setallmubLAGaleCount(allmubLAGaleCount - 20);
+                setmubLAMOriCountState(mubLAMOriCount - 20 - ((8 - lightManacasterUnbindState) * 1));
+                setallmubLAOriCount(allmubLAOriCount - 20 - ((8 - lightManacasterUnbindState) * 1));
+                setmubLAMRupeeCost(mubLAMRupeeCost - 2 - ((8 - lightManacasterUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - 2 - ((8 - lightManacasterUnbindState) * 7.5));
+                setLightManacasterUnbindState(event.target.value);
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightManacasterUnbindState <= 7 && lightManacasterUnbindState >= 5) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - ((event.target.value - lightManacasterUnbindState) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightManacasterUnbindState) * 16));
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - ((event.target.value - lightManacasterUnbindState) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightManacasterUnbindState) * 10));
+                setmubLAMInsanityCountState(mubLAMInsanityCount - ((event.target.value - lightManacasterUnbindState) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount - ((event.target.value - lightManacasterUnbindState) * 7));
+                setmubLAMOriCountState(mubLAMOriCount - (event.target.value - lightManacasterUnbindState));
+                setallmubLAOriCount(allmubLAOriCount - (event.target.value - lightManacasterUnbindState));
+                setmubLAMRupeeCost(mubLAMRupeeCost - ((event.target.value - lightManacasterUnbindState) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightManacasterUnbindState) * 7.5));
+                setLightManacasterUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 8 && event.target.value >= 5 && lightManacasterUnbindState <= 4 && lightManacasterUnbindState >= 0) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - ((4 - lightManacasterUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setwbLAMSilverMaskCountState(wbLAMSilverMaskCount - 16 - ((4 - lightManacasterUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((4 - lightManacasterUnbindState) * 40) - (-1 * (4 - event.target.value) * 16));
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - ((4 - lightManacasterUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setwbLAMGoldMaskCountState(wbLAMGoldMaskCount - 10 - ((4 - lightManacasterUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((4 - lightManacasterUnbindState) * 30) - (-1 * (4 - event.target.value) * 10));
+                setmubLAMInsanityCountState(mubLAMInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setwbLAMInsanityCountState(wbLAMInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - (-1 * (4 - event.target.value) * 7));
+                setmubLAMSandCountState(mubLAMSandCount - (4 - lightManacasterUnbindState));
+                setwbLAMSandCountState(wbLAMSandCount - (4 - lightManacasterUnbindState));
+                setallmubLASandCount(allmubLASandCount - (4 - lightManacasterUnbindState));
+                setmubLAMOriCountState(mubLAMOriCount - (-1 * (4 - event.target.value)));
+                setwbLAMOriCountState(wbLAMOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - (-1 * (4 - event.target.value)));
+                setmubLAMRupeeCost(mubLAMRupeeCost - ((4 - lightManacasterUnbindState) * 2) - (-1 * (4 - event.target.value) * 7.5))
+                setwbLAMRupeeCost(wbLAMRupeeCost - 7.5 - ((4 - lightManacasterUnbindState) * 2))
+                setLightManacasterUnbindState(event.target.value)
+            }
+            else if (event.target.value <= 4 && event.target.value >= 1 && lightManacasterUnbindState <= 3 && lightManacasterUnbindState >= 0) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - ((event.target.value - lightManacasterUnbindState) * 40));
+                setwbLAMSilverMaskCountState(wbLAMSilverMaskCount - ((event.target.value - lightManacasterUnbindState) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - ((event.target.value - lightManacasterUnbindState) * 40));
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - ((event.target.value - lightManacasterUnbindState) * 30));
+                setwbLAMGoldMaskCountState(wbLAMGoldMaskCount - ((event.target.value - lightManacasterUnbindState) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - ((event.target.value - lightManacasterUnbindState) * 30));
+                setmubLAMSandCountState(mubLAMSandCount - (event.target.value - lightManacasterUnbindState));
+                setwbLAMSandCountState(wbLAMSandCount - (event.target.value - lightManacasterUnbindState));
+                setallmubLASandCount(allmubLASandCount - (event.target.value - lightManacasterUnbindState));
+                setmubLAMRupeeCost(mubLAMRupeeCost - ((event.target.value - lightManacasterUnbindState) * 2));
+                setwbLAMRupeeCost(wbLAMRupeeCost - ((event.target.value - lightManacasterUnbindState) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost - ((event.target.value - lightManacasterUnbindState) * 2));
+                setLightManacasterUnbindState(event.target.value)
             }
         }
         else if (lightManacasterUnbindState > event.target.value) {
-            if (lightManacasterUnbindState - event.target.value == 1) {
+            if (event.target.value == 0 && lightManacasterUnbindState == 9) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + 304);
+                setwbLAMSilverMaskCountState(wbLAMSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 304);
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + 230);
+                setwbLAMGoldMaskCountState(wbLAMGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 230);
+                setmubLAMInsanityCountState(mubLAMInsanityCount + 58);
+                setwbLAMInsanityCountState(wbLAMInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 58);
+                setmubLAMGaleCountState(mubLAMGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLAMSandCountState(mubLAMSandCount + 4);
+                setwbLAMSandCountState(wbLAMSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLAMOriCountState(mubLAMOriCount + 24);
+                setwbLAMOriCountState(wbLAMOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + 24);
+                setmubLAMRupeeCost(mubLAMRupeeCost + 40);
+                setwbLAMRupeeCost(wbLAMRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 40);
                 setLightManacasterUnbindState(event.target.value);
-                if (event.target.value >= 0 && event.target.value <= 3) {
-                    setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + 40)
-                    setwbLAMSilverMaskCountState(wbLAMSilverMaskCount + 40)
-                    setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + 30)
-                    setwbLAMGoldMaskCountState(wbLAMGoldMaskCount + 30)
-                    setmubLAMSandCountState(mubLAMSandCount + 1)
-                    setwbLAMSandCountState(wbLAMSandCount + 1)
-                    setmubLAMRupeeCost(mubLAMRupeeCost + 2)
-                    setwbLAMRupeeCost(wbLAMRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLASandCount(allmubLASandCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
-                else if (event.target.value == 4) {
-                    setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + 16)
-                    setwbLAMSilverMaskCountState(wbLAMSilverMaskCount + 16)
-                    setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + 10)
-                    setwbLAMGoldMaskCountState(wbLAMGoldMaskCount + 10)
-                    setmubLAMInsanityCountState(mubLAMInsanityCount + 7)
-                    setwbLAMInsanityCountState(wbLAMInsanityCount + 7)
-                    setmubLAMOriCountState(mubLAMOriCount + 1)
-                    setwbLAMOriCountState(wbLAMOriCount + 1)
-                    setmubLAMRupeeCost(mubLAMRupeeCost + 7.5)
-                    setwbLAMRupeeCost(wbLAMRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value >= 5 && event.target.value <= 7) {
-                    setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + 16)
-                    setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + 10)
-                    setmubLAMInsanityCountState(mubLAMInsanityCount + 7)
-                    setmubLAMOriCountState(mubLAMOriCount + 1)
-                    setmubLAMRupeeCost(mubLAMRupeeCost + 7.5)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 7.5)
-                }
-                else if (event.target.value == 8) {
-                    setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + 80)
-                    setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + 70)
-                    setmubLAMInsanityCountState(mubLAMInsanityCount + 30)
-                    setmubLAMGaleCountState(mubLAMGaleCount + 20)
-                    setmubLAMOriCountState(mubLAMOriCount + 20)
-                    setmubLAMRupeeCost(mubLAMRupeeCost + 2)
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 80)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 30)
-                    setallmubLAGaleCount(allmubLAGaleCount + 20)
-                    setallmubLAOriCount(allmubLAOriCount + 20)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2)
-                }
+            }
+            else if (event.target.value == 0 && lightManacasterUnbindState >= 5 && lightManacasterUnbindState <= 8) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + 160 + ((-1 * (4 - lightManacasterUnbindState)) * 16));
+                setwbLAMSilverMaskCountState(wbLAMSilverMaskCount + 176);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 160 + ((-1 * (4 - lightManacasterUnbindState)) * 16));
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + 120 + ((-1 * (4 - lightManacasterUnbindState)) * 10));
+                setwbLAMGoldMaskCountState(wbLAMGoldMaskCount + 130);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 120 + ((-1 * (4 - lightManacasterUnbindState)) * 10));
+                setmubLAMInsanityCountState(mubLAMInsanityCount + ((-1 * (4 - lightManacasterUnbindState)) * 7));
+                setwbLAMInsanityCountState(wbLAMInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((-1 * (4 - lightManacasterUnbindState)) * 7));
+                setmubLAMSandCountState(mubLAMSandCount + 4);
+                setwbLAMSandCountState(wbLAMSandCount + 4);
+                setallmubLASandCount(allmubLASandCount + 4);
+                setmubLAMOriCountState(mubLAMOriCount + (-1 * (4 - lightManacasterUnbindState)));
+                setwbLAMOriCountState(wbLAMOriCount + 1);
+                setallmubLAOriCount(allmubLAOriCount + (-1 * (4 - lightManacasterUnbindState)));
+                setmubLAMRupeeCost(mubLAMRupeeCost + 8 + (-1 * (4 - lightManacasterUnbindState) * 7.5));
+                setwbLAMRupeeCost(wbLAMRupeeCost + 15.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 8 + (-1 * (4 - lightManacasterUnbindState) * 7.5));
+                setLightManacasterUnbindState(event.target.value);
+            }
+            else if (event.target.value == 0 && lightManacasterUnbindState >= 1 && lightManacasterUnbindState <= 4) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + (lightManacasterUnbindState * 40));
+                setwbLAMSilverMaskCountState(wbLAMSilverMaskCount + (lightManacasterUnbindState * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + (lightManacasterUnbindState * 40));
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + (lightManacasterUnbindState * 30));
+                setwbLAMGoldMaskCountState(wbLAMGoldMaskCount + (lightManacasterUnbindState * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + (lightManacasterUnbindState * 30));
+                setmubLAMSandCountState(mubLAMSandCount + (lightManacasterUnbindState * 1));
+                setwbLAMSandCountState(wbLAMSandCount + (lightManacasterUnbindState * 1));
+                setallmubLASandCount(allmubLASandCount + (lightManacasterUnbindState * 1));
+                setmubLAMRupeeCost(mubLAMRupeeCost + (lightManacasterUnbindState * 2));
+                setwbLAMRupeeCost(wbLAMRupeeCost + (lightManacasterUnbindState * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + (lightManacasterUnbindState * 2));
+                setLightManacasterUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightManacasterUnbindState >= 1 && lightManacasterUnbindState <= 4) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + ((lightManacasterUnbindState - event.target.value) * 40))
+                setwbLAMSilverMaskCountState(wbLAMSilverMaskCount + ((lightManacasterUnbindState - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightManacasterUnbindState - event.target.value) * 40));
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + ((lightManacasterUnbindState - event.target.value) * 30));
+                setwbLAMGoldMaskCountState(wbLAMGoldMaskCount + ((lightManacasterUnbindState - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightManacasterUnbindState - event.target.value) * 30));
+                setmubLAMSandCountState(mubLAMSandCount + (lightManacasterUnbindState - event.target.value));
+                setwbLAMSandCountState(wbLAMSandCount + (lightManacasterUnbindState - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (lightManacasterUnbindState - event.target.value));
+                setmubLAMRupeeCost(mubLAMRupeeCost + ((lightManacasterUnbindState - event.target.value) * 2));
+                setwbLAMRupeeCost(wbLAMRupeeCost + ((lightManacasterUnbindState - event.target.value) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightManacasterUnbindState - event.target.value) * 2))
+                setLightManacasterUnbindState(event.target.value);
+            }
+            else if (event.target.value >= 1 && event.target.value <= 4 && lightManacasterUnbindState >= 5 && lightManacasterUnbindState <= 8) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + ((lightManacasterUnbindState - 4) * 16) + ((4 - event.target.value) * 40))
+                setwbLAMSilverMaskCountState(wbLAMSilverMaskCount + 16 + ((4 - event.target.value) * 40));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightManacasterUnbindState - 4) * 16) + ((4 - event.target.value) * 40));
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + ((lightManacasterUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setwbLAMGoldMaskCountState(wbLAMGoldMaskCount + 10 + ((4 - event.target.value) * 30));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightManacasterUnbindState - 4) * 10) + ((4 - event.target.value) * 30));
+                setmubLAMInsanityCountState(mubLAMInsanityCount + ((lightManacasterUnbindState - 4) * 7));
+                setwbLAMInsanityCountState(wbLAMInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightManacasterUnbindState - 4) * 7));
+                setmubLAMSandCountState(mubLAMSandCount + (4 - event.target.value));
+                setwbLAMSandCountState(wbLAMSandCount + (4 - event.target.value));
+                setallmubLASandCount(allmubLASandCount + (4 - event.target.value));
+                setmubLAMOriCountState(mubLAMOriCount + (lightManacasterUnbindState - 4));
+                setwbLAMOriCountState(wbLAMOriCount + (lightManacasterUnbindState - 4));
+                setallmubLAOriCount(allmubLAOriCount + (lightManacasterUnbindState - 4));
+                setmubLAMRupeeCost(mubLAMRupeeCost + ((lightManacasterUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setwbLAMRupeeCost(wbLAMRupeeCost + 7.5 + ((lightManacasterUnbindState - 4) * 2));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightManacasterUnbindState - 4) * 7.5) + ((4 - event.target.value) * 2));
+                setLightManacasterUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightManacasterUnbindState == 9) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 80 + ((8 - event.target.value) * 16));
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 70 + ((8 - event.target.value) * 10));
+                setmubLAMInsanityCountState(mubLAMInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + 30 + ((8 - event.target.value) * 7));
+                setmubLAMGaleCountState(mubLAMGaleCount + 20);
+                setallmubLAGaleCount(allmubLAGaleCount + 20);
+                setmubLAMOriCountState(mubLAMOriCount + 20 + (8 - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + 20 + (8 - event.target.value));
+                setmubLAMRupeeCost(mubLAMRupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + 2 + ((8 - event.target.value) * 7.5));
+                setLightManacasterUnbindState(event.target.value)
+            }
+            else if (event.target.value >= 5 && event.target.value <= 8 && lightManacasterUnbindState >= 5 && lightManacasterUnbindState <= 8) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + ((lightManacasterUnbindState - event.target.value) * 16))
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + ((lightManacasterUnbindState - event.target.value) * 16));
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + ((lightManacasterUnbindState - event.target.value) * 10));
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + ((lightManacasterUnbindState - event.target.value) * 10));
+                setmubLAMInsanityCountState(mubLAMInsanityCount + ((lightManacasterUnbindState - event.target.value) * 7));
+                setallmubLAInsanityCount(allmubLAInsanityCount + ((lightManacasterUnbindState - event.target.value) * 7));
+                setmubLAMOriCountState(mubLAMOriCount + (lightManacasterUnbindState - event.target.value));
+                setallmubLAOriCount(allmubLAOriCount + (lightManacasterUnbindState - event.target.value));
+                setmubLAMRupeeCost(mubLAMRupeeCost + ((lightManacasterUnbindState - event.target.value) * 7.5));
+                setallmubLARupeeCost(allmubLARupeeCost + ((lightManacasterUnbindState - event.target.value) * 7.5));
+                setLightManacasterUnbindState(event.target.value)
             }
         }
     }
@@ -2980,75 +4316,116 @@ export default function LightAgitoWeapons() {
     function handleLightManacasterRefineIncrement(event) {
         setLightWeaponChoiceState("manacaster");
         if (lightManacasterRefineState < event.target.value) {
-            if (event.target.value - lightManacasterRefineState == 1) {
+            if (lightManacasterRefineState == 0 && event.target.value == 1) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - 16);
+                setwbLAMSilverMaskCountState(wbLAMSilverMaskCount - 16);
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - 10);
+                setwbLAMGoldMaskCountState(wbLAMGoldMaskCount - 10);
+                setmubLAMInsanityCountState(mubLAMInsanityCount - 7);
+                setwbLAMInsanityCountState(wbLAMInsanityCount - 7);
+                setmubLAMOriCountState(mubLAMOriCount - 1);
+                setwbLAMOriCountState(wbLAMOriCount - 1);
+                setmubLAMRupeeCost(mubLAMRupeeCost - 2.5);
+                setwbLAMRupeeCost(wbLAMRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 7)
+                setallmubLAOriCount(allmubLAOriCount - 1)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
                 setLightManacasterRefineState(event.target.value);
-                if (event.target.value == 1) {
-                    setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - 16);
-                    setwbLAMSilverMaskCountState(wbLAMSilverMaskCount - 16);
-                    setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - 10);
-                    setwbLAMGoldMaskCountState(wbLAMGoldMaskCount - 10);
-                    setmubLAMInsanityCountState(mubLAMInsanityCount - 7);
-                    setwbLAMInsanityCountState(wbLAMInsanityCount - 7);
-                    setmubLAMOriCountState(mubLAMOriCount - 1);
-                    setwbLAMOriCountState(wbLAMOriCount - 1);
-                    setmubLAMRupeeCost(mubLAMRupeeCost - 2.5);
-                    setwbLAMRupeeCost(wbLAMRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 7)
-                    setallmubLAOriCount(allmubLAOriCount - 1)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
-                if (event.target.value == 2) {
-                    setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - 40)
-                    setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - 30);
-                    setmubLAMInsanityCountState(mubLAMInsanityCount - 10);
-                    setmubLAMGaleCountState(mubLAMGaleCount - 10);
-                    setmubLAMOriCountState(mubLAMOriCount - 10);
-                    setmubLAMRupeeCost(mubLAMRupeeCost - 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount - 10)
-                    setallmubLAGaleCount(allmubLAGaleCount - 10)
-                    setallmubLAOriCount(allmubLAOriCount - 10)
-                    setallmubLARupeeCost(allmubLARupeeCost - 2.5)
-                }
+            }
+            else if (lightManacasterRefineState == 0 && event.target.value == 2) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - 56);
+                setwbLAMSilverMaskCountState(wbLAMSilverMaskCount - 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 56);
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - 40);
+                setwbLAMGoldMaskCountState(wbLAMGoldMaskCount - 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 40);
+                setmubLAMInsanityCountState(mubLAMInsanityCount - 17);
+                setwbLAMInsanityCountState(wbLAMInsanityCount - 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount - 17);
+                setmubLAMGaleCountState(mubLAMGaleCount - 10);
+                setallmubLAGaleCount(allmubLAGaleCount - 10);
+                setmubLAMOriCountState(mubLAMOriCount - 11);
+                setwbLAMOriCountState(wbLAMOriCount - 1);
+                setallmubLAOriCount(allmubLAOriCount - 11);
+                setmubLAMRupeeCost(mubLAMRupeeCost - 5);
+                setwbLAMRupeeCost(wbLAMRupeeCost - 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost - 5);
+                setLightManacasterRefineState(event.target.value);
+            }
+            else if (lightManacasterRefineState == 1 && event.target.value == 2) {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount - 40)
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount - 30);
+                setmubLAMInsanityCountState(mubLAMInsanityCount - 10);
+                setmubLAMGaleCountState(mubLAMGaleCount - 10);
+                setmubLAMOriCountState(mubLAMOriCount - 10);
+                setmubLAMRupeeCost(mubLAMRupeeCost - 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount - 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount - 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount - 10)
+                setallmubLAGaleCount(allmubLAGaleCount - 10)
+                setallmubLAOriCount(allmubLAOriCount - 10)
+                setallmubLARupeeCost(allmubLARupeeCost - 2.5)
+                setLightManacasterRefineState(event.target.value);
             }
         }
         else if (lightManacasterRefineState > event.target.value) {
-            if (lightManacasterRefineState - event.target.value == 1) {
-                setLightManacasterRefineState(event.target.value)
-                if (event.target.value == 0) {
-                    setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + 16);
-                    setwbLAMSilverMaskCountState(wbLAMSilverMaskCount + 16);
-                    setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + 10);
-                    setwbLAMGoldMaskCountState(wbLAMGoldMaskCount + 10);
-                    setmubLAMInsanityCountState(mubLAMInsanityCount + 7);
-                    setwbLAMInsanityCountState(wbLAMInsanityCount + 7);
-                    setmubLAMOriCountState(mubLAMOriCount + 1);
-                    setwbLAMOriCountState(wbLAMOriCount + 1);
-                    setmubLAMRupeeCost(mubLAMRupeeCost + 2.5);
-                    setwbLAMRupeeCost(wbLAMRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 7)
-                    setallmubLAOriCount(allmubLAOriCount + 1)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
-                if (event.target.value == 1) {
-                    setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + 40)
-                    setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + 30);
-                    setmubLAMInsanityCountState(mubLAMInsanityCount + 10);
-                    setmubLAMGaleCountState(mubLAMGaleCount + 10);
-                    setmubLAMOriCountState(mubLAMOriCount + 10);
-                    setmubLAMRupeeCost(mubLAMRupeeCost + 2.5);
-                    setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
-                    setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
-                    setallmubLAInsanityCount(allmubLAInsanityCount + 10)
-                    setallmubLAGaleCount(allmubLAGaleCount + 10)
-                    setallmubLAOriCount(allmubLAOriCount + 10)
-                    setallmubLARupeeCost(allmubLARupeeCost + 2.5)
-                }
+            if (lightManacasterRefineState == 2 && event.target.value == 1) 
+            {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + 40)
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + 30);
+                setmubLAMInsanityCountState(mubLAMInsanityCount + 10);
+                setmubLAMGaleCountState(mubLAMGaleCount + 10);
+                setmubLAMOriCountState(mubLAMOriCount + 10);
+                setmubLAMRupeeCost(mubLAMRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 40)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 30)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 10)
+                setallmubLAGaleCount(allmubLAGaleCount + 10)
+                setallmubLAOriCount(allmubLAOriCount + 10)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightManacasterRefineState(event.target.value);
+            }
+            else if (lightManacasterRefineState == 2 && event.target.value == 0) 
+            {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + 56);
+                setwbLAMSilverMaskCountState(wbLAMSilverMaskCount + 16);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 56);
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + 40);
+                setwbLAMGoldMaskCountState(wbLAMGoldMaskCount + 10);
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 40);
+                setmubLAMInsanityCountState(mubLAMInsanityCount + 17);
+                setwbLAMInsanityCountState(wbLAMInsanityCount + 7);
+                setallmubLAInsanityCount(allmubLAInsanityCount + 17);
+                setmubLAMGaleCountState(mubLAMGaleCount + 10);
+                setallmubLAGaleCount(allmubLAGaleCount + 10);
+                setmubLAMOriCountState(mubLAMOriCount + 11);
+                setwbLAMOriCountState(wbLAMOriCount + 1); 
+                setallmubLAOriCount(allmubLAOriCount + 11);
+                setmubLAMRupeeCost(mubLAMRupeeCost + 5);
+                setwbLAMRupeeCost(wbLAMRupeeCost + 2.5);
+                setallmubLARupeeCost(allmubLARupeeCost + 5)
+                setLightManacasterRefineState(event.target.value);
+            }
+            else if (lightManacasterRefineState == 1 && event.target.value == 0) 
+            {
+                setmubLAMSilverMaskCountState(mubLAMSilverMaskCount + 16);
+                setwbLAMSilverMaskCountState(wbLAMSilverMaskCount + 16);
+                setmubLAMGoldMaskCountState(mubLAMGoldMaskCount + 10);
+                setwbLAMGoldMaskCountState(wbLAMGoldMaskCount + 10);
+                setmubLAMInsanityCountState(mubLAMInsanityCount + 7);
+                setwbLAMInsanityCountState(wbLAMInsanityCount + 7);
+                setmubLAMOriCountState(mubLAMOriCount + 1);
+                setwbLAMOriCountState(wbLAMOriCount + 1);
+                setmubLAMRupeeCost(mubLAMRupeeCost + 2.5);
+                setwbLAMRupeeCost(wbLAMRupeeCost + 2.5);
+                setallmubLASilverMaskCount(allmubLASilverMaskCount + 16)
+                setallmubLAGoldMaskCount(allmubLAGoldMaskCount + 10)
+                setallmubLAInsanityCount(allmubLAInsanityCount + 7)
+                setallmubLAOriCount(allmubLAOriCount + 1)
+                setallmubLARupeeCost(allmubLARupeeCost + 2.5)
+                setLightManacasterRefineState(event.target.value);
             }
         }
     }
